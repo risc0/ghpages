@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677268658723,
+  "lastUpdate": 1677269144784,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -135,6 +135,52 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 475628833,
             "range": "± 4749081",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "Linux-cpu": [
+      {
+        "commit": {
+          "author": {
+            "name": "risc0",
+            "username": "risc0"
+          },
+          "committer": {
+            "name": "risc0",
+            "username": "risc0"
+          },
+          "id": "0e9b54d3398ad7dcda761a08d8162142b7d29f07",
+          "message": "Benchmark workflows",
+          "timestamp": "2023-02-24T19:43:22Z",
+          "url": "https://github.com/risc0/risc0/pull/398/commits/0e9b54d3398ad7dcda761a08d8162142b7d29f07"
+        },
+        "date": 1677269143981,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 4628054936,
+            "range": "± 43372102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 4620920239,
+            "range": "± 30968047",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1777712917,
+            "range": "± 5870886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1786271552,
+            "range": "± 12836425",
             "unit": "ns/iter"
           }
         ]
