@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677354144192,
+  "lastUpdate": 1677354599264,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -185,6 +185,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1075797874,
             "range": "± 11528393",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kuba.plaskonka@gmail.com",
+            "name": "Kuba Płaskonka",
+            "username": "kubaplas"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d23cb57039e09f2fc8457cc7f1e6d9b052f2c60b",
+          "message": "Using Blake2b as a hash function (#401)",
+          "timestamp": "2023-02-25T11:28:56-08:00",
+          "tree_id": "1703efd636c4bcb4944b3702d306432b4842bf20",
+          "url": "https://github.com/risc0/risc0/commit/d23cb57039e09f2fc8457cc7f1e6d9b052f2c60b"
+        },
+        "date": 1677354598445,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 4013681209,
+            "range": "± 50570361",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 4049967478,
+            "range": "± 37433892",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1078328273,
+            "range": "± 12517729",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1074277482,
+            "range": "± 11034495",
             "unit": "ns/iter"
           }
         ]
