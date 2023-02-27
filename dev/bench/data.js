@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677540949479,
+  "lastUpdate": 1677541713595,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -283,6 +283,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1077096129,
             "range": "± 3984465",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e680f8df584ca5f971cff3e1cc2bec577739b777",
+          "message": "Drop vulnerable remove_dir_all dep (#405)",
+          "timestamp": "2023-02-27T23:32:10Z",
+          "tree_id": "ad15f4810a304baf91f0e6e6c955a850727dbeb4",
+          "url": "https://github.com/risc0/risc0/commit/e680f8df584ca5f971cff3e1cc2bec577739b777"
+        },
+        "date": 1677541712697,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2945748609,
+            "range": "± 5808677",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2944701768,
+            "range": "± 20107221",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1074537956,
+            "range": "± 8514156",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1069411776,
+            "range": "± 8527834",
             "unit": "ns/iter"
           }
         ]
