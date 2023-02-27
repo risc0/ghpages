@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677538900597,
+  "lastUpdate": 1677538910573,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -521,6 +521,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1072754720,
             "range": "± 7408604",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nategraf1@gmail.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49c3a64e11b9f32ab5b1aed7cd3bd552173e464b",
+          "message": "Add starter template for Bonsai applications (#403)",
+          "timestamp": "2023-02-27T22:36:57Z",
+          "tree_id": "98388d0b35c5410d227912c0708becbd901f23a2",
+          "url": "https://github.com/risc0/risc0/commit/49c3a64e11b9f32ab5b1aed7cd3bd552173e464b"
+        },
+        "date": 1677538909511,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 4395397223,
+            "range": "± 27776414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 4404124642,
+            "range": "± 27107440",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1324585579,
+            "range": "± 8887954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1324504471,
+            "range": "± 6541762",
             "unit": "ns/iter"
           }
         ]
