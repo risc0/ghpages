@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677550654069,
+  "lastUpdate": 1677629833835,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -1381,6 +1381,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 446998937,
             "range": "± 5100331",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ab59cee852a9cae2754e9b73313ad9a92ac1bcac",
+          "message": "Remove FFPU (#397)\n\n* Remove FFPU from circuit\r\n* Remove FFPU builds of verification programs\r\n* Remove FFPU acceleration of baby bear ops\r\n* Remove host support for FFPU\r\n* Remove \"COMPUTE_POLY\" non-FFPU system call\r\n* Remove zkvm based recursion tests\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-03-01T00:11:29Z",
+          "tree_id": "c6dae24dc388107db9703a6d125a71cdef1330bd",
+          "url": "https://github.com/risc0/risc0/commit/ab59cee852a9cae2754e9b73313ad9a92ac1bcac"
+        },
+        "date": 1677629833160,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1615764015,
+            "range": "± 9793142",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1614351548,
+            "range": "± 4785335",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 436660352,
+            "range": "± 955244",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 440150477,
+            "range": "± 1253651",
             "unit": "ns/iter"
           }
         ]
