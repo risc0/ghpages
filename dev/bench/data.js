@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677640745694,
+  "lastUpdate": 1677641893587,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -761,6 +761,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1082983756,
             "range": "± 12556455",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nategraf1@gmail.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "450f5f717560a37dfd70f9f438cfd5a54374bb2f",
+          "message": "address review comment on #403 (#408)",
+          "timestamp": "2023-03-01T03:15:42Z",
+          "tree_id": "ea8b5b37835b856d65dba709717e29bf196e5a1b",
+          "url": "https://github.com/risc0/risc0/commit/450f5f717560a37dfd70f9f438cfd5a54374bb2f"
+        },
+        "date": 1677641892662,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 3849867439,
+            "range": "± 21910047",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 3883057258,
+            "range": "± 30305433",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1089322764,
+            "range": "± 8990610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1077353305,
+            "range": "± 9298263",
             "unit": "ns/iter"
           }
         ]
