@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677865761633,
+  "lastUpdate": 1677865765462,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -1671,6 +1671,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 469052773,
             "range": "± 4743066",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd26be31369b409ebf86f58995c712a6c5cf7830",
+          "message": "Use new m2 macs (#422)",
+          "timestamp": "2023-03-03T09:45:52-08:00",
+          "tree_id": "20c91d7afe7bb7c1266c532241dfb0de338b6b6a",
+          "url": "https://github.com/risc0/risc0/commit/bd26be31369b409ebf86f58995c712a6c5cf7830"
+        },
+        "date": 1677865764485,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 848702829,
+            "range": "± 10988045",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 846461927,
+            "range": "± 26167127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 483920864,
+            "range": "± 6575718",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 482205540,
+            "range": "± 6117440",
             "unit": "ns/iter"
           }
         ]
