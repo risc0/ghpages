@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677865811727,
+  "lastUpdate": 1677888394432,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -2343,6 +2343,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 679465124,
             "range": "± 677639",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3e18632a529289a8f84b3fcd0dface7255dd7bb",
+          "message": "Change RNG semantics to help Poseidon. (#421)",
+          "timestamp": "2023-03-03T16:03:38-08:00",
+          "tree_id": "7102b4d145af9197e60714db94e0efdecdc06a21",
+          "url": "https://github.com/risc0/risc0/commit/e3e18632a529289a8f84b3fcd0dface7255dd7bb"
+        },
+        "date": 1677888392792,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1029713166,
+            "range": "± 5856854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1025629833,
+            "range": "± 9234965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 679204395,
+            "range": "± 1662020",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 680374916,
+            "range": "± 1665965",
             "unit": "ns/iter"
           }
         ]
