@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678226363970,
+  "lastUpdate": 1678226371641,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -1145,6 +1145,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 678105166,
             "range": "± 933843",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e448406f7af9939c3fb658333177091c865ffab",
+          "message": "Full documentation for `risc0_zkvm` (#425)\n\nTurn on `deny(missing_docs)` for the `risc0_zkvm` crate, and document everything required by this.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-03-07T13:56:26-08:00",
+          "tree_id": "7a75a5cfc6860c5cac16479dbf3fcc2310a7a911",
+          "url": "https://github.com/risc0/risc0/commit/8e448406f7af9939c3fb658333177091c865ffab"
+        },
+        "date": 1678226370347,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2093771958,
+            "range": "± 11305704",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2087629791,
+            "range": "± 10269102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 676743812,
+            "range": "± 1255195",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 677897374,
+            "range": "± 515060",
             "unit": "ns/iter"
           }
         ]
