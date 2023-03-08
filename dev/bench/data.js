@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678312411264,
+  "lastUpdate": 1678312435610,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -1911,6 +1911,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 541163632,
             "range": "± 19007040",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25cd443722e7941a7884476a4bc4a9fc4512572c",
+          "message": "Fix a poseidon bug (#427)",
+          "timestamp": "2023-03-08T14:50:46-07:00",
+          "tree_id": "1619c3e38c293d4934384407090952eb019afdf0",
+          "url": "https://github.com/risc0/risc0/commit/25cd443722e7941a7884476a4bc4a9fc4512572c"
+        },
+        "date": 1678312434729,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 900007271,
+            "range": "± 26497367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 929232069,
+            "range": "± 50575573",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 499269815,
+            "range": "± 16596735",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 507602784,
+            "range": "± 24595101",
             "unit": "ns/iter"
           }
         ]
