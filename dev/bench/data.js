@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678324740377,
+  "lastUpdate": 1678324745878,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -2821,6 +2821,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 434772884,
             "range": "± 2764090",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ba2289b75d2d7dcea730b245a9395cc12839b88",
+          "message": "Drop INPUT region (#428)",
+          "timestamp": "2023-03-09T01:15:58Z",
+          "tree_id": "797ff7f44a9bddcab67dfc0f9c8c03ac102a25ae",
+          "url": "https://github.com/risc0/risc0/commit/3ba2289b75d2d7dcea730b245a9395cc12839b88"
+        },
+        "date": 1678324745107,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1604163760,
+            "range": "± 6740925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1593302396,
+            "range": "± 4017805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 479192595,
+            "range": "± 1793016",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 481558533,
+            "range": "± 2471962",
             "unit": "ns/iter"
           }
         ]
