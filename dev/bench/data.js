@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678397642106,
+  "lastUpdate": 1678399904992,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -2295,6 +2295,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 501868824,
             "range": "± 3529774",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1888a431f2af188dc9e3b941a7954b30f87bbfe",
+          "message": "Document that journal is written by commit (#430)",
+          "timestamp": "2023-03-09T14:08:45-08:00",
+          "tree_id": "5aae5b9a38a557c269cbf86e8383e19a142ee14e",
+          "url": "https://github.com/risc0/risc0/commit/a1888a431f2af188dc9e3b941a7954b30f87bbfe"
+        },
+        "date": 1678399904123,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 886240833,
+            "range": "± 26353644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 931724837,
+            "range": "± 49322426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 535707502,
+            "range": "± 40237549",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 519368858,
+            "range": "± 10333293",
             "unit": "ns/iter"
           }
         ]
