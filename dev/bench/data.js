@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678384030561,
+  "lastUpdate": 1678384038852,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-intel_uhd_630": [
@@ -2869,6 +2869,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 481558533,
             "range": "± 2471962",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "031af9754b667e905ea52b10792a4543f54f1b77",
+          "message": "zkvm: add sys_rand to generate random numbers for the guest (#389)\n\nThe sys_rand wrapper will generate `n` words of random numbers using SYS_IO and a new `SENDRECV_CHANNEL_RANDOM` channel.",
+          "timestamp": "2023-03-09T17:44:08Z",
+          "tree_id": "0f19eb4998e2ff23757256058ae0e1dbc2e6957d",
+          "url": "https://github.com/risc0/risc0/commit/031af9754b667e905ea52b10792a4543f54f1b77"
+        },
+        "date": 1678384038080,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1595399048,
+            "range": "± 8186900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1588884979,
+            "range": "± 6347061",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 467675383,
+            "range": "± 6560275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 469000342,
+            "range": "± 2529586",
             "unit": "ns/iter"
           }
         ]
