@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678416524102,
+  "lastUpdate": 1678480783004,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3305,6 +3305,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 781555687,
             "range": "± 551960",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "845ff76d621aee56d9688e9eb4b1e37dcb6ee772",
+          "message": "Have cuda hal fall back to CPU for Poseidon support. (#432)\n\n* Work around lack of cuda poseidon for now",
+          "timestamp": "2023-03-09T18:45:32-08:00",
+          "tree_id": "b85479418351ad84f90e624a3aaa51de25c83039",
+          "url": "https://github.com/risc0/risc0/commit/845ff76d621aee56d9688e9eb4b1e37dcb6ee772"
+        },
+        "date": 1678480780957,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1153579478,
+            "range": "± 5376379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1154288020,
+            "range": "± 4132309",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 781538937,
+            "range": "± 922709",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 782561916,
+            "range": "± 2085766",
             "unit": "ns/iter"
           }
         ]
