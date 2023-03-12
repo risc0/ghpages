@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678603141153,
+  "lastUpdate": 1678654653905,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3785,6 +3785,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 781807958,
             "range": "± 422148",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "distinct": true,
+          "id": "6b6e7e0ade56e5c8c2b1f11cb47b19a33b339376",
+          "message": "Revert \"Add basic support, issue with hal held data\"\n\nThis reverts commit b2359edd83e2a2890752931d35c3509d253ff7f1.",
+          "timestamp": "2023-03-12T06:26:47Z",
+          "tree_id": "b85479418351ad84f90e624a3aaa51de25c83039",
+          "url": "https://github.com/risc0/risc0/commit/6b6e7e0ade56e5c8c2b1f11cb47b19a33b339376"
+        },
+        "date": 1678654652653,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1155088520,
+            "range": "± 4292439",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1156344062,
+            "range": "± 7130117",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 781695479,
+            "range": "± 812066",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 782910937,
+            "range": "± 1023991",
             "unit": "ns/iter"
           }
         ]
