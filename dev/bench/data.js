@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678821013812,
+  "lastUpdate": 1678821109692,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3399,6 +3399,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1591821503,
             "range": "± 8782205",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6ff13814c59b934ab8d4a2556add49946c92503e",
+          "message": "Guest I/O, now with posix style! (#426)\n\nAdd posix-style I/O, with byte-aligned read and write.\r\nGet rid of \"channels\"; we now have syscalls and file descriptors.\r\nSyscalls are now named to avoid numbering conflicts. (All the string handling is done in the host, so negligible performance impact)\r\nCombined several of the syscall asm! wrappers; we now have \"syscall_0\" through \"syscall_5\" for different number of arguments\r\nGet rid of SYS_STDOUT and SYS_STDERR, and SYS_JOURNAL; these are now handled by file descriptors 1, 2, and 3\r\nStill todo: Get rid of INITIAL_INPUT and replace with reading from stdin.",
+          "timestamp": "2023-03-14T19:07:04Z",
+          "tree_id": "3c5d116c942a35c3c8855463b01a34f03574ab60",
+          "url": "https://github.com/risc0/risc0/commit/6ff13814c59b934ab8d4a2556add49946c92503e"
+        },
+        "date": 1678821108693,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 3421376120,
+            "range": "± 14081313",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 3420657291,
+            "range": "± 10685593",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1578526983,
+            "range": "± 5226247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1582484033,
+            "range": "± 10105272",
             "unit": "ns/iter"
           }
         ]
