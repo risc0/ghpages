@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678912002557,
+  "lastUpdate": 1678926532251,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -4217,6 +4217,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 781066020,
             "range": "± 1300062",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "62ad726d2137eb930bd98c758337b20690c52b80",
+          "message": "Add additional perms for PR comments (#442)",
+          "timestamp": "2023-03-15T17:26:03-07:00",
+          "tree_id": "367e37e859a470b1b39aff1a3cc9aecae44213f9",
+          "url": "https://github.com/risc0/risc0/commit/62ad726d2137eb930bd98c758337b20690c52b80"
+        },
+        "date": 1678926530935,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1149197374,
+            "range": "± 3277279",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1154787708,
+            "range": "± 4519573",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 780348687,
+            "range": "± 1561465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 780890645,
+            "range": "± 901334",
             "unit": "ns/iter"
           }
         ]
