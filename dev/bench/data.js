@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679077559656,
+  "lastUpdate": 1679081825748,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -4793,6 +4793,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 781249249,
             "range": "± 2095519",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "09401c95e9075417212d6fdf6b22159f256df11e",
+          "message": "Breaks up benchmark PR workflow (#446)\n\nAllows for forked repo PRs to run bench_pr workflow while not\r\nexposing the GITHUB_TOKEN to malicious workflows.",
+          "timestamp": "2023-03-17T12:34:03-07:00",
+          "tree_id": "aa6472c6cad82cf8a49e6cbc9ef36585fc879dc9",
+          "url": "https://github.com/risc0/risc0/commit/09401c95e9075417212d6fdf6b22159f256df11e"
+        },
+        "date": 1679081824407,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1153476228,
+            "range": "± 5502682",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1151696604,
+            "range": "± 6445452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 780914645,
+            "range": "± 2246615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 782048666,
+            "range": "± 1178697",
             "unit": "ns/iter"
           }
         ]
