@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679076606890,
+  "lastUpdate": 1679077559656,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2633,6 +2633,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 499103366,
             "range": "± 2843361",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a34db968eca59a39d2480530f993ede3a3a191f6",
+          "message": "zkvm: add guest support for getrandom (#445)\n\nThis provides a zkvm with the getrandom functionality builtin to the guest\r\ncrate. This allows the guest to use the getrandom crate without any\r\ncustomization.",
+          "timestamp": "2023-03-17T18:05:22Z",
+          "tree_id": "d623b1e36da343eeaa6540bad75634660684158e",
+          "url": "https://github.com/risc0/risc0/commit/a34db968eca59a39d2480530f993ede3a3a191f6"
+        },
+        "date": 1679077558700,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 890742694,
+            "range": "± 7383265",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 896375650,
+            "range": "± 5219633",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 502198386,
+            "range": "± 6534619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 500197601,
+            "range": "± 4245150",
             "unit": "ns/iter"
           }
         ]
