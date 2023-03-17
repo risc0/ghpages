@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679092163066,
+  "lastUpdate": 1679095600118,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -5177,6 +5177,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 783075479,
             "range": "± 433351",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c66bef66717d1fc34a353fc36bdab94bf98f5f8",
+          "message": "Support for stdin and getenv in guest (#452)\n\n* Actually export the sys_* ABI symbols without mangling them\r\n* Add sys_getenv to get environment variables\r\n* Add with_env_var to ProverOpts to specify environment variables to include for the guest\r\n* Add --env VARNAME=value option to r0vm to specify environment variables to include\r\n* Plumb through stdin() so that std::io::stdin() works in the guest as expected\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-03-17T16:23:58-07:00",
+          "tree_id": "c1dba25c3334f75d99d08a46ece76aec4a5da1e2",
+          "url": "https://github.com/risc0/risc0/commit/7c66bef66717d1fc34a353fc36bdab94bf98f5f8"
+        },
+        "date": 1679095598816,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1148018833,
+            "range": "± 4532253",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1155062833,
+            "range": "± 6344204",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 779244249,
+            "range": "± 641851",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 780354020,
+            "range": "± 1598390",
             "unit": "ns/iter"
           }
         ]
