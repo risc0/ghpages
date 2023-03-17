@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679071119815,
+  "lastUpdate": 1679071136516,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -1243,6 +1243,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 778957312,
             "range": "± 967663",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a646ebe5963aa19c2bb3f2fcc46e68ab6aee8481",
+          "message": "Partial experimental preflight implementation for riscv32im (#447)\n\nSelect this experimental mode by setting the RISC0_EXPERIMENTAL_PREFLIGHT envornment variable or by using ProverOpts::with_preflight\r\n\r\nPreflight does not yet generate all the data needed to generate a full circuit execution trace, so currently only works when skip_seal is specified.\r\n\r\nAll of the risc0-zkvm tests pass in preflight mode, except for the ones which depend on exact cycle counts or on execution tracing/profiling.\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-03-17T09:35:37-07:00",
+          "tree_id": "26e5578f4bf237bb4c4a0389dd63ecde1944f979",
+          "url": "https://github.com/risc0/risc0/commit/a646ebe5963aa19c2bb3f2fcc46e68ab6aee8481"
+        },
+        "date": 1679071135238,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2154611687,
+            "range": "± 13952016",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2169123166,
+            "range": "± 14839958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 776805083,
+            "range": "± 1352954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 777603208,
+            "range": "± 1369690",
             "unit": "ns/iter"
           }
         ]
