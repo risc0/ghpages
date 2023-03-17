@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679090778185,
+  "lastUpdate": 1679090866764,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -4215,6 +4215,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1590164199,
             "range": "± 7725138",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8efc329caf24e647cc82fcb2d806190dc1e11695",
+          "message": "Split core zkp kernels and rv32im kernel into seperate sys crates (#449)\n\nSplit core zkp kernels and rv32im kernel into seperate sys crates",
+          "timestamp": "2023-03-17T15:02:59-07:00",
+          "tree_id": "796b860064e1078ed2de6ed22158fd48f29d8526",
+          "url": "https://github.com/risc0/risc0/commit/8efc329caf24e647cc82fcb2d806190dc1e11695"
+        },
+        "date": 1679090865617,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 3409237832,
+            "range": "± 41762613",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 3399785303,
+            "range": "± 9864253",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1570652232,
+            "range": "± 6933791",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1577203254,
+            "range": "± 4775641",
             "unit": "ns/iter"
           }
         ]
