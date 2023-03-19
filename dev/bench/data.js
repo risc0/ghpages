@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679250603026,
+  "lastUpdate": 1679250631185,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -1483,6 +1483,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 779004729,
             "range": "± 1209515",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "81839854+justinFrevert@users.noreply.github.com",
+            "name": "justinFrevert",
+            "username": "justinFrevert"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "285039cf9adf8bb0b4be8b598cae69367d8bbf25",
+          "message": "Add no-std fix for WASM/Substrate chains (#438)",
+          "timestamp": "2023-03-19T11:27:07-07:00",
+          "tree_id": "4b416cf74c8156c1cb9f6171995149277391177d",
+          "url": "https://github.com/risc0/risc0/commit/285039cf9adf8bb0b4be8b598cae69367d8bbf25"
+        },
+        "date": 1679250629900,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2163131000,
+            "range": "± 19644061",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2153913208,
+            "range": "± 21477959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 777867020,
+            "range": "± 717385",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 780424104,
+            "range": "± 1039574",
             "unit": "ns/iter"
           }
         ]
