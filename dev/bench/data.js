@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679337878548,
+  "lastUpdate": 1679341719275,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3161,6 +3161,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 500009266,
             "range": "± 2392364",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b4a4cb36a0e6e55dfd6f517c09629b081c2b4dba",
+          "message": "Attempt to fix unzip failures (#450)",
+          "timestamp": "2023-03-20T11:39:27-07:00",
+          "tree_id": "0790d6b6f1f3bfbd19bda3ee37df33e9ea7f9479",
+          "url": "https://github.com/risc0/risc0/commit/b4a4cb36a0e6e55dfd6f517c09629b081c2b4dba"
+        },
+        "date": 1679341717742,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 871878417,
+            "range": "± 10033927",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 869678279,
+            "range": "± 5968252",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 499038779,
+            "range": "± 2182370",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 501846484,
+            "range": "± 5541501",
             "unit": "ns/iter"
           }
         ]
