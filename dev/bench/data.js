@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679341719275,
+  "lastUpdate": 1679352090392,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -5897,6 +5897,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 779697687,
             "range": "± 1331240",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "afd9a56521b96ef7df3d6411577930fdf5152b1d",
+          "message": "Fix kernel bug.",
+          "timestamp": "2023-03-20T22:38:52Z",
+          "tree_id": "d339f7373a1fe8a8e6fa682bd61a8816616c045d",
+          "url": "https://github.com/risc0/risc0/commit/afd9a56521b96ef7df3d6411577930fdf5152b1d"
+        },
+        "date": 1679352089081,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1147097291,
+            "range": "± 9342329",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1152430354,
+            "range": "± 7086983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 779260083,
+            "range": "± 1078405",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 779676374,
+            "range": "± 1149628",
             "unit": "ns/iter"
           }
         ]
