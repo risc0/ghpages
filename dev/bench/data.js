@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679352218453,
+  "lastUpdate": 1679358605826,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -6089,6 +6089,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 779676374,
             "range": "± 1149628",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e7b19d57877577a2735e69172ea3e445a2c0c6cb",
+          "message": "Adjusted benchmark workflow with PR number (#458)\n\nAdded PR number into artifact for workflow_run to pickup and correctly create a PR comment.",
+          "timestamp": "2023-03-20T17:27:18-07:00",
+          "tree_id": "4464642f24228823892daedbe0471f41ab367fbe",
+          "url": "https://github.com/risc0/risc0/commit/e7b19d57877577a2735e69172ea3e445a2c0c6cb"
+        },
+        "date": 1679358604125,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1148002312,
+            "range": "± 7951977",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1151177458,
+            "range": "± 7070040",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 779596770,
+            "range": "± 538645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 780906374,
+            "range": "± 1109265",
             "unit": "ns/iter"
           }
         ]
