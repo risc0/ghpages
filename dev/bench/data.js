@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679385012814,
+  "lastUpdate": 1679385038539,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -1723,6 +1723,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 779183250,
             "range": "± 850772",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6e717cfed432175f1bbba99964021edbbb3f9653",
+          "message": "Reference `rust guest workarounds` tag (#451)",
+          "timestamp": "2023-03-21T00:47:23-07:00",
+          "tree_id": "80c55594a375a53928d5718f620428b8b543f059",
+          "url": "https://github.com/risc0/risc0/commit/6e717cfed432175f1bbba99964021edbbb3f9653"
+        },
+        "date": 1679385037194,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2162244062,
+            "range": "± 10267990",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2155289270,
+            "range": "± 13013846",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 780077520,
+            "range": "± 537217",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 780869041,
+            "range": "± 1458907",
             "unit": "ns/iter"
           }
         ]
