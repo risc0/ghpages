@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679358723147,
+  "lastUpdate": 1679376940611,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3401,6 +3401,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 498038547,
             "range": "± 3278832",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0953b45512684376f48d312f399fa2f5bcc50a34",
+          "message": "Add support for Cuda Poseidon hal. (#454)",
+          "timestamp": "2023-03-19T21:12:36-07:00",
+          "tree_id": "339d3df331a2537ff5ed2da3baab1a0368444676",
+          "url": "https://github.com/risc0/risc0/commit/0953b45512684376f48d312f399fa2f5bcc50a34"
+        },
+        "date": 1679376939587,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 874129520,
+            "range": "± 11669472",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 876891195,
+            "range": "± 8100792",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 501075545,
+            "range": "± 5959671",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 510395506,
+            "range": "± 7028444",
             "unit": "ns/iter"
           }
         ]
