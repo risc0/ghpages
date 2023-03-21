@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679432881969,
+  "lastUpdate": 1679433020025,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -5367,6 +5367,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1589280890,
             "range": "± 6116510",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc27559ad8d5f4a35712256ca38b94b394249d6d",
+          "message": "Move benchmark comment files to runner.temp (#462)\n\nMoves all benchmark file artifacts to runner.temp to prevent files from being read cross-workflow or cross-job",
+          "timestamp": "2023-03-21T14:04:44-07:00",
+          "tree_id": "205c43e051ac8c0be7b43603509fe0820cb29be4",
+          "url": "https://github.com/risc0/risc0/commit/fc27559ad8d5f4a35712256ca38b94b394249d6d"
+        },
+        "date": 1679433019100,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 3398062069,
+            "range": "± 13926458",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 3412557417,
+            "range": "± 21009013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1555733566,
+            "range": "± 3816348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1561762075,
+            "range": "± 3338258",
             "unit": "ns/iter"
           }
         ]
