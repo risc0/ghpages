@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679509708294,
+  "lastUpdate": 1679509824399,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3689,6 +3689,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 499385686,
             "range": "± 7041361",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b023e47d257926d520ce1d28c76ec3d52802fd8",
+          "message": "add concurrency to ci (#463)",
+          "timestamp": "2023-03-22T18:25:11Z",
+          "tree_id": "690292c9180f0d15bf9d5cd297e413968f9094b9",
+          "url": "https://github.com/risc0/risc0/commit/6b023e47d257926d520ce1d28c76ec3d52802fd8"
+        },
+        "date": 1679509822353,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 878239035,
+            "range": "± 9402452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 866286124,
+            "range": "± 9452105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 502691021,
+            "range": "± 4036896",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 500057619,
+            "range": "± 9071999",
             "unit": "ns/iter"
           }
         ]
