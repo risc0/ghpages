@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679627982226,
+  "lastUpdate": 1679632317168,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -7097,6 +7097,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 114887853,
             "range": "± 1081811",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e16e860e303b2a750cfdff3ff00f83a1c431f2d0",
+          "message": "Migrate guest's concept of \"initial input\" to be a more standard \"stdin\". (#468)\n\n* env::read now reads from stdin by default.\r\n* risc0_zkvm::serde now serializes type \"char\" (i.e. single characters that are serialized by themselves) as its 4-byte codepoint rather than a 4-byte length followed by its serialized bytes.  Strings are unchanged.\r\n* Removed risc0_zkvm::env::Env structure, since its last remaining use is gone.\r\n* Renamed Stream{Reader,Writer} to more rusty names\r\n* New \"with_stdin\" options for ProverOpts to specify the standard input to supply to the guest; this accepts anything that implements std::io::Read.\r\n* When \"std\" is enabled, env::{stdin,stdout,stderr} implement std::io::{Read,Write}.\r\n* Deserialized objects are now owned and filled in directly instead of referencing a buffer.  This means that serialized types will need to be owned types, like \"String\" instead of \"&str\".\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-03-23T21:28:57-07:00",
+          "tree_id": "215dd0fb2c8e350d0375f1c1ae1d94461baf28cd",
+          "url": "https://github.com/risc0/risc0/commit/e16e860e303b2a750cfdff3ff00f83a1c431f2d0"
+        },
+        "date": 1679632314774,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 463765208,
+            "range": "± 4818546",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 469623958,
+            "range": "± 7264728",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 112651583,
+            "range": "± 628083",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 114745041,
+            "range": "± 697118",
             "unit": "ns/iter"
           }
         ]
