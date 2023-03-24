@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679642767198,
+  "lastUpdate": 1679642772217,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3977,6 +3977,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 304349807,
             "range": "± 5020161",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "64ec080327be05890ffc41e7b30907be35ca20db",
+          "message": "Update directories requirement from 4.0 to 5.0 (#456)\n\nUpdates the requirements on [directories](https://github.com/soc/directories-rs) to permit the latest version.\r\n- [Release notes](https://github.com/soc/directories-rs/releases)\r\n- [Commits](https://github.com/soc/directories-rs/commits)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: directories\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2023-03-24T07:22:45Z",
+          "tree_id": "8059783cfeae33ed8039fb558069395018cc31ad",
+          "url": "https://github.com/risc0/risc0/commit/64ec080327be05890ffc41e7b30907be35ca20db"
+        },
+        "date": 1679642771214,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 628548339,
+            "range": "± 13416414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 638480932,
+            "range": "± 7713986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 297542641,
+            "range": "± 6177797",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 303096662,
+            "range": "± 6714507",
             "unit": "ns/iter"
           }
         ]
