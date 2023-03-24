@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679627460280,
+  "lastUpdate": 1679627481349,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -1867,6 +1867,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 779311958,
             "range": "± 1261330",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04645358404df28bce2807906fcbb49b0ac982c8",
+          "message": "Continuations, part 1 (#461)\n\nBreaking Changes:\r\n* Drop the `image_id` parameter to the `risc0_zkvm::Prover`. The Prover already computes the image_id from the supplied ELF binary.\r\n* Replace `risc0_zkvm::MemoryImage::root` with `risc0_zkvm::MemoryImage::get_root()`, which computes the root merkle tree entry on-demand.\r\n* Drop `VerificationError::SealJournalLengthMismatch`.\r\n* Rename `VerificationError::JournalSealRootMismatch` to `VerificationError::JournalDigestMismatch`\r\n\r\nUpdates:\r\n* New rv32im circuit which includes continuations support\r\n* Add `env::pause` to the guest environment API\r\n* Add a test for pause/continue\r\n\r\nTODO:\r\n* Implement system initiated splits",
+          "timestamp": "2023-03-24T03:08:10Z",
+          "tree_id": "5dbd256fb9543e60796ee7db4dfc0346f9295632",
+          "url": "https://github.com/risc0/risc0/commit/04645358404df28bce2807906fcbb49b0ac982c8"
+        },
+        "date": 1679627480082,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1590463520,
+            "range": "± 24708236",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1589374937,
+            "range": "± 9525882",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 110423770,
+            "range": "± 477726",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112286354,
+            "range": "± 463943",
             "unit": "ns/iter"
           }
         ]
