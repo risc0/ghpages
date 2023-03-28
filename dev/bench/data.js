@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680021945846,
+  "lastUpdate": 1680021981295,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2011,6 +2011,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 112680250,
             "range": "± 339976",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "287c6b679281dd8cbd540aa0a2d96f8393b2ee96",
+          "message": "Add tool for datasheet generation (#473)",
+          "timestamp": "2023-03-28T09:42:48-07:00",
+          "tree_id": "ab0b57e0dcb56e6b5592e446015d9c038bdd3c2c",
+          "url": "https://github.com/risc0/risc0/commit/287c6b679281dd8cbd540aa0a2d96f8393b2ee96"
+        },
+        "date": 1680021979647,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1609504895,
+            "range": "± 11232617",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1598795187,
+            "range": "± 7607715",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 111356374,
+            "range": "± 980630",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112966312,
+            "range": "± 628638",
             "unit": "ns/iter"
           }
         ]
