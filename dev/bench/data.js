@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680038663788,
+  "lastUpdate": 1680038684855,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2059,6 +2059,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 112966312,
             "range": "± 628638",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd1a37e774bf8284d45d7dbb118034174627551c",
+          "message": "Added `prod` label to workflows` (#475)",
+          "timestamp": "2023-03-28T14:21:30-07:00",
+          "tree_id": "bf9d475e21f7beea421325c91234a14a1f74aa5d",
+          "url": "https://github.com/risc0/risc0/commit/cd1a37e774bf8284d45d7dbb118034174627551c"
+        },
+        "date": 1680038683262,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1600056541,
+            "range": "± 10400822",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1601304208,
+            "range": "± 25199703",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 111170500,
+            "range": "± 620578",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 113346000,
+            "range": "± 641939",
             "unit": "ns/iter"
           }
         ]
