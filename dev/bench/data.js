@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680047439363,
+  "lastUpdate": 1680047448787,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -4217,6 +4217,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 302514253,
             "range": "± 6931886",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06749f637515ff1e00c9818ffd7498b9d2d7965f",
+          "message": "cargo-risczero tool (#453)\n\n* Add cargo-risczero tool / crate\r\n\r\n* Added a `new` command to the cargo-risczero tool for generating from templates\r\n\r\n* Imported the risc0-rust-starter template as a cargo-generate template for the new command to pull from\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-03-28T16:47:19-07:00",
+          "tree_id": "bc312aa30810429a133136c814d4008b7c3fdacd",
+          "url": "https://github.com/risc0/risc0/commit/06749f637515ff1e00c9818ffd7498b9d2d7965f"
+        },
+        "date": 1680047448041,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 735220796,
+            "range": "± 4038103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 738017643,
+            "range": "± 3853589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 387691410,
+            "range": "± 1994463",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 389277884,
+            "range": "± 3952109",
             "unit": "ns/iter"
           }
         ]
