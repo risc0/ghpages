@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680129321141,
+  "lastUpdate": 1680129564763,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -4649,6 +4649,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 378617254,
             "range": "± 2121806",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "distinct": true,
+          "id": "77205f046f726f948eea0958247b2d8eb054f8cf",
+          "message": "Fix crate publish error",
+          "timestamp": "2023-03-29T15:28:59-07:00",
+          "tree_id": "a9bb243500201b9c0efd01117335002f8e4e6f5a",
+          "url": "https://github.com/risc0/risc0/commit/77205f046f726f948eea0958247b2d8eb054f8cf"
+        },
+        "date": 1680129563996,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 840249386,
+            "range": "± 16983094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 829919080,
+            "range": "± 10574437",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 426792232,
+            "range": "± 8988107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 429519403,
+            "range": "± 9610757",
             "unit": "ns/iter"
           }
         ]
