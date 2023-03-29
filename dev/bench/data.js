@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680121445726,
+  "lastUpdate": 1680121527732,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -6711,6 +6711,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 339596341,
             "range": "± 4187915",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "efc09afaf27aa5a97621a2b96fa2d9d5595421a9",
+          "message": "Fixes for cargo-risczero new (#480)",
+          "timestamp": "2023-03-29T13:20:28-07:00",
+          "tree_id": "c5e9be81791d0dd6b8c6a39d8b0936cdaa672a7b",
+          "url": "https://github.com/risc0/risc0/commit/efc09afaf27aa5a97621a2b96fa2d9d5595421a9"
+        },
+        "date": 1680121526639,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2299991968,
+            "range": "± 19090842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2299770372,
+            "range": "± 14402184",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 325779235,
+            "range": "± 3248487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 328509992,
+            "range": "± 4828021",
             "unit": "ns/iter"
           }
         ]
