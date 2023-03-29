@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680121527732,
+  "lastUpdate": 1680123880494,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8441,6 +8441,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 113559062,
             "range": "± 592405",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c2af172d9b3a0b13e1139d880b5bfe3c1f193efc",
+          "message": "Update template & examples references (#478)",
+          "timestamp": "2023-03-29T21:01:54Z",
+          "tree_id": "e534854e319627fb5c9ee32a70f153d91b2ecbfa",
+          "url": "https://github.com/risc0/risc0/commit/c2af172d9b3a0b13e1139d880b5bfe3c1f193efc"
+        },
+        "date": 1680123878721,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 459970395,
+            "range": "± 4413053",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 467305541,
+            "range": "± 6260857",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 112966728,
+            "range": "± 738255",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 114976041,
+            "range": "± 390683",
             "unit": "ns/iter"
           }
         ]
