@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680069828644,
+  "lastUpdate": 1680069841650,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2155,6 +2155,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 115987979,
             "range": "± 568204",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b271b2d6f28d152f1e58934b15bdad67cc8835f",
+          "message": "Fixed a typo in `risczero new` template (#477)",
+          "timestamp": "2023-03-28T23:00:36-07:00",
+          "tree_id": "410d1385f7adc2355af3fb38a1dcced54d231759",
+          "url": "https://github.com/risc0/risc0/commit/2b271b2d6f28d152f1e58934b15bdad67cc8835f"
+        },
+        "date": 1680069839932,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1600356458,
+            "range": "± 13413225",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1597610479,
+            "range": "± 19348030",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 110402624,
+            "range": "± 455196",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112314833,
+            "range": "± 532996",
             "unit": "ns/iter"
           }
         ]
