@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680199340103,
+  "lastUpdate": 1680199453950,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -7143,6 +7143,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 334547304,
             "range": "± 5880724",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "23e362b536a27920d9de79797f7f97c21cf52b53",
+          "message": "Update serial_test requirement from 1.0 to 2.0 (#486)\n\nUpdates the requirements on [serial_test](https://github.com/palfrey/serial_test) to permit the latest version.\r\n- [Release notes](https://github.com/palfrey/serial_test/releases)\r\n- [Commits](https://github.com/palfrey/serial_test/compare/v1.0.0...v2.0.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: serial_test\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2023-03-30T17:58:33Z",
+          "tree_id": "5e94c0f5e7fb320e18e88faba8c0e6e8fd2390df",
+          "url": "https://github.com/risc0/risc0/commit/23e362b536a27920d9de79797f7f97c21cf52b53"
+        },
+        "date": 1680199452948,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2302550678,
+            "range": "± 18486660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2290095932,
+            "range": "± 18549892",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 324288461,
+            "range": "± 1552204",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 330834936,
+            "range": "± 5950419",
             "unit": "ns/iter"
           }
         ]
