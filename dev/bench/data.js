@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680216843687,
+  "lastUpdate": 1680216846598,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2395,6 +2395,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 112556166,
             "range": "± 504847",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cfe6427921e6dd3eab28fb53fe7ff9973e092bf",
+          "message": "Removed Snakecase from risczero new proj name (#487)",
+          "timestamp": "2023-03-30T15:50:51-07:00",
+          "tree_id": "049694ea85fe9558072ed3856ceca42988c2fd19",
+          "url": "https://github.com/risc0/risc0/commit/3cfe6427921e6dd3eab28fb53fe7ff9973e092bf"
+        },
+        "date": 1680216844720,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1599708624,
+            "range": "± 6185842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1593950333,
+            "range": "± 15650639",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 110556500,
+            "range": "± 438024",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112312124,
+            "range": "± 496669",
             "unit": "ns/iter"
           }
         ]
