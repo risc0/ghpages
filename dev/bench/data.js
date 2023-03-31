@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680281837921,
+  "lastUpdate": 1680281869234,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2443,6 +2443,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 112312124,
             "range": "± 496669",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d1e49163c66cc4ad3f2fecee8a5adac71647fb21",
+          "message": "Align examples with template (#488)",
+          "timestamp": "2023-03-31T09:54:34-07:00",
+          "tree_id": "d22e55dd3d31c49e37ab43e236009f297a105a93",
+          "url": "https://github.com/risc0/risc0/commit/d1e49163c66cc4ad3f2fecee8a5adac71647fb21"
+        },
+        "date": 1680281867582,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1615630645,
+            "range": "± 17496050",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1610323979,
+            "range": "± 18329750",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 111562791,
+            "range": "± 897772",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112888666,
+            "range": "± 612025",
             "unit": "ns/iter"
           }
         ]
