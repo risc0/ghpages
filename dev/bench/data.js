@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680301999350,
+  "lastUpdate": 1680302440872,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -5033,6 +5033,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 305668402,
             "range": "± 3917940",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "034fc69c4f490ed4d60d4250cc4f0a672d7a11b1",
+          "message": "Added RISC0_CUDA_OPT env var and default to -O1 (#492)\n\n* Default CUDA ptxas optimization levels of -O1 to improve build times but add env var fallback",
+          "timestamp": "2023-03-31T15:28:16-07:00",
+          "tree_id": "7b28dfc80b404e52bfa96eb6ba735afc5c36f596",
+          "url": "https://github.com/risc0/risc0/commit/034fc69c4f490ed4d60d4250cc4f0a672d7a11b1"
+        },
+        "date": 1680302439963,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 643331910,
+            "range": "± 6184716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 646511614,
+            "range": "± 8859295",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 294192927,
+            "range": "± 4808463",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 301166992,
+            "range": "± 3882214",
             "unit": "ns/iter"
           }
         ]
