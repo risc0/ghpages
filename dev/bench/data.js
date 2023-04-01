@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680341895054,
+  "lastUpdate": 1680341996613,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -7719,6 +7719,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 343679868,
             "range": "± 3502265",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8f18bdb21a288ad2535676f29b54116375de160",
+          "message": "Preflight progress (#482)\n\n* Rename Preflight->preflight::ExecState\r\n* Add ExecState::segmentize method to generate execution segments\r\n* Proofs can now be generated off of segments\r\n* All tests pass with RISC0_EXPERIMENTAL_PREFLIGHT=1 except tests::do_random and tests::trace.\r\n\r\nStill todo:\r\n\r\n* Better paging support, including better page fault calculation for page ins, and reserving cycles for pgae outs.\r\n* Verify host-initiated splits work properly once #469 lands.\r\n* Integrate into r0vm so it can both read and write Segments\r\n* Add an A/B test mode to compare preflight output against step_exec to make sure everything executes in the same way, including memory, registers, program counters, and cycle counts.\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-04-01T09:34:51Z",
+          "tree_id": "f61706c49a8a49dcba3253964bdd1a365342993b",
+          "url": "https://github.com/risc0/risc0/commit/d8f18bdb21a288ad2535676f29b54116375de160"
+        },
+        "date": 1680341995698,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2301888716,
+            "range": "± 8384539",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2312024260,
+            "range": "± 20482802",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 339026104,
+            "range": "± 3974393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 349436536,
+            "range": "± 7069877",
             "unit": "ns/iter"
           }
         ]
