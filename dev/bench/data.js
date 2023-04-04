@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680650538184,
+  "lastUpdate": 1680650548309,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2635,6 +2635,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 112569291,
             "range": "± 651697",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b54a0b3b9a9f67da6263b9892c418db0f010a8a1",
+          "message": "Moved tempdir for risc0-build into cache_dir (#497)",
+          "timestamp": "2023-04-04T23:19:20Z",
+          "tree_id": "f9d924e52ddc41a3e6a77e2bf99125dc2022e055",
+          "url": "https://github.com/risc0/risc0/commit/b54a0b3b9a9f67da6263b9892c418db0f010a8a1"
+        },
+        "date": 1680650546897,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1603843499,
+            "range": "± 12252079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1596838083,
+            "range": "± 8352182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 109983979,
+            "range": "± 356664",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 111638104,
+            "range": "± 664031",
             "unit": "ns/iter"
           }
         ]
