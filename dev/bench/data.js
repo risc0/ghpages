@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680341996613,
+  "lastUpdate": 1680637633040,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -9737,6 +9737,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 113940020,
             "range": "± 524103",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c657ca0747947db4b890751853c2d3358d820f31",
+          "message": "Update memory map and drop unused code (#491)",
+          "timestamp": "2023-04-04T19:44:32Z",
+          "tree_id": "550b25230e92045bfa956af44fc6f400656887e7",
+          "url": "https://github.com/risc0/risc0/commit/c657ca0747947db4b890751853c2d3358d820f31"
+        },
+        "date": 1680637631589,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 461667770,
+            "range": "± 4642270",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 464998708,
+            "range": "± 6654344",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 113740645,
+            "range": "± 487341",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 115567020,
+            "range": "± 658586",
             "unit": "ns/iter"
           }
         ]
