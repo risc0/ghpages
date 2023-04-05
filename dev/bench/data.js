@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680731488707,
+  "lastUpdate": 1680731582886,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8583,6 +8583,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 324169645,
             "range": "± 4731466",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b7a20347498624393946e52028e8f0388d5c16d",
+          "message": "Use generated layout to determine location of registers in rv32im circuit (#476)\n\n* Refactor layout to minimize duplicate code between risczero/rv32im\r\n* Add a buffer pretty-printer to dump a buffer based on a layout\r\n* rv32im-verify no longer has a brittle dependency on the specific layout of the \"out\" buffer\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-04-05T21:48:13Z",
+          "tree_id": "5ec200ff06950dba5c00139d0b42e56e5e1c131a",
+          "url": "https://github.com/risc0/risc0/commit/0b7a20347498624393946e52028e8f0388d5c16d"
+        },
+        "date": 1680731581817,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2279955505,
+            "range": "± 11676195",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2292353363,
+            "range": "± 16463228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 313094764,
+            "range": "± 1218078",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 319362515,
+            "range": "± 5413621",
             "unit": "ns/iter"
           }
         ]
