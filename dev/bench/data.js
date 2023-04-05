@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680722790906,
+  "lastUpdate": 1680722799125,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -5609,6 +5609,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 343335757,
             "range": "± 10558413",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39e22c6b0543a763a4dfa7f76bd00bed4fd8a86b",
+          "message": "Continuations, part 2: system initiated splits (#469)\n\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-04-05T12:23:08-07:00",
+          "tree_id": "06f9928d34afb48230c7fba85d1362d10baecd35",
+          "url": "https://github.com/risc0/risc0/commit/39e22c6b0543a763a4dfa7f76bd00bed4fd8a86b"
+        },
+        "date": 1680722798071,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 818968223,
+            "range": "± 53013288",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 862786277,
+            "range": "± 51252958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 343592040,
+            "range": "± 13661958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 336289610,
+            "range": "± 12700744",
             "unit": "ns/iter"
           }
         ]
