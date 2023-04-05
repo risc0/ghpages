@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680716121572,
+  "lastUpdate": 1680716403732,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8295,6 +8295,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 325057769,
             "range": "± 1063463",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2fcc90a36c3f7613de089840e27db591630acc5",
+          "message": "Added RISC0_GUEST_LOGFILE and fixed clippy warns (#499)",
+          "timestamp": "2023-04-05T10:32:02-07:00",
+          "tree_id": "6378944d4e68645299bb69e7f6184f8a47b2e401",
+          "url": "https://github.com/risc0/risc0/commit/d2fcc90a36c3f7613de089840e27db591630acc5"
+        },
+        "date": 1680716402581,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2325344328,
+            "range": "± 25458425",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2323828815,
+            "range": "± 12330751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 318865777,
+            "range": "± 5835108",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 334278854,
+            "range": "± 2962829",
             "unit": "ns/iter"
           }
         ]
