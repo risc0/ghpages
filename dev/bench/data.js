@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680709484670,
+  "lastUpdate": 1680709495505,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2683,6 +2683,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 111638104,
             "range": "± 664031",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "96deb8515ec614d36482619122b46584376b20e5",
+          "message": "Fixed risc0-build deadlock / double build (#498)",
+          "timestamp": "2023-04-05T08:41:16-07:00",
+          "tree_id": "a7edb04dd142e08639573ecf30eb4df2f6ee4ed9",
+          "url": "https://github.com/risc0/risc0/commit/96deb8515ec614d36482619122b46584376b20e5"
+        },
+        "date": 1680709491908,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1590121750,
+            "range": "± 8749592",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1594287374,
+            "range": "± 11292768",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 110248978,
+            "range": "± 693675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112021166,
+            "range": "± 654198",
             "unit": "ns/iter"
           }
         ]
