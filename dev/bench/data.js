@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680984676007,
+  "lastUpdate": 1680984708480,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2875,6 +2875,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 113197000,
             "range": "± 1087456",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b197c88fdd27050ca3d1efdb0c1f70d9442eeeb",
+          "message": "Remove zeroio (#502)\n\nZeroio is no longer as big of a win over risc0_zkvm::serde as it was since our I/O works differently now.  Plus, it was cumbersome to use.\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-04-08T13:08:15-07:00",
+          "tree_id": "94d5f58911eb142112da98cd5ff66dc8b0076c4f",
+          "url": "https://github.com/risc0/risc0/commit/1b197c88fdd27050ca3d1efdb0c1f70d9442eeeb"
+        },
+        "date": 1680984706965,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1594514354,
+            "range": "± 37223544",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1595572395,
+            "range": "± 11233613",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 110915000,
+            "range": "± 1129603",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 112951541,
+            "range": "± 705937",
             "unit": "ns/iter"
           }
         ]
