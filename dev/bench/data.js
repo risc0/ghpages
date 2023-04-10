@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1680985177543,
+  "lastUpdate": 1681157735938,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11081,6 +11081,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 117927333,
             "range": "± 563091",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "87adc831b195cd52aac7c49bf9894568baa7d372",
+          "message": "Add test and example of using stdio through ProverOpts. (#506)\n\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-04-10T13:10:58-07:00",
+          "tree_id": "d29ab453e3d09b2c0b67af3f894beb3ac7294f2c",
+          "url": "https://github.com/risc0/risc0/commit/87adc831b195cd52aac7c49bf9894568baa7d372"
+        },
+        "date": 1681157734256,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 462429895,
+            "range": "± 2552046",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 465225020,
+            "range": "± 4456004",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 113364937,
+            "range": "± 887556",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 115635270,
+            "range": "± 729204",
             "unit": "ns/iter"
           }
         ]
