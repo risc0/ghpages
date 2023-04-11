@@ -3,10 +3,160 @@
 
 <head>
     <title>Benchmarks</title>
+    <style>
+        table,
+        th {
+            font-size: 16px;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        textarea {
+            height: 800px;
+            width: 95%;
+            padding: 1%;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
+    <script>
+        var data = null;
+        function show_error(tcell) {
+            if (data === null) {
+                console.error("Clicked show_error before data loaded");
+            }
+            let crate_name = tcell.srcElement.parentElement.childNodes[0].innerText;
+
+            for (let profile of data.profiles) {
+                if (profile.name == crate_name) {
+                    var textarea = document.getElementById("error-log");
+                    var header = document.getElementById("error-log-name");
+                    textarea.value = profile.results.build_errors;
+                    header.innerText = `Crate: ${crate_name}`;
+                    return;
+                }
+            }
+            console.error(`Failed to find name: ${crate_name}`);
+        }
+
+        async function fetch_json() {
+            return await fetch("profiles.json")
+                .then(res => res.json())
+                .then(out => {
+                    return out;
+                })
+                .catch(err => { console.error(err) });
+
+        }
+
+        const headers = ["name", "version", "status", "custom profile"];
+
+        async function render_results() {
+            data = await fetch_json();
+            var table = document.getElementById("result-table");
+            let thead = table.createTHead();
+            let hrow = thead.insertRow();
+
+            // Construct able header
+            for (const key of headers) {
+                let th = document.createElement("th");
+                let text = document.createTextNode(key);
+                th.appendChild(text);
+                hrow.appendChild(th);
+            }
+
+            var successes = 0;
+            var failed = 0;
+            var skipped = 0;
+            var customized = 0;
+            const total = data.profiles.length;
+
+            for (let profile of data.profiles) {
+                let row = table.insertRow();
+                for (key of headers) {
+                    var table_data = "";
+                    let cell = row.insertCell();
+                    switch (key) {
+                        case "name":
+                            table_data = profile.name;
+                            break;
+                        case "version":
+                            table_data = profile.version;
+                            break;
+                        case "status":
+                            table_data = profile.results.status;
+                            if (table_data == "Success") {
+                                successes++;
+                                cell.style.backgroundColor = "green";
+                            } else if (table_data == "Skipped") {
+                                skipped++;
+                                cell.style.backgroundColor = "yellow";
+                            } else {
+                                failed++;
+                                cell.onclick = show_error;
+                                cell.style.backgroundColor = "red";
+                            }
+                            break;
+                        case "custom profile":
+                            if (profile.customized) {
+                                table_data = "True";
+                                customized++;
+                            }
+                            break;
+                        default:
+                            console.error(`Unknown header key: ${key}`);
+                    }
+                    let text = document.createTextNode(table_data);
+                    cell.appendChild(text);
+                }
+            }
+            var summary_node = document.getElementById("res-summary");
+            var p_node = document.createElement("p");
+            summary_node.appendChild(p_node);
+
+            const success_rate = ((successes / total) * 100).toFixed(2);
+            const text_node = document.createTextNode(`Successes: ${successes}/${total} (${success_rate} %) | Skipped: ${skipped}/${total} | Failed: ${failed}/${total} | customized: ${customized}`);
+            p_node.appendChild(text_node);
+
+        }
+
+        (async () => {
+            await render_results();
+        })();
+    </script>
 
 </body>
+
+<h2>Crate Results</h2>
+<div id="results">
+    <div id="res-summary"></div>
+    <div class="result-holder">
+        <div class="column">
+            <table id="result-table"></table>
+        </div>
+        <div class="column">
+            <h4>Build Errors</h4>
+            <p id="error-log-name"></p>
+            <textarea id="error-log"> </textarea>
+        </div>
+    </div>
+
+</div>
 
 </html>
