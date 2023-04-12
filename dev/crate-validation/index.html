@@ -18,6 +18,12 @@
             width: 50%;
         }
 
+        .column-follow {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+        }
+
         /* Clear floats after the columns */
         .row:after {
             content: "";
@@ -30,6 +36,14 @@
             width: 95%;
             padding: 1%;
             border: none;
+        }
+
+        #search-input {
+            width: 80%;
+            font-size: 16px;
+            padding: 12px 20px 12px 12px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
         }
     </style>
 </head>
@@ -48,6 +62,7 @@
                     var textarea = document.getElementById("error-log");
                     var header = document.getElementById("error-log-name");
                     textarea.value = profile.results.build_errors;
+                    textarea.setAttribute("value", profile.results.build_errors);
                     header.innerText = `Crate: ${crate_name}`;
                     return;
                 }
@@ -136,6 +151,31 @@
 
         }
 
+        function search_errors() {
+            const input_node = document.getElementById('search-input');
+            const search_str = input_node.value;
+
+            var result_str = "";
+            var counter = 0;
+
+            for (let profile of data.profiles) {
+                const err_str = profile.results.build_errors;
+                if (err_str === null || err_str.length == 0) {
+                    continue;
+                }
+
+                if (err_str.includes(search_str)) {
+                    result_str += profile.name + "\n";
+                    counter++;
+                }
+            }
+
+            result_str = `Found: ${counter} crates matching:\n` + result_str;
+            var textarea = document.getElementById("error-log");
+            textarea.value = result_str;
+            textarea.setAttribute("value", result_str);
+        }
+
         (async () => {
             await render_results();
         })();
@@ -151,9 +191,13 @@
             <table id="result-table"></table>
         </div>
         <div class="column">
-            <h4>Build Errors</h4>
-            <p id="error-log-name"></p>
-            <textarea id="error-log"> </textarea>
+            <div class="column-follow">
+                <input type="text" id="search-input" onkeyup="search_errors()"
+                    placeholder="Exact string match in build errors">
+                <h4>Build Errors</h4>
+                <p id="error-log-name"></p>
+                <textarea id="error-log"> </textarea>
+            </div>
         </div>
     </div>
 
