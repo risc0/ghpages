@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681166162312,
+  "lastUpdate": 1681408203483,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -2971,6 +2971,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 112646958,
             "range": "± 769905",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "millspaugh.andrew@gmail.com",
+            "name": "Andrew Millspaugh",
+            "username": "spaugh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b83c08d5da7838d1f3b0717e8d123e0daeea94f7",
+          "message": "Add serde derives to MemoryImage (#511)",
+          "timestamp": "2023-04-13T10:46:50-07:00",
+          "tree_id": "17bf0062987b13b67220bb0be2c0364170b6ce9b",
+          "url": "https://github.com/risc0/risc0/commit/b83c08d5da7838d1f3b0717e8d123e0daeea94f7"
+        },
+        "date": 1681408201434,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1604618791,
+            "range": "± 34984304",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1593510083,
+            "range": "± 7695622",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 112976645,
+            "range": "± 587848",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 114947083,
+            "range": "± 622454",
             "unit": "ns/iter"
           }
         ]
