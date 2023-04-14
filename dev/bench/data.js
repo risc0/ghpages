@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681434427834,
+  "lastUpdate": 1681434912583,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -9159,6 +9159,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 329509998,
             "range": "± 4001589",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f26d1a7db3fbbd24469df447e4b7c24646e5df75",
+          "message": "Delete github-action-benchmark repo directory (#512)\n\nAttempt to fix bench_trendworkflows.",
+          "timestamp": "2023-04-13T18:02:58-07:00",
+          "tree_id": "d4d0b796f272a26e9174600803cccc3ff8e56c7d",
+          "url": "https://github.com/risc0/risc0/commit/f26d1a7db3fbbd24469df447e4b7c24646e5df75"
+        },
+        "date": 1681434910474,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2305225645,
+            "range": "± 18841906",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2310254959,
+            "range": "± 11591837",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 329790163,
+            "range": "± 1156800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 340670824,
+            "range": "± 3993942",
             "unit": "ns/iter"
           }
         ]
