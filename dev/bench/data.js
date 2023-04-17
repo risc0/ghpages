@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681773607448,
+  "lastUpdate": 1681773711177,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -9447,6 +9447,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 336009003,
             "range": "± 5751751",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66b7ee4f09d645810388fec0a751b8d466008913",
+          "message": "Document Session and Segment (#509)\n\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-04-17T16:16:12-07:00",
+          "tree_id": "69709df9db13736a8aaf4156ee8294734ca21483",
+          "url": "https://github.com/risc0/risc0/commit/66b7ee4f09d645810388fec0a751b8d466008913"
+        },
+        "date": 1681773710168,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 2285624354,
+            "range": "± 23485884",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 2276698646,
+            "range": "± 8872135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 323664057,
+            "range": "± 2963536",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 333330901,
+            "range": "± 6011790",
             "unit": "ns/iter"
           }
         ]
