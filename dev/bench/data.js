@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681851041034,
+  "lastUpdate": 1681851101819,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -6473,6 +6473,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 339151946,
             "range": "± 12030660",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "909214982650666c03159e9bad9d2ee90d5e2a46",
+          "message": "Added templ_subdir flag to cargo risczero new (#517)\n\n* Adds additional flags to cargo risczero new for sub directory selection\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-04-18T13:47:26-07:00",
+          "tree_id": "0eddae9f17a96b6724120e63f89bbc91caf14e8d",
+          "url": "https://github.com/risc0/risc0/commit/909214982650666c03159e9bad9d2ee90d5e2a46"
+        },
+        "date": 1681851100572,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 892714557,
+            "range": "± 36669916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 852346275,
+            "range": "± 49798920",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 342222352,
+            "range": "± 8545750",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 348285376,
+            "range": "± 7900066",
             "unit": "ns/iter"
           }
         ]
