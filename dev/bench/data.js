@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681831829947,
+  "lastUpdate": 1681831921339,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -6377,6 +6377,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 342715234,
             "range": "± 17548593",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bdb811ab9a3f43f7cb589bfeb25df9aebef95f6f",
+          "message": "Add additional sanity checking to the ELF parser (#515)\n\n* Add bounds checking for elf parser.",
+          "timestamp": "2023-04-18T08:27:20-07:00",
+          "tree_id": "c63a2cdbb402d7e57e127349c5303cb322bd7e6b",
+          "url": "https://github.com/risc0/risc0/commit/bdb811ab9a3f43f7cb589bfeb25df9aebef95f6f"
+        },
+        "date": 1681831919951,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 907586304,
+            "range": "± 61026565",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 821422556,
+            "range": "± 53478727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 338787465,
+            "range": "± 5603727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 339151946,
+            "range": "± 12030660",
             "unit": "ns/iter"
           }
         ]
