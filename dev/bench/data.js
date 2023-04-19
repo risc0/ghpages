@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681921369171,
+  "lastUpdate": 1681922377172,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10023,6 +10023,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1417214802,
             "range": "± 4378537",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f6a2301cbb407b8f468d71f8e4582dab6bb9ef4",
+          "message": "Revive profiler, add docs, cleanups (#518)",
+          "timestamp": "2023-04-19T09:17:54-07:00",
+          "tree_id": "5fa93c08b0b0d0020bd8e7cfcfb6296e9094a930",
+          "url": "https://github.com/risc0/risc0/commit/1f6a2301cbb407b8f468d71f8e4582dab6bb9ef4"
+        },
+        "date": 1681922376101,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 6278595211,
+            "range": "± 67460491",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 6232337047,
+            "range": "± 64664042",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1424402891,
+            "range": "± 2827721",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1431318810,
+            "range": "± 3838914",
             "unit": "ns/iter"
           }
         ]
