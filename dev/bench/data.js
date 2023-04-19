@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681851144449,
+  "lastUpdate": 1681865355879,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12377,6 +12377,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 115641020,
             "range": "± 597738",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e60c27bd5f9c17612a8a5dc65f2baf7f299277e",
+          "message": "Implementation of new API, part 2 (#514)",
+          "timestamp": "2023-04-18T17:45:57-07:00",
+          "tree_id": "df4dc524cd18f68b343346a17f8492e8bb442a29",
+          "url": "https://github.com/risc0/risc0/commit/0e60c27bd5f9c17612a8a5dc65f2baf7f299277e"
+        },
+        "date": 1681865354392,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1473202854,
+            "range": "± 10031905",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1484563145,
+            "range": "± 8124033",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 685764041,
+            "range": "± 663409",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 687459499,
+            "range": "± 1937488",
             "unit": "ns/iter"
           }
         ]
