@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1682047170984,
+  "lastUpdate": 1682047790587,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10167,6 +10167,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1431318810,
             "range": "± 3838914",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "27f6d42f1c21a284ae61ba887d2361e91c37eee9",
+          "message": "Replace default_hal with default_prover (#520)",
+          "timestamp": "2023-04-21T03:15:26Z",
+          "tree_id": "c17e010db9118080ef0f70466bdfea7af2b4dfa4",
+          "url": "https://github.com/risc0/risc0/commit/27f6d42f1c21a284ae61ba887d2361e91c37eee9"
+        },
+        "date": 1682047789469,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 6242751287,
+            "range": "± 71118159",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 6173000964,
+            "range": "± 36272023",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1414654480,
+            "range": "± 17941230",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1419886150,
+            "range": "± 17769380",
             "unit": "ns/iter"
           }
         ]
