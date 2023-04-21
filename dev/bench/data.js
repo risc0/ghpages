@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1682105467957,
+  "lastUpdate": 1682105681902,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10263,6 +10263,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1419886150,
             "range": "± 17769380",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6fb72df1284c0cf0a516dd87af193256d1baec81",
+          "message": "Poseidon 254 (#524)\n\nThis adds experimental support for a different version of Poseidon which is efficient to use inside SNARKs used on ETH as a step in building a STARK -> SNARK recursion. It is largely untested, but should have no impact on the normal code path.",
+          "timestamp": "2023-04-21T12:27:17-07:00",
+          "tree_id": "f13644889c441abcd1ea8250924bcf41666be102",
+          "url": "https://github.com/risc0/risc0/commit/6fb72df1284c0cf0a516dd87af193256d1baec81"
+        },
+        "date": 1682105680769,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 6242527564,
+            "range": "± 47322345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 6232952400,
+            "range": "± 48609933",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1445922455,
+            "range": "± 18203952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1462391294,
+            "range": "± 7232018",
             "unit": "ns/iter"
           }
         ]
