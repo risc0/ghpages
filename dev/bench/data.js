@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1682114072851,
+  "lastUpdate": 1682114082169,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10503,6 +10503,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 1462324064,
             "range": "± 3529213",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4ce2f357f5268d75c44de44cbd85291a68f2b4c",
+          "message": "Added index to Segment / SegmentReceipt (#525)\n\n* Added index to Segment / SegmentReceipt",
+          "timestamp": "2023-04-21T14:47:46-07:00",
+          "tree_id": "a933c1b0be7c9f5b4bc2cfe882f2d3740bb7691f",
+          "url": "https://github.com/risc0/risc0/commit/d4ce2f357f5268d75c44de44cbd85291a68f2b4c"
+        },
+        "date": 1682114081069,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 6202952737,
+            "range": "± 42961856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 6165384505,
+            "range": "± 67460980",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 1451899534,
+            "range": "± 3129152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 1463660259,
+            "range": "± 2260347",
             "unit": "ns/iter"
           }
         ]
