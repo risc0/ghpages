@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1682107550012,
+  "lastUpdate": 1682107696823,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -13193,6 +13193,54 @@ window.BENCHMARK_DATA = {
             "name": "fib/200/run",
             "value": 693879812,
             "range": "± 2743965",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "millspaugh.andrew@gmail.com",
+            "name": "Andrew Millspaugh",
+            "username": "spaugh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "145d0da79fbb5c67ff21d04d4d7bdc04cceab768",
+          "message": "Add Clone derive to Segment (#523)\n\nAdding Clone derive to Segment for use on Bonsai.",
+          "timestamp": "2023-04-21T20:01:41Z",
+          "tree_id": "b8cdd3dad1a03387fa1f2b2b14227f69854c1f4a",
+          "url": "https://github.com/risc0/risc0/commit/145d0da79fbb5c67ff21d04d4d7bdc04cceab768"
+        },
+        "date": 1682107695464,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/proof",
+            "value": 1484231395,
+            "range": "± 3249932",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/proof",
+            "value": 1483266562,
+            "range": "± 5832543",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/run",
+            "value": 691049000,
+            "range": "± 1773304",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/200/run",
+            "value": 694603416,
+            "range": "± 1576019",
             "unit": "ns/iter"
           }
         ]
