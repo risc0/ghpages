@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1682964675926,
+  "lastUpdate": 1682965079529,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11223,6 +11223,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 23236433673,
             "range": "± 129301905",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "75a85a85c9b2dd0382acaa60839eda2183d739f0",
+          "message": "Change to RISC-V circuit semantics in advance of recursion predicates\n\nThis commit makes a number of changes to make the RISC-V circuit compliant with it's description in the recursion RFC and fixes some potential sources of bugs.\r\n1) Update the circuit to a new version, which \r\n  a) outputs the the full system exit code, and add a user exit code \r\n  b) Makes the output process atomic (part of halt) by doing it during 2 additional reset cycles\r\n  c) Adds an 'input' global and provides a new system call to access it (replacing the output  call)\r\n2) Make the requires updates to the rust zkvm code\r\n3) Correctly resets the journal commitment on pause\r\n4) Update the riscv tests (adding one instruction to set output, which is not required)",
+          "timestamp": "2023-05-01T10:48:51-07:00",
+          "tree_id": "3280fda6433d2b3bed5d2c39f226cd0ba002de74",
+          "url": "https://github.com/risc0/risc0/commit/75a85a85c9b2dd0382acaa60839eda2183d739f0"
+        },
+        "date": 1682965078499,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 1447724862,
+            "range": "± 8500550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 1455330504,
+            "range": "± 3237767",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 1597203366,
+            "range": "± 2505602",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5816956358,
+            "range": "± 52734668",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5892395825,
+            "range": "± 122196536",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 22122080932,
+            "range": "± 161655379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7224912753,
+            "range": "± 129665425",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7307243564,
+            "range": "± 90699118",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 23578955150,
+            "range": "± 194080840",
             "unit": "ns/iter"
           }
         ]
