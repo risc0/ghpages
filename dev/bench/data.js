@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683139067712,
+  "lastUpdate": 1683147023965,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -7673,6 +7673,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 5582930275,
             "range": "± 239444035",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "602ac572be192cf86526838cb2fcf3ae4c6983e7",
+          "message": "Added libm externs to zkvm guest (#543)\n\n* Added libm extern wrappers directly in to guest module\r\n* added tests for libm to ensure things link correctly\r\n* removed old externc-libm workarounds from examples.",
+          "timestamp": "2023-05-03T13:43:30-07:00",
+          "tree_id": "fe28594b957ecabaf5f34e34af0a9d9b1737424b",
+          "url": "https://github.com/risc0/risc0/commit/602ac572be192cf86526838cb2fcf3ae4c6983e7"
+        },
+        "date": 1683147022673,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 295287646,
+            "range": "± 1323212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 304630862,
+            "range": "± 3940980",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 415100008,
+            "range": "± 4203141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1460362491,
+            "range": "± 187173936",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1453093018,
+            "range": "± 162514674",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4410496389,
+            "range": "± 465503569",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1771098920,
+            "range": "± 123363281",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1752638438,
+            "range": "± 112496958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4788565292,
+            "range": "± 81402421",
             "unit": "ns/iter"
           }
         ]
