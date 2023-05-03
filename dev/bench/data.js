@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683138532799,
+  "lastUpdate": 1683139067712,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11457,6 +11457,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 23578955150,
             "range": "± 194080840",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a755c93f43cda2bf6c6087f9c04a5f40389bd32e",
+          "message": "serde: add support to serialize and deserialize 32 bit and 64 bit floating point values (#545)\n\n* serde: add support for f32 and f64",
+          "timestamp": "2023-05-03T18:11:51Z",
+          "tree_id": "2f9e5a66c7741321fb66b1a7310bc7070235b6c1",
+          "url": "https://github.com/risc0/risc0/commit/a755c93f43cda2bf6c6087f9c04a5f40389bd32e"
+        },
+        "date": 1683139066647,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 1431626411,
+            "range": "± 4274645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 1450109358,
+            "range": "± 6285560",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 1604971808,
+            "range": "± 1762445",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5739117132,
+            "range": "± 127037210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5774969357,
+            "range": "± 50114977",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21930172495,
+            "range": "± 128908293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7185184822,
+            "range": "± 75809177",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7240365108,
+            "range": "± 69694140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 23510702768,
+            "range": "± 126029337",
             "unit": "ns/iter"
           }
         ]
