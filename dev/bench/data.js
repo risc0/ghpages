@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683148229748,
+  "lastUpdate": 1683150931084,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -7829,6 +7829,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4788565292,
             "range": "± 81402421",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2ee4d20a829c8c13fcd409c1c83506dc76e2b2e4",
+          "message": "Always provide risc0_zkvm::guest module for easier analyzing, even when not on target=zkvm (#546)\n\n* Always provide risc0_zkvm::guest module for easier analyzing, even when not on target=zkvm\r\n\r\n* This allows rust-analyzer to analyze guest code without having to configure it to cross compile for the zkvm target.\r\n* Fixed flaky integration test by remapping absolute pathnames to relative pathnames when compiling the guest\r\n\r\n* Added vscode settings for linkedProjects\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Parker Thompson <parker@risczero.com>",
+          "timestamp": "2023-05-03T21:40:30Z",
+          "tree_id": "ec184080d906f6d944c97c8997144346385be4bf",
+          "url": "https://github.com/risc0/risc0/commit/2ee4d20a829c8c13fcd409c1c83506dc76e2b2e4"
+        },
+        "date": 1683150929872,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 289784099,
+            "range": "± 3819786",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 363581062,
+            "range": "± 5857809",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 471666247,
+            "range": "± 6341705",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1555826455,
+            "range": "± 114646736",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1563553844,
+            "range": "± 126571229",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4804894660,
+            "range": "± 368057995",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1756851033,
+            "range": "± 55413949",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1878562833,
+            "range": "± 151452403",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 5255971212,
+            "range": "± 318965986",
             "unit": "ns/iter"
           }
         ]
