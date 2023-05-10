@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683708721048,
+  "lastUpdate": 1683708840394,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -3967,6 +3967,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 16242193145,
             "range": "± 144429339",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0f8ce3aa88df84d7a5613b2fa58c16a6a61d224",
+          "message": "Fix executor by accounting for extra cycles and patch continuations test for CI (#556)",
+          "timestamp": "2023-05-10T01:41:13-07:00",
+          "tree_id": "873928e6daaf4f6c69b1906cef09eaa3c539b87b",
+          "url": "https://github.com/risc0/risc0/commit/a0f8ce3aa88df84d7a5613b2fa58c16a6a61d224"
+        },
+        "date": 1683708838885,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 685880145,
+            "range": "± 1592673",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 691765583,
+            "range": "± 1096606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 754409770,
+            "range": "± 871129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3774413416,
+            "range": "± 82211735",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3768407228,
+            "range": "± 49553095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15362001583,
+            "range": "± 60882618",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4416280416,
+            "range": "± 76428988",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4498091124,
+            "range": "± 46900595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 16028395374,
+            "range": "± 96637109",
             "unit": "ns/iter"
           }
         ]
