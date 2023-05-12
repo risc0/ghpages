@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683925808295,
+  "lastUpdate": 1683932222211,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8609,6 +8609,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 6081421458,
             "range": "± 44032623",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a10b511c7ebe1fc48cb89398380616a87407e5b2",
+          "message": "Store memory image as a btree of pages. (#561)\n\nThis gives us significant performance gains in both memory usage and run time.\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-05-12T22:42:50Z",
+          "tree_id": "46533952222dc8b66ee7918d12d0816ac891c927",
+          "url": "https://github.com/risc0/risc0/commit/a10b511c7ebe1fc48cb89398380616a87407e5b2"
+        },
+        "date": 1683932221243,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21359404,
+            "range": "± 133303",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 41092694,
+            "range": "± 199223",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 242447466,
+            "range": "± 2612996",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2284160214,
+            "range": "± 11157319",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2168595364,
+            "range": "± 20927359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 6592768811,
+            "range": "± 52987655",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2030348468,
+            "range": "± 31109723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2024076851,
+            "range": "± 41975323",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 6774429489,
+            "range": "± 45455699",
             "unit": "ns/iter"
           }
         ]
