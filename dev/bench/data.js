@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683933363136,
+  "lastUpdate": 1684106756520,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -16913,6 +16913,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3457463812,
             "range": "± 6243121",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "109624900+3lkn@users.noreply.github.com",
+            "name": "3lkn",
+            "username": "3lkn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7a4b7d78300a4682b01c1aec1da43104ce66ebe",
+          "message": "Adding feature flag documentation to crate READMEs (#521)\n\nAdds feature flag documentation to top-level README and to `risc0-circuit-rv32im`, `risc0-zkp`, and `risc0-zkvm` crates\r\n\r\n\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-05-14T16:17:23-07:00",
+          "tree_id": "ffc573d85abe60ee9f6c6b03019bf9923e340997",
+          "url": "https://github.com/risc0/risc0/commit/b7a4b7d78300a4682b01c1aec1da43104ce66ebe"
+        },
+        "date": 1684106755119,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 28367540,
+            "range": "± 58526",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 37314694,
+            "range": "± 104243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 128986738,
+            "range": "± 341829",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 849779521,
+            "range": "± 6806740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 864913104,
+            "range": "± 4960916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3331632916,
+            "range": "± 11433013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 892459937,
+            "range": "± 6545001",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 931262104,
+            "range": "± 4371008",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3455183708,
+            "range": "± 15907561",
             "unit": "ns/iter"
           }
         ]
