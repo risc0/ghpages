@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684446133695,
+  "lastUpdate": 1684449963454,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17849,6 +17849,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3495479771,
             "range": "± 19421230",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "873c9f8f1c261fa1f1e61b995d24341cc89df254",
+          "message": "Make `sys_sha_buffer` available as extern and add RustCrypto sha2 patching example (#567)\n\nMake `sys_sha_buffer` available as extern and add RustCrypto sha2 patching example (#567)\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-05-18T22:41:33Z",
+          "tree_id": "e1cbbfbc1f571173263d6f9a7a40957d2dc4a414",
+          "url": "https://github.com/risc0/risc0/commit/873c9f8f1c261fa1f1e61b995d24341cc89df254"
+        },
+        "date": 1684449960932,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 28196324,
+            "range": "± 21761",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 37465943,
+            "range": "± 98533",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 129120150,
+            "range": "± 220013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 852213646,
+            "range": "± 4670458",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 869851333,
+            "range": "± 5638938",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3342254666,
+            "range": "± 9530732",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 900875021,
+            "range": "± 7736419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 930535875,
+            "range": "± 4642762",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3469032833,
+            "range": "± 12979411",
             "unit": "ns/iter"
           }
         ]
