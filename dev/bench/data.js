@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684455808088,
+  "lastUpdate": 1684456078889,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -14265,6 +14265,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21359727267,
             "range": "± 79785437",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9497776ad378bb13e7cc8efb25ef4a734b745a03",
+          "message": "Add error string to opcode decode failure in Executor (#571)\n\n Add error string to opcode decode failure in Executor #571",
+          "timestamp": "2023-05-19T00:12:47Z",
+          "tree_id": "edb1797459573df1c9c9ffe71aeff5f1ed4ff07d",
+          "url": "https://github.com/risc0/risc0/commit/9497776ad378bb13e7cc8efb25ef4a734b745a03"
+        },
+        "date": 1684456077799,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 56392468,
+            "range": "± 812052",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 77585710,
+            "range": "± 429782",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 293527101,
+            "range": "± 1415233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5104530690,
+            "range": "± 37968263",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5144726705,
+            "range": "± 19458550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21316832084,
+            "range": "± 102639950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5145262771,
+            "range": "± 44214471",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5216271781,
+            "range": "± 24915669",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21611159654,
+            "range": "± 129752745",
             "unit": "ns/iter"
           }
         ]
