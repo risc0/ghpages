@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684456078889,
+  "lastUpdate": 1684613846578,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -9545,6 +9545,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4143663024,
             "range": "± 62810681",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71f6571239816f617e5461ae2670067f7083a8f9",
+          "message": "Workaround to fix self-hosted runners (#577)",
+          "timestamp": "2023-05-20T13:12:42-07:00",
+          "tree_id": "e720c8391c641dbdbbcd6de6b202f0621f676308",
+          "url": "https://github.com/risc0/risc0/commit/71f6571239816f617e5461ae2670067f7083a8f9"
+        },
+        "date": 1684613845278,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16347079,
+            "range": "± 488187",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 31208904,
+            "range": "± 526777",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 182959416,
+            "range": "± 2854456",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 892560622,
+            "range": "± 7743805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 929341996,
+            "range": "± 15655792",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3456933966,
+            "range": "± 39004240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 929996798,
+            "range": "± 12184799",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 970709626,
+            "range": "± 10248974",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3640320541,
+            "range": "± 17732839",
             "unit": "ns/iter"
           }
         ]
