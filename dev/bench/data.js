@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684616052811,
+  "lastUpdate": 1684618294307,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -9857,6 +9857,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3592236844,
             "range": "± 30662059",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "distinct": true,
+          "id": "0415638f001e27f2c433080c95f068e20234981c",
+          "message": "Minor README updates",
+          "timestamp": "2023-05-20T14:26:04-07:00",
+          "tree_id": "90a2c2e387347c8bd2431124e8b939f380564567",
+          "url": "https://github.com/risc0/risc0/commit/0415638f001e27f2c433080c95f068e20234981c"
+        },
+        "date": 1684618293047,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16192895,
+            "range": "± 532802",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 30051765,
+            "range": "± 549765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 173484226,
+            "range": "± 3502928",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1035961650,
+            "range": "± 33404298",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1228560879,
+            "range": "± 105851143",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3781128448,
+            "range": "± 104702377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1153376806,
+            "range": "± 124699072",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1165417840,
+            "range": "± 110147095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4050158412,
+            "range": "± 123149560",
             "unit": "ns/iter"
           }
         ]
