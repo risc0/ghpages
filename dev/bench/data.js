@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684796950245,
+  "lastUpdate": 1684797010080,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -15435,6 +15435,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21313498094,
             "range": "± 121588640",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e5221ce381fb9092f6a9c510250945ea8645480a",
+          "message": "Simplify guest linker configuration (#559)\n\n* Simplify guest linker configuration\r\n\r\nRemove custom linker script in favor of -Ttext= linkeer arg\r\nStack pointer and .text are now based on values in memory.rs instead of a separate linker script.  .data and .bss follow .text.\r\nWhen using \"std\" on the guest, we no longer need to include #![no_main] or risc0_zkvm::entry!(...); just a standard \"pub fn main\" will do. (Unfortunately we still have to force inclusion of the risc0 zkvm crate with \"use risc0_zkvm as _\" if we don't use anything else from it)\r\n\r\n* Add comments with links to how the linker works\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2023-05-22T22:54:29Z",
+          "tree_id": "c32b7572eca8689c3735f489fe3434176a70a5a8",
+          "url": "https://github.com/risc0/risc0/commit/e5221ce381fb9092f6a9c510250945ea8645480a"
+        },
+        "date": 1684797008912,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 57744571,
+            "range": "± 1179815",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 79822868,
+            "range": "± 744284",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 306598005,
+            "range": "± 2814943",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5091020833,
+            "range": "± 52833219",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5108699905,
+            "range": "± 17981380",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21120888530,
+            "range": "± 101513320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5120415180,
+            "range": "± 18090947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5196415072,
+            "range": "± 28519334",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21449377101,
+            "range": "± 148565060",
             "unit": "ns/iter"
           }
         ]
