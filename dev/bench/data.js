@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684888948197,
+  "lastUpdate": 1684889141252,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20111,6 +20111,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3484356229,
             "range": "± 6311029",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "109624900+3lkn@users.noreply.github.com",
+            "name": "3lkn",
+            "username": "3lkn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2d04249433367beda77de4c3af94bafc2dbda8dd",
+          "message": "Adding a few Rust doc examples to Executor and ExecutorEnv (#572)\n\n* adding examples to ExecutorEnv and Executor\n\n* Update risc0/zkvm/src/exec/env.rs\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\n\n* Update risc0/zkvm/src/exec/env.rs\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\n\n* Update risc0/zkvm/src/exec/mod.rs\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\n\n* updating executor/executor env doc examples after code review\n\n* Update risc0/zkvm/src/exec/env.rs\n\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-05-24T00:37:14Z",
+          "tree_id": "b575f8e37b2710cacfee8059d45402ed32db11c1",
+          "url": "https://github.com/risc0/risc0/commit/2d04249433367beda77de4c3af94bafc2dbda8dd"
+        },
+        "date": 1684889139813,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 28923505,
+            "range": "± 51309",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39019159,
+            "range": "± 108559",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 140329141,
+            "range": "± 98607",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 850687687,
+            "range": "± 3587170",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 868578646,
+            "range": "± 3916706",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3322349729,
+            "range": "± 11762194",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 899567145,
+            "range": "± 6395497",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 931009729,
+            "range": "± 5892662",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3466818937,
+            "range": "± 11707398",
             "unit": "ns/iter"
           }
         ]
