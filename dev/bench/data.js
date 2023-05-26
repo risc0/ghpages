@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1685126538283,
+  "lastUpdate": 1685127073668,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -16293,6 +16293,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21487498603,
             "range": "± 160696066",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a8d4c29cba234d551487feab8b8ae101482e343",
+          "message": "Update criterion requirement from 0.4 to 0.5 (#586)\n\nUpdates the requirements on [criterion](https://github.com/bheisler/criterion.rs) to permit the latest version.\r\n- [Changelog](https://github.com/bheisler/criterion.rs/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/bheisler/criterion.rs/compare/0.4.0...0.5.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: criterion\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2023-05-26T18:31:23Z",
+          "tree_id": "1da6d9009f12986e1d4d9ed81abbeee4717473fc",
+          "url": "https://github.com/risc0/risc0/commit/3a8d4c29cba234d551487feab8b8ae101482e343"
+        },
+        "date": 1685127072506,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 56762366,
+            "range": "± 535533",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 79347814,
+            "range": "± 2167036",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 304590208,
+            "range": "± 1052973",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5080415941,
+            "range": "± 49671758",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5123495138,
+            "range": "± 45643096",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21176457764,
+            "range": "± 140918385",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5129498223,
+            "range": "± 17932326",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5198056798,
+            "range": "± 13527525",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21421004147,
+            "range": "± 167070138",
             "unit": "ns/iter"
           }
         ]
