@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1685346298137,
+  "lastUpdate": 1685346515782,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21359,6 +21359,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3471479354,
             "range": "± 11521607",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2418646+hashcashier@users.noreply.github.com",
+            "name": "Rami",
+            "username": "hashcashier"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c529b64006382d06024ca5862297b18a77a895c",
+          "message": "Enable feature-gated programmatic access to `methods.rs` contents (#585)\n\n* guest-list feature\r\n\r\n* fix formatting\r\n\r\n* fix linebreak and whitespace\r\n\r\n* extra new lines in output\r\n\r\n* Update risc0/build/src/lib.rs\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-05-29T07:39:56Z",
+          "tree_id": "3ac951203b0b02ce7abc342218c82a1b3b6cea49",
+          "url": "https://github.com/risc0/risc0/commit/7c529b64006382d06024ca5862297b18a77a895c"
+        },
+        "date": 1685346513250,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 29084044,
+            "range": "± 73238",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 38941275,
+            "range": "± 71484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 138135882,
+            "range": "± 149176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 852357625,
+            "range": "± 4693454",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 871035104,
+            "range": "± 3573473",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3347703041,
+            "range": "± 6737184",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 904971333,
+            "range": "± 7721325",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 931242604,
+            "range": "± 2980608",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3489286104,
+            "range": "± 13992854",
             "unit": "ns/iter"
           }
         ]
