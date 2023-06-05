@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1685593667460,
+  "lastUpdate": 1686009220794,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21905,6 +21905,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3471696917,
             "range": "± 7100049",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc33ed9f343eaaf2d52770d0d72713b151c75cc2",
+          "message": "Add test vectors and Make rust implementation of IOP match cirgen implementation (#599)",
+          "timestamp": "2023-06-05T23:49:05Z",
+          "tree_id": "9b783988bfa231e8d75b039e0d2eed0f9d45c720",
+          "url": "https://github.com/risc0/risc0/commit/fc33ed9f343eaaf2d52770d0d72713b151c75cc2"
+        },
+        "date": 1686009219081,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 29171953,
+            "range": "± 78682",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39315757,
+            "range": "± 195850",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 143377631,
+            "range": "± 462710",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 856047437,
+            "range": "± 3760535",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 876675270,
+            "range": "± 5181216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3344534000,
+            "range": "± 7128975",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 906803292,
+            "range": "± 5396983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 937269333,
+            "range": "± 5268079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3499257062,
+            "range": "± 15346934",
             "unit": "ns/iter"
           }
         ]
