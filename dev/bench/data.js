@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686012160578,
+  "lastUpdate": 1686012473705,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -5683,6 +5683,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15410081708,
             "range": "± 205267663",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "396be373bf6e2f6e997c8a4ea473fee125107c8f",
+          "message": "Rebuild on CUDA related env vars (#605)\n\nTriggers rebuilds for couple more env vars if they change between\r\ninvokes of the kernel build",
+          "timestamp": "2023-06-05T17:37:19-07:00",
+          "tree_id": "aa37e37deda2f047a3466e363dfe21c0d14ad54e",
+          "url": "https://github.com/risc0/risc0/commit/396be373bf6e2f6e997c8a4ea473fee125107c8f"
+        },
+        "date": 1686012472112,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 29137028,
+            "range": "± 129170",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39522454,
+            "range": "± 216197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 141600796,
+            "range": "± 1015545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3678019166,
+            "range": "± 48682079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3711089562,
+            "range": "± 83027900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15206966042,
+            "range": "± 91132397",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3763605521,
+            "range": "± 23023694",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3784790000,
+            "range": "± 44815060",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15413798604,
+            "range": "± 135814000",
             "unit": "ns/iter"
           }
         ]
