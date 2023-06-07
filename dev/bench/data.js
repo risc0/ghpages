@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686106705382,
+  "lastUpdate": 1686107320617,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17775,6 +17775,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21590331339,
             "range": "± 129512160",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2192af4b426526eb0f88248bbb8eddc7ce5ca2a9",
+          "message": "Publish Recursion Verifier (#603)\n\nThis change moves the recursion verifier from the private repository. This is\r\ndone by splitting the `CircuitDef` trait and adding files used by the recursion\r\nverifier.\r\n\r\nThe CircuitDef is a trait that is implemented by rust code generated from the\r\ncircuit for both the verifier and the prover. In order to split off the recursive\r\nverifier, we need to split this trait into two parts: one that is used in both the\r\nprover and the verifier and one that is used only in the prover. The former trait\r\ncalled `CircuitCoreDef` is implemented for the recursive verifier which requires\r\ngenerated rust files from the recursion circuit.",
+          "timestamp": "2023-06-07T02:44:31Z",
+          "tree_id": "a9fb25c72d15b572c0ace2f471a8394609cd5883",
+          "url": "https://github.com/risc0/risc0/commit/2192af4b426526eb0f88248bbb8eddc7ce5ca2a9"
+        },
+        "date": 1686107319467,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 59478751,
+            "range": "± 636246",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 81724233,
+            "range": "± 615044",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 326644535,
+            "range": "± 1365723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5109667092,
+            "range": "± 37912127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5121750148,
+            "range": "± 22449230",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21161046786,
+            "range": "± 71441008",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5140194921,
+            "range": "± 21305629",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5214318710,
+            "range": "± 33294199",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21398573988,
+            "range": "± 82153487",
             "unit": "ns/iter"
           }
         ]
