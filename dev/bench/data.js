@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686175694628,
+  "lastUpdate": 1686175881526,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23231,6 +23231,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3490243854,
             "range": "± 7670376",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e85c7e880c6741235a0c8e8bfd1c5562fc5e431",
+          "message": "recursion: fix compiler warning in guest (#614)\n\nadd `#[cfg(not(target_os = \"zkvm\"))]` to items that are not needed for guest compilation",
+          "timestamp": "2023-06-07T22:02:49Z",
+          "tree_id": "63444c4b35dce7e91ae2aab1d90c1abffc7de49e",
+          "url": "https://github.com/risc0/risc0/commit/4e85c7e880c6741235a0c8e8bfd1c5562fc5e431"
+        },
+        "date": 1686175879966,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 28891011,
+            "range": "± 113242",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39048088,
+            "range": "± 60985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 139571508,
+            "range": "± 423346",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 850230021,
+            "range": "± 4631868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 870229270,
+            "range": "± 5355241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3346598500,
+            "range": "± 8639306",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 908495083,
+            "range": "± 5629133",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 935470833,
+            "range": "± 3145051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3485962458,
+            "range": "± 8101534",
             "unit": "ns/iter"
           }
         ]
