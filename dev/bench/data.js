@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686242885673,
+  "lastUpdate": 1686242926013,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12041,6 +12041,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3744036108,
             "range": "± 41660474",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matthias.goergens@gmail.com",
+            "name": "Matthias Görgens",
+            "username": "matthiasgoergens"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72c9f8d81334b12e223910414db46bd7187dd848",
+          "message": "Fix typo (#613)",
+          "timestamp": "2023-06-08T16:43:26Z",
+          "tree_id": "70945cedf0cd1456aa98463e8a6cc12af3e2d235",
+          "url": "https://github.com/risc0/risc0/commit/72c9f8d81334b12e223910414db46bd7187dd848"
+        },
+        "date": 1686242924590,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 18144542,
+            "range": "± 609245",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 34796150,
+            "range": "± 953591",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 206153342,
+            "range": "± 2759818",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1058113430,
+            "range": "± 33378297",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1079521019,
+            "range": "± 41487987",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3801919679,
+            "range": "± 107038862",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1079073518,
+            "range": "± 40869775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1120849538,
+            "range": "± 32356666",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4072779739,
+            "range": "± 92520625",
             "unit": "ns/iter"
           }
         ]
