@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686633016473,
+  "lastUpdate": 1686633378607,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -24869,6 +24869,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3435562229,
             "range": "± 7990065",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f448fbd730b9aba8fab79ba6fd67549caddb85cf",
+          "message": "implement SessionReceipt trait (#616)\n\nThis pull request implements the `SessionReceipt` trait that is implemented by\r\n`SessionRollupReceipt` and `SessionFlatReceipt` (also known as the old\r\n`SessionReceipt`). This is useful because it allows the host code to call verify\r\nand to get the journal contents regardless of the concrete type of session\r\nreceipt. This trait is practical when a developer has a code base that uses\r\nbonsai resulting in a `SessionRollupReceipt` or from a local prover resulting in a\r\n`SessionFlatReceipt`.  Examples have been updated to use this new trait. The main\r\ndifference is to replace existing `receipt.journal` with `receipt.get_journal()`\r\nand `receipt.verify(XXXX_ID)` with `receipt.verify(XXXX_ID.into())`.",
+          "timestamp": "2023-06-13T05:05:10Z",
+          "tree_id": "b2caadff7b30c021a2ee2931744b0ede22f077cd",
+          "url": "https://github.com/risc0/risc0/commit/f448fbd730b9aba8fab79ba6fd67549caddb85cf"
+        },
+        "date": 1686633376968,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 29036126,
+            "range": "± 86731",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 35846918,
+            "range": "± 97563",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 104212948,
+            "range": "± 167261",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 852357167,
+            "range": "± 5095950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 871936229,
+            "range": "± 3553934",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3352997562,
+            "range": "± 10006034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 903886541,
+            "range": "± 5102883",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 929360104,
+            "range": "± 6247346",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3440344583,
+            "range": "± 11757498",
             "unit": "ns/iter"
           }
         ]
