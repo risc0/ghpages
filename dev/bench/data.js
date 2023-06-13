@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686694890616,
+  "lastUpdate": 1686695071992,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -25181,6 +25181,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3440344583,
             "range": "± 11757498",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7cbff2a0b6d781d7cb3e67af935db4234f13f59a",
+          "message": "Add ECDSA verification example using bigint acceleration support (#590)\n\nThis PR adds an ECDSA verification example, which shows how to use the patched k256 library to get accelerated signature verification on secp256k1 in the zkVM guest.\r\n\r\nAs a dependency for the k256 patch, it also updates the allocator to support alignments that are larger than a word. (In particular, the constant-time lookup table implementation uses a 1024-byte alignment). risc0/rust#11 is related to this PR. Based on work by @shkoo.\r\n\r\nAs a drive-by change, this PR includes an additional check in the executor that execution did not previously end with ExitCode::Halted, which is a non-resumable state. I added this after running into this error by accident and having a hard time debugging it based on the errors I received.",
+          "timestamp": "2023-06-13T22:16:09Z",
+          "tree_id": "8d22cdb71a1532c9e515ca5012a2867ea35080fa",
+          "url": "https://github.com/risc0/risc0/commit/7cbff2a0b6d781d7cb3e67af935db4234f13f59a"
+        },
+        "date": 1686695070239,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 29315555,
+            "range": "± 67656",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 35543601,
+            "range": "± 90887",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 97259456,
+            "range": "± 1024185",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 848299812,
+            "range": "± 6331025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 870109416,
+            "range": "± 3467147",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3337561166,
+            "range": "± 17144986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 906533042,
+            "range": "± 8703452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 936917896,
+            "range": "± 7639116",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3432343458,
+            "range": "± 15614570",
             "unit": "ns/iter"
           }
         ]
