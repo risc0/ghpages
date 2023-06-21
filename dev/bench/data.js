@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687387972195,
+  "lastUpdate": 1687388078983,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -13289,6 +13289,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 5862514191,
             "range": "± 62247138",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6bf7ccb450961df4cb34406af44473a0a5f6808c",
+          "message": "Cleanup recursion structs (#632)\n\n* ReceiptMeta: use ExitCode instead of two u8s\r\n\r\nThis is a first step in merging ReceiptMeta and ReceiptMetadata to a single\r\nstruct. The next change will remove ReceiptMeta in favor of ReceiptMetadata\r\n\r\n* rename field in recursion::receipt::SystemState so it matches zkvm::receipt::SystemState\r\n\r\n* recursion: remove duplicate `SystemState` struct\r\n\r\nThis struct was duplicated in the private repo. Since there is no need for\r\ndupilcation, this struct has been removed.\r\n\r\n* Recursion: remove duplicate ReceiptMeta struct\r\n\r\nThis change removes the duplicated ReceiptMetadata struct and instead uses a\r\ncommon ReceiptMetadata struct in `risc0_zkvm::receipt`\r\n\r\n* Move `exit_code` funtions to `risc0_zkvm::receipt`\r\n\r\nThese functions can be useful in `risc0_zkvm::receipt` as well as the recursion\r\nmodule.\r\n\r\n* clean up use declarations\r\n\r\n* Fix documentation\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-06-21T22:48:27Z",
+          "tree_id": "8f8461038291162ade9c5cff0f58299f6e27311f",
+          "url": "https://github.com/risc0/risc0/commit/6bf7ccb450961df4cb34406af44473a0a5f6808c"
+        },
+        "date": 1687388077649,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21720852,
+            "range": "± 66526",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22159170,
+            "range": "± 101008",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 26866999,
+            "range": "± 70638",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1260544168,
+            "range": "± 5565179",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1299338691,
+            "range": "± 6326261",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 5060420664,
+            "range": "± 34108927",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1275462043,
+            "range": "± 2626267",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1325471390,
+            "range": "± 4590614",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 5096074772,
+            "range": "± 27369892",
             "unit": "ns/iter"
           }
         ]
