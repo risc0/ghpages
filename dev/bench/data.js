@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687615834764,
+  "lastUpdate": 1687726661786,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -26429,6 +26429,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3365341604,
             "range": "± 6430782",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d79ab62274aebe670b461ab06b8477953182972c",
+          "message": "Improve CUDA performance (#653)\n\n* Improve CUDA performance\r\n\r\n* Drop assumption of 256 block size",
+          "timestamp": "2023-06-25T16:48:58-04:00",
+          "tree_id": "3e33e2e53aad0982355d4ca90b1c71e419e0b3d9",
+          "url": "https://github.com/risc0/risc0/commit/d79ab62274aebe670b461ab06b8477953182972c"
+        },
+        "date": 1687726660221,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2773313,
+            "range": "± 80852",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2905189,
+            "range": "± 86110",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5027295,
+            "range": "± 72247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 851521437,
+            "range": "± 3303607",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 871574437,
+            "range": "± 3706247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3356174375,
+            "range": "± 6410813",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 872906458,
+            "range": "± 6089177",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 892056666,
+            "range": "± 4481566",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3329711833,
+            "range": "± 12369534",
             "unit": "ns/iter"
           }
         ]
