@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687748536966,
+  "lastUpdate": 1687749195103,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -13835,6 +13835,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4315408081,
             "range": "± 48036537",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a39561546dd5b54788b686afd125db687f40e84a",
+          "message": "Drop use of unified memory for CUDA (#654)\n\n* Drop use of unified memory for CUDA\r\n\r\n* Toggle for unified memory",
+          "timestamp": "2023-06-25T19:51:57-07:00",
+          "tree_id": "09e58e6c2630f4c7d714f3538793467099a07804",
+          "url": "https://github.com/risc0/risc0/commit/a39561546dd5b54788b686afd125db687f40e84a"
+        },
+        "date": 1687749193635,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5248338,
+            "range": "± 104268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5708612,
+            "range": "± 75665",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10350388,
+            "range": "± 95248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 944206640,
+            "range": "± 2603803",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 972859366,
+            "range": "± 1265448",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3515923409,
+            "range": "± 7460980",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 945761375,
+            "range": "± 3930313",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 980353405,
+            "range": "± 2236178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3529373008,
+            "range": "± 7921734",
             "unit": "ns/iter"
           }
         ]
