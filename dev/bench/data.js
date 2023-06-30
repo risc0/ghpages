@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1688148839105,
+  "lastUpdate": 1688150124359,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -14381,6 +14381,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7693247492,
             "range": "± 194615795",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a6b0e3c9d18c6e69bfa8235f04e1f92ddcaaf6c",
+          "message": "Update num-derive requirement from 0.3 to 0.4 (#663)\n\nUpdates the requirements on [num-derive](https://github.com/rust-num/num-derive) to permit the latest version.\r\n- [Changelog](https://github.com/rust-num/num-derive/blob/master/RELEASES.md)\r\n- [Commits](https://github.com/rust-num/num-derive/compare/num-derive-0.3.0...num-derive-0.4.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: num-derive\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2023-06-30T10:57:43-07:00",
+          "tree_id": "489d6b92cfd5ea9b3cfc8eca582da7a1a241fd75",
+          "url": "https://github.com/risc0/risc0/commit/3a6b0e3c9d18c6e69bfa8235f04e1f92ddcaaf6c"
+        },
+        "date": 1688150122895,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5295269,
+            "range": "± 114633",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5751749,
+            "range": "± 94542",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10408172,
+            "range": "± 123443",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 885221953,
+            "range": "± 2833818",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 924103315,
+            "range": "± 2348136",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3382123581,
+            "range": "± 8070410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 890429160,
+            "range": "± 2620361",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 928721485,
+            "range": "± 2940420",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3394084833,
+            "range": "± 5587489",
             "unit": "ns/iter"
           }
         ]
