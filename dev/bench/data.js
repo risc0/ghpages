@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1688597139620,
+  "lastUpdate": 1688597738010,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -7243,6 +7243,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15190742854,
             "range": "± 98616107",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ee4612dcb2fc5dd00dcb8631a4e75ad12abd5a1",
+          "message": "Receipt unification (#666)\n\nRefactor zkp and zkvm such that receipt types (SegmentReceipt and RollupReceipt) implements a Receipt trait which allows the SessionReceipt to hold segments or rollups.\r\n\r\nThis allows a receipt to optionally have a hash function name which is stamped at creation time. Later, a verifier can use this information to select the appropriate matching hash function.\r\n\r\nKey changes:\r\n\r\n* Adjust HashFn and Rng to be object-safe traits (which means removing generics in function singatures, and requiring a self receiver).\r\n* Add RngFactory to support creation of Rng\r\n* Adjust HashSuite to be a struct containing a trait-object of HashFn and Rng.\r\n* Adjust the Hal to replace HashSuite generics with the new struct.\r\n* Update prove and verify",
+          "timestamp": "2023-07-05T15:41:04-07:00",
+          "tree_id": "56da9a95063aad6f1f9984096c41bfd5be1e0e46",
+          "url": "https://github.com/risc0/risc0/commit/3ee4612dcb2fc5dd00dcb8631a4e75ad12abd5a1"
+        },
+        "date": 1688597736033,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2709851,
+            "range": "± 101696",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2849147,
+            "range": "± 46474",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 4985244,
+            "range": "± 50904",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3712274771,
+            "range": "± 52563021",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3719675229,
+            "range": "± 89136978",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15324642458,
+            "range": "± 143765463",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3731956791,
+            "range": "± 63068351",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3725492312,
+            "range": "± 58267659",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15308990374,
+            "range": "± 72190236",
             "unit": "ns/iter"
           }
         ]
