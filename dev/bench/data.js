@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1688938769696,
+  "lastUpdate": 1689024255478,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29159,6 +29159,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3350526583,
             "range": "± 13428461",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9487793b3c6da2a4554d725c578a5b8fdbfdc432",
+          "message": "zkVM: add remote proving by using the bonsai sdk (#677)\n\n* zkVM: add remote proving through the bonsai sdk\r\n\r\nThis change enables generating proofs remotely by using bonsai using the zkVM API.\r\nIn order to execute, add the following environment variables before running the\r\nhost code: BONSAI_API_KEY, BONSAI_API_URL. A new function `default_executor_from_elf` has been added to\r\ngenerate an executor if these environment variables are set.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-07-10T21:19:28Z",
+          "tree_id": "bfcd599647d4efdad9d025e6f9c367808ab5c6de",
+          "url": "https://github.com/risc0/risc0/commit/9487793b3c6da2a4554d725c578a5b8fdbfdc432"
+        },
+        "date": 1689024253945,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2714963,
+            "range": "± 91127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2966009,
+            "range": "± 87794",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5291337,
+            "range": "± 69545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 848588895,
+            "range": "± 4638901",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 867618729,
+            "range": "± 4546257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3324138896,
+            "range": "± 12354370",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 873603374,
+            "range": "± 8222237",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 892840020,
+            "range": "± 7249983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3335706833,
+            "range": "± 12664943",
             "unit": "ns/iter"
           }
         ]
