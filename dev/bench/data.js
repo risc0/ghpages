@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689037279795,
+  "lastUpdate": 1689037418503,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -15083,6 +15083,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3506608402,
             "range": "± 5182008",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "distinct": true,
+          "id": "789f0062ef14f7eeba976e4b62953ec9fd68b85b",
+          "message": "Update metadata for bonsai-sdk",
+          "timestamp": "2023-07-10T17:51:07-07:00",
+          "tree_id": "18d855c9b6256535d1f8a20c5c06d79104786a0e",
+          "url": "https://github.com/risc0/risc0/commit/789f0062ef14f7eeba976e4b62953ec9fd68b85b"
+        },
+        "date": 1689037417019,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5234922,
+            "range": "± 74280",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5711220,
+            "range": "± 82323",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10102569,
+            "range": "± 141932",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1259822734,
+            "range": "± 8420517",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1299027255,
+            "range": "± 5968338",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4423421775,
+            "range": "± 64321672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1299853818,
+            "range": "± 9380734",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1330356242,
+            "range": "± 11282881",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4468850094,
+            "range": "± 35555798",
             "unit": "ns/iter"
           }
         ]
