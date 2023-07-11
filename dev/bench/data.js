@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689025312759,
+  "lastUpdate": 1689036449451,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29471,6 +29471,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3335706833,
             "range": "± 12664943",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d69668db97f1fbd998bd2dde794cb42b38d759c9",
+          "message": "Revive the dual HAL (#678)",
+          "timestamp": "2023-07-11T00:42:50Z",
+          "tree_id": "c1fa2d3c4ec4a792749c2cb998d72926cc05b42b",
+          "url": "https://github.com/risc0/risc0/commit/d69668db97f1fbd998bd2dde794cb42b38d759c9"
+        },
+        "date": 1689036447436,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2702524,
+            "range": "± 128223",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3020907,
+            "range": "± 165216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 4972836,
+            "range": "± 164178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 849221333,
+            "range": "± 5927690",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 868151896,
+            "range": "± 2957526",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3345474250,
+            "range": "± 9270197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 879600500,
+            "range": "± 5957640",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 901585625,
+            "range": "± 6894894",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3346568250,
+            "range": "± 10779275",
             "unit": "ns/iter"
           }
         ]
