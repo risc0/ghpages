@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689134907500,
+  "lastUpdate": 1689182324044,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -30485,6 +30485,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3369510875,
             "range": "± 15488124",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6a357a6f1f56f24413a711819ea8e381271f2163",
+          "message": "cargo risczero: update README with reference to remote proving (#690)\n\nThe bonsai quick start guide refers to this documentation as one of 4 options\r\nfor using Bonsai. This README does not contain any mention of remote proving\r\nand could be confusing for users who wish to use cargo risczero to generate a\r\ntemplate for remote proving. Add a simple reference to remote proving to\r\nprovide additional clarity.",
+          "timestamp": "2023-07-12T17:13:57Z",
+          "tree_id": "a8340f0da81b5879901ef523ccc1d04219216a2c",
+          "url": "https://github.com/risc0/risc0/commit/6a357a6f1f56f24413a711819ea8e381271f2163"
+        },
+        "date": 1689182321750,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2693517,
+            "range": "± 116288",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2906433,
+            "range": "± 131557",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 4974632,
+            "range": "± 33666",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 848764396,
+            "range": "± 4124927",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 865711979,
+            "range": "± 4282405",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3340925583,
+            "range": "± 10584711",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 871455375,
+            "range": "± 6985529",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 891585562,
+            "range": "± 6786773",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3344005687,
+            "range": "± 6880782",
             "unit": "ns/iter"
           }
         ]
