@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689037639903,
+  "lastUpdate": 1689130083906,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29861,6 +29861,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3337290604,
             "range": "± 8172655",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a8d8cc276aacaa04219ef57d65c158d4bfdd40c0",
+          "message": "Align implementations of image ID and system state struct hash (#689)",
+          "timestamp": "2023-07-11T19:39:17-07:00",
+          "tree_id": "d8679fbe497baafe5a73c8d31caad925c610e64a",
+          "url": "https://github.com/risc0/risc0/commit/a8d8cc276aacaa04219ef57d65c158d4bfdd40c0"
+        },
+        "date": 1689130082341,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2776479,
+            "range": "± 138002",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3111556,
+            "range": "± 109946",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5151363,
+            "range": "± 69815",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 854579229,
+            "range": "± 6559777",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 872850646,
+            "range": "± 3827383",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3345337625,
+            "range": "± 13586887",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 878271062,
+            "range": "± 9134343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 894269458,
+            "range": "± 6853097",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3332729562,
+            "range": "± 9011058",
             "unit": "ns/iter"
           }
         ]
