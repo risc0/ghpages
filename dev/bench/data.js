@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689691052228,
+  "lastUpdate": 1689818845261,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -31733,6 +31733,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3344385313,
             "range": "± 7193479",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e123a64e1e547aa76fc605ccf957f9746038f964",
+          "message": "Add RSA support to sha2 compat (#726)\n\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2023-07-20T01:58:17Z",
+          "tree_id": "0287c2af8e325263a2d82438b459ada44a9a2d49",
+          "url": "https://github.com/risc0/risc0/commit/e123a64e1e547aa76fc605ccf957f9746038f964"
+        },
+        "date": 1689818843168,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2752375,
+            "range": "± 67017",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2866618,
+            "range": "± 50665",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 4978131,
+            "range": "± 91796",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 849068229,
+            "range": "± 3648551",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 866354354,
+            "range": "± 4383243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3326583333,
+            "range": "± 8823864",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 870224791,
+            "range": "± 6570930",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 891773292,
+            "range": "± 5923826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3316929063,
+            "range": "± 9925961",
             "unit": "ns/iter"
           }
         ]
