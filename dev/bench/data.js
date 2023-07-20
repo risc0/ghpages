@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689838441329,
+  "lastUpdate": 1689838816116,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8257,6 +8257,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15256059291,
             "range": "± 153795494",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0c7fcec59510ebb1512d991da397a1bc2b887ea",
+          "message": "Emulator: Improve usability by restricting memory region access for guest programs (#727)\n\nMemory regions outside of the address range `TEXT_START` to `SYSTEM.start() -\r\n1` are used to store information related to the zkVM. Tampering with this\r\nregion will cause the prover to crash. Restrict the guest from writing to this\r\nregion.\r\n\r\n* Executor: fix panic by guarding against invalid page indicies\r\n\r\nIt was possible for the executor to panic when accessing higher regions of\r\nmemory. This change fixes the panics by checking that the address trying to be\r\naccessed has a valid page index.",
+          "timestamp": "2023-07-20T07:29:21Z",
+          "tree_id": "d1b415a71e326dc12d5610386f0cb44408a88246",
+          "url": "https://github.com/risc0/risc0/commit/b0c7fcec59510ebb1512d991da397a1bc2b887ea"
+        },
+        "date": 1689838814271,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2699099,
+            "range": "± 102151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3021811,
+            "range": "± 82629",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5544001,
+            "range": "± 72481",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3701398854,
+            "range": "± 47428405",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3704798271,
+            "range": "± 69764482",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15180572874,
+            "range": "± 95118524",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3735073146,
+            "range": "± 53647858",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3735541249,
+            "range": "± 90551135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15231964895,
+            "range": "± 148677320",
             "unit": "ns/iter"
           }
         ]
