@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689834458965,
+  "lastUpdate": 1689834620898,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8179,6 +8179,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15295542583,
             "range": "± 200394046",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7837861ccc629994876076e1f3936e348514764",
+          "message": "zkVM: split binfmt feature to a new \"risc0-binfmt\" crate for modularity (#725)\n\n* Add a new package risc0-binfmt\r\n\r\nWe need to drop risc0-zkvm as a dependency for risc0-build to avoid future\r\ncircular dependencies. In order to do so, we introduce a new crate,\r\nrisc0-binfmt that contains all code needed by risc0-build that used to be a\r\npart of risc0-zkvm. This crate contains Program, MemoryImage, and SystemState\r\nstruct definitions along with several functions that operate on it.\r\n\r\n* drop binfmt feature and use risc0-binfmt instead\r\n\r\nThis change removes files that implement MemoryImage, Program, SystemState, and\r\nthe binfmt feature of risc0-zkvm. Instead, it uses the new risc0-binfmt crate.",
+          "timestamp": "2023-07-20T06:15:37Z",
+          "tree_id": "fd7b8857552ef965c3fd2eae40ba548390b01f78",
+          "url": "https://github.com/risc0/risc0/commit/b7837861ccc629994876076e1f3936e348514764"
+        },
+        "date": 1689834619258,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2667558,
+            "range": "± 175149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2865101,
+            "range": "± 200719",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5086265,
+            "range": "± 95787",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3730445646,
+            "range": "± 63928508",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3748765479,
+            "range": "± 63471511",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15335859000,
+            "range": "± 192911520",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3725613979,
+            "range": "± 43613316",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3672157312,
+            "range": "± 106172671",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15256059291,
+            "range": "± 153795494",
             "unit": "ns/iter"
           }
         ]
