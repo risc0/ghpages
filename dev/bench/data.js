@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1690574368304,
+  "lastUpdate": 1690574648056,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17501,6 +17501,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3170996158,
             "range": "± 13751515",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0658eaa6aa9d60e8ac637fa4e15f22eabeb97628",
+          "message": "Provide a higher-level API for most use-cases (#748)\n\n* Provide a higher-level API for most use-cases\r\n* Rename `SessionReceipt` to just `Receipt`.\r\n* Drop the `RemoteExecutor`, this functionality exists purely in the `RemoteProver`.\r\n* Drop the `Executor` trait and rename `LocalExecutor` to just `Executor`.\r\n\r\nThe basic high-level API now looks like:\r\n\r\n```\r\nlet receipt = default_prover().prove_elf(env, SOME_ELF).unwrap();\r\n```\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-07-28T12:30:01-07:00",
+          "tree_id": "6bb9e4ddfa482b6a90834daa24ad6c697a3d39fb",
+          "url": "https://github.com/risc0/risc0/commit/0658eaa6aa9d60e8ac637fa4e15f22eabeb97628"
+        },
+        "date": 1690574646659,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5178163,
+            "range": "± 115732",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5642567,
+            "range": "± 127555",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10267710,
+            "range": "± 153657",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1274327414,
+            "range": "± 11987226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1267154367,
+            "range": "± 9228654",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3862889780,
+            "range": "± 9037220",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1224039133,
+            "range": "± 8908756",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1247951737,
+            "range": "± 3617060",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3810143183,
+            "range": "± 17840294",
             "unit": "ns/iter"
           }
         ]
