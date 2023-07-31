@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1690574648056,
+  "lastUpdate": 1690824945574,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -34541,6 +34541,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3349193916,
             "range": "± 10737872",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76da671ec60c8e85a0049a3ed59caf9ac71e08bb",
+          "message": "Fixes for clippy and add lint to CI (#751)",
+          "timestamp": "2023-07-31T10:20:53-07:00",
+          "tree_id": "f4b79822ceec7c0f2e75407295a77da15cb4d0e0",
+          "url": "https://github.com/risc0/risc0/commit/76da671ec60c8e85a0049a3ed59caf9ac71e08bb"
+        },
+        "date": 1690824944011,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2730992,
+            "range": "± 161745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2890030,
+            "range": "± 114198",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5124496,
+            "range": "± 108675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 854936520,
+            "range": "± 5430622",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 873917499,
+            "range": "± 5069173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3347332812,
+            "range": "± 10105276",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 877708333,
+            "range": "± 4653688",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 902775979,
+            "range": "± 3819615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3340939666,
+            "range": "± 11150095",
             "unit": "ns/iter"
           }
         ]
