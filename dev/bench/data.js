@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1691108481961,
+  "lastUpdate": 1691108737083,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -26589,6 +26589,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21048374057,
             "range": "± 88560761",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d3c142fe0e2ff1760e87fee10f8db1d904d7be1",
+          "message": "update generated code (#761)\n\nThis PR adds code generated from cargo bootstrap (from wip) after pointing the dependencies to the current head.",
+          "timestamp": "2023-08-04T00:15:21Z",
+          "tree_id": "a35697dec45ea404dce59706306fad75a578d93e",
+          "url": "https://github.com/risc0/risc0/commit/9d3c142fe0e2ff1760e87fee10f8db1d904d7be1"
+        },
+        "date": 1691108735026,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6135622,
+            "range": "± 450632",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6153248,
+            "range": "± 529578",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11473067,
+            "range": "± 1018598",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2397492113,
+            "range": "± 486053925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2286245520,
+            "range": "± 205819212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7209495823,
+            "range": "± 242781550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2199601009,
+            "range": "± 193283597",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2274040731,
+            "range": "± 260436438",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7376004148,
+            "range": "± 1037215809",
             "unit": "ns/iter"
           }
         ]
