@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1691542664817,
+  "lastUpdate": 1691542667486,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -8881,6 +8881,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15220815708,
             "range": "± 66612328",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "acb4c9e605d1eb39096c2f54e7ee4fe0aa0b9d54",
+          "message": "Support SNARK seals in Bonsai relay and enable CI for Solidity code via Foundry (#712)\n\n    * Adds support for supplying SNARKs to authenticate callbacks through the BonsaiRelay contract, thus enabling the fully-verifying Bonsai callback flow for use in local deployment and testnet environments such as Sepolia.\r\n    * Updates the Governance showcase to be based on the latest version of the Foundry template, including supporting the run and upload subcommands in the local relay CLI.\r\n    * Adds GitHub actions workflows for testing and linting Solidity code with Foundry. It includes actions to trigger forge fmt and forge test in bonsai/ethereum (the Solidity library for Bonsai) and bonsai/examples/governance (Governance showcase).",
+          "timestamp": "2023-08-08T17:40:12-07:00",
+          "tree_id": "9839db4f2f9bd32f9621352b217a5c3d03088e01",
+          "url": "https://github.com/risc0/risc0/commit/acb4c9e605d1eb39096c2f54e7ee4fe0aa0b9d54"
+        },
+        "date": 1691542665512,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2718032,
+            "range": "± 120371",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2901755,
+            "range": "± 70529",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5026617,
+            "range": "± 171947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3698174583,
+            "range": "± 50502395",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3682084062,
+            "range": "± 67348133",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15208378395,
+            "range": "± 95174054",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3744806500,
+            "range": "± 46939122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3772164395,
+            "range": "± 48191188",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15277137729,
+            "range": "± 157814675",
             "unit": "ns/iter"
           }
         ]
