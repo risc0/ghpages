@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1691706484381,
+  "lastUpdate": 1691706643388,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -9115,6 +9115,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15279860604,
             "range": "± 135924244",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31afd3d51dc0abbd00bbf9881490a55b93c39c5f",
+          "message": "Added GITHUB_TOKEN explicitly to risczero install (#780)\n\nHopefully fixes the 403 errors in CI",
+          "timestamp": "2023-08-10T22:19:34Z",
+          "tree_id": "8e2711543231db92b751bb5103a72bc38b5ae330",
+          "url": "https://github.com/risc0/risc0/commit/31afd3d51dc0abbd00bbf9881490a55b93c39c5f"
+        },
+        "date": 1691706641436,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2630937,
+            "range": "± 67457",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2957074,
+            "range": "± 67271",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5053827,
+            "range": "± 33578",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3663771499,
+            "range": "± 63704864",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3713639208,
+            "range": "± 53821634",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15313841917,
+            "range": "± 165799011",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3698102208,
+            "range": "± 54825742",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3690631270,
+            "range": "± 70636897",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15258734312,
+            "range": "± 124457564",
             "unit": "ns/iter"
           }
         ]
