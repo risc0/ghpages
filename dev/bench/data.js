@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1691634095617,
+  "lastUpdate": 1691634859893,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -26979,6 +26979,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21143808018,
             "range": "± 155159524",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "85e40b01f568a646e02ca57f4aaeb05e5b3857c4",
+          "message": "Add cargo-risczero install (#773)\n\nUse the `cargo-risczero` tool to install the `risv32im-risc0-zkvm-elf` toolchain to avoid the use of the unstable `-Z build-std` cargo feature. This fixes #754.\r\n\r\nThis change means that a rustup toolchain named `risc0` must be installed for `risc0-build` to work. To make installing this toolchain easier, the `cargo-risczero` tool has been extended to have the following commands:\r\n\r\n* `install`: This will download the latest rust toolchain published as a release in https://github.com/risc0/rust/releases.  It will then use `rustup toolchain link risc0 $SYSROOT` to make the toolchain available to rustup. `risc0-build` will run `cargo +risc0 build ...` in order to select this new toolchain.\r\n* `build-toolchain`: This command will download the latest source of the rust fork and build it locally. It will then install it using `rustup toolchain link`. This command is useful for building and publishing a new release of the fork. It can also be used to build the toolchain on a host that we don't have a prebuild archive published.",
+          "timestamp": "2023-08-10T09:05:15+07:00",
+          "tree_id": "11e7dab2ae9cc9c83f63cd0ff3899b1773829cd7",
+          "url": "https://github.com/risc0/risc0/commit/85e40b01f568a646e02ca57f4aaeb05e5b3857c4"
+        },
+        "date": 1691634858083,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6696506,
+            "range": "± 451248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 9338517,
+            "range": "± 1565716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14457595,
+            "range": "± 1456883",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5132431326,
+            "range": "± 45733428",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5131459405,
+            "range": "± 29079657",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21288714815,
+            "range": "± 93867003",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5109170576,
+            "range": "± 28321095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5149765343,
+            "range": "± 30207921",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21263310139,
+            "range": "± 136708534",
             "unit": "ns/iter"
           }
         ]
