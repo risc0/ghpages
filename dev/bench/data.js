@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1691712444299,
+  "lastUpdate": 1691712509534,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -18437,6 +18437,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3773689771,
             "range": "± 19779474",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2012f208b2330de843579800d00c62f5414a4578",
+          "message": "zkvm: add dev mode (#752)\n\nThis PR adds dev mode: a mode for the zkvm to be able to generate Fake inner receipts. This mode can be enabled by defining the RISC0_DEV_MODE environment variable. This change also adds a `disable-dev-mode` feature flag in risc0-zkvm for those wishing to disable dev mode all together.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: 3lkn <109624900+3lkn@users.noreply.github.com>",
+          "timestamp": "2023-08-11T00:02:20Z",
+          "tree_id": "67885e3fb57ee16558c415dbbb42bb39ca8c633e",
+          "url": "https://github.com/risc0/risc0/commit/2012f208b2330de843579800d00c62f5414a4578"
+        },
+        "date": 1691712507716,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5108840,
+            "range": "± 105432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5587107,
+            "range": "± 102309",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10322570,
+            "range": "± 97858",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1238860127,
+            "range": "± 10791568",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1230921090,
+            "range": "± 15304959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3811342871,
+            "range": "± 22060185",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1195774543,
+            "range": "± 7207901",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1224644285,
+            "range": "± 5657521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3793303199,
+            "range": "± 16114523",
             "unit": "ns/iter"
           }
         ]
