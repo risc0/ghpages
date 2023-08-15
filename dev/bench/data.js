@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1691761670718,
+  "lastUpdate": 1692093724436,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -28305,6 +28305,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21378944785,
             "range": "± 151620925",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f0438fbeeb193ed51b8df924558b8cab98be9e1f",
+          "message": "Move bootstraps over to xtask (#791)",
+          "timestamp": "2023-08-15T09:53:33Z",
+          "tree_id": "be165b764b58979517a432961b2ad5c452138d4f",
+          "url": "https://github.com/risc0/risc0/commit/f0438fbeeb193ed51b8df924558b8cab98be9e1f"
+        },
+        "date": 1692093723123,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 4737776,
+            "range": "± 105895",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5333552,
+            "range": "± 124092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 9080079,
+            "range": "± 139106",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1701141504,
+            "range": "± 39743205",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1725291096,
+            "range": "± 7179092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 6373101450,
+            "range": "± 36886205",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1708866231,
+            "range": "± 3528517",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1734376907,
+            "range": "± 97950599",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 6394473888,
+            "range": "± 176619701",
             "unit": "ns/iter"
           }
         ]
