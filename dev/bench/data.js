@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1692095287525,
+  "lastUpdate": 1692183282631,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -37349,6 +37349,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3336008959,
             "range": "± 9684831",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e3c70a4224a1cc6abb3b5aca03eeff6d7acd28c",
+          "message": "Add start of ExternalProver  (#801)\n\nAn ExternalProver invokes r0vm to do the actual proving. This first\r\nversion is pretty limited.\r\n\r\n* Make the persistent encoding of MemoryImage a bit more future proof\r\n* Split SystemState into separate module\r\n* Expose `risc0_binfmt::compute_image_id` as public\r\n* Add --image to `r0vm`\r\n* Use bincode for receipt format\r\n* Rename `RemoteProver` to `BonsaiProver`",
+          "timestamp": "2023-08-16T10:49:45Z",
+          "tree_id": "81925ba3798a347613f9e11142a02fed94a1a7a6",
+          "url": "https://github.com/risc0/risc0/commit/5e3c70a4224a1cc6abb3b5aca03eeff6d7acd28c"
+        },
+        "date": 1692183281000,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2698361,
+            "range": "± 115279",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2911382,
+            "range": "± 78766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5101261,
+            "range": "± 68466",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 849276937,
+            "range": "± 5672015",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 874169459,
+            "range": "± 3087865",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3341012854,
+            "range": "± 7821430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 881506771,
+            "range": "± 5535199",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 900252229,
+            "range": "± 5887293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3335297208,
+            "range": "± 6929986",
             "unit": "ns/iter"
           }
         ]
