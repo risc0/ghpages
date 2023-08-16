@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1692185587441,
+  "lastUpdate": 1692204483953,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -37661,6 +37661,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3335297208,
             "range": "± 6929986",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "81578ba46f70b9f27152a3f36fa4d8994827bac9",
+          "message": "Reproducible builds via Docker (#799)\n\nExtends the `cargo risczero` tool with a new `build` command for reproducible builds. (#116) (#755)\r\n\r\nRequires Docker",
+          "timestamp": "2023-08-16T17:36:00+01:00",
+          "tree_id": "328fba464a7758d2f173602c835bef1cfae1a88e",
+          "url": "https://github.com/risc0/risc0/commit/81578ba46f70b9f27152a3f36fa4d8994827bac9"
+        },
+        "date": 1692204482230,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2614888,
+            "range": "± 69173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2944868,
+            "range": "± 111611",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5110483,
+            "range": "± 62119",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 850200687,
+            "range": "± 5030569",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 870489395,
+            "range": "± 5202255",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3335394354,
+            "range": "± 7783720",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 874082770,
+            "range": "± 6247792",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 891265958,
+            "range": "± 4889214",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3336906250,
+            "range": "± 13402701",
             "unit": "ns/iter"
           }
         ]
