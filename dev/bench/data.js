@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1692298772125,
+  "lastUpdate": 1692299076557,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29319,6 +29319,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7410133156,
             "range": "± 544030563",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f556052e9c9af9b8250a479c37e9a41ad4bdd11c",
+          "message": "Include tools in build-toolchain (#804)\n\n* Since Cargo.lock changed, update docker test image_ids\r\n* Use tempdir for Dockerfile\r\n* Use `docker` feature for tests\r\n* Export all files from docker build",
+          "timestamp": "2023-08-18T01:35:41+07:00",
+          "tree_id": "e7aa957342bfdfaccc35fc54357ee08b93af9ef7",
+          "url": "https://github.com/risc0/risc0/commit/f556052e9c9af9b8250a479c37e9a41ad4bdd11c"
+        },
+        "date": 1692299074983,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6990451,
+            "range": "± 378045",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7893838,
+            "range": "± 506254",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 13425369,
+            "range": "± 394806",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5097274552,
+            "range": "± 31857476",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5149709963,
+            "range": "± 18548423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21422653119,
+            "range": "± 134011920",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5099110690,
+            "range": "± 45868798",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5138703448,
+            "range": "± 12735399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21444226899,
+            "range": "± 68028465",
             "unit": "ns/iter"
           }
         ]
