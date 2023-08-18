@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1692299076557,
+  "lastUpdate": 1692393717033,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -38597,6 +38597,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3334361187,
             "range": "± 8550522",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "323b5f58e45a7b0de02df6227e1e9de475f70176",
+          "message": "Print VerificationError message instead of variant (#809)\n\nThis PR changes how Debug behaves on the VerificationError struct.\r\nInstead of printing the variant of the struct, it uses the Display\r\nformat to print the custom message.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-08-18T14:16:37-07:00",
+          "tree_id": "830578137ca3d8eeb7f29909aef04d2dc7ff290f",
+          "url": "https://github.com/risc0/risc0/commit/323b5f58e45a7b0de02df6227e1e9de475f70176"
+        },
+        "date": 1692393715068,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2757157,
+            "range": "± 107922",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2948718,
+            "range": "± 74065",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 4975428,
+            "range": "± 70916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 852705708,
+            "range": "± 5446851",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 871674374,
+            "range": "± 4052203",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3334237979,
+            "range": "± 9643400",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 880062938,
+            "range": "± 7849616",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 899128250,
+            "range": "± 6287094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3334018520,
+            "range": "± 9215834",
             "unit": "ns/iter"
           }
         ]
