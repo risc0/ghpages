@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1692957704011,
+  "lastUpdate": 1692958020995,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29787,6 +29787,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7463832330,
             "range": "± 479766762",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0379f7fd7a08df1bf5ced1c787dcca36d5862216",
+          "message": "Refactor Bonsai as workspace and use Foundry as external dependency (#810)\n\nCurrently on `main` the Foundry tools, including `forge` are declared as\r\nbuild dependencies in `bonsai/ethereum/Cargo.toml` and so Foundry is\r\nbuilt as part of building and testing the `risc0` repo.\r\nThis turns out to be problematic, with the largest issue being\r\ndependency conflicts that keep breaking builds on different developer\r\nmachines.\r\nFoundry CLI is not meant to be imported as a Rust dependency, and it is\r\nbecoming clear the that it should not be used as such.\r\n\r\nThis PR first refactors the build for `bonsai/ethereum` contracts to\r\ncall `forge` as a subprocess rather than building and running it\r\nin-process.\r\nIf this is done alone, a consequence is that building `risc0` will\r\nrequire installing the Foundry tools, even if the developer has no\r\ninterest in Ethereum integration or Bonsai.\r\nIn order to address this, the `bonsai` directory is refactored as its\r\nown workspace.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-08-25T09:50:01Z",
+          "tree_id": "f2876b4cf8a0b089be681943634795c193a96c90",
+          "url": "https://github.com/risc0/risc0/commit/0379f7fd7a08df1bf5ced1c787dcca36d5862216"
+        },
+        "date": 1692958019657,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5296075,
+            "range": "± 399991",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6101272,
+            "range": "± 521072",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 9380924,
+            "range": "± 427161",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2189411133,
+            "range": "± 305262338",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2151000917,
+            "range": "± 182649410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7267576845,
+            "range": "± 218172958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2372030353,
+            "range": "± 237685675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2477182811,
+            "range": "± 482181247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7754617564,
+            "range": "± 563783984",
             "unit": "ns/iter"
           }
         ]
