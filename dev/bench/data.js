@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1693104710151,
+  "lastUpdate": 1693104943421,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29865,6 +29865,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7754617564,
             "range": "± 563783984",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b498f9ac2a5c992efcf4162c9145e624aee62826",
+          "message": "Support for stable host toolchain (#817)\n\n* Switch to `stable` channel in `rust-toolchain.toml`\r\n* Adjust `risc0-build` to support any host-side rustc version.\r\n* Download LLVM source for build-toolchain\r\n* `risc0-build` uses env vars to make debugging toolchains easier",
+          "timestamp": "2023-08-26T19:47:12-07:00",
+          "tree_id": "bd58bc98f434fdfd5eef5dd5a8271c8407656a78",
+          "url": "https://github.com/risc0/risc0/commit/b498f9ac2a5c992efcf4162c9145e624aee62826"
+        },
+        "date": 1693104942135,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 4766685,
+            "range": "± 179780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5320451,
+            "range": "± 87737",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10063378,
+            "range": "± 100316",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1997382962,
+            "range": "± 76038354",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2111279641,
+            "range": "± 215964334",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7783974294,
+            "range": "± 567162429",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2665934474,
+            "range": "± 356656077",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2130924076,
+            "range": "± 375207292",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7811794969,
+            "range": "± 687746419",
             "unit": "ns/iter"
           }
         ]
