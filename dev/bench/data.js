@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1693521621460,
+  "lastUpdate": 1693521978028,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10051,6 +10051,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15177689583,
             "range": "± 92448833",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9b2d494689b54fbbe51962276ac557f88c8b0746",
+          "message": "zkp: HAL cleanups and perf bump (#826)\n\n* Parallelize a top 10 hotspot in the prover. TODO: consider moving this\r\nhotspot to a HAL function that stays on-device.\r\n* Rename `EvalCheck` to `CircuitHal` to be more appropriate for what it\r\nis now and in the future. The plan is to add more circuit-specific HALs\r\nto `CircuitHal`.\r\n* Drop unused `CircuitStepHandler::calc_prefix_products`.",
+          "timestamp": "2023-08-31T22:35:49Z",
+          "tree_id": "8d0c9d8e952233bf6c6452bcbc8be96314e0e8a8",
+          "url": "https://github.com/risc0/risc0/commit/9b2d494689b54fbbe51962276ac557f88c8b0746"
+        },
+        "date": 1693521976224,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2628543,
+            "range": "± 30250",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2911612,
+            "range": "± 51920",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5787650,
+            "range": "± 58942",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3654732354,
+            "range": "± 63324507",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3674650667,
+            "range": "± 50101317",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14997899167,
+            "range": "± 139873055",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3638918041,
+            "range": "± 52373318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3653966104,
+            "range": "± 47026229",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14953172541,
+            "range": "± 157237357",
             "unit": "ns/iter"
           }
         ]
