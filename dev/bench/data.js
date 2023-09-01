@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1693576300936,
+  "lastUpdate": 1693576783640,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20465,6 +20465,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2456280383,
             "range": "± 8091373",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71fb9369b8a02cd5f8941b2257c0263596b7112c",
+          "message": "Make easier to update the RISC Zero verifier contract upon version bump (#831)\n\nCheckin the Merkle root of the `RECURSION_CONTROL_IDS` to the\r\nnew `ALLOWED_IDS_ROOT` constant when bootstrapping from the wip repo.\r\nAdds an executable (behind the feature `control-id` on the\r\n`bonsai-ethereum-contracts` package) that prints out the values for\r\n`CONTROL_ID_0` and `CONTROL_ID_1` of the `RiscZeroGroth16Verifier.sol`\r\ncontract",
+          "timestamp": "2023-09-01T14:40:24+01:00",
+          "tree_id": "fb9467c20b03786490678b16e55e9c84bbbf6ef6",
+          "url": "https://github.com/risc0/risc0/commit/71fb9369b8a02cd5f8941b2257c0263596b7112c"
+        },
+        "date": 1693576781818,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5129160,
+            "range": "± 69235",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5695397,
+            "range": "± 73210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11323829,
+            "range": "± 114586",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 664801975,
+            "range": "± 2203657",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 695213628,
+            "range": "± 2976647",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2506511715,
+            "range": "± 8381849",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 674213857,
+            "range": "± 3206099",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 703058820,
+            "range": "± 2837468",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2509226756,
+            "range": "± 4364342",
             "unit": "ns/iter"
           }
         ]
