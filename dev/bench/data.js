@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1693946798704,
+  "lastUpdate": 1693946956055,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -31113,6 +31113,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7205797039,
             "range": "± 792444339",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2418646+hashcashier@users.noreply.github.com",
+            "name": "Rami",
+            "username": "hashcashier"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29c1dee2dfc9840079146a6e5c99c42ca6abf105",
+          "message": "fix: multi-package guest-list generation (#839)\n\nThe guest list was being written to the `methods.rs` file after every\nguest package was processed.\n\nThis caused the `GUEST_LIST` to have multiple definitions in the same\n`methods.rs` file, one for reach guest package, which causes a\ncompilation error.\n\nThis moves the final write after the loop to create only a single\n`GUEST_LIST` constant in the `methods.rs` file, fixing the error.",
+          "timestamp": "2023-09-05T20:40:58Z",
+          "tree_id": "ac4cdfab1c4fc7304affa6a9b94001c07cb56e29",
+          "url": "https://github.com/risc0/risc0/commit/29c1dee2dfc9840079146a6e5c99c42ca6abf105"
+        },
+        "date": 1693946954627,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 4752688,
+            "range": "± 143465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5341091,
+            "range": "± 121537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10004194,
+            "range": "± 92418",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2033044790,
+            "range": "± 254767775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1913041654,
+            "range": "± 195663429",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7818113501,
+            "range": "± 682337468",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2599172860,
+            "range": "± 677381726",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2363047888,
+            "range": "± 589988692",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7346824466,
+            "range": "± 392353241",
             "unit": "ns/iter"
           }
         ]
