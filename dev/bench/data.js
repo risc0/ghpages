@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1693928884494,
+  "lastUpdate": 1693930403037,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20543,6 +20543,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2509226756,
             "range": "± 4364342",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e6a783b20341d34e7a66eee3865426f5ef4bd2e",
+          "message": "zkvm: Protobuf based client/server IPC (#814)\n\nThis introduces an API based on `protobuf` messages passed over a TCP\r\nconnection. The server is launched by the client as a sub-process. The\r\nchild process intended to be `r0vm` or other compatible binary that\r\nexecutes for the duration of a request and then terminates. In this\r\nscenario, the client is the one that binds to the TCP socket on port 0\r\nto allocate a port. This port is passed to `r0vm --port <PORT>` and the\r\n'server' then connects back to the listener. This ensures that ports are\r\nunique for each caller in a race-free manner.\r\n\r\nIn this PR, the client/server messages are defined, while the core data\r\ntypes (receipts, segments, etc) are specified as bytes. This means\r\nthere's an inner encoding that should be largely opaque to clients.\r\nThere are instances where clients will want to deserialize these bytes\r\n(like a `Receipt`). Currently this uses `bincode` but the intention is\r\nto move to `protobuf` to allow for a better versioning story. Versioning\r\nwill be fleshed out in a future PR.\r\n\r\nTherefore there will be two levels of protobufs, one for the API, and\r\nanother for the core data types. This design follows best practices:\r\nhttps://protobuf.dev/programming-guides/api/#use-different-messages\r\n\r\nTODO:\r\n* more tests especially around I/O\r\n* pluggable implementation for lift & join",
+          "timestamp": "2023-09-05T08:39:08-07:00",
+          "tree_id": "e2f39b269aa1e8fc9a5336426566d0b1d23609dc",
+          "url": "https://github.com/risc0/risc0/commit/8e6a783b20341d34e7a66eee3865426f5ef4bd2e"
+        },
+        "date": 1693930401499,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5086744,
+            "range": "± 107494",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5630647,
+            "range": "± 98836",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11246963,
+            "range": "± 127784",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 652978481,
+            "range": "± 2381442",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 685388543,
+            "range": "± 2681667",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2508314626,
+            "range": "± 6877464",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 656300808,
+            "range": "± 2242416",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 688499504,
+            "range": "± 1955475",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2522754907,
+            "range": "± 3921565",
             "unit": "ns/iter"
           }
         ]
