@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694021319888,
+  "lastUpdate": 1694021892641,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -31893,6 +31893,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20995076095,
             "range": "± 104120188",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be8e7bb6d35bad0ef357a213219e918a886a5fa3",
+          "message": "Add entropy to memory state to protect privacy (#812)\n\nA Merkle root of the memory state is included in the `ReceiptMetadata`,\nand so is made public to the verifier. Without adding entropy, this\nleaks a commitment to the end memory state that may reveal information\nabout the program state including inputs.\n\nThis PR adds 128 bits of entropy, provided by the host, to the memory\nstate on guest initialization to prevent this privacy leakage.",
+          "timestamp": "2023-09-06T17:17:39Z",
+          "tree_id": "1344033c93066e686b77aa928d72afdb96737e28",
+          "url": "https://github.com/risc0/risc0/commit/be8e7bb6d35bad0ef357a213219e918a886a5fa3"
+        },
+        "date": 1694021890507,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6833565,
+            "range": "± 581129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7759745,
+            "range": "± 417044",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 13931051,
+            "range": "± 663931",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5013590813,
+            "range": "± 40225083",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5071074876,
+            "range": "± 23795478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21006857692,
+            "range": "± 99077015",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5020944601,
+            "range": "± 46326310",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5048579429,
+            "range": "± 38082968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20985498958,
+            "range": "± 152764013",
             "unit": "ns/iter"
           }
         ]
