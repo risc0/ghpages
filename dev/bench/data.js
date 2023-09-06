@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1693960414423,
+  "lastUpdate": 1693960456976,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10441,6 +10441,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15041786104,
             "range": "± 165696555",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d8ccde369b321d13cb7cc8865c849fd1c69be62",
+          "message": "Update prost-build requirement from 0.11 to 0.12 (#836)\n\nUpdates the requirements on\r\n[prost-build](https://github.com/tokio-rs/prost) to permit the latest\r\nversion.\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/10582c2f674a1f4618e9fb8d380081136340ac84\"><code>10582c2</code></a>\r\nrelease 0.12.0</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/7ce9b9756ba1ca0c6228931e2a9ff7859931ac95\"><code>7ce9b97</code></a>\r\nfeat: <code>Name</code> trait + <code>Any</code> encoding support (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/896\">#896</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/f9a3cfff07536a412e4f96f5ea3749c52c50170f\"><code>f9a3cff</code></a>\r\nMake Debug impl optional for types (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/797\">#797</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/6180f9fa3a93e42572633cb0b0610dcb0690c508\"><code>6180f9f</code></a>\r\ndocs: fix protoc install link (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/900\">#900</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/1d7405803004e85f58511af2a439460b4237a0e2\"><code>1d74058</code></a>\r\nprost-build: do not escape brackets followed by parenthesis in comments\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/851\">#851</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/413b0299e0d0e73b6085ad9b897fb7ec7e63cb2a\"><code>413b029</code></a>\r\nchore: Bump MSRV to 1.64 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/902\">#902</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/ca73cbe4bbcbdb4f3d30455a090ff50209dc1fc3\"><code>ca73cbe</code></a>\r\nfeat: add TryFrom&lt;i32&gt; implementation to Enumeration (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/853\">#853</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/9c877ce32ec0c465e437144c1bf4a27cb3aa705c\"><code>9c877ce</code></a>\r\nchore: Update ci (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/854\">#854</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/65451cc4cbffaca578de1a8f4a218cca2ec1c9ac\"><code>65451cc</code></a>\r\nFix <code>non_snake_case</code> warning on generated identity functions\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/891\">#891</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/prost/commit/80fb9d18b7af2c82a8f54fb6c9e7ccfa4d5629ce\"><code>80fb9d1</code></a>\r\nrelease 0.11.9 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/842\">#842</a>)\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/prost/issues/895\">#895</a>)</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/tokio-rs/prost/compare/prost-build-0.11.1...v0.12.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2023-09-05T17:23:13-07:00",
+          "tree_id": "b7107a684539ceb00690dadd7d19a1cbbd926250",
+          "url": "https://github.com/risc0/risc0/commit/5d8ccde369b321d13cb7cc8865c849fd1c69be62"
+        },
+        "date": 1693960455313,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2657702,
+            "range": "± 132031",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2961630,
+            "range": "± 169140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5777562,
+            "range": "± 83340",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3630760999,
+            "range": "± 48731200",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3594463437,
+            "range": "± 83354908",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15052132729,
+            "range": "± 180976429",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3663566895,
+            "range": "± 47098824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3629849187,
+            "range": "± 65055671",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15048790666,
+            "range": "± 135864738",
             "unit": "ns/iter"
           }
         ]
