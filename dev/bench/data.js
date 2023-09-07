@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694121098803,
+  "lastUpdate": 1694121592506,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -32049,6 +32049,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20985498958,
             "range": "± 152764013",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3faa248a44de0431837ddafb474e28c32d2bfd05",
+          "message": "Fix full segment bug (#844)\n\nThis PR fixes a bug occurring when calling iteratively sha2, ending up\r\ncalling the `expand` function. The fix increases the const `SHA_CYCLES`\r\nfrom 72 to 73.\r\nIt also adds a unit test for that case.\r\n\r\nFixes #820",
+          "timestamp": "2023-09-07T21:55:20+01:00",
+          "tree_id": "9cf548d6c20b9173c4ca0738f09ea3e61a0dbd5b",
+          "url": "https://github.com/risc0/risc0/commit/3faa248a44de0431837ddafb474e28c32d2bfd05"
+        },
+        "date": 1694121590892,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 7003845,
+            "range": "± 372817",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8213323,
+            "range": "± 544591",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14047103,
+            "range": "± 453391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5009280719,
+            "range": "± 32677728",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5063614110,
+            "range": "± 28932637",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20874149321,
+            "range": "± 102311785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5021643621,
+            "range": "± 31795695",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5073672068,
+            "range": "± 22377059",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20813209381,
+            "range": "± 104241385",
             "unit": "ns/iter"
           }
         ]
