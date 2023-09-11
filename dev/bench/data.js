@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694457196855,
+  "lastUpdate": 1694457653821,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -32595,6 +32595,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21543373375,
             "range": "± 1768316960",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "37a82fa2e887fb354519b897e5f6103d8be96172",
+          "message": "Remove Bonsai SDK ImageIdExists error (#848)\n\nNow upload_img() returns a boolean for a user to check if the image\r\nexists within bonsai instead of a Err variant.\r\n\r\n---------\r\n\r\nCo-authored-by: Rami Lukata <32602478+rlukata@users.noreply.github.com>",
+          "timestamp": "2023-09-11T11:19:12-07:00",
+          "tree_id": "0f6079fc9d465bab3f670c19b1e815a23ffe17c8",
+          "url": "https://github.com/risc0/risc0/commit/37a82fa2e887fb354519b897e5f6103d8be96172"
+        },
+        "date": 1694457652074,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6863238,
+            "range": "± 512916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8089988,
+            "range": "± 544158",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14548795,
+            "range": "± 460175",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4999062573,
+            "range": "± 31062359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5045265296,
+            "range": "± 24744806",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20726482093,
+            "range": "± 131439327",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5011712539,
+            "range": "± 22593244",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5047478074,
+            "range": "± 49657733",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20719063583,
+            "range": "± 204873589",
             "unit": "ns/iter"
           }
         ]
