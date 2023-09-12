@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694457653821,
+  "lastUpdate": 1694480487974,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -42965,6 +42965,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3126654250,
             "range": "± 10657304",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66a90f6240091e1a182556e5c30c0b722dce9f02",
+          "message": "Add no_std support for risc0-binfmt (#857)\n\nThis should fix #833",
+          "timestamp": "2023-09-12T00:50:37Z",
+          "tree_id": "965a52f899860e3d705f80a0ed90fb2e7fd42e9b",
+          "url": "https://github.com/risc0/risc0/commit/66a90f6240091e1a182556e5c30c0b722dce9f02"
+        },
+        "date": 1694480486242,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2758312,
+            "range": "± 85504",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2944215,
+            "range": "± 40045",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5850400,
+            "range": "± 113084",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 799402521,
+            "range": "± 3245969",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 815272749,
+            "range": "± 6394808",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3103950208,
+            "range": "± 14326765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 822498083,
+            "range": "± 4355359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 840511334,
+            "range": "± 4617128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3108034396,
+            "range": "± 5227660",
             "unit": "ns/iter"
           }
         ]
