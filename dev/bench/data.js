@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694627998468,
+  "lastUpdate": 1694628250021,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11143,6 +11143,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 14982930750,
             "range": "± 95042625",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2a47542e168967ac60df463948202707da5137c9",
+          "message": "risc0-binfmt: use no_std for anyhow and elf (#869)\n\nThis change uses `default-features = false` for `anyhow` and `elf`\r\ncrates. Using these features resulted in several compiler warnings about\r\nerror type conversions. To fix the errors, I've added pattern matching\r\nfor Ok(...) and Err(...) mainly for u64 -> u32 conversions.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2023-09-13T17:48:01Z",
+          "tree_id": "759239d016bf7727219fcdf1f4709cdcb2d5d171",
+          "url": "https://github.com/risc0/risc0/commit/2a47542e168967ac60df463948202707da5137c9"
+        },
+        "date": 1694628248121,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2769509,
+            "range": "± 63872",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3095754,
+            "range": "± 96710",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5925549,
+            "range": "± 56968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3555736500,
+            "range": "± 47465454",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3547492916,
+            "range": "± 53389486",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14265446520,
+            "range": "± 139545979",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3543475583,
+            "range": "± 42018989",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3559507083,
+            "range": "± 68988425",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14464279688,
+            "range": "± 268933114",
             "unit": "ns/iter"
           }
         ]
