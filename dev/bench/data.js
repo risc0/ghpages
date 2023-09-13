@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694635341576,
+  "lastUpdate": 1694637565680,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -45149,6 +45149,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3137998687,
             "range": "± 12289055",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sabree@heavypackets.sh",
+            "name": "Sabree Blackmon",
+            "username": "heavypackets"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1551429aa00dc6cb1e3ea5d018f15c4770b93c82",
+          "message": "Additional documentation on reproducible builds (#872)\n\nThe PR adds deterministic build motivation and additional details on to\r\nthe risczero build docs, including a link to install the Docker\r\ndependency on desktops.\r\n\r\nThis resolves #867.\r\n\r\n---------\r\n\r\nCo-authored-by: Sabree Blackmon <sabree@risczero.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-13T20:34:32Z",
+          "tree_id": "1bd7754e79d6ccea51f79d848e2034f76700985c",
+          "url": "https://github.com/risc0/risc0/commit/1551429aa00dc6cb1e3ea5d018f15c4770b93c82"
+        },
+        "date": 1694637563820,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2742123,
+            "range": "± 84562",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2947558,
+            "range": "± 142160",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5810439,
+            "range": "± 60011",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 803026312,
+            "range": "± 4381499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 820431042,
+            "range": "± 3935267",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3103271625,
+            "range": "± 12247537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 827103437,
+            "range": "± 8392936",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 842216125,
+            "range": "± 8027871",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3102895437,
+            "range": "± 10899427",
             "unit": "ns/iter"
           }
         ]
