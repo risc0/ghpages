@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694630948796,
+  "lastUpdate": 1694631228900,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11221,6 +11221,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 14464279688,
             "range": "± 268933114",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "389507878c498053259dd77bba48a0ac625ff89b",
+          "message": "Added `--po2` flag to `loop.rs` (#858)\n\nNow you can manually define your po2 to test higher RAM limits or\r\nmonitor performance at different po2's.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-13T18:24:17Z",
+          "tree_id": "fb96cbf66d51f9573c5ccfb7888febf8df1c4c99",
+          "url": "https://github.com/risc0/risc0/commit/389507878c498053259dd77bba48a0ac625ff89b"
+        },
+        "date": 1694631227095,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2921637,
+            "range": "± 116689",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3070486,
+            "range": "± 79582",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5950906,
+            "range": "± 95318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3579777250,
+            "range": "± 57330112",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3603406208,
+            "range": "± 42627849",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14328932604,
+            "range": "± 132720633",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3579313354,
+            "range": "± 69133727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3577551771,
+            "range": "± 36217436",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14283256563,
+            "range": "± 116505382",
             "unit": "ns/iter"
           }
         ]
