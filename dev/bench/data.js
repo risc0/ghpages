@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694626559136,
+  "lastUpdate": 1694626624297,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11065,6 +11065,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15021480437,
             "range": "± 146308271",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6cee6e8b91face3559b7b2995088b4e676cdc45a",
+          "message": "Update docs for 0.18 (#868)\n\nUpdates the docs.rs docs for the upcoming 0.18 release. This has three\r\nmain parts:\r\n* Updating the introduction to the `guest` module\r\n* Porting the receipts documentation to live on the `Receipt` object, so\r\nit is not hidden after the module restructure.\r\n* Porting the prover documentation to live on the `Prover` object, so it\r\nis not hidden after the module restructure.\r\n\r\nI also revised during these ports, in particular expanding the Prover\r\nexample code.",
+          "timestamp": "2023-09-13T09:54:49-07:00",
+          "tree_id": "554d64b2b2747e0dfd4b00b00f4b63edfbc85319",
+          "url": "https://github.com/risc0/risc0/commit/6cee6e8b91face3559b7b2995088b4e676cdc45a"
+        },
+        "date": 1694626619760,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2797048,
+            "range": "± 119266",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3004435,
+            "range": "± 129004",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6041232,
+            "range": "± 113427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3685568791,
+            "range": "± 61206420",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3667871208,
+            "range": "± 62206371",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15015281395,
+            "range": "± 169771366",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3653561104,
+            "range": "± 53208158",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3688450624,
+            "range": "± 54803617",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14982930750,
+            "range": "± 95042625",
             "unit": "ns/iter"
           }
         ]
