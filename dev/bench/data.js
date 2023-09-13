@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694634980839,
+  "lastUpdate": 1694635341576,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -34233,6 +34233,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 6162479142,
             "range": "± 227380158",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05924f196ea62d15de7c0db3470ca2314c83f0ac",
+          "message": "Rename DynProverImpl to ProverServer (#871)",
+          "timestamp": "2023-09-13T19:37:02Z",
+          "tree_id": "f7974f3b63f5d47c95f529c13d53b4f114992085",
+          "url": "https://github.com/risc0/risc0/commit/05924f196ea62d15de7c0db3470ca2314c83f0ac"
+        },
+        "date": 1694635339352,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6916038,
+            "range": "± 344756",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7825487,
+            "range": "± 520926",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14100199,
+            "range": "± 709948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5066638244,
+            "range": "± 15523342",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5107689449,
+            "range": "± 24135891",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20999101110,
+            "range": "± 109147577",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5098785071,
+            "range": "± 17077258",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5128408528,
+            "range": "± 29106522",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20946194654,
+            "range": "± 116434808",
             "unit": "ns/iter"
           }
         ]
