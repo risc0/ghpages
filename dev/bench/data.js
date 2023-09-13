@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694570101349,
+  "lastUpdate": 1694620834913,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -43589,6 +43589,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3104054646,
             "range": "± 17155477",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dbdfff6e44de1fb2b6608ce03bb1f4309a960d2f",
+          "message": "Re-name `factors`-->`hello-world`; move tutorial out of readme (#765)\n\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: hans <hmrtn@pm.me>",
+          "timestamp": "2023-09-13T08:55:34-07:00",
+          "tree_id": "fe6868a909c0146471364414f1480602329f5fc4",
+          "url": "https://github.com/risc0/risc0/commit/dbdfff6e44de1fb2b6608ce03bb1f4309a960d2f"
+        },
+        "date": 1694620832688,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2710736,
+            "range": "± 106714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2984105,
+            "range": "± 77250",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5728539,
+            "range": "± 73419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 797529854,
+            "range": "± 5744649",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 815658250,
+            "range": "± 5915061",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3093484583,
+            "range": "± 10350382",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 819293958,
+            "range": "± 6709460",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 836717374,
+            "range": "± 4223631",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3086532229,
+            "range": "± 11563875",
             "unit": "ns/iter"
           }
         ]
