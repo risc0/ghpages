@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694568683865,
+  "lastUpdate": 1694570101349,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22025,6 +22025,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2477969715,
             "range": "± 3216348",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7663b8d9a0f03198ad3b4cfa3778a99e3248eb17",
+          "message": "Expose `host::api::Connector` to users (#864)\n\nSince `ApiClient` has a method that requires a `Connector`, we need to\r\nmake sure `Connector` is also public. This PR does that, and adds\r\nrudimentary docs for `Connector` (they're pretty minimal as I don't know\r\nany details about it).\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-13T01:20:29Z",
+          "tree_id": "c425501d2253d654f4a71db09442dd3a134f4c69",
+          "url": "https://github.com/risc0/risc0/commit/7663b8d9a0f03198ad3b4cfa3778a99e3248eb17"
+        },
+        "date": 1694570099809,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5069237,
+            "range": "± 108886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5650594,
+            "range": "± 93628",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11306151,
+            "range": "± 116978",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 657179736,
+            "range": "± 2022644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 687618138,
+            "range": "± 2156680",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2483202798,
+            "range": "± 5820982",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 661455284,
+            "range": "± 2361789",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 691750461,
+            "range": "± 3196101",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2492844917,
+            "range": "± 6894602",
             "unit": "ns/iter"
           }
         ]
