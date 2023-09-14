@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694714184781,
+  "lastUpdate": 1694714764327,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -35169,6 +35169,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 21060555517,
             "range": "± 136913256",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54936aa289fbec96cab9a568ab02730ac2df1a63",
+          "message": "clarifying image vs imageid (#875)\n\nCurrent documentation suggests verification algorithm takes the entire\r\nbinary file as input.\r\nThis PR clarifies that it just needs the ImageID\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-14T17:45:16Z",
+          "tree_id": "10ca3a1d54614c2aaac7c6f205ed4906c68ed8ad",
+          "url": "https://github.com/risc0/risc0/commit/54936aa289fbec96cab9a568ab02730ac2df1a63"
+        },
+        "date": 1694714762386,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6905826,
+            "range": "± 577660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7808949,
+            "range": "± 524275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14318294,
+            "range": "± 535255",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5027495036,
+            "range": "± 42538037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5039648652,
+            "range": "± 30449174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20856288801,
+            "range": "± 123240246",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4979572074,
+            "range": "± 22078104",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5042585075,
+            "range": "± 30932557",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20880744552,
+            "range": "± 137492846",
             "unit": "ns/iter"
           }
         ]
