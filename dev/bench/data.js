@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694660722566,
+  "lastUpdate": 1694661021672,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23273,6 +23273,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4195756134,
             "range": "± 14487461",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bcd8668a2e93310e621fdc7ee3da202331d1c647",
+          "message": "load_elf: ensure that vaddr is word-aligned and substitute 4 -> WORD_SIZE (#879)\n\nWithout this bounds check, data can be loaded out of alignment and cause\r\nexecutor and prover errors. By adding this check in this part of the\r\ncodebase, we can catch unaligned addresses before the executor runs.",
+          "timestamp": "2023-09-13T19:49:07-07:00",
+          "tree_id": "dc575ae4036318893fdc7920dda3f886bcb4640f",
+          "url": "https://github.com/risc0/risc0/commit/bcd8668a2e93310e621fdc7ee3da202331d1c647"
+        },
+        "date": 1694661020042,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5386722,
+            "range": "± 314902",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5885935,
+            "range": "± 271006",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11609841,
+            "range": "± 227672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 720947349,
+            "range": "± 3148641",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 750281561,
+            "range": "± 2273435",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2560382783,
+            "range": "± 5220450",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 725725093,
+            "range": "± 1780460",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 758660024,
+            "range": "± 2151838",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2577839690,
+            "range": "± 7003481",
             "unit": "ns/iter"
           }
         ]
