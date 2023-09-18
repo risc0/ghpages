@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695059450060,
+  "lastUpdate": 1695059764055,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11767,6 +11767,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15002063853,
             "range": "± 115017624",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7ac357aa754a1d2acb1733b63e137546623dad6",
+          "message": "load_elf: change maximum memory address to SYSTEM.start() (#878)\n\nload_elf takes a max_mem parameter. Before this change, MEM_SIZE was used\r\nas the parameter which indicates the maximum addressable region of memory for the zkVM.\r\nHowever, any memory region above `SYSTEM.start()` is intended for use\r\nby the zkVM and is not to be used by the ELF. Rather passing MEM_SIZE as a parameter,\r\nuse GUEST_MAX_MEM as the upper bound for memory during elf load.\r\n\r\nThis PR also restricts the loader to not load above GUEST_MAX_MEM.",
+          "timestamp": "2023-09-18T17:40:00Z",
+          "tree_id": "a12b4089ff5775b0ce693b503c36095fa4f64e71",
+          "url": "https://github.com/risc0/risc0/commit/b7ac357aa754a1d2acb1733b63e137546623dad6"
+        },
+        "date": 1695059761676,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2712223,
+            "range": "± 104007",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2996892,
+            "range": "± 106346",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5883854,
+            "range": "± 127764",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3679711500,
+            "range": "± 76610589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3684793603,
+            "range": "± 71427159",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15104326021,
+            "range": "± 124103484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3648634500,
+            "range": "± 57526553",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3673644125,
+            "range": "± 52157065",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15002497833,
+            "range": "± 136860761",
             "unit": "ns/iter"
           }
         ]
