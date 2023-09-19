@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695162089119,
+  "lastUpdate": 1695162593238,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -36339,6 +36339,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20820291144,
             "range": "± 45648526",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9fc1e656b47dae1b65db085ea9949cf3a8c83f3c",
+          "message": "Fault proof part 1 (#824)\n\nThis PR is step 1 in implementing proof of fault. When the rrs-lib crate runs into an instruction execution error, it triggers a guest program called the fault checker. The fault checker will take the previous state of execution and ensure that it will result in an error. This PR implements the plumbing for this along with the fault checker itself. As of this PR, the fault checker does not compute the POST ID as it should. I will follow up with a PR that implements the computation of the post image ID in the fault checker guest.\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2023-09-19T22:03:30Z",
+          "tree_id": "59ab25e1031cc3fadad3a201cd44c4f198852d91",
+          "url": "https://github.com/risc0/risc0/commit/9fc1e656b47dae1b65db085ea9949cf3a8c83f3c"
+        },
+        "date": 1695162590862,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6790623,
+            "range": "± 453975",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7876543,
+            "range": "± 520609",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14569158,
+            "range": "± 563237",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4995471489,
+            "range": "± 30637272",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5050336222,
+            "range": "± 21911609",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20766876475,
+            "range": "± 82400182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4998037555,
+            "range": "± 20724953",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5057956489,
+            "range": "± 69255034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21041355722,
+            "range": "± 242122920",
             "unit": "ns/iter"
           }
         ]
