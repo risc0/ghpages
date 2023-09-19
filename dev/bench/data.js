@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695060169781,
+  "lastUpdate": 1695082172920,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -47021,6 +47021,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3100727958,
             "range": "± 11993641",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c623f4c4b13f0e5287d78e186a51b4b9ebf98f59",
+          "message": "Combine HAL kernels (#889)\n\nThis combines the `batch_expand` and `batch_evaluate_ntt` kernels into a\r\nsingle HAL function. This is because they are always called together and\r\nallows for better GPU optimization by treating them as a single unit.",
+          "timestamp": "2023-09-18T17:04:46-07:00",
+          "tree_id": "37725fc3dc47f49718030747279785f41528e259",
+          "url": "https://github.com/risc0/risc0/commit/c623f4c4b13f0e5287d78e186a51b4b9ebf98f59"
+        },
+        "date": 1695082170736,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2713311,
+            "range": "± 89227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3104411,
+            "range": "± 81054",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5859504,
+            "range": "± 52096",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 801503166,
+            "range": "± 4476943",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 823529375,
+            "range": "± 5477819",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3116955166,
+            "range": "± 12097827",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 827578916,
+            "range": "± 7849138",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 848776313,
+            "range": "± 6343708",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3113555249,
+            "range": "± 7764087",
             "unit": "ns/iter"
           }
         ]
