@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695140951279,
+  "lastUpdate": 1695141232546,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -36105,6 +36105,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20842124386,
             "range": "± 140451400",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e96d993e6b46939fc5bca3e6d52dc5aff2798c4",
+          "message": "Executor: bail for very large cycle counts (#886)\n\nSome instructions within the zkVM have variable cycle counts that are\r\nconfigured by the guest code. A malicious host can alter parameters to\r\necalls such as SHA so that a single instruction to this ecall can exceed\r\nthe segment cycle limit. If a single instruction takes more cycles than\r\na single segment, there is no way to split the instruction among\r\nmultiple segments. Return an error for this case to avoid infinite\r\nsplits.",
+          "timestamp": "2023-09-19T16:17:45Z",
+          "tree_id": "a337e1732858cd64c236887c3f3da782402ba448",
+          "url": "https://github.com/risc0/risc0/commit/4e96d993e6b46939fc5bca3e6d52dc5aff2798c4"
+        },
+        "date": 1695141229204,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 7048622,
+            "range": "± 480243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7976687,
+            "range": "± 592121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14846497,
+            "range": "± 574884",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5027470288,
+            "range": "± 33635664",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5064445281,
+            "range": "± 28645710",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20827539669,
+            "range": "± 78347343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5027618703,
+            "range": "± 32236024",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5058218221,
+            "range": "± 25665456",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20820291144,
+            "range": "± 45648526",
             "unit": "ns/iter"
           }
         ]
