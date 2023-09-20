@@ -1,10 +1,10 @@
 [
 {
   "cycles": "64k",
-  "duration": "899.7ms",
+  "duration": "911.8ms",
   "ram": "420MB",
   "seal": "215.3kB",
-  "speed": "72.8kHz"
+  "speed": "71.9kHz"
 },
 {
   "cycles": "128k",
