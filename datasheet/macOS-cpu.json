@@ -1,16 +1,51 @@
 [
 {
   "cycles": "64k",
-  "duration": "4.05s",
+  "duration": "4.06s",
   "ram": "472.4MB",
   "seal": "215.3kB",
   "speed": "16.2kHz"
 },
 {
   "cycles": "128k",
-  "duration": "8.24s",
+  "duration": "8.15s",
   "ram": "944.8MB",
   "seal": "238.3kB",
-  "speed": "15.9kHz"
+  "speed": "16.1kHz"
+},
+{
+  "cycles": "256k",
+  "duration": "16.61s",
+  "ram": "1.89GB",
+  "seal": "250kB",
+  "speed": "15.8kHz"
+},
+{
+  "cycles": "512k",
+  "duration": "33.59s",
+  "ram": "3.78GB",
+  "seal": "262.2kB",
+  "speed": "15.6kHz"
+},
+{
+  "cycles": "1024k",
+  "duration": "1:08",
+  "ram": "7.56GB",
+  "seal": "275.5kB",
+  "speed": "15.4kHz"
+},
+{
+  "cycles": "2048k",
+  "duration": "2:21.7",
+  "ram": "7.56GB",
+  "seal": "551kB",
+  "speed": "14.8kHz"
+},
+{
+  "cycles": "4096k",
+  "duration": "4:34.8",
+  "ram": "7.56GB",
+  "seal": "1.1MB",
+  "speed": "15.3kHz"
 }
 ]
