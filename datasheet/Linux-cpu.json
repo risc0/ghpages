@@ -1,0 +1,16 @@
+[
+{
+  "cycles": "64k",
+  "duration": "5.77s",
+  "ram": "472.4MB",
+  "seal": "215.3kB",
+  "speed": "11.4kHz"
+},
+{
+  "cycles": "128k",
+  "duration": "11.77s",
+  "ram": "944.8MB",
+  "seal": "238.3kB",
+  "speed": "11.1kHz"
+}
+]
