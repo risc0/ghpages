@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px;
+  }
+  h2 {
+    margin: 10px 0;
+  }
+</style>
+<title>RISC Zero Datasheet</title>
+</head>
+<body>
+
+<h1>RISC Zero Datasheet</h1>
+<div id="table-container"></div>
+
+<script>
+  async function fetchData() {
+    const filenameToTitle = {
+      'macOS-apple_m2_pro.json': 'Metal on Apple M2 Pro',
+      'Linux-nvidia_rtx_a5000.json': 'CUDA on NVIDIA RTX A5000',
+      'macOS-cpu.json': 'Apple M1/M2 - CPU only'
+    };
+    try {
+      const urls = ['macOS-apple_m2_pro.json', 'Linux-nvidia_rtx_a5000.json', 'macOS-cpu.json'];
+      const dataPromises = urls.map(url => fetch(url).then(response => response.json()));
+      const dataArrays = await Promise.all(dataPromises);
+      
+      const tableContainer = document.getElementById('table-container');
+      
+      dataArrays.forEach((dataArray, index) => {
+        const tableSection = document.createElement('div');
+        
+        const filename = urls[index].split('/').pop();
+        const header = document.createElement('h2');
+        header.textContent = filenameToTitle[filename] || filename.replace(/\.[^/.]+$/, "");
+        tableSection.appendChild(header);
+
+        const table = document.createElement('table');
+        const tableHeader = `
+          <thead>
+            <tr>
+              <th>Cycles</th>
+              <th>Duration</th>
+              <th>RAM</th>
+              <th>Seal</th>
+              <th>Speed</th>
+            </tr>
+          </thead>`;
+        table.innerHTML = tableHeader;
+
+        const tableBody = document.createElement('tbody');
+
+        dataArray.forEach(item => {
+          const row = document.createElement('tr');
+          Object.values(item).forEach(value => {
+            const cell = document.createElement('td');
+            cell.textContent = value;
+            row.appendChild(cell);
+          });
+          tableBody.appendChild(row);
+        });
+
+        table.appendChild(tableBody);
+        tableSection.appendChild(table);
+        tableContainer.appendChild(tableSection);
+      });
+    } catch (error) {
+      console.error('Error fetching or parsing data:', error);
+    }
+  }
+
+  fetchData();
+</script>
+
+</body>
+</html>
