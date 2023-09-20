@@ -1,51 +1,51 @@
 [
 {
   "cycles": "64k",
-  "duration": "1.77s",
+  "duration": "766.8ms",
   "ram": "472.4MB",
   "seal": "215.3kB",
-  "speed": "37kHz"
+  "speed": "85.5kHz"
 },
 {
   "cycles": "128k",
-  "duration": "2.99s",
+  "duration": "1.49s",
   "ram": "944.8MB",
   "seal": "238.3kB",
-  "speed": "43.8kHz"
+  "speed": "87.7kHz"
 },
 {
   "cycles": "256k",
-  "duration": "6.55s",
+  "duration": "3.05s",
   "ram": "1.89GB",
   "seal": "250kB",
-  "speed": "40kHz"
+  "speed": "86.1kHz"
 },
 {
   "cycles": "512k",
-  "duration": "13.39s",
+  "duration": "6.07s",
   "ram": "3.78GB",
   "seal": "262.2kB",
-  "speed": "39.2kHz"
+  "speed": "86.4kHz"
 },
 {
   "cycles": "1024k",
-  "duration": "28.96s",
+  "duration": "12.77s",
   "ram": "7.56GB",
   "seal": "275.5kB",
-  "speed": "36.2kHz"
+  "speed": "82.1kHz"
 },
 {
   "cycles": "2048k",
-  "duration": "1:01",
+  "duration": "28.32s",
   "ram": "7.56GB",
   "seal": "551kB",
-  "speed": "34.4kHz"
+  "speed": "74kHz"
 },
 {
   "cycles": "4096k",
-  "duration": "2:02.3",
+  "duration": "56.57s",
   "ram": "7.56GB",
   "seal": "1.1MB",
-  "speed": "34.3kHz"
+  "speed": "74.1kHz"
 }
 ]
