@@ -27,12 +27,17 @@
   h2 {
     margin: 10px 0;
   }
+  #commitHash {
+    text-align: center;
+    margin: 10px;
+  }
 </style>
 <title>RISC Zero Datasheet</title>
 </head>
 <body>
 
-<h1>RISC Zero Datasheet</h1>
+<h1 style="text-align: center;">RISC Zero Datasheet</h1>
+<p id="commitHash"></p>
 <div id="table-container"></div>
 
 <script>
@@ -92,6 +97,15 @@
   }
 
   fetchData();
+</script>
+
+<script>
+  fetch('https://api.github.com/repos/risc0/risc0/commits/main')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('commitHash').innerText = 'Latest Commit Hash: ' + data.sha;
+    })
+    .catch(error => console.error('Error:', error));
 </script>
 
 </body>
