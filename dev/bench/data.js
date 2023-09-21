@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695313929161,
+  "lastUpdate": 1695314495317,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12157,6 +12157,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 14980692000,
             "range": "± 82879015",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c47f31cc4c50107c0b95e11043141dc2fb2d99d",
+          "message": "zkvm: move tempfile dependency as a dev-dependency (#901)\n\nThis dep is only needed for testing and breaks no_std builds. Make it a\r\ndev dependency instead.",
+          "timestamp": "2023-09-21T16:20:48Z",
+          "tree_id": "d0214467df7ff26fe6f3f102d116151453064847",
+          "url": "https://github.com/risc0/risc0/commit/2c47f31cc4c50107c0b95e11043141dc2fb2d99d"
+        },
+        "date": 1695314493135,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2618641,
+            "range": "± 98507",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3037726,
+            "range": "± 102099",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5987428,
+            "range": "± 103854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3651875437,
+            "range": "± 88632427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3651547396,
+            "range": "± 66354374",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15000004083,
+            "range": "± 49949174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3679447875,
+            "range": "± 79781972",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3701113000,
+            "range": "± 57969350",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14972407229,
+            "range": "± 78707886",
             "unit": "ns/iter"
           }
         ]
