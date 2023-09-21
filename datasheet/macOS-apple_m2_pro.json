@@ -1,51 +1,51 @@
 [
 {
-  "cycles": "64k",
-  "duration": "867.1ms",
-  "ram": "420MB",
-  "seal": "215.3kB",
-  "speed": "75.6kHz"
+  "cycles": 65536,
+  "duration": 862298333,
+  "ram": 419956112,
+  "seal": 215268,
+  "speed": 76001.53855336283
 },
 {
-  "cycles": "128k",
-  "duration": "1.6s",
-  "ram": "839.9MB",
-  "seal": "238.3kB",
-  "speed": "82.2kHz"
+  "cycles": 131072,
+  "duration": 1600099500,
+  "ram": 839910800,
+  "seal": 238308,
+  "speed": 81914.9059167883
 },
 {
-  "cycles": "256k",
-  "duration": "3.31s",
-  "ram": "1.68GB",
-  "seal": "250kB",
-  "speed": "79.1kHz"
+  "cycles": 262144,
+  "duration": 3335176250,
+  "ram": 1679820176,
+  "seal": 250020,
+  "speed": 78599.74416644398
 },
 {
-  "cycles": "512k",
-  "duration": "6.52s",
-  "ram": "3.36GB",
-  "seal": "262.2kB",
-  "speed": "80.5kHz"
+  "cycles": 524288,
+  "duration": 6552421375,
+  "ram": 3359638928,
+  "seal": 262244,
+  "speed": 80014.3901001788
 },
 {
-  "cycles": "1024k",
-  "duration": "12.86s",
-  "ram": "6.72GB",
-  "seal": "275.5kB",
-  "speed": "81.5kHz"
+  "cycles": 1048576,
+  "duration": 12883550542,
+  "ram": 6719276432,
+  "seal": 275492,
+  "speed": 81388.7442426428
 },
 {
-  "cycles": "2048k",
-  "duration": "27.24s",
-  "ram": "6.72GB",
-  "seal": "551kB",
-  "speed": "77kHz"
+  "cycles": 2097152,
+  "duration": 27416572042,
+  "ram": 6719276432,
+  "seal": 550984,
+  "speed": 76492.13026294208
 },
 {
-  "cycles": "4096k",
-  "duration": "54.44s",
-  "ram": "6.72GB",
-  "seal": "1.1MB",
-  "speed": "77kHz"
+  "cycles": 4194304,
+  "duration": 54494485042,
+  "ram": 6719276432,
+  "seal": 1101968,
+  "speed": 76967.49490828962
 }
 ]
