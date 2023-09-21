@@ -2,3 +2,4 @@
 
 * [Benchmarks](/dev/bench/index.html)
 * [Crates.io Validation](/dev/crate-validation/index.html)
+* [Datasheet](/datasheet/index.html)
