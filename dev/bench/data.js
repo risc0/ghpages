@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695260435203,
+  "lastUpdate": 1695728097026,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12157,6 +12157,162 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 14980692000,
             "range": "± 82879015",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c47f31cc4c50107c0b95e11043141dc2fb2d99d",
+          "message": "zkvm: move tempfile dependency as a dev-dependency (#901)\n\nThis dep is only needed for testing and breaks no_std builds. Make it a\r\ndev dependency instead.",
+          "timestamp": "2023-09-21T16:20:48Z",
+          "tree_id": "d0214467df7ff26fe6f3f102d116151453064847",
+          "url": "https://github.com/risc0/risc0/commit/2c47f31cc4c50107c0b95e11043141dc2fb2d99d"
+        },
+        "date": 1695314493135,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2618641,
+            "range": "± 98507",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3037726,
+            "range": "± 102099",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5987428,
+            "range": "± 103854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3651875437,
+            "range": "± 88632427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3651547396,
+            "range": "± 66354374",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15000004083,
+            "range": "± 49949174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3679447875,
+            "range": "± 79781972",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3701113000,
+            "range": "± 57969350",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14972407229,
+            "range": "± 78707886",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4783f86bf6fc35924af5c87c85eae4b699d1371e",
+          "message": "Update RISC0 datasheet (#897)\n\nUpdate on every merge to main the RISC0 datasheet on the\r\nhttps://github.com/risc0/ghpages/tree/dev branch.",
+          "timestamp": "2023-09-26T12:00:43+01:00",
+          "tree_id": "b35d9db698c52da16ae47f20275fba71465af509",
+          "url": "https://github.com/risc0/risc0/commit/4783f86bf6fc35924af5c87c85eae4b699d1371e"
+        },
+        "date": 1695726923875,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2690509,
+            "range": "± 69483",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3070021,
+            "range": "± 80643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5949110,
+            "range": "± 102022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3640625562,
+            "range": "± 57077421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3677428083,
+            "range": "± 61335333",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15001168771,
+            "range": "± 69919965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3629708687,
+            "range": "± 71359214",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3687298041,
+            "range": "± 71667941",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14965003583,
+            "range": "± 155177569",
             "unit": "ns/iter"
           }
         ]
@@ -24446,6 +24602,162 @@ window.BENCHMARK_DATA = {
             "unit": "ns/iter"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c47f31cc4c50107c0b95e11043141dc2fb2d99d",
+          "message": "zkvm: move tempfile dependency as a dev-dependency (#901)\n\nThis dep is only needed for testing and breaks no_std builds. Make it a\r\ndev dependency instead.",
+          "timestamp": "2023-09-21T16:20:48Z",
+          "tree_id": "d0214467df7ff26fe6f3f102d116151453064847",
+          "url": "https://github.com/risc0/risc0/commit/2c47f31cc4c50107c0b95e11043141dc2fb2d99d"
+        },
+        "date": 1695313926887,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5152824,
+            "range": "± 127530",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5756795,
+            "range": "± 100396",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11919329,
+            "range": "± 109779",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1486721900,
+            "range": "± 27196860",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1503721138,
+            "range": "± 15268771",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4642255961,
+            "range": "± 20454802",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1488522662,
+            "range": "± 37087545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1515078594,
+            "range": "± 37868568",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4623039622,
+            "range": "± 13207496",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4783f86bf6fc35924af5c87c85eae4b699d1371e",
+          "message": "Update RISC0 datasheet (#897)\n\nUpdate on every merge to main the RISC0 datasheet on the\r\nhttps://github.com/risc0/ghpages/tree/dev branch.",
+          "timestamp": "2023-09-26T12:00:43+01:00",
+          "tree_id": "b35d9db698c52da16ae47f20275fba71465af509",
+          "url": "https://github.com/risc0/risc0/commit/4783f86bf6fc35924af5c87c85eae4b699d1371e"
+        },
+        "date": 1695728094959,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5132661,
+            "range": "± 102154",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5750327,
+            "range": "± 128532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11714760,
+            "range": "± 121679",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 658020534,
+            "range": "± 5236807",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 687400166,
+            "range": "± 3113762",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2488401043,
+            "range": "± 14317432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 661911140,
+            "range": "± 7532089",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 693532723,
+            "range": "± 2613766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2498326583,
+            "range": "± 8961735",
+            "unit": "ns/iter"
+          }
+        ]
       }
     ],
     "Linux-cpu": [
@@ -36654,6 +36966,84 @@ window.BENCHMARK_DATA = {
             "unit": "ns/iter"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c47f31cc4c50107c0b95e11043141dc2fb2d99d",
+          "message": "zkvm: move tempfile dependency as a dev-dependency (#901)\n\nThis dep is only needed for testing and breaks no_std builds. Make it a\r\ndev dependency instead.",
+          "timestamp": "2023-09-21T16:20:48Z",
+          "tree_id": "d0214467df7ff26fe6f3f102d116151453064847",
+          "url": "https://github.com/risc0/risc0/commit/2c47f31cc4c50107c0b95e11043141dc2fb2d99d"
+        },
+        "date": 1695314567540,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6771924,
+            "range": "± 553155",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8007078,
+            "range": "± 549579",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14693926,
+            "range": "± 446554",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5012563676,
+            "range": "± 37161594",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5040299062,
+            "range": "± 32931227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20732749444,
+            "range": "± 98963451",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5003002367,
+            "range": "± 26679168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5061554678,
+            "range": "± 34802740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20844391150,
+            "range": "± 73533624",
+            "unit": "ns/iter"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -48269,6 +48659,162 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3110211146,
             "range": "± 10640801",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c47f31cc4c50107c0b95e11043141dc2fb2d99d",
+          "message": "zkvm: move tempfile dependency as a dev-dependency (#901)\n\nThis dep is only needed for testing and breaks no_std builds. Make it a\r\ndev dependency instead.",
+          "timestamp": "2023-09-21T16:20:48Z",
+          "tree_id": "d0214467df7ff26fe6f3f102d116151453064847",
+          "url": "https://github.com/risc0/risc0/commit/2c47f31cc4c50107c0b95e11043141dc2fb2d99d"
+        },
+        "date": 1695313836136,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2712505,
+            "range": "± 84521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3057920,
+            "range": "± 70337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5995453,
+            "range": "± 77524",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 799298208,
+            "range": "± 5855690",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 815746271,
+            "range": "± 4813377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3113758896,
+            "range": "± 9022455",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 834278562,
+            "range": "± 6639986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 845571958,
+            "range": "± 8325478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3113315458,
+            "range": "± 21516134",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4783f86bf6fc35924af5c87c85eae4b699d1371e",
+          "message": "Update RISC0 datasheet (#897)\n\nUpdate on every merge to main the RISC0 datasheet on the\r\nhttps://github.com/risc0/ghpages/tree/dev branch.",
+          "timestamp": "2023-09-26T12:00:43+01:00",
+          "tree_id": "b35d9db698c52da16ae47f20275fba71465af509",
+          "url": "https://github.com/risc0/risc0/commit/4783f86bf6fc35924af5c87c85eae4b699d1371e"
+        },
+        "date": 1695726640857,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2786931,
+            "range": "± 118355",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3034577,
+            "range": "± 86718",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6031743,
+            "range": "± 113717",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 798791708,
+            "range": "± 1980401",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 815471291,
+            "range": "± 2519080",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3108902145,
+            "range": "± 7891983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 825138688,
+            "range": "± 6251304",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 847035500,
+            "range": "± 5324496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3113454375,
+            "range": "± 9943126",
             "unit": "ns/iter"
           }
         ]
