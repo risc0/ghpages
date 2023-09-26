@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695771932637,
+  "lastUpdate": 1695772033378,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -49361,6 +49361,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3111454166,
             "range": "± 7696250",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54b8cb75f6b280595f31b4501f4ac65f2e79aea5",
+          "message": "Added get_version to zkvm / bonsai version check (#899)\n\nAdds the VERSION and get_version methods to the zkvm and adds x-risc0-version to the bonsai-sdk http headers\r\nto allow for explicit version checking to prevent local zkvm / bonsai zkvm mismatches.",
+          "timestamp": "2023-09-26T16:19:43-07:00",
+          "tree_id": "effa688da3ae86afe3ef7360f9c9179ab5984e17",
+          "url": "https://github.com/risc0/risc0/commit/54b8cb75f6b280595f31b4501f4ac65f2e79aea5"
+        },
+        "date": 1695772031547,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2740427,
+            "range": "± 80644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3128128,
+            "range": "± 94619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6199578,
+            "range": "± 84842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 801063458,
+            "range": "± 8007470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 818141396,
+            "range": "± 3777609",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3111964458,
+            "range": "± 9827504",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 823196271,
+            "range": "± 5989450",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 841743104,
+            "range": "± 6704751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3109646833,
+            "range": "± 15389745",
             "unit": "ns/iter"
           }
         ]
