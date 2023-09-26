@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695754098629,
+  "lastUpdate": 1695754636844,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -37119,6 +37119,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20844391150,
             "range": "± 73533624",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d544ff885e4fbf35492f2b85bf69b1f4c8ca610d",
+          "message": "Added additional Bonsai docs to default_prover  (#904)\n\nThis PR expands on the docs in places where we depend on external inputs\r\nlike BONSAI_API_URL and BONSAI_API_KEY env vars to make it more clear\r\ntheir relationship to the selected prover.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-09-26T18:30:27Z",
+          "tree_id": "954fed6e9777ea5444ccd4c81989e272ee851c11",
+          "url": "https://github.com/risc0/risc0/commit/d544ff885e4fbf35492f2b85bf69b1f4c8ca610d"
+        },
+        "date": 1695754634783,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6898838,
+            "range": "± 426320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7854556,
+            "range": "± 592348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14479354,
+            "range": "± 454919",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5074251023,
+            "range": "± 32703585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5094288842,
+            "range": "± 19027344",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20808136993,
+            "range": "± 106622328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5066375855,
+            "range": "± 22193256",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5116353774,
+            "range": "± 23448183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20993991280,
+            "range": "± 144723730",
             "unit": "ns/iter"
           }
         ]
