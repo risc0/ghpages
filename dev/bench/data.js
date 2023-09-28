@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695919144370,
+  "lastUpdate": 1695926585156,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -49751,6 +49751,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3111292479,
             "range": "± 13634415",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dcad3a92d8e56c13ec7cab38958cd0da6c06015d",
+          "message": "zkVM tests: add feature flag to build multi-test with docker environment (#912)\n\nThis PR adds a test-exact-cycles feature for risc0-zkvm. This is used to\r\nbuild test guest binaries like multi-test using the docker environment\r\nin the `cargo test` command. The intention here is to run the tests\r\nusing a reproducible ELF binary to eliminate test failures across\r\ndifferent architectures that are caused by entropy in the ELF binaries\r\nresulting from rust build tools.\r\n\r\nI've gated 4 tests using this feature flag. My solution is to create a new\r\nfeature flag that the CI can use and it will run all tests including the ones\r\nthat rely on exact cycles counts. If users do not wish to run the tests\r\nthat require the reproducible binary, they can simply leave out the\r\n`test-exact-cycles` feature flag in their `cargo test` invocation.\r\n\r\nChanges in this PR involves moving code from the `cargo risczero build`\r\ncommand to the `risc0-build` crate, and making the functionality similar to\r\nthe existing embed_methods() function. \r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-28T18:33:25Z",
+          "tree_id": "abef5948c5c39298dd8379ceeecda4af6942711f",
+          "url": "https://github.com/risc0/risc0/commit/dcad3a92d8e56c13ec7cab38958cd0da6c06015d"
+        },
+        "date": 1695926583236,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2749047,
+            "range": "± 66043",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3049699,
+            "range": "± 116371",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6081405,
+            "range": "± 175775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 794919250,
+            "range": "± 6228343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 813156083,
+            "range": "± 6164711",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3122447521,
+            "range": "± 6549643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 823977500,
+            "range": "± 9560854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 839993562,
+            "range": "± 3614587",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3114589854,
+            "range": "± 12789993",
             "unit": "ns/iter"
           }
         ]
