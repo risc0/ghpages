@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695918683897,
+  "lastUpdate": 1695918717612,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12469,6 +12469,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15087564083,
             "range": "± 143896370",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "979c8eac833c5094f80bbfa884d91fbde56a7d65",
+          "message": "Add experimental cargo-risczero test command and support for building rust-runtime.a (#646)\n\nThis PR adds a new `cargo riszero test` command, which can be used to\r\nbuild the current crate for\r\nthe RISC Zero target, and run it's tests inside the Executor.\r\n\r\nThis is intended to allow developers of libraries intended to support\r\nthe RISC Zero zkVM a way to\r\ntest their code, using all existing tests and any new ones they write\r\nfor zkVM specific\r\nfunctionality, without writing a guest wrapper or duplicating effort. As\r\nan example, see\r\nhttps://github.com/risc0/RustCrypto-crypto-bigint/pull/2 which adds\r\nsupport for running all tests\r\nfor the crypto-bigint library, which has been modified to use the bigint\r\nmultiplication accelerator\r\nwhen built for the RISC Zero target. This may also be used to test crate\r\ncompatibility with the zkVM\r\nwithout any modifications e.g. in the crate validator.\r\n\r\nAs a dependency, this PR includes support for building the zkVM rust\r\nruntime as a linkable `.a`\r\nfile. This is used within the `cargo risczero test` command to link\r\nrequired functionality, such as\r\nthe syscalls, for the test binaries. More generally it can be used as a\r\ntool for developing other\r\nruntimes, as the symbols can be used in any language with C FFI.\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Joby Thundil <joby@risczero.com>",
+          "timestamp": "2023-09-28T12:03:50-04:00",
+          "tree_id": "3af750a5818913bf6e47b6f68584ce5d3b55cfd4",
+          "url": "https://github.com/risc0/risc0/commit/979c8eac833c5094f80bbfa884d91fbde56a7d65"
+        },
+        "date": 1695918715711,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2714601,
+            "range": "± 148432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3070992,
+            "range": "± 56448",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6109367,
+            "range": "± 135586",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3653994437,
+            "range": "± 36397280",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3676516937,
+            "range": "± 43210580",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14913168646,
+            "range": "± 135953768",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3677025062,
+            "range": "± 58201957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3661486354,
+            "range": "± 58812576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15093584250,
+            "range": "± 97762867",
             "unit": "ns/iter"
           }
         ]
