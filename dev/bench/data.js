@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695963527499,
+  "lastUpdate": 1695963693453,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12703,6 +12703,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15009074708,
             "range": "± 188467613",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2bf393a801a594e41d7c09c8ab252c89c4166a2e",
+          "message": "Revive Fault Proof Part 1 (#920)\n\nThis is an attempt to re-enable proof of fault. With cycle-sensitive\r\ntests now only running in the docker environment, this change shouldn't\r\nimpact CI with cycle-related test failures that show different results\r\nby architecture.",
+          "timestamp": "2023-09-29T04:50:09Z",
+          "tree_id": "0c5f02511c65b9f2d23a2221d5cbfb431126a430",
+          "url": "https://github.com/risc0/risc0/commit/2bf393a801a594e41d7c09c8ab252c89c4166a2e"
+        },
+        "date": 1695963691635,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2697951,
+            "range": "± 76143",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3033608,
+            "range": "± 48947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5997354,
+            "range": "± 84426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3630998708,
+            "range": "± 53384423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3650827062,
+            "range": "± 53196427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15028001813,
+            "range": "± 234894331",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3613829125,
+            "range": "± 46661419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3706380042,
+            "range": "± 63439538",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15033439917,
+            "range": "± 155138726",
             "unit": "ns/iter"
           }
         ]
