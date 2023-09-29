@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695959261050,
+  "lastUpdate": 1695960196738,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -38055,6 +38055,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20716723324,
             "range": "± 72757510",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112157037+Roee-87@users.noreply.github.com",
+            "name": "Roy Rotstein",
+            "username": "Roee-87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac",
+          "message": "Add smartcore based ZKML example (#914)\n\nThis template is a guide for developers wishing to use the ZKVM to prove\r\ninference of ML models using the Rust SmartCore template.\r\n\r\nThe corresponding blog post can be found here:\r\nhttps://docs.google.com/document/d/1mqf93EowN3InyK6-e6rBRefldFcipOkbdT75aucdk8U/edit\r\n\r\nThe contents of the Jupyter notebook and train-model folder are\r\nessentially identical...I'm not sure which is a better format for\r\ncommunicating the nuances of training and exporting models. There's no\r\nneed for both (but maybe some users will have preference for one format\r\nover the other)...I'd welcome feedback as to which is more instructive.\r\n\r\n---------\r\n\r\nCo-authored-by: Roy Rotstein <royrotstein@Roys-MacBook-Pro-2.local>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-09-29T03:36:16Z",
+          "tree_id": "1bacf5d46a0cb76f1067633de5bbf23cb742abd0",
+          "url": "https://github.com/risc0/risc0/commit/c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac"
+        },
+        "date": 1695960194735,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 7010718,
+            "range": "± 541464",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8392235,
+            "range": "± 548548",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 15164217,
+            "range": "± 593022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5029027599,
+            "range": "± 40650790",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5042515793,
+            "range": "± 30767773",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20905945999,
+            "range": "± 89015348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5024430940,
+            "range": "± 32373207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5068955347,
+            "range": "± 26544780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20777474413,
+            "range": "± 119913689",
             "unit": "ns/iter"
           }
         ]
