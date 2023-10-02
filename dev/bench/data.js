@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695964153013,
+  "lastUpdate": 1696207705360,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -50687,6 +50687,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3112716833,
             "range": "± 11723918",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e7829346cc6aba12edb77498b9439ca4fe42fa7",
+          "message": "Prepare for client-only zkvm usage\n\nThis doesn't yet change any default feature flags, so should still be fairly minimal. \r\n\r\nThe planned set of PRs include:\r\n* add release process to build r0vm for all major targets\r\n  * use cargo zigbuild on linux to build with a specific glibc for max compat with older linux distros\r\n  * use something like https://github.com/cargo-bins/release-pr to automatically build/publish binaries on a per-release basis\r\n* update `cargo risczero install` or adjust docs to have users do `cargo binstall cargo-risczero` (depending on whether we package `r0vm` as standalone or combined with `cargo-risczero`)",
+          "timestamp": "2023-10-01T17:38:21-07:00",
+          "tree_id": "ba62b97bff681004b9b0afbbe721c6db2dc98efb",
+          "url": "https://github.com/risc0/risc0/commit/3e7829346cc6aba12edb77498b9439ca4fe42fa7"
+        },
+        "date": 1696207703267,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2707950,
+            "range": "± 63528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2996125,
+            "range": "± 172027",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5919679,
+            "range": "± 116332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 804756812,
+            "range": "± 5972499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 826562291,
+            "range": "± 5162257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3124468792,
+            "range": "± 10690692",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 827007250,
+            "range": "± 4984164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 850080500,
+            "range": "± 6889945",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3115008167,
+            "range": "± 13491615",
             "unit": "ns/iter"
           }
         ]
