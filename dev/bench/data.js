@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1695728097026,
+  "lastUpdate": 1696209216386,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12313,6 +12313,552 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 14965003583,
             "range": "± 155177569",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d544ff885e4fbf35492f2b85bf69b1f4c8ca610d",
+          "message": "Added additional Bonsai docs to default_prover  (#904)\n\nThis PR expands on the docs in places where we depend on external inputs\r\nlike BONSAI_API_URL and BONSAI_API_KEY env vars to make it more clear\r\ntheir relationship to the selected prover.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-09-26T18:30:27Z",
+          "tree_id": "954fed6e9777ea5444ccd4c81989e272ee851c11",
+          "url": "https://github.com/risc0/risc0/commit/d544ff885e4fbf35492f2b85bf69b1f4c8ca610d"
+        },
+        "date": 1695754898489,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2763314,
+            "range": "± 133082",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3016145,
+            "range": "± 59402",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6063990,
+            "range": "± 49162",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3662824999,
+            "range": "± 44199153",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3636590146,
+            "range": "± 56804668",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15027895917,
+            "range": "± 128553505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3634163104,
+            "range": "± 85851058",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3683500187,
+            "range": "± 63915860",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15089847375,
+            "range": "± 208025965",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54b8cb75f6b280595f31b4501f4ac65f2e79aea5",
+          "message": "Added get_version to zkvm / bonsai version check (#899)\n\nAdds the VERSION and get_version methods to the zkvm and adds x-risc0-version to the bonsai-sdk http headers\r\nto allow for explicit version checking to prevent local zkvm / bonsai zkvm mismatches.",
+          "timestamp": "2023-09-26T16:19:43-07:00",
+          "tree_id": "effa688da3ae86afe3ef7360f9c9179ab5984e17",
+          "url": "https://github.com/risc0/risc0/commit/54b8cb75f6b280595f31b4501f4ac65f2e79aea5"
+        },
+        "date": 1695771930754,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2747529,
+            "range": "± 75605",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3051109,
+            "range": "± 100186",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6060718,
+            "range": "± 90215",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3647984708,
+            "range": "± 38581511",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3677745521,
+            "range": "± 60582297",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14967834562,
+            "range": "± 138815145",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3665114937,
+            "range": "± 50596755",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3685471833,
+            "range": "± 74927967",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15087564083,
+            "range": "± 143896370",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "979c8eac833c5094f80bbfa884d91fbde56a7d65",
+          "message": "Add experimental cargo-risczero test command and support for building rust-runtime.a (#646)\n\nThis PR adds a new `cargo riszero test` command, which can be used to\r\nbuild the current crate for\r\nthe RISC Zero target, and run it's tests inside the Executor.\r\n\r\nThis is intended to allow developers of libraries intended to support\r\nthe RISC Zero zkVM a way to\r\ntest their code, using all existing tests and any new ones they write\r\nfor zkVM specific\r\nfunctionality, without writing a guest wrapper or duplicating effort. As\r\nan example, see\r\nhttps://github.com/risc0/RustCrypto-crypto-bigint/pull/2 which adds\r\nsupport for running all tests\r\nfor the crypto-bigint library, which has been modified to use the bigint\r\nmultiplication accelerator\r\nwhen built for the RISC Zero target. This may also be used to test crate\r\ncompatibility with the zkVM\r\nwithout any modifications e.g. in the crate validator.\r\n\r\nAs a dependency, this PR includes support for building the zkVM rust\r\nruntime as a linkable `.a`\r\nfile. This is used within the `cargo risczero test` command to link\r\nrequired functionality, such as\r\nthe syscalls, for the test binaries. More generally it can be used as a\r\ntool for developing other\r\nruntimes, as the symbols can be used in any language with C FFI.\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Joby Thundil <joby@risczero.com>",
+          "timestamp": "2023-09-28T12:03:50-04:00",
+          "tree_id": "3af750a5818913bf6e47b6f68584ce5d3b55cfd4",
+          "url": "https://github.com/risc0/risc0/commit/979c8eac833c5094f80bbfa884d91fbde56a7d65"
+        },
+        "date": 1695918715711,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2714601,
+            "range": "± 148432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3070992,
+            "range": "± 56448",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6109367,
+            "range": "± 135586",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3653994437,
+            "range": "± 36397280",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3676516937,
+            "range": "± 43210580",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14913168646,
+            "range": "± 135953768",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3677025062,
+            "range": "± 58201957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3661486354,
+            "range": "± 58812576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15093584250,
+            "range": "± 97762867",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dcad3a92d8e56c13ec7cab38958cd0da6c06015d",
+          "message": "zkVM tests: add feature flag to build multi-test with docker environment (#912)\n\nThis PR adds a test-exact-cycles feature for risc0-zkvm. This is used to\r\nbuild test guest binaries like multi-test using the docker environment\r\nin the `cargo test` command. The intention here is to run the tests\r\nusing a reproducible ELF binary to eliminate test failures across\r\ndifferent architectures that are caused by entropy in the ELF binaries\r\nresulting from rust build tools.\r\n\r\nI've gated 4 tests using this feature flag. My solution is to create a new\r\nfeature flag that the CI can use and it will run all tests including the ones\r\nthat rely on exact cycles counts. If users do not wish to run the tests\r\nthat require the reproducible binary, they can simply leave out the\r\n`test-exact-cycles` feature flag in their `cargo test` invocation.\r\n\r\nChanges in this PR involves moving code from the `cargo risczero build`\r\ncommand to the `risc0-build` crate, and making the functionality similar to\r\nthe existing embed_methods() function. \r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-28T18:33:25Z",
+          "tree_id": "abef5948c5c39298dd8379ceeecda4af6942711f",
+          "url": "https://github.com/risc0/risc0/commit/dcad3a92d8e56c13ec7cab38958cd0da6c06015d"
+        },
+        "date": 1695926700027,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2725651,
+            "range": "± 119950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2969031,
+            "range": "± 102405",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6040461,
+            "range": "± 40714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3655845750,
+            "range": "± 56409707",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3697744583,
+            "range": "± 65469382",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15025987833,
+            "range": "± 168416437",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3654263833,
+            "range": "± 54400512",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3620331604,
+            "range": "± 55483553",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14992678187,
+            "range": "± 150059374",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112157037+Roee-87@users.noreply.github.com",
+            "name": "Roy Rotstein",
+            "username": "Roee-87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac",
+          "message": "Add smartcore based ZKML example (#914)\n\nThis template is a guide for developers wishing to use the ZKVM to prove\r\ninference of ML models using the Rust SmartCore template.\r\n\r\nThe corresponding blog post can be found here:\r\nhttps://docs.google.com/document/d/1mqf93EowN3InyK6-e6rBRefldFcipOkbdT75aucdk8U/edit\r\n\r\nThe contents of the Jupyter notebook and train-model folder are\r\nessentially identical...I'm not sure which is a better format for\r\ncommunicating the nuances of training and exporting models. There's no\r\nneed for both (but maybe some users will have preference for one format\r\nover the other)...I'd welcome feedback as to which is more instructive.\r\n\r\n---------\r\n\r\nCo-authored-by: Roy Rotstein <royrotstein@Roys-MacBook-Pro-2.local>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-09-29T03:36:16Z",
+          "tree_id": "1bacf5d46a0cb76f1067633de5bbf23cb742abd0",
+          "url": "https://github.com/risc0/risc0/commit/c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac"
+        },
+        "date": 1695959259111,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2689804,
+            "range": "± 111256",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3041471,
+            "range": "± 88148",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5947861,
+            "range": "± 51106",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3585314729,
+            "range": "± 54257623",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3621084167,
+            "range": "± 75785869",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14985976416,
+            "range": "± 63983391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3649812937,
+            "range": "± 68749675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3660534771,
+            "range": "± 48234782",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15009074708,
+            "range": "± 188467613",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2bf393a801a594e41d7c09c8ab252c89c4166a2e",
+          "message": "Revive Fault Proof Part 1 (#920)\n\nThis is an attempt to re-enable proof of fault. With cycle-sensitive\r\ntests now only running in the docker environment, this change shouldn't\r\nimpact CI with cycle-related test failures that show different results\r\nby architecture.",
+          "timestamp": "2023-09-29T04:50:09Z",
+          "tree_id": "0c5f02511c65b9f2d23a2221d5cbfb431126a430",
+          "url": "https://github.com/risc0/risc0/commit/2bf393a801a594e41d7c09c8ab252c89c4166a2e"
+        },
+        "date": 1695963691635,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2697951,
+            "range": "± 76143",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3033608,
+            "range": "± 48947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5997354,
+            "range": "± 84426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3630998708,
+            "range": "± 53384423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3650827062,
+            "range": "± 53196427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15028001813,
+            "range": "± 234894331",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3613829125,
+            "range": "± 46661419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3706380042,
+            "range": "± 63439538",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15033439917,
+            "range": "± 155138726",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e7829346cc6aba12edb77498b9439ca4fe42fa7",
+          "message": "Prepare for client-only zkvm usage\n\nThis doesn't yet change any default feature flags, so should still be fairly minimal. \r\n\r\nThe planned set of PRs include:\r\n* add release process to build r0vm for all major targets\r\n  * use cargo zigbuild on linux to build with a specific glibc for max compat with older linux distros\r\n  * use something like https://github.com/cargo-bins/release-pr to automatically build/publish binaries on a per-release basis\r\n* update `cargo risczero install` or adjust docs to have users do `cargo binstall cargo-risczero` (depending on whether we package `r0vm` as standalone or combined with `cargo-risczero`)",
+          "timestamp": "2023-10-01T17:38:21-07:00",
+          "tree_id": "ba62b97bff681004b9b0afbbe721c6db2dc98efb",
+          "url": "https://github.com/risc0/risc0/commit/3e7829346cc6aba12edb77498b9439ca4fe42fa7"
+        },
+        "date": 1696207808170,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2699904,
+            "range": "± 64218",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3103847,
+            "range": "± 126804",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5961168,
+            "range": "± 63302",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3609209542,
+            "range": "± 65927274",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3645520041,
+            "range": "± 51569535",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15080236833,
+            "range": "± 117062196",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3627653562,
+            "range": "± 53295127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3694835500,
+            "range": "± 52494384",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14949277604,
+            "range": "± 200566607",
             "unit": "ns/iter"
           }
         ]
@@ -24758,6 +25304,552 @@ window.BENCHMARK_DATA = {
             "unit": "ns/iter"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d544ff885e4fbf35492f2b85bf69b1f4c8ca610d",
+          "message": "Added additional Bonsai docs to default_prover  (#904)\n\nThis PR expands on the docs in places where we depend on external inputs\r\nlike BONSAI_API_URL and BONSAI_API_KEY env vars to make it more clear\r\ntheir relationship to the selected prover.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-09-26T18:30:27Z",
+          "tree_id": "954fed6e9777ea5444ccd4c81989e272ee851c11",
+          "url": "https://github.com/risc0/risc0/commit/d544ff885e4fbf35492f2b85bf69b1f4c8ca610d"
+        },
+        "date": 1695754096894,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5140992,
+            "range": "± 94149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5772779,
+            "range": "± 105404",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11900668,
+            "range": "± 156173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 801847366,
+            "range": "± 11104752",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 831295506,
+            "range": "± 9108323",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3213586343,
+            "range": "± 18110748",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 805372798,
+            "range": "± 13080181",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 833808580,
+            "range": "± 11911618",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3210882975,
+            "range": "± 10608531",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54b8cb75f6b280595f31b4501f4ac65f2e79aea5",
+          "message": "Added get_version to zkvm / bonsai version check (#899)\n\nAdds the VERSION and get_version methods to the zkvm and adds x-risc0-version to the bonsai-sdk http headers\r\nto allow for explicit version checking to prevent local zkvm / bonsai zkvm mismatches.",
+          "timestamp": "2023-09-26T16:19:43-07:00",
+          "tree_id": "effa688da3ae86afe3ef7360f9c9179ab5984e17",
+          "url": "https://github.com/risc0/risc0/commit/54b8cb75f6b280595f31b4501f4ac65f2e79aea5"
+        },
+        "date": 1695771369133,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5126745,
+            "range": "± 119797",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5726844,
+            "range": "± 108508",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11852328,
+            "range": "± 131712",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 824512439,
+            "range": "± 15987194",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 847421780,
+            "range": "± 8314939",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2926505067,
+            "range": "± 13346843",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 815574287,
+            "range": "± 10458379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 851257202,
+            "range": "± 12729341",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2914438448,
+            "range": "± 15697217",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "979c8eac833c5094f80bbfa884d91fbde56a7d65",
+          "message": "Add experimental cargo-risczero test command and support for building rust-runtime.a (#646)\n\nThis PR adds a new `cargo riszero test` command, which can be used to\r\nbuild the current crate for\r\nthe RISC Zero target, and run it's tests inside the Executor.\r\n\r\nThis is intended to allow developers of libraries intended to support\r\nthe RISC Zero zkVM a way to\r\ntest their code, using all existing tests and any new ones they write\r\nfor zkVM specific\r\nfunctionality, without writing a guest wrapper or duplicating effort. As\r\nan example, see\r\nhttps://github.com/risc0/RustCrypto-crypto-bigint/pull/2 which adds\r\nsupport for running all tests\r\nfor the crypto-bigint library, which has been modified to use the bigint\r\nmultiplication accelerator\r\nwhen built for the RISC Zero target. This may also be used to test crate\r\ncompatibility with the zkVM\r\nwithout any modifications e.g. in the crate validator.\r\n\r\nAs a dependency, this PR includes support for building the zkVM rust\r\nruntime as a linkable `.a`\r\nfile. This is used within the `cargo risczero test` command to link\r\nrequired functionality, such as\r\nthe syscalls, for the test binaries. More generally it can be used as a\r\ntool for developing other\r\nruntimes, as the symbols can be used in any language with C FFI.\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Joby Thundil <joby@risczero.com>",
+          "timestamp": "2023-09-28T12:03:50-04:00",
+          "tree_id": "3af750a5818913bf6e47b6f68584ce5d3b55cfd4",
+          "url": "https://github.com/risc0/risc0/commit/979c8eac833c5094f80bbfa884d91fbde56a7d65"
+        },
+        "date": 1695919141434,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5172524,
+            "range": "± 147739",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5827553,
+            "range": "± 152343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 12000716,
+            "range": "± 179507",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 646253103,
+            "range": "± 2054801",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 677040174,
+            "range": "± 2902974",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2523756831,
+            "range": "± 6124572",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 651209855,
+            "range": "± 2775453",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 680125021,
+            "range": "± 2366878",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2534448904,
+            "range": "± 6854176",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dcad3a92d8e56c13ec7cab38958cd0da6c06015d",
+          "message": "zkVM tests: add feature flag to build multi-test with docker environment (#912)\n\nThis PR adds a test-exact-cycles feature for risc0-zkvm. This is used to\r\nbuild test guest binaries like multi-test using the docker environment\r\nin the `cargo test` command. The intention here is to run the tests\r\nusing a reproducible ELF binary to eliminate test failures across\r\ndifferent architectures that are caused by entropy in the ELF binaries\r\nresulting from rust build tools.\r\n\r\nI've gated 4 tests using this feature flag. My solution is to create a new\r\nfeature flag that the CI can use and it will run all tests including the ones\r\nthat rely on exact cycles counts. If users do not wish to run the tests\r\nthat require the reproducible binary, they can simply leave out the\r\n`test-exact-cycles` feature flag in their `cargo test` invocation.\r\n\r\nChanges in this PR involves moving code from the `cargo risczero build`\r\ncommand to the `risc0-build` crate, and making the functionality similar to\r\nthe existing embed_methods() function. \r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-28T18:33:25Z",
+          "tree_id": "abef5948c5c39298dd8379ceeecda4af6942711f",
+          "url": "https://github.com/risc0/risc0/commit/dcad3a92d8e56c13ec7cab38958cd0da6c06015d"
+        },
+        "date": 1695927209609,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5087814,
+            "range": "± 90210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5705959,
+            "range": "± 88839",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11792576,
+            "range": "± 124180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 650968142,
+            "range": "± 1861225",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 679432872,
+            "range": "± 2290340",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2495782376,
+            "range": "± 7906834",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 654823387,
+            "range": "± 2342484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 689736732,
+            "range": "± 2733734",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2512569436,
+            "range": "± 7912691",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112157037+Roee-87@users.noreply.github.com",
+            "name": "Roy Rotstein",
+            "username": "Roee-87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac",
+          "message": "Add smartcore based ZKML example (#914)\n\nThis template is a guide for developers wishing to use the ZKVM to prove\r\ninference of ML models using the Rust SmartCore template.\r\n\r\nThe corresponding blog post can be found here:\r\nhttps://docs.google.com/document/d/1mqf93EowN3InyK6-e6rBRefldFcipOkbdT75aucdk8U/edit\r\n\r\nThe contents of the Jupyter notebook and train-model folder are\r\nessentially identical...I'm not sure which is a better format for\r\ncommunicating the nuances of training and exporting models. There's no\r\nneed for both (but maybe some users will have preference for one format\r\nover the other)...I'd welcome feedback as to which is more instructive.\r\n\r\n---------\r\n\r\nCo-authored-by: Roy Rotstein <royrotstein@Roys-MacBook-Pro-2.local>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-09-29T03:36:16Z",
+          "tree_id": "1bacf5d46a0cb76f1067633de5bbf23cb742abd0",
+          "url": "https://github.com/risc0/risc0/commit/c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac"
+        },
+        "date": 1695960620662,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5067841,
+            "range": "± 119658",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5683124,
+            "range": "± 112999",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11702612,
+            "range": "± 116399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 668191774,
+            "range": "± 2673073",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 700302085,
+            "range": "± 2708143",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2478374554,
+            "range": "± 3699114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 674783307,
+            "range": "± 3617804",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 704910512,
+            "range": "± 1882284",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2497710126,
+            "range": "± 6658031",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2bf393a801a594e41d7c09c8ab252c89c4166a2e",
+          "message": "Revive Fault Proof Part 1 (#920)\n\nThis is an attempt to re-enable proof of fault. With cycle-sensitive\r\ntests now only running in the docker environment, this change shouldn't\r\nimpact CI with cycle-related test failures that show different results\r\nby architecture.",
+          "timestamp": "2023-09-29T04:50:09Z",
+          "tree_id": "0c5f02511c65b9f2d23a2221d5cbfb431126a430",
+          "url": "https://github.com/risc0/risc0/commit/2bf393a801a594e41d7c09c8ab252c89c4166a2e"
+        },
+        "date": 1695964151177,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5064763,
+            "range": "± 99943",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5683087,
+            "range": "± 117436",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11725055,
+            "range": "± 106109",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 764087360,
+            "range": "± 2116905",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 795875216,
+            "range": "± 1951210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2608641844,
+            "range": "± 6076845",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 770028481,
+            "range": "± 2668986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 801662482,
+            "range": "± 1912608",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2615087148,
+            "range": "± 7479236",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e7829346cc6aba12edb77498b9439ca4fe42fa7",
+          "message": "Prepare for client-only zkvm usage\n\nThis doesn't yet change any default feature flags, so should still be fairly minimal. \r\n\r\nThe planned set of PRs include:\r\n* add release process to build r0vm for all major targets\r\n  * use cargo zigbuild on linux to build with a specific glibc for max compat with older linux distros\r\n  * use something like https://github.com/cargo-bins/release-pr to automatically build/publish binaries on a per-release basis\r\n* update `cargo risczero install` or adjust docs to have users do `cargo binstall cargo-risczero` (depending on whether we package `r0vm` as standalone or combined with `cargo-risczero`)",
+          "timestamp": "2023-10-01T17:38:21-07:00",
+          "tree_id": "ba62b97bff681004b9b0afbbe721c6db2dc98efb",
+          "url": "https://github.com/risc0/risc0/commit/3e7829346cc6aba12edb77498b9439ca4fe42fa7"
+        },
+        "date": 1696209214333,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5075476,
+            "range": "± 85394",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5676279,
+            "range": "± 88928",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11746897,
+            "range": "± 102227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 680384407,
+            "range": "± 2433136",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 709959955,
+            "range": "± 2124919",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2553116915,
+            "range": "± 7458093",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 686946731,
+            "range": "± 3492492",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 722422429,
+            "range": "± 1771596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2576566728,
+            "range": "± 4356421",
+            "unit": "ns/iter"
+          }
+        ]
       }
     ],
     "Linux-cpu": [
@@ -37044,6 +38136,552 @@ window.BENCHMARK_DATA = {
             "unit": "ns/iter"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d544ff885e4fbf35492f2b85bf69b1f4c8ca610d",
+          "message": "Added additional Bonsai docs to default_prover  (#904)\n\nThis PR expands on the docs in places where we depend on external inputs\r\nlike BONSAI_API_URL and BONSAI_API_KEY env vars to make it more clear\r\ntheir relationship to the selected prover.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-09-26T18:30:27Z",
+          "tree_id": "954fed6e9777ea5444ccd4c81989e272ee851c11",
+          "url": "https://github.com/risc0/risc0/commit/d544ff885e4fbf35492f2b85bf69b1f4c8ca610d"
+        },
+        "date": 1695754634783,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6898838,
+            "range": "± 426320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7854556,
+            "range": "± 592348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14479354,
+            "range": "± 454919",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5074251023,
+            "range": "± 32703585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5094288842,
+            "range": "± 19027344",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20808136993,
+            "range": "± 106622328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5066375855,
+            "range": "± 22193256",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5116353774,
+            "range": "± 23448183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20993991280,
+            "range": "± 144723730",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54b8cb75f6b280595f31b4501f4ac65f2e79aea5",
+          "message": "Added get_version to zkvm / bonsai version check (#899)\n\nAdds the VERSION and get_version methods to the zkvm and adds x-risc0-version to the bonsai-sdk http headers\r\nto allow for explicit version checking to prevent local zkvm / bonsai zkvm mismatches.",
+          "timestamp": "2023-09-26T16:19:43-07:00",
+          "tree_id": "effa688da3ae86afe3ef7360f9c9179ab5984e17",
+          "url": "https://github.com/risc0/risc0/commit/54b8cb75f6b280595f31b4501f4ac65f2e79aea5"
+        },
+        "date": 1695771895550,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6949644,
+            "range": "± 349596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8059385,
+            "range": "± 404677",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14310881,
+            "range": "± 417730",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5080146616,
+            "range": "± 22473060",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5105294390,
+            "range": "± 36259766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 21046683211,
+            "range": "± 138806696",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5075282177,
+            "range": "± 27064040",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5119519131,
+            "range": "± 19690155",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 21050227812,
+            "range": "± 117628733",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "979c8eac833c5094f80bbfa884d91fbde56a7d65",
+          "message": "Add experimental cargo-risczero test command and support for building rust-runtime.a (#646)\n\nThis PR adds a new `cargo riszero test` command, which can be used to\r\nbuild the current crate for\r\nthe RISC Zero target, and run it's tests inside the Executor.\r\n\r\nThis is intended to allow developers of libraries intended to support\r\nthe RISC Zero zkVM a way to\r\ntest their code, using all existing tests and any new ones they write\r\nfor zkVM specific\r\nfunctionality, without writing a guest wrapper or duplicating effort. As\r\nan example, see\r\nhttps://github.com/risc0/RustCrypto-crypto-bigint/pull/2 which adds\r\nsupport for running all tests\r\nfor the crypto-bigint library, which has been modified to use the bigint\r\nmultiplication accelerator\r\nwhen built for the RISC Zero target. This may also be used to test crate\r\ncompatibility with the zkVM\r\nwithout any modifications e.g. in the crate validator.\r\n\r\nAs a dependency, this PR includes support for building the zkVM rust\r\nruntime as a linkable `.a`\r\nfile. This is used within the `cargo risczero test` command to link\r\nrequired functionality, such as\r\nthe syscalls, for the test binaries. More generally it can be used as a\r\ntool for developing other\r\nruntimes, as the symbols can be used in any language with C FFI.\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Joby Thundil <joby@risczero.com>",
+          "timestamp": "2023-09-28T12:03:50-04:00",
+          "tree_id": "3af750a5818913bf6e47b6f68584ce5d3b55cfd4",
+          "url": "https://github.com/risc0/risc0/commit/979c8eac833c5094f80bbfa884d91fbde56a7d65"
+        },
+        "date": 1695918681934,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6925646,
+            "range": "± 496115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7982118,
+            "range": "± 705011",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 15204218,
+            "range": "± 514962",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5039248174,
+            "range": "± 26140617",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5068709711,
+            "range": "± 16832383",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20858236516,
+            "range": "± 138053127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5018056203,
+            "range": "± 30850207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5078616502,
+            "range": "± 18743113",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20870594893,
+            "range": "± 129158659",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dcad3a92d8e56c13ec7cab38958cd0da6c06015d",
+          "message": "zkVM tests: add feature flag to build multi-test with docker environment (#912)\n\nThis PR adds a test-exact-cycles feature for risc0-zkvm. This is used to\r\nbuild test guest binaries like multi-test using the docker environment\r\nin the `cargo test` command. The intention here is to run the tests\r\nusing a reproducible ELF binary to eliminate test failures across\r\ndifferent architectures that are caused by entropy in the ELF binaries\r\nresulting from rust build tools.\r\n\r\nI've gated 4 tests using this feature flag. My solution is to create a new\r\nfeature flag that the CI can use and it will run all tests including the ones\r\nthat rely on exact cycles counts. If users do not wish to run the tests\r\nthat require the reproducible binary, they can simply leave out the\r\n`test-exact-cycles` feature flag in their `cargo test` invocation.\r\n\r\nChanges in this PR involves moving code from the `cargo risczero build`\r\ncommand to the `risc0-build` crate, and making the functionality similar to\r\nthe existing embed_methods() function. \r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-28T18:33:25Z",
+          "tree_id": "abef5948c5c39298dd8379ceeecda4af6942711f",
+          "url": "https://github.com/risc0/risc0/commit/dcad3a92d8e56c13ec7cab38958cd0da6c06015d"
+        },
+        "date": 1695926958288,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6846560,
+            "range": "± 450883",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7772475,
+            "range": "± 527412",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14937636,
+            "range": "± 501683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4990194181,
+            "range": "± 14030468",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5022722647,
+            "range": "± 17888110",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20717162142,
+            "range": "± 158742100",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4997051312,
+            "range": "± 16459004",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5028919540,
+            "range": "± 16553716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20716723324,
+            "range": "± 72757510",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112157037+Roee-87@users.noreply.github.com",
+            "name": "Roy Rotstein",
+            "username": "Roee-87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac",
+          "message": "Add smartcore based ZKML example (#914)\n\nThis template is a guide for developers wishing to use the ZKVM to prove\r\ninference of ML models using the Rust SmartCore template.\r\n\r\nThe corresponding blog post can be found here:\r\nhttps://docs.google.com/document/d/1mqf93EowN3InyK6-e6rBRefldFcipOkbdT75aucdk8U/edit\r\n\r\nThe contents of the Jupyter notebook and train-model folder are\r\nessentially identical...I'm not sure which is a better format for\r\ncommunicating the nuances of training and exporting models. There's no\r\nneed for both (but maybe some users will have preference for one format\r\nover the other)...I'd welcome feedback as to which is more instructive.\r\n\r\n---------\r\n\r\nCo-authored-by: Roy Rotstein <royrotstein@Roys-MacBook-Pro-2.local>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-09-29T03:36:16Z",
+          "tree_id": "1bacf5d46a0cb76f1067633de5bbf23cb742abd0",
+          "url": "https://github.com/risc0/risc0/commit/c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac"
+        },
+        "date": 1695960194735,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 7010718,
+            "range": "± 541464",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8392235,
+            "range": "± 548548",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 15164217,
+            "range": "± 593022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5029027599,
+            "range": "± 40650790",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5042515793,
+            "range": "± 30767773",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20905945999,
+            "range": "± 89015348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5024430940,
+            "range": "± 32373207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5068955347,
+            "range": "± 26544780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20777474413,
+            "range": "± 119913689",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2bf393a801a594e41d7c09c8ab252c89c4166a2e",
+          "message": "Revive Fault Proof Part 1 (#920)\n\nThis is an attempt to re-enable proof of fault. With cycle-sensitive\r\ntests now only running in the docker environment, this change shouldn't\r\nimpact CI with cycle-related test failures that show different results\r\nby architecture.",
+          "timestamp": "2023-09-29T04:50:09Z",
+          "tree_id": "0c5f02511c65b9f2d23a2221d5cbfb431126a430",
+          "url": "https://github.com/risc0/risc0/commit/2bf393a801a594e41d7c09c8ab252c89c4166a2e"
+        },
+        "date": 1695963525705,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 4808107,
+            "range": "± 65271",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5324777,
+            "range": "± 76931",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10126654,
+            "range": "± 295490",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2368219600,
+            "range": "± 287475473",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2185979607,
+            "range": "± 229148801",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7034548886,
+            "range": "± 493162934",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2286302981,
+            "range": "± 522949438",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2154503438,
+            "range": "± 341682901",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7410710670,
+            "range": "± 359438763",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e7829346cc6aba12edb77498b9439ca4fe42fa7",
+          "message": "Prepare for client-only zkvm usage\n\nThis doesn't yet change any default feature flags, so should still be fairly minimal. \r\n\r\nThe planned set of PRs include:\r\n* add release process to build r0vm for all major targets\r\n  * use cargo zigbuild on linux to build with a specific glibc for max compat with older linux distros\r\n  * use something like https://github.com/cargo-bins/release-pr to automatically build/publish binaries on a per-release basis\r\n* update `cargo risczero install` or adjust docs to have users do `cargo binstall cargo-risczero` (depending on whether we package `r0vm` as standalone or combined with `cargo-risczero`)",
+          "timestamp": "2023-10-01T17:38:21-07:00",
+          "tree_id": "ba62b97bff681004b9b0afbbe721c6db2dc98efb",
+          "url": "https://github.com/risc0/risc0/commit/3e7829346cc6aba12edb77498b9439ca4fe42fa7"
+        },
+        "date": 1696208763321,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6941531,
+            "range": "± 388414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7993359,
+            "range": "± 484745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14208951,
+            "range": "± 460868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5008838609,
+            "range": "± 26078834",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5041017258,
+            "range": "± 21065299",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20706528641,
+            "range": "± 83603847",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5007216995,
+            "range": "± 19159797",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5060113225,
+            "range": "± 16324458",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20733236366,
+            "range": "± 125828089",
+            "unit": "ns/iter"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -48815,6 +50453,552 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3113454375,
             "range": "± 9943126",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d544ff885e4fbf35492f2b85bf69b1f4c8ca610d",
+          "message": "Added additional Bonsai docs to default_prover  (#904)\n\nThis PR expands on the docs in places where we depend on external inputs\r\nlike BONSAI_API_URL and BONSAI_API_KEY env vars to make it more clear\r\ntheir relationship to the selected prover.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2023-09-26T18:30:27Z",
+          "tree_id": "954fed6e9777ea5444ccd4c81989e272ee851c11",
+          "url": "https://github.com/risc0/risc0/commit/d544ff885e4fbf35492f2b85bf69b1f4c8ca610d"
+        },
+        "date": 1695754961702,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2819874,
+            "range": "± 97915",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3136079,
+            "range": "± 123379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6167705,
+            "range": "± 126941",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 801659291,
+            "range": "± 3888643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 821265146,
+            "range": "± 4706164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3117896792,
+            "range": "± 8150660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 822046729,
+            "range": "± 5508672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 843655541,
+            "range": "± 3682505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3111454166,
+            "range": "± 7696250",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54b8cb75f6b280595f31b4501f4ac65f2e79aea5",
+          "message": "Added get_version to zkvm / bonsai version check (#899)\n\nAdds the VERSION and get_version methods to the zkvm and adds x-risc0-version to the bonsai-sdk http headers\r\nto allow for explicit version checking to prevent local zkvm / bonsai zkvm mismatches.",
+          "timestamp": "2023-09-26T16:19:43-07:00",
+          "tree_id": "effa688da3ae86afe3ef7360f9c9179ab5984e17",
+          "url": "https://github.com/risc0/risc0/commit/54b8cb75f6b280595f31b4501f4ac65f2e79aea5"
+        },
+        "date": 1695772031547,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2740427,
+            "range": "± 80644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3128128,
+            "range": "± 94619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6199578,
+            "range": "± 84842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 801063458,
+            "range": "± 8007470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 818141396,
+            "range": "± 3777609",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3111964458,
+            "range": "± 9827504",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 823196271,
+            "range": "± 5989450",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 841743104,
+            "range": "± 6704751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3109646833,
+            "range": "± 15389745",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "979c8eac833c5094f80bbfa884d91fbde56a7d65",
+          "message": "Add experimental cargo-risczero test command and support for building rust-runtime.a (#646)\n\nThis PR adds a new `cargo riszero test` command, which can be used to\r\nbuild the current crate for\r\nthe RISC Zero target, and run it's tests inside the Executor.\r\n\r\nThis is intended to allow developers of libraries intended to support\r\nthe RISC Zero zkVM a way to\r\ntest their code, using all existing tests and any new ones they write\r\nfor zkVM specific\r\nfunctionality, without writing a guest wrapper or duplicating effort. As\r\nan example, see\r\nhttps://github.com/risc0/RustCrypto-crypto-bigint/pull/2 which adds\r\nsupport for running all tests\r\nfor the crypto-bigint library, which has been modified to use the bigint\r\nmultiplication accelerator\r\nwhen built for the RISC Zero target. This may also be used to test crate\r\ncompatibility with the zkVM\r\nwithout any modifications e.g. in the crate validator.\r\n\r\nAs a dependency, this PR includes support for building the zkVM rust\r\nruntime as a linkable `.a`\r\nfile. This is used within the `cargo risczero test` command to link\r\nrequired functionality, such as\r\nthe syscalls, for the test binaries. More generally it can be used as a\r\ntool for developing other\r\nruntimes, as the symbols can be used in any language with C FFI.\r\n\r\n---------\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Joby Thundil <joby@risczero.com>",
+          "timestamp": "2023-09-28T12:03:50-04:00",
+          "tree_id": "3af750a5818913bf6e47b6f68584ce5d3b55cfd4",
+          "url": "https://github.com/risc0/risc0/commit/979c8eac833c5094f80bbfa884d91fbde56a7d65"
+        },
+        "date": 1695918469022,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2705130,
+            "range": "± 125058",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3076188,
+            "range": "± 106585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6217252,
+            "range": "± 63749",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 795418333,
+            "range": "± 4033459",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 817649187,
+            "range": "± 4654987",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3118342979,
+            "range": "± 6842642",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 819946687,
+            "range": "± 7674012",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 841741041,
+            "range": "± 5445864",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3111292479,
+            "range": "± 13634415",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dcad3a92d8e56c13ec7cab38958cd0da6c06015d",
+          "message": "zkVM tests: add feature flag to build multi-test with docker environment (#912)\n\nThis PR adds a test-exact-cycles feature for risc0-zkvm. This is used to\r\nbuild test guest binaries like multi-test using the docker environment\r\nin the `cargo test` command. The intention here is to run the tests\r\nusing a reproducible ELF binary to eliminate test failures across\r\ndifferent architectures that are caused by entropy in the ELF binaries\r\nresulting from rust build tools.\r\n\r\nI've gated 4 tests using this feature flag. My solution is to create a new\r\nfeature flag that the CI can use and it will run all tests including the ones\r\nthat rely on exact cycles counts. If users do not wish to run the tests\r\nthat require the reproducible binary, they can simply leave out the\r\n`test-exact-cycles` feature flag in their `cargo test` invocation.\r\n\r\nChanges in this PR involves moving code from the `cargo risczero build`\r\ncommand to the `risc0-build` crate, and making the functionality similar to\r\nthe existing embed_methods() function. \r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-09-28T18:33:25Z",
+          "tree_id": "abef5948c5c39298dd8379ceeecda4af6942711f",
+          "url": "https://github.com/risc0/risc0/commit/dcad3a92d8e56c13ec7cab38958cd0da6c06015d"
+        },
+        "date": 1695926583236,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2749047,
+            "range": "± 66043",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3049699,
+            "range": "± 116371",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6081405,
+            "range": "± 175775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 794919250,
+            "range": "± 6228343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 813156083,
+            "range": "± 6164711",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3122447521,
+            "range": "± 6549643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 823977500,
+            "range": "± 9560854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 839993562,
+            "range": "± 3614587",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3114589854,
+            "range": "± 12789993",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112157037+Roee-87@users.noreply.github.com",
+            "name": "Roy Rotstein",
+            "username": "Roee-87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac",
+          "message": "Add smartcore based ZKML example (#914)\n\nThis template is a guide for developers wishing to use the ZKVM to prove\r\ninference of ML models using the Rust SmartCore template.\r\n\r\nThe corresponding blog post can be found here:\r\nhttps://docs.google.com/document/d/1mqf93EowN3InyK6-e6rBRefldFcipOkbdT75aucdk8U/edit\r\n\r\nThe contents of the Jupyter notebook and train-model folder are\r\nessentially identical...I'm not sure which is a better format for\r\ncommunicating the nuances of training and exporting models. There's no\r\nneed for both (but maybe some users will have preference for one format\r\nover the other)...I'd welcome feedback as to which is more instructive.\r\n\r\n---------\r\n\r\nCo-authored-by: Roy Rotstein <royrotstein@Roys-MacBook-Pro-2.local>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-09-29T03:36:16Z",
+          "tree_id": "1bacf5d46a0cb76f1067633de5bbf23cb742abd0",
+          "url": "https://github.com/risc0/risc0/commit/c68b18a3a742cf9f4bc8c9115b0d6b74f5b394ac"
+        },
+        "date": 1695958895006,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2731478,
+            "range": "± 63168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2992226,
+            "range": "± 169296",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6014348,
+            "range": "± 51604",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 806897979,
+            "range": "± 5776814",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 825945208,
+            "range": "± 3417979",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3112937833,
+            "range": "± 13592608",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 835383271,
+            "range": "± 4663313",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 850855895,
+            "range": "± 8245757",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3105779187,
+            "range": "± 6925524",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2bf393a801a594e41d7c09c8ab252c89c4166a2e",
+          "message": "Revive Fault Proof Part 1 (#920)\n\nThis is an attempt to re-enable proof of fault. With cycle-sensitive\r\ntests now only running in the docker environment, this change shouldn't\r\nimpact CI with cycle-related test failures that show different results\r\nby architecture.",
+          "timestamp": "2023-09-29T04:50:09Z",
+          "tree_id": "0c5f02511c65b9f2d23a2221d5cbfb431126a430",
+          "url": "https://github.com/risc0/risc0/commit/2bf393a801a594e41d7c09c8ab252c89c4166a2e"
+        },
+        "date": 1695963335061,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2756962,
+            "range": "± 152809",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3066772,
+            "range": "± 81018",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6052927,
+            "range": "± 167345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 804924084,
+            "range": "± 3007122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 826728417,
+            "range": "± 5529183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3101891208,
+            "range": "± 11451844",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 826340187,
+            "range": "± 2877472",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 842543354,
+            "range": "± 6569435",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3112716833,
+            "range": "± 11723918",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e7829346cc6aba12edb77498b9439ca4fe42fa7",
+          "message": "Prepare for client-only zkvm usage\n\nThis doesn't yet change any default feature flags, so should still be fairly minimal. \r\n\r\nThe planned set of PRs include:\r\n* add release process to build r0vm for all major targets\r\n  * use cargo zigbuild on linux to build with a specific glibc for max compat with older linux distros\r\n  * use something like https://github.com/cargo-bins/release-pr to automatically build/publish binaries on a per-release basis\r\n* update `cargo risczero install` or adjust docs to have users do `cargo binstall cargo-risczero` (depending on whether we package `r0vm` as standalone or combined with `cargo-risczero`)",
+          "timestamp": "2023-10-01T17:38:21-07:00",
+          "tree_id": "ba62b97bff681004b9b0afbbe721c6db2dc98efb",
+          "url": "https://github.com/risc0/risc0/commit/3e7829346cc6aba12edb77498b9439ca4fe42fa7"
+        },
+        "date": 1696207703267,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2707950,
+            "range": "± 63528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2996125,
+            "range": "± 172027",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5919679,
+            "range": "± 116332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 804756812,
+            "range": "± 5972499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 826562291,
+            "range": "± 5162257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3124468792,
+            "range": "± 10690692",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 827007250,
+            "range": "± 4984164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 850080500,
+            "range": "± 6889945",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3115008167,
+            "range": "± 13491615",
             "unit": "ns/iter"
           }
         ]
