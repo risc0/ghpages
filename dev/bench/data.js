@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696358158616,
+  "lastUpdate": 1696358660103,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -51077,6 +51077,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3115008167,
             "range": "± 13491615",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6d2cd981b6c5dda0c0277ef908012cc559de760f",
+          "message": "Fix to allow risc0-zkvm to be published (#936)\n\nUsing a feature flag to toggle a feature of a dev-dependency is not\r\nhandled well by `cargo publish`. So we need to come up with a new way to\r\noptionally build the methods crate in a docker environment.",
+          "timestamp": "2023-10-03T11:18:16-07:00",
+          "tree_id": "46422950f398271e45fdd4349438b1be952d1892",
+          "url": "https://github.com/risc0/risc0/commit/6d2cd981b6c5dda0c0277ef908012cc559de760f"
+        },
+        "date": 1696358657818,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2821997,
+            "range": "± 62570",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3113729,
+            "range": "± 78742",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 6039836,
+            "range": "± 76424",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 803954125,
+            "range": "± 5669640",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 821178938,
+            "range": "± 6511083",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3124232396,
+            "range": "± 11224308",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 830133979,
+            "range": "± 4395602",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 849350563,
+            "range": "± 5863359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3112651875,
+            "range": "± 7471739",
             "unit": "ns/iter"
           }
         ]
