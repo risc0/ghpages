@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696602156387,
+  "lastUpdate": 1696602522047,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12937,6 +12937,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15063785396,
             "range": "± 95551100",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7216eaac9dca2d0b4cea707f4fe26a8da03c048d",
+          "message": "Remove unnecessary clone (#956)\n\nFix CI complaining about useless clone",
+          "timestamp": "2023-10-06T15:12:26+01:00",
+          "tree_id": "075e2311151245bead2b702f8907004c71bb4baa",
+          "url": "https://github.com/risc0/risc0/commit/7216eaac9dca2d0b4cea707f4fe26a8da03c048d"
+        },
+        "date": 1696602519814,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2733330,
+            "range": "± 220427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3016993,
+            "range": "± 163228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5976710,
+            "range": "± 96752",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3655477542,
+            "range": "± 46093154",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3635871167,
+            "range": "± 61065811",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15026362500,
+            "range": "± 64345627",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3680526958,
+            "range": "± 59647092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3692333792,
+            "range": "± 67493259",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15078519104,
+            "range": "± 58026346",
             "unit": "ns/iter"
           }
         ]
