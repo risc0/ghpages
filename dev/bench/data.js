@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696682973934,
+  "lastUpdate": 1696683065031,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -40005,6 +40005,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 6540347450,
             "range": "± 211187245",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "97b472887726c1ea8444417fff6a576792450796",
+          "message": "Use cargo-machete to identify and drop unused crates (#964)\n\nBased on initial investigation in #928\n\n---------\n\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2023-10-07T11:47:40Z",
+          "tree_id": "7fe252c0acfa8cbd0582709564ddaf4e8c00550d",
+          "url": "https://github.com/risc0/risc0/commit/97b472887726c1ea8444417fff6a576792450796"
+        },
+        "date": 1696683063332,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5299576,
+            "range": "± 876217",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 8412250,
+            "range": "± 616131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10521291,
+            "range": "± 140082",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3080585846,
+            "range": "± 3685161699",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3082185857,
+            "range": "± 3291496341",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7011038608,
+            "range": "± 2485032342",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2325731015,
+            "range": "± 279059512",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2117211533,
+            "range": "± 210853978",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7044652873,
+            "range": "± 793398460",
             "unit": "ns/iter"
           }
         ]
