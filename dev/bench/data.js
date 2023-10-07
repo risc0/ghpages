@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696658065220,
+  "lastUpdate": 1696658272782,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -39771,6 +39771,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20509401159,
             "range": "± 84099356",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e37024ba3802c2578dafdbf63be0d5786d39e5bc",
+          "message": "guest memory: place stack below text/code (#950)\n\nThe previous memory layout was prone to a security vulnerability because\nthe\nstack could collide with the heap. This change places the stack below\nTEXT_START with enough space for 2 MB of stack. This also results in\nincreased\nlocality of memory which will result in less page faults for small\nprograms.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-10-07T04:53:31Z",
+          "tree_id": "b2aebd529516e91a6c6dec44acbc36f25d38da3b",
+          "url": "https://github.com/risc0/risc0/commit/e37024ba3802c2578dafdbf63be0d5786d39e5bc"
+        },
+        "date": 1696658270435,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5827984,
+            "range": "± 1496998",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 5896117,
+            "range": "± 1408899",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 22828357,
+            "range": "± 7649294",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2489017463,
+            "range": "± 2128016870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2325081977,
+            "range": "± 2052942125",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 8008617399,
+            "range": "± 4660186511",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1953910456,
+            "range": "± 169265364",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1917437820,
+            "range": "± 159457900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 6540347450,
+            "range": "± 211187245",
             "unit": "ns/iter"
           }
         ]
