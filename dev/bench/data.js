@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697007288031,
+  "lastUpdate": 1697222213973,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -39707,6 +39707,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3095582771,
             "range": "± 8504008",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "832c6dc8dadc4ce9ac28386844e71653272b6898",
+          "message": "Add retries to risczero install downloads (#972)\n\nFixes #873\nFixes #834",
+          "timestamp": "2023-10-13T17:36:39Z",
+          "tree_id": "2c331336b9431f04030ebf5dbf8f746d664a26d1",
+          "url": "https://github.com/risc0/risc0/commit/832c6dc8dadc4ce9ac28386844e71653272b6898"
+        },
+        "date": 1697222212009,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2760166,
+            "range": "± 86147",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3016412,
+            "range": "± 104901",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5979212,
+            "range": "± 60498",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 796648250,
+            "range": "± 5980241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 816689104,
+            "range": "± 3787122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3130097562,
+            "range": "± 13148959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 821700229,
+            "range": "± 5299322",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 837483208,
+            "range": "± 6508242",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3127161604,
+            "range": "± 11398024",
             "unit": "ns/iter"
           }
         ]
