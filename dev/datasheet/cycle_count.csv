@@ -1,0 +1,14 @@
+name,cycles
+bevy,262144
+chess,262144
+digital-signature,65536
+ecdsa,1179648
+hello-world,65536
+json,131072
+password-checker,131072
+prorata,524288
+sha,65536
+smartcore-ml,524288
+waldo,6815744
+wasm,524288
+wordle,65536
