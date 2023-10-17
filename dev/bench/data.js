@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697511351282,
+  "lastUpdate": 1697541997577,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -40955,6 +40955,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3102887541,
             "range": "± 14533724",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33f95369584093df4ae88537654a75c5c3fbc114",
+          "message": "Run extended formatting rules (#993)\n\nSome of the specified formatting rules in the repo are unstable. As a\nresult, they are not running in CI at the moment.\n\nThis PR including results from running the following script:\n\n```bash\n#!/bin/bash\nset -e\n\ncargo +nightly fmt --all\ncargo +nightly fmt --all --manifest-path examples/Cargo.toml\ncargo +nightly fmt --all --manifest-path bonsai/Cargo.toml\ncargo +nightly fmt --all --manifest-path bonsai/examples/governance/Cargo.toml\ncargo sort --workspace\ncargo sort --workspace examples\ncargo sort --workspace bonsai\ncargo sort --workspace bonsai/examples/governance\n```\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-10-17T10:34:17Z",
+          "tree_id": "cb69dd703254bd4c6ba9b541a9e5de9a104d43f9",
+          "url": "https://github.com/risc0/risc0/commit/33f95369584093df4ae88537654a75c5c3fbc114"
+        },
+        "date": 1697541995728,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2713277,
+            "range": "± 44152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3023597,
+            "range": "± 53161",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5911354,
+            "range": "± 38527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 795218708,
+            "range": "± 4170761",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 813559166,
+            "range": "± 4152200",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 3111153312,
+            "range": "± 6484632",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 823171166,
+            "range": "± 5262627",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 839493541,
+            "range": "± 7421086",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 3110081688,
+            "range": "± 10942372",
             "unit": "ns/iter"
           }
         ]
