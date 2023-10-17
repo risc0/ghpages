@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697510198435,
+  "lastUpdate": 1697510792652,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20437,6 +20437,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 3426918652,
             "range": "± 33401260",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f0f1ae189c31eaf6458dad0b29d7f56b96f721a",
+          "message": "Enable full stack trace on profiler (#890)\n\n- Improve the guest profiler to support full stack trace that can be\nused by pprof to show graph and flamegraph\n- Add profiling example\n- Add profiling section on the docs",
+          "timestamp": "2023-10-17T01:44:44Z",
+          "tree_id": "edc51da9120ca9a3d0f6dddc39eb4846c042bbdd",
+          "url": "https://github.com/risc0/risc0/commit/6f0f1ae189c31eaf6458dad0b29d7f56b96f721a"
+        },
+        "date": 1697510790680,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5434312,
+            "range": "± 112098",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6088035,
+            "range": "± 123700",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11993129,
+            "range": "± 56745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 904681288,
+            "range": "± 2144002",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 950376968,
+            "range": "± 1861974",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2575020697,
+            "range": "± 6167078",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 912642140,
+            "range": "± 2626233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 944787335,
+            "range": "± 2728999",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2588487441,
+            "range": "± 5422570",
             "unit": "ns/iter"
           }
         ]
