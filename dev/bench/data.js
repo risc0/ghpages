@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697553574464,
+  "lastUpdate": 1697554155604,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -31047,6 +31047,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20752463139,
             "range": "± 90145821",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1cc087f5e99273b5e32d5ca7204526b7223376f6",
+          "message": "Benchmarks (#893)\n\nThis PR will enable to run application benchmarks on every push to\n`main` and upload the results on our `ghpages` on its `dev` branch.\n\nExample: https://risc0.github.io/ghpages/dev/benchmarks/index.html\n\nResolves #433",
+          "timestamp": "2023-10-17T13:36:44Z",
+          "tree_id": "d6e8b5958e575145434905a02aa5ff6c9f25f047",
+          "url": "https://github.com/risc0/risc0/commit/1cc087f5e99273b5e32d5ca7204526b7223376f6"
+        },
+        "date": 1697554153312,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 7029136,
+            "range": "± 475077",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7867080,
+            "range": "± 597027",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14198405,
+            "range": "± 461524",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4990030454,
+            "range": "± 38732960",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5027008358,
+            "range": "± 24854250",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20784904137,
+            "range": "± 159328375",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4983537898,
+            "range": "± 13374726",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5027460442,
+            "range": "± 57443138",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20799511814,
+            "range": "± 117957300",
             "unit": "ns/iter"
           }
         ]
