@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697610057719,
+  "lastUpdate": 1697610438722,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -31515,6 +31515,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 20853087597,
             "range": "± 96572434",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "85081d387ffd89c69c4cb5fe47140e769294ad5a",
+          "message": "Replace add_input with write and write_slice (#1002)\n\n* Fixes #845\r\n* Consistent with corresponding guest API (`read` and `read_slice`).\r\n\r\n---------\r\n\r\nCo-authored-by: capossele <angelocapossele@gmail.com>",
+          "timestamp": "2023-10-18T05:57:16Z",
+          "tree_id": "ba6e241b3a33d8d0d829490af23f898931a25cc7",
+          "url": "https://github.com/risc0/risc0/commit/85081d387ffd89c69c4cb5fe47140e769294ad5a"
+        },
+        "date": 1697610436455,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6991341,
+            "range": "± 562094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7859824,
+            "range": "± 453695",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 13957567,
+            "range": "± 677816",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 5014328361,
+            "range": "± 29401156",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 5041771243,
+            "range": "± 23961024",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 20883134791,
+            "range": "± 76474723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 5020020606,
+            "range": "± 16543531",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 5065141840,
+            "range": "± 16241262",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 20830575875,
+            "range": "± 101762231",
             "unit": "ns/iter"
           }
         ]
