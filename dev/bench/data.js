@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697601142444,
+  "lastUpdate": 1697601520809,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10373,6 +10373,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 15011668395,
             "range": "± 145248056",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b17520022b4fdca0eda1fd7ebda6be2e0f909886",
+          "message": "Fix datasheet CI cycle counter (#1004)\n\n- add missing subcommand to CI\n- fix smartcore_ml missing input\n- simplify code",
+          "timestamp": "2023-10-18T03:06:34Z",
+          "tree_id": "dd5a68b68fa6ec0e6dd0e1cd5898632640f8f4f8",
+          "url": "https://github.com/risc0/risc0/commit/b17520022b4fdca0eda1fd7ebda6be2e0f909886"
+        },
+        "date": 1697601519088,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2699265,
+            "range": "± 130723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 2908342,
+            "range": "± 181802",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 5945514,
+            "range": "± 78900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3581044271,
+            "range": "± 44106827",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3637995937,
+            "range": "± 53231286",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 15042783937,
+            "range": "± 198261985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3620827437,
+            "range": "± 58373383",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3641850229,
+            "range": "± 75095183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 15010846604,
+            "range": "± 107779111",
             "unit": "ns/iter"
           }
         ]
