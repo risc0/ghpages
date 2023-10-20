@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697822050561,
+  "lastUpdate": 1697822932110,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -32373,6 +32373,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 38826795864,
             "range": "± 175810092",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "230261259d5df0220fb6a9acf6a9cf40ff887613",
+          "message": "Server/Client: connect lift, join, and identityP254 to zkvm (#1015)\n\nThis PR adds support for lift/join/identityp254 to the client/server\r\ninfrastructure so that it can be used by the zkvm and eventually r0vm.\r\n\r\nCloses: #995",
+          "timestamp": "2023-10-20T16:47:34Z",
+          "tree_id": "8f964070f691b607324b30c2e03f3fd2e439e914",
+          "url": "https://github.com/risc0/risc0/commit/230261259d5df0220fb6a9acf6a9cf40ff887613"
+        },
+        "date": 1697822929669,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6916967,
+            "range": "± 464363",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7711685,
+            "range": "± 431855",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 13954224,
+            "range": "± 434573",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 9580224039,
+            "range": "± 23252995",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 9626527609,
+            "range": "± 22661215",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 38732266869,
+            "range": "± 56392870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 9598454919,
+            "range": "± 59931907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 9630288252,
+            "range": "± 34451655",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 38800686684,
+            "range": "± 130271857",
             "unit": "ns/iter"
           }
         ]
