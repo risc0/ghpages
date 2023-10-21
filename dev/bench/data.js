@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697852614237,
+  "lastUpdate": 1697853267557,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21841,6 +21841,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2840864797,
             "range": "± 5964426",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "505295b963c97db2afffe58f4b0cb4721e396b90",
+          "message": "Default Executor with FileSegmentRef (#1014)\n\n- Add a new `segment_path` option field to the `ExecutorEnv` struct.\r\nCurrently this is only public to the crate and no public functions to\r\nmodify it are provided. Its purpose is to keep the tempdir path in the\r\nsame scope as the `ExecutorEnv`\r\n- Executor `run` and `run_guest_only` use `FileSegmentRef` with a\r\ntemporary directory to store segments\r\n- tempfile dependency has been added as a consequence.\r\n\r\nResolves #998\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-10-21T01:02:25Z",
+          "tree_id": "8b01f0bf808cb228e5331167ec8c0f5c2187abc1",
+          "url": "https://github.com/risc0/risc0/commit/505295b963c97db2afffe58f4b0cb4721e396b90"
+        },
+        "date": 1697853265522,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 41747452,
+            "range": "± 181992",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 42403739,
+            "range": "± 112716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 48247807,
+            "range": "± 111125",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 850084340,
+            "range": "± 3383056",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 881858538,
+            "range": "± 6273360",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2871650040,
+            "range": "± 5458315",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 893353819,
+            "range": "± 6129276",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 922815136,
+            "range": "± 4248747",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2911996063,
+            "range": "± 7379970",
             "unit": "ns/iter"
           }
         ]
