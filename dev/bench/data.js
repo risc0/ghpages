@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697914413619,
+  "lastUpdate": 1697914525601,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21997,6 +21997,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2911996063,
             "range": "± 7379970",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "15d7ac4951ae835a8b0782b39e97356fc4fa16ae",
+          "message": "Release v0.19.0-rc.1 (#1020)\n\nThe `recursion_zkr.zip` file is too large to publish to crates.io. Thus\r\nthis adjusts the build script for `risc0-circuit-recursion` to download\r\nthis file from LFS if the file isn't present locally on disk.",
+          "timestamp": "2023-10-21T19:32:19+01:00",
+          "tree_id": "d4bdaf282b54b5db0dc48b4442bce802a01578c9",
+          "url": "https://github.com/risc0/risc0/commit/15d7ac4951ae835a8b0782b39e97356fc4fa16ae"
+        },
+        "date": 1697914523597,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 41780372,
+            "range": "± 187484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 42478318,
+            "range": "± 88075",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 48517676,
+            "range": "± 138527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 855274955,
+            "range": "± 4551013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 886614137,
+            "range": "± 3924496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2842084458,
+            "range": "± 7481773",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 898328627,
+            "range": "± 2912838",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 926834939,
+            "range": "± 2427863",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2900986666,
+            "range": "± 9441235",
             "unit": "ns/iter"
           }
         ]
