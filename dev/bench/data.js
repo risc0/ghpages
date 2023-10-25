@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697915599933,
+  "lastUpdate": 1698256476281,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -10997,6 +10997,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31119510625,
             "range": "± 304330568",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46f0d27dd3fcd4f8cbfda0a5b8c5d0f1ede2c332",
+          "message": " cargo-risczero new: add --guest-name option (#1032)\n\nThe guest name parameter is used as the name of the guest package\r\nas well as method ID and ELF constants in the guest code. Therefore,\r\nthis\r\nparameter is required to be a valid rust identifier. If this is not set,\r\nthe\r\n`cargo risczero new` command will prompt the user to enter a guest name.\r\nIf no value is supplied by the command line parameter or the prompt, the\r\ndefault value for this parameter will be \"method\".\r\n\r\ncloses: https://github.com/risc0/scratch/issues/102\r\ncloses: #470\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-10-25T17:33:12Z",
+          "tree_id": "0556162a9fd26cc2dab71b9923b63e9388d551ac",
+          "url": "https://github.com/risc0/risc0/commit/46f0d27dd3fcd4f8cbfda0a5b8c5d0f1ede2c332"
+        },
+        "date": 1698256474371,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 18493831,
+            "range": "± 301642",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 18741297,
+            "range": "± 127973",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 21926186,
+            "range": "± 295240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7757673646,
+            "range": "± 10051305",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7800177229,
+            "range": "± 22171838",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31165322625,
+            "range": "± 302232676",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7792703791,
+            "range": "± 15423150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7813110937,
+            "range": "± 29835557",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31197779646,
+            "range": "± 307620104",
             "unit": "ns/iter"
           }
         ]
