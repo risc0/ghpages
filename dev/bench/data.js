@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698296788946,
+  "lastUpdate": 1698297074248,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -44465,6 +44465,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4861001979,
             "range": "± 7089013",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2a7e912094fd4d78a793ec36076cab236ccff958",
+          "message": "Improve devex for Journal decoding (#1036)\n\n* Replace journal bytes with a `Journal` type that has a `decode()`.\r\n* Adjust release build to support building variants of `r0vm`.\r\n\r\nExample:\r\n\r\n```rust\r\nlet output: Output = from_slice(&receipt.journal).unwrap();\r\n```\r\n\r\nbecomes:\r\n\r\n```rust\r\nlet output: Output = receipt.journal.decode().unwrap();\r\n```",
+          "timestamp": "2023-10-26T04:45:12Z",
+          "tree_id": "c0870c5b677533459ed9232eccb8b2f8dd110dd4",
+          "url": "https://github.com/risc0/risc0/commit/2a7e912094fd4d78a793ec36076cab236ccff958"
+        },
+        "date": 1698297072442,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 18691718,
+            "range": "± 327337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 19164490,
+            "range": "± 237169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 22199060,
+            "range": "± 569952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1314760416,
+            "range": "± 4700589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1334848104,
+            "range": "± 3186012",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4838348750,
+            "range": "± 26258847",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1354976000,
+            "range": "± 4306489",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1376258437,
+            "range": "± 6385867",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4876633271,
+            "range": "± 10433278",
             "unit": "ns/iter"
           }
         ]
