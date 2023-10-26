@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698340011579,
+  "lastUpdate": 1698340603005,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11153,6 +11153,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31236591312,
             "range": "± 278929643",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d1b7a5ed5fae4a4a1ae33d3523b8078b959e9f5b",
+          "message": "Prepare for 0.19.0-rc.2 (#1039)\n\n* Drop \"prove\" as a default flag\r\n* Expose types for downstream users\r\n* Fixes #1030 \r\n* Fix resolver warning in template\r\n* Pin toolchain install version",
+          "timestamp": "2023-10-26T09:53:11-07:00",
+          "tree_id": "de5e14f845c3bac15932f4be124cd51ca819ad46",
+          "url": "https://github.com/risc0/risc0/commit/d1b7a5ed5fae4a4a1ae33d3523b8078b959e9f5b"
+        },
+        "date": 1698340601191,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 18693401,
+            "range": "± 190851",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 18968941,
+            "range": "± 103663",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 21823669,
+            "range": "± 137186",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7793489520,
+            "range": "± 79466764",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7828023854,
+            "range": "± 33146088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31230041396,
+            "range": "± 279195596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7827578479,
+            "range": "± 16289750",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7828170833,
+            "range": "± 51210286",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31187697000,
+            "range": "± 102757108",
             "unit": "ns/iter"
           }
         ]
