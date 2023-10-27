@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698380692728,
+  "lastUpdate": 1698381753833,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -34089,6 +34089,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 38763863158,
             "range": "± 47862371",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "660c2a5eb062cd731d5fc1a3a489dd3f03dc72ca",
+          "message": "Release 0.19.0-rc.3  (#1045)\n\n* Fixes \"Could not launch zkvm\" error\r\n* Drop GPU builds from release workflow",
+          "timestamp": "2023-10-26T20:59:30-07:00",
+          "tree_id": "b35a6063b42915066c62e256ca1b25af8c6b8a35",
+          "url": "https://github.com/risc0/risc0/commit/660c2a5eb062cd731d5fc1a3a489dd3f03dc72ca"
+        },
+        "date": 1698381751487,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 25874762,
+            "range": "± 307214",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 27925757,
+            "range": "± 2786368",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 33576777,
+            "range": "± 493555",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 9685545231,
+            "range": "± 26873071",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 9954573887,
+            "range": "± 98847515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 39225693669,
+            "range": "± 2550572013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 9706394207,
+            "range": "± 31472761",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 9769451780,
+            "range": "± 28940973",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 39027760559,
+            "range": "± 131272174",
             "unit": "ns/iter"
           }
         ]
