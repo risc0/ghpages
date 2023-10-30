@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698381753833,
+  "lastUpdate": 1698691448286,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -45635,6 +45635,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4851007062,
             "range": "± 12402779",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f6e74e0180afbe4a0a94dbc639f5bd4a55c0d272",
+          "message": "Initial implementation of proof composition (#992)\n\nProof composition is a new feature of the zkVM allowing verification of\r\nreceipts produced by other zkVM guest programs inside of a guest\r\nprogram. This allow for composition of guest programs, in which the\r\njournal, or other output state, of one guest can be consumed as input to\r\nanother.\r\n\r\nThis PR provides a basic implementation of proof composition. In\r\nparticular, it implements composition over the `CompositeReceipt` struct\r\n(formerly `SegmentSeceipts` and `InnerReceipt::Flat`). It does not\r\nimplement the recursion predicates needed to produce a single\r\n`SuccintReceipt` for a receipt of execution for a proof composition\r\n(#991).\r\n\r\nOther changes:\r\n* This PR clarifies and makes more consistent the semantics of the\r\n`verify` method on `Receipt` and related structs. Semantics are now to\r\nrequire an exit code of `Halted(0)` or `Paused(0)`, which aligns with\r\nhow receipts are using in all examples, and what seems most likely to be\r\nintended by users. It adds the `verify_integrity_with_context` method as\r\nthe core method for verifying cryptographic integrity and internal\r\nconsistency, allowing use cases that do indeed want to verify receipts\r\nfor non-success executions.\r\n* Relatedly, the `prove_guest_errors` options is added to `ProverOpts`\r\nto continue and prove sessions that end with an error status (e.g.\r\n`ExitCode::Fault` or `ExitCode::Halted(1)`). When not set, the prover\r\nwill stop after executor on guest error, such that the default is to\r\nonly return receipts that of successful execution.\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Matheus Cardoso <45436839+Cardosaum@users.noreply.github.com>",
+          "timestamp": "2023-10-30T11:34:39-07:00",
+          "tree_id": "3a6df13fb989662acfce845ae502f01cbca406b3",
+          "url": "https://github.com/risc0/risc0/commit/f6e74e0180afbe4a0a94dbc639f5bd4a55c0d272"
+        },
+        "date": 1698691444819,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16544473,
+            "range": "± 260757",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16988027,
+            "range": "± 205491",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19720888,
+            "range": "± 141992",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1346347042,
+            "range": "± 4507233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1359151500,
+            "range": "± 6407904",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4862105895,
+            "range": "± 19659612",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1378039500,
+            "range": "± 4998132",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1397536291,
+            "range": "± 5991406",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4877029458,
+            "range": "± 13119743",
             "unit": "ns/iter"
           }
         ]
