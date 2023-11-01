@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698801989386,
+  "lastUpdate": 1698802005141,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11699,6 +11699,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31146389125,
             "range": "± 96010637",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6cb217a2716e7330690bfc154560d1566dc37266",
+          "message": "docs(website): Add dev-mode instructions (#1033)\n\nCloses #434\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2023-11-01T01:05:45Z",
+          "tree_id": "4e89a58314d20d75fe65045bb1290f9213a3ad25",
+          "url": "https://github.com/risc0/risc0/commit/6cb217a2716e7330690bfc154560d1566dc37266"
+        },
+        "date": 1698802001836,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 7572261,
+            "range": "± 117807",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 7898661,
+            "range": "± 60187",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 10803285,
+            "range": "± 156707",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7781993562,
+            "range": "± 82686326",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7797701833,
+            "range": "± 17102426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31196923062,
+            "range": "± 52033866",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7813488520,
+            "range": "± 72826377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7841486500,
+            "range": "± 26486986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31175524791,
+            "range": "± 281323551",
             "unit": "ns/iter"
           }
         ]
