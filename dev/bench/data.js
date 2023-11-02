@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698886053814,
+  "lastUpdate": 1698886821540,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11777,6 +11777,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31175524791,
             "range": "± 281323551",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc2f2ffc43d3abfa7dd8297f2f7e4cf7734ef4a2",
+          "message": "Initial implementation of proof composition [re-submission of #992] (#1055)\n\nThis PR is a re-submission of #992, which was reverted in #1052 due to\r\nrelease sequencing consideration. This PR will be taken out of draft\r\nstatus when a `0.19` branch has been cut, and `main` is ready to accept\r\nchanges for release in `0.20`.\r\n\r\nReverts risc0/risc0#1052",
+          "timestamp": "2023-11-02T00:39:16Z",
+          "tree_id": "0cf24c1e3524ce7ddc220987e8278d2d1ea5063a",
+          "url": "https://github.com/risc0/risc0/commit/cc2f2ffc43d3abfa7dd8297f2f7e4cf7734ef4a2"
+        },
+        "date": 1698886819128,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16524737,
+            "range": "± 137333",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16914290,
+            "range": "± 263121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19789635,
+            "range": "± 68948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7786708104,
+            "range": "± 80451006",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7839816229,
+            "range": "± 63690038",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31268002833,
+            "range": "± 73497491",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7853113333,
+            "range": "± 24349434",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7886947312,
+            "range": "± 75496664",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31270225729,
+            "range": "± 101276358",
             "unit": "ns/iter"
           }
         ]
