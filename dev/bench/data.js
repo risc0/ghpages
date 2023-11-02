@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698906839174,
+  "lastUpdate": 1698907538760,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -11855,6 +11855,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31270225729,
             "range": "± 101276358",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c840d9628d363540897f83e2a9f88cac3141fc4",
+          "message": "dev website fixes (#1082)\n\n* Add redirects for links to `/api` content\r\n* Update current version links (i.e. main/0.18 -> 0.19)",
+          "timestamp": "2023-11-01T23:24:29-07:00",
+          "tree_id": "b8c1d6d9f1b17eeb6d74a365ced5bbe1da23269c",
+          "url": "https://github.com/risc0/risc0/commit/4c840d9628d363540897f83e2a9f88cac3141fc4"
+        },
+        "date": 1698907536350,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16518978,
+            "range": "± 208063",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16828715,
+            "range": "± 125683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19880498,
+            "range": "± 174055",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7789784062,
+            "range": "± 33532633",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7800378041,
+            "range": "± 89412444",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31118795208,
+            "range": "± 293963502",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7814199479,
+            "range": "± 84501743",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7857401666,
+            "range": "± 101104381",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31198590166,
+            "range": "± 447897132",
             "unit": "ns/iter"
           }
         ]
