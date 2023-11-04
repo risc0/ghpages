@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699036619019,
+  "lastUpdate": 1699072985682,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -48365,6 +48365,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4885119646,
             "range": "± 15645188",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c519640ba86a909ad29955ffa785d96953f62d2f",
+          "message": "feat: Add execution statistics in trace (#1047)\n\nCloses #1027\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-03T21:36:11-07:00",
+          "tree_id": "9ad24b7781202ffc1bb68e6eedd62f703f6affae",
+          "url": "https://github.com/risc0/risc0/commit/c519640ba86a909ad29955ffa785d96953f62d2f"
+        },
+        "date": 1699072981809,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16588533,
+            "range": "± 94218",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16898467,
+            "range": "± 160151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19799824,
+            "range": "± 224470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1346485271,
+            "range": "± 9373464",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1360380312,
+            "range": "± 5372540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4840591646,
+            "range": "± 11587826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1379371125,
+            "range": "± 6473380",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1394676187,
+            "range": "± 6423575",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4853491916,
+            "range": "± 8446031",
             "unit": "ns/iter"
           }
         ]
