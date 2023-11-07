@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699391354810,
+  "lastUpdate": 1699397019083,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -50237,6 +50237,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4908784437,
             "range": "± 7558074",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b9a9302f1ca5454b62d214a14cb9503bfbfdbc83",
+          "message": "Support profiling without code changes via RISC0_PPROF_OUT env var (#1065)\n\nThis PR provides support for generating `pprof` profiles of guest code,\r\nwithout any code changes to the guest or host. It accomplishes this by\r\nfirst piping `TraceEvent`s across the client-server connection and then\r\nautomatically instantiating the profiler in the client when the\r\n`RISC0_PPROF_OUT` is set and the `profiler` feature is enabled.\r\n\r\n---------\r\n\r\nCo-authored-by: Paul <paul.gafni@gmail.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-07T22:36:42Z",
+          "tree_id": "1e37902a5f63681abe0f88c1d13e00c486969bd0",
+          "url": "https://github.com/risc0/risc0/commit/b9a9302f1ca5454b62d214a14cb9503bfbfdbc83"
+        },
+        "date": 1699397016864,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16570375,
+            "range": "± 119294",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16961420,
+            "range": "± 92921",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19948582,
+            "range": "± 155499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1345892187,
+            "range": "± 4932806",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1365881166,
+            "range": "± 1942212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4863425520,
+            "range": "± 16432635",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1382305375,
+            "range": "± 7617389",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1398920729,
+            "range": "± 6479005",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4883061562,
+            "range": "± 12761805",
             "unit": "ns/iter"
           }
         ]
