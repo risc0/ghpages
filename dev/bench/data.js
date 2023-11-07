@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699389539601,
+  "lastUpdate": 1699389866427,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12479,6 +12479,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31383546083,
             "range": "± 112473142",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd1b91428c3e69225e15b46bae92349849b76661",
+          "message": "sys_log: write to stdout (#1115)\n\nPreviously, sys_log printed the message via println!. This change writes\r\nsys_log to whatever stdout is pointing to so that the output can be\r\ncaptured in the same manner in as how user specifies stdout to be\r\nhandled.\r\n\r\nCloses: #1028\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-07T12:23:05-08:00",
+          "tree_id": "77e2c7b715ce3c71ce8d55f57dc52baae2044acf",
+          "url": "https://github.com/risc0/risc0/commit/cd1b91428c3e69225e15b46bae92349849b76661"
+        },
+        "date": 1699389863636,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16726114,
+            "range": "± 217360",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16909470,
+            "range": "± 88484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19856426,
+            "range": "± 186097",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7784598187,
+            "range": "± 13932055",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7829675104,
+            "range": "± 74030213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31172923208,
+            "range": "± 75443722",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7824101146,
+            "range": "± 19998574",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7845484229,
+            "range": "± 69350409",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31178134000,
+            "range": "± 89800959",
             "unit": "ns/iter"
           }
         ]
