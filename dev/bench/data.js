@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699328902018,
+  "lastUpdate": 1699329768236,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -12323,6 +12323,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31192807771,
             "range": "± 261260142",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d86a66c8af8fc1386aff02172d2cf7ffa972d857",
+          "message": "Improve CI build/test perf (#1113)\n\n* Use SHA-256 for internal proving tests (2x faster than poseidon)\r\n* Avoid hanging cargo-risczero tests waiting on stdin\r\n* Avoid building `risc0-zkvm` twice with and without the \"prove\" feature",
+          "timestamp": "2023-11-06T19:41:39-08:00",
+          "tree_id": "67a063a229402c802b24641656abe0858376b08d",
+          "url": "https://github.com/risc0/risc0/commit/d86a66c8af8fc1386aff02172d2cf7ffa972d857"
+        },
+        "date": 1699329766482,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16653027,
+            "range": "± 213396",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17129930,
+            "range": "± 270559",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19756565,
+            "range": "± 182597",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7813574937,
+            "range": "± 93832203",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7840204625,
+            "range": "± 33146437",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31284520874,
+            "range": "± 114612656",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7837406312,
+            "range": "± 156549616",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7863724416,
+            "range": "± 117459222",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31264186750,
+            "range": "± 298503724",
             "unit": "ns/iter"
           }
         ]
