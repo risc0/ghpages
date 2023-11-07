@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699332772737,
+  "lastUpdate": 1699333021487,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -24961,6 +24961,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2938325897,
             "range": "± 6953120",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1e46ab90476e154fb8aad4fa5b3677f5454a88e",
+          "message": " executor: restrict software ecall handler address range (#1102)\n\nSoftware ecalls should only send data from valid guest addresses.\r\nRestrict this\r\nby checking at the SyscallContext trait so all software ecall handlers\r\nexhibit\r\nthis property.\r\n\r\nFixes: https://github.com/risc0/risczero-wip/issues/385\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-06T20:31:53-08:00",
+          "tree_id": "95b467213c51ce67b4f1826b9a05cc18d90b1248",
+          "url": "https://github.com/risc0/risc0/commit/b1e46ab90476e154fb8aad4fa5b3677f5454a88e"
+        },
+        "date": 1699333019135,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38880364,
+            "range": "± 149631",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39510096,
+            "range": "± 86023",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45734980,
+            "range": "± 139636",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 916558160,
+            "range": "± 7933383",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 949110781,
+            "range": "± 3762905",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2903339794,
+            "range": "± 7418770",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 954238676,
+            "range": "± 4120272",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 988235351,
+            "range": "± 2545625",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2941295577,
+            "range": "± 7460467",
             "unit": "ns/iter"
           }
         ]
