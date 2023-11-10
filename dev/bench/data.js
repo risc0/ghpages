@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699610628134,
+  "lastUpdate": 1699617493645,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -25663,6 +25663,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2952851899,
             "range": "± 5415977",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4ab1f0bba1b0515819221bebc59f95aad0a6a3a9",
+          "message": "Build cache improvements (#1137)\n\n* Refactor env vars to part of composite actions\r\n* Attempt to speed up C++ builds",
+          "timestamp": "2023-11-10T11:45:20Z",
+          "tree_id": "ae4371a3ec2a7ca4ce7e220691a389941bf1ce34",
+          "url": "https://github.com/risc0/risc0/commit/4ab1f0bba1b0515819221bebc59f95aad0a6a3a9"
+        },
+        "date": 1699617491042,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38414346,
+            "range": "± 107069",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39201782,
+            "range": "± 62290",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45091677,
+            "range": "± 260715",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 987606737,
+            "range": "± 5076931",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1013120163,
+            "range": "± 2459166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2893002231,
+            "range": "± 9681935",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1021375257,
+            "range": "± 5767156",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1050125941,
+            "range": "± 5392939",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2939075889,
+            "range": "± 5191301",
             "unit": "ns/iter"
           }
         ]
