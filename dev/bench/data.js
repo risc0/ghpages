@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699994318227,
+  "lastUpdate": 1699994488330,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -25975,6 +25975,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2939075889,
             "range": "± 5191301",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50f32d901dc4c3a03c331745c01eaa7d40195702",
+          "message": "Add #[inline(never)] to sys_halt and sys_pause (#1046)\n\nAdd #[inline(never)] to sys_halt and sys_pause as a mitigation to\r\npotentially leaking information about program execution through the\r\nfinal value of the program counter (pc) on halt or pause where there is\r\nmore than one location in the program where `sys_halt` is called. As\r\nlong as the halt instruction only exists in one place within the\r\nprogram, the pc will always be the same invariant with input.\r\n\r\nNote that this is still not a perfect mitigation, in particular for\r\nprivacy of the program itself. Future revisions of the r32im and\r\nrecursion circuits will address this issue.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-14T20:32:52Z",
+          "tree_id": "9db57831ef730a5cc7e4b9681acef1873b6313eb",
+          "url": "https://github.com/risc0/risc0/commit/50f32d901dc4c3a03c331745c01eaa7d40195702"
+        },
+        "date": 1699994485564,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 17332828,
+            "range": "± 272853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 18064827,
+            "range": "± 273588",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 24413479,
+            "range": "± 277907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2433465363,
+            "range": "± 67952281",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2512604063,
+            "range": "± 25180917",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 6790018010,
+            "range": "± 78229765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2461112430,
+            "range": "± 23576485",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2516465871,
+            "range": "± 12803391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 6819307920,
+            "range": "± 40961761",
             "unit": "ns/iter"
           }
         ]
