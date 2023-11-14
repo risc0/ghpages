@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699930912196,
+  "lastUpdate": 1699931280642,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -38535,6 +38535,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27908901350,
             "range": "± 49853838",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a7444579f8f4b90c28c656db4a19e648f8b4f414",
+          "message": "Fix issues in CI (#1143)\n\n* Avoid GitHub rate limiting for CI machines\r\n* Drop `vendored` feature flag from `openssl` dependency. This works\r\naround some strange issue related to building openssl from source.\r\n* Patch `protoc-prebuilt` to allow the use of GITHUB_TOKEN",
+          "timestamp": "2023-11-13T18:48:48-08:00",
+          "tree_id": "9766f37d42796932652cd923e73212659852b68e",
+          "url": "https://github.com/risc0/risc0/commit/a7444579f8f4b90c28c656db4a19e648f8b4f414"
+        },
+        "date": 1699931278273,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22284090,
+            "range": "± 655784",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22731901,
+            "range": "± 163941",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 27132096,
+            "range": "± 92778",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7068717353,
+            "range": "± 16965698",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7118057475,
+            "range": "± 12455107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 28155080400,
+            "range": "± 56071260",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7097978119,
+            "range": "± 15820645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7147336859,
+            "range": "± 30742951",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 28031241990,
+            "range": "± 37468032",
             "unit": "ns/iter"
           }
         ]
