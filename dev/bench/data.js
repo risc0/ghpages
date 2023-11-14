@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699931341043,
+  "lastUpdate": 1699989552903,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -51641,6 +51641,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4872303542,
             "range": "± 12325586",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bcd38268fbdeaabf697b382ff2fc5a4d3d25c2cd",
+          "message": "refactor: Change `log` to `tracing` (#1105)\n\nCloses #1053\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-14T11:03:12-08:00",
+          "tree_id": "cec6935b1387711323b24ca01f8f1b6f86068881",
+          "url": "https://github.com/risc0/risc0/commit/bcd38268fbdeaabf697b382ff2fc5a4d3d25c2cd"
+        },
+        "date": 1699989550516,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16694698,
+            "range": "± 106060",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16837629,
+            "range": "± 150624",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19757449,
+            "range": "± 177595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1321298917,
+            "range": "± 4905951",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1346437479,
+            "range": "± 6373303",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4859691333,
+            "range": "± 13500948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1356572875,
+            "range": "± 7355408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1377058833,
+            "range": "± 4233440",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4879650979,
+            "range": "± 8664603",
             "unit": "ns/iter"
           }
         ]
