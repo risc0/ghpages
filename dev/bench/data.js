@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700008904683,
+  "lastUpdate": 1700009111113,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -26131,6 +26131,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 6819307920,
             "range": "± 40961761",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d247662b452a3de5e2e1b18ddca825111cb5ebc",
+          "message": "Fix argument hanlding in client/server mode (#1147)\n\nOn `main` arguments are not piped from the protobuf `ExecutorEnv` to the\r\nbuilt env.\r\n\r\nThis PR fixes this issue, and additionally fixes a small number of other\r\nissues affecting `cargo risczero test`; discovered while working on\r\nhttps://github.com/risc0/RustCrypto-crypto-bigint/pull/3",
+          "timestamp": "2023-11-15T00:35:48Z",
+          "tree_id": "06bf9f22ff3713813c88da201e0276b867537cdc",
+          "url": "https://github.com/risc0/risc0/commit/9d247662b452a3de5e2e1b18ddca825111cb5ebc"
+        },
+        "date": 1700009108492,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 17039604,
+            "range": "± 222532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17809683,
+            "range": "± 203464",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 23867041,
+            "range": "± 1330825",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2400996451,
+            "range": "± 57916412",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2488120028,
+            "range": "± 9283318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 8925761886,
+            "range": "± 189070285",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2417767752,
+            "range": "± 10963417",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2498825988,
+            "range": "± 5429882",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 9170491747,
+            "range": "± 196654923",
             "unit": "ns/iter"
           }
         ]
