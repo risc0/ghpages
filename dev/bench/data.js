@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700026693606,
+  "lastUpdate": 1700026712567,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -13181,6 +13181,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31247198583,
             "range": "± 316160578",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea88d8f39416509b4a3fd0e71c123d4eeb8c2b06",
+          "message": "Change default PosixIo to use an empty vec for stdin (#1148)\n\nThis PR changes the default `PosixIo` struct to hook the guest `stdin`\r\nto an empty vector, instead of the current default which is to use the\r\nhost process `stdin`. This resolves issue #1016, where it is easy to\r\naccidentally cause a difficult to debug hand on the process by\r\nforgetting to add an `ExectorEnvBuilder::write` call, resulting in the\r\nexecutor performing a blocking read on stdin.\r\n\r\nNote that if a developer does indeed want the host process `stdin` to be\r\nused as guest `stdin`, they can accomplish this by calling\r\n`builder.stdin(std::io::stdin())` while building the `ExectorEnv`.\r\n\r\nRelated: #1050\r\nResolves: #1016",
+          "timestamp": "2023-11-14T21:12:14-08:00",
+          "tree_id": "1cea9831c4cff1d8d30d0d252993f9d43773c174",
+          "url": "https://github.com/risc0/risc0/commit/ea88d8f39416509b4a3fd0e71c123d4eeb8c2b06"
+        },
+        "date": 1700026710337,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16577677,
+            "range": "± 164571",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16979502,
+            "range": "± 134844",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19936651,
+            "range": "± 104916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7813848562,
+            "range": "± 32976582",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7847324979,
+            "range": "± 38416672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31268465417,
+            "range": "± 286784835",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7854462166,
+            "range": "± 17352882",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7866644833,
+            "range": "± 24251596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31208850041,
+            "range": "± 286238161",
             "unit": "ns/iter"
           }
         ]
