@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700123228571,
+  "lastUpdate": 1700124740739,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -53045,6 +53045,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4874185042,
             "range": "± 7102233",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "43020d37ad647e143b0f7cbd3d2401d797d24d47",
+          "message": "Add Poseidon2 support to CUDA (#1152)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-16T08:46:12Z",
+          "tree_id": "d2f6e89b0259054f8856abd6d968ee0783d18615",
+          "url": "https://github.com/risc0/risc0/commit/43020d37ad647e143b0f7cbd3d2401d797d24d47"
+        },
+        "date": 1700124738776,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16863355,
+            "range": "± 147496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17051919,
+            "range": "± 488168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 20254528,
+            "range": "± 194853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1349597916,
+            "range": "± 8453432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1370335395,
+            "range": "± 5024502",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4885395208,
+            "range": "± 10071727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1389230208,
+            "range": "± 6448784",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1407374125,
+            "range": "± 2901656",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4908838166,
+            "range": "± 14967720",
             "unit": "ns/iter"
           }
         ]
