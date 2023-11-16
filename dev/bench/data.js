@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700123134383,
+  "lastUpdate": 1700123228571,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -13259,6 +13259,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31208850041,
             "range": "± 286238161",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6815075d35744cdc9cac2f88f4d888dc235de316",
+          "message": "Integrate sppark (#1150)\n\nSPPARK: Supranational's performance primitives for arguments of\r\nknowledge\r\n\r\nhttps://github.com/supranational/sppark\r\n\r\n---------\r\n\r\nCo-authored-by: Simon Peffers <simon@supranational.net>\r\nCo-authored-by: Can Elgezen <can.elgezen@gmail.com>",
+          "timestamp": "2023-11-16T08:06:43Z",
+          "tree_id": "e54bc801f572a58e16a6e55e2b2b2669b2bf0f5e",
+          "url": "https://github.com/risc0/risc0/commit/6815075d35744cdc9cac2f88f4d888dc235de316"
+        },
+        "date": 1700123224757,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16609679,
+            "range": "± 77617",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16917827,
+            "range": "± 70948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19818243,
+            "range": "± 187413",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7785909062,
+            "range": "± 15018621",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7826675458,
+            "range": "± 143727454",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31170514479,
+            "range": "± 279961684",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7827910000,
+            "range": "± 43924275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7843707354,
+            "range": "± 80129493",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31237925104,
+            "range": "± 204173745",
             "unit": "ns/iter"
           }
         ]
