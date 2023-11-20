@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700508210390,
+  "lastUpdate": 1700508304184,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -13493,6 +13493,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31286288375,
             "range": "± 297188250",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80fe14d3bf0ea47fde9d9e0145ca131a29cd4eb1",
+          "message": "Update versions (#1159)\n\n* Bump version of client in main to provide better error message\r\n* cargo update\r\n* Update zkevm-demo to revm 3.5\r\n* Pin sppark to specific git commit\r\n* Split external/substrate to separate workspace\r\n* Add serde support for u128/i128 data types",
+          "timestamp": "2023-11-20T11:04:45-08:00",
+          "tree_id": "ef7f8116dcfb905ac90db05552befd43fded2f18",
+          "url": "https://github.com/risc0/risc0/commit/80fe14d3bf0ea47fde9d9e0145ca131a29cd4eb1"
+        },
+        "date": 1700508301994,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16648799,
+            "range": "± 107520",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16896374,
+            "range": "± 108234",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19799611,
+            "range": "± 189840",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7814801396,
+            "range": "± 74170362",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7840089083,
+            "range": "± 18594685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31292155333,
+            "range": "± 111763299",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7839996604,
+            "range": "± 14464097",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7872027791,
+            "range": "± 76621191",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31258213000,
+            "range": "± 102120780",
             "unit": "ns/iter"
           }
         ]
