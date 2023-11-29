@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701238816323,
+  "lastUpdate": 1701239608894,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -53981,6 +53981,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4884723854,
             "range": "± 8460658",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc92fa90903d1e9ebeb5dcb93cb812085efd1037",
+          "message": "guest code: add `getrandom` feature to toggle getrandom in the guest (#1162)\n\nUntil now, the default behavior was to expose a `getrandom`\r\nimplementation to the guest that will call `sys_random` to generate\r\nrandom numbers from the host. We did this because the `getrandom`\r\ncrate is a dependency of various crates and without exposing a\r\n`getrandom` function, some crates may fail to compile for the zkvm.\r\nWhile this is functionality allows more crates to compile, it could\r\nunintentionally allow guest code depend on the host for random\r\nnumbers. Avoid this by gating `getrandom` function that uses\r\n`sys_random` using a feature flag.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-11-29T06:27:43Z",
+          "tree_id": "6c76b849519f48ae4e327bc3a67eebcba52e231c",
+          "url": "https://github.com/risc0/risc0/commit/cc92fa90903d1e9ebeb5dcb93cb812085efd1037"
+        },
+        "date": 1701239606766,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16790281,
+            "range": "± 616878",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16910672,
+            "range": "± 102093",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19837767,
+            "range": "± 146178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1346832208,
+            "range": "± 5465974",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1371402167,
+            "range": "± 6551991",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4857280812,
+            "range": "± 11862812",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1379966375,
+            "range": "± 4685335",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1402983458,
+            "range": "± 3632476",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4882549771,
+            "range": "± 4732067",
             "unit": "ns/iter"
           }
         ]
