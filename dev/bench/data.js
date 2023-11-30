@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701371578205,
+  "lastUpdate": 1701372154311,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -27145,6 +27145,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 5241240030,
             "range": "± 33185812",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dcd62dddcac29dd3950b3a08b0de6382d403449f",
+          "message": "Compute recursion control IDs in `cargo xtask bootstrap` (#1156)\n\nThis finishes the process of cleaning up recursion code from the circuit\r\nrepo by moving logic for computing recursion program (zkr) control IDs\r\nin `cargo xtask bootstrap`. It also includes the results of running\r\nbootstrap from the circuit from this PR and from the circuit repo at\r\ncommit `ed9af04b1b18dc29ee179b73d335f830216bdad1`\r\n\r\nAdditionally, a number of comments are added to parts of the the API\r\nsurface I touched in the process of writing this PR.",
+          "timestamp": "2023-11-30T11:06:47-08:00",
+          "tree_id": "efb1d8f5984de9fc3744ec900b2286edda0c4f62",
+          "url": "https://github.com/risc0/risc0/commit/dcd62dddcac29dd3950b3a08b0de6382d403449f"
+        },
+        "date": 1701372151477,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38667408,
+            "range": "± 205954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39103682,
+            "range": "± 101765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45297371,
+            "range": "± 254212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 990220409,
+            "range": "± 3652897",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1010603177,
+            "range": "± 4883739",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2361572517,
+            "range": "± 8961992",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1025911751,
+            "range": "± 6189559",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1047028835,
+            "range": "± 7832249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2403586043,
+            "range": "± 8828569",
             "unit": "ns/iter"
           }
         ]
