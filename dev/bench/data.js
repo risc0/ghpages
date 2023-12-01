@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701372706668,
+  "lastUpdate": 1701431241742,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -54449,6 +54449,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4844109083,
             "range": "± 9848559",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6db4b26a2ed1002a270d511c427a8dbf02b620f8",
+          "message": "Groth16 verifier (#1158)\n\n- integrate the groth16 verifier as part of the `Receipt`\r\n- clean up what gets imported in the guest `Cargo.lock` by adding the\r\n`verify` feature now required to be able to verify receipts\r\n- fix docker test",
+          "timestamp": "2023-12-01T03:41:03-08:00",
+          "tree_id": "6564061f82bde0ff5f883e7d2b99bd9771b54c5f",
+          "url": "https://github.com/risc0/risc0/commit/6db4b26a2ed1002a270d511c427a8dbf02b620f8"
+        },
+        "date": 1701431239799,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16650271,
+            "range": "± 225411",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16817670,
+            "range": "± 151251",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19909556,
+            "range": "± 161065",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1322253333,
+            "range": "± 5849714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1339654708,
+            "range": "± 4294719",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4835879166,
+            "range": "± 14096011",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1355948458,
+            "range": "± 4916124",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1372273250,
+            "range": "± 3691007",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4861092604,
+            "range": "± 15111171",
             "unit": "ns/iter"
           }
         ]
