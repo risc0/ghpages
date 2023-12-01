@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701458256775,
+  "lastUpdate": 1701458436599,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -41031,6 +41031,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 28077839951,
             "range": "± 51012035",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22c3db04939585f196e7a338a888c997d8cf0de3",
+          "message": "Minor cleanups (#1184)\n\n* Drop the unused std-verify feature\r\n* Download ZKR from S3 bucket to avoid GitHub IP rate limiting issues",
+          "timestamp": "2023-12-01T10:57:17-08:00",
+          "tree_id": "c616834c874968ef4f38fbddb26e265e4acf1227",
+          "url": "https://github.com/risc0/risc0/commit/22c3db04939585f196e7a338a888c997d8cf0de3"
+        },
+        "date": 1701458433956,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 20602171,
+            "range": "± 1026801",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 23012405,
+            "range": "± 605240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 27148725,
+            "range": "± 801210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7020514977,
+            "range": "± 31658869",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6999022492,
+            "range": "± 10778606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 28030937037,
+            "range": "± 63042077",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6976411391,
+            "range": "± 12344252",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7014015220,
+            "range": "± 10067239",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 27921169755,
+            "range": "± 95113113",
             "unit": "ns/iter"
           }
         ]
