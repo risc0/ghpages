@@ -1,5 +1,5 @@
 name,cycles
-bevy,262144
+bevy,524288
 chess,262144
 digital-signature,65536
 ecdsa,1179648
