@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701471560678,
+  "lastUpdate": 1701471636597,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -14039,6 +14039,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31219045146,
             "range": "± 93733452",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0082c8830c91cc342ed7fb40e214b8f48c69596e",
+          "message": "Add the `resolve` recursion program (#1179)\n\nThis PR adds the `resolve` recursion program. With this program it\r\nbecomes possible to produce succinct proofs for zkVM executions that\r\nutilize proof composition through the `env::verify` API for logically\r\nverifying RISC Zero receipts within the RISC Zero zkVM.\r\n\r\nAs part of this PR, these is additional plumbing of `ReceiptMetadata`\r\nstructs such that the all required information is available for the\r\n`resolve` program. In particular, the `seal` of a `SegmentReceipt`\r\nincludes the top level fields of the `ReceiptMetadata`, but does not\r\ninclude the full `Output`. In order to run `resolve` the head of the\r\nassumptions list must be available. So this PR adds a an explicit\r\n`metadata` field to `SegmentReceipt` and ensures metadata is preserved\r\nwhen passing through `lift` and `join` operations. The `pub(crate)\r\nMerge` trait is added to `ReceiptMetadata` to help facilitate this and\r\nalso check for consistency through the steps of recursion. (This\r\nactually identified a consistency issue with how the PC was being\r\nhandled in `risc0-zkvm` and in the recursion circuit.)\r\n\r\nResolves: https://github.com/risc0/risc0/issues/991\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-12-01T22:40:26Z",
+          "tree_id": "738b4fe26beb6ab6a37ce2b1cde41e89ee0e2433",
+          "url": "https://github.com/risc0/risc0/commit/0082c8830c91cc342ed7fb40e214b8f48c69596e"
+        },
+        "date": 1701471632294,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16670805,
+            "range": "± 163805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16822065,
+            "range": "± 151496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19937580,
+            "range": "± 2566322",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7770788062,
+            "range": "± 76990586",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7822252896,
+            "range": "± 29045907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31209959291,
+            "range": "± 102748610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7812177125,
+            "range": "± 28698874",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7840161354,
+            "range": "± 106051567",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31204777020,
+            "range": "± 84006246",
             "unit": "ns/iter"
           }
         ]
