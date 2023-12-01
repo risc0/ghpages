@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701458436599,
+  "lastUpdate": 1701464329363,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -55073,6 +55073,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4835918499,
             "range": "± 10707262",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "003548326962cc316dfd7d2df62ce9a67acee2ea",
+          "message": "Add missing verify call to Groth16 (#1185)\n\nAs pointed by @nategraf we somehow missed to add the actual `verify`\r\ncall in the `verify_integrity` function.",
+          "timestamp": "2023-12-01T12:52:53-08:00",
+          "tree_id": "956a56e2aaacd31de152ac4aa1f157f1e18fe223",
+          "url": "https://github.com/risc0/risc0/commit/003548326962cc316dfd7d2df62ce9a67acee2ea"
+        },
+        "date": 1701464327403,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16740515,
+            "range": "± 135436",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16940855,
+            "range": "± 101396",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19795151,
+            "range": "± 200952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1320827479,
+            "range": "± 4403371",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1337504249,
+            "range": "± 6029467",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4809484313,
+            "range": "± 11586702",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1352778625,
+            "range": "± 2867002",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1377514896,
+            "range": "± 3997825",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4835018354,
+            "range": "± 10937221",
             "unit": "ns/iter"
           }
         ]
