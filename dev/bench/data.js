@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701471636597,
+  "lastUpdate": 1701505672453,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -55697,6 +55697,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4845759083,
             "range": "± 12695710",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0dd85212662254e91e14d4a7c41351161787e94c",
+          "message": "Executor: simplify logic for instructions that result in large cycle counts (#1186)\n\nThe executor checks the cycle count for each instruction to ensure that\r\nit can fit within the segment cycle limit. Previously, this was\r\ncalculated by taking a measure of the cycle count before the instruction\r\nfetch and after execution and subtracting the two cycle count\r\nmeasurements to determine the cost of that single instruction. However,\r\nthis approach reveals corner cases. This PR changes the approach to\r\nhandling instructions + paging that result in large cycle counts.\r\n\r\nIf the total pending cycle count exceeds the segment limit and this is\r\nthe first instruction, it means that this instruction will never fit\r\ninside the current segment size. Use this instead of the previous\r\napproach to bail on the executor. This a much more simple approach.\r\n\r\nFixes: #1169",
+          "timestamp": "2023-12-02T00:22:01-08:00",
+          "tree_id": "d52b64247d2fd0f12ab73d06d8d8f7429c8e1e28",
+          "url": "https://github.com/risc0/risc0/commit/0dd85212662254e91e14d4a7c41351161787e94c"
+        },
+        "date": 1701505670540,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16469234,
+            "range": "± 106324",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16860442,
+            "range": "± 94369",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19877692,
+            "range": "± 334565",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1318357020,
+            "range": "± 7267417",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1330238292,
+            "range": "± 4366766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4820983604,
+            "range": "± 18693212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1346180958,
+            "range": "± 5338751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1365335875,
+            "range": "± 6696522",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4841903333,
+            "range": "± 9763201",
             "unit": "ns/iter"
           }
         ]
