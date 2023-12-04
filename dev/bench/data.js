@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701506743397,
+  "lastUpdate": 1701722993803,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -56009,6 +56009,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4841903333,
             "range": "± 9763201",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6ab6a551c00d5b9c83141641178ef0589621f70a",
+          "message": "NFC: Rename ReceiptMetadata to ReceiptClaim (#1188)",
+          "timestamp": "2023-12-04T12:43:54-08:00",
+          "tree_id": "26ca64408ca725e0b5412ebac1dd46ba888a1cc2",
+          "url": "https://github.com/risc0/risc0/commit/6ab6a551c00d5b9c83141641178ef0589621f70a"
+        },
+        "date": 1701722991846,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 17006793,
+            "range": "± 285696",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16995044,
+            "range": "± 198034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19827090,
+            "range": "± 284542",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1317608791,
+            "range": "± 6060462",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1328974208,
+            "range": "± 6971034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4810311417,
+            "range": "± 25168943",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1346721125,
+            "range": "± 6343072",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1369968708,
+            "range": "± 4448356",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4848328416,
+            "range": "± 8928006",
             "unit": "ns/iter"
           }
         ]
