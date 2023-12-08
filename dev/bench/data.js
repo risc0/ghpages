@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702067240201,
+  "lastUpdate": 1702068266025,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -56945,6 +56945,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4855652417,
             "range": "± 11042489",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d62563224d9108aab01e40ddd3d735fd935d0c41",
+          "message": "fix: remove clone of coefficients in CPU HAL (#1187)\n\nCame across this todo, and figured I'd just PR in the change to avoid\r\nthe realloc/copy.\r\n\r\n> This is safe because the `Ref` guard is kept during the `par_iter`\r\nexecution. The code can be made to be more verbose to express this, if\r\npreferred.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-12-08T20:38:32Z",
+          "tree_id": "3d85cfac476366f46f350c53b64d6132f0cbabc4",
+          "url": "https://github.com/risc0/risc0/commit/d62563224d9108aab01e40ddd3d735fd935d0c41"
+        },
+        "date": 1702068264023,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16755878,
+            "range": "± 156977",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16903507,
+            "range": "± 208806",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19914146,
+            "range": "± 88475",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1316504833,
+            "range": "± 5210568",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1332698916,
+            "range": "± 5670914",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4853081312,
+            "range": "± 12858496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1351143021,
+            "range": "± 5605488",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1374677958,
+            "range": "± 5689808",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4876999541,
+            "range": "± 6897952",
             "unit": "ns/iter"
           }
         ]
