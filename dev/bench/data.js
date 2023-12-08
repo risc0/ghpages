@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702066395030,
+  "lastUpdate": 1702066514358,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -28393,6 +28393,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2602599028,
             "range": "± 11090377",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07072d6348cd552c794232735b9329694af35d0d",
+          "message": "Add a test for poseidon2 based recursion (#1197)",
+          "timestamp": "2023-12-08T20:07:12Z",
+          "tree_id": "42156d87babd57449d28f21afddd161019603e94",
+          "url": "https://github.com/risc0/risc0/commit/07072d6348cd552c794232735b9329694af35d0d"
+        },
+        "date": 1702066511432,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38622577,
+            "range": "± 60387",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39317084,
+            "range": "± 184207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45227300,
+            "range": "± 151272",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2154151988,
+            "range": "± 16236525",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2195069233,
+            "range": "± 20075935",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 5303647280,
+            "range": "± 30905588",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2186343386,
+            "range": "± 12450648",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2238528073,
+            "range": "± 60305461",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 5395852729,
+            "range": "± 38713182",
             "unit": "ns/iter"
           }
         ]
