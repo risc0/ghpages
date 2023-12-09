@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702084187853,
+  "lastUpdate": 1702084274794,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -28861,6 +28861,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 5343059515,
             "range": "± 22154534",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c211f52090059ac3543250931c543c928adf9cbd",
+          "message": "Drop _elf suffix from API (#1195)\n\nThis is a breaking change which causes the older doc-tests to fail. A\r\nrefactor is made so that each doc-test version has its own workspace for\r\ndeps.",
+          "timestamp": "2023-12-09T01:03:51Z",
+          "tree_id": "718aea56fba3d1d6cb94629044f121d98a7076e5",
+          "url": "https://github.com/risc0/risc0/commit/c211f52090059ac3543250931c543c928adf9cbd"
+        },
+        "date": 1702084271825,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38984286,
+            "range": "± 101029",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39483892,
+            "range": "± 182540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45235696,
+            "range": "± 207166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1478028591,
+            "range": "± 25424610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1898574773,
+            "range": "± 75477411",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4838259876,
+            "range": "± 16843906",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1997370457,
+            "range": "± 8557887",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2021261718,
+            "range": "± 10528820",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4872027107,
+            "range": "± 11229791",
             "unit": "ns/iter"
           }
         ]
