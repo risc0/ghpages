@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702151783926,
+  "lastUpdate": 1702152059715,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -14663,6 +14663,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 30988277520,
             "range": "± 40074806",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3009531c5335dc12fb34397fe63b753d9aecb80b",
+          "message": "Dependency updates (#1200)\n\n* Fix build when no doc-test changes are detected\r\n* `cargo update` all workspaces\r\n* Use `rustls` instead of `openssl`\r\n* Update `axum` to latest\r\n* Update `clap` to latest and use derive in all examples",
+          "timestamp": "2023-12-09T14:40:42-05:00",
+          "tree_id": "f4743e777bd469502b00b977e3dc077f40b70c07",
+          "url": "https://github.com/risc0/risc0/commit/3009531c5335dc12fb34397fe63b753d9aecb80b"
+        },
+        "date": 1702152057823,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16637558,
+            "range": "± 113863",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16775129,
+            "range": "± 131703",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19806766,
+            "range": "± 257174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7765062771,
+            "range": "± 69145144",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7786054499,
+            "range": "± 11607596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31067243187,
+            "range": "± 82903672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7785776125,
+            "range": "± 15763818",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7819372271,
+            "range": "± 21219089",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31111517812,
+            "range": "± 286529263",
             "unit": "ns/iter"
           }
         ]
