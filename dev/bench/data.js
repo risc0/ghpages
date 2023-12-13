@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702494563321,
+  "lastUpdate": 1702494655235,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -14741,6 +14741,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31111517812,
             "range": "± 286529263",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0bf7d9bc91de93f1c4e0ba87864717abb642d925",
+          "message": "chore: Include proving server version in error message (#1210)\n\nThis makes it easier to debug the inconsistency, and install a matching\r\nversion of `cargo-risczero` if incompatible. If there are rules around\r\ncompatibility of versions, it can be included in this message, but I\r\ncouldn't find any.",
+          "timestamp": "2023-12-13T13:50:38-05:00",
+          "tree_id": "e8e6c08f707ee11b02c79625db7c9e00ebc2f204",
+          "url": "https://github.com/risc0/risc0/commit/0bf7d9bc91de93f1c4e0ba87864717abb642d925"
+        },
+        "date": 1702494653122,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16601173,
+            "range": "± 120254",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16933839,
+            "range": "± 57763",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19767390,
+            "range": "± 106154",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7760171042,
+            "range": "± 62438559",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7811720146,
+            "range": "± 80526531",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31167580895,
+            "range": "± 115554948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7794776521,
+            "range": "± 98048516",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7806837250,
+            "range": "± 30450238",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31046820375,
+            "range": "± 309565967",
             "unit": "ns/iter"
           }
         ]
