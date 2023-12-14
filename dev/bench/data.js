@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702514415236,
+  "lastUpdate": 1702514514971,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -29329,6 +29329,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2487265596,
             "range": "± 8468936",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2a65c53daf9df99db3ab303af565df29f8666b5",
+          "message": "Fix entrypoint for the staticlib build of risc0-zkvm-platform (#1221)\n\nCurrently, the entrypoint defined in the `rust_rt.rs` file of\r\n`risc0-zkvm-platform` passes a null pointer to the `sys_halt` function\r\nto stop the program. When written, this was not detected as an error\r\nbecause there existed a bug in the `Executor` and no usage every\r\nattempted to prove a program linked with this entrypoint. The\r\n`rust_rt.rs` file contains functionality to create a statically linkable\r\nruntime for use in building programs that are not zkVM aware. Right now\r\nthe only usage of this is to build and run Rust tests with `cargo\r\nrisczero test`.\r\n\r\nThis PR fixes the entrypoint to pass a pointer to a constant array of\r\n`[0u32; 8]`. It also refactors the entrypoint assembly to match the one\r\n`risc0-zkvm::guest`, defining the `__start` symbol. It also refines the\r\ndefinition of the `__start` symbol in both locations to encode that it\r\ndoes not return. Returning from the `__start` symbol would cause\r\nundefined behavior.\r\n\r\nThis PR does not de-duplicate these two definitions. We still have some\r\nwork to do on this front, but this PR does not seem like the time to\r\naddress this.",
+          "timestamp": "2023-12-14T00:33:18Z",
+          "tree_id": "c142abdb307dd03f6cfbf0ebf0a0e5a5d7d8f814",
+          "url": "https://github.com/risc0/risc0/commit/d2a65c53daf9df99db3ab303af565df29f8666b5"
+        },
+        "date": 1702514511732,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38720993,
+            "range": "± 167599",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39209204,
+            "range": "± 323825",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45160773,
+            "range": "± 762853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2203665687,
+            "range": "± 60781937",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2492494559,
+            "range": "± 15602959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 6286584975,
+            "range": "± 63081956",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2446054951,
+            "range": "± 11097678",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2516537413,
+            "range": "± 10802623",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 6417466433,
+            "range": "± 25135576",
             "unit": "ns/iter"
           }
         ]
