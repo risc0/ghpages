@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702580732714,
+  "lastUpdate": 1702580873463,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -43995,6 +43995,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27223341608,
             "range": "± 61428063",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05f46ef83d7be3bd209070e67b57a5b45b56bfb1",
+          "message": "Refactor binfmt image.rs (#1226)\n\nApply pending suggestions from\r\n[1](https://github.com/risc0/risc0/pull/1146#pullrequestreview-1743002974)\r\nand [2](https://github.com/risc0/risc0/pull/1146#discussion_r1401320191)\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-12-14T18:49:14Z",
+          "tree_id": "d80f5a0724a79f26be523698b04f25aef3f92637",
+          "url": "https://github.com/risc0/risc0/commit/05f46ef83d7be3bd209070e67b57a5b45b56bfb1"
+        },
+        "date": 1702580870290,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 20023410,
+            "range": "± 415373",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 20630907,
+            "range": "± 442029",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 24767661,
+            "range": "± 386683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 6803771741,
+            "range": "± 9352737",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6829508577,
+            "range": "± 10945952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 27208252191,
+            "range": "± 84181044",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6819056389,
+            "range": "± 13452495",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 6853126253,
+            "range": "± 10504552",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 27260874563,
+            "range": "± 50803980",
             "unit": "ns/iter"
           }
         ]
