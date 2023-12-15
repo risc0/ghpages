@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702668251188,
+  "lastUpdate": 1702672868517,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -59441,6 +59441,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4855155458,
             "range": "± 10389250",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1ddd60dd7bd051ddad100f90c904b712a23d2aff",
+          "message": "Remove unnecessary TODO comments (#1225)\n\nA simple change just removing unnecessary comments.",
+          "timestamp": "2023-12-15T20:34:08Z",
+          "tree_id": "3e15776e0057a5a21a7e6b28445ebdf77eacc141",
+          "url": "https://github.com/risc0/risc0/commit/1ddd60dd7bd051ddad100f90c904b712a23d2aff"
+        },
+        "date": 1702672866189,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16553810,
+            "range": "± 309989",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16847044,
+            "range": "± 109403",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19766291,
+            "range": "± 97010",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1317137041,
+            "range": "± 8110419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1333870624,
+            "range": "± 3687998",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4834185896,
+            "range": "± 8012683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1350097354,
+            "range": "± 5136679",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1370412354,
+            "range": "± 3311368",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4841728583,
+            "range": "± 11673785",
             "unit": "ns/iter"
           }
         ]
