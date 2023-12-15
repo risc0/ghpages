@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1702580975923,
+  "lastUpdate": 1702667178391,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -59129,6 +59129,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4878264896,
             "range": "± 7824937",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9533e360d85e0aabaf76878ff82c050ae837af0e",
+          "message": "Fix no default features (#1235)\n\n- Drop `verify` feature.\r\n\r\n### Context\r\nThe `verify` feature was added in the attempt to keep cleaner the\r\ndependencies of the guest. There was some confusion because the\r\n`Cargo.lock` of the guest code looked polluted with dependencies that\r\nwere explicitly specified for `not(target_os = \"zkvm\"`. However, that is\r\nhow Cargo resolves dependencies (it does that target-independently) and,\r\nwhen inspecting with cargo tree (e.g., `cargo +risc0 tree --target\r\nriscv32im-risc0-zkvm-elf`) the output is correct:\r\n\r\n```\r\nrisc0-zkvm-methods v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkvm/methods)\r\n├── risc0-zkvm v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkvm)\r\n│   ├── anyhow v1.0.75\r\n│   ├── bytemuck v1.14.0\r\n│   │   └── bytemuck_derive v1.5.0 (proc-macro)\r\n│   │       ├── proc-macro2 v1.0.69\r\n│   │       │   └── unicode-ident v1.0.12\r\n│   │       ├── quote v1.0.33\r\n│   │       │   └── proc-macro2 v1.0.69 (*)\r\n│   │       └── syn v2.0.39\r\n│   │           ├── proc-macro2 v1.0.69 (*)\r\n│   │           ├── quote v1.0.33 (*)\r\n│   │           └── unicode-ident v1.0.12\r\n│   ├── cfg-if v1.0.0\r\n│   ├── getrandom v0.2.11\r\n│   │   └── cfg-if v1.0.0\r\n│   ├── hex v0.4.3\r\n│   ├── risc0-binfmt v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/binfmt)\r\n│   │   ├── anyhow v1.0.75\r\n│   │   ├── elf v0.7.3\r\n│   │   ├── risc0-zkp v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkp)\r\n│   │   │   ├── anyhow v1.0.75\r\n│   │   │   ├── blake2 v0.10.6\r\n│   │   │   │   └── digest v0.10.7\r\n│   │   │   │       ├── block-buffer v0.10.4\r\n│   │   │   │       │   └── generic-array v0.14.7\r\n│   │   │   │       │       └── typenum v1.17.0\r\n│   │   │   │       │       [build-dependencies]\r\n│   │   │   │       │       └── version_check v0.9.4\r\n│   │   │   │       ├── const-oid v0.9.5\r\n│   │   │   │       ├── crypto-common v0.1.6\r\n│   │   │   │       │   ├── generic-array v0.14.7 (*)\r\n│   │   │   │       │   └── typenum v1.17.0\r\n│   │   │   │       └── subtle v2.5.0\r\n│   │   │   ├── bytemuck v1.14.0 (*)\r\n│   │   │   ├── digest v0.10.7 (*)\r\n│   │   │   ├── hex v0.4.3\r\n│   │   │   ├── paste v1.0.14 (proc-macro)\r\n│   │   │   ├── rand_core v0.6.4\r\n│   │   │   ├── risc0-core v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/core)\r\n│   │   │   │   ├── bytemuck v1.14.0 (*)\r\n│   │   │   │   └── rand_core v0.6.4\r\n│   │   │   ├── risc0-zkvm-platform v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkvm/platform)\r\n│   │   │   │   ├── bytemuck v1.14.0 (*)\r\n│   │   │   │   ├── getrandom v0.2.11 (*)\r\n│   │   │   │   └── libm v0.2.8\r\n│   │   │   ├── serde v1.0.193\r\n│   │   │   │   └── serde_derive v1.0.193 (proc-macro)\r\n│   │   │   │       ├── proc-macro2 v1.0.69 (*)\r\n│   │   │   │       ├── quote v1.0.33 (*)\r\n│   │   │   │       └── syn v2.0.39 (*)\r\n│   │   │   └── tracing v0.1.40\r\n│   │   │       ├── pin-project-lite v0.2.13\r\n│   │   │       ├── tracing-attributes v0.1.27 (proc-macro)\r\n│   │   │       │   ├── proc-macro2 v1.0.69 (*)\r\n│   │   │       │   ├── quote v1.0.33 (*)\r\n│   │   │       │   └── syn v2.0.39 (*)\r\n│   │   │       └── tracing-core v0.1.32\r\n│   │   ├── risc0-zkvm-platform v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkvm/platform) (*)\r\n│   │   ├── serde v1.0.193 (*)\r\n│   │   └── tracing v0.1.40 (*)\r\n│   ├── risc0-core v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/core) (*)\r\n│   ├── risc0-zkp v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkp) (*)\r\n│   ├── risc0-zkvm-platform v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkvm/platform) (*)\r\n│   ├── rrs-lib v0.1.0\r\n│   │   ├── downcast-rs v1.2.0\r\n│   │   └── paste v1.0.14 (proc-macro)\r\n│   ├── semver v1.0.20\r\n│   └── serde v1.0.193 (*)\r\n├── risc0-zkvm-platform v0.20.0-alpha.1 (/Users/angelo/dev/risc0/risc0/zkvm/platform) (*)\r\n└── serde v1.0.193 (*)\r\n```\r\n\r\nCloses #1205",
+          "timestamp": "2023-12-15T11:00:06-08:00",
+          "tree_id": "c59e31c9a0827987cc5f870810bf3ce76bb4f121",
+          "url": "https://github.com/risc0/risc0/commit/9533e360d85e0aabaf76878ff82c050ae837af0e"
+        },
+        "date": 1702667176390,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16787400,
+            "range": "± 207950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16921247,
+            "range": "± 308941",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19941448,
+            "range": "± 219070",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1317716625,
+            "range": "± 5345119",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1334323041,
+            "range": "± 6925815",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4828078250,
+            "range": "± 16565720",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1347808083,
+            "range": "± 3246452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1369186666,
+            "range": "± 3004358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4855155458,
+            "range": "± 10389250",
             "unit": "ns/iter"
           }
         ]
