@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703016334633,
+  "lastUpdate": 1703016517065,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -30109,6 +30109,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2523425778,
             "range": "± 12065414",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "530ca30558a4563b8aaac0f32de451763e638acb",
+          "message": "guest: update getrandom panic error (#1248)\n\nThis change adds a more verbose explanation of `getrandom` to educate\r\nthe user on using randomness in the guest.",
+          "timestamp": "2023-12-19T19:58:28Z",
+          "tree_id": "c628975efa9f34bad9702413d6b406943c321107",
+          "url": "https://github.com/risc0/risc0/commit/530ca30558a4563b8aaac0f32de451763e638acb"
+        },
+        "date": 1703016513842,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38376968,
+            "range": "± 159283",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39078445,
+            "range": "± 259458",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45143303,
+            "range": "± 147795",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1002043655,
+            "range": "± 7341352",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1022053532,
+            "range": "± 9010646",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2489814092,
+            "range": "± 10954223",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1049484717,
+            "range": "± 7985505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1068133270,
+            "range": "± 7621766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2528101039,
+            "range": "± 7731438",
             "unit": "ns/iter"
           }
         ]
