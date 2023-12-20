@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703041254521,
+  "lastUpdate": 1703041400323,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -45867,6 +45867,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27080117455,
             "range": "± 47262618",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b4b6ddf68307ff83d74c2404132ee91587d558be",
+          "message": "Change jal to call in zkVM entrypoint (#1257)\n\nAs described in https://github.com/risc0/risc0/issues/1243, our use of\r\nthe `jal` instruction in our entrypoint breaks when the jump distance\r\nbecomes too far. This PR changes the instruction to the `call`\r\npsuedo-instruction to allow the assembler flexibility to solve this\r\nissue and implement a far jump.\r\n\r\nCo-authored-by: @weikengchen\r\nResolves: https://github.com/risc0/risc0/issues/1243\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-12-20T02:44:33Z",
+          "tree_id": "339931108d3d1518bace2233d2acd829e841a3dc",
+          "url": "https://github.com/risc0/risc0/commit/b4b6ddf68307ff83d74c2404132ee91587d558be"
+        },
+        "date": 1703041397129,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 20980747,
+            "range": "± 267374",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 21463531,
+            "range": "± 469558",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25524505,
+            "range": "± 300519",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 6832257356,
+            "range": "± 13282574",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6873235548,
+            "range": "± 10813732",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 27379343699,
+            "range": "± 55953554",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6849736965,
+            "range": "± 10108390",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 6893696152,
+            "range": "± 21086830",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 27395088730,
+            "range": "± 33041753",
             "unit": "ns/iter"
           }
         ]
