@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703031687109,
+  "lastUpdate": 1703032281034,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -45399,6 +45399,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27456750532,
             "range": "± 44652943",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c516c367ec3c905a5164eb1795d2beb69fe56dc",
+          "message": "guest: make relax architecture version for memcpy and memset (#1255)\n\nProjects such as llvm require code to conform to rv32i2p1_m2p0 and no\r\nlonger support rv32i2p0_m2p0. This breaks compilation when these files\r\nare linked by llvm giving errors like so:\r\n\r\n```\r\nerror: invalid arch name 'rv32i2p0_m2p0', unsupported version number 2.0 for extension 'i'\r\n        .attribute      5, \"rv32i2p0_m2p0\"\r\n                           ^\r\n```\r\n\r\nThis change relaxes the architecture versioning by dropping the version\r\nnumbers for each feature and using `rv32im` instead. By doing so, we\r\nwill be able to use newer versions of rust and llvm to generate the\r\nguest code.",
+          "timestamp": "2023-12-20T00:12:46Z",
+          "tree_id": "2774aa4b359f0bd09299836128a9eaace1c75c75",
+          "url": "https://github.com/risc0/risc0/commit/2c516c367ec3c905a5164eb1795d2beb69fe56dc"
+        },
+        "date": 1703032277555,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21766581,
+            "range": "± 93892",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22611786,
+            "range": "± 210307",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 27111328,
+            "range": "± 153519",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 6849545835,
+            "range": "± 14848494",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6876602615,
+            "range": "± 13558156",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 27174129399,
+            "range": "± 28997551",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6862185984,
+            "range": "± 16877908",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 6902649663,
+            "range": "± 9803737",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 27200474729,
+            "range": "± 63744960",
             "unit": "ns/iter"
           }
         ]
