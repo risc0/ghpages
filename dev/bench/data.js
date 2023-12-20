@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703037887220,
+  "lastUpdate": 1703038456594,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -30577,6 +30577,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 6422401598,
             "range": "± 64138304",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2a6026ffa9cfd16e601cfc31a0e6e388ad97390d",
+          "message": "sys_log: add newline after printing message for cleanliness (#1258)\n\n`sys_log` doesn't insert a newline and makes the terminal output messy.\r\nAdd a newline for cleaner output.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2023-12-20T01:57:24Z",
+          "tree_id": "cc94418c6dba764f294226c334af8d06ff7495bd",
+          "url": "https://github.com/risc0/risc0/commit/2a6026ffa9cfd16e601cfc31a0e6e388ad97390d"
+        },
+        "date": 1703038453399,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38481845,
+            "range": "± 147814",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 38976586,
+            "range": "± 150745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 44930175,
+            "range": "± 781077",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 875661190,
+            "range": "± 8779868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 913799813,
+            "range": "± 6151111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2554858749,
+            "range": "± 7882955",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 912032948,
+            "range": "± 9197309",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 948599323,
+            "range": "± 8959341",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2604687291,
+            "range": "± 11846472",
             "unit": "ns/iter"
           }
         ]
