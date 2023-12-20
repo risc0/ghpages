@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703043524850,
+  "lastUpdate": 1703044055512,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -30889,6 +30889,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2589735663,
             "range": "± 10814668",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c9a2633a5f675f05a5e86d425f76c5a1338a31e",
+          "message": "Rename get_cycle_count to cycle_count (#1256)\n\nRust naming guidelines recommend C-GETTER conventions for \"getter\r\nfunction\". This PR renames `env::get_cycle_count` to `env::cycle_count`\r\nto follow these guidelines\r\n\r\n\r\nhttps://rust-lang.github.io/api-guidelines/naming.html#getter-names-follow-rust-convention-c-getter\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2023-12-20T03:31:21Z",
+          "tree_id": "d7677e5709056a55034ad5187302902176e040dd",
+          "url": "https://github.com/risc0/risc0/commit/7c9a2633a5f675f05a5e86d425f76c5a1338a31e"
+        },
+        "date": 1703044051958,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38511084,
+            "range": "± 117723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39057263,
+            "range": "± 112114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 44862141,
+            "range": "± 111765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1329042996,
+            "range": "± 6316408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1360964804,
+            "range": "± 8986586",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2559021473,
+            "range": "± 11743840",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1373007613,
+            "range": "± 8494603",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1399979761,
+            "range": "± 6193615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2604476365,
+            "range": "± 9625194",
             "unit": "ns/iter"
           }
         ]
