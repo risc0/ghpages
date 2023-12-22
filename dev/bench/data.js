@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703206153746,
+  "lastUpdate": 1703211049939,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -62873,6 +62873,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4921063750,
             "range": "± 12064965",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf05527136a6bc675250c194a7b18515d7cbc7c1",
+          "message": "Send composition assumptions from client to server (#1241)\n\nComposition currently does not work in client/server mode because\r\nreceipts are not sent from client to server. This PR adds the required\r\nplumbing to send the assumptions from client to server.\r\n\r\nResolves: #1236",
+          "timestamp": "2023-12-21T18:04:25-08:00",
+          "tree_id": "66e03d1dcc8437a8fda472262669e6c0983909c7",
+          "url": "https://github.com/risc0/risc0/commit/cf05527136a6bc675250c194a7b18515d7cbc7c1"
+        },
+        "date": 1703211048078,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16565914,
+            "range": "± 41152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17002134,
+            "range": "± 380965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19809777,
+            "range": "± 135662",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1338590229,
+            "range": "± 6800253",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1359211021,
+            "range": "± 7679337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4912745729,
+            "range": "± 10483241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1371531312,
+            "range": "± 5042497",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1390470812,
+            "range": "± 4499817",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4939589813,
+            "range": "± 3162343",
             "unit": "ns/iter"
           }
         ]
