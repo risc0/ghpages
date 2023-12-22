@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703206045264,
+  "lastUpdate": 1703206153746,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -15833,6 +15833,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31079729625,
             "range": "± 311854921",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "adb1b125eaec7ed82b296799a1ab77776992fbae",
+          "message": "Add receipts and assumptions to Bonsai SDK (#1251)\n\nThis PR changes the Bonsai SDK to incorporate composition:\r\n- [x] Add the option to include a list of UUID representing receipts as\r\npart of the `create_session` payload\r\n- [x] Add the `upload_receipt` route\r\n- [x] Add the test to both new additions\r\n- [x] Update alpha_async crate\r\n- [x] Update Bonsai SDK crate\r\n- [x] Update ethereum crate\r\n- [x] Update rest-api-mock-crate",
+          "timestamp": "2023-12-21T16:28:50-08:00",
+          "tree_id": "6be6cb3eb0fb8a94844f32b24632baa15cceecd8",
+          "url": "https://github.com/risc0/risc0/commit/adb1b125eaec7ed82b296799a1ab77776992fbae"
+        },
+        "date": 1703206151694,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6066368,
+            "range": "± 146991",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6263488,
+            "range": "± 125515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 9287539,
+            "range": "± 91997",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7773500958,
+            "range": "± 100002269",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7806315104,
+            "range": "± 26237364",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31103674291,
+            "range": "± 289598828",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7790384375,
+            "range": "± 28859341",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7809453937,
+            "range": "± 66783685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31087543208,
+            "range": "± 101111710",
             "unit": "ns/iter"
           }
         ]
