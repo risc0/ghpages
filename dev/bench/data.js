@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704229179473,
+  "lastUpdate": 1704229619758,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -47505,6 +47505,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27376850950,
             "range": "± 58357980",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d7d86b78f4b3007dd3fe5dbd4f09f9716659abbd",
+          "message": "Update copyright to 2024 (#1287)\n\nHappy New Year! I've omitted the circuit from this PR but I will make a\r\nseparate update after updating WIP and bootstrapping. It looks like tests in\r\ndoc-test/version-0.18 is failing due to the `risc0-zkvm-methods` crate\r\nfailing to build. I'm going to omit changes to that directory for the time being.",
+          "timestamp": "2024-01-02T20:48:04Z",
+          "tree_id": "561bf9e821409e3f5c19a7b1d5245ae55756f39f",
+          "url": "https://github.com/risc0/risc0/commit/d7d86b78f4b3007dd3fe5dbd4f09f9716659abbd"
+        },
+        "date": 1704229615802,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16861172,
+            "range": "± 543221",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17873136,
+            "range": "± 378997",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 21552349,
+            "range": "± 857421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 6837063410,
+            "range": "± 12605494",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6878810583,
+            "range": "± 9180685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 27380232849,
+            "range": "± 60328410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6864403775,
+            "range": "± 8664873",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 6902429613,
+            "range": "± 12518493",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 27364748447,
+            "range": "± 42433456",
             "unit": "ns/iter"
           }
         ]
