@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704249786031,
+  "lastUpdate": 1704249960385,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -64199,6 +64199,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4946093833,
             "range": "± 8365543",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e0008fab53fb8fdd83d7d710df7157e7a968a3ce",
+          "message": "Simplify entrypoint and main for std guests (#1268)\n\nI spent a momment to look into the minimal guest programs under `std`\r\nand `no_std` configurations, and found that in the `std` case we can\r\ndrop the non-standard lines we use today. This PR changes the minimal\r\n`std` guest in our examples and templates to the following:\r\n\r\n```rust\r\nuse risc0_zkvm::guest::env;\r\n\r\nfn main() {\r\n    env::commit(\"hello\");\r\n}\r\n```\r\n\r\nBy contrast, here was the `std` guest we were using before:\r\n\r\n```rust\r\n#![no_main]\r\n\r\nuse risc0_zkvm::guest::env;\r\n\r\nrisc0_zkvm::guest::entry!(main);\r\n\r\nfn main() {\r\n    env::commit(&0xf00u64);\r\n}\r\n```\r\n\r\nIn the case of `no_std`, I attempted to improve upon the current minimal\r\nguest, and did find an alternative. What I discovered is that removing\r\n`#![mo_main]` means we will need to define a `start` langauge symbol. I\r\nfound that the standard way to do that is with the `start` feature,\r\nresulting in the following guest.\r\n\r\n```rust\r\n#![no_std]\r\n#![feature(start)]\r\n\r\nuse risc0_zkvm::guest::env;\r\n\r\n#[start]\r\nfn main(_: isize, _: *const *const u8) -> isize {\r\n    env::commit(\"hello\");\r\n    0\r\n}\r\n```\r\n\r\nComapred with what we have, this seems less readable. As a result, I am\r\nnot suggesting we change the minimal prgram from `no_std`. It will\r\nremain as:\r\n\r\n```rust\r\n#![no_std]\r\n#![no_main]\r\n\r\nuse risc0_zkvm::guest::env;\r\n\r\nrisc0_zkvm::guest::entry!(main);\r\n\r\nfn main() {\r\n    env::commit(&0xf00u64);\r\n}\r\n\r\n```\r\n\r\nThis PR additionally removes the `pub` visibility modifier from all\r\n`main` functions except `r0vm`, as it is not needed.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-03T02:34:36Z",
+          "tree_id": "c0b0b03f34004d5a2fc46bbe59951676646ec712",
+          "url": "https://github.com/risc0/risc0/commit/e0008fab53fb8fdd83d7d710df7157e7a968a3ce"
+        },
+        "date": 1704249957881,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 17088449,
+            "range": "± 133918",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17344550,
+            "range": "± 133034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 20489497,
+            "range": "± 118491",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1341613312,
+            "range": "± 6383762",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1362769729,
+            "range": "± 4694149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4959519604,
+            "range": "± 8319462",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1379655625,
+            "range": "± 4091160",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1403309833,
+            "range": "± 5823126",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4985812458,
+            "range": "± 6526248",
             "unit": "ns/iter"
           }
         ]
