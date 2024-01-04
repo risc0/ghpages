@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704370913459,
+  "lastUpdate": 1704371007374,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -32371,6 +32371,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 5392844699,
             "range": "± 29904151",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c7f15525aa2157aeea4d953e35a4b487dab28e40",
+          "message": "monitor: trigger `MemorySet` trace event for `store_region` (#1273)\n\nThe changes the MemorySet trace event to use a vector of bytes instead of a u32. By doing so, TraceEvent can capture bytes written a call to `store_region` using one trace event.\r\n\r\nFixes: #1194\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-04T11:58:27Z",
+          "tree_id": "becaeeac1ad7d8ae1ad7191974788bbf90ad37c5",
+          "url": "https://github.com/risc0/risc0/commit/c7f15525aa2157aeea4d953e35a4b487dab28e40"
+        },
+        "date": 1704371003501,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38442941,
+            "range": "± 229133",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39120913,
+            "range": "± 170615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45164627,
+            "range": "± 144109",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 960008455,
+            "range": "± 6218693",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 979409234,
+            "range": "± 7759795",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2482089931,
+            "range": "± 9905986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1003908964,
+            "range": "± 4499842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1030283429,
+            "range": "± 7533173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2536588064,
+            "range": "± 10651622",
             "unit": "ns/iter"
           }
         ]
