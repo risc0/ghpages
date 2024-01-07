@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704632872524,
+  "lastUpdate": 1704632993470,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -32527,6 +32527,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2536588064,
             "range": "± 10651622",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e80775eed82c3187f0988a308a6ee052f6374934",
+          "message": "fix: remove unnecessary loads in ecall_sha (#1280)\n\nCurrently this will read past the first digest until the block is full\r\n(2*digest). In the case that the second digest is directly after the\r\nfirst in memory, this read is just redundant. In the case that they are\r\nnot, when reading just one, there are unnecessary reads done past the\r\nfirst digest in memory.\r\n\r\nI might be missing something here, but checking manually and running\r\nsome basic tests work, so just opening this to see if and what\r\nchanges/breaks to see if I am missing something.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-07T12:45:04Z",
+          "tree_id": "4269de9bc2f884c351bc1a797e2b20cf4e6cc2f6",
+          "url": "https://github.com/risc0/risc0/commit/e80775eed82c3187f0988a308a6ee052f6374934"
+        },
+        "date": 1704632989856,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38921293,
+            "range": "± 435150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39522198,
+            "range": "± 116774",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45701129,
+            "range": "± 129782",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1016107324,
+            "range": "± 8844858",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1046256928,
+            "range": "± 7612022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2515646126,
+            "range": "± 9911532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1063487115,
+            "range": "± 9847832",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1084635464,
+            "range": "± 9183538",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2564910092,
+            "range": "± 9171774",
             "unit": "ns/iter"
           }
         ]
