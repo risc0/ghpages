@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704632993470,
+  "lastUpdate": 1704744518419,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -65057,6 +65057,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4966388250,
             "range": "± 12535128",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ddedd1815791e823d6af05b20e9dc2cb278119ef",
+          "message": "fix: Add ExecutorStats struct and log correct values (#1276)\n\nWe had a bug previously where execution statistics were reported with\r\ninaccurate values. This PR seeks to solve this issue.",
+          "timestamp": "2024-01-08T20:02:13Z",
+          "tree_id": "8a2749d5a5f3f8c06495a8ae325167e89ad5bbc8",
+          "url": "https://github.com/risc0/risc0/commit/ddedd1815791e823d6af05b20e9dc2cb278119ef"
+        },
+        "date": 1704744516136,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22033412,
+            "range": "± 62025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22425312,
+            "range": "± 206563",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25356907,
+            "range": "± 386843",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1333537666,
+            "range": "± 2693995",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1349513770,
+            "range": "± 2901449",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4919621187,
+            "range": "± 16372575",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1374362958,
+            "range": "± 6462989",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1385041917,
+            "range": "± 3870192",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4932063333,
+            "range": "± 10532327",
             "unit": "ns/iter"
           }
         ]
