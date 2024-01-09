@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704826756292,
+  "lastUpdate": 1704827298446,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -16535,6 +16535,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31090519458,
             "range": "± 78922291",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "852f37ee0bc40fc7a94bcc4cb0562c0be93c63f8",
+          "message": "NFC: Rename Fp4 -> FpExt (#1304)",
+          "timestamp": "2024-01-09T10:46:13-08:00",
+          "tree_id": "284977c0b554fd2948fc0605010fa900c6013d13",
+          "url": "https://github.com/risc0/risc0/commit/852f37ee0bc40fc7a94bcc4cb0562c0be93c63f8"
+        },
+        "date": 1704827296170,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21977775,
+            "range": "± 190332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22309096,
+            "range": "± 167881",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25198636,
+            "range": "± 422534",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7783242271,
+            "range": "± 38793282",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7794095250,
+            "range": "± 30281209",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31033626979,
+            "range": "± 465906422",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7797792645,
+            "range": "± 59441698",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7824528271,
+            "range": "± 21416337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31087684187,
+            "range": "± 82749307",
             "unit": "ns/iter"
           }
         ]
