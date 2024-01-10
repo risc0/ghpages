@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704853076524,
+  "lastUpdate": 1704853495644,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -49065,6 +49065,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27440363308,
             "range": "± 46869196",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2502d46270a1fe0f0b53059ce8de1fc662539c7",
+          "message": "Add a basic example of composition (#1274)\n\nThis PR adds a basic example of composition. Building upon the proof of\r\nknown factors, this example exponentiates a number mod a composite with\r\nknown factors. This takes inspiration from RSA encryption, and is kind\r\nof a stripped down (and insecure) version of verifiable encryption such\r\nthat the message is provably decrypt-able by some party.\r\n\r\nResolves: #1299\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-10T02:06:29Z",
+          "tree_id": "df85424c5c77e73e50029ce0c5e1a6c337d8b793",
+          "url": "https://github.com/risc0/risc0/commit/d2502d46270a1fe0f0b53059ce8de1fc662539c7"
+        },
+        "date": 1704853492055,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 37383778,
+            "range": "± 378705",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 38146475,
+            "range": "± 295473",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 42273009,
+            "range": "± 446528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 6765673040,
+            "range": "± 14160227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6801207361,
+            "range": "± 7831551",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 26973522107,
+            "range": "± 42060431",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6805801880,
+            "range": "± 8003616",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 6841228897,
+            "range": "± 8790276",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 26992016830,
+            "range": "± 19660371",
             "unit": "ns/iter"
           }
         ]
