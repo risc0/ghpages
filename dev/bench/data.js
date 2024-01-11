@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704993472081,
+  "lastUpdate": 1704993562345,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -16691,6 +16691,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31045991062,
             "range": "± 99220734",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c4ffb5f557329ab1a8f0f7a7d0ac7685307ba010",
+          "message": " zkVM: remove SYS_READ_AVAIL and change SYS_READ (#1309)\n\nThis change removes SYS_READ_AVAIL because it's not POSIX compliant and\r\nintroduces some difficulty in cases where the number of available bytes\r\nmight\r\nbe undefined or non-deterministic concerning guest execution.\r\n\r\nThis change removes the SYS_READ_AVAIL support from the host and guest.\r\nThe\r\nguest syscall libraries used SYS_READ_AVAIL to create a buffer of the\r\ncorrect\r\nsize. Due to its removal, we're allowing cases where EOF is encountered\r\nearlier\r\nand a shorter read than requested is possible through the guest syscall\r\nhandlers provided. The underlying handler in the prover has changed to\r\nreflect this reality by removing asserts. This is based on\r\n@austinabell's\r\nsolution with minor adjustments.\r\n\r\nSummary of guest-side syscall handler changes:\r\n\r\nThe previous implementation relied on the number of bytes returned by\r\nSYS_READ_AVAIL or has been requested. Logic in SYS_READ has been changed\r\nto use\r\nthe actual amount of bytes read from the syscall. Also, if the guest\r\nrequests\r\nmore bytes than available, it short-circuits the requests and returns\r\nthe\r\namount of read bytes.\r\n\r\nSummary of host changes:\r\n\r\nChanged the host to allow the guest to request more bytes than\r\navailable. In this case, the host will hit an EOF and return the buffer\r\nto the\r\ncaller while still allowing the last unaligned word to be read.\r\n\r\nFixes: #1254\r\n\r\n---------\r\n\r\nCo-authored-by: Austin Abell <austinabell8@gmail.com>",
+          "timestamp": "2024-01-11T08:58:45-08:00",
+          "tree_id": "e0bed028e87e825cdb6e84ec913baca4f147e988",
+          "url": "https://github.com/risc0/risc0/commit/c4ffb5f557329ab1a8f0f7a7d0ac7685307ba010"
+        },
+        "date": 1704993559403,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21634317,
+            "range": "± 85780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22143142,
+            "range": "± 283188",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25123455,
+            "range": "± 446584",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7738674937,
+            "range": "± 85897323",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7769612521,
+            "range": "± 72547563",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31055112542,
+            "range": "± 414531462",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7775021729,
+            "range": "± 79010508",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7800400333,
+            "range": "± 74115096",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31018779479,
+            "range": "± 396114867",
             "unit": "ns/iter"
           }
         ]
