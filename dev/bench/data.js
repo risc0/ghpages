@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705017488773,
+  "lastUpdate": 1705017595263,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -16769,6 +16769,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31018779479,
             "range": "± 396114867",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "674487c63a9e1768a41cc3085d3d7f3e0971870a",
+          "message": "Change \"corroborating receipt\" to \"assumption receipt\" (#1321)\n\nAlthough very clever, the term \"corroborating receipt\" was introducing\r\nuncessesary confusion.\r\nThis removes the use of the word \"corroborating\" with reference to\r\nreceipts that attest the the validity of assumptions.",
+          "timestamp": "2024-01-11T15:39:33-08:00",
+          "tree_id": "4182b7fd0be8cfd8234a84fecca3b0c202e8361b",
+          "url": "https://github.com/risc0/risc0/commit/674487c63a9e1768a41cc3085d3d7f3e0971870a"
+        },
+        "date": 1705017589364,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21905647,
+            "range": "± 124827",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22078080,
+            "range": "± 81541",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25204876,
+            "range": "± 340960",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7753040729,
+            "range": "± 25524484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7776432417,
+            "range": "± 7931671",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31046576313,
+            "range": "± 448975900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7776853666,
+            "range": "± 25874615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7805368854,
+            "range": "± 72711388",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31020814688,
+            "range": "± 99463285",
             "unit": "ns/iter"
           }
         ]
