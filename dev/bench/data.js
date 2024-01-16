@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705017595263,
+  "lastUpdate": 1705427517219,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -66617,6 +66617,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4984704500,
             "range": "± 9777622",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a5a79a4af2837234abae2f6fff15ba57d806211",
+          "message": "Add composition terminology to website and otherwise improve docs (#1314)\n\nThis PR adds terminology entries to the website for terms/concepts\r\nrelated to composition. Additionally is adds a bit more documentation to\r\ntypes and methods related to composition, and additionally refactors the\r\n`ExecutorEnv::add_assumption` method to accept `impl Into<Assumption>`\r\nwhich allows the user to pass in a receipt without any transformation.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2024-01-16T17:45:22Z",
+          "tree_id": "f6d0d628658dffd21d800a4b4d1e7189db069017",
+          "url": "https://github.com/risc0/risc0/commit/5a5a79a4af2837234abae2f6fff15ba57d806211"
+        },
+        "date": 1705427514363,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21857167,
+            "range": "± 84247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22196349,
+            "range": "± 98252",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25057939,
+            "range": "± 1579047",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1326380375,
+            "range": "± 5596248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1350330770,
+            "range": "± 3883387",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4900257208,
+            "range": "± 7075240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1371530312,
+            "range": "± 3370149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1385677229,
+            "range": "± 4782767",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4936311479,
+            "range": "± 9495194",
             "unit": "ns/iter"
           }
         ]
