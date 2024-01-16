@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705436513613,
+  "lastUpdate": 1705436684743,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -67007,6 +67007,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4936311479,
             "range": "± 9495194",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "273dce97ea22de78f1ea4bab12cc27b4a1e3e4e5",
+          "message": "Groth16 prover (#1295)\n\nGroth16 prover\r\n\r\n* Add workflow for generation of groth16 proof of STARK verification.\r\n* Fix xtask bootstrap to break cyclic dependency\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-16T20:13:30Z",
+          "tree_id": "a5ff0fc31c861b7151d6258bce02943993e78113",
+          "url": "https://github.com/risc0/risc0/commit/273dce97ea22de78f1ea4bab12cc27b4a1e3e4e5"
+        },
+        "date": 1705436682779,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22024167,
+            "range": "± 283183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22442641,
+            "range": "± 282808",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25199783,
+            "range": "± 297713",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1334086541,
+            "range": "± 4733296",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1354843729,
+            "range": "± 6159345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4911479250,
+            "range": "± 7218228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1370622187,
+            "range": "± 4506926",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1390999021,
+            "range": "± 4396393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4930405374,
+            "range": "± 6464075",
             "unit": "ns/iter"
           }
         ]
