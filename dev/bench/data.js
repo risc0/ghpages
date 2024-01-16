@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705447387546,
+  "lastUpdate": 1705447499193,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17003,6 +17003,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 30996664895,
             "range": "± 317456483",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a3a405fae50b73cebbcdb1bca654431127efccd",
+          "message": "zkVM: update expected panic string to be compatible with new toolchains (#1334)\n\nNewer toolchains have a more detailed panic message in the guest\r\nincluding the line number of the panic. Without this change the 1.75.0\r\ntoolchain will fail the `guest_error_forwarding` test like so:\r\n\r\n```\r\nrunning 1 test\r\ntest host::api::tests::guest_error_forwarding - should panic ... FAILED\r\n\r\nfailures:\r\n\r\n---- host::api::tests::guest_error_forwarding stdout ----\r\nthread 'host::api::tests::guest_error_forwarding' panicked at risc0/zkvm/src/host/api/tests.rs:146:22:\r\ncalled `Result::unwrap()` on an `Err` value: Guest panicked: panicked at src/bin/multi_test.rs:99:13:\r\nMultiTestSpec::Panic invoked\r\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\r\nnote: panic did not contain expected string\r\n      panic message: `\"called `Result::unwrap()` on an `Err` value: Guest panicked: panicked at src/bin/multi_test.rs:99:13:\\nMultiTestSpec::Panic invoked\"`,\r\n expected substring: `\"Guest panicked: panicked at 'MultiTestSpec::Panic invoked'\"`\r\n```\r\n\r\nUpdate the expected panic message so it works for older and newer\r\ntoolchains.",
+          "timestamp": "2024-01-16T23:04:25Z",
+          "tree_id": "0a3d05966ad1cb8aa9499c5495001e35b74e48d9",
+          "url": "https://github.com/risc0/risc0/commit/7a3a405fae50b73cebbcdb1bca654431127efccd"
+        },
+        "date": 1705447496616,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22012882,
+            "range": "± 244065",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22276368,
+            "range": "± 312475",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25252731,
+            "range": "± 183920",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7761661125,
+            "range": "± 9505040",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7786451333,
+            "range": "± 68463584",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31043680520,
+            "range": "± 294209006",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7788772791,
+            "range": "± 71857805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7804076291,
+            "range": "± 19568828",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31070523667,
+            "range": "± 35887619",
             "unit": "ns/iter"
           }
         ]
