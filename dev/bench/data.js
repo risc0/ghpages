@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705473385659,
+  "lastUpdate": 1705473692352,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17081,6 +17081,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31070523667,
             "range": "± 35887619",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fdb26200f63e83590f32a16136167e77754bb857",
+          "message": "Update serial_test requirement from 2.0 to 3.0 (#1300)\n\nUpdates the requirements on\r\n[serial_test](https://github.com/palfrey/serial_test) to permit the\r\nlatest version.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/palfrey/serial_test/releases\">serial_test's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>v3.0.0</h2>\r\n<h2>What's Changed</h2>\r\n<ul>\r\n<li>Multi key support <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/pull/102\">palfrey/serial_test#102</a>\r\n<ul>\r\n<li>Attributes like <code>#[serial(one, two)]</code> are now supported\r\n(for all attributes)</li>\r\n<li>This is a breaking change, as <code>file_serial</code> paths now\r\nneed to be done separately <code>#[file_serial(key, path =&gt;\r\n&quot;/tmp/foo&quot;)]</code></li>\r\n</ul>\r\n</li>\r\n<li>Attributes at a mod-level <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/pull/104\">palfrey/serial_test#104</a>\r\n<ul>\r\n<li>You can set any of the attributes on a <code>mod</code> and all\r\n<code>#[test]</code> fn's in that mod will have the attribute\r\napplied.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Full Changelog</strong>: <a\r\nhref=\"https://github.com/palfrey/serial_test/compare/v2.0.0...v3.0.0\">https://github.com/palfrey/serial_test/compare/v2.0.0...v3.0.0</a></p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/bba3db847f10b0fbcbd71465cc233b0d510a3dd0\"><code>bba3db8</code></a>\r\n3.0.0</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/ae14645ea14fd1f3b8ddd09601062b3c9fbd5a42\"><code>ae14645</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/issues/104\">#104</a>\r\nfrom palfrey/serial-for-mod</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/0dec256fe181fd9660077515f861614dd012ead2\"><code>0dec256</code></a>\r\nMerge branch 'main' into serial-for-mod</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/cee1dc17dbc7b90ab2c0d7fa81761871b1772fa1\"><code>cee1dc1</code></a>\r\nAdd testing and parallel to package keywords</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/2a4b641ea9b6664ec3165826fcd4c93bcfd53b6a\"><code>2a4b641</code></a>\r\nMerge branch 'main' into serial-for-mod</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/288d933b77721f617b8e6e03e3c98515ae7876a1\"><code>288d933</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/issues/105\">#105</a>\r\nfrom palfrey/upgrade-rustix</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/cf9d7fef6223d73d69f1c14197b4f79df994046f\"><code>cf9d7fe</code></a>\r\nUpgrade rustix</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/a8d985d9fde5aff6fe8822f71775f66c21a72a62\"><code>a8d985d</code></a>\r\nReplace a single-use match with if let</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/67d22ff9eef867032031e30fc65a58154f588364\"><code>67d22ff</code></a>\r\nFix some clippy issues</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/ff2890d91b18e5d2b5e8ea546636a261a051ead2\"><code>ff2890d</code></a>\r\nUpdate docs for mod-level functionality</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/palfrey/serial_test/compare/v2.0.0...v3.0.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-17T06:21:03Z",
+          "tree_id": "7d073b90a40d8dbfa20fadc44fb748d28e3c9983",
+          "url": "https://github.com/risc0/risc0/commit/fdb26200f63e83590f32a16136167e77754bb857"
+        },
+        "date": 1705473690273,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21889996,
+            "range": "± 275239",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22239749,
+            "range": "± 293205",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25141680,
+            "range": "± 152757",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7756540479,
+            "range": "± 15320906",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7775607771,
+            "range": "± 70842444",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31053514291,
+            "range": "± 93387587",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7785919354,
+            "range": "± 78790158",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7795692333,
+            "range": "± 14185715",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31033810125,
+            "range": "± 129966180",
             "unit": "ns/iter"
           }
         ]
