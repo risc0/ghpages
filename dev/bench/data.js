@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705517774180,
+  "lastUpdate": 1705517913213,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -34009,6 +34009,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2504725470,
             "range": "± 7440761",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a6cb52c1495aaa90cd9216c1ae230c0fa92da8a",
+          "message": "Distinguish between and avoid use of ExitCode::Fault and SessionLimit (#1317)\n\nCurrently our code does not distinguish between guest-reported/proven\r\nand host-reported/unproven exit codes. This PR addresses this issue by\r\ngiving `ExitCode::SystemSplit`, `Fault` and `SessionLimit` distinct exit\r\ncodes.\r\n\r\nThe rv32im circuit does not support exiting with with a verified status\r\nof `SessionLimit` or `Fault`. As a result, these exit codes should be\r\nunused and reserved for future revision of the circuit. This PR\r\nrefactors the executor to reflect this and align with the fact that the\r\nprover will never write these statuses to the seal.\r\n\r\nSupersedes: #1313\r\nResolves: #1306\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-17T18:49:48Z",
+          "tree_id": "862b10db46a350767ed78fb5d78846f8ef2484a5",
+          "url": "https://github.com/risc0/risc0/commit/3a6cb52c1495aaa90cd9216c1ae230c0fa92da8a"
+        },
+        "date": 1705517909297,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 53044083,
+            "range": "± 1573739",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 54197920,
+            "range": "± 809683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 60472094,
+            "range": "± 910423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 2157216092,
+            "range": "± 29024948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 2199773551,
+            "range": "± 16457176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 5327767047,
+            "range": "± 152710258",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2214052723,
+            "range": "± 15444305",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2256363772,
+            "range": "± 14605323",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 5404540915,
+            "range": "± 37052385",
             "unit": "ns/iter"
           }
         ]
