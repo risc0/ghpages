@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705539921890,
+  "lastUpdate": 1705540483764,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -68255,6 +68255,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4940188187,
             "range": "± 7193247",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4fd324429a76989df286093f224707055357200f",
+          "message": "Add ProverServer::compress and use it to make receipts succinct by default (#1325)\n\nThis PR adds a `ProverServer::compress` function that uses the `lift`,\r\n`join`, and `resolve` recursion programs to compress a\r\n`CompositeReceipt` into a `SuccinctReceipt`. This PR then uses this\r\nfunction to compress receipts when `prove_session` is called, and\r\ntherefore compress receipts by default.\r\n\r\nThis PR also:\r\n* Adds an `ExitCode::is_ok` function to clean up some code I saw along\r\nthe way to implementing this PR\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-01-18T00:52:34Z",
+          "tree_id": "d41df6d8333506ea8d467444f699aff65e4eee12",
+          "url": "https://github.com/risc0/risc0/commit/4fd324429a76989df286093f224707055357200f"
+        },
+        "date": 1705540481542,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22486671,
+            "range": "± 195343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22718221,
+            "range": "± 107041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25643675,
+            "range": "± 209959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4228758062,
+            "range": "± 16044510",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4319027583,
+            "range": "± 23611620",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7883869854,
+            "range": "± 11296791",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4330908395,
+            "range": "± 8158266",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4350193312,
+            "range": "± 13056168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7900564708,
+            "range": "± 10917224",
             "unit": "ns/iter"
           }
         ]
