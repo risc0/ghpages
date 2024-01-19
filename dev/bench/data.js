@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705616965301,
+  "lastUpdate": 1705690459669,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -68801,6 +68801,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7886318562,
             "range": "± 18542643",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6810e2d043a553f37d04af63576bcd9eb7af9d02",
+          "message": "Refactor the IRiscZeroVerifier smart contract interface (#1250)\n\nThis PR refactors the `IRiscZeroVerifier` smart contract interface to:\r\n\r\n* Match the latest changes to the Rust verifier API, including updates\r\nto the `ReceiptClaim` to support composition.\r\n* Incorporate feedback from outside smart contract review.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: capossele <angelocapossele@gmail.com>",
+          "timestamp": "2024-01-19T10:43:46-08:00",
+          "tree_id": "e9a014984288b4ba35a146ab15efb1f1d65d7554",
+          "url": "https://github.com/risc0/risc0/commit/6810e2d043a553f37d04af63576bcd9eb7af9d02"
+        },
+        "date": 1705690457409,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21922972,
+            "range": "± 83911",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22311368,
+            "range": "± 143739",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25439907,
+            "range": "± 243414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4187673937,
+            "range": "± 10910522",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4269965562,
+            "range": "± 18483319",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7840552625,
+            "range": "± 12051452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4272794291,
+            "range": "± 13324475",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4296594396,
+            "range": "± 10281414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7855744542,
+            "range": "± 10028399",
             "unit": "ns/iter"
           }
         ]
