@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705950582657,
+  "lastUpdate": 1705950907972,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17471,6 +17471,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 49131803083,
             "range": "± 426266356",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1598cfde34b8dddd889ced6b3e7e9c882aafd7e",
+          "message": "zkVM: remove proof of fault (#1341)\n\nProof of fault is a mechanism that allows receipt generation for\r\nprograms that fail due to incorrect RISC-V execution and other\r\nconditions. We're removing this feature for the time being and plan to\r\nimplement this in a future circuit revision.\r\n\r\nThis change removes the fault checker guest code, the `fault-proof`\r\nfeature flag, the `bootstrap-fault` command from `cargo xtask`, and\r\nremoves `ExitCode::Fault` and marks this as reserved in base.proto.\r\n\r\nFixes: #1307",
+          "timestamp": "2024-01-22T18:34:26Z",
+          "tree_id": "f1d02c62ffe50017d68cdcc5c50d3a07e08c4400",
+          "url": "https://github.com/risc0/risc0/commit/b1598cfde34b8dddd889ced6b3e7e9c882aafd7e"
+        },
+        "date": 1705950904257,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21857187,
+            "range": "± 209855",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22116385,
+            "range": "± 36948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25248096,
+            "range": "± 272177",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 26139595000,
+            "range": "± 81265440",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 26129432729,
+            "range": "± 78673360",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 49348132646,
+            "range": "± 209251043",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 26018579479,
+            "range": "± 110377809",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 26041870000,
+            "range": "± 100095436",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 49380232792,
+            "range": "± 88667724",
             "unit": "ns/iter"
           }
         ]
