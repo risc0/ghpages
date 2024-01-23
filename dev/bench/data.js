@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706007030537,
+  "lastUpdate": 1706008711422,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -70361,6 +70361,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7897516687,
             "range": "± 16166669",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "427718d066f88a89e6cd8f2bec5261be7aec54b4",
+          "message": "Update env_logger requirement from 0.10 to 0.11 (#1362)\n\nUpdates the requirements on\r\n[env_logger](https://github.com/rust-cli/env_logger) to permit the\r\nlatest version.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/rust-cli/env_logger/blob/main/CHANGELOG.md\">env_logger's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h2>[0.11.0] - 2024-01-19</h2>\r\n<h3>Breaking Change</h3>\r\n<ul>\r\n<li>Removed bespoke styling API\r\n<ul>\r\n<li><code>env_logger::fmt::Formatter::style</code></li>\r\n<li><code>env_logger::fmt::Formatter::default_styled_level</code></li>\r\n<li><code>env_logger::fmt::Style</code></li>\r\n<li><code>env_logger::fmt::Color</code></li>\r\n<li><code>env_logger::fmt::StyledValue</code></li>\r\n</ul>\r\n</li>\r\n<li>Removed <code>env_logger::filter</code> in favor of\r\n<code>env_filter</code></li>\r\n</ul>\r\n<h3>Compatibility</h3>\r\n<p>MSRV changed to 1.71</p>\r\n<h3>Features</h3>\r\n<ul>\r\n<li>Automatically adapt ANSI escape codes in logged messages to the\r\ncurrent terminal's capabilities</li>\r\n<li>Add support for <code>NO_COLOR</code> and\r\n<code>CLICOLOR_FORCE</code>, see <a\r\nhref=\"https://bixense.com/clicolors/\">https://bixense.com/clicolors/</a></li>\r\n</ul>\r\n<h3>Fixes</h3>\r\n<ul>\r\n<li>Print colors when <code>is_test(true)</code></li>\r\n<li>Allow styling with <code>Target::Pipe</code></li>\r\n</ul>\r\n<h2>[0.10.2] - 2024-01-18</h2>\r\n<h3>Performance</h3>\r\n<ul>\r\n<li>Avoid extra UTF-8 validation performed in some cases</li>\r\n</ul>\r\n<h3>Fixes</h3>\r\n<ul>\r\n<li>Ensure custom pipes/stdout get flushed</li>\r\n<li>Don't panic on broken pipes when <code>color</code> is disabled</li>\r\n</ul>\r\n<h2>[0.10.1] - 2023-11-10</h2>\r\n<h3>Performance</h3>\r\n<ul>\r\n<li>Avoid hashing directives and accessing RNG on startup</li>\r\n</ul>\r\n<h3>Documentation</h3>\r\n<ul>\r\n<li>Tweak <code>RUST_LOG</code> documentation</li>\r\n</ul>\r\n<h2>[0.10.0] - 2022-11-24</h2>\r\n<p>MSRV changed to 1.60 to hide optional dependencies</p>\r\n<!-- raw HTML omitted -->\r\n</blockquote>\r\n<p>... (truncated)</p>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/8f4361ba4439acb69068be0e181d2d1300b7218d\"><code>8f4361b</code></a>\r\nchore: Release</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/ba41ebb6d2d726403560cd987b1c5b3c6797f817\"><code>ba41ebb</code></a>\r\ndocs: Update changelog</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/5e226cb2b73d6c9f1b21886a4b504afdea1ebfcf\"><code>5e226cb</code></a>\r\nchore: Release</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/23441be565bcc4c65604a5e04d3990967e596ff4\"><code>23441be</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/rust-cli/env_logger/issues/300\">#300</a>\r\nfrom epage/other</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/6c2ea8028236fe80c1da0a354b19808bf440858d\"><code>6c2ea80</code></a>\r\nstyle(filter): Clean up</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/2d3526001061bacbf4a4c47767a318986c2c61b0\"><code>2d35260</code></a>\r\nfeat(filter): Add a Logger decorator</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/e6e2b633688a56a53ad718b3b498243cb3893d52\"><code>e6e2b63</code></a>\r\nfix(log)!: Dont re-export env_filter</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/841eba41feb44317facc586745b28707590d11fd\"><code>841eba4</code></a>\r\nrefactor(filter): Pull out filter mod</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/98c450f85b95779b60be37d847e176856305b6fd\"><code>98c450f</code></a>\r\nrefactor(filter): Pull out directive mod</li>\r\n<li><a\r\nhref=\"https://github.com/rust-cli/env_logger/commit/c769e03f40e03e83b972c334195014eddf8b2c9a\"><code>c769e03</code></a>\r\nrefactor(filter): Flatten the mod</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/rust-cli/env_logger/compare/v0.10.0...v0.11.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-01-23T11:09:09Z",
+          "tree_id": "8627dda0fce62cdd069b235abf9d13a3abca2ff6",
+          "url": "https://github.com/risc0/risc0/commit/427718d066f88a89e6cd8f2bec5261be7aec54b4"
+        },
+        "date": 1706008709159,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21952790,
+            "range": "± 100640",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22188966,
+            "range": "± 331969",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25067351,
+            "range": "± 161645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4169271792,
+            "range": "± 8155824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4220698542,
+            "range": "± 25017839",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7839655229,
+            "range": "± 17274261",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4254735896,
+            "range": "± 8225451",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4298648458,
+            "range": "± 10466591",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7884422708,
+            "range": "± 19099148",
             "unit": "ns/iter"
           }
         ]
