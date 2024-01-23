@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706016828069,
+  "lastUpdate": 1706016907735,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -17861,6 +17861,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 49455684104,
             "range": "± 153762042",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95a05abd3500f7b56809964a5047095da20c35f2",
+          "message": "risc0-groth16 crate (#1356)\n\n- Move (and slightly refactor) the groth16 code into its own crate\r\n- Add an utility function to directly call `stark_to_snark`\r\n- Refactor the groth16-verifier example to make use of the new crate\r\n- Add bootstrap functionalities groth16 related (e.g., verifying keys,\r\ncontracts constants and test)\r\n- Rename `InnerReceipt::Groth16Receipt` to\r\n`InnerReceipt::CompactReceipt`\r\n- Remove snarkjs from the docker prover\r\n- Update verifier contract with new verifying key",
+          "timestamp": "2024-01-23T12:54:12Z",
+          "tree_id": "f51baebb97770cf1e7be34ab99cbb85a9e500dfc",
+          "url": "https://github.com/risc0/risc0/commit/95a05abd3500f7b56809964a5047095da20c35f2"
+        },
+        "date": 1706016905659,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21933938,
+            "range": "± 264266",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22346360,
+            "range": "± 125880",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25100611,
+            "range": "± 147688",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 26309823458,
+            "range": "± 202544756",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 26358446062,
+            "range": "± 80629249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 49586447646,
+            "range": "± 152850845",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 26190400958,
+            "range": "± 161274111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 26300255896,
+            "range": "± 58071327",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 49602401312,
+            "range": "± 197993189",
             "unit": "ns/iter"
           }
         ]
