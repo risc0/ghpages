@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706000492616,
+  "lastUpdate": 1706001033491,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -34945,6 +34945,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7568708528,
             "range": "± 49683086",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133707571+morgangibbs87@users.noreply.github.com",
+            "name": "morgangibbs87",
+            "username": "morgangibbs87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8c49df9db703d7fca6a3175499b74f7c3a6fde5",
+          "message": "Clippy Action Fix (#1240)\n\nFix clippy action so it fails properly and lists errors that need to be\r\nfixed.\r\n\r\n---------\r\n\r\nCo-authored-by: BatAdmin <batadmin@BatBook-Pro.local>\r\nCo-authored-by: Victor Graf <victor@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-01-23T00:52:16-08:00",
+          "tree_id": "b79dd66555652b4a04bcf3011f0f3f2de71ae095",
+          "url": "https://github.com/risc0/risc0/commit/d8c49df9db703d7fca6a3175499b74f7c3a6fde5"
+        },
+        "date": 1706001029058,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 52335280,
+            "range": "± 777751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 52481595,
+            "range": "± 1494550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 57919431,
+            "range": "± 1367699",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1946712923,
+            "range": "± 12845367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1974006655,
+            "range": "± 13040894",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7004859924,
+            "range": "± 125592589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 2033379324,
+            "range": "± 15389546",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 2068621469,
+            "range": "± 15280560",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7364055887,
+            "range": "± 65662201",
             "unit": "ns/iter"
           }
         ]
