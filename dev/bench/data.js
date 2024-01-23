@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706002373102,
+  "lastUpdate": 1706005155263,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -70049,6 +70049,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7919931187,
             "range": "± 21318494",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "496b2a070aae80c83586a98da6569efaefd1fdd3",
+          "message": "Improve handling of recursion_zkr.zip (#1367)\n\n* Avoid re-downloading if cached copy is already valid\r\n* Copy source from LFS only if file is valid (i.e. LFS has been pulled)\r\n* Download from S3 bucket otherwise\r\n* Update hash to latest\r\n* Fix docs.rs build issue\r\n* Fixes #1366\r\n* Fixes #1048\r\n* Supersedes #1347\r\n* Supersedes #1348\r\n* Fixes #1163\r\n\r\nCo-authored-by: @weikengchen",
+          "timestamp": "2024-01-23T10:10:00Z",
+          "tree_id": "60366a70b959ba14747a2db37fb04d7934a9fb35",
+          "url": "https://github.com/risc0/risc0/commit/496b2a070aae80c83586a98da6569efaefd1fdd3"
+        },
+        "date": 1706005152817,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22002798,
+            "range": "± 32495",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22382977,
+            "range": "± 333865",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25290986,
+            "range": "± 175094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4208150249,
+            "range": "± 8285453",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4245708979,
+            "range": "± 8888043",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7852709875,
+            "range": "± 15468619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4298728333,
+            "range": "± 5203826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4337193583,
+            "range": "± 11967954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7897516687,
+            "range": "± 16166669",
             "unit": "ns/iter"
           }
         ]
