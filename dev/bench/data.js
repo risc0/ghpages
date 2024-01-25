@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706208929811,
+  "lastUpdate": 1706210470048,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -53589,6 +53589,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 42506201143,
             "range": "± 61483437",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "383ab0301b81d9ddac760d1b32d88308852c1f94",
+          "message": "Change Poseidon2 Parameters (#1376)\n\nStandardize our Poseidon2 parameters by making our `M_INT_DIAG`\r\nparameter the same as the one used by Horizen Labs in their Poseidon2\r\nBabyBear implementation here: https://github.com/HorizenLabs/poseidon2.\r\nWe also remove the transformation of `M_EXT` parameters into Montgomery\r\nForm.",
+          "timestamp": "2024-01-25T18:46:06Z",
+          "tree_id": "def180eedcbc554b6bf19dae5578682c321ab9d2",
+          "url": "https://github.com/risc0/risc0/commit/383ab0301b81d9ddac760d1b32d88308852c1f94"
+        },
+        "date": 1706210465766,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 20153791,
+            "range": "± 1484601",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 20863177,
+            "range": "± 440245",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25313552,
+            "range": "± 337446",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 21767818176,
+            "range": "± 23921441",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 21811932739,
+            "range": "± 12421043",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 42070042280,
+            "range": "± 38891496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 21821339610,
+            "range": "± 28665625",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 21841012158,
+            "range": "± 23218829",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 42116582414,
+            "range": "± 49740279",
             "unit": "ns/iter"
           }
         ]
