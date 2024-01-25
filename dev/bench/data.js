@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706203373822,
+  "lastUpdate": 1706204763432,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -53355,6 +53355,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 42343347458,
             "range": "± 44701269",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06e05e917a17b1fdec1a633f124cc91190a255c8",
+          "message": "Begin deprecation of Session::resolve (#1378)\n\n* Drop `Session::resolve` convienence; this function doesn't scale\r\n* Avoid using resolve to compute cycle counts and pre/post states\r\n* Use docker feature flag for stark2snark test",
+          "timestamp": "2024-01-25T09:05:29-08:00",
+          "tree_id": "e075fce14bdf9c1c7bbd712bd3c901d1e409a509",
+          "url": "https://github.com/risc0/risc0/commit/06e05e917a17b1fdec1a633f124cc91190a255c8"
+        },
+        "date": 1706204758930,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22205677,
+            "range": "± 31265",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22988733,
+            "range": "± 129049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 27855745,
+            "range": "± 70111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 22017371758,
+            "range": "± 15802210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 22080628265,
+            "range": "± 30695822",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 42418606084,
+            "range": "± 73846134",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 22063098745,
+            "range": "± 30507991",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 22122493232,
+            "range": "± 28345826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 42506201143,
+            "range": "± 61483437",
             "unit": "ns/iter"
           }
         ]
