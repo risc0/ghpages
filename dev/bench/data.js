@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706727039915,
+  "lastUpdate": 1706753236998,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -72545,6 +72545,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 7865322354,
             "range": "± 14082393",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bbe702f80db2b2639a2742ba954cda480338b88e",
+          "message": "CI: update the guest's rust toolchain to 1.70.0 (#1400)",
+          "timestamp": "2024-01-31T17:52:59-08:00",
+          "tree_id": "7c1768bef7bfe7a64244b56236133a0213a58d17",
+          "url": "https://github.com/risc0/risc0/commit/bbe702f80db2b2639a2742ba954cda480338b88e"
+        },
+        "date": 1706753235052,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 17035680,
+            "range": "± 77018",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17159407,
+            "range": "± 141118",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 20358999,
+            "range": "± 180775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4196504520,
+            "range": "± 8807878",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4221938166,
+            "range": "± 10467393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 7869791083,
+            "range": "± 36334875",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4309718791,
+            "range": "± 11847947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4329375854,
+            "range": "± 10471139",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 7925803667,
+            "range": "± 18467721",
             "unit": "ns/iter"
           }
         ]
