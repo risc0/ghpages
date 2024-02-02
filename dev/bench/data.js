@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706840660108,
+  "lastUpdate": 1706900716021,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -73793,6 +73793,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 4939311416,
             "range": "± 6108020",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4619eafda6507a6edd07e17559808256737a6287",
+          "message": "Revert \"Pin rhai_codegen to fix build issues (#1398)\" (#1411)\n\ncargo-generate is fixed because the new rhai codegen was yanked and made into\r\nversion 2.0 to follow semver. This allows us to revert commit\r\n8650ac903bf10143e26fb11751555269e221abb3.",
+          "timestamp": "2024-02-02T18:58:33Z",
+          "tree_id": "f87e9adf33561ccfb45d1e2fe2533248f12122ed",
+          "url": "https://github.com/risc0/risc0/commit/4619eafda6507a6edd07e17559808256737a6287"
+        },
+        "date": 1706900713450,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16516060,
+            "range": "± 107852",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 17056350,
+            "range": "± 339839",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19886707,
+            "range": "± 198330",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 1350970208,
+            "range": "± 4000499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 1371117354,
+            "range": "± 3973488",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 4933797875,
+            "range": "± 5242593",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 1383379375,
+            "range": "± 5495369",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 1401446854,
+            "range": "± 2596946",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 4954918979,
+            "range": "± 12251803",
             "unit": "ns/iter"
           }
         ]
