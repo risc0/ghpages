@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706840179680,
+  "lastUpdate": 1706840445308,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -18563,6 +18563,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 31212085833,
             "range": "± 278446168",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a3d381b22b661f2b693e3ca89473563279b7c620",
+          "message": "reproducible builds: update dockerfile to use new toolchain (#1401)\n\nThis change downloads a newer version of cargo-risczero and to build\r\nusing a newer toolchain version. This solution expects us to publish new\r\ndocker images on every toolchain update. While this may create more\r\nburden on us, I think this is much more performant for users because\r\nthey would not need to install the toolchain when running docker builds.\r\n\r\n---------\r\n\r\nCo-authored-by: capossele <angelocapossele@gmail.com>",
+          "timestamp": "2024-02-02T02:00:09Z",
+          "tree_id": "cf11b6da9da480e8d3da53736a358fd2cf957098",
+          "url": "https://github.com/risc0/risc0/commit/a3d381b22b661f2b693e3ca89473563279b7c620"
+        },
+        "date": 1706840443243,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16511650,
+            "range": "± 53278",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16846677,
+            "range": "± 190131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19939624,
+            "range": "± 156986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 7777955166,
+            "range": "± 52310872",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 7796881875,
+            "range": "± 20959561",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 31136020479,
+            "range": "± 123321611",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 7813731854,
+            "range": "± 11408314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 7837723895,
+            "range": "± 62087459",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 31134234625,
+            "range": "± 377579148",
             "unit": "ns/iter"
           }
         ]
