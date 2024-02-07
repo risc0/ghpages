@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1707329817777,
+  "lastUpdate": 1707330388449,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -37129,6 +37129,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2617664299,
             "range": "± 7289059",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68575c3bea0f2bcf275dbc60d99fc59dd73dbdd",
+          "message": "risc0-build: move the env var check for RISC0_SKIP_BUILD (#1419)\n\nSkipping the guest build of the was this only supported for non-docker\r\nbuild environments. This change enables skipping the guest build by\r\nusing the RISC0_SKIP_BUILD by moving the env var check to a higher-level\r\nfunction.",
+          "timestamp": "2024-02-07T10:10:27-08:00",
+          "tree_id": "a323a51becf267a08916b783b38c5b122a12f544",
+          "url": "https://github.com/risc0/risc0/commit/c68575c3bea0f2bcf275dbc60d99fc59dd73dbdd"
+        },
+        "date": 1707330383851,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38833673,
+            "range": "± 70328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39254296,
+            "range": "± 123073",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45079420,
+            "range": "± 175448",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 846431976,
+            "range": "± 2155251",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 876116956,
+            "range": "± 2702335",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2515152725,
+            "range": "± 7641619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 885173727,
+            "range": "± 2714368",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 913999883,
+            "range": "± 3532427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2562181834,
+            "range": "± 8836374",
             "unit": "ns/iter"
           }
         ]
