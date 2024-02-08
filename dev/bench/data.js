@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1707372121051,
+  "lastUpdate": 1707372287097,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -55695,6 +55695,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 27311277881,
             "range": "± 46563041",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "88ec08bb8ae69dfbaaa04f25004028fd27fb351d",
+          "message": "Clean up segment path by using `Rc<TempDir>` (#1421)\n\nAt this time, the zkVM fails to clean up segment information. Fix this\r\nby reference-counting each segment file if it uses a tempdir. We will\r\nlet the user manage the lifetime of the segment if they designate a\r\nspecific path to store segments. Some of this is based off of Austin's\r\nwork. In this implementation, I used `Arc` because `SegmentRef`\r\nimplements the `send` trait.\r\n\r\n---------\r\n\r\nCo-authored-by: Austin Abell <austinabell8@gmail.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-02-08T05:46:21Z",
+          "tree_id": "c3721939f6101c227ca28de54f9e41927a3eb76a",
+          "url": "https://github.com/risc0/risc0/commit/88ec08bb8ae69dfbaaa04f25004028fd27fb351d"
+        },
+        "date": 1707372282638,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21981464,
+            "range": "± 116221",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22718823,
+            "range": "± 213078",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 26901944,
+            "range": "± 198241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 6681522662,
+            "range": "± 5960854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 6705046690,
+            "range": "± 4914753",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 26581501536,
+            "range": "± 27406022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 6702959739,
+            "range": "± 5464084",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 6722594952,
+            "range": "± 6108102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 26599688486,
+            "range": "± 36430558",
             "unit": "ns/iter"
           }
         ]
