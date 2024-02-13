@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1707783464474,
+  "lastUpdate": 1707783846153,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -56163,6 +56163,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 16933844540,
             "range": "± 27907409",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b2160178d3316be90142af7bca7d972798b89b0b",
+          "message": "CI: update cargo-install GH action to 2.0 (#1431)\n\nBy updating to 2.0, this action will use the `--locked` option by\r\ndefault and will use the semver listed in the yml files. Also, pin\r\n`clap` to 4.4 and use an earlier version of `cargo-rdme`. `cargo-rdme`\r\nwill be updated once we update host-side toolchains to 1.74.0 or\r\nhigher.\r\n\r\nThe 0.18 and 0.19 doc tests have been updated to pin to a specific version\r\nbecause those refer to versions of our software that doesn't have a\r\n`Cargo.lock` file. Going forward, we will add `.lock` files.\r\n\r\nFuture PR will remove the doc test for 0.18 and 0.19.",
+          "timestamp": "2024-02-12T16:10:34-08:00",
+          "tree_id": "36006e670185c38d79b9941ba7b5587604800b30",
+          "url": "https://github.com/risc0/risc0/commit/b2160178d3316be90142af7bca7d972798b89b0b"
+        },
+        "date": 1707783841461,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 22505950,
+            "range": "± 130360",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 23454901,
+            "range": "± 131281",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 27616112,
+            "range": "± 101521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4237973561,
+            "range": "± 16389127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4256067409,
+            "range": "± 10180317",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 17295223351,
+            "range": "± 44999625",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4245116295,
+            "range": "± 5589988",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4276473308,
+            "range": "± 5996533",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 17310663570,
+            "range": "± 38557579",
             "unit": "ns/iter"
           }
         ]
