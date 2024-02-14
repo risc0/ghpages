@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1707878622851,
+  "lastUpdate": 1707878739377,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -37831,6 +37831,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2673767320,
             "range": "± 12335700",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "658a56c73c1e1d5a70c03f677f4a511a89e17e64",
+          "message": "host toolchain: update to 1.74 (#1428)\n\nUpdate the host-side toolchain to 1.74, remove old doc tests, and add a\r\ndoc test for 0.20",
+          "timestamp": "2024-02-14T02:29:34Z",
+          "tree_id": "137a736c2f98c3a57426779d7ff0576c223e24bd",
+          "url": "https://github.com/risc0/risc0/commit/658a56c73c1e1d5a70c03f677f4a511a89e17e64"
+        },
+        "date": 1707878734415,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38707805,
+            "range": "± 249296",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39409396,
+            "range": "± 121091",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45270508,
+            "range": "± 28952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 659883681,
+            "range": "± 2327863",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 690791409,
+            "range": "± 2167037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2181179061,
+            "range": "± 5945551",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 703294585,
+            "range": "± 4453316",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 735434145,
+            "range": "± 4310333",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2227714299,
+            "range": "± 10782022",
             "unit": "ns/iter"
           }
         ]
