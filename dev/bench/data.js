@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708046894810,
+  "lastUpdate": 1708046973424,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -19109,6 +19109,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 19077230354,
             "range": "± 153498722",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f731662eaeb2d91b332cf85d4cbd61c87fc5c67",
+          "message": "`risc0_build` returning a list of `GuestListEntry` (#1424)\n\nIn the context of knowing the imageID of each method being built during\r\nthe build.rs script, it would be useful to return a list of `GuestListEntry` object.\r\n\r\nOne use case is to populate a Solidity library file with the ImageID\r\nvalues of each method. It also integrates nicely with the reproducible\r\nbuild via Docker\r\n\r\n---------\r\n\r\nCo-authored-by: morgangibbs87 <133707571+morgangibbs87@users.noreply.github.com>\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2024-02-15T17:15:23-08:00",
+          "tree_id": "3ce85a79256c9cd87305561b3764fe86dd7af9e6",
+          "url": "https://github.com/risc0/risc0/commit/7f731662eaeb2d91b332cf85d4cbd61c87fc5c67"
+        },
+        "date": 1708046970506,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6033926,
+            "range": "± 128014",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6283625,
+            "range": "± 80932",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 9259802,
+            "range": "± 74146",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4717597813,
+            "range": "± 95486443",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4753121271,
+            "range": "± 33826579",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 19138380312,
+            "range": "± 51498831",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4740337520,
+            "range": "± 79085447",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4763451833,
+            "range": "± 22050746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 19126153375,
+            "range": "± 321013565",
             "unit": "ns/iter"
           }
         ]
