@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708585040499,
+  "lastUpdate": 1708585161005,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -38299,6 +38299,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2359217030,
             "range": "± 8502818",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133707571+morgangibbs87@users.noreply.github.com",
+            "name": "morgangibbs87",
+            "username": "morgangibbs87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4236004bd87f7e3e5a2ac1b59095393917bbf03c",
+          "message": "Pin cc to 1.0.83 for to fix macOS CI (#1464)\n\nSeeing similar failures now locally and in CI:\r\n\r\n\r\nhttps://github.com/risc0/risc0/actions/runs/7984342114/job/21832026851?pr=1460\r\n\r\n```\r\n--- stderr \r\n make: *** read jobs pipe: Resource temporarily unavailable. Stop. \r\n make: *** Waiting for unfinished jobs.... \r\n thread 'main' panicked at /Users/risczero/.cargo/registry/src/index.crates.io-6f17d22bba15001f/openssl-src-300.2.3+3.2.1/src/lib.rs:611:9: \r\n\r\n Error building OpenSSL: \r\n Command: cd \"/Users/risczero/actions-runner/_work/risc0/risc0/target/release/build/openssl-sys-63add328a95486e5/out/openssl-build/build/src\" && MAKEFLAGS=\"-j --jobserver-fds=13,16 --jobserver-auth=13,16\" \"make\" \"build_libs\" \r\n Exit status: exit status: 2\r\n```\r\n\r\n\r\n\r\n------\r\n\r\nSlack context:\r\nhttps://risc0.slack.com/archives/C03GLQAGH55/p1708543019821689\r\n\r\n---------\r\n\r\nCo-authored-by: BatAdmin <batadmin@BatBook-Pro.local>",
+          "timestamp": "2024-02-21T22:43:25-08:00",
+          "tree_id": "1c0044683605af3c2a579c1ed50e04d715f22bdd",
+          "url": "https://github.com/risc0/risc0/commit/4236004bd87f7e3e5a2ac1b59095393917bbf03c"
+        },
+        "date": 1708585156068,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38869071,
+            "range": "± 49141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39507872,
+            "range": "± 81822",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45881516,
+            "range": "± 503442",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 756891051,
+            "range": "± 4171256",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 779927405,
+            "range": "± 3754771",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2292788184,
+            "range": "± 4741151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 791687358,
+            "range": "± 3366201",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 819664731,
+            "range": "± 3736824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2339452148,
+            "range": "± 8017159",
             "unit": "ns/iter"
           }
         ]
