@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708634878779,
+  "lastUpdate": 1708635335279,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -57489,6 +57489,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 16906063405,
             "range": "± 28886569",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "69f793a25419eb64aec03a05af64e7f0fb624e71",
+          "message": "Bump syn from 2.0.48 to 2.0.50 (#1460)\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2024-02-22T12:42:04-08:00",
+          "tree_id": "baa933e77abdba1e48342ff9db450080f3628575",
+          "url": "https://github.com/risc0/risc0/commit/69f793a25419eb64aec03a05af64e7f0fb624e71"
+        },
+        "date": 1708635328866,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 21802922,
+            "range": "± 107915",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 22878618,
+            "range": "± 226924",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 27281619,
+            "range": "± 176299",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4240800210,
+            "range": "± 32969487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4273649189,
+            "range": "± 7676379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 17220590162,
+            "range": "± 42039218",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4252792230,
+            "range": "± 5743034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4283765119,
+            "range": "± 8142664",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 17233814556,
+            "range": "± 63344682",
             "unit": "ns/iter"
           }
         ]
