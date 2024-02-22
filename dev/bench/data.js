@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708587158202,
+  "lastUpdate": 1708587274766,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -38455,6 +38455,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2339452148,
             "range": "± 8017159",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8c5b8c1a9b1f3b56909908d76af594575163b667",
+          "message": "DevMode: discard segments during execution (#1461)\n\nPreviously, DevMode kept segments in memory. However, this is not\r\npractical for very large workloads because the segments can take up a\r\nlot of space. This change drops segments from memory during devmode by\r\nintroducing a new SegmentRef impl. I tried conditionally assigning\r\ndifferent closures to the callback variable but I quickly ran into\r\nadding starting to complicate type signatures by adding `Box<dyn ...>`.\r\nThis solution wraps the callback in another closure that checks for dev\r\nmode each time segments are resolved.",
+          "timestamp": "2024-02-22T07:18:35Z",
+          "tree_id": "9b96ecc3e2c73cbc5f722935e2e8a264affbe0d1",
+          "url": "https://github.com/risc0/risc0/commit/8c5b8c1a9b1f3b56909908d76af594575163b667"
+        },
+        "date": 1708587269846,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38578041,
+            "range": "± 517239",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39295792,
+            "range": "± 77140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45206520,
+            "range": "± 46051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 668701353,
+            "range": "± 2148320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 706686664,
+            "range": "± 5624025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2281165587,
+            "range": "± 6315106",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 709033515,
+            "range": "± 4797049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 743851263,
+            "range": "± 3199370",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2315256965,
+            "range": "± 7608625",
             "unit": "ns/iter"
           }
         ]
