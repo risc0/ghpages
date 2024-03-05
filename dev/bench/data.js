@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709679256299,
+  "lastUpdate": 1709679315687,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -19499,6 +19499,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 19026964333,
             "range": "± 48995886",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2deb83a15d8bd438bdc594a86438fc816d02b480",
+          "message": "Bump reqwest-retry from 0.3.0 to 0.4.0 (#1514)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-03-05T14:41:47-08:00",
+          "tree_id": "8d9ddc011922a799733b3e525adb6b06a7bff626",
+          "url": "https://github.com/risc0/risc0/commit/2deb83a15d8bd438bdc594a86438fc816d02b480"
+        },
+        "date": 1709679313462,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16568368,
+            "range": "± 160491",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16881026,
+            "range": "± 67348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19767499,
+            "range": "± 53191",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4716442750,
+            "range": "± 18809389",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4737398937,
+            "range": "± 8451025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 19119699875,
+            "range": "± 444340293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4745026583,
+            "range": "± 8213754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4768824437,
+            "range": "± 71004362",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 19146855791,
+            "range": "± 84445993",
             "unit": "ns/iter"
           }
         ]
