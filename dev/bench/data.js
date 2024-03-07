@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709849162744,
+  "lastUpdate": 1709849215467,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -19655,6 +19655,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 19166116458,
             "range": "± 48224994",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "55dc5108b8d63c71fb417ac53e8149d48b20f059",
+          "message": "Revert \"risc0-build: move the env var check for RISC0_SKIP_BUILD (#1419)\" (#1521)\n\nThis reverts commit c68575c3bea0f2bcf275dbc60d99fc59dd73dbdd and moves\r\nthe logic to skip build inside docker and non-docker build functions.\r\n\r\nMoving the env var to the embed_methods results in skipping the\r\nembedding of methods in addition to skipping the build. By doing this,\r\nRISC0_SKIP_BUILD will only skip the build and continue to embed the\r\nmethods.rs file containing the ELF and image ID.",
+          "timestamp": "2024-03-07T21:53:18Z",
+          "tree_id": "a991eff1b4edab995f9b67857caa6c90ef1edb98",
+          "url": "https://github.com/risc0/risc0/commit/55dc5108b8d63c71fb417ac53e8149d48b20f059"
+        },
+        "date": 1709849212698,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16571128,
+            "range": "± 109039",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16870265,
+            "range": "± 137289",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19695956,
+            "range": "± 109886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4728091312,
+            "range": "± 23416012",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4754272916,
+            "range": "± 75261962",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 19132477167,
+            "range": "± 292287968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4751923062,
+            "range": "± 12384582",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4777315104,
+            "range": "± 20420318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 19175968291,
+            "range": "± 283895255",
             "unit": "ns/iter"
           }
         ]
