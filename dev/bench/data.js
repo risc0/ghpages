@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709842007035,
+  "lastUpdate": 1709842492157,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -57957,6 +57957,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 16652589332,
             "range": "± 27866333",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08e45c89427156dd5613ab04685339a082cc3d73",
+          "message": "un-pin cc crate (#1471)\n\nCo-authored-by: morgangibbs87 <133707571+morgangibbs87@users.noreply.github.com>",
+          "timestamp": "2024-03-07T12:01:19-08:00",
+          "tree_id": "6b39e247aa741b64afe5a3a9ff3fb760df995b94",
+          "url": "https://github.com/risc0/risc0/commit/08e45c89427156dd5613ab04685339a082cc3d73"
+        },
+        "date": 1709842487528,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 20333834,
+            "range": "± 354808",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 20707526,
+            "range": "± 638933",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25220670,
+            "range": "± 644592",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4138860795,
+            "range": "± 7598939",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4167398486,
+            "range": "± 7957049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 16678002470,
+            "range": "± 21636800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4160622340,
+            "range": "± 5979216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4182988709,
+            "range": "± 8961860",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 16701972531,
+            "range": "± 22701801",
             "unit": "ns/iter"
           }
         ]
