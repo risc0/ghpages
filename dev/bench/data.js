@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709866882395,
+  "lastUpdate": 1709867045887,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -58503,6 +58503,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 17028897455,
             "range": "± 28207947",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7e4d9877da909ed6d4ac4e45b2c90c76373a5aed",
+          "message": "Refactor groth16 (#1420)\n\nThe following changes are suggested to make easier the integration of\r\n`Groth16` with `bonsai-alpha`.\r\n\r\n- update Bonsai SDK to use the new `risc0_groth16::Seal`\r\n- drop the build.Dockerfile to reduce the number of dockerfiles; circom\r\ngets called with `--r1cs` in the ceremony and with `--c` in the prover\r\n- re-exporting the bare minimum from groth16 via `risc0-zkvm` to avoid\r\nthe need to import the `risc0-groth16` crate\r\n\r\nSolves https://github.com/risc0/risc0/issues/1524",
+          "timestamp": "2024-03-08T02:51:28Z",
+          "tree_id": "a2c9977196443d70903f08f6a97ddf917b7b9fbe",
+          "url": "https://github.com/risc0/risc0/commit/7e4d9877da909ed6d4ac4e45b2c90c76373a5aed"
+        },
+        "date": 1709867041124,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 20981529,
+            "range": "± 354823",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 21624109,
+            "range": "± 403232",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 25948361,
+            "range": "± 418983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 4131200338,
+            "range": "± 7226712",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 4156717569,
+            "range": "± 4059651",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 16708520107,
+            "range": "± 45651607",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 4171749299,
+            "range": "± 7940305",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 4181464304,
+            "range": "± 9677246",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 16726216588,
+            "range": "± 35726950",
             "unit": "ns/iter"
           }
         ]
