@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709928741644,
+  "lastUpdate": 1709928787913,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -39313,6 +39313,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2252275801,
             "range": "± 6655016",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0a98a6e6deb27788d30b40de07d65c3e7842b0b8",
+          "message": "Bubble up bonsai prover errors (#1532)\n\nThis PR integrates the `.error_msg` + sessionID into the `bail!()`\r\ncontents for easier end user debugging of backend failures (and easier\r\nreporting). Additionally it adds some cycle tracking stats on the debug\r\nlevel.",
+          "timestamp": "2024-03-08T20:07:04Z",
+          "tree_id": "8b5610816efa0dbf1d9740416cfd6dff61c72ff9",
+          "url": "https://github.com/risc0/risc0/commit/0a98a6e6deb27788d30b40de07d65c3e7842b0b8"
+        },
+        "date": 1709928782820,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38867711,
+            "range": "± 91044",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39443648,
+            "range": "± 231501",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45503439,
+            "range": "± 105994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 708703565,
+            "range": "± 4304077",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 740831989,
+            "range": "± 4700536",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 2605689174,
+            "range": "± 13542432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 756699829,
+            "range": "± 5082717",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 792900562,
+            "range": "± 3368692",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 2660534651,
+            "range": "± 20536470",
             "unit": "ns/iter"
           }
         ]
