@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710371144351,
+  "lastUpdate": 1710371244396,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -39781,6 +39781,138 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 2162758017,
             "range": "± 7532523",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "650bf4d3bd27c8a7a496d86a396e7eb31037cd90",
+          "message": "split benchmarks (#1554)\n\nAs of now, the benchmarks only display executor and total proving. This\r\nchange will split the benchmarks into these metrics: executor, prove\r\nsegment, lift, join, total composite, and total succinct. This will\r\nallow us to better understand performance changes on a more granular\r\nlevel.\r\n\r\nCloses: #1369",
+          "timestamp": "2024-03-13T15:41:42-07:00",
+          "tree_id": "5e4560ea63d72676bf0f05da947334926b804b8b",
+          "url": "https://github.com/risc0/risc0/commit/650bf4d3bd27c8a7a496d86a396e7eb31037cd90"
+        },
+        "date": 1710371239692,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 38733832,
+            "range": "± 106384",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 39393430,
+            "range": "± 69036",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 45157807,
+            "range": "± 186154",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove segments",
+            "value": 1447836782,
+            "range": "± 4807067",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove segments",
+            "value": 1472669401,
+            "range": "± 3823088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove segments",
+            "value": 4565038740,
+            "range": "± 15250421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/lift",
+            "value": 722235813,
+            "range": "± 3049986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/lift",
+            "value": 721642259,
+            "range": "± 4761558",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/lift",
+            "value": 738172782,
+            "range": "± 4031891",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/join",
+            "value": 357,
+            "range": "± 1213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/join",
+            "value": 356,
+            "range": "± 1185",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/join",
+            "value": 354,
+            "range": "± 1199",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total composite",
+            "value": 1485137104,
+            "range": "± 3854418",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total composite",
+            "value": 1513732542,
+            "range": "± 2349195",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total composite",
+            "value": 4652776846,
+            "range": "± 28513051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total succinct",
+            "value": 2209629184,
+            "range": "± 8560455",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total succinct",
+            "value": 2232275859,
+            "range": "± 4731597",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total succinct",
+            "value": 5516836177,
+            "range": "± 73442944",
             "unit": "ns/iter"
           }
         ]
