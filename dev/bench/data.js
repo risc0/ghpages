@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710350110255,
+  "lastUpdate": 1710350819710,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -19889,6 +19889,84 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total",
             "value": 19199041770,
             "range": "± 134327141",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fbf5294433ddce3c7f266d357669d505383b380b",
+          "message": "Improve eval check performance by precomputing powers of poly_mix (#1537)\n\nCUDA:\r\n```\r\nfib/100/prove\r\n-------------\r\nbase        1.00     672.7±3.76ms  95.1 KElem/sec\r\nchanges     1.65    1107.9±3.14ms  57.8 KElem/sec\r\n\r\nfib/1000/prove\r\n--------------\r\nbase        1.00     703.6±3.33ms  91.0 KElem/sec\r\nchanges     1.61    1133.8±4.53ms  56.4 KElem/sec\r\n\r\nfib/10000/prove\r\n---------------\r\nchanges     1.00        2.1±0.01s  120.9 KElem/sec\r\nbase        1.03        2.2±0.01s  117.3 KElem/sec\r\n```\r\nCPU:\r\n```\r\nfib/100/prove\r\n-------------\r\nchanges     1.00        2.9±0.01s  22.4 KElem/sec\r\nbase        1.46        4.2±0.01s  15.3 KElem/sec\r\n\r\nfib/1000/prove\r\n--------------\r\nchanges     1.00        2.9±0.01s  22.1 KElem/sec\r\nbase        1.46        4.2±0.01s  15.2 KElem/sec\r\n\r\nfib/10000/prove\r\n---------------\r\nchanges     1.00       11.6±0.03s  22.2 KElem/sec\r\nbase        1.47       17.0±0.03s  15.1 KElem/sec\r\n\r\n```\r\n\r\nCo-authored-by: nils <shkoo@users.noreply.github.com>",
+          "timestamp": "2024-03-13T16:58:40Z",
+          "tree_id": "d47bf8857242ea7ceb86e707af9fae179a95f7df",
+          "url": "https://github.com/risc0/risc0/commit/fbf5294433ddce3c7f266d357669d505383b380b"
+        },
+        "date": 1710350817234,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 16591997,
+            "range": "± 33861",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 16745494,
+            "range": "± 66195",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 19855013,
+            "range": "± 77688",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove",
+            "value": 3447807895,
+            "range": "± 14639596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove",
+            "value": 3479353146,
+            "range": "± 25128552",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove",
+            "value": 14138952979,
+            "range": "± 88524957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total",
+            "value": 3487036396,
+            "range": "± 13947962",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total",
+            "value": 3503739500,
+            "range": "± 12178957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total",
+            "value": 14136653604,
+            "range": "± 50352083",
             "unit": "ns/iter"
           }
         ]
