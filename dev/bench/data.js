@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710403843080,
+  "lastUpdate": 1710403885186,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -60021,6 +60021,138 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total succinct",
             "value": 17349641891,
             "range": "± 18144982",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a7dd4d30b18f844e42a37ae4dcd58885ef85826a",
+          "message": "Parallel witness generation (#1480)\n\n* Replace executor with a new executor and preflight pair. These are\r\nimplemented in the `risc0-circuit-rv32im` crate. A wrapper in\r\n`risc0-zkvm` is provided to prevent any breaking changes for access to\r\nthe executor.\r\n* Add a name to all HAL buffers for diagnostic purposes\r\n* All rv32im control IDs are updated due to a minor bug found in the\r\nloader that creates the control group.\r\n\r\nCUDA\r\n```\r\ngroup                        base                                      changes\r\n-----                        ----                                      -------\r\nfib/100/execute              4.60     29.1±0.38ms 124.2 KElem/sec      1.00      6.3±0.41ms 570.1 KElem/sec\r\nfib/100/join                 1.00  935.3±1351.00ns 1044.2 KElem/sec    8.57      8.0±4.30µs 121.8 KElem/sec\r\nfib/100/lift                 1.00    745.5±8.45ms     1 Elem/sec       1.08    807.6±4.89ms     1 Elem/sec\r\nfib/100/prove segments       1.42    619.0±3.43ms 103.4 KElem/sec      1.00   435.9±10.11ms 146.8 KElem/sec\r\nfib/100/total composite      1.41    636.0±3.56ms  5.7 KElem/sec       1.00   452.3±20.31ms  8.0 KElem/sec\r\nfib/100/total succinct       1.09   1378.3±9.99ms  2.6 KElem/sec       1.00  1259.5±10.81ms  2.9 KElem/sec\r\nfib/1000/execute             4.15     29.6±0.54ms 418.9 KElem/sec      1.00      7.1±0.22ms 1739.1 KElem/sec\r\nfib/1000/join                1.00  1085.9±1376.20ns 899.3 KElem/sec    7.29      7.9±4.25µs 123.3 KElem/sec\r\nfib/1000/lift                1.00    746.0±7.56ms     1 Elem/sec       1.10   822.6±38.97ms     1 Elem/sec\r\nfib/1000/prove segments      1.47   648.1±35.47ms 98.7 KElem/sec       1.00    442.3±5.61ms 144.7 KElem/sec\r\nfib/1000/total composite     1.47    664.6±7.35ms 18.7 KElem/sec       1.00    451.5±6.38ms 27.4 KElem/sec\r\nfib/1000/total succinct      1.10  1406.4±14.05ms  8.8 KElem/sec       1.00  1281.2±54.57ms  9.7 KElem/sec\r\nfib/10000/execute            2.29     34.3±0.15ms  2.9 MElem/sec       1.00     15.0±0.28ms  6.5 MElem/sec\r\nfib/10000/join               1.00  948.5±1390.89ns 1029.6 KElem/sec    8.50      8.1±4.32µs 121.2 KElem/sec\r\nfib/10000/lift               1.00    760.7±6.48ms     1 Elem/sec       1.08    821.8±5.28ms     1 Elem/sec\r\nfib/10000/prove segments     1.31   1945.7±8.60ms 131.6 KElem/sec      1.00  1487.3±65.09ms 172.1 KElem/sec\r\nfib/10000/total composite    1.32   1992.1±6.94ms 50.3 KElem/sec       1.00  1512.4±47.79ms 66.3 KElem/sec\r\nfib/10000/total succinct     1.18       2.8±0.02s 36.3 KElem/sec       1.00       2.3±0.06s 42.8 KElem/sec\r\n```\r\n\r\nMetal\r\n```\r\ngroup                        base                                    changes\r\n-----                        ----                                    -------\r\nfib/100/execute              5.64     17.3±0.17ms 208.1 KElem/sec    1.00      3.1±0.17ms 1169.8 KElem/sec\r\nfib/100/join                 1.00      6.9±2.16µs 141.4 KElem/sec    1.00      6.9±1.93µs 141.7 KElem/sec\r\nfib/100/lift                 1.01  1270.5±10.48ms     0 Elem/sec     1.00  1254.4±14.18ms     0 Elem/sec\r\nfib/100/prove segments       1.16    760.8±5.89ms 84.1 KElem/sec     1.00    657.7±5.34ms 97.3 KElem/sec\r\nfib/100/total composite      1.17    770.5±5.65ms  4.7 KElem/sec     1.00    659.2±8.37ms  5.5 KElem/sec\r\nfib/100/total succinct       1.07       2.2±0.04s  1707 Elem/sec     1.00       2.0±0.02s  1819 Elem/sec\r\nfib/1000/execute             4.79     17.5±0.17ms 707.8 KElem/sec    1.00      3.7±0.14ms  3.3 MElem/sec\r\nfib/1000/join                1.00      6.4±2.25µs 153.3 KElem/sec    1.00      6.4±2.31µs 153.6 KElem/sec\r\nfib/1000/lift                1.01  1265.6±14.63ms     0 Elem/sec     1.00  1255.6±13.83ms     0 Elem/sec\r\nfib/1000/prove segments      1.18    785.0±6.46ms 81.5 KElem/sec     1.00    666.4±5.32ms 96.0 KElem/sec\r\nfib/1000/total composite     1.20    806.9±4.16ms 15.4 KElem/sec     1.00    670.2±8.33ms 18.5 KElem/sec\r\nfib/1000/total succinct      1.07       2.2±0.02s  5.7 KElem/sec     1.00       2.0±0.05s  6.1 KElem/sec\r\nfib/10000/execute            2.24     20.7±0.20ms  4.7 MElem/sec     1.00      9.3±0.11ms 10.6 MElem/sec\r\nfib/10000/join               1.03      6.3±2.17µs 155.7 KElem/sec    1.00      6.1±2.40µs 160.4 KElem/sec\r\nfib/10000/lift               1.01   1272.7±6.46ms     0 Elem/sec     1.00  1261.6±14.82ms     0 Elem/sec\r\nfib/10000/prove segments     1.15       2.8±0.01s 92.6 KElem/sec     1.00       2.4±0.01s 106.7 KElem/sec\r\nfib/10000/total composite    1.15       2.8±0.01s 36.1 KElem/sec     1.00       2.4±0.01s 41.6 KElem/sec\r\nfib/10000/total succinct     1.10       4.2±0.03s 24.1 KElem/sec     1.00       3.8±0.02s 26.6 KElem/sec\r\n```",
+          "timestamp": "2024-03-14T00:43:26-07:00",
+          "tree_id": "1737939390e122edb0d786803deb0c3c0d20ffaf",
+          "url": "https://github.com/risc0/risc0/commit/a7dd4d30b18f844e42a37ae4dcd58885ef85826a"
+        },
+        "date": 1710403880704,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5248998,
+            "range": "± 130920",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6904973,
+            "range": "± 121017",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14184886,
+            "range": "± 184377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove segments",
+            "value": 2683461484,
+            "range": "± 3137226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/prove segments",
+            "value": 2692309213,
+            "range": "± 6055628",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove segments",
+            "value": 10991505958,
+            "range": "± 21532211",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/lift",
+            "value": 6073829816,
+            "range": "± 17008723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/lift",
+            "value": 6068117827,
+            "range": "± 17748970",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/lift",
+            "value": 6100318948,
+            "range": "± 24047516",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/join",
+            "value": 6407,
+            "range": "± 3258",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/join",
+            "value": 6431,
+            "range": "± 3322",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/join",
+            "value": 6308,
+            "range": "± 3222",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total composite",
+            "value": 2691856025,
+            "range": "± 5344280",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total composite",
+            "value": 2704446439,
+            "range": "± 4475545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total composite",
+            "value": 11003843324,
+            "range": "± 47482794",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/total succinct",
+            "value": 8783937640,
+            "range": "± 25505676",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/total succinct",
+            "value": 8786641913,
+            "range": "± 15869226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/total succinct",
+            "value": 17085575495,
+            "range": "± 29719442",
             "unit": "ns/iter"
           }
         ]
