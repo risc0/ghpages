@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710436190626,
+  "lastUpdate": 1710436615745,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -60261,6 +60261,114 @@ window.BENCHMARK_DATA = {
             "name": "fib/10000/total succinct",
             "value": 17085575495,
             "range": "± 29719442",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "828dcea62e09f034929d5b2ef1914f06e298562d",
+          "message": "Improved benchmarks (#1555)\n\nThe join benchmark in particular was faulty.",
+          "timestamp": "2024-03-14T09:43:22-07:00",
+          "tree_id": "d5d2630c6b7d3dcdad3cd9804ef1afc22008fb8f",
+          "url": "https://github.com/risc0/risc0/commit/828dcea62e09f034929d5b2ef1914f06e298562d"
+        },
+        "date": 1710436611086,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2660557,
+            "range": "± 165138",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 4061060,
+            "range": "± 100412",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 11422097,
+            "range": "± 101685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 85509900,
+            "range": "± 1025613",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 1692190610,
+            "range": "± 5106618",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 7151270413,
+            "range": "± 19702889",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 30887038082,
+            "range": "± 97289991",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 2630699243,
+            "range": "± 6994911",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 10846411775,
+            "range": "± 20711450",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 45393299771,
+            "range": "± 137467487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 1705287406,
+            "range": "± 4828170",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 7181115648,
+            "range": "± 13101689",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 30873572912,
+            "range": "± 146527234",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 6049178712,
+            "range": "± 16175461",
             "unit": "ns/iter"
           }
         ]
