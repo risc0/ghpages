@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710786926866,
+  "lastUpdate": 1710787279310,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20417,6 +20417,114 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 7887924187,
             "range": "± 55785984",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a42c07a24dae9715e42661cba31ddc9a02ccaae",
+          "message": "Fix panic when Executor is used with dev mode (#1562)\n\nI ran into an issue where, in using `risc0-zkvm` with the `client`\r\nfeature and `RISC0_DEV_MODE=1` I would get a panic. I tracked this down\r\nto the way null segment refs were being handled, which is that deep\r\nwithin the executor the provided callback was being ignored in dev mode.\r\nI believe the root cause of the panic then was that dev mode was being\r\nchecked for at the wrong layer of abstraction.\r\n\r\nIn this PR, the decision on using `NullSegmentRef` is moved by have the\r\ndev mode `ProverServer` implementation use `null_callback` in\r\n`prove_with_context`. Additionally, the `LocalProver` impl of `Executor`\r\nis altered to avoid calling `resolve` on the segments such that they\r\nnever need to be stored, and we are still able to construct the\r\n`SessionInfo`.\r\n\r\nThis PR also cleans up some links that cause `cargo doc -Fclient` to\r\nfail, and prunes `EmptySegmentRef`, which is redundant to\r\n`NullSegmentRef` and not exported anywhere.",
+          "timestamp": "2024-03-18T11:04:00-07:00",
+          "tree_id": "7d1cfbb9b09a303a833d0bff6111249d871fe784",
+          "url": "https://github.com/risc0/risc0/commit/8a42c07a24dae9715e42661cba31ddc9a02ccaae"
+        },
+        "date": 1710787277069,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 3154510,
+            "range": "± 294702",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3248552,
+            "range": "± 271614",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8910073,
+            "range": "± 260540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 59096916,
+            "range": "± 261251",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 2170369937,
+            "range": "± 10621119",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 8978928896,
+            "range": "± 42290327",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 38550566396,
+            "range": "± 253520180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 3315357479,
+            "range": "± 8692372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 13705960188,
+            "range": "± 90526107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 56434381771,
+            "range": "± 635528850",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 2176939813,
+            "range": "± 9117123",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 8999648625,
+            "range": "± 62625670",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 38315211666,
+            "range": "± 226644787",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 7929051833,
+            "range": "± 68372413",
             "unit": "ns/iter"
           }
         ]
