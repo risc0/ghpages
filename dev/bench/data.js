@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710787279310,
+  "lastUpdate": 1710845989243,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -81329,6 +81329,114 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 1630394687,
             "range": "± 7976590",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dba225f98273bdaff8d287a145b50249c8e917a3",
+          "message": "Integrate `risc0-ethereum` on CI (#1525)\n\n- Drop Ethereum crates, now moved into the `risc0-ethereum` own repo\r\n- Update the `xtask bootstrap-groth16` tool to work with the external\r\n`risc0-ethereum` repo\r\n- Fix ceremony.dockerfile\r\n- Add to CI a workflow to check when changes brake our ethereum-related\r\nrepos (`risc0-ethereum` and `bonsai-foundry-template`). The patching is\r\ndone via a python script rather than with `Cargo patch` as it is more\r\nflexible, allowing to also patch git submodule dependencies without\r\nrequiring any changes on the external repos.\r\nThese checks also include checking the Solidity verifier (on\r\n`risc0-ethereum`) against a Groth16 receipt generated from the `risc0`\r\n\r\nResolves: https://github.com/risc0/scratch/issues/270\r\nResolves: https://github.com/risc0/risc0/issues/1406\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2024-03-19T10:46:21Z",
+          "tree_id": "682469594dc76dac3f565cd92c3c20f9c62740fd",
+          "url": "https://github.com/risc0/risc0/commit/dba225f98273bdaff8d287a145b50249c8e917a3"
+        },
+        "date": 1710845987075,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2746801,
+            "range": "± 56780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3245677,
+            "range": "± 44089",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8549656,
+            "range": "± 288823",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 60215271,
+            "range": "± 443045",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 722057854,
+            "range": "± 3475814",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 2811075166,
+            "range": "± 13147052",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 11957870958,
+            "range": "± 35619234",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 815127667,
+            "range": "± 3813139",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 3153247000,
+            "range": "± 14586345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 13352512708,
+            "range": "± 35540008",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 719130812,
+            "range": "± 4267670",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 2836325417,
+            "range": "± 10594820",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 12021941395,
+            "range": "± 32365126",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 1622202938,
+            "range": "± 3733313",
             "unit": "ns/iter"
           }
         ]
