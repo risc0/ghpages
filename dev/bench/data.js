@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710847423228,
+  "lastUpdate": 1710881824090,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -81761,6 +81761,66 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 1622202938,
             "range": "± 3733313",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7e08ced0305e5b86f77a4f5defc021056319c6d2",
+          "message": "Bump syn from 2.0.52 to 2.0.53 (#1565)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-03-19T13:50:40-07:00",
+          "tree_id": "33abc323fce5fd68de248ce6e4b5f060e6cdc8e0",
+          "url": "https://github.com/risc0/risc0/commit/7e08ced0305e5b86f77a4f5defc021056319c6d2"
+        },
+        "date": 1710881821652,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 3305968,
+            "range": "± 254119",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3781177,
+            "range": "± 250332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 9080437,
+            "range": "± 206785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 60474312,
+            "range": "± 371463",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 737477020,
+            "range": "± 2366338",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 2832003291,
+            "range": "± 9398757",
             "unit": "ns/iter"
           }
         ]
