@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710883699528,
+  "lastUpdate": 1711041170689,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -41173,6 +41173,114 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 719207831,
             "range": "± 4961007",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83a4e9e1ec4671894d1c00080e3b685965eae1b9",
+          "message": "Add docs on website for I/O in the zkVM (#1434)\n\nThis PR seeks to add a new page on the docs site addressing how to\r\nhandle I/O in the zkVM.\r\nIt covers the basics on how to perform input and output operations,\r\nfocusing solely on file descriptors and deliberately excluding options\r\nsuch as `SliceIo`.\r\n\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>\r\nCo-authored-by: Paul <paul.gafni@gmail.com>",
+          "timestamp": "2024-03-21T17:00:16Z",
+          "tree_id": "c405eb4ae59e95b3d504f6252ee400f10bc7a58c",
+          "url": "https://github.com/risc0/risc0/commit/83a4e9e1ec4671894d1c00080e3b685965eae1b9"
+        },
+        "date": 1711041165690,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5893386,
+            "range": "± 90972",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 6834706,
+            "range": "± 30796",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 16604656,
+            "range": "± 89557",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 113081899,
+            "range": "± 569076",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 354310687,
+            "range": "± 4911379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 1589735846,
+            "range": "± 10754426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 6910112671,
+            "range": "± 33407537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 383586249,
+            "range": "± 3728727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 1592551621,
+            "range": "± 11608257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 6863468994,
+            "range": "± 32968675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 393029249,
+            "range": "± 3531878",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 1558172695,
+            "range": "± 10902947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 7019565591,
+            "range": "± 32835210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 813411533,
+            "range": "± 5298499",
             "unit": "ns/iter"
           }
         ]
