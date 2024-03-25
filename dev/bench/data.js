@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711389130767,
+  "lastUpdate": 1711389647814,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20849,6 +20849,114 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 7886935771,
             "range": "± 78958982",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "abc2a1e40d1937bc3aaee82afbfb56c1890f8310",
+          "message": "Bump syn from 2.0.53 to 2.0.55 (#1587)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-03-25T17:21:23Z",
+          "tree_id": "783055dd97f400334a3bd4946d7446d0dec496f8",
+          "url": "https://github.com/risc0/risc0/commit/abc2a1e40d1937bc3aaee82afbfb56c1890f8310"
+        },
+        "date": 1711389645831,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2933979,
+            "range": "± 220746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3733604,
+            "range": "± 673454",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8765291,
+            "range": "± 246349",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 60712291,
+            "range": "± 447690",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 2176146854,
+            "range": "± 8030236",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 9038883271,
+            "range": "± 21262595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 38432844625,
+            "range": "± 655627632",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 3321691479,
+            "range": "± 27519743",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 13682939146,
+            "range": "± 67667601",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 56812745583,
+            "range": "± 376581956",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 2166105250,
+            "range": "± 40511515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 9044409104,
+            "range": "± 194997545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 38702744542,
+            "range": "± 384189873",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 7863807208,
+            "range": "± 71899135",
             "unit": "ns/iter"
           }
         ]
