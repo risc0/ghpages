@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711538733571,
+  "lastUpdate": 1711540479367,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -62925,6 +62925,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 52354037963,
             "range": "± 79149792",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133707571+morgangibbs87@users.noreply.github.com",
+            "name": "morgangibbs87",
+            "username": "morgangibbs87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c13e723e6b5477b7c736395b1645c5a4b4aae3d",
+          "message": "CI Benchmarks Checks (#1491)\n\n- [x] Use `divan` instead of `criterion` so that benchmarks run within a\r\nreasonable amount of time\r\n- [x] Remove `bench_pr_comment.yml`\r\n- [x] Use newly appointed github runner for running CUDA benchmarks\r\n\r\nTODO: figure out how to get the benchmark data\r\nTODO: write a tool to compare baselines\r\nTODO: alert when regression is detected (with a grace threshold)\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-03-27T11:05:03Z",
+          "tree_id": "34c33a8550014f561cec21902c8e6fc2206bcce4",
+          "url": "https://github.com/risc0/risc0/commit/5c13e723e6b5477b7c736395b1645c5a4b4aae3d"
+        },
+        "date": 1711540474763,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2861834,
+            "range": "± 1843947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 12626354,
+            "range": "± 1143524",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 93479199,
+            "range": "± 1359617",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 1711723726,
+            "range": "± 10351778",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 7290750622,
+            "range": "± 31125258",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 31724581188,
+            "range": "± 33923465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 2652451773,
+            "range": "± 7734880",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 11011409894,
+            "range": "± 48146037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 46373732350,
+            "range": "± 89059502",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 1722626203,
+            "range": "± 4441595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 7311665811,
+            "range": "± 46961497",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 31289479553,
+            "range": "± 148508369",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 6057978651,
+            "range": "± 10435885",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 6255159080,
+            "range": "± 13388149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 8751056944,
+            "range": "± 10097935",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 17035834054,
+            "range": "± 24018451",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 52185189375,
+            "range": "± 98754339",
             "unit": "ns/iter"
           }
         ]
