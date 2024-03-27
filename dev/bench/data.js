@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711514776494,
+  "lastUpdate": 1711518249259,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -41821,6 +41821,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 791813040,
             "range": "± 5227748",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "456eb6d19b55021d36fd53086dcf03ea089d642a",
+          "message": "Prepare benchmarks for PR checks (#1603)",
+          "timestamp": "2024-03-27T05:27:39Z",
+          "tree_id": "baec4517c346ddbbdeb2da5ec2a3326f136c0c81",
+          "url": "https://github.com/risc0/risc0/commit/456eb6d19b55021d36fd53086dcf03ea089d642a"
+        },
+        "date": 1711518244522,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6293794,
+            "range": "± 52920",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 16941240,
+            "range": "± 99952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 114775991,
+            "range": "± 803016",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 356187098,
+            "range": "± 2370885",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 1304195683,
+            "range": "± 6666314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 6961739637,
+            "range": "± 48837391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 377561170,
+            "range": "± 2377984",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 1312911841,
+            "range": "± 8161368",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 6910745797,
+            "range": "± 40315314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 369028897,
+            "range": "± 1857970",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 1328907492,
+            "range": "± 7642300",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 7093334573,
+            "range": "± 79545780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 736912797,
+            "range": "± 3062348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 980383714,
+            "range": "± 3763123",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 1166631541,
+            "range": "± 5374468",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 2527150386,
+            "range": "± 14770120",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 8208275357,
+            "range": "± 55482723",
             "unit": "ns/iter"
           }
         ]
