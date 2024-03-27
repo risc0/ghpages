@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711514314659,
+  "lastUpdate": 1711514776494,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20957,6 +20957,114 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 7863807208,
             "range": "± 71899135",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb283431a11fcf6cecc925738b87a6893278c4de",
+          "message": " Soundness error calculator (#1593)\n\nCo-authored-by: therealyingtong <yingtong.lai@gmail.com>\r\nCo-authored-by: Paul <paul.gafni@gmail.com>",
+          "timestamp": "2024-03-27T04:07:27Z",
+          "tree_id": "38a589ddf460b366dca91b7b0130b214be54f14d",
+          "url": "https://github.com/risc0/risc0/commit/fb283431a11fcf6cecc925738b87a6893278c4de"
+        },
+        "date": 1711514774348,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 3118312,
+            "range": "± 309865",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/1000/execute",
+            "value": 3259385,
+            "range": "± 144327",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8915302,
+            "range": "± 786031",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 59525125,
+            "range": "± 273606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 2173033104,
+            "range": "± 17812693",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 8989977479,
+            "range": "± 23896900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 38510597916,
+            "range": "± 509838619",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 3317225771,
+            "range": "± 42792132",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 13749624666,
+            "range": "± 77991322",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 56542915958,
+            "range": "± 897248340",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 2161158062,
+            "range": "± 23619465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 9022928521,
+            "range": "± 157333751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 38536017917,
+            "range": "± 504701181",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 7944405479,
+            "range": "± 65223621",
             "unit": "ns/iter"
           }
         ]
