@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711520236169,
+  "lastUpdate": 1711520900958,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21065,6 +21065,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 7944405479,
             "range": "± 65223621",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "456eb6d19b55021d36fd53086dcf03ea089d642a",
+          "message": "Prepare benchmarks for PR checks (#1603)",
+          "timestamp": "2024-03-27T05:27:39Z",
+          "tree_id": "baec4517c346ddbbdeb2da5ec2a3326f136c0c81",
+          "url": "https://github.com/risc0/risc0/commit/456eb6d19b55021d36fd53086dcf03ea089d642a"
+        },
+        "date": 1711520898748,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2898551,
+            "range": "± 228631",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8959062,
+            "range": "± 329452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 59774354,
+            "range": "± 274459",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 2160986958,
+            "range": "± 12358563",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 9005779208,
+            "range": "± 26906998",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 38316629396,
+            "range": "± 244206404",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 3317240770,
+            "range": "± 29897401",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 13686784583,
+            "range": "± 80302048",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 56675124666,
+            "range": "± 543957113",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 2157982583,
+            "range": "± 42251400",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 9008910604,
+            "range": "± 33916508",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 38490081791,
+            "range": "± 629191533",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 7900340812,
+            "range": "± 53831324",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 8065853229,
+            "range": "± 54304895",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 11267843646,
+            "range": "± 102384493",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 21698870312,
+            "range": "± 81091232",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 64508664958,
+            "range": "± 251314359",
             "unit": "ns/iter"
           }
         ]
