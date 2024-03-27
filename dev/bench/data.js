@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711518249259,
+  "lastUpdate": 1711518411871,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -83567,6 +83567,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/lift",
             "value": 1629362937,
             "range": "± 6166052",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "456eb6d19b55021d36fd53086dcf03ea089d642a",
+          "message": "Prepare benchmarks for PR checks (#1603)",
+          "timestamp": "2024-03-27T05:27:39Z",
+          "tree_id": "baec4517c346ddbbdeb2da5ec2a3326f136c0c81",
+          "url": "https://github.com/risc0/risc0/commit/456eb6d19b55021d36fd53086dcf03ea089d642a"
+        },
+        "date": 1711518409750,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2495135,
+            "range": "± 315049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8418666,
+            "range": "± 26040",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 60403187,
+            "range": "± 1552338",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 726202417,
+            "range": "± 5553754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 2826152916,
+            "range": "± 10236575",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 11931140270,
+            "range": "± 14803948",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 819287520,
+            "range": "± 4422831",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 3107202667,
+            "range": "± 11342833",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 13369489374,
+            "range": "± 19945337",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 748002041,
+            "range": "± 4215880",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 2793307167,
+            "range": "± 8068384",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 12043241062,
+            "range": "± 42873842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 1623924791,
+            "range": "± 5594190",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 1782218978,
+            "range": "± 4443889",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 2520035354,
+            "range": "± 9277149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 4823407103,
+            "range": "± 13769079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 15146724270,
+            "range": "± 19800659",
             "unit": "ns/iter"
           }
         ]
