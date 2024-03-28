@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711541150916,
+  "lastUpdate": 1711599667002,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -84449,6 +84449,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 15200851395,
             "range": "± 24608119",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c2d7187896ca1e4c94428be6fadf36240b1d7f0",
+          "message": "Update recursion circuit (#1571)",
+          "timestamp": "2024-03-27T21:02:24-07:00",
+          "tree_id": "c86da699011c605c81732f90427c7206d81b08e9",
+          "url": "https://github.com/risc0/risc0/commit/2c2d7187896ca1e4c94428be6fadf36240b1d7f0"
+        },
+        "date": 1711599664823,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2814677,
+            "range": "± 372063",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8473239,
+            "range": "± 51687",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 60587937,
+            "range": "± 636461",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 726040708,
+            "range": "± 4888296",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 2807552791,
+            "range": "± 8673853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 11950844375,
+            "range": "± 28907952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 831876229,
+            "range": "± 7670554",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 3066722062,
+            "range": "± 9361111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 13327514771,
+            "range": "± 41198244",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 740118833,
+            "range": "± 2596658",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 2844817250,
+            "range": "± 11300059",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 12014760687,
+            "range": "± 30949540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 1696680999,
+            "range": "± 9104308",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 1853328312,
+            "range": "± 6164641",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 2584894417,
+            "range": "± 12068793",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 4850829958,
+            "range": "± 10246432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 15222711354,
+            "range": "± 43409552",
             "unit": "ns/iter"
           }
         ]
