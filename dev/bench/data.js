@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711600279643,
+  "lastUpdate": 1711601847817,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -63303,6 +63303,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 52185189375,
             "range": "± 98754339",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c2d7187896ca1e4c94428be6fadf36240b1d7f0",
+          "message": "Update recursion circuit (#1571)",
+          "timestamp": "2024-03-27T21:02:24-07:00",
+          "tree_id": "c86da699011c605c81732f90427c7206d81b08e9",
+          "url": "https://github.com/risc0/risc0/commit/2c2d7187896ca1e4c94428be6fadf36240b1d7f0"
+        },
+        "date": 1711601843296,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5010591,
+            "range": "± 165100",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14345996,
+            "range": "± 380904",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 96220672,
+            "range": "± 1415404",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 1729491061,
+            "range": "± 4162492",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 7337191903,
+            "range": "± 30310824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 31442840255,
+            "range": "± 154783870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 2667330776,
+            "range": "± 7178026",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 11004366026,
+            "range": "± 21491248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 46144937461,
+            "range": "± 80990610",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 1742043654,
+            "range": "± 5892068",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 7352025052,
+            "range": "± 44955521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 31787297513,
+            "range": "± 140513555",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 6251628626,
+            "range": "± 16700302",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 6446600458,
+            "range": "± 18720745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 8948472870,
+            "range": "± 19820206",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 17312591780,
+            "range": "± 24630548",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 52270952894,
+            "range": "± 85534400",
             "unit": "ns/iter"
           }
         ]
