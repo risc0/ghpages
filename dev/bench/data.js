@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711599667002,
+  "lastUpdate": 1711600279643,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -42325,6 +42325,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 7740471754,
             "range": "± 49185053",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c2d7187896ca1e4c94428be6fadf36240b1d7f0",
+          "message": "Update recursion circuit (#1571)",
+          "timestamp": "2024-03-27T21:02:24-07:00",
+          "tree_id": "c86da699011c605c81732f90427c7206d81b08e9",
+          "url": "https://github.com/risc0/risc0/commit/2c2d7187896ca1e4c94428be6fadf36240b1d7f0"
+        },
+        "date": 1711600274803,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 6038038,
+            "range": "± 58973",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 17143505,
+            "range": "± 57992",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 119402223,
+            "range": "± 629741",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 337928465,
+            "range": "± 2671740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 1298021675,
+            "range": "± 6818710",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 10686215332,
+            "range": "± 42623826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 357675579,
+            "range": "± 1576906",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 1314716737,
+            "range": "± 6818184",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 10620128341,
+            "range": "± 1601041646",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 348775437,
+            "range": "± 2712289",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 1321065382,
+            "range": "± 8931769",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 7511455372,
+            "range": "± 110449511",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 732098854,
+            "range": "± 4612758",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 974544028,
+            "range": "± 6108086",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 1127280463,
+            "range": "± 6823080",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 2407088417,
+            "range": "± 13401248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 8247876994,
+            "range": "± 39363237",
             "unit": "ns/iter"
           }
         ]
