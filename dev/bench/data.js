@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711746066037,
+  "lastUpdate": 1711747759924,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -60423,6 +60423,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 52270952894,
             "range": "± 85534400",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "652f1134e5d7c097b3348c19cbdb36335b431c5e",
+          "message": "Fix datasheet generation (#1607)",
+          "timestamp": "2024-03-29T13:38:28-07:00",
+          "tree_id": "7d0d0dbf0066cff6a9c6a5eaaeb97b03eed8f3e8",
+          "url": "https://github.com/risc0/risc0/commit/652f1134e5d7c097b3348c19cbdb36335b431c5e"
+        },
+        "date": 1711747754179,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 3205666,
+            "range": "± 399592",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 12837835,
+            "range": "± 476529",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 94882028,
+            "range": "± 1188925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 1688626012,
+            "range": "± 4701654",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 7152388769,
+            "range": "± 20467592",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 30813964581,
+            "range": "± 132179470",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 2636841979,
+            "range": "± 9054793",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 10893679751,
+            "range": "± 27238641",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 45265660166,
+            "range": "± 57379685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 1705160771,
+            "range": "± 3095414",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 7204185385,
+            "range": "± 30221555",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 30949763302,
+            "range": "± 89473668",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 6213323748,
+            "range": "± 16501519",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 6407406064,
+            "range": "± 22464894",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 8885416809,
+            "range": "± 15087397",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 17174127585,
+            "range": "± 33641287",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 51832768044,
+            "range": "± 63438349",
             "unit": "ns/iter"
           }
         ]
