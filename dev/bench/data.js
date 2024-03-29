@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711747759924,
+  "lastUpdate": 1711748365819,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -20399,6 +20399,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 65104100812,
             "range": "± 287517113",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "652f1134e5d7c097b3348c19cbdb36335b431c5e",
+          "message": "Fix datasheet generation (#1607)",
+          "timestamp": "2024-03-29T13:38:28-07:00",
+          "tree_id": "7d0d0dbf0066cff6a9c6a5eaaeb97b03eed8f3e8",
+          "url": "https://github.com/risc0/risc0/commit/652f1134e5d7c097b3348c19cbdb36335b431c5e"
+        },
+        "date": 1711748363228,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 2793812,
+            "range": "± 56744",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 8978218,
+            "range": "± 205718",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 59958167,
+            "range": "± 258924",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 2172611229,
+            "range": "± 21170423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 8987183375,
+            "range": "± 26509727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 38340481854,
+            "range": "± 851074973",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 3314289063,
+            "range": "± 25873032",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 13674764854,
+            "range": "± 103051278",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 56463993958,
+            "range": "± 320424448",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 2159678125,
+            "range": "± 12444465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 9038043208,
+            "range": "± 45363065",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 38281601062,
+            "range": "± 183059449",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 8236293687,
+            "range": "± 82210241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 8364397916,
+            "range": "± 42297169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 11523564396,
+            "range": "± 72377554",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 22029564312,
+            "range": "± 55165781",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 65015990499,
+            "range": "± 190977060",
             "unit": "ns/iter"
           }
         ]
