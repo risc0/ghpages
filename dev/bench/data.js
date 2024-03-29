@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711602210399,
+  "lastUpdate": 1711745447346,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -80777,6 +80777,134 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 15222711354,
             "range": "± 43409552",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "Linux-nvidia_rtx_3090_ti": [
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "652f1134e5d7c097b3348c19cbdb36335b431c5e",
+          "message": "Fix datasheet generation (#1607)",
+          "timestamp": "2024-03-29T13:38:28-07:00",
+          "tree_id": "7d0d0dbf0066cff6a9c6a5eaaeb97b03eed8f3e8",
+          "url": "https://github.com/risc0/risc0/commit/652f1134e5d7c097b3348c19cbdb36335b431c5e"
+        },
+        "date": 1711745443403,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 5213151,
+            "range": "± 250856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14383006,
+            "range": "± 55115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 96372023,
+            "range": "± 242428",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 336395293,
+            "range": "± 3336061",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 1212261109,
+            "range": "± 13456376",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 4509545157,
+            "range": "± 17718510",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 356246664,
+            "range": "± 3473354",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 1224918044,
+            "range": "± 16925958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 4541428093,
+            "range": "± 23519660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 343253067,
+            "range": "± 4424322",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 1220136612,
+            "range": "± 8965130",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 4612814761,
+            "range": "± 28742103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 704811696,
+            "range": "± 3977643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 888958026,
+            "range": "± 6225194",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 1102865710,
+            "range": "± 4619092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 2006519559,
+            "range": "± 8997107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 5454405819,
+            "range": "± 21730471",
             "unit": "ns/iter"
           }
         ]
