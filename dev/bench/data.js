@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712017810848,
+  "lastUpdate": 1712019700255,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -60675,6 +60675,132 @@ window.BENCHMARK_DATA = {
             "name": "fib/100000/succinct",
             "value": 51832768044,
             "range": "± 63438349",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a7000a9ce4338bcd31bd66eee641867835323843",
+          "message": "fix: bug with unaligned short read (#1557)\n\nSo what's currently happening is when requesting an unaligned amount of\r\nbytes and the read is short, such that it crosses a word boundary, the\r\nguest will overwrite the last word with the lastword return from the\r\nhost. This is a workaround to avoid changing the host.\r\n\r\nRight now what this does is:\r\n\r\n```\r\n|----------request 15 bytes---------------|\r\n|-----3x SyscallRecord words------|\r\n00 01 02 03 04 05 06 07 08 09 0a 00\r\n```\r\n\r\nand then the last word writes over the end of the buffer, zeroing the\r\nbytes written in the last word until aligned:\r\n\r\n```\r\n                        |lastword-|\r\n00 01 02 03 04 05 06 07 00 00 00 00\r\n```\r\n\r\nAlternative being the host doesn't statically set the guest memory based\r\non `#requested.floor_div(4)`, but instead only create a `SyscallRecord`\r\nwith the full words written, and re-use this fill from last word logic.\r\n\r\n```\r\n|----------request 15 bytes---------------|\r\n|--2x SyscallRecord---| |lastword|\r\n00 01 02 03 04 05 06 07 08 09 0a\r\n```\r\n\r\n~~where currently what it does in this case (from changes in this PR) is\r\njust removing writing the lastword if a short read past a word\r\nboundary:~~ Edit: this functionality was changed to write zero bytes in\r\nthe lastword slot, such that zeroes are filled until the request length\r\n```\r\n|----------request 15 bytes---------------|\r\n|-----3x SyscallRecord words------|\r\n00 01 02 03 04 05 06 07 08 09 0a 00\r\n```\r\n\r\nNote that with this proposed implementation, as well as the current\r\nimplementation, if a lot more bytes are requested than available, there\r\nare more words in the `SyscallRecord` created than necessary, setting\r\nall of the buffer bytes to 0. Unclear to me how much of an impact this\r\nhas on proving.\r\n\r\n```\r\n|---------------request 19 bytes------------------------|\r\n|----------4x SyscallRecord words-------------|\r\n00 01 02 03 04 05 06 07 08 09 0a 00 00 00 00 00\r\n```\r\n\r\nI don't know what is more ideal, but hope this workaround or at least\r\none of these tests is helpful. Those tests were just created to help\r\nnarrow down the issue, happy to change them if this PR actually comes\r\nthrough :)\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2024-04-01T17:11:27-07:00",
+          "tree_id": "6d0a1598425293959ee8601f8e953246bff9162e",
+          "url": "https://github.com/risc0/risc0/commit/a7000a9ce4338bcd31bd66eee641867835323843"
+        },
+        "date": 1712019694602,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib/100/execute",
+            "value": 3981886,
+            "range": "± 772585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/execute",
+            "value": 14168958,
+            "range": "± 497267",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/execute",
+            "value": 97645500,
+            "range": "± 1850095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/sha-256",
+            "value": 1702355635,
+            "range": "± 6602902",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/sha-256",
+            "value": 7251400023,
+            "range": "± 15797301",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/sha-256",
+            "value": 31667816844,
+            "range": "± 105564018",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/prove/poseidon2",
+            "value": 2642885668,
+            "range": "± 13589141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/prove/poseidon2",
+            "value": 10925301304,
+            "range": "± 25589551",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/prove/poseidon2",
+            "value": 46178025816,
+            "range": "± 73883535",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/composite",
+            "value": 1715977489,
+            "range": "± 6212483",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/composite",
+            "value": 7242404464,
+            "range": "± 29027614",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/composite",
+            "value": 31642932038,
+            "range": "± 100965058",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/lift",
+            "value": 6255330728,
+            "range": "± 9560135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/join",
+            "value": 6466361930,
+            "range": "± 10907583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100/succinct",
+            "value": 8931978453,
+            "range": "± 16351399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/10000/succinct",
+            "value": 17230317401,
+            "range": "± 31515015",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib/100000/succinct",
+            "value": 52491661932,
+            "range": "± 95997568",
             "unit": "ns/iter"
           }
         ]
