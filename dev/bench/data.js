@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712210192939,
+  "lastUpdate": 1712210264024,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -82229,6 +82229,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 68600,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8126e6813e1cbc49191a2a8861b8f217a30e64ba",
+          "message": "Bump syn from 2.0.55 to 2.0.58 (#1628)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.55 to 2.0.58.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.58</h2>\r\n<ul>\r\n<li>Support <code>$</code> in <code>custom_punctuation!</code> macro (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1611\">#1611</a>)</li>\r\n</ul>\r\n<h2>2.0.57</h2>\r\n<ul>\r\n<li>Eliminate dependency on <code>quote</code> when built with\r\ndefault-features disabled and the &quot;proc-macro&quot; feature enabled\r\n(<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1608\">#1608</a>,\r\nthanks <a href=\"https://github.com/BD103\"><code>@​BD103</code></a>)</li>\r\n</ul>\r\n<h2>2.0.56</h2>\r\n<ul>\r\n<li>Apply RUSTC_WORKSPACE_WRAPPER when deciding whether to run\r\nnightly-only tests (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1605\">#1605</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/81adad6bfe029963b2ea006f4fabfd0f7bafe261\"><code>81adad6</code></a>\r\nRelease 2.0.58</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/7247053fed9189b1ae359241409ab12b38af6382\"><code>7247053</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1611\">#1611</a>\r\nfrom dtolnay/customdollar</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/990142f2f959652cb3ee099a72a805e1020736ad\"><code>990142f</code></a>\r\nSupport '$' in custom_punctuation macro</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/4753622c07a9cc1239a08317c373834738b1f5dc\"><code>4753622</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1610\">#1610</a>\r\nfrom dtolnay/sortpunct</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/36a7f67e2f1209c60e17d1ba3089700b51ee9d77\"><code>36a7f67</code></a>\r\nSort tokens in the same order between custom_punctuation_len and Token\r\nmacro</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/f10442729d9012679982b62936b3782e299c8e8a\"><code>f104427</code></a>\r\nUpdate test suite to nightly-2024-03-31</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/9cea040c00cc0ac2e3ebd4564da5ccad8d5c3177\"><code>9cea040</code></a>\r\nRelease 2.0.57</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/3c07b7847b730380c16bcef5213a8c685a379a40\"><code>3c07b78</code></a>\r\nRelease 2.0.56</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/585df4726f3f7b3e1196a5ad416cdbd689332f56\"><code>585df47</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1608\">#1608</a>\r\nfrom BD103/deps-features</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/d7650b2af89274b94172e671e92bb72acfac3a37\"><code>d7650b2</code></a>\r\nchore: bump msrv to 1.60 (pt. 2)</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.55...2.0.58\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.55&new-version=2.0.58)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-03T22:52:43-07:00",
+          "tree_id": "6efdeccedf0371a285e847022d65d18e212a2c66",
+          "url": "https://github.com/risc0/risc0/commit/8126e6813e1cbc49191a2a8861b8f217a30e64ba"
+        },
+        "date": 1712210261625,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16577807,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 87117,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 78531,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 153020,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 141724,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85817,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68810,
             "unit": "Hz"
           }
         ]
