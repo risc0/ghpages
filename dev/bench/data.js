@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712198402497,
+  "lastUpdate": 1712198448289,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -82052,6 +82052,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 69074,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4e427283027c28b38b8eda1562e8e0e68d1b0e2",
+          "message": "Commit globals in Fiat-Shamir transcript (#1623)\n\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-04T02:36:13Z",
+          "tree_id": "1606419611c7e2e9192f16fb0b199dc5f7c8ec46",
+          "url": "https://github.com/risc0/risc0/commit/d4e427283027c28b38b8eda1562e8e0e68d1b0e2"
+        },
+        "date": 1712198445728,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16709050,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 87073,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 78036,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 154180,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 142072,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85439,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68600,
             "unit": "Hz"
           }
         ]
