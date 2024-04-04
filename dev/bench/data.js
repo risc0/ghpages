@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712210604695,
+  "lastUpdate": 1712267517499,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -82406,6 +82406,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 68810,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ef2d835963c254022f73487fcf64268a420b2aee",
+          "message": "Guest: fix warning on newer Rust toolchains by using `OnceCell` (#1630)\n\nOn rust 1.77.1 and greater, building the guest results in this warning:\r\n```\r\n warning: creating a mutable reference to mutable static is discouraged\r\n    --> /Users/erik/risc0/risc0/zkvm/src/guest/env.rs:118:38\r\n     |\r\n 118 |         let hasher = core::mem::take(&mut HASHER);\r\n     |                                      ^^^^^^^^^^^ mutable reference to mutable static\r\n     |\r\n     = note: for more information, see issue #114447 <https://github.com/rust-lang/rust/issues/114447>\r\n     = note: this will be a hard error in the 2024 edition\r\n     = note: this mutable reference has lifetime `'static`, but if the static gets accessed (read or written) by any other means, or any other reference is created, then any further use of this mutable reference is Undefined Behavior\r\n     = note: `#[warn(static_mut_refs)]` on by default\r\n help: use `addr_of_mut!` instead to create a raw pointer\r\n     |\r\n 118 |         let hasher = core::mem::take(addr_of_mut!(HASHER));\r\n     |                                      ~~~~~~~~~~~~~~~~~~~~\r\n```\r\nThis warning is benign because line 118 is the last time that the\r\n`HASHER` gets accessed. Fix this by changing `HASHER` to use the\r\n`OnceCell<Sha256>` type.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-04T21:47:22Z",
+          "tree_id": "4bb665fa7cf9afeba5ab66e738dc5a0a4436586b",
+          "url": "https://github.com/risc0/risc0/commit/ef2d835963c254022f73487fcf64268a420b2aee"
+        },
+        "date": 1712267514625,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16206069,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 86803,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 78122,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 153465,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 140901,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85709,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68338,
             "unit": "Hz"
           }
         ]
