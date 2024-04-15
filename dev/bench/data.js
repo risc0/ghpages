@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713218350537,
+  "lastUpdate": 1713218617316,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21060,6 +21060,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16194,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46e31763e18937d79764dafd3ac2f26ed941b825",
+          "message": "Include flags for caching of GPU kernels (#1672)\n\nCo-authored-by: morgangibbs87 <133707571+morgangibbs87@users.noreply.github.com>",
+          "timestamp": "2024-04-15T21:48:25Z",
+          "tree_id": "75912d618649a6b086c051dcf70480730197f4e9",
+          "url": "https://github.com/risc0/risc0/commit/46e31763e18937d79764dafd3ac2f26ed941b825"
+        },
+        "date": 1713218614114,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16394837,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 26856,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18502,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32178,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31471,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 26996,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16151,
             "unit": "Hz"
           }
         ]
