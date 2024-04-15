@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712267665942,
+  "lastUpdate": 1713204001663,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -61627,6 +61627,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 20128,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6cf35633d051ec7117150f88576392f3dec7a5a0",
+          "message": "Build rust crates that bind to C code (#1610)\n\nThis PR is the first step in enabling crates that are bindings to c\r\ncode. This PR changes cargo-risczero to download a prebuilt c toolchain,\r\nand sets appropriate flags on risc0-build to invoke the c compiler when\r\nbuilding guest crates. This solution is able to compile the blst crate\r\nso I've added a test case that exercises this crate. Note: while this\r\nexercises a signature verification example, further testing is needed to\r\nconclude that BLST C code is working as expected by using utilities such as\r\n`cargo risczero test`.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-15T17:49:31Z",
+          "tree_id": "1e35cd251af697b213d3c00f61faf2580feb3ad0",
+          "url": "https://github.com/risc0/risc0/commit/6cf35633d051ec7117150f88576392f3dec7a5a0"
+        },
+        "date": 1713203995084,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10359305,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 31545,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22402,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41868,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40135,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32344,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19483,
             "unit": "Hz"
           }
         ]
