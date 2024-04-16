@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713218617316,
+  "lastUpdate": 1713226648568,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -83600,6 +83600,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 192412,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "47635c3f7ca87adfab190cc8231acd6cf7663d30",
+          "message": "Add cargo risczero deploy (#1592)\n\nCloses #1363",
+          "timestamp": "2024-04-16T00:09:41Z",
+          "tree_id": "319f148d9d5f66c737dcbd7af6137098bea4f81a",
+          "url": "https://github.com/risc0/risc0/commit/47635c3f7ca87adfab190cc8231acd6cf7663d30"
+        },
+        "date": 1713226644387,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10635432,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 232929,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 232089,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 377625,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 293570,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 226557,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 193346,
             "unit": "Hz"
           }
         ]
