@@ -2,41 +2,41 @@
 {
   "user_cycles": 2486,
   "total_cycles": 65536,
-  "duration": 3449213625,
+  "duration": 3431481542,
   "ram": 472385488,
   "seal": 215268,
-  "throughput": 19000.272852047543
+  "throughput": 19098.456220109256
 },
 {
   "user_cycles": 35246,
   "total_cycles": 131072,
-  "duration": 6893687000,
+  "duration": 6906517792,
   "ram": 944768976,
   "seal": 238308,
-  "throughput": 19013.337855345042
+  "throughput": 18978.01525275503
 },
 {
   "user_cycles": 133550,
   "total_cycles": 262144,
-  "duration": 14049101208,
+  "duration": 14072751000,
   "ram": 1889535952,
   "seal": 250020,
-  "throughput": 18659.129585508785
+  "throughput": 18627.772210280706
 },
 {
   "user_cycles": 264622,
   "total_cycles": 524288,
-  "duration": 28372541625,
+  "duration": 28454516250,
   "ram": 3779069904,
   "seal": 262244,
-  "throughput": 18478.711104895596
+  "throughput": 18425.475780140874
 },
 {
   "user_cycles": 526766,
   "total_cycles": 1048576,
-  "duration": 57330985458,
+  "duration": 57926247542,
   "ram": 7558137808,
   "seal": 275492,
-  "throughput": 18289.86527308473
+  "throughput": 18101.91483989567
 }
 ]
