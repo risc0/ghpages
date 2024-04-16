@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713226648568,
+  "lastUpdate": 1713226940940,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -61863,6 +61863,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 20156,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "47635c3f7ca87adfab190cc8231acd6cf7663d30",
+          "message": "Add cargo risczero deploy (#1592)\n\nCloses #1363",
+          "timestamp": "2024-04-16T00:09:41Z",
+          "tree_id": "319f148d9d5f66c737dcbd7af6137098bea4f81a",
+          "url": "https://github.com/risc0/risc0/commit/47635c3f7ca87adfab190cc8231acd6cf7663d30"
+        },
+        "date": 1713226936152,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10425153,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 33063,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22644,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41966,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40557,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32759,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19947,
             "unit": "Hz"
           }
         ]
