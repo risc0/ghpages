@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713241862895,
+  "lastUpdate": 1713242036891,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21178,6 +21178,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16198,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0765685ccf3392923aa71b1c955f533336044b7d",
+          "message": "Bump syn from 2.0.58 to 2.0.59 (#1669)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-16T04:25:19Z",
+          "tree_id": "9b8aaf873bd2dbbe063d205500afc9075742421b",
+          "url": "https://github.com/risc0/risc0/commit/0765685ccf3392923aa71b1c955f533336044b7d"
+        },
+        "date": 1713242032907,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16563472,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27276,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18492,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32086,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31336,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27101,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16092,
             "unit": "Hz"
           }
         ]
