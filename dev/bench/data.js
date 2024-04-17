@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713391141590,
+  "lastUpdate": 1713394445078,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -84544,6 +84544,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 193405,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "261c4c336c3663128a0cfb03c8bb65762fb1cc1f",
+          "message": "fix: remove redundant zeroing of memory allocated by bump alloc (#1665)\n\nTLDR memory is zeroed by default, so no need to manually zero the memory\r\nallocated https://doc.rust-lang.org/src/core/alloc/global.rs.html#201.\r\n\r\nIdeally there would be a way to also test that this doesn't require\r\npaging in the memory allocated until it's actually written, but that\r\nseems like a hard variant to test. Can revisit if we want to be sure of\r\nthis.\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-04-17T22:49:36Z",
+          "tree_id": "30979ee60dca9a60edde314f2a5982e3fd4a11d1",
+          "url": "https://github.com/risc0/risc0/commit/261c4c336c3663128a0cfb03c8bb65762fb1cc1f"
+        },
+        "date": 1713394441027,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10721557,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 234679,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 232576,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 365173,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 296129,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 228020,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 194547,
             "unit": "Hz"
           }
         ]
