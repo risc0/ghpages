@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713314803296,
+  "lastUpdate": 1713390067589,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -84308,6 +84308,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 191605,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a78ad5f6136bfb218c31f7adb429e05a307bd51a",
+          "message": "Return ProveInfo from prover (#1681)\n\nThis PR changes `prover.prove()` to return a new struct called\r\n`ProveInfo` that contains the receipt, number of segments, total cycles,\r\nand total user cycles. This is helpful because it allows users to access\r\nmore information about the proof generation through the prover API.",
+          "timestamp": "2024-04-17T21:32:30Z",
+          "tree_id": "833e3f58e2bbea5ed462cdaf3cb1735f07d36915",
+          "url": "https://github.com/risc0/risc0/commit/a78ad5f6136bfb218c31f7adb429e05a307bd51a"
+        },
+        "date": 1713390063517,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10748236,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 233410,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 231249,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 371576,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 293921,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 228888,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 193405,
             "unit": "Hz"
           }
         ]
