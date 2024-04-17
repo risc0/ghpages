@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713397245826,
+  "lastUpdate": 1713397729579,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -83881,6 +83881,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 68461,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae02cad19576f056c39cc3a40e9177ae6328e031",
+          "message": "Require Stable Circom (#1675)\n\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-17T23:33:20Z",
+          "tree_id": "e10650a361ae49cc08f7b98ca92917110d020532",
+          "url": "https://github.com/risc0/risc0/commit/ae02cad19576f056c39cc3a40e9177ae6328e031"
+        },
+        "date": 1713397726641,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15787756,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 85747,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 77614,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 153865,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 140737,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85626,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68527,
             "unit": "Hz"
           }
         ]
