@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713314667274,
+  "lastUpdate": 1713314803296,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21237,6 +21237,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16092,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ec2e9bf936adb178446e35e2254959cb81a6785d",
+          "message": "Add compress to the Prover trait (#1680)\n\nThis PR adds the compress method to the Prover trait, which was\r\npreviously only available on the ProverServer and supersedes #1518. This\r\nPR contains work that is largely based on Victor's prior work.\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2024-04-17T00:36:39Z",
+          "tree_id": "bc3a86811a998ce7fabc50071c68184293f3b013",
+          "url": "https://github.com/risc0/risc0/commit/ec2e9bf936adb178446e35e2254959cb81a6785d"
+        },
+        "date": 1713314800458,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16095340,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27385,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18457,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31992,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31172,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27388,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15686,
             "unit": "Hz"
           }
         ]
