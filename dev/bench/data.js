@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713394648138,
+  "lastUpdate": 1713397070223,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -84780,6 +84780,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 194547,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae02cad19576f056c39cc3a40e9177ae6328e031",
+          "message": "Require Stable Circom (#1675)\n\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-17T23:33:20Z",
+          "tree_id": "e10650a361ae49cc08f7b98ca92917110d020532",
+          "url": "https://github.com/risc0/risc0/commit/ae02cad19576f056c39cc3a40e9177ae6328e031"
+        },
+        "date": 1713397065964,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10689755,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 232017,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 230926,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 373282,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 288349,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 226618,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 191732,
             "unit": "Hz"
           }
         ]
