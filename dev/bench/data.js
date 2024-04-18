@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713400463835,
+  "lastUpdate": 1713416596837,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -84176,6 +84176,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 68483,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "461c57b8bc1e47d71847832f08836755b37d2dbd",
+          "message": "Fixing many typos (#1683)\n\nSupersedes #1319\r\n\r\n---------\r\n\r\nCo-authored-by: weikengchen <w.k@berkeley.edu>",
+          "timestamp": "2024-04-17T21:58:38-07:00",
+          "tree_id": "8e71ed76d5f3e644cdaf042fdfd0e85f47819893",
+          "url": "https://github.com/risc0/risc0/commit/461c57b8bc1e47d71847832f08836755b37d2dbd"
+        },
+        "date": 1713416594652,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16181954,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 86348,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 78388,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 154362,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 142303,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85621,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68307,
             "unit": "Hz"
           }
         ]
