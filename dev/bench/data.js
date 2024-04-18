@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713400383667,
+  "lastUpdate": 1713400435801,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -85134,6 +85134,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 191732,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fb409be15ba7032d99dc56a21b0b2e133f51341",
+          "message": "Drop unneeded Poseidon254 dependencies (#1615)\n\n\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-04-18T00:26:04Z",
+          "tree_id": "84aaf40cb5dcd34c23f4e4ce79d73001425e1042",
+          "url": "https://github.com/risc0/risc0/commit/2fb409be15ba7032d99dc56a21b0b2e133f51341"
+        },
+        "date": 1713400431692,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10729703,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 232130,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 229273,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 374594,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 292602,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 224686,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 191323,
             "unit": "Hz"
           }
         ]
