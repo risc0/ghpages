@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713537744779,
+  "lastUpdate": 1713537952660,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -62984,6 +62984,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 19176,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "716c4cf4b259664932e6ade3e470d82dfc2b8ac6",
+          "message": "Updating calculator (#1661)\n\nThis PR: \r\n- updates the calculator to report conjectured security based on the\r\nethSTARK toy problem analysis, rather than the conjectured soundness\r\nanalysis based on the conjectures from ProxGaps/DEEP-FRI.\r\n- updates the arithmetic for computing the plonk_plookup_error\r\n- adds plonk_plookup_error to the `toy_model_security()` function\r\n- clarifies the definition of the parameter which was previously called\r\n`d`\r\n\r\n\r\n- [x] Note how this test uses DEFAULT_SEGMENT_LIMIT_PO2 where the tests\r\nnext to it in the same file use 1 << 20; I [Tim] kinda like the version\r\nin this test, so I left it, but I think we should make all 3 consistent.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2024-04-19T14:34:30Z",
+          "tree_id": "8ba034ffa9b0d4bbda3a35df9d412c1392268e9b",
+          "url": "https://github.com/risc0/risc0/commit/716c4cf4b259664932e6ade3e470d82dfc2b8ac6"
+        },
+        "date": 1713537947741,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10256611,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32953,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22691,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41757,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40532,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32924,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19943,
             "unit": "Hz"
           }
         ]
