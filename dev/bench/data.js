@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713568599070,
+  "lastUpdate": 1713568776571,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -86019,6 +86019,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 190638,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "73837320+NicoleCheng98@users.noreply.github.com",
+            "name": "NicoleCheng98",
+            "username": "NicoleCheng98"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5415e7c038ec79aaa1600cbba029a0ae24952402",
+          "message": "Fix multiple typos (#1687)\n\nFixing typos found while reading the code, specifically: \r\njosn -> json, in examples/groth16-verifier/src/main.rs;\r\nopperations -> operations, in\r\nrisc0/circuit/rv32im/src/prove/engine/machine.rs;\r\nudpating -> updating, in risc0/groth16/src/verifier.rs;\r\nimplmentation -> implementation, in\r\nrisc0/zkvm/src/host/server/session.rs;\r\ncapabilies -> capabilities, in website/api/use-cases.md;\r\ngtihub -> github, in\r\nwebsite/api_versioned_docs/version-0.20/bonsai/bonsai-overview.md",
+          "timestamp": "2024-04-19T16:07:16-07:00",
+          "tree_id": "4643d08354e3741204fe9f1b0013f56c6a857985",
+          "url": "https://github.com/risc0/risc0/commit/5415e7c038ec79aaa1600cbba029a0ae24952402"
+        },
+        "date": 1713568772451,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10744682,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 231508,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 230908,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 375002,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 292056,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 226805,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 192391,
             "unit": "Hz"
           }
         ]
