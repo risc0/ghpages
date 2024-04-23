@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713891198082,
+  "lastUpdate": 1713891207146,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -21768,6 +21768,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16009,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "154592711+tgolang@users.noreply.github.com",
+            "name": "tgolang",
+            "username": "tgolang"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "334567dfcda06e4d61061934d0f6a5cd043ead28",
+          "message": "chore: fix some typos in comments (#1705)\n\nSigned-off-by: tgolang <seekseat@aliyun.com>",
+          "timestamp": "2024-04-23T16:40:19Z",
+          "tree_id": "14f7733b5c31aa1e0816942f271479484474bcbd",
+          "url": "https://github.com/risc0/risc0/commit/334567dfcda06e4d61061934d0f6a5cd043ead28"
+        },
+        "date": 1713891204866,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16571303,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27463,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18512,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32079,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31588,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 25899,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16169,
             "unit": "Hz"
           }
         ]
