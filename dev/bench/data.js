@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713913812634,
+  "lastUpdate": 1713914096793,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -86786,6 +86786,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 191194,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ef6f3dd2bc5d59bfc76c9105d4a00a4714b388a1",
+          "message": "rv32im circuit updates (#1690)\n\n* Replace `NVCC_PREPEND_FLAGS` and `NVCC_APPEND_FLAGS` with\r\n`RISC0_NVCC_FLAGS`. If `RISC0_NVCC_FLAGS` is not set, then\r\n`-arch=native` is used as a default.\r\n* Add `sys_input` which is a syscall that guests can use to access the\r\ninput digest that is optionally specified for each proof request.\r\n* Adjust rv32im circuit to avoid need to do PC adjustments for claims.\r\n* The post state digest is now always `Digest::ZERO` when the exit code\r\nis `Halted`.\r\n* Add warmup phase to benchmarks to account for kernel JIT compilation",
+          "timestamp": "2024-04-23T23:02:26Z",
+          "tree_id": "a37a1bc51d58914fc3ab84ad40cae494c80e7d2d",
+          "url": "https://github.com/risc0/risc0/commit/ef6f3dd2bc5d59bfc76c9105d4a00a4714b388a1"
+        },
+        "date": 1713914092937,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10280700,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 230012,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 229322,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 384495,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 302126,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 223789,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 192201,
             "unit": "Hz"
           }
         ]
