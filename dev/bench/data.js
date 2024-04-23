@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713890973514,
+  "lastUpdate": 1713891198082,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -86314,6 +86314,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 192391,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "154592711+tgolang@users.noreply.github.com",
+            "name": "tgolang",
+            "username": "tgolang"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "334567dfcda06e4d61061934d0f6a5cd043ead28",
+          "message": "chore: fix some typos in comments (#1705)\n\nSigned-off-by: tgolang <seekseat@aliyun.com>",
+          "timestamp": "2024-04-23T16:40:19Z",
+          "tree_id": "14f7733b5c31aa1e0816942f271479484474bcbd",
+          "url": "https://github.com/risc0/risc0/commit/334567dfcda06e4d61061934d0f6a5cd043ead28"
+        },
+        "date": 1713891194174,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10764935,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 227660,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 226242,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 371064,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 285382,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 223683,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 190586,
             "unit": "Hz"
           }
         ]
