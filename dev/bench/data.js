@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713909122818,
+  "lastUpdate": 1713909244797,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -86491,6 +86491,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 190586,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "440caf149bf97448a509ce43d5eb00d247266ac8",
+          "message": "CI: Update guest docker image (#1708)\n\nThis PR updates the guest docker images to use the updated 1.77.2\r\ntoolchain. Once this PR lands, I will mark this prerelease as the\r\nhttps://github.com/risc0/rust/releases/tag/v2024-04-22.0 as the latest\r\nrelease",
+          "timestamp": "2024-04-23T21:45:07Z",
+          "tree_id": "805f1a5a5d31d1299cf856f1d8e2fef799d49247",
+          "url": "https://github.com/risc0/risc0/commit/440caf149bf97448a509ce43d5eb00d247266ac8"
+        },
+        "date": 1713909240918,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9952185,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 227938,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 226487,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 371293,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 291080,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 223289,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 191194,
             "unit": "Hz"
           }
         ]
