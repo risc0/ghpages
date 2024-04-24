@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713925885403,
+  "lastUpdate": 1713932329949,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -63751,6 +63751,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 19850,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbe7b8ad230c240f977d8bb14113e0754f93709c",
+          "message": "Fix benchmark PR check (#1711)\n\n* Save results to S3 bucket, but only if pushing to main or a release\r\nbranch.\r\n* Compare results from S3 bucket, based on current target branch.",
+          "timestamp": "2024-04-23T21:08:20-07:00",
+          "tree_id": "7c366cc683fc8f4ac7e8c964c4f509d5d8f18ae0",
+          "url": "https://github.com/risc0/risc0/commit/cbe7b8ad230c240f977d8bb14113e0754f93709c"
+        },
+        "date": 1713932325297,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9432047,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32949,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22682,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41826,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40304,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32899,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19938,
             "unit": "Hz"
           }
         ]
