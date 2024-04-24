@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713988920889,
+  "lastUpdate": 1713989090326,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22299,6 +22299,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 15877,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5084d52f7a8d55191f6381431574e220f80097c8",
+          "message": "client-server: add segment path support (#1427)\n\nFixes: #1315\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-24T19:53:01Z",
+          "tree_id": "94e3afdcde8057c89f8b8a27f64f4aa250ee7431",
+          "url": "https://github.com/risc0/risc0/commit/5084d52f7a8d55191f6381431574e220f80097c8"
+        },
+        "date": 1713989088164,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16119064,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 26046,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18620,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32262,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31635,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 26818,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16131,
             "unit": "Hz"
           }
         ]
