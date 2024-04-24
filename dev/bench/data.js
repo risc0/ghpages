@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713938888003,
+  "lastUpdate": 1713938997843,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -87730,6 +87730,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 191780,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf98f4a0da88512ecd687d68e90cf743172ba43e",
+          "message": "Bump serial_test from 3.0.0 to 3.1.0 (#1697)\n\nBumps [serial_test](https://github.com/palfrey/serial_test) from 3.0.0\r\nto 3.1.0.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/palfrey/serial_test/releases\">serial_test's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>v3.1.0</h2>\r\n<h2>What's Changed</h2>\r\n<ul>\r\n<li>Replace <code>lazy_static</code> with <code>once_cell</code> by <a\r\nhref=\"https://github.com/Expyron\"><code>@​Expyron</code></a> in <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/pull/106\">palfrey/serial_test#106</a></li>\r\n<li>Replace <code>dashmap</code> with <code>scc</code> by <a\r\nhref=\"https://github.com/palfrey\"><code>@​palfrey</code></a> in <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/pull/109\">palfrey/serial_test#109</a></li>\r\n<li>Standard test attribute worked with <code>mod</code>, others didn't\r\n(e.g. <code>tokio::test</code>) by <a\r\nhref=\"https://github.com/palfrey\"><code>@​palfrey</code></a> in <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/pull/110\">palfrey/serial_test#110</a></li>\r\n</ul>\r\n<h2>New Contributors</h2>\r\n<ul>\r\n<li><a href=\"https://github.com/Expyron\"><code>@​Expyron</code></a> made\r\ntheir first contribution in <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/pull/106\">palfrey/serial_test#106</a></li>\r\n</ul>\r\n<p><strong>Full Changelog</strong>: <a\r\nhref=\"https://github.com/palfrey/serial_test/compare/v3.0.0...v3.1.0\">https://github.com/palfrey/serial_test/compare/v3.0.0...v3.1.0</a></p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/25fb94855526a61aa70dba9d09d1d3fd177601be\"><code>25fb948</code></a>\r\n3.1.0</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/4ccc6bd7dc9ce1f3cc08b65fe44c17e3971cf486\"><code>4ccc6bd</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/issues/110\">#110</a>\r\nfrom palfrey/serial-mod-non-core</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/fb32f74f21ca7c19d26cb395270245d534534b2b\"><code>fb32f74</code></a>\r\nStandard test attribute worked with mod, others didn't</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/23894121ec734df7fa12c8f86d95270a8a045c82\"><code>2389412</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/issues/109\">#109</a>\r\nfrom palfrey/remove-dashmap</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/14aa91f5d472a1fd2472d637c0e5a53657be514d\"><code>14aa91f</code></a>\r\nAdd more details fslock names</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/946db45593c1e5b9368e3ccc7da1d1683fca2c1b\"><code>946db45</code></a>\r\nAllow unused name for Locks</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/1a634fc29b2238fffbbf71e8db7771c172ad750f\"><code>1a634fc</code></a>\r\nFix formatting</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/2fdcb0c1640a05a5fc09171007052c762b01a88a\"><code>2fdcb0c</code></a>\r\nDon't capture logs in test_test</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/dd2e107185a7d32ad8f64473298a34c157d147ea\"><code>dd2e107</code></a>\r\nReplace dashmap with scc</li>\r\n<li><a\r\nhref=\"https://github.com/palfrey/serial_test/commit/b20dad699e7b50b8b33f1688f57faacb1eb3e9e1\"><code>b20dad6</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/palfrey/serial_test/issues/107\">#107</a>\r\nfrom palfrey/dependabot/cargo/mio-0.8.11</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/palfrey/serial_test/compare/v3.0.0...v3.1.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=serial_test&package-manager=cargo&previous-version=3.0.0&new-version=3.1.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-23T22:57:31-07:00",
+          "tree_id": "0fe91d911e3d00620f5edfe45331341324d5d3c1",
+          "url": "https://github.com/risc0/risc0/commit/bf98f4a0da88512ecd687d68e90cf743172ba43e"
+        },
+        "date": 1713938993938,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9735781,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 230343,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 228213,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 383907,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 301617,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 223390,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 191933,
             "unit": "Hz"
           }
         ]
