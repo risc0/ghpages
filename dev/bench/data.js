@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713986181222,
+  "lastUpdate": 1713986198699,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -64105,6 +64105,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 19864,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "62482583+CobraLin@users.noreply.github.com",
+            "name": "Cobralin",
+            "username": "CobraLin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f7a45909db26b6a0df61e8cba107bee7102cf2bc",
+          "message": "Fix typo (#1691)\n\nfix some minor typo\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-04-24T12:06:51-07:00",
+          "tree_id": "14605e74e70ecada4be9265fd24b6d9d063bb0ba",
+          "url": "https://github.com/risc0/risc0/commit/f7a45909db26b6a0df61e8cba107bee7102cf2bc"
+        },
+        "date": 1713986193947,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9534906,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 33227,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22770,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41943,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40730,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 33054,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19971,
             "unit": "Hz"
           }
         ]
