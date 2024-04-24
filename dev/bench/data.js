@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1713922929074,
+  "lastUpdate": 1713925215678,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -63633,6 +63633,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 19702,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90961af6a4b9e19872e1b086f59a4d6842df5e31",
+          "message": "Expand clippy coverage (#1706)\n\nWe're expanding clippy coverage on CI, but currently only for passing\r\ncrates.\r\nA notable one that is still failing is `risc0-r0vm`. This needs to be\r\naddressed in a future PR.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-04-24T02:08:07Z",
+          "tree_id": "9f54d957be9c25a1deed5c8cde7d115d76492b7d",
+          "url": "https://github.com/risc0/risc0/commit/90961af6a4b9e19872e1b086f59a4d6842df5e31"
+        },
+        "date": 1713925211092,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9556188,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32644,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22492,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41882,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40562,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 33709,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19850,
             "unit": "Hz"
           }
         ]
