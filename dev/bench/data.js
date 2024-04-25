@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714006571934,
+  "lastUpdate": 1714006620225,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22358,6 +22358,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16131,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8465449a9074061113c66cf79fb559a7e9a92531",
+          "message": "Make list of allowed ZKRs explicit in bootstrap (#1614)\n\nCurrently, the `test_recursion_circuit` ZKR is included in the allowed\r\nlist even though it is only for use in tests. The allowed set of ZKRs\r\nshould only include operations that are meant to be applied to succinct\r\nand segment receipts. This PR adds an explicit list of the ZKRs to be\r\nincluded in the allowed set. This means that the test ZKR(s), and\r\naccelerators in the future, can be included in the zip, without being\r\nautomatically included in the allowed set.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-04-25T00:47:18Z",
+          "tree_id": "af12580a26c73860b128fd7207a616fd1d640420",
+          "url": "https://github.com/risc0/risc0/commit/8465449a9074061113c66cf79fb559a7e9a92531"
+        },
+        "date": 1714006617943,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16298530,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27233,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18510,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31639,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31183,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27176,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16095,
             "unit": "Hz"
           }
         ]
