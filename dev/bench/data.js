@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714023592566,
+  "lastUpdate": 1714074000054,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -64695,6 +64695,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 19855,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9e0136d06d1e764eb0cdd01eb603a34715947232",
+          "message": "zkVM: fix build issues arising from undefined `_end` (#1715)\n\nWhen building zkvm as a host-side staticlib to link with platforms such\r\nas go, the build can fail due to an undefined `_end` symbol. Hide this\r\nwhen building for the host.\r\n\r\nFixes: #1329",
+          "timestamp": "2024-04-25T19:33:07Z",
+          "tree_id": "1cec2e39c17b0af4f1a2a9ae63f160502a0dc8f7",
+          "url": "https://github.com/risc0/risc0/commit/9e0136d06d1e764eb0cdd01eb603a34715947232"
+        },
+        "date": 1714073995424,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9404992,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 33686,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22996,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41872,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 40802,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 33466,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 20050,
             "unit": "Hz"
           }
         ]
