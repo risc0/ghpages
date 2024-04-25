@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714076765129,
+  "lastUpdate": 1714076981808,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22594,6 +22594,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16090,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "876dfe3dc73ca94cd38abc27e6e3445524a7f390",
+          "message": "Address clippy errors for `risc0-r0vm` (#1722)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-25T20:21:33Z",
+          "tree_id": "1270ff529ebc46d883a56ca11e6baaf1a95b7022",
+          "url": "https://github.com/risc0/risc0/commit/876dfe3dc73ca94cd38abc27e6e3445524a7f390"
+        },
+        "date": 1714076979587,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16555104,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27059,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18500,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32318,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31689,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 26155,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16124,
             "unit": "Hz"
           }
         ]
