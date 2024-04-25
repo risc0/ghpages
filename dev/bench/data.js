@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714023496492,
+  "lastUpdate": 1714023518204,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -89146,6 +89146,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 193805,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2504e60d85fa84f1947fc3cd45adc1f9446819ff",
+          "message": "Change Elem from bytemuck::Pod to NoUninit + CheckedBitPattern (#1373)\n\nBuilding on https://github.com/risc0/risc0/pull/1372 , this PR adjusts\r\nthe type system to try to systematically prevent misuse casting into the\r\n`Elem` type. Core to this is that the `Elem` type actually does not\r\nsatisfy the `bytemuck::Pod` safety contract as there are some bit\r\npatterns which are not valid. In particular, any `u32` greater than `P`\r\nis not valid as field element, and the arithmetic code does not handle\r\nthese values.\r\n\r\nAs a start, this PR change `Elem` from being marked as `Pod` to\r\n`NoUninit` and `CheckedBitPattern` together these methods allow for\r\npartial functionality from `bytemuck`. In particular, `NoUninit` can be\r\nthe source type for `bytemuck::cast_slice` and `CheckedBitPattern` can\r\nbe the target for `bytemuck::checked::cast_slice`. Note that the latter\r\nintroduces a runtime check that the `u32` input is less than `P`.\r\n\r\nIn the verifiers, only these safe methods should be used. In the prover,\r\nthere may be times when we want to cast from bytes or words to elements\r\nwithout any checks, to maximize performance. It is my aim to preserve\r\nthis through methods marked explicitly as unchecked.\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-25T05:26:06Z",
+          "tree_id": "9f80c5c679c75afa5c0c425dc6303c6bf760c711",
+          "url": "https://github.com/risc0/risc0/commit/2504e60d85fa84f1947fc3cd45adc1f9446819ff"
+        },
+        "date": 1714023514265,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9574478,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 235165,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 232821,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 385190,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 302828,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 227408,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 193344,
             "unit": "Hz"
           }
         ]
