@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714079543680,
+  "lastUpdate": 1714081185221,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -87598,6 +87598,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 68101,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f7b9f09784615f54467d626674e76aadcd27af48",
+          "message": "change `sys_cycle_count` to return `u64` (#1719)\n\nChanging `sys_cycle_count` resulted in various changes to the trait as\r\nwell as several other type changes throughout the system including\r\n`SyscallContext`. I've addressed various other type errors as well as\r\n`TODO(breaking change): update to `u64`` comments. Tests have also been\r\nupdated to reflect this type change.\r\n\r\nCloses: #1673",
+          "timestamp": "2024-04-25T21:02:36Z",
+          "tree_id": "65b8a5df839b6cb459e91d9334a335307f50b2e4",
+          "url": "https://github.com/risc0/risc0/commit/f7b9f09784615f54467d626674e76aadcd27af48"
+        },
+        "date": 1714081182980,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15485175,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 85312,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 77403,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 153601,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 141198,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85667,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 67890,
             "unit": "Hz"
           }
         ]
