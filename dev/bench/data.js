@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714008517530,
+  "lastUpdate": 1714009151967,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -86890,6 +86890,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 68716,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b6014bb94c88e72fbef1353dafc7fddbbca32d3",
+          "message": "`ProverImpl::prove_session`: enable compact receipts (#1717)\n\nThis change adds a case to enable compact receipts using the `Prover`\r\ntrait. The stark2snark function being called ensures that the host is\r\nrunning on x86 and that docker is installed. If the docker image does\r\nnot exist locally, the first invocation of this command will\r\nautomatically download the image from docker hub so there is no need to\r\ncheck ahead of time if the image exists.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-25T01:19:41Z",
+          "tree_id": "707696aaf1c15d744875f4030a1204e11d6d9cec",
+          "url": "https://github.com/risc0/risc0/commit/0b6014bb94c88e72fbef1353dafc7fddbbca32d3"
+        },
+        "date": 1714009149766,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15779192,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 86865,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 77607,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 153302,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 141669,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 85808,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68196,
             "unit": "Hz"
           }
         ]
