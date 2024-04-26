@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714156656515,
+  "lastUpdate": 1714156673052,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22771,6 +22771,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16126,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "11602c70d22e24da197caa28783de937eb5e3676",
+          "message": "Cleanups (#1730)\n\n* Bump rust to 1.77\r\n* Drop stale crates\r\n* Drop stale workspace\r\n* Drop stale deps\r\n* Consolidate CI workflows",
+          "timestamp": "2024-04-26T11:24:20-07:00",
+          "tree_id": "7630c08d5208a83f5232cb7e0337fb4d0c9280d4",
+          "url": "https://github.com/risc0/risc0/commit/11602c70d22e24da197caa28783de937eb5e3676"
+        },
+        "date": 1714156670834,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16639616,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27078,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18935,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33103,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32119,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 26944,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16426,
             "unit": "Hz"
           }
         ]
