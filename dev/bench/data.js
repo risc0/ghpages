@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714161905824,
+  "lastUpdate": 1714162042780,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -65285,6 +65285,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 20418,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d669f7b66151364981e67d99bb0c1013977f983f",
+          "message": "Check control root during succinct receipt verification (#1720)\n\nPrior to this PR, the control ID of the succinct receipt is checked\r\nduring verification, but the control root encoded in the output is not.\r\nBoth must be checked as the control ID on the receipt binds the most\r\nreceipt program that was run, and the control root in the output binds\r\nthe closure of recursion programs that were run in all previous steps of\r\nrecursion. Without the latter, a prover can run an out-of-set program,\r\nthen pass it through an in-set program, such as identity, without\r\ndetection.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-26T20:00:20Z",
+          "tree_id": "5d25c0d7eea4a62f5c3d7e24a47a7eecdbd9be42",
+          "url": "https://github.com/risc0/risc0/commit/d669f7b66151364981e67d99bb0c1013977f983f"
+        },
+        "date": 1714162038077,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9610676,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 33348,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 23432,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43181,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42010,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 33203,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 20603,
             "unit": "Hz"
           }
         ]
