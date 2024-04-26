@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714107203258,
+  "lastUpdate": 1714107400965,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22712,6 +22712,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16118,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7d47254f4d1fe09c8fbe2818d05ceebfb16dd85",
+          "message": "Migrate accumulate to HAL (#1650)",
+          "timestamp": "2024-04-25T21:48:12-07:00",
+          "tree_id": "6198bf248ae8b8be2cc4e341df5b19c9c4e95fb1",
+          "url": "https://github.com/risc0/risc0/commit/b7d47254f4d1fe09c8fbe2818d05ceebfb16dd85"
+        },
+        "date": 1714107398819,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15505219,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 26934,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18548,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32220,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31609,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27972,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16126,
             "unit": "Hz"
           }
         ]
