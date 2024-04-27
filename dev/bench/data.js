@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714218162563,
+  "lastUpdate": 1714257665465,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -88955,6 +88955,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 71665,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c853f81064ac35a5eec986183bff1814e1af50b",
+          "message": "Rename get_claim methods to claim to follow C-GETTER convention (#1716)\n\nA quick PR for renaming the `get_claim` method to `claim`, following the\r\n`C-GETTER` convention recommended by Rust API guidelines.\r\n\r\nhttps://rust-lang.github.io/api-guidelines/naming.html#getter-names-follow-rust-convention-c-getter\r\n\r\nI'm not very attached to getting this merged, but figured it is an easy\r\nenough PR to throw together and only possible now, before 1.0. This\r\nchange doesn't break any examples, which I take as a sign that it will\r\nnot break most user code. If folks disagree that we should make this\r\nchange, I'll go ahead and close it.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-27T22:35:48Z",
+          "tree_id": "4544073b6ae3124fbab31e539baf2ea53485f6a5",
+          "url": "https://github.com/risc0/risc0/commit/4c853f81064ac35a5eec986183bff1814e1af50b"
+        },
+        "date": 1714257663039,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16108405,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 92882,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 82130,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 149690,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138938,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 91868,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 71777,
             "unit": "Hz"
           }
         ]
