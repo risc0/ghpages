@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714198664936,
+  "lastUpdate": 1714203521784,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -90916,6 +90916,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 212826,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "de39a158309a6d05456acf814da69505ca2d3582",
+          "message": "Cleanup datasheet and benchmarks (#1735)",
+          "timestamp": "2024-04-27T00:34:01-07:00",
+          "tree_id": "87a01b9eaade1e6ebb6b82d410ab337392d7c756",
+          "url": "https://github.com/risc0/risc0/commit/de39a158309a6d05456acf814da69505ca2d3582"
+        },
+        "date": 1714203517808,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10278615,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 253550,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 252175,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 429218,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 340188,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 247104,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 210235,
             "unit": "Hz"
           }
         ]
