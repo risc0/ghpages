@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714217773432,
+  "lastUpdate": 1714217814326,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -88778,6 +88778,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 71610,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61909367a36dc0968a3d5c8677696f76d1b057ce",
+          "message": "Change `ProverServer::compress` to work with `Receipt` (#1726)\n\nThis change re-implements the compress function. We want the ability for\r\na user to generate any kind of receipt using the Prover and\r\nProverServer. In other words, we want to be able to translate composite\r\nreceipts to succinct receipts, and succinct receipts into compact\r\nreceipts to move up through the various receipt stages like so:\r\n```\r\nComposite -> Succinct -> Compact\r\n```\r\nIn a previous PR, I've added a `ReceiptKind` field with in `ProverOpts`\r\nso that `ProverImpl::prove_session` can generate any kind of receipt\r\nspecified by `ProverOpts`. In this PR, I changed the semantics of the\r\nCompress function to mean \"for a given ProverOpts and Receipt, compress\r\nthe receipt to the desired receipt kind\". The following table\r\nillustrates the semantics of the new compress functionality:\r\n\r\n| InnerReceipt | ReceiptFormat | Result                           |\r\n|--------------|---------------|----------------------------------|\r\n| Fake         | any           | no-op                            |\r\n| Composite    | Composite     | no-op                            |\r\n| Composite    | Succinct      | Composite -> Succinct            |\r\n| Composite    | Compact       | Composite -> Succinct -> Compact |\r\n| Succinct     | Composite     | Error                            |\r\n| Succinct     | Succinct      | no-op                            |\r\n| Succinct     | Compact       | Succinct -> Compact              |\r\n| Compact      | Composite     | Error                            |\r\n| Compact      | Succinct      | Error                            |\r\n| Compact      | Compact       | no-op                            |\r\n\r\nIn order to implement this, I realized that the existing compress\r\nfunction took a composite receipt and compressed it to a succinct\r\nreceipt. I've renamed this to `composite_to_succinct` and created a\r\nsimilar `succinct_to_compact` function so that I can use the compress\r\nfunction to move up the various receipt types like so:\r\n```\r\ncomposite_to_succinct\r\n          |   succinct_to_compact\r\n          |           |\r\n          V           V\r\nComposite -> Succinct -> Compact\r\n    ^                      ^\r\n    |______________________|\r\n          compress\r\n```\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-04-27T11:31:40Z",
+          "tree_id": "c8b2fcab9ebc2197f4efe52ac485081a115b295c",
+          "url": "https://github.com/risc0/risc0/commit/61909367a36dc0968a3d5c8677696f76d1b057ce"
+        },
+        "date": 1714217812141,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15936522,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 92168,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 81962,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 149013,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 139301,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 91716,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 71665,
             "unit": "Hz"
           }
         ]
