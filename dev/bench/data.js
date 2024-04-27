@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714198615514,
+  "lastUpdate": 1714198664936,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -22889,6 +22889,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16359,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca1fc9d6d6d7d4e6563e0a529e4627a7aebff560",
+          "message": "host-side risc0-zkvm: export `NullSegmentRef` (#1734)\n\nCloses: #1536",
+          "timestamp": "2024-04-27T06:04:10Z",
+          "tree_id": "6e052ef291ead6ad8ebb362ddb936100ffd02ac6",
+          "url": "https://github.com/risc0/risc0/commit/ca1fc9d6d6d7d4e6563e0a529e4627a7aebff560"
+        },
+        "date": 1714198662703,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16229047,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 26924,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18807,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32838,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32191,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27245,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16502,
             "unit": "Hz"
           }
         ]
