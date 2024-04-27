@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714214746924,
+  "lastUpdate": 1714214935505,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23007,6 +23007,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16460,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d59d624a263a9198cd342377be664608fd23660d",
+          "message": "Improve performance of merkle proofs (#1736)",
+          "timestamp": "2024-04-27T03:40:57-07:00",
+          "tree_id": "fd3afd49c360b12471077403ec6aeec3b34d0189",
+          "url": "https://github.com/risc0/risc0/commit/d59d624a263a9198cd342377be664608fd23660d"
+        },
+        "date": 1714214933288,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16231248,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 26980,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18868,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33140,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32560,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27286,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16514,
             "unit": "Hz"
           }
         ]
