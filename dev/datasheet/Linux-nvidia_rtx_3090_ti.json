@@ -2,8 +2,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 230916.56,
-    "duration": 283808137,
+    "throughput": 231129.7,
+    "duration": 283546433,
     "cycles": 65536,
     "ram": 530459308,
     "seal": 215268
@@ -11,8 +11,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 271822.28,
-    "duration": 482197440,
+    "throughput": 274014.34,
+    "duration": 478339935,
     "cycles": 131072,
     "ram": 1060949676,
     "seal": 238308
@@ -20,8 +20,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 281967.16,
-    "duration": 929696988,
+    "throughput": 287392.94,
+    "duration": 912144866,
     "cycles": 262144,
     "ram": 2121896620,
     "seal": 250020
@@ -29,8 +29,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 289830.2,
-    "duration": 1808948854,
+    "throughput": 295037.1,
+    "duration": 1777023976,
     "cycles": 524288,
     "ram": 4243790508,
     "seal": 262244
@@ -38,8 +38,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 293745.16,
-    "duration": 3569679376,
+    "throughput": 298190.0,
+    "duration": 3516469534,
     "cycles": 1048576,
     "ram": 8487578284,
     "seal": 275492
@@ -47,8 +47,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 200591.64,
-    "duration": 326713503,
+    "throughput": 202246.77,
+    "duration": 324039765,
     "cycles": 65536,
     "ram": 530459308,
     "seal": 215268
@@ -56,8 +56,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 248824.23,
-    "duration": 526765422,
+    "throughput": 249402.89,
+    "duration": 525543230,
     "cycles": 131072,
     "ram": 1060949676,
     "seal": 238308
@@ -65,8 +65,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 268208.94,
-    "duration": 977387299,
+    "throughput": 271879.75,
+    "duration": 964191002,
     "cycles": 262144,
     "ram": 2121896620,
     "seal": 250020
@@ -74,8 +74,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 281563.3,
-    "duration": 1862060751,
+    "throughput": 283377.5,
+    "duration": 1850139905,
     "cycles": 524288,
     "ram": 4243790508,
     "seal": 262244
@@ -83,8 +83,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 288779.75,
-    "duration": 3631057765,
+    "throughput": 291286.66,
+    "duration": 3599807665,
     "cycles": 1048576,
     "ram": 8487578284,
     "seal": 275492
@@ -92,8 +92,8 @@
   {
     "name": "lift",
     "hashfn": "poseidon2",
-    "throughput": 578780.75,
-    "duration": 452924529,
+    "throughput": 584982.9,
+    "duration": 448122519,
     "cycles": 262144,
     "ram": 1588173008,
     "seal": 222668
@@ -101,8 +101,8 @@
   {
     "name": "join",
     "hashfn": "poseidon2",
-    "throughput": 416988.8,
-    "duration": 628659500,
+    "throughput": 421717.84,
+    "duration": 621609891,
     "cycles": 262144,
     "ram": 1588173008,
     "seal": 222668
@@ -110,8 +110,8 @@
   {
     "name": "succinct",
     "hashfn": "poseidon2",
-    "throughput": 254061.8,
-    "duration": 4127247873,
+    "throughput": 257214.42,
+    "duration": 4076661087,
     "cycles": 1048576,
     "ram": 8487578284,
     "seal": 222668
@@ -119,8 +119,8 @@
   {
     "name": "identity_p254",
     "hashfn": "poseidon2",
-    "throughput": 39161.855,
-    "duration": 6693860633,
+    "throughput": 38929.445,
+    "duration": 6733823393,
     "cycles": 262144,
     "ram": 1588169616,
     "seal": 222668
@@ -128,8 +128,8 @@
   {
     "name": "stark2snark",
     "hashfn": "poseidon2",
-    "throughput": 29842.18,
-    "duration": 8784344905,
+    "throughput": 29745.852,
+    "duration": 8812792321,
     "cycles": 262144,
     "ram": 0,
     "seal": 360
@@ -137,8 +137,8 @@
   {
     "name": "compact",
     "hashfn": "poseidon2",
-    "throughput": 53453.65,
-    "duration": 19616546641,
+    "throughput": 53267.445,
+    "duration": 19685119691,
     "cycles": 1048576,
     "ram": 8487578284,
     "seal": 256
