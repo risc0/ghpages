@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714366419874,
+  "lastUpdate": 1714366476135,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -92037,6 +92037,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 252924,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a3fa2ea3d285c4887dfa0717effe637fe88030c",
+          "message": "risc0-build: allow overriding the Cpp toolchain (#1686)\n\nThe previous commit adding the Cpp toolchain disabled overriding the\r\ntoolchain from the command line via the `CC` and\r\n`CFLAGS_riscv32im_risc0_zkvm_elf` environment variable. This change\r\nallows developers to override their settings by supplying the default\r\nvalues only if the user does not specify these environment variables as\r\na part of their `cargo` command.",
+          "timestamp": "2024-04-29T04:45:30Z",
+          "tree_id": "21cc2bbb2e1f4c64ee414171ad269d7521afd91b",
+          "url": "https://github.com/risc0/risc0/commit/1a3fa2ea3d285c4887dfa0717effe637fe88030c"
+        },
+        "date": 1714366472061,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9908601,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 301082,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 298312,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 563122,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 419590,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 292472,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 252200,
             "unit": "Hz"
           }
         ]
