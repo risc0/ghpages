@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714422716947,
+  "lastUpdate": 1714422747253,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23243,6 +23243,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16520,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a90de90cae3e7cf9621d3c7da33bdc15720b236",
+          "message": "More performance improvements (#1740)\n\n* Replace step function callbacks by pushing preflight trace and machine\r\ncontext down into C++. This reduces the overheads of FFI by a lot, can\r\nbe 2x in some cases. This architecture is perfect for GPU kernels.\r\n* Add support for NVTX for C++\r\n* Use poolSTL for parallelized sort in C++\r\n* Liberally add NVTX ranges for better profiling",
+          "timestamp": "2024-04-29T20:20:04Z",
+          "tree_id": "3d25a9050273062c8fceee79e3794d42f31def60",
+          "url": "https://github.com/risc0/risc0/commit/9a90de90cae3e7cf9621d3c7da33bdc15720b236"
+        },
+        "date": 1714422744977,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 14853589,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27875,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 19361,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33075,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32514,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28146,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16934,
             "unit": "Hz"
           }
         ]
