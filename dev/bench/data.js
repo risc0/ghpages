@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714422747253,
+  "lastUpdate": 1714439180274,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -92332,6 +92332,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 334523,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hj1557986@gmail.com",
+            "name": "tom",
+            "username": "simlecode"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c809f313d9ac84927c5fc683fe12f01c777fecf7",
+          "message": "chore: remove repetitive words (#1739)\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-04-29T17:57:00-07:00",
+          "tree_id": "65bceb5afb3119e02265c71538a037b0266bf10d",
+          "url": "https://github.com/risc0/risc0/commit/c809f313d9ac84927c5fc683fe12f01c777fecf7"
+        },
+        "date": 1714439176126,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9838282,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 432942,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 428213,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 569935,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 420212,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 409088,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 332957,
             "unit": "Hz"
           }
         ]
