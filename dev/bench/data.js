@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714586363109,
+  "lastUpdate": 1714586369960,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -66524,6 +66524,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 21355,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8cb15a81c6b81af1cfe207bf972f05a440076d41",
+          "message": "build_kernel: fix nvcc failure by splitting RISC0_NVCC_FLAGS (#1765)",
+          "timestamp": "2024-05-01T17:48:48Z",
+          "tree_id": "e2ffd5afdc867de1ad02bd5d71bf9a5ed7f08374",
+          "url": "https://github.com/risc0/risc0/commit/8cb15a81c6b81af1cfe207bf972f05a440076d41"
+        },
+        "date": 1714586365042,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9540565,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35483,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24493,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43887,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42498,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35515,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21468,
             "unit": "Hz"
           }
         ]
