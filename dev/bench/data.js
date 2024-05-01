@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714586369960,
+  "lastUpdate": 1714594662636,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -93040,6 +93040,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 376558,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95fd72f8b9968512c3f2f4c873baa4cc682366e8",
+          "message": "bump version to v1.0.0-rc3 and bonsai sdk to v0.8.0-rc1 (#1771)",
+          "timestamp": "2024-05-01T20:13:15Z",
+          "tree_id": "1084c7a162e0746fb36992e24943ef0cb4fe5a20",
+          "url": "https://github.com/risc0/risc0/commit/95fd72f8b9968512c3f2f4c873baa4cc682366e8"
+        },
+        "date": 1714594658634,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9693513,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 494664,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 490832,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 571059,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 419866,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 471073,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 374644,
             "unit": "Hz"
           }
         ]
