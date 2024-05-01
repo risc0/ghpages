@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714595803910,
+  "lastUpdate": 1714605160045,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -93276,6 +93276,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 374644,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e73b0f40b702c202c1cc99e7aeb97fe0ccee501",
+          "message": "Move inner receipt types into multiple implementation files (#1770)\n\nThis is a non-functional change PR to move the inner receipt types,\r\n`SegmentReceipt`, `CompositeReceipt`, and `CompactReceipt`, into\r\nindividual implementation files.\r\n\r\nThis refactor forms a basis for functionality to be added in\r\nhttps://github.com/risc0/risc0/pull/1764",
+          "timestamp": "2024-05-01T23:08:11Z",
+          "tree_id": "0154d5c4b4ad5e45c3fb5d766a287d3e1ca8e54a",
+          "url": "https://github.com/risc0/risc0/commit/4e73b0f40b702c202c1cc99e7aeb97fe0ccee501"
+        },
+        "date": 1714605156054,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10104753,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 514743,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 506845,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 572230,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 426332,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 475461,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 374720,
             "unit": "Hz"
           }
         ]
