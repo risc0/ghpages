@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714689009054,
+  "lastUpdate": 1714689102067,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -93866,6 +93866,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 375867,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "efe933ff9536931dcdafbe2ea8f7fdc52e1de0a2",
+          "message": "Bump enum-iterator from 2.0.1 to 2.1.0 (#1769)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-02T22:22:49Z",
+          "tree_id": "eb1dd955c79a4cb72b301986eab1924a0700e65b",
+          "url": "https://github.com/risc0/risc0/commit/efe933ff9536931dcdafbe2ea8f7fdc52e1de0a2"
+        },
+        "date": 1714689097737,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10198404,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 496406,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 491050,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 563819,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 426043,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 476887,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 378804,
             "unit": "Hz"
           }
         ]
