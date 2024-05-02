@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714608803013,
+  "lastUpdate": 1714608953053,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23597,6 +23597,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16743,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4198e01e16787409d0ca423f7fa4a27acc05203c",
+          "message": "Support producing `CompactReceipt` through `BonsaiProver` and improve `Prover::compress` (#1762)\n\nThis PR adds support for producing a `CompactReceipt` through the\r\n`BonsaiProver` impl of the `Prover` trait. This unblocks moving proving\r\nin `risc0-ethereum` and the Foundry template to the `risc0-zkvm` API\r\n(https://github.com/risc0/risc0-foundry-template/issues/92), and helps\r\nsimplify the implementation of receipt metadata (coming in a PR soon).\r\n\r\nThis PR additionally fixes up some missing logic in the\r\n`Prover::compress` implementations, and changes the semantics of\r\n`opts.receipt_kind`. With this PR, the receipt kind field is interpreted\r\na _minimum_ compression level, rather than exact. As a result, it is no\r\nlonger an error to call `compress` on a `Compact` receipt, with\r\n`ReceiptKind::Succinct`. Instead, it is a no-op. I believe this better\r\naligns with the expectation of a caller, and prevents needing to check\r\nthe receipt type before calling compress.\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-05-02T00:04:27Z",
+          "tree_id": "dbb11ca4b89cb9044efa7c4b39190183ed56799b",
+          "url": "https://github.com/risc0/risc0/commit/4198e01e16787409d0ca423f7fa4a27acc05203c"
+        },
+        "date": 1714608950953,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 14815831,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27442,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18488,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31687,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31093,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27542,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15824,
             "unit": "Hz"
           }
         ]
