@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1714797284071,
+  "lastUpdate": 1714797381622,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23715,6 +23715,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16811,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "53ada25b03fd22c9bb9c13065bb5022c10574bb6",
+          "message": "zkvm: run verify in guest (#1776)\n\nThis PR enables receipt verification in the guest. Note, this is running\r\nthe risc0-zkvm verifier as guest code, rather than running the recursion\r\ncircuit or using composition. This allows verification of composite,\r\nsuccinct and compact receipts. Largely, this entailed moving\r\n`risc0_zkvm::host::receipt` to `risc0_zkvm::receipt`.",
+          "timestamp": "2024-05-04T04:27:39Z",
+          "tree_id": "ab682197ab3965face69e42b2fc83aeaebaa79c0",
+          "url": "https://github.com/risc0/risc0/commit/53ada25b03fd22c9bb9c13065bb5022c10574bb6"
+        },
+        "date": 1714797379559,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16477070,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28110,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18833,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33399,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32632,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28277,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16378,
             "unit": "Hz"
           }
         ]
