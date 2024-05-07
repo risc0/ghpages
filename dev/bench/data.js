@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715103176238,
+  "lastUpdate": 1715103224406,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -94574,6 +94574,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 374219,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45436839+Cardosaum@users.noreply.github.com",
+            "name": "Matheus Cardoso",
+            "username": "Cardosaum"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "40e7d476184ffc7a9508d4c2028379bd00c2f8e0",
+          "message": "Add cargo risczero verify (#1775)\n\nThis PR adds the command `verify` to `cargo risczero`. \r\n\r\nThe user should provide the `image_id` of the guest as a positional\r\nparameter, and specify as an argument either the path to a local receipt\r\nsaved in binary format using `bincode` or specify the Bonsai ID of the\r\nreceipt to download and verify.\r\n\r\nThe usage of the new command looks like the following: \r\n\r\n```\r\n$ cargo-risczero risczero verify --help\r\n\r\nVerifies if a receipt is valid\r\n\r\nUsage: cargo risczero verify [OPTIONS] <--path <PATH>|--id <ID>> <IMAGE_ID>\r\n\r\nArguments:\r\n  <IMAGE_ID>  The image ID to verify the receipt against\r\n\r\nOptions:\r\n      --path <PATH>        The path to the receipt file\r\n      --id <ID>            The Bonsai ID of the receipt to download and verify\r\n      --api-url <API_URL>  API URL for Bonsai\r\n      --api-key <API_KEY>  API key for Bonsai\r\n  -h, --help               Print help\r\n```\r\n\r\n--- \r\n\r\nCloses #1619",
+          "timestamp": "2024-05-08T00:24:22+07:00",
+          "tree_id": "2a5e4221ebed2a5d399e70f506f01aa21ddad572",
+          "url": "https://github.com/risc0/risc0/commit/40e7d476184ffc7a9508d4c2028379bd00c2f8e0"
+        },
+        "date": 1715103220225,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10154006,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 493332,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 484919,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 572724,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 416305,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 471668,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 374464,
             "unit": "Hz"
           }
         ]
