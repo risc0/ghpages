@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715066243632,
+  "lastUpdate": 1715066470821,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -94397,6 +94397,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 388164,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d51ff371a27d08dbb8f23b0d3e4890e2710edcb7",
+          "message": "guest verify: accelerate sha256 (#1787)\n\nTo implement the accerleation, I simply pushed this logic into the\r\n`risc0-zkp` crate and retained the `Impl` export in `risc0-zkvm`.\r\n```\r\ncfg_if::cfg_if! {\r\n    if #[cfg(target_os = \"zkvm\")] {\r\n        use crate::core::hash::sha::guest::Impl;\r\n    } else {\r\n        use crate::core::hash::sha::cpu::Impl;\r\n    }\r\n}\r\n```\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-05-07T07:02:22Z",
+          "tree_id": "f75d93153efb81fa9496cd55e3b19d52be282f7d",
+          "url": "https://github.com/risc0/risc0/commit/d51ff371a27d08dbb8f23b0d3e4890e2710edcb7"
+        },
+        "date": 1715066466599,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10095990,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 493435,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 500202,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565701,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 422364,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 471025,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 374219,
             "unit": "Hz"
           }
         ]
