@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715129493920,
+  "lastUpdate": 1715129647231,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -67468,6 +67468,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 21340,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "457e09b541aab8641ee437e2d59a033c58abb0bb",
+          "message": "cargo-risczero: mark std as no longer experimental (#1793)",
+          "timestamp": "2024-05-07T17:41:22-07:00",
+          "tree_id": "4bd41341f459dd3c3785b5e662c97e9d3239bb66",
+          "url": "https://github.com/risc0/risc0/commit/457e09b541aab8641ee437e2d59a033c58abb0bb"
+        },
+        "date": 1715129642410,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9376520,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35499,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24245,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43706,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42394,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34987,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21111,
             "unit": "Hz"
           }
         ]
