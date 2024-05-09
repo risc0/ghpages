@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715230219620,
+  "lastUpdate": 1715230337640,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -23951,6 +23951,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 16785,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50c4cf654b308c003295b54f3b6497dff43e7a44",
+          "message": "cargo-risczero test: fix getrandom and add to CI (#1750)\n\nThere was a regression where the getrandom feature got dropped from the\r\nstatic library. This PR fixes that and adds a `cargo risczero test`\r\ncommand to CI to prevent future regressions",
+          "timestamp": "2024-05-08T21:44:47-07:00",
+          "tree_id": "c8bc8935058ef35de43a59e38e13c1f11dc11ec9",
+          "url": "https://github.com/risc0/risc0/commit/50c4cf654b308c003295b54f3b6497dff43e7a44"
+        },
+        "date": 1715230335458,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16652902,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 19230,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33114,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32487,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27840,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16529,
             "unit": "Hz"
           }
         ]
