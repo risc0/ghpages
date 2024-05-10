@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715373015921,
+  "lastUpdate": 1715373044705,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -67881,6 +67881,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 21420,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "104483650+MartinKong1990@users.noreply.github.com",
+            "name": "MartinKong1990",
+            "username": "MartinKong1990"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50df09054b9c32b74853d328fca946c74675cb28",
+          "message": "Update dev-mode Broken Link (#1808)\n\nOld:\r\nhttps://dev.risczero.com/api/zkvm/dev-mode\r\nhttps://dev.risczero.com/zkvm/dev-mode\r\n\r\nNew:\r\nhttps://dev.risczero.com/api/generating-proofs/dev-mode",
+          "timestamp": "2024-05-10T13:22:42-07:00",
+          "tree_id": "1fc7188e5cbed16256699430fa8390ae7f3cb5ed",
+          "url": "https://github.com/risc0/risc0/commit/50df09054b9c32b74853d328fca946c74675cb28"
+        },
+        "date": 1715373039569,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10201494,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35539,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24293,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43847,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42830,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35271,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21395,
             "unit": "Hz"
           }
         ]
