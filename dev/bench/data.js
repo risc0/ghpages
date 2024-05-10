@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715369884118,
+  "lastUpdate": 1715369891045,
   "repoUrl": "https://github.com/risc0/risc0",
   "entries": {
     "macOS-cpu": [
@@ -91787,6 +91787,65 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 76967,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "70737f3e667d71c625725c3d856fff876482464f",
+          "message": "Accelerated witness generation (#1780)",
+          "timestamp": "2024-05-10T12:33:14-07:00",
+          "tree_id": "787a32f00883fbde3392f8c9bec885fa6cf165b4",
+          "url": "https://github.com/risc0/risc0/commit/70737f3e667d71c625725c3d856fff876482464f"
+        },
+        "date": 1715369888955,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 13945388,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 108743,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94056,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 149244,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 139204,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 106732,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 81144,
             "unit": "Hz"
           }
         ]
