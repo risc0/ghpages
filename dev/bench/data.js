@@ -7247,6 +7247,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93e87e75feaf7a679403ab7cd9c58a22bc2f8e63",
+          "message": "Update dependencies  (#1824)\n\n* cargo update\r\n* Use xtask bootstrap-protos to pre-compile and commit the protobuf\r\nfiles so that users don't need to have protoc installed (or built from\r\nsource).\r\n* drop some cruft",
+          "timestamp": "2024-05-11T19:15:39-07:00",
+          "tree_id": "6bc3516f712708abc16c33970a963f7c4099ee70",
+          "url": "https://github.com/risc0/risc0/commit/93e87e75feaf7a679403ab7cd9c58a22bc2f8e63"
+        },
+        "date": 1715480681953,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 11076504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 561424,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 555426,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 577714,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 429998,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 535359,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 417502,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -14676,6 +14735,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715480571730,
+  "lastUpdate": 1715480686371,
   "repoUrl": "https://github.com/risc0/risc0"
 }
