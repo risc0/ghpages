@@ -11078,6 +11078,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf0c76ab7213348c0ba42aeae52a71914c72c936",
+          "message": "Support for argument buffers in metal (#1825)\n\nThis will be required for witgen to run on Metal",
+          "timestamp": "2024-05-12T16:17:25-07:00",
+          "tree_id": "d79403b817e7692b6996278b672ce83b1cc8e7c9",
+          "url": "https://github.com/risc0/risc0/commit/bf0c76ab7213348c0ba42aeae52a71914c72c936"
+        },
+        "date": 1715556283180,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 13968198,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 108706,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94183,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 149411,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138830,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 103352,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 80135,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -14794,6 +14853,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715480845944,
+  "lastUpdate": 1715556285402,
   "repoUrl": "https://github.com/risc0/risc0"
 }
