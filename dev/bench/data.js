@@ -15086,9 +15086,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4bab3011da2fc4ed98316b896071b18934358f08",
+          "message": "Add conversions for compact receipt (#1831)\n\n- Add converions for compact receipts so that can be used with `r0vm`\r\n- Make Groth16 docker prover silent, so that can be used with the\r\nrisc0-ethereum `ffi`\r\n- Fix few typos",
+          "timestamp": "2024-05-14T19:41:20+01:00",
+          "tree_id": "4bdb4d45558b2390f8b58b571321cad3b88bffcb",
+          "url": "https://github.com/risc0/risc0/commit/4bab3011da2fc4ed98316b896071b18934358f08"
+        },
+        "date": 1715712582726,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16671188,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28593,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 19501,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33196,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32397,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28607,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16959,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1715712366845,
+  "lastUpdate": 1715712585019,
   "repoUrl": "https://github.com/risc0/risc0"
 }
