@@ -7483,6 +7483,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4bab3011da2fc4ed98316b896071b18934358f08",
+          "message": "Add conversions for compact receipt (#1831)\n\n- Add converions for compact receipts so that can be used with `r0vm`\r\n- Make Groth16 docker prover silent, so that can be used with the\r\nrisc0-ethereum `ffi`\r\n- Fix few typos",
+          "timestamp": "2024-05-14T19:41:20+01:00",
+          "tree_id": "4bdb4d45558b2390f8b58b571321cad3b88bffcb",
+          "url": "https://github.com/risc0/risc0/commit/4bab3011da2fc4ed98316b896071b18934358f08"
+        },
+        "date": 1715712622325,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 11046650,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 571047,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 565308,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 572167,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 413332,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 541995,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 420277,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -15148,6 +15207,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715712585019,
+  "lastUpdate": 1715712626889,
   "repoUrl": "https://github.com/risc0/risc0"
 }
