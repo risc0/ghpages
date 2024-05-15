@@ -11432,6 +11432,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8001b3b4c106c494f19c00df5799e27fb51f64f",
+          "message": "Adjustments for Bonsai (#1833)\n\n* Lower log level of security calculator\r\n* Use standard `NVCC_PREPEND_FLAGS` and `NVCC_APPEND_FLAGS`",
+          "timestamp": "2024-05-15T19:35:57Z",
+          "tree_id": "351e6212ae469483fbc134b26a6ec8c7a74d0d12",
+          "url": "https://github.com/risc0/risc0/commit/c8001b3b4c106c494f19c00df5799e27fb51f64f"
+        },
+        "date": 1715802119698,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 14064360,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 110978,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94771,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 148218,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 137752,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 108211,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 81372,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -15266,6 +15325,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715712808558,
+  "lastUpdate": 1715802122177,
   "repoUrl": "https://github.com/risc0/risc0"
 }
