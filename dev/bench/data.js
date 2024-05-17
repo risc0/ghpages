@@ -16030,9 +16030,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e16db66eea50b4db4c5c754f18f1241ea98bebf",
+          "message": "Cleanup of CUDA HAL (#1845)\n\n* Use C++ CUDA Runtime to launch kernels.\r\n* Use new builder which uses sccache + nvcc\r\n* Lots of other unification and cleanup",
+          "timestamp": "2024-05-17T20:53:20Z",
+          "tree_id": "4d933c008a6bff93b0569523379af85ed5fadb5a",
+          "url": "https://github.com/risc0/risc0/commit/1e16db66eea50b4db4c5c754f18f1241ea98bebf"
+        },
+        "date": 1715979643757,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16283740,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27962,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18620,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31755,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31965,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29873,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16991,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1715979543623,
+  "lastUpdate": 1715979645890,
   "repoUrl": "https://github.com/risc0/risc0"
 }
