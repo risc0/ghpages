@@ -4065,6 +4065,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c5e3207a9b71250247d51c2838ddb09fc7544b26",
+          "message": "bump version `v1.0.0-rc.4` to `v1.0.0-rc.5` (#1853)\n\nBump the version to `rc.5`. For `bonsai-sdk`, bump `0.8.0-rc.1` to\r\n`0.8.0-rc.2`.",
+          "timestamp": "2024-05-17T22:27:36Z",
+          "tree_id": "56251f56543954c7f893e3ce6760350810eddebe",
+          "url": "https://github.com/risc0/risc0/commit/c5e3207a9b71250247d51c2838ddb09fc7544b26"
+        },
+        "date": 1715985255093,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10420347,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35884,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24652,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44002,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42650,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35964,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21663,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -16269,6 +16328,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715985205423,
+  "lastUpdate": 1715985260295,
   "repoUrl": "https://github.com/risc0/risc0"
 }
