@@ -7896,6 +7896,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "87da7718a68044643ad9d8d940c9b44571790287",
+          "message": "Use recent trusted setup ceremony for stark2snark (#1844)",
+          "timestamp": "2024-05-17T19:55:18Z",
+          "tree_id": "772ed8c66fbc8340c81c7cb1fe6e1d678fa11a66",
+          "url": "https://github.com/risc0/risc0/commit/87da7718a68044643ad9d8d940c9b44571790287"
+        },
+        "date": 1715976551604,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 11032919,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 560808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 555112,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 571697,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 422568,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 535140,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 417483,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -15856,6 +15915,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715976358012,
+  "lastUpdate": 1715976556033,
   "repoUrl": "https://github.com/risc0/risc0"
 }
