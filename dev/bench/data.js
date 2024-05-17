@@ -7778,6 +7778,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1dc9a349391a1fe9c398ef429429dfedd4419eba",
+          "message": "`cargo-risczero build-toolchain`: add optional `--version` flag (#1851)\n\nThis new --version flag behaves similar to `cargo risczero install\r\n--version`.",
+          "timestamp": "2024-05-17T12:05:58-07:00",
+          "tree_id": "1aa3f097e649a0f9b342f67e990a23f9bf12cd0a",
+          "url": "https://github.com/risc0/risc0/commit/1dc9a349391a1fe9c398ef429429dfedd4419eba"
+        },
+        "date": 1715973396527,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 11046632,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 569365,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 563310,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 578936,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 419670,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 542189,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 422283,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -15620,6 +15679,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715973289415,
+  "lastUpdate": 1715973400983,
   "repoUrl": "https://github.com/risc0/risc0"
 }
