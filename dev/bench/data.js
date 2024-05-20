@@ -8191,6 +8191,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0278191276c61aefaef8232b0ca0b53d72f3c8ea",
+          "message": "Add missing credit (#1865)\n\nWe mistakenly omitted credit to @nhukc for the original draft of the\r\nPoseidon2 code. This PR adds this missing credit, both via GitHub (as a\r\ncoauthor) and via inline comment.\r\n\r\n---------\r\n\r\nCo-authored-by: 3lkn <109624900+3lkn@users.noreply.github.com>\r\nCo-authored-by: Nathan Huckleberry <nhuckleberry@ulvetanna.io>",
+          "timestamp": "2024-05-20T12:59:36-07:00",
+          "tree_id": "413e81a80de73396ae906c187e1a2875d5d39672",
+          "url": "https://github.com/risc0/risc0/commit/0278191276c61aefaef8232b0ca0b53d72f3c8ea"
+        },
+        "date": 1716235443427,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10192310,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 560905,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 562528,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 554834,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 416027,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 525195,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 411322,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -16446,6 +16505,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1715985398167,
+  "lastUpdate": 1716235447697,
   "repoUrl": "https://github.com/risc0/risc0"
 }
