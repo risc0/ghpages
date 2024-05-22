@@ -8427,6 +8427,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c67b118e3d41d72b70bd4c92c78e7dedb72e450d",
+          "message": "cargo-risczero: drop cargo-generate from new command (#1867)\n\nThe `cargo-generate` crate is designed with the assumption that\r\ntemplates to reside in a small repository. Our template is a part of a\r\nlarge repository and takes anywhere between 3-10 seconds to run `cargo\r\nrisczero new` because it has to clone the repo. This change drops\r\ncargo-generate and instead uses regex patterns to search and replace the\r\ntemplate during generation. Locally, this takes about 0.5 seconds to\r\nrun. I've dropped several options that seemed irrelevant. Another\r\nnotable change is the renaming of the template's `Cargo.toml` to\r\n`Cargo-toml`. By doing so, I have fixed\r\nhttps://github.com/risc0/risc0/issues/1840.\r\n\r\nFixes: #1840",
+          "timestamp": "2024-05-22T03:19:41Z",
+          "tree_id": "0df40afccd3c04dd3c569106667f40bfb35e9732",
+          "url": "https://github.com/risc0/risc0/commit/c67b118e3d41d72b70bd4c92c78e7dedb72e450d"
+        },
+        "date": 1716348239016,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10994820,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 561137,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 561982,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 554639,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 414587,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 528637,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 412549,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -16918,6 +16977,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716345990733,
+  "lastUpdate": 1716348243268,
   "repoUrl": "https://github.com/risc0/risc0"
 }
