@@ -8309,6 +8309,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "57b45bd7546cb2ab5831c759b5cd4dbcd0c0c59e",
+          "message": "Client/Server: add plumbing for compress (#1870)\n\nThis change completes the implementation of the `ExternalProver`'s\r\n`compress` function by implementing plumbing for the `compress` function\r\nin the client server architecture. The composite to succinct function\r\nhas been removed from `ExternalProver` because a call to compress has\r\nthe same effect without having to pass segment receipts between the\r\nclient and server.\r\n\r\nCloses: #1760",
+          "timestamp": "2024-05-21T19:37:15-07:00",
+          "tree_id": "ba98af81e916d87210f9d83c89bf34b8715746dd",
+          "url": "https://github.com/risc0/risc0/commit/57b45bd7546cb2ab5831c759b5cd4dbcd0c0c59e"
+        },
+        "date": 1716345700854,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10205841,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 566488,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 567712,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 551261,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 409994,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 533060,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 413891,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -16682,6 +16741,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716235651359,
+  "lastUpdate": 1716345705123,
   "repoUrl": "https://github.com/risc0/risc0"
 }
