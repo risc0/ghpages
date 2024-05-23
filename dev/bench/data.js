@@ -13320,6 +13320,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a4758034a03a2affd314c26c4d65b03624dc7f3",
+          "message": "Fix `send_recv_slice` for cases where `U != u8` (#1874)\n\nThe `send_recv_slice` function works by making a pair of syscalls. One\r\nto get\r\nthe size of the data and another to retrieve that amount of data. There\r\nwas a mistake in assuming that the first syscall returned the number of\r\nelements to return. In fact, the first syscall returns the number of\r\nbytes. The guest handler has been fixed to reflect this.\r\n    \r\nThe calculation for buffer size in the subsequent syscall has been fixed\r\nby removing the multiplication to calculate the size of the the host\r\nbuffer and by dividing by `sizeof::<U>` before returning to the guest.",
+          "timestamp": "2024-05-23T19:50:31Z",
+          "tree_id": "2ce166e5582631a5eb947d295730dd06132adc2f",
+          "url": "https://github.com/risc0/risc0/commit/7a4758034a03a2affd314c26c4d65b03624dc7f3"
+        },
+        "date": 1716494321260,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12616007,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 108499,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92199,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 151215,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 137433,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102044,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78783,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -17744,6 +17803,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716494230141,
+  "lastUpdate": 1716494323048,
   "repoUrl": "https://github.com/risc0/risc0"
 }
