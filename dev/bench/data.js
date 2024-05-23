@@ -13438,6 +13438,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "123f278a603d1a7e4d14173439c9517ba37387c3",
+          "message": "fix: typo in API from copsite to composite (#1876)",
+          "timestamp": "2024-05-23T21:07:53Z",
+          "tree_id": "4698795ebc624345f2498cb77c20d268051a6707",
+          "url": "https://github.com/risc0/risc0/commit/123f278a603d1a7e4d14173439c9517ba37387c3"
+        },
+        "date": 1716498740639,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12836253,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 110042,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94665,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 149613,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138388,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 107931,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 81008,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -17921,6 +17980,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716498738920,
+  "lastUpdate": 1716498742436,
   "repoUrl": "https://github.com/risc0/risc0"
 }
