@@ -13025,6 +13025,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e364553a708c3dd99a5e1c9705111e7baa422e75",
+          "message": "Minor docs updates (#1866)\n\n* Drop warnings\r\n* Fix terminology links",
+          "timestamp": "2024-05-23T18:16:40Z",
+          "tree_id": "5d9c5e63095ae3789bd0979cf8348ef6c1dc5fa9",
+          "url": "https://github.com/risc0/risc0/commit/e364553a708c3dd99a5e1c9705111e7baa422e75"
+        },
+        "date": 1716488491959,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12890035,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 109166,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92419,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 150106,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138645,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 103079,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79957,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -17390,6 +17449,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716422672105,
+  "lastUpdate": 1716488493918,
   "repoUrl": "https://github.com/risc0/risc0"
 }
