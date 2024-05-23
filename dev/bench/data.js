@@ -12848,6 +12848,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "701b3d97bb3a387326004e866bb9d3fbd4c1649c",
+          "message": "Enable composition of rv32im programs and generalized recursion programs (#1841)\n\nAs a major step towards composition with recursion programs and circuits\r\nimplementing accelerators, this PR adds a `control_root` value to the\r\nreceipt claim encoding of assumptions, and enables proving and of\r\nrecursion programs that are not in the main set of rv32im transforms.\r\n\r\nIn the course of this PR, there are also a number of changes to make it\r\npossible to pass alternate parameters to proving and verification. In\r\nparticular, `ProverOpts` now holds the set of allowed control roots and\r\ncan be configured to use an alternate set, and `VerifierContext` holds\r\nthe verifier parameters for each receipt type.\r\n\r\n`SuccinctReceipt` has been made more generic, allowing it to represent\r\nproof of any recursion program that follows the convention of placing a\r\ncontrol root in the first output slot, and a SHA-256 claim digest in the\r\nsecond output slot. This claim digest can be over a generic claim, which\r\nallows for claims representing the execution of e.g. accelerators which\r\nare not `ReceiptClaim` and do not represent zkVM execution.\r\n\r\nVerification routines on `Receipt` and `CompositeReceipt` are\r\nsimplified, partially taking advantage of recent changes to the rv32im\r\ncircuit to zero-out the post-state digest, and partially by dropping\r\n`ExitCode::Paused(0)` as a default accepted exit code.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-05-22T23:55:47Z",
+          "tree_id": "a75fcdb53fa003563ecafc6c0b446e745aee4c73",
+          "url": "https://github.com/risc0/risc0/commit/701b3d97bb3a387326004e866bb9d3fbd4c1649c"
+        },
+        "date": 1716422474627,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12774042,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 108485,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 93888,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 151203,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138228,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 101810,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78945,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -17154,6 +17213,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716348454435,
+  "lastUpdate": 1716422478660,
   "repoUrl": "https://github.com/risc0/risc0"
 }
