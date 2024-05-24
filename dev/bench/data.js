@@ -4537,6 +4537,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a793ffdfb07d62cc5397edc5f3c97a67e61988a4",
+          "message": "Rename CompactReceipt to Groth16Receipt (#1877)\n\nThis PR renames `CompactReceipt` and associated data types and function\r\nto `Groth16Receipt`. It might help increase discoverability when folks\r\nneed a Groth16 receipt to post on Ethereum and elsewhere.",
+          "timestamp": "2024-05-24T00:07:13Z",
+          "tree_id": "547c0384a7218bc92de0f17ccc85e02a0062314d",
+          "url": "https://github.com/risc0/risc0/commit/a793ffdfb07d62cc5397edc5f3c97a67e61988a4"
+        },
+        "date": 1716509627488,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9411903,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 36522,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24705,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43800,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42422,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35990,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21616,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -18216,6 +18275,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716509550909,
+  "lastUpdate": 1716509632553,
   "repoUrl": "https://github.com/risc0/risc0"
 }
