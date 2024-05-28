@@ -9253,6 +9253,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7da2781a90ff39769c75c466db2c944706213a71",
+          "message": "Add docs.rs metadata to display features document prove APIs (#1564)\n\nThis PR added Cargo metadata and crate-level attributes to get docs\r\nbuilding with additional information on docs.rs. In particular, this\r\nwill get feature-gates APIs (e.g. the `Prover` trait) to show up on\r\ndocs.rs.\r\n\r\nIt also introduces a new CI job that builds the docs using the docs.rs\r\n`--cfg` flag, and on a runner _without_ installing `cargo risczero` or\r\nother custom tool. This job is intended to check that our docs will\r\nbuild on the docs.rs machines, and we don't get errors about broken docs\r\nbuild (e.g https://docs.rs/crate/cargo-risczero/0.21.0)\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-05-28T23:20:48Z",
+          "tree_id": "f1e8653631d56780e31f5763118efde639ebca58",
+          "url": "https://github.com/risc0/risc0/commit/7da2781a90ff39769c75c466db2c944706213a71"
+        },
+        "date": 1716938706849,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10234849,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 566832,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 567512,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 562432,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 418301,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 530054,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 413891,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -18570,6 +18629,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1716620159549,
+  "lastUpdate": 1716938711087,
   "repoUrl": "https://github.com/risc0/risc0"
 }
