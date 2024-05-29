@@ -9371,6 +9371,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4d6e441b629babc474d61ea053ab848f1bf2dadc",
+          "message": "bump version `v1.0.0-rc.5` to `v1.0.0-rc.6` (#1904)\n\nThis PR bumps the version of the `risc0` crates to `1.0.0-rc.6` and\r\nbumps the `bonsai-sdk` to `rc.3`. This change has the usual Cargo.toml,\r\nCargo.lock, and image ID changes. In addition, I also noticed that\r\n`cargo test -p risc0-zkvm` failed to compile. We build and test with the\r\n`-F prove` but noticed that the risc0-zkvm tests fail to build without\r\nthis flag. I've added an extra test step to ensure that this path is\r\nbeing tested and added a few `cfg` statements to fix the build error.",
+          "timestamp": "2024-05-29T14:53:29-07:00",
+          "tree_id": "a912f9c76f58b99ecbeb66444901eb8a4fddd7c8",
+          "url": "https://github.com/risc0/risc0/commit/4d6e441b629babc474d61ea053ab848f1bf2dadc"
+        },
+        "date": 1717019870889,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10392228,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 566504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 566450,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 554723,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 402702,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 531282,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 414924,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -18865,6 +18924,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717019872428,
+  "lastUpdate": 1717019880223,
   "repoUrl": "https://github.com/risc0/risc0"
 }
