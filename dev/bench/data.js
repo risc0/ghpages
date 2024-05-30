@@ -9607,6 +9607,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c393f590b68cfd1dd0d8d167b9d6833ef832d428",
+          "message": "recursion circuit: create an empty zkr.zip file when building docs (#1907)\n\nThis fixes docs.rs build errors that we've been seeing for\r\n`risc0-circuit-recursion` and hopefully `risc0-zkvm`. I was able to test\r\nthis locally and verify that `risc0-circuit-recursion` has been fixed\r\nbut `risc0-zkvm` fetches the published `risc0-circuit-recursion` crate\r\nso changes to not appear in my local testing environment.",
+          "timestamp": "2024-05-30T09:30:02-07:00",
+          "tree_id": "39869d72ba581911da51116bb9da86b263591774",
+          "url": "https://github.com/risc0/risc0/commit/c393f590b68cfd1dd0d8d167b9d6833ef832d428"
+        },
+        "date": 1717086863560,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10406542,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 560483,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 560950,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 549835,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 409208,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 525207,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 411438,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -19278,6 +19337,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717027975021,
+  "lastUpdate": 1717086867884,
   "repoUrl": "https://github.com/risc0/risc0"
 }
