@@ -14264,6 +14264,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5dddcc7846d482b6d92ca2c0217b84c4d8ca4b39",
+          "message": "Add new function to Groth16Receipt (#1905)\n\nThis PR added a `Groth16Receipt::new` function, allowing users of the\r\ncrate to construct the `Groth16Receipt` type if they have the\r\nconstituent parts. This is being added to support users of the Bonsai\r\nREST API, as this API returns the parts of the receipt, from which the\r\ncaller needs to construct the `Groth16Receipt` object.",
+          "timestamp": "2024-05-29T17:05:20-07:00",
+          "tree_id": "4b839cb42f50c5c83eccd82b0aca0300dca1d752",
+          "url": "https://github.com/risc0/risc0/commit/5dddcc7846d482b6d92ca2c0217b84c4d8ca4b39"
+        },
+        "date": 1717027782507,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12893515,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 109986,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 95002,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 148449,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138842,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 107472,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 80857,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -19042,6 +19101,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717020076783,
+  "lastUpdate": 1717027784402,
   "repoUrl": "https://github.com/risc0/risc0"
 }
