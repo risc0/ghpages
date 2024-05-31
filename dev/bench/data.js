@@ -9725,6 +9725,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b075247d847893c63f38fe2f8f2c1d837f99d87a",
+          "message": "Increase ZK_CYCLES (#1910)\n\nIncrease the number of cycles used to ensure zero knowledge.",
+          "timestamp": "2024-05-30T21:23:22-07:00",
+          "tree_id": "415ef9afcc52e9eed694bb8355eb1000cfbddfeb",
+          "url": "https://github.com/risc0/risc0/commit/b075247d847893c63f38fe2f8f2c1d837f99d87a"
+        },
+        "date": 1717129662421,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10335528,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 565320,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 566468,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 564731,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 410369,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 528997,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 412354,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -19514,6 +19573,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717087087543,
+  "lastUpdate": 1717129667130,
   "repoUrl": "https://github.com/risc0/risc0"
 }
