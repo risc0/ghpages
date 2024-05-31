@@ -14795,6 +14795,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05039fe4e32b82e0f3e331104fdac0b561f9a281",
+          "message": "Updates to zirgen generated code (#1911)",
+          "timestamp": "2024-05-31T19:29:57Z",
+          "tree_id": "59d7a8364e4f9c1bc594fc850e5b686d10570a8e",
+          "url": "https://github.com/risc0/risc0/commit/05039fe4e32b82e0f3e331104fdac0b561f9a281"
+        },
+        "date": 1717184059414,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12919229,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 109186,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94737,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 148353,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 138960,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 108624,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 80999,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -19750,6 +19809,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717130078009,
+  "lastUpdate": 1717184061245,
   "repoUrl": "https://github.com/risc0/risc0"
 }
