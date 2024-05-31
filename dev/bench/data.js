@@ -20160,9 +20160,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1aa5f9e469f4ae5db7b9c17a8a4e4b59606d2c42",
+          "message": "Improve `SyscallName` (#1912)\n\n- Added `SyscallName::from_c_str`. I did not use `TryFrom` because\r\ntraits cannot yet be used in `const` contexts.\r\n\r\n- Changed `SyscallName::as_str` to return `&'static str`.\r\n\r\n- Changed `SyscallName::from_bytes_with_nul` to `unsafe`.\r\n\r\n- Changed methods to take `self` because `SyscallName` is `Copy` and\r\nsmall.",
+          "timestamp": "2024-05-31T21:22:39Z",
+          "tree_id": "2fae17589d925bbf8b67b532a2165129584b3e00",
+          "url": "https://github.com/risc0/risc0/commit/1aa5f9e469f4ae5db7b9c17a8a4e4b59606d2c42"
+        },
+        "date": 1717191022296,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15264000,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30281,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18729,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31994,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31223,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28963,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16281,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1717190955368,
+  "lastUpdate": 1717191023960,
   "repoUrl": "https://github.com/risc0/risc0"
 }
