@@ -5068,6 +5068,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74d08d5beed8f0bd1b96db738a839bb3f90a35d8",
+          "message": "Updates to codegen files (#1915)",
+          "timestamp": "2024-05-31T23:58:42Z",
+          "tree_id": "42531e511ef41502b8ab60d01c81a7cfc9b05aa5",
+          "url": "https://github.com/risc0/risc0/commit/74d08d5beed8f0bd1b96db738a839bb3f90a35d8"
+        },
+        "date": 1717200583333,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9681110,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34989,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24251,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44031,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42521,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35023,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21234,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -20399,6 +20458,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717200379811,
+  "lastUpdate": 1717200589079,
   "repoUrl": "https://github.com/risc0/risc0"
 }
