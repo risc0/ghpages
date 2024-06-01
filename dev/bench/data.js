@@ -5127,6 +5127,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3afe05361f309284b2534e5e2fd9416ff4db3d0c",
+          "message": "Release v1.0.0-rc.7 (#1916)",
+          "timestamp": "2024-05-31T20:16:03-07:00",
+          "tree_id": "bf324fce0d02f036149442fb0be4594ca334f4e2",
+          "url": "https://github.com/risc0/risc0/commit/3afe05361f309284b2534e5e2fd9416ff4db3d0c"
+        },
+        "date": 1717212471875,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9677417,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34921,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24260,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44131,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42512,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34763,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21139,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -20635,6 +20694,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717212230846,
+  "lastUpdate": 1717212477864,
   "repoUrl": "https://github.com/risc0/risc0"
 }
