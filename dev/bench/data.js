@@ -10079,6 +10079,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74d08d5beed8f0bd1b96db738a839bb3f90a35d8",
+          "message": "Updates to codegen files (#1915)",
+          "timestamp": "2024-05-31T23:58:42Z",
+          "tree_id": "42531e511ef41502b8ab60d01c81a7cfc9b05aa5",
+          "url": "https://github.com/risc0/risc0/commit/74d08d5beed8f0bd1b96db738a839bb3f90a35d8"
+        },
+        "date": 1717200198508,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10414114,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 552743,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 548875,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 542654,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 402380,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 522752,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 405054,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -20281,6 +20340,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717200179183,
+  "lastUpdate": 1717200203331,
   "repoUrl": "https://github.com/risc0/risc0"
 }
