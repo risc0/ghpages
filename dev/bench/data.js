@@ -10315,6 +10315,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "151764357+polymaer@users.noreply.github.com",
+            "name": "PolyMa",
+            "username": "polymaer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "661e2fe33f6e16d94c67c926ce36af5e191ef8e3",
+          "message": "fix: remove repetitive words in comments (#1891)\n\nremoved the duplicated words in the comments to improve readability. no\r\nproduction code was touched.",
+          "timestamp": "2024-06-03T17:47:33-07:00",
+          "tree_id": "21cbd1d2569323c998a832bed723a697a86ccb5f",
+          "url": "https://github.com/risc0/risc0/commit/661e2fe33f6e16d94c67c926ce36af5e191ef8e3"
+        },
+        "date": 1717462504938,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10494417,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 551890,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 547325,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 542800,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 395290,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 517960,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 401779,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -20694,6 +20753,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717212477864,
+  "lastUpdate": 1717462509275,
   "repoUrl": "https://github.com/risc0/risc0"
 }
