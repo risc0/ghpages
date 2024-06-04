@@ -5186,6 +5186,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "151764357+polymaer@users.noreply.github.com",
+            "name": "PolyMa",
+            "username": "polymaer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "661e2fe33f6e16d94c67c926ce36af5e191ef8e3",
+          "message": "fix: remove repetitive words in comments (#1891)\n\nremoved the duplicated words in the comments to improve readability. no\r\nproduction code was touched.",
+          "timestamp": "2024-06-03T17:47:33-07:00",
+          "tree_id": "21cbd1d2569323c998a832bed723a697a86ccb5f",
+          "url": "https://github.com/risc0/risc0/commit/661e2fe33f6e16d94c67c926ce36af5e191ef8e3"
+        },
+        "date": 1717462665629,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9565911,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35461,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24086,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44335,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42970,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34972,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21301,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -20753,6 +20812,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717462509275,
+  "lastUpdate": 1717462670731,
   "repoUrl": "https://github.com/risc0/risc0"
 }
