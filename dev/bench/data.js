@@ -5245,6 +5245,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c053111397eceed0d49029467c8b675502aba7e6",
+          "message": "Change ffi.cu to use layout (#1799)\n\nCo-authored-by: nils <shkoo@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-06-04T18:33:01Z",
+          "tree_id": "e1f7e286ccd454a721ae40ed04375762a3a9986d",
+          "url": "https://github.com/risc0/risc0/commit/c053111397eceed0d49029467c8b675502aba7e6"
+        },
+        "date": 1717526377809,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9465037,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34524,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24139,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43945,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42342,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34571,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21160,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -21048,6 +21107,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717526247736,
+  "lastUpdate": 1717526382885,
   "repoUrl": "https://github.com/risc0/risc0"
 }
