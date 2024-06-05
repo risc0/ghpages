@@ -21812,9 +21812,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b496e522fab4e3fb414c990036aafef86aac1f93",
+          "message": "Bump development version (#1934)",
+          "timestamp": "2024-06-05T15:09:34-07:00",
+          "tree_id": "25c94ab2dcdb08f92ba1c849e927b70529f95b10",
+          "url": "https://github.com/risc0/risc0/commit/b496e522fab4e3fb414c990036aafef86aac1f93"
+        },
+        "date": 1717625830940,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15242382,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27881,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18612,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31332,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31016,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27583,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16026,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1717625781965,
+  "lastUpdate": 1717625832789,
   "repoUrl": "https://github.com/risc0/risc0"
 }
