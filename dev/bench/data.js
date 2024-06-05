@@ -16034,6 +16034,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dae7a0667dea7978e37d2fb4c4dac0f8f83d5a39",
+          "message": "Hotfix for CUDA build issues (#1929)",
+          "timestamp": "2024-06-05T01:02:15Z",
+          "tree_id": "449b9fda74d40a5790f4d50673095c6e7b15df46",
+          "url": "https://github.com/risc0/risc0/commit/dae7a0667dea7978e37d2fb4c4dac0f8f83d5a39"
+        },
+        "date": 1717549587679,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12512755,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 107857,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 93411,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 148279,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 136430,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 104596,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79458,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -21402,6 +21461,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717532540634,
+  "lastUpdate": 1717549589409,
   "repoUrl": "https://github.com/risc0/risc0"
 }
