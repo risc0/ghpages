@@ -10905,6 +10905,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e21b7a32864f8206dbd9675a5b6aeb9a5570a21",
+          "message": "Improve metal support (#1937)",
+          "timestamp": "2024-06-06T11:29:46-07:00",
+          "tree_id": "c805a573be1f06f7a27259486ea7e07872ce7829",
+          "url": "https://github.com/risc0/risc0/commit/1e21b7a32864f8206dbd9675a5b6aeb9a5570a21"
+        },
+        "date": 1717698846705,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 10351064,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 550997,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 547530,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 545293,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 401459,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 520980,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 404046,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -21933,6 +21992,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717698846243,
+  "lastUpdate": 1717698855814,
   "repoUrl": "https://github.com/risc0/risc0"
 }
