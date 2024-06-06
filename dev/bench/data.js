@@ -5481,6 +5481,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e21b7a32864f8206dbd9675a5b6aeb9a5570a21",
+          "message": "Improve metal support (#1937)",
+          "timestamp": "2024-06-06T11:29:46-07:00",
+          "tree_id": "c805a573be1f06f7a27259486ea7e07872ce7829",
+          "url": "https://github.com/risc0/risc0/commit/1e21b7a32864f8206dbd9675a5b6aeb9a5570a21"
+        },
+        "date": 1717698995832,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9578750,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34919,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24225,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43265,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41818,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34698,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21126,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -21992,6 +22051,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1717698855814,
+  "lastUpdate": 1717699000916,
   "repoUrl": "https://github.com/risc0/risc0"
 }
