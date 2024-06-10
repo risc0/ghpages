@@ -16683,6 +16683,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9cac2453b8b55b0c7914b02ff328b362f1a3e0c1",
+          "message": "Bump regex from 1.10.4 to 1.10.5 (#1950)\n\nBumps [regex](https://github.com/rust-lang/regex) from 1.10.4 to 1.10.5.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/rust-lang/regex/blob/master/CHANGELOG.md\">regex's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h1>1.10.5 (2024-06-09)</h1>\r\n<p>This is a new patch release with some minor fixes.</p>\r\n<p>Bug fixes:</p>\r\n<ul>\r\n<li>[BUG <a\r\nhref=\"https://redirect.github.com/rust-lang/regex/issues/1203\">#1203</a>](<a\r\nhref=\"https://redirect.github.com/rust-lang/regex/pull/1203\">rust-lang/regex#1203</a>):\r\nEscape invalid UTF-8 when in the <code>Debug</code> impl of\r\n<code>regex::bytes::Match</code>.</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/0718fc5acbe91b84322ef1bd2c32e189e4668254\"><code>0718fc5</code></a>\r\n1.10.5</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/377463bd8200c038e7997a550aa708e0c686d90f\"><code>377463b</code></a>\r\nchangelog: 1.10.4 and 1.10.5</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/68c4f0b7b7f500e0ab3fbdd42c14f837c4ed1be4\"><code>68c4f0b</code></a>\r\nregex-automata-0.4.7</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/4757b5f01a7b9b6c8d89bd63b3d1500f7e0efa9e\"><code>4757b5f</code></a>\r\nregex-syntax-0.8.4</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/1430b65baeebeb67b3335e26a71f251cce9964ef\"><code>1430b65</code></a>\r\nchangelog: 1.10.4</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/1f9f9ccd393fc5342aff6db5e3d47915e87a2554\"><code>1f9f9cc</code></a>\r\nbytes: escape invalid UTF-8 bytes in debug output for Match</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/ab4c8d1f210a2e1011a4408476b2c708e64dcede\"><code>ab4c8d1</code></a>\r\ndoc: fix duplicate phrasing typo</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/ddeb85eaa3bdf79d6306cc92a9d8bd89d839b5cd\"><code>ddeb85e</code></a>\r\ncli/deps: update memmap2 to 0.9</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/023f1c9ac117cd5ef2e45119b61b94f85d109667\"><code>023f1c9</code></a>\r\nlite: fix attribute warning about rustfmt</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/9c139f4fa5c64a89075749cd5e57148c8eea8c22\"><code>9c139f4</code></a>\r\nsyntax: simplify <code>Hir::dot</code> constructors</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/rust-lang/regex/compare/1.10.4...1.10.5\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=regex&package-manager=cargo&previous-version=1.10.4&new-version=1.10.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-10T20:38:30Z",
+          "tree_id": "536a2ade377e908d6f9c2ab1ee59b1e10d7e85ed",
+          "url": "https://github.com/risc0/risc0/commit/9cac2453b8b55b0c7914b02ff328b362f1a3e0c1"
+        },
+        "date": 1718052896490,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 12583970,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 109945,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94249,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160386,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146792,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 108021,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 81759,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -22228,6 +22287,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718052530752,
+  "lastUpdate": 1718052898213,
   "repoUrl": "https://github.com/risc0/risc0"
 }
