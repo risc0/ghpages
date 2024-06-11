@@ -5599,6 +5599,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a3841b836dce27ddc7b7a68acca3a400d04182b",
+          "message": "Refactor recursion proving (#1953)\n\n* Move non-zkvm-specific code from risc0_zkvm::host::recursion::prove to\r\nrisc0_circuit_recursion::prove\r\n* risc0_recursion is po2 agnostic",
+          "timestamp": "2024-06-10T18:36:49-07:00",
+          "tree_id": "39418d51b4a4dae70822532c94c5fdb6a45e76e6",
+          "url": "https://github.com/risc0/risc0/commit/7a3841b836dce27ddc7b7a68acca3a400d04182b"
+        },
+        "date": 1718070489477,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9475615,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34989,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24251,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44100,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42487,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35191,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21234,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -22523,6 +22582,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718070262496,
+  "lastUpdate": 1718070494652,
   "repoUrl": "https://github.com/risc0/risc0"
 }
