@@ -5658,6 +5658,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "493d29f2686eb87b17994a66d19c3215b921604d",
+          "message": "Support for user specified po2 recursion programs (#1946)",
+          "timestamp": "2024-06-11T02:35:34Z",
+          "tree_id": "41b443c93777466f2dfcbef9d219eaf3df60af9d",
+          "url": "https://github.com/risc0/risc0/commit/493d29f2686eb87b17994a66d19c3215b921604d"
+        },
+        "date": 1718073731425,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9454949,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34768,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 23960,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43187,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41833,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34966,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21210,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -22700,6 +22759,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718073603008,
+  "lastUpdate": 1718073736630,
   "repoUrl": "https://github.com/risc0/risc0"
 }
