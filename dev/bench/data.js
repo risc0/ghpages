@@ -5717,6 +5717,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1aedb5b9b63c51abbcf0d4c20a2083b2ecbdbe4",
+          "message": "Add recursion preflight support for checked bytes/bigint (#1973)\n\nThis is interdependent with risc0/risczero-wip#593, which contains the\r\ntest for this functionality.",
+          "timestamp": "2024-06-14T13:07:29-07:00",
+          "tree_id": "d57c0a5d62370ce4b4119090ce20cae3f23ce940",
+          "url": "https://github.com/risc0/risc0/commit/b1aedb5b9b63c51abbcf0d4c20a2083b2ecbdbe4"
+        },
+        "date": 1718396581706,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 9532538,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35005,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24321,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43982,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42525,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35204,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21256,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -22877,6 +22936,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718396099876,
+  "lastUpdate": 1718396586995,
   "repoUrl": "https://github.com/risc0/risc0"
 }
