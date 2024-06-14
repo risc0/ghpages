@@ -22992,9 +22992,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1aedb5b9b63c51abbcf0d4c20a2083b2ecbdbe4",
+          "message": "Add recursion preflight support for checked bytes/bigint (#1973)\n\nThis is interdependent with risc0/risczero-wip#593, which contains the\r\ntest for this functionality.",
+          "timestamp": "2024-06-14T13:07:29-07:00",
+          "tree_id": "d57c0a5d62370ce4b4119090ce20cae3f23ce940",
+          "url": "https://github.com/risc0/risc0/commit/b1aedb5b9b63c51abbcf0d4c20a2083b2ecbdbe4"
+        },
+        "date": 1718397455120,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15048445,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28649,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18253,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31353,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31038,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28449,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16128,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1718397090291,
+  "lastUpdate": 1718397457441,
   "repoUrl": "https://github.com/risc0/risc0"
 }
