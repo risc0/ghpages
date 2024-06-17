@@ -23399,9 +23399,64 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "risc0",
+            "username": "risc0"
+          },
+          "committer": {
+            "name": "risc0",
+            "username": "risc0"
+          },
+          "id": "7c403d9233927dcc3359c12c25c415aa3611a5e4",
+          "message": "Add `g6.xlarge` Benchmarks + CI Check for Existing Benchmark Data",
+          "timestamp": "2024-06-17T16:20:50Z",
+          "url": "https://github.com/risc0/risc0/pull/1974/commits/7c403d9233927dcc3359c12c25c415aa3611a5e4"
+        },
+        "date": 1718651889848,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21298552,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 373652,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 374044,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 443726,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 317204,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 366894,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 291802,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1718650973116,
+  "lastUpdate": 1718651894636,
   "repoUrl": "https://github.com/risc0/risc0"
 }
