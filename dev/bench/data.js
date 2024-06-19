@@ -23405,6 +23405,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07e8d682af73bff0905eca31565824d2326200d7",
+          "message": "rust toolchain: build cargo with static libraries (#1987)\n\nSetting this option to `true` in the config.toml will build the cargo\r\nutility with static libraries. This avoids the versioning issue that\r\nwe've seen where cargo needs to link with older versions of OpenSSL.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-06-19T15:35:53Z",
+          "tree_id": "0829a6802025381923f65b21ff3d1107c3a9b0f7",
+          "url": "https://github.com/risc0/risc0/commit/07e8d682af73bff0905eca31565824d2326200d7"
+        },
+        "date": 1718811817961,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32482348,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28134,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18108,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31648,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31003,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28105,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15787,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -23575,6 +23634,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718811656436,
+  "lastUpdate": 1718811819898,
   "repoUrl": "https://github.com/risc0/risc0"
 }
