@@ -11731,6 +11731,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "920932e18f0420b1cb7ceb6f794018b624037eba",
+          "message": "Increase ZK Cycles to 1994 (#1970)\n\nUse 1994 cycles for zk noise. Note that this changes associated tests,\r\nincluding making a split test smaller so it continues to split only once\r\neven with the larger cycle overhead.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-06-21T01:21:41Z",
+          "tree_id": "dcc02e0edf339eec7d927096339d43cbca296491",
+          "url": "https://github.com/risc0/risc0/commit/920932e18f0420b1cb7ceb6f794018b624037eba"
+        },
+        "date": 1718933160275,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21736026,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 567837,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 563158,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 532398,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 392714,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 547102,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 417497,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -23693,6 +23752,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718812055164,
+  "lastUpdate": 1718933164819,
   "repoUrl": "https://github.com/risc0/risc0"
 }
