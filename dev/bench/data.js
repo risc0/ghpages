@@ -5953,6 +5953,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "54204614+sponge7991@users.noreply.github.com",
+            "name": "sponge7991",
+            "username": "sponge7991"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8144d80c82cf07f4a3d69446720f97f3206d9dd5",
+          "message": "fix  most of typos (#1990)\n\nI used `codespell` tool to find typos and check them. This PR will fix\r\nmost of the typos.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: morgangibbs87 <133707571+morgangibbs87@users.noreply.github.com>",
+          "timestamp": "2024-06-20T21:56:20-07:00",
+          "tree_id": "606614140570cf50df8a9c01948638435116a677",
+          "url": "https://github.com/risc0/risc0/commit/8144d80c82cf07f4a3d69446720f97f3206d9dd5"
+        },
+        "date": 1718946536984,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21012596,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35147,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24144,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43821,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42382,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34692,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21267,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -24106,6 +24165,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1718946273261,
+  "lastUpdate": 1718946542341,
   "repoUrl": "https://github.com/risc0/risc0"
 }
