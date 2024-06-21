@@ -18040,6 +18040,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6061ead2dc2b6dad4957f485e32510147b16dd2",
+          "message": "Bump syn from 2.0.63 to 2.0.67 (#2002)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.63 to 2.0.67.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.67</h2>\r\n<ul>\r\n<li>Produce more accurate error message locations for errors located at\r\nthe end of a nested group (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1679\">#1679</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1680\">#1680</a>)</li>\r\n<li>Support peeking <code>LitCStr</code> in ParseStream::peek (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1682\">#1682</a>)</li>\r\n</ul>\r\n<h2>2.0.66</h2>\r\n<ul>\r\n<li>Allow braced structs when parsing ExprLet (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1671\">#1671</a>)</li>\r\n</ul>\r\n<h2>2.0.65</h2>\r\n<ul>\r\n<li>Optimize the implementation of <code>Fold</code> to compile faster\r\n(<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1666\">#1666</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1667\">#1667</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1668\">#1668</a>)</li>\r\n</ul>\r\n<h2>2.0.64</h2>\r\n<ul>\r\n<li>Support using ParseBuffer across <code>catch_unwind</code> (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1646\">#1646</a>)</li>\r\n<li>Validate that the expression in a let-else ends in brace as required\r\nby rustc (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1648\">#1648</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1649\">#1649</a>)</li>\r\n<li>Legalize invalid const generic arguments by wrapping in braces (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1654\">#1654</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1655\">#1655</a>)</li>\r\n<li>Fix some expression precedence edge cases involving\r\n<code>break</code> and <code>return</code> in loop headers (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1656\">#1656</a>)</li>\r\n<li>Always print closure bodies with a brace when the closure has an\r\nexplicit return type (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1658\">#1658</a>)</li>\r\n<li>Automatically insert necessary parentheses in ToTokens for Expr when\r\nrequired by expression precedence (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1659\">#1659</a>)</li>\r\n<li>Support struct literal syntax in match guard expressions (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1662\">#1662</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/25f6299c982276bf55faac834538d78ea61d6bad\"><code>25f6299</code></a>\r\nRelease 2.0.67</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/666e15e95ff3763571f14af93be2641eecc5c2d9\"><code>666e15e</code></a>\r\nRevert &quot;List peekable token types in documentation of Peek\r\ntrait&quot;</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/2955706a736b5ca293eff45a3b2cade32baa01aa\"><code>2955706</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1683\">#1683</a>\r\nfrom dtolnay/peekimpl</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/0c902919850353ddfe4d90f5ba0474e6ac8aaaa8\"><code>0c90291</code></a>\r\nList peekable token types in documentation of Peek trait</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/26ce3d9134644b62298963d0abf0e9a3584f6896\"><code>26ce3d9</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1682\">#1682</a>\r\nfrom dtolnay/peekcstr</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/ec0c84b282c8ade12f6afaad7425b90ec5a1fd7d\"><code>ec0c84b</code></a>\r\nMake LitCStr peekable</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/8cb56cc59d8ea0117dd6df3915f4c730249618bc\"><code>8cb56cc</code></a>\r\nUpdate test suite to nightly-2024-06-20</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/7cc7eac262467d4c1e6cac8f9beeb20d256f7d49\"><code>7cc7eac</code></a>\r\nInline lookahead::is_delimiter into delimiter Token impls</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/8a2a86bce92d1f440a7b2d6d244ab825d426bb61\"><code>8a2a86b</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1681\">#1681</a>\r\nfrom dtolnay/offset</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/e86538ccd80494c8bf239b36550c0f9e298b50c5\"><code>e86538c</code></a>\r\nOptimize reverse iteration of TokenBuffer</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.63...2.0.67\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.63&new-version=2.0.67)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-06-21T23:37:24Z",
+          "tree_id": "2d7fb1dbd26d3c92e88c84b23da62685bf0a10f9",
+          "url": "https://github.com/risc0/risc0/commit/e6061ead2dc2b6dad4957f485e32510147b16dd2"
+        },
+        "date": 1719013425546,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32362130,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 84296,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 83096,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160045,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 145785,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 72869,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 62708,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -24224,6 +24283,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719013312737,
+  "lastUpdate": 1719013427492,
   "repoUrl": "https://github.com/risc0/risc0"
 }
