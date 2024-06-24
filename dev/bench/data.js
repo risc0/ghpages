@@ -18276,6 +18276,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "wylbzc4928@gmail.com",
+            "name": "PinelliaC",
+            "username": "PinelliaC"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "985d2e9db8d5a8ee7834f2f15155de34b858ad95",
+          "message": "fix: broken links in cargo-risczero (#1984)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-06-24T16:42:00Z",
+          "tree_id": "dee1019cd8a4128b56c8824b6121060e3a7f9f9f",
+          "url": "https://github.com/risc0/risc0/commit/985d2e9db8d5a8ee7834f2f15155de34b858ad95"
+        },
+        "date": 1719249800073,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31644090,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 89680,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 84592,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160085,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 145082,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 63895,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 66991,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -24519,6 +24578,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719247716829,
+  "lastUpdate": 1719249802132,
   "repoUrl": "https://github.com/risc0/risc0"
 }
