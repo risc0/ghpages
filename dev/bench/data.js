@@ -25352,6 +25352,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc3455b60477ae81c7f35ae0e041d52a892953da",
+          "message": "Simplify `Program` creation in `testutil` (#2031)\n\nThis adds a `program_from_instructions` helper that takes an iterator of\r\ninstructions. It was inspired by the `large_text` implementation.\r\n\r\nI did not add this helper directly to `Program` because I wanted this\r\nchange to only affect private internals, not touch public API.",
+          "timestamp": "2024-06-26T21:42:37Z",
+          "tree_id": "4fa2492da9ea8518d6e03af42d7d9c6d0ddfef14",
+          "url": "https://github.com/risc0/risc0/commit/bc3455b60477ae81c7f35ae0e041d52a892953da"
+        },
+        "date": 1719438624047,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31857054,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28328,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18267,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31428,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31036,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27452,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16170,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -25522,6 +25581,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719438562786,
+  "lastUpdate": 1719438626071,
   "repoUrl": "https://github.com/risc0/risc0"
 }
