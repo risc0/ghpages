@@ -12321,6 +12321,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e58b7f6b47dbed7206f55bdc0029700f22f4cf18",
+          "message": "risc0-build: change `risc0_data` to support revamped `rzup` (#2028)\n\nrzup will store toolchains in the ~/.rzup directory. Check if this new\r\ndirectory does not exist, fallback to the old directory.\r\n\r\ncloses: #2017",
+          "timestamp": "2024-06-26T18:21:02Z",
+          "tree_id": "04495fbd016fed826b4edb81910b836c89649953",
+          "url": "https://github.com/risc0/risc0/commit/e58b7f6b47dbed7206f55bdc0029700f22f4cf18"
+        },
+        "date": 1719426382356,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21388126,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 487898,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 483738,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 519321,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 316424,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 505579,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 388821,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -24873,6 +24932,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719381237814,
+  "lastUpdate": 1719426387019,
   "repoUrl": "https://github.com/risc0/risc0"
 }
