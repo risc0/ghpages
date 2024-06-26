@@ -6130,6 +6130,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1d42ae7ac3e1ad2f470685d0c13fb1cdea78106c",
+          "message": "Bump syn from 2.0.67 to 2.0.68 (#2014)\n\n[//]: # (dependabot-start)\r\n⚠️  **Dependabot is rebasing this PR** ⚠️ \r\n\r\nRebasing might not happen immediately, so don't worry if this takes some\r\ntime.\r\n\r\nNote: if you make any changes to this PR yourself, they will take\r\nprecedence over the rebase.\r\n\r\n---\r\n\r\n[//]: # (dependabot-end)\r\n\r\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.67 to 2.0.68.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.68</h2>\r\n<ul>\r\n<li>Improve panic location when <code>parse_quote!</code> parses invalid\r\nsyntax (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1690\">#1690</a>,\r\nthanks <a\r\nhref=\"https://github.com/stepancheg\"><code>@​stepancheg</code></a>)</li>\r\n<li>More efficient peek implementation for <code>Group</code> and\r\n<code>Lifetime</code> (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1687\">#1687</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/ecb0429297d3da2f20ab8559e41ddf8a2137d83b\"><code>ecb0429</code></a>\r\nRelease 2.0.68</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/37edbd23908006e77c42dae3e64f13f53470c5b6\"><code>37edbd2</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1690\">#1690</a>\r\nfrom stepancheg/track-called</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/43387720a3d52db3c148e5383cd6d9ef3b766611\"><code>4338772</code></a>\r\ntrack-caller in parse_quote_spanned</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/537b0c58f4d00c1f412fb83d258900843f65814e\"><code>537b0c5</code></a>\r\nUpdate test suite to nightly-2024-06-22</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/b088d5c2242478edb5b07e5a7221c37507287840\"><code>b088d5c</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1688\">#1688</a>\r\nfrom dtolnay/peeklit</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/9b4e478a98aeb90a113eeac2bf882402c8574dfb\"><code>9b4e478</code></a>\r\nRelocate Lit peek impls into lit module</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/38f2ddb7632a39d7ef98a836369acaf8fb9babf1\"><code>38f2ddb</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1687\">#1687</a>\r\nfrom dtolnay/fastpeek</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/ef20bfdfbf32c06a4930b26d683b61defb34b043\"><code>ef20bfd</code></a>\r\nOptimize the peek impl of Group and Lifetime</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/4b6c96a642be81c8020e0d4a6502b91facf5026e\"><code>4b6c96a</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1686\">#1686</a>\r\nfrom dtolnay/isempty</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/87d57920513951b05a4dd64a39d1d8a39c314624\"><code>87d5792</code></a>\r\nReword explanation of ParseBuffer::is_empty</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.67...2.0.68\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.67&new-version=2.0.68)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-06-26T05:41:30Z",
+          "tree_id": "c0012eb77e4bf291f422958fc5347714c8e11bd9",
+          "url": "https://github.com/risc0/risc0/commit/1d42ae7ac3e1ad2f470685d0c13fb1cdea78106c"
+        },
+        "date": 1719381226175,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21029748,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35252,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24211,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43806,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42421,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35033,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21210,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -24814,6 +24873,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719381225214,
+  "lastUpdate": 1719381237814,
   "repoUrl": "https://github.com/risc0/risc0"
 }
