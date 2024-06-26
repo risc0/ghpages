@@ -6248,6 +6248,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "leo@ethereum.org",
+            "name": "Leo",
+            "username": "leonardoalt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e307ae672d8119543ca1fae6dbbf8a5b9aecc70a",
+          "message": "Fix replacement string in the guest's zkvm dependency in case of no-std (#2030)\n\nCurrently `cargo-risczero --nostd` doesn't replace the\r\n\"risc0_feature_std\" placeholder, leading to the following snippet in\r\n`guest/Cargo.toml`, which doesn't compile.\r\n\r\n```toml\r\n[dependencies]\r\nrisc0-zkvm = { version = \"1.0.1\", default-features = false{{ risc0_feature_std }} }\r\n```",
+          "timestamp": "2024-06-26T19:45:12Z",
+          "tree_id": "c11643a6a8b2231f2288ad1b4424e69cad1fcc9d",
+          "url": "https://github.com/risc0/risc0/commit/e307ae672d8119543ca1fae6dbbf8a5b9aecc70a"
+        },
+        "date": 1719431511358,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20296592,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35619,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24448,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44030,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42418,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35619,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21466,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -25227,6 +25286,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719431375747,
+  "lastUpdate": 1719431516995,
   "repoUrl": "https://github.com/risc0/risc0"
 }
