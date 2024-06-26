@@ -6366,6 +6366,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5fb8abf9fa706bc6b272e8266b10f3b6e239289c",
+          "message": "updates for rust guest 1.78 (#2005)\n\nRust version 1.78 deprecates the `stdsimd` feature and introduces\r\nseveral compiler warnings and errors.\r\n\r\nFix the `stdsimd` errors by updating ahash dependency from `0.8.6` to\r\n`0.8.11` by updating lock files. Fix type errors by using them more\r\nexplicitly in the waldo example, and use `#cfg[features = \"prove\"]` to\r\nresolve dead code warnings.\r\n\r\n---------\r\n\r\nCo-authored-by: Nikolai Vazquez <hello@nikolaivazquez.com>",
+          "timestamp": "2024-06-26T22:58:22Z",
+          "tree_id": "4bd3fc9d508ca0f7c256c331bb21109a9d7f18ad",
+          "url": "https://github.com/risc0/risc0/commit/5fb8abf9fa706bc6b272e8266b10f3b6e239289c"
+        },
+        "date": 1719443097965,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22642382,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35377,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24459,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44129,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42526,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35452,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21463,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -25699,6 +25758,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719442981002,
+  "lastUpdate": 1719443103516,
   "repoUrl": "https://github.com/risc0/risc0"
 }
