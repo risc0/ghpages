@@ -25824,6 +25824,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8753f2c712280c2688e6b4492e8184e4572882fc",
+          "message": "fixing description for compress (#2027)\n\nfixes #1947",
+          "timestamp": "2024-06-27T17:48:24Z",
+          "tree_id": "deedc12ab22fca3ff6c21a7303cd54a9c2136bd7",
+          "url": "https://github.com/risc0/risc0/commit/8753f2c712280c2688e6b4492e8184e4572882fc"
+        },
+        "date": 1719510992908,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33420530,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27335,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18610,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31417,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30673,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 26696,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15938,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -25994,6 +26053,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719510905456,
+  "lastUpdate": 1719510995450,
   "repoUrl": "https://github.com/risc0/risc0"
 }
