@@ -6484,6 +6484,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "69df8bb2c288b5006c44927c89234a18850543b6",
+          "message": "serde: serializer: implement collect_str (#2035)\n\nThe panic in this function was causing chrono's `NaiveDate` to fail\r\nserialization. In other words, this prevented users from passing\r\n`NaiveDate` as an input for the guest.",
+          "timestamp": "2024-06-28T10:07:27-07:00",
+          "tree_id": "bf9684eec6adc60a6ddd407c0662cbf74607836a",
+          "url": "https://github.com/risc0/risc0/commit/69df8bb2c288b5006c44927c89234a18850543b6"
+        },
+        "date": 1719595513615,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22202814,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35049,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24286,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44386,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42938,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35195,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21333,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -26112,6 +26171,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719594709732,
+  "lastUpdate": 1719595519269,
   "repoUrl": "https://github.com/risc0/risc0"
 }
