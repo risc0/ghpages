@@ -26296,6 +26296,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "230bdbe1d64de9d2e04d4abc643b990d40f65c84",
+          "message": "add hash to toolchain builds (#2037)\n\nSetting this option allows rustc to display the build date and git hash,\r\nleading to improved transparency like so:\r\n```\r\n% ~/.risc0/rust/build/host/stage2/bin/rustc -vV          \r\nrustc 1.78.0-dev (b6c404a66 2024-06-21)\r\nbinary: rustc\r\ncommit-hash: b6c404a66d9775d8362b4f22cef94529235549f6\r\ncommit-date: 2024-06-21\r\nhost: aarch64-apple-darwin\r\nrelease: 1.78.0-dev\r\nLLVM version: 18.1.2\r\n```\r\ncloses: #2018",
+          "timestamp": "2024-06-28T20:25:49Z",
+          "tree_id": "efb50e6caa63e38af22d296a022ae4adc9906172",
+          "url": "https://github.com/risc0/risc0/commit/230bdbe1d64de9d2e04d4abc643b990d40f65c84"
+        },
+        "date": 1719606812167,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33654580,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 27927,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 18794,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31487,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30940,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28695,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16318,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -26466,6 +26525,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719606751860,
+  "lastUpdate": 1719606814262,
   "repoUrl": "https://github.com/risc0/risc0"
 }
