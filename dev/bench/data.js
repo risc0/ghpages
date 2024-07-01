@@ -6661,6 +6661,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e03ec3379374435065578553c92f6c559316695",
+          "message": "Add execute_only to bonsai sdk (#2042)",
+          "timestamp": "2024-07-01T20:09:13Z",
+          "tree_id": "e95f19827ff9ac7fc71cf8e28eccf43e5e9527f6",
+          "url": "https://github.com/risc0/risc0/commit/5e03ec3379374435065578553c92f6c559316695"
+        },
+        "date": 1719864956613,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21269268,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24280,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44216,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42686,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35247,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21283,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -26879,6 +26938,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719864829813,
+  "lastUpdate": 1719864962095,
   "repoUrl": "https://github.com/risc0/risc0"
 }
