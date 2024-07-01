@@ -13265,6 +13265,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e03ec3379374435065578553c92f6c559316695",
+          "message": "Add execute_only to bonsai sdk (#2042)",
+          "timestamp": "2024-07-01T20:09:13Z",
+          "tree_id": "e95f19827ff9ac7fc71cf8e28eccf43e5e9527f6",
+          "url": "https://github.com/risc0/risc0/commit/5e03ec3379374435065578553c92f6c559316695"
+        },
+        "date": 1719864813577,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22368074,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 569445,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 565062,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 535356,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 387746,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 548429,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 417907,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -26761,6 +26820,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719854116418,
+  "lastUpdate": 1719864818308,
   "repoUrl": "https://github.com/risc0/risc0"
 }
