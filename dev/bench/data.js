@@ -13147,6 +13147,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "138a09bb097f1b2d627daa28fc96dacb4bfb53bf",
+          "message": "Migrate bonsai-sdk to maybe_async (#1983)\n\nThis PR attempts to replace the old async module of bonsai-sdk with the\r\nmaybe-async (https://crates.io/crates/maybe_async) method of proc-macro\r\nrewriting.\r\n\r\n---------\r\n\r\nCo-authored-by: Rami Lukata <32602478+rlukata@users.noreply.github.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-07-01T10:08:07-07:00",
+          "tree_id": "58b27c3c6b07e39d400f942a99bdfc15dea6803b",
+          "url": "https://github.com/risc0/risc0/commit/138a09bb097f1b2d627daa28fc96dacb4bfb53bf"
+        },
+        "date": 1719853947486,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21779980,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 569358,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 565084,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 536456,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 385122,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 548754,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 417299,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -26525,6 +26584,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719606814262,
+  "lastUpdate": 1719853952053,
   "repoUrl": "https://github.com/risc0/risc0"
 }
