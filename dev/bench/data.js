@@ -6602,6 +6602,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "138a09bb097f1b2d627daa28fc96dacb4bfb53bf",
+          "message": "Migrate bonsai-sdk to maybe_async (#1983)\n\nThis PR attempts to replace the old async module of bonsai-sdk with the\r\nmaybe-async (https://crates.io/crates/maybe_async) method of proc-macro\r\nrewriting.\r\n\r\n---------\r\n\r\nCo-authored-by: Rami Lukata <32602478+rlukata@users.noreply.github.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-07-01T10:08:07-07:00",
+          "tree_id": "58b27c3c6b07e39d400f942a99bdfc15dea6803b",
+          "url": "https://github.com/risc0/risc0/commit/138a09bb097f1b2d627daa28fc96dacb4bfb53bf"
+        },
+        "date": 1719854107390,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20501340,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34320,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24105,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44082,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42335,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34658,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21120,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -26643,6 +26702,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719854030676,
+  "lastUpdate": 1719854112886,
   "repoUrl": "https://github.com/risc0/risc0"
 }
