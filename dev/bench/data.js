@@ -13383,6 +13383,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83d1cb292ea055575813b44dec23d4c11deca3fd",
+          "message": "[chore] improving word choice for describing composite receipts (#2048)\n\nimplementing changes based on [this\r\ncomment](https://github.com/risc0/risc0/pull/2027#discussion_r1661687289)",
+          "timestamp": "2024-07-02T19:47:27Z",
+          "tree_id": "a317e6480039ab8cc1d40ddf223c9c07166df7f7",
+          "url": "https://github.com/risc0/risc0/commit/83d1cb292ea055575813b44dec23d4c11deca3fd"
+        },
+        "date": 1719949908257,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22601400,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 549277,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 545366,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 530709,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 374127,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 534279,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 406474,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -27056,6 +27115,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1719949912013,
+  "lastUpdate": 1719949918249,
   "repoUrl": "https://github.com/risc0/risc0"
 }
