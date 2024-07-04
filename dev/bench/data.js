@@ -6779,6 +6779,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2142bf52fee70fdd7429b07cabc81630007b274b",
+          "message": "Update guest toolchain to 1.78.0 (#2057)",
+          "timestamp": "2024-07-03T18:06:35-07:00",
+          "tree_id": "c888eb524a1c1d11775d814565634b57881e7765",
+          "url": "https://github.com/risc0/risc0/commit/2142bf52fee70fdd7429b07cabc81630007b274b"
+        },
+        "date": 1720055965756,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20491306,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35198,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24353,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43919,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42353,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34763,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21149,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -27410,6 +27469,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1720055673086,
+  "lastUpdate": 1720055971308,
   "repoUrl": "https://github.com/risc0/risc0"
 }
