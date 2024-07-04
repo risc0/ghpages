@@ -20518,6 +20518,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "848cfc70607c052ae2b241ce84d8226c378a2e42",
+          "message": "Add comments to control ids to make it easier to tell which one is which (#2055)",
+          "timestamp": "2024-07-03T22:35:30-07:00",
+          "tree_id": "76eee7674c184c945a7605db64146ba6284402fe",
+          "url": "https://github.com/risc0/risc0/commit/848cfc70607c052ae2b241ce84d8226c378a2e42"
+        },
+        "date": 1720071600091,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31899734,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 111847,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 96698,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160347,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147282,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 111645,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 83382,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -27528,6 +27587,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1720071596101,
+  "lastUpdate": 1720071601986,
   "repoUrl": "https://github.com/risc0/risc0"
 }
