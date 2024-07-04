@@ -13737,6 +13737,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "275cd2ee62d33e73a78dcfca632be56a53da277e",
+          "message": "Apply checked_bytes to recursion circuit (#2026)\n\nApply checked_bytes recursion circuit fixes from risc0/risczero-wip#598",
+          "timestamp": "2024-07-04T18:16:54Z",
+          "tree_id": "5f25f94af6ffb9d35edcad1cc4db82d464805600",
+          "url": "https://github.com/risc0/risc0/commit/275cd2ee62d33e73a78dcfca632be56a53da277e"
+        },
+        "date": 1720117273098,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21849504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 552008,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 547625,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 533864,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 376224,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 532324,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 407154,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -27705,6 +27764,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1720071812057,
+  "lastUpdate": 1720117277852,
   "repoUrl": "https://github.com/risc0/risc0"
 }
