@@ -27712,6 +27712,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "275cd2ee62d33e73a78dcfca632be56a53da277e",
+          "message": "Apply checked_bytes to recursion circuit (#2026)\n\nApply checked_bytes recursion circuit fixes from risc0/risczero-wip#598",
+          "timestamp": "2024-07-04T18:16:54Z",
+          "tree_id": "5f25f94af6ffb9d35edcad1cc4db82d464805600",
+          "url": "https://github.com/risc0/risc0/commit/275cd2ee62d33e73a78dcfca632be56a53da277e"
+        },
+        "date": 1720117516637,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32038720,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 26932,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 17496,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31229,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31007,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28494,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15624,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -27882,6 +27941,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1720117421442,
+  "lastUpdate": 1720117518666,
   "repoUrl": "https://github.com/risc0/risc0"
 }
