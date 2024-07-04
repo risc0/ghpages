@@ -6838,6 +6838,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "848cfc70607c052ae2b241ce84d8226c378a2e42",
+          "message": "Add comments to control ids to make it easier to tell which one is which (#2055)",
+          "timestamp": "2024-07-03T22:35:30-07:00",
+          "tree_id": "76eee7674c184c945a7605db64146ba6284402fe",
+          "url": "https://github.com/risc0/risc0/commit/848cfc70607c052ae2b241ce84d8226c378a2e42"
+        },
+        "date": 1720071739692,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21657444,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35083,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24309,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43881,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42312,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35019,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21316,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -27587,6 +27646,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1720071601986,
+  "lastUpdate": 1720071745212,
   "repoUrl": "https://github.com/risc0/risc0"
 }
