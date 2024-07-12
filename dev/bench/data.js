@@ -21041,6 +21041,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Paul",
+            "username": "pdg744",
+            "email": "paul.gafni@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "29c3158e06e7e2b4bcb2f77c546e051fa29198ab",
+          "message": "Revising terminology entry for deterministic builds (#2074)\n\nWe have a couple of open tickets (#1084, #1658) related to improving our\r\ndocumentation around reproducible/deterministic builds.\r\n\r\nThis PR makes some minimal revisions to the existing terminology entry\r\nin order to clarify the meaning/importance of deterministic builds and\r\nhow to use them.\r\n\r\nIMO, we should hold off on adding a dedicated page on this topic until\r\nwe address the engineering question of how to integrate deterministic\r\nbuilds into the foundry template developer workflow (which currently\r\ndoes not include `cargo risczero`). See #2075 &\r\nhttps://github.com/risc0/risc0-ethereum/issues/141\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-07-11T19:30:38Z",
+          "url": "https://github.com/risc0/risc0/commit/29c3158e06e7e2b4bcb2f77c546e051fa29198ab"
+        },
+        "date": 1720810669953,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31820876,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 68939,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 56664,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 154199,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 137826,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 71073,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 59489,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -28226,6 +28283,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1720810643962,
+  "lastUpdate": 1720810672025,
   "repoUrl": "https://github.com/risc0/risc0"
 }
