@@ -21568,6 +21568,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76ee0c5f89b570f39bf7b0ea4bed6df9531868bc",
+          "message": "rust-toolchain: remove deprecated `changelog-seen` (#2099)\n\nThis has been removed as of 1.79 and if left in this file, it will break\r\nthe rust toolchain build for 1.79.",
+          "timestamp": "2024-07-16T18:50:44Z",
+          "tree_id": "5e6ad301d48186eb084a0e34c02936db7a506b9d",
+          "url": "https://github.com/risc0/risc0/commit/76ee0c5f89b570f39bf7b0ea4bed6df9531868bc"
+        },
+        "date": 1721156182096,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31998802,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 68699,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 68475,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 157028,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 141091,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 71869,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 60210,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -28928,6 +28987,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721156142106,
+  "lastUpdate": 1721156184159,
   "repoUrl": "https://github.com/risc0/risc0"
 }
