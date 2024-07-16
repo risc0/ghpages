@@ -28345,6 +28345,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42e866536e298ef7c545cbd82f56224e3b3131b6",
+          "message": "Revert \"risc0-build: change `risc0_data` to support revamped `rzup` (#2086)\n\nThis reverts commit e58b7f6b47dbed7206f55bdc0029700f22f4cf18. After\r\ndiscussing, we decided to go with a different directory location. I'll\r\nfollow up with a change that implements the new directory path.",
+          "timestamp": "2024-07-16T01:09:12Z",
+          "tree_id": "fcde6d76cbfa82c6bfbbd1baf67492536c753dbe",
+          "url": "https://github.com/risc0/risc0/commit/42e866536e298ef7c545cbd82f56224e3b3131b6"
+        },
+        "date": 1721092579426,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31976302,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28407,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 19409,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32807,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31773,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29023,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16826,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -28515,6 +28574,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721092484582,
+  "lastUpdate": 1721092581378,
   "repoUrl": "https://github.com/risc0/risc0"
 }
