@@ -14437,6 +14437,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aab2613ddb2c861d090b252d1b8f94786ea5d532",
+          "message": "zkvm: allow client to use servers with matching major/minor numbers (#2100)\n\nThis allows the patch number to be less than the client's patch number.",
+          "timestamp": "2024-07-16T20:33:37Z",
+          "tree_id": "58e992d2207739496cb79749c6606833dde9eeef",
+          "url": "https://github.com/risc0/risc0/commit/aab2613ddb2c861d090b252d1b8f94786ea5d532"
+        },
+        "date": 1721162311126,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21679918,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 465545,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 461986,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 485454,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 334886,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 454456,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 352292,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -29105,6 +29164,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721156282200,
+  "lastUpdate": 1721162314172,
   "repoUrl": "https://github.com/risc0/risc0"
 }
