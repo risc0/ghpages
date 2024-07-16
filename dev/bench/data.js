@@ -29112,6 +29112,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aab2613ddb2c861d090b252d1b8f94786ea5d532",
+          "message": "zkvm: allow client to use servers with matching major/minor numbers (#2100)\n\nThis allows the patch number to be less than the client's patch number.",
+          "timestamp": "2024-07-16T20:33:37Z",
+          "tree_id": "58e992d2207739496cb79749c6606833dde9eeef",
+          "url": "https://github.com/risc0/risc0/commit/aab2613ddb2c861d090b252d1b8f94786ea5d532"
+        },
+        "date": 1721162451011,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31986914,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 28475,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 19533,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32887,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31983,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28030,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 16926,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-g6.xlarge": [
@@ -29282,6 +29341,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721162424437,
+  "lastUpdate": 1721162453222,
   "repoUrl": "https://github.com/risc0/risc0"
 }
