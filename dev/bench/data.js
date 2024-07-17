@@ -14555,6 +14555,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a639d14a4ff487bf245fe16b575244cf0c97c887",
+          "message": "ZKVM-483: Enable Metal by default on macOS (#2092)\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-07-17T18:13:26Z",
+          "tree_id": "4b4d03c04926a181b5a07e7e60549ffee2f5930c",
+          "url": "https://github.com/risc0/risc0/commit/a639d14a4ff487bf245fe16b575244cf0c97c887"
+        },
+        "date": 1721240298085,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21695858,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 473218,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 470736,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 494930,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345793,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 453872,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 353245,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -29341,6 +29400,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721162453222,
+  "lastUpdate": 1721240301175,
   "repoUrl": "https://github.com/risc0/risc0"
 }
