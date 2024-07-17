@@ -7306,6 +7306,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a639d14a4ff487bf245fe16b575244cf0c97c887",
+          "message": "ZKVM-483: Enable Metal by default on macOS (#2092)\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-07-17T18:13:26Z",
+          "tree_id": "4b4d03c04926a181b5a07e7e60549ffee2f5930c",
+          "url": "https://github.com/risc0/risc0/commit/a639d14a4ff487bf245fe16b575244cf0c97c887"
+        },
+        "date": 1721240413408,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19896972,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34824,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24202,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43831,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42147,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34940,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21077,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -29459,6 +29518,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721240377724,
+  "lastUpdate": 1721240418716,
   "repoUrl": "https://github.com/risc0/risc0"
 }
