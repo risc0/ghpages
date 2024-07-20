@@ -22630,6 +22630,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c5092a348123cbf243f6b6e36a479416b33a5ab",
+          "message": "Bump syn from 2.0.68 to 2.0.71 (#2108)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.68 to 2.0.71.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.71</h2>\r\n<ul>\r\n<li>Do not require mutable borrow in Punctuated::get() (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1706\">#1706</a>,\r\nthanks <a\r\nhref=\"https://github.com/lemunozm\"><code>@​lemunozm</code></a>)</li>\r\n</ul>\r\n<h2>2.0.70</h2>\r\n<ul>\r\n<li>Improve parenthesization of closures, jumps, ranges, chained\r\ncomparisons, and let (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1694\">#1694</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1695\">#1695</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1698\">#1698</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1699\">#1699</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1700\">#1700</a>)</li>\r\n</ul>\r\n<h2>2.0.69</h2>\r\n<ul>\r\n<li>Correctly parenthesize labeled loops inside a break value (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1692\">#1692</a>)</li>\r\n<li>Add <code>Punctuated::get</code> and <code>get_mut</code> (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1693\">#1693</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/f34dc7bb53185a11f3aa45fc691488547c8c76ee\"><code>f34dc7b</code></a>\r\nRelease 2.0.71</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/896d58bdb2508a089100247f01f7271222c518df\"><code>896d58b</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1706\">#1706</a>\r\nfrom lemunozm/patch-1</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/dd7e269f577dc33bcf92bec2583f7e53609081fb\"><code>dd7e269</code></a>\r\nRemove mut from Puntuated::get()</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/5c67e2689791db44258d99402ae6d05b1898d9a3\"><code>5c67e26</code></a>\r\nRelease 2.0.70</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/935c1e1817d411a02d09d2315ed533df12f70ace\"><code>935c1e1</code></a>\r\nConfigure out more full-only expression kinds in print_expr</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/e664375b4981637a490f1f30dd252536371ef2cc\"><code>e664375</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1704\">#1704</a>\r\nfrom dtolnay/fixup</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/f1daf234e942ffda27ed45ec67aa6cd984081c2a\"><code>f1daf23</code></a>\r\nEnable expression fixups in 'derive' mode</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/678dbc2e50904de7b80f10f4d355be5536a8bceb\"><code>678dbc2</code></a>\r\nUpdate test suite to nightly-2024-07-08</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/628e2f7003d17ae0c02d0da076577001e62015a3\"><code>628e2f7</code></a>\r\nIgnore needless_update clippy lint</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/c3e378cdda142d83f14055661001d39533199f3f\"><code>c3e378c</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1703\">#1703</a>\r\nfrom dtolnay/cast</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.68...2.0.71\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.68&new-version=2.0.71)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-07-20T01:54:08Z",
+          "tree_id": "ad076769b4c26087979d03b2780d8b189242ddc3",
+          "url": "https://github.com/risc0/risc0/commit/5c5092a348123cbf243f6b6e36a479416b33a5ab"
+        },
+        "date": 1721440994956,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31493272,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 75676,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 66892,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 136808,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 134162,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 71143,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58553,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -30108,6 +30167,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721440919880,
+  "lastUpdate": 1721440997063,
   "repoUrl": "https://github.com/risc0/risc0"
 }
