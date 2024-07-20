@@ -14791,6 +14791,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5f815179ba6b26766c2a34b9b1c6d723846345ab",
+          "message": "Bump bytes from 1.6.0 to 1.6.1 (#2107)\n\nBumps [bytes](https://github.com/tokio-rs/bytes) from 1.6.0 to 1.6.1.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/tokio-rs/bytes/releases\">bytes's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>Bytes 1.6.1</h2>\r\n<p>This release fixes a bug where <code>Bytes::is_unique</code> returns\r\nincorrect values when the <code>Bytes</code> originates from a shared\r\n<code>BytesMut</code>. (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/718\">#718</a>)</p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/tokio-rs/bytes/blob/master/CHANGELOG.md\">bytes's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h1>1.6.1 (July 13, 2024)</h1>\r\n<p>This release fixes a bug where <code>Bytes::is_unique</code> returns\r\nincorrect values when\r\nthe <code>Bytes</code> originates from a shared <code>BytesMut</code>.\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/718\">#718</a>)</p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/fd13c7dcdb840653bf81294d141da77d3f1f9e1f\"><code>fd13c7d</code></a>\r\nchore: prepare bytes v1.6.1 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/720\">#720</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/6b4b0eda2980f09df18380c80f8ae6109ae70d83\"><code>6b4b0ed</code></a>\r\nFix <code>Bytes::is_unique</code> when created from shared\r\n<code>BytesMut</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/718\">#718</a>)</li>\r\n<li>See full diff in <a\r\nhref=\"https://github.com/tokio-rs/bytes/compare/v1.6.0...v1.6.1\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=bytes&package-manager=cargo&previous-version=1.6.0&new-version=1.6.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-07-19T17:49:08-07:00",
+          "tree_id": "45da42007fb99c2b90c1bfb7d538adbdfd8e6d86",
+          "url": "https://github.com/risc0/risc0/commit/5f815179ba6b26766c2a34b9b1c6d723846345ab"
+        },
+        "date": 1721436846742,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20387570,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 459687,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 457699,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 469416,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 338018,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 422451,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 334839,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -29695,6 +29754,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721355911094,
+  "lastUpdate": 1721436849932,
   "repoUrl": "https://github.com/risc0/risc0"
 }
