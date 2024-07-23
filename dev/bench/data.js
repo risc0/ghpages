@@ -15145,6 +15145,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff284c51d254da246152da75417cc0765af719e5",
+          "message": "Bump syn from 2.0.71 to 2.0.72 (#2117)\n\n[//]: # (dependabot-start)\r\n⚠️  **Dependabot is rebasing this PR** ⚠️ \r\n\r\nRebasing might not happen immediately, so don't worry if this takes some\r\ntime.\r\n\r\nNote: if you make any changes to this PR yourself, they will take\r\nprecedence over the rebase.\r\n\r\n---\r\n\r\n[//]: # (dependabot-end)\r\n\r\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.71 to 2.0.72.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.72</h2>\r\n<ul>\r\n<li>Parse <code>use&lt;'a, T&gt;</code> precise capturing bounds (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1707\">#1707</a>,\r\nthanks <a\r\nhref=\"https://github.com/compiler-errors\"><code>@​compiler-errors</code></a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/c59828ff6f52e2d5d7069900d6577863ea220d48\"><code>c59828f</code></a>\r\nRelease 2.0.72</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/5821371256df59cb0f0f8b879be0f3561cf72b12\"><code>5821371</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1709\">#1709</a>\r\nfrom dtolnay/up</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/87401bf9b8220c933e5f784ae5ecc1bfa369e09d\"><code>87401bf</code></a>\r\nAdd issue links for missing syntax support</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/a3f2f5050ee141c32b84a45e784bb00bb185f86a\"><code>a3f2f50</code></a>\r\nCategorize newly failing rust repo source files</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/378f4e2be3b0b2912b1d1b5ac2a39e64bd7f05db\"><code>378f4e2</code></a>\r\nUpdate test suite to nightly-2024-07-21</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/788f8cb9e15608f333f4bdd843c2cd10774cb56f\"><code>788f8cb</code></a>\r\nImprove errors on unexpected token in precise capture bound</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/11b2371a66ba3628cc99ed07fbf574c2140eea82\"><code>11b2371</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1707\">#1707</a>\r\nfrom compiler-errors/precise-capturing</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/bed32d23ce08bea0a0be2491427605402b3fce9b\"><code>bed32d2</code></a>\r\nParse use&lt;&gt; precise capturing as Verbatim</li>\r\n<li>See full diff in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.71...2.0.72\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.71&new-version=2.0.72)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-07-23T22:06:20Z",
+          "tree_id": "bb78eca65729707faa8c502be9490011bb83c3e0",
+          "url": "https://github.com/risc0/risc0/commit/ff284c51d254da246152da75417cc0765af719e5"
+        },
+        "date": 1721772662216,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21425986,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 479120,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 476673,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 483625,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 346906,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 468535,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 361105,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -30226,6 +30285,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721441065341,
+  "lastUpdate": 1721772665286,
   "repoUrl": "https://github.com/risc0/risc0"
 }
