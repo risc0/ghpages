@@ -7719,6 +7719,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a8c0b1a523392aa7c308fcb8892e1157e87786a",
+          "message": "fix unused warnings generated when template is compiled with path deps (#2122)",
+          "timestamp": "2024-07-24T22:01:55Z",
+          "tree_id": "4a61d8da7adf894bcdc6df835f3cf6461fafc581",
+          "url": "https://github.com/risc0/risc0/commit/7a8c0b1a523392aa7c308fcb8892e1157e87786a"
+        },
+        "date": 1721858914413,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21578642,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35695,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24380,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43888,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42416,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35436,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21361,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -30698,6 +30757,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721858802575,
+  "lastUpdate": 1721858919903,
   "repoUrl": "https://github.com/risc0/risc0"
 }
