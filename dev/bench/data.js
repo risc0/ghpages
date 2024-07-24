@@ -7660,6 +7660,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "91e112c8d045c67fbbe7b27ccc9446eb76166a96",
+          "message": "removing outdated references to 100 bits (#2121)\n\nThe new work from Block & Tiwari indicated that our security target was\r\n100 bits.\r\n\r\nOur intended security target has been 99 bits for the last few months,\r\nbut I noticed a few places where we are still referencing 100 bits.\r\n\r\nThis PR removes the references to 100 bits, and makes some minor\r\nlanguage modifications to clarify.",
+          "timestamp": "2024-07-23T23:57:13Z",
+          "tree_id": "a1514b52b16ae1af54d9c873f51c9c956c830c1c",
+          "url": "https://github.com/risc0/risc0/commit/91e112c8d045c67fbbe7b27ccc9446eb76166a96"
+        },
+        "date": 1721779430232,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21351600,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35646,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24464,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44066,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42508,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35659,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21508,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -30521,6 +30580,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721779331480,
+  "lastUpdate": 1721779435791,
   "repoUrl": "https://github.com/risc0/risc0"
 }
