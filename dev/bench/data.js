@@ -15381,6 +15381,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a8c0b1a523392aa7c308fcb8892e1157e87786a",
+          "message": "fix unused warnings generated when template is compiled with path deps (#2122)",
+          "timestamp": "2024-07-24T22:01:55Z",
+          "tree_id": "4a61d8da7adf894bcdc6df835f3cf6461fafc581",
+          "url": "https://github.com/risc0/risc0/commit/7a8c0b1a523392aa7c308fcb8892e1157e87786a"
+        },
+        "date": 1721858799896,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21739030,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 479722,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 476308,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 470399,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 344638,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 466820,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 360514,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -30639,6 +30698,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721858795194,
+  "lastUpdate": 1721858802575,
   "repoUrl": "https://github.com/risc0/risc0"
 }
