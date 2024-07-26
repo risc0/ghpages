@@ -7837,6 +7837,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "715fa6776b16af8e9d6c0b97d072b4051643bd63",
+          "message": "Remove page_size parameter from serialized MemoryImage (#2133)",
+          "timestamp": "2024-07-26T17:34:23Z",
+          "tree_id": "2edecab96e8063444ff0038f7bba8c7659e2f6eb",
+          "url": "https://github.com/risc0/risc0/commit/715fa6776b16af8e9d6c0b97d072b4051643bd63"
+        },
+        "date": 1722015661329,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20856902,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35128,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24295,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44146,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42615,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35297,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21401,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -31052,6 +31111,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722015550501,
+  "lastUpdate": 1722015666962,
   "repoUrl": "https://github.com/risc0/risc0"
 }
