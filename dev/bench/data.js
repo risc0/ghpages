@@ -23456,6 +23456,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "715fa6776b16af8e9d6c0b97d072b4051643bd63",
+          "message": "Remove page_size parameter from serialized MemoryImage (#2133)",
+          "timestamp": "2024-07-26T17:34:23Z",
+          "tree_id": "2edecab96e8063444ff0038f7bba8c7659e2f6eb",
+          "url": "https://github.com/risc0/risc0/commit/715fa6776b16af8e9d6c0b97d072b4051643bd63"
+        },
+        "date": 1722015541488,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31426040,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 111342,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94434,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 157041,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 144888,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 108682,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 82105,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -30934,6 +30993,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721955181745,
+  "lastUpdate": 1722015543752,
   "repoUrl": "https://github.com/risc0/risc0"
 }
