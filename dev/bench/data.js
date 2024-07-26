@@ -7778,6 +7778,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d2d00d8d4588e7f17dd06fcf70500fffc72c827",
+          "message": "Bump serde_with from 3.8.3 to 3.9.0 (#2126)\n\nBumps [serde_with](https://github.com/jonasbb/serde_with) from 3.8.3 to\r\n3.9.0.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/jonasbb/serde_with/releases\">serde_with's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>serde_with v3.9.0</h2>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>\r\n<p>Deserialize a map` and skip all elements failing to deserialize by <a\r\nhref=\"https://github.com/johnmave126\"><code>@​johnmave126</code></a> (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/763\">#763</a>)</p>\r\n<p><code>MapSkipError</code> acts like a map\r\n(<code>HashMap</code>/<code>BTreeMap</code>), but keys or values that\r\nfail to deserialize, like are ignored.</p>\r\n<p>For formats with heterogeneously typed maps, we can collect only the\r\nelements where both key and value are deserializable.\r\nThis is also useful in conjunction to <code>#[serde(flatten)]</code> to\r\nignore some entries when capturing additional fields.</p>\r\n<pre lang=\"text\"><code>// JSON\r\n&quot;value&quot;: {&quot;0&quot;: &quot;v0&quot;, &quot;5&quot;:\r\n&quot;v5&quot;, &quot;str&quot;: &quot;str&quot;, &quot;10&quot;: 2},\r\n<p>// Rust\r\n#[serde_as(as = &quot;MapSkipError&lt;DisplayFromStr, _&gt;&quot;)]\r\nvalue: BTreeMap&lt;u32, String&gt;,</p>\r\n<p>// Only deserializes entries with a numerical key and a string value,\r\ni.e.,\r\n{0 =&gt; &quot;v0&quot;, 5 =&gt; &quot;v5&quot;}\r\n</code></pre></p>\r\n</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/c3e489f4e571fadad9e656c28332b3708bd8cf0e\"><code>c3e489f</code></a>\r\nBump version to 3.9.0 (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/770\">#770</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/57ad8778c46c0dd689002930430e3f994af1ebb1\"><code>57ad877</code></a>\r\nBump version to 3.9.0</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/d038657903639832437abcceca546395a0283034\"><code>d038657</code></a>\r\nImplement <code>MapSkipError</code>, analogous to\r\n<code>VecSkipError</code>, but for map-like data ...</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/aaa0a2958917da51867ec90398d95826f8ebd717\"><code>aaa0a29</code></a>\r\nUpdate serde_with/src/guide/serde_as_transformations.md</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/17dec1112b55bce9f7742ecf9d3414dcc089d26d\"><code>17dec11</code></a>\r\nAdd tests to make sure syntax errors are not suppressed.</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/97543d0c2d7588d9c2855c329bcc8c2b1107a404\"><code>97543d0</code></a>\r\nImplement MapSkipError, skipping un-deserializable entries.</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/bf6724d2c09f35fb0ff917856829acf5362fed78\"><code>bf6724d</code></a>\r\nMove VecSkipError to a separate file, preparing for MapSkipError</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/31e9172cabefd31b3cca12d24139e416e75ab6d8\"><code>31e9172</code></a>\r\nFix dead code warning by correcting a typo (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/769\">#769</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/f5b2626307f7fb49275232a7f1925bfb5a200a37\"><code>f5b2626</code></a>\r\nFix dead code warnings in tests</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/4ad4a1b4e9088219b7877d64aa225e6d352298e2\"><code>4ad4a1b</code></a>\r\nFix dead code warning by correcting a typo</li>\r\n<li>See full diff in <a\r\nhref=\"https://github.com/jonasbb/serde_with/compare/v3.8.3...v3.9.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=serde_with&package-manager=cargo&previous-version=3.8.3&new-version=3.9.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-07-26T00:38:42Z",
+          "tree_id": "4b7961e366bc9eed348105320446d42452502168",
+          "url": "https://github.com/risc0/risc0/commit/9d2d00d8d4588e7f17dd06fcf70500fffc72c827"
+        },
+        "date": 1721954719797,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21425458,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35093,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24290,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43878,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42433,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35202,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21279,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -30816,6 +30875,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1721954607475,
+  "lastUpdate": 1721954725333,
   "repoUrl": "https://github.com/risc0/risc0"
 }
