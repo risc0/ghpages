@@ -23633,6 +23633,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6209bebe8305aa6b79220b5aa5426532f03a1871",
+          "message": "Workaround for LLVM compiler bug for rv32im (#2129)\n\nSee: https://github.com/rust-lang/rust/issues/128212\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-07-26T18:13:41Z",
+          "tree_id": "e7d6d32a2fc4d0909b8f173c24389ff6eafaf8b0",
+          "url": "https://github.com/risc0/risc0/commit/6209bebe8305aa6b79220b5aa5426532f03a1871"
+        },
+        "date": 1722017905973,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31913136,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 110105,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94651,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158802,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146638,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 109379,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 81593,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -31111,6 +31170,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722015666962,
+  "lastUpdate": 1722017908032,
   "repoUrl": "https://github.com/risc0/risc0"
 }
