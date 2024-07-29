@@ -23810,6 +23810,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5483fb5d4fd5aaffe68970d18eca65827a04f6ed",
+          "message": "Only check pointer if length is non-zero. (#2137)\n\nA pointer is allowed to be any undefined value if the original slice's\r\nlength is 0.\r\n\r\nSee: https://github.com/rust-lang/rust/issues/128257",
+          "timestamp": "2024-07-29T09:52:27Z",
+          "tree_id": "fabb9792d7dca463baf19804a536ebb2e92d4a58",
+          "url": "https://github.com/risc0/risc0/commit/5483fb5d4fd5aaffe68970d18eca65827a04f6ed"
+        },
+        "date": 1722247022207,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31861288,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 110230,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94536,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158261,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 144685,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 109313,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 81769,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -31288,6 +31347,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722018036204,
+  "lastUpdate": 1722247024421,
   "repoUrl": "https://github.com/risc0/risc0"
 }
