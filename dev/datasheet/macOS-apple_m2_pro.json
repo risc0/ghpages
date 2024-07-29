@@ -2,8 +2,8 @@
   {
     "name": "execute",
     "hashfn": "N/A",
-    "throughput": 37044776.0,
-    "duration": 28362084,
+    "throughput": 35514350.0,
+    "duration": 29584292,
     "cycles": 1050667,
     "ram": 0,
     "seal": 0
@@ -11,8 +11,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 80000.63,
-    "duration": 819193541,
+    "throughput": 81091.08,
+    "duration": 808177666,
     "cycles": 65536,
     "ram": 419955400,
     "seal": 215268
@@ -20,8 +20,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 105007.125,
-    "duration": 1248220042,
+    "throughput": 104378.45,
+    "duration": 1255738125,
     "cycles": 131072,
     "ram": 839910088,
     "seal": 238308
@@ -29,8 +29,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 110737.64,
-    "duration": 2367252750,
+    "throughput": 110766.96,
+    "duration": 2366626333,
     "cycles": 262144,
     "ram": 1679819464,
     "seal": 250020
@@ -38,8 +38,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 112193.6,
-    "duration": 4673065291,
+    "throughput": 112845.42,
+    "duration": 4646072292,
     "cycles": 524288,
     "ram": 3359638216,
     "seal": 262244
@@ -47,8 +47,8 @@
   {
     "name": "rv32im",
     "hashfn": "sha-256",
-    "throughput": 112590.39,
-    "duration": 9313192542,
+    "throughput": 112005.43,
+    "duration": 9361832000,
     "cycles": 1048576,
     "ram": 6719275720,
     "seal": 275492
@@ -56,8 +56,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 73367.6,
-    "duration": 893255292,
+    "throughput": 73686.48,
+    "duration": 889389750,
     "cycles": 65536,
     "ram": 419955400,
     "seal": 215268
@@ -65,8 +65,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 88376.07,
-    "duration": 1483116375,
+    "throughput": 86915.77,
+    "duration": 1508034750,
     "cycles": 131072,
     "ram": 839910088,
     "seal": 238308
@@ -74,8 +74,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 94074.445,
-    "duration": 2786559125,
+    "throughput": 93639.68,
+    "duration": 2799496917,
     "cycles": 262144,
     "ram": 1679819464,
     "seal": 250020
@@ -83,8 +83,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 95477.484,
-    "duration": 5491221500,
+    "throughput": 95826.26,
+    "duration": 5471235167,
     "cycles": 524288,
     "ram": 3359638216,
     "seal": 262244
@@ -92,8 +92,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 96611.04,
-    "duration": 10853583208,
+    "throughput": 96096.375,
+    "duration": 10911712834,
     "cycles": 1048576,
     "ram": 6719275720,
     "seal": 275492
@@ -101,8 +101,8 @@
   {
     "name": "lift",
     "hashfn": "poseidon2",
-    "throughput": 156574.67,
-    "duration": 1674242708,
+    "throughput": 156813.55,
+    "duration": 1671692250,
     "cycles": 262144,
     "ram": 1133513872,
     "seal": 222668
@@ -110,8 +110,8 @@
   {
     "name": "join",
     "hashfn": "poseidon2",
-    "throughput": 145868.52,
-    "duration": 1797125333,
+    "throughput": 146305.03,
+    "duration": 1791763292,
     "cycles": 262144,
     "ram": 1133513872,
     "seal": 222668
@@ -119,8 +119,8 @@
   {
     "name": "succinct",
     "hashfn": "poseidon2",
-    "throughput": 82357.9,
-    "duration": 12731942041,
+    "throughput": 82404.26,
+    "duration": 12724778667,
     "cycles": 1048576,
     "ram": 6719275720,
     "seal": 222668
@@ -128,8 +128,8 @@
   {
     "name": "identity_p254",
     "hashfn": "poseidon2",
-    "throughput": 7887.9004,
-    "duration": 33233683292,
+    "throughput": 7991.632,
+    "duration": 32802310375,
     "cycles": 262144,
     "ram": 1588169616,
     "seal": 222668
