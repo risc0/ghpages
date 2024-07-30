@@ -16028,6 +16028,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Frank Laub",
+            "username": "flaub",
+            "email": "flaub@risc0.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "cdb96239634d1b845866e79608fb21d82c1d4a41",
+          "message": "Merge branch 'main' into morgan/g6.xlarge",
+          "timestamp": "2024-07-29T23:54:45Z",
+          "url": "https://github.com/risc0/risc0/commit/cdb96239634d1b845866e79608fb21d82c1d4a41"
+        },
+        "date": 1722298323344,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21140094,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 476996,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 473771,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 494301,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 353642,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 465568,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 361068,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -31579,6 +31636,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722298036158,
+  "lastUpdate": 1722298326274,
   "repoUrl": "https://github.com/risc0/risc0"
 }
