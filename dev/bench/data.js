@@ -16085,6 +16085,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2206284cb6d2e62ec2f7e716268a806690519a7e",
+          "message": "guest: update rust toolchain to 1.79.0 (#2142)",
+          "timestamp": "2024-07-30T02:29:50Z",
+          "tree_id": "adb03b4893df91f54d738aaea5b0c863ac549d25",
+          "url": "https://github.com/risc0/risc0/commit/2206284cb6d2e62ec2f7e716268a806690519a7e"
+        },
+        "date": 1722307143134,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21312992,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 483284,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 482755,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 480999,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 343153,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 464907,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 359273,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -31693,6 +31752,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722298418804,
+  "lastUpdate": 1722307146303,
   "repoUrl": "https://github.com/risc0/risc0"
 }
