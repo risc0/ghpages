@@ -24394,6 +24394,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d46bc542cf1a799dd01248fe6422ac523be6288",
+          "message": "Attempt to find r0vm from an rzup install (#2104)",
+          "timestamp": "2024-07-30T04:01:18Z",
+          "tree_id": "cb7fd8337d289f3229b2d295963702f405737404",
+          "url": "https://github.com/risc0/risc0/commit/3d46bc542cf1a799dd01248fe6422ac523be6288"
+        },
+        "date": 1722312469860,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30983692,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 61967,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 65698,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 143865,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 135899,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 70841,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 62491,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -31929,6 +31988,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722312365737,
+  "lastUpdate": 1722312472097,
   "repoUrl": "https://github.com/risc0/risc0"
 }
