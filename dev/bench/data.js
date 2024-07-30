@@ -8248,6 +8248,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ab6864a703420ecbe22b0eb94f0cb4ceb56faa0",
+          "message": "client/server: improve version mismatch error (#2123)\n\nThis change implements version checking on the client side. Upon\r\ncreation of the ParentProcessConnection, the client will query the r0vm\r\nbinary for its version and emit a verbose error message upon a version\r\nmismatch. We have previously discussed that this could be a handshake\r\nbewteen the client and server but I saw a downside to this solution: if\r\nwe change the server to get this to work using `Client.connect`, it\r\nmeans that this solution will not work for older servers and will only\r\nwork for new servers. For example, if a user decides to use an older\r\nserver (i.e. v0.21) on a newer client, we will end up getting the old\r\nerror message which was difficult to understand:\r\n\r\n```\r\nthread 'main' panicked at risc0/r0vm/src/lib.rs:192:18:\r\ncalled `Result::unwrap()` on an `Err` value: incompatible client version: 1.1.0-alpha.1, server version: 1.0.3\r\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\r\nthread 'main' panicked at host/src/main.rs:41:10:\r\ncalled `Result::unwrap()` on an `Err` value: failed to fill whole buffer\r\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\r\n```\r\n\r\nImproving client/server compatibility based off of changing both client\r\nand server will only work for new servers. Where as changing only the\r\nclient will allow the version check to work for older servers.\r\n\r\nThis implementation will result in an error during proving or execution.\r\nWe discussed implementing this check as a part of `default_prover()` but\r\nthis function returns a trait object. Since `default_prover` is\r\ninfallable, including the compatibility check as a part of this function\r\nwill either force panics or change the type signature of this function.\r\nTherefore, I went with adding this check at the time of the subprocess\r\nconnection which happens at the beginning of execution.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-07-30T10:59:13Z",
+          "tree_id": "11bb9c282bd06804050e05f3a7d2120a031d048f",
+          "url": "https://github.com/risc0/risc0/commit/0ab6864a703420ecbe22b0eb94f0cb4ceb56faa0"
+        },
+        "date": 1722337966803,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21520172,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35154,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24335,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43665,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42341,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35178,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21255,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -32342,6 +32401,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722337484368,
+  "lastUpdate": 1722337972423,
   "repoUrl": "https://github.com/risc0/risc0"
 }
