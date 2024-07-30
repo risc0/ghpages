@@ -31633,9 +31633,66 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Frank Laub",
+            "username": "flaub",
+            "email": "flaub@risc0.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "cdb96239634d1b845866e79608fb21d82c1d4a41",
+          "message": "Merge branch 'main' into morgan/g6.xlarge",
+          "timestamp": "2024-07-29T23:54:45Z",
+          "url": "https://github.com/risc0/risc0/commit/cdb96239634d1b845866e79608fb21d82c1d4a41"
+        },
+        "date": 1722298413490,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23179686,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 382730,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 375195,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 441749,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 311981,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 369027,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 298654,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722298326274,
+  "lastUpdate": 1722298418804,
   "repoUrl": "https://github.com/risc0/risc0"
 }
