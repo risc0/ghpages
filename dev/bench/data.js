@@ -8366,6 +8366,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c2ef20dd0666f766ea6c8fba8ae9661461dbe00",
+          "message": "Bump lazy-regex from 3.1.0 to 3.2.0 (#2155)\n\nBumps [lazy-regex](https://github.com/Canop/lazy-regex) from 3.1.0 to\r\n3.2.0.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/Canop/lazy-regex/blob/main/CHANGELOG.md\">lazy-regex's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h3>v3.2.0 - 2024-07-25</h3>\r\n<ul>\r\n<li><code>regex_if!</code> and <code>bytes_regex_if!</code></li>\r\n<li><code>regex_switch!</code> and <code>bytes_regex_switch!</code></li>\r\n</ul>\r\n<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li>See full diff in <a\r\nhref=\"https://github.com/Canop/lazy-regex/commits\">compare view</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=lazy-regex&package-manager=cargo&previous-version=3.1.0&new-version=3.2.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\n---------\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-07-30T20:57:02Z",
+          "tree_id": "7ddd93bce886382040f25c9cd32f2e0d56211a2b",
+          "url": "https://github.com/risc0/risc0/commit/1c2ef20dd0666f766ea6c8fba8ae9661461dbe00"
+        },
+        "date": 1722373428446,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20448858,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35302,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24215,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43841,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42319,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35248,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21354,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -32814,6 +32873,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722373416664,
+  "lastUpdate": 1722373434315,
   "repoUrl": "https://github.com/risc0/risc0"
 }
