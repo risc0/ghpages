@@ -32575,9 +32575,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133707571+morgangibbs87@users.noreply.github.com",
+            "name": "morgangibbs87",
+            "username": "morgangibbs87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39832b21d807a70d5ca1f6b26e824f0c1ce7d90a",
+          "message": "Add `g6.xlarge` Benchmarks + CI Check for Existing Benchmark Data (#1974)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-07-30T13:01:20-06:00",
+          "tree_id": "182336e3fc7d03269e476e8747a6e8e2b99db818",
+          "url": "https://github.com/risc0/risc0/commit/39832b21d807a70d5ca1f6b26e824f0c1ce7d90a"
+        },
+        "date": 1722366883018,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22315962,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 432101,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 442531,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 476467,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 329702,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 422682,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 340735,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722366496071,
+  "lastUpdate": 1722366889410,
   "repoUrl": "https://github.com/risc0/risc0"
 }
