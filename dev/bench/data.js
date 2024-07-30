@@ -8189,6 +8189,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89bca7403a7563240eeb4a39a336ea71417ff05a",
+          "message": "ZKVM-481: CUDA performance improvements (#2054)",
+          "timestamp": "2024-07-30T09:50:31Z",
+          "tree_id": "fba9e72e5c733f34660ece2afadb642871d4b378",
+          "url": "https://github.com/risc0/risc0/commit/89bca7403a7563240eeb4a39a336ea71417ff05a"
+        },
+        "date": 1722333437024,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20480422,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34538,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24013,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43803,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42592,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34426,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21076,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -32165,6 +32224,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722333373777,
+  "lastUpdate": 1722333442863,
   "repoUrl": "https://github.com/risc0/risc0"
 }
