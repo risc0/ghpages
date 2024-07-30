@@ -16321,6 +16321,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89bca7403a7563240eeb4a39a336ea71417ff05a",
+          "message": "ZKVM-481: CUDA performance improvements (#2054)",
+          "timestamp": "2024-07-30T09:50:31Z",
+          "tree_id": "fba9e72e5c733f34660ece2afadb642871d4b378",
+          "url": "https://github.com/risc0/risc0/commit/89bca7403a7563240eeb4a39a336ea71417ff05a"
+        },
+        "date": 1722333320757,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21960606,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 534508,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 539454,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539532,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 372659,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 520015,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 405399,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -32047,6 +32106,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722312837172,
+  "lastUpdate": 1722333323884,
   "repoUrl": "https://github.com/risc0/risc0"
 }
