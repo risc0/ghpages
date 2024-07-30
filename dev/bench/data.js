@@ -8014,6 +8014,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Frank Laub",
+            "username": "flaub",
+            "email": "flaub@risc0.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "cdb96239634d1b845866e79608fb21d82c1d4a41",
+          "message": "Merge branch 'main' into morgan/g6.xlarge",
+          "timestamp": "2024-07-29T23:54:45Z",
+          "url": "https://github.com/risc0/risc0/commit/cdb96239634d1b845866e79608fb21d82c1d4a41"
+        },
+        "date": 1722298030452,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20137344,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35358,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24283,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43889,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42324,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35296,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21320,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -31522,6 +31579,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722297985987,
+  "lastUpdate": 1722298036158,
   "repoUrl": "https://github.com/risc0/risc0"
 }
