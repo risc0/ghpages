@@ -8071,6 +8071,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2206284cb6d2e62ec2f7e716268a806690519a7e",
+          "message": "guest: update rust toolchain to 1.79.0 (#2142)",
+          "timestamp": "2024-07-30T02:29:50Z",
+          "tree_id": "adb03b4893df91f54d738aaea5b0c863ac549d25",
+          "url": "https://github.com/risc0/risc0/commit/2206284cb6d2e62ec2f7e716268a806690519a7e"
+        },
+        "date": 1722307628179,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20071188,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34228,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 23968,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43933,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42356,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 33888,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21054,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -31752,6 +31811,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722307146303,
+  "lastUpdate": 1722307633870,
   "repoUrl": "https://github.com/risc0/risc0"
 }
