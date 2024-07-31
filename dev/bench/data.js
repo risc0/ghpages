@@ -8425,6 +8425,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc3730d2a5fb19e62b43d14e0a2300d5f6bc532a",
+          "message": "ZKVM-480: Add experimental support for sys_fork (#2084)\n\nCo-authored-by: Nikolai Vazquez <hello@nikolaivazquez.com>",
+          "timestamp": "2024-07-30T17:30:34-07:00",
+          "tree_id": "52ef987bb139ce26fe25f97bebdeac74709701ee",
+          "url": "https://github.com/risc0/risc0/commit/bc3730d2a5fb19e62b43d14e0a2300d5f6bc532a"
+        },
+        "date": 1722386245523,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20974106,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35072,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24220,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44110,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42616,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35054,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21351,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -32991,6 +33050,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722386173073,
+  "lastUpdate": 1722386253327,
   "repoUrl": "https://github.com/risc0/risc0"
 }
