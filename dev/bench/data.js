@@ -16911,6 +16911,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ff09d94baf7076892df7bea918dd6018ceb2580",
+          "message": "CI: replace cargo risczero install with rzup install (#2149)\n\nThis replaces uses of `cargo risczero install` with the new `rzup\r\ninstall rust $toolchain_version`. There are several workloads that\r\nutilize the cargo risczero utility so I left the CI rules for those\r\nintact.\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-07-31T20:10:27-07:00",
+          "tree_id": "a232475d98f4f57490649a1a97482c8ae50e5e66",
+          "url": "https://github.com/risc0/risc0/commit/0ff09d94baf7076892df7bea918dd6018ceb2580"
+        },
+        "date": 1722482068554,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21560856,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 533956,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 540817,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539598,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 376958,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 510824,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 399270,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -33050,6 +33109,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722386253327,
+  "lastUpdate": 1722482071255,
   "repoUrl": "https://github.com/risc0/risc0"
 }
