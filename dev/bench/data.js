@@ -33814,9 +33814,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89f3970c6a6b45d943368794109c33dcc65f4b91",
+          "message": "build(deps): bump regex from 1.10.5 to 1.10.6 (#2175)\n\nBumps [regex](https://github.com/rust-lang/regex) from 1.10.5 to 1.10.6.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/rust-lang/regex/blob/master/CHANGELOG.md\">regex's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h1>1.10.6 (2024-08-02)</h1>\r\n<p>This is a new patch release with a fix for the <code>unstable</code>\r\ncrate feature that\r\nenables <code>std::str::Pattern</code> trait integration.</p>\r\n<p>Bug fixes:</p>\r\n<ul>\r\n<li>[BUG <a\r\nhref=\"https://redirect.github.com/rust-lang/regex/issues/1219\">#1219</a>](<a\r\nhref=\"https://redirect.github.com/rust-lang/regex/pull/1219\">rust-lang/regex#1219</a>):\r\nFix the <code>Pattern</code> trait implementation as a result of nightly\r\nAPI breakage.</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/ab88aa5c6824ebe7c4b4c72fe5191681783b3a68\"><code>ab88aa5</code></a>\r\n1.10.6</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/76f2d30d85eb70336b76d20bb6eb462de6391321\"><code>76f2d30</code></a>\r\nchangelog: 1.10.6</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/2970d2940dfab8cb4bd8f7122ba8ee50d2e37f67\"><code>2970d29</code></a>\r\nunstable: fit <code>Pattern</code> trait implementation</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/8856fe36ac7dc37989e6ffb26b5fc57189bae626\"><code>8856fe3</code></a>\r\nregex-cli-0.2.1</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/c4c76a19b80b981b249f2af1c7b66bcfb0ba1fa0\"><code>c4c76a1</code></a>\r\nregex-test-0.1.1</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/c2f9ca49a66c51d88b71e5b2248d86789765d2ce\"><code>c2f9ca4</code></a>\r\nregex-test: bump toml dependency</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/1288b83af3d8b441efb264ed6651b0dfb9c2df78\"><code>1288b83</code></a>\r\nregex-lite-0.1.6</li>\r\n<li>See full diff in <a\r\nhref=\"https://github.com/rust-lang/regex/compare/1.10.5...1.10.6\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=regex&package-manager=cargo&previous-version=1.10.5&new-version=1.10.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-08-02T13:25:39-07:00",
+          "tree_id": "f58818998bdd489c9cf6bd0f2e26ff734f286c14",
+          "url": "https://github.com/risc0/risc0/commit/89f3970c6a6b45d943368794109c33dcc65f4b91"
+        },
+        "date": 1722631089050,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21761910,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 432684,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 442064,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 469718,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 324008,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 422037,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 333633,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722630919727,
+  "lastUpdate": 1722631097235,
   "repoUrl": "https://github.com/risc0/risc0"
 }
