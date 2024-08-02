@@ -33696,9 +33696,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78cbaff8e9080db6995db9f7bc2af53a8c2fe41e",
+          "message": "Add support for ZKR accelerators (#2146)\n\n* Add new execute_zkr system call to invoke a zkr\r\n* Add zkr registry to allow guests to specify zkr by control id",
+          "timestamp": "2024-08-02T07:14:43Z",
+          "tree_id": "8c107ded8cee1e79553e1140c7a55d34aff02907",
+          "url": "https://github.com/risc0/risc0/commit/78cbaff8e9080db6995db9f7bc2af53a8c2fe41e"
+        },
+        "date": 1722583578992,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22602672,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 444708,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 452650,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 484439,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 335367,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 423666,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 341853,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722583262138,
+  "lastUpdate": 1722583586298,
   "repoUrl": "https://github.com/risc0/risc0"
 }
