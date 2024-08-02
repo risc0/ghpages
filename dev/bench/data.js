@@ -8602,6 +8602,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78cbaff8e9080db6995db9f7bc2af53a8c2fe41e",
+          "message": "Add support for ZKR accelerators (#2146)\n\n* Add new execute_zkr system call to invoke a zkr\r\n* Add zkr registry to allow guests to specify zkr by control id",
+          "timestamp": "2024-08-02T07:14:43Z",
+          "tree_id": "8c107ded8cee1e79553e1140c7a55d34aff02907",
+          "url": "https://github.com/risc0/risc0/commit/78cbaff8e9080db6995db9f7bc2af53a8c2fe41e"
+        },
+        "date": 1722583246322,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20995066,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35626,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24458,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43893,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42497,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35576,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21414,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -33640,6 +33699,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722583251853,
+  "lastUpdate": 1722583262138,
   "repoUrl": "https://github.com/risc0/risc0"
 }
