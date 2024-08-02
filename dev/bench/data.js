@@ -8543,6 +8543,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ad99645f6930ac5a204e37055b10db98298a5bfd",
+          "message": "rzup: Remove existing file/directory before creating new symlink (#2172)\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-08-02T06:48:38Z",
+          "tree_id": "36c31f863b9926dd962f3466b8e468fd58e87e80",
+          "url": "https://github.com/risc0/risc0/commit/ad99645f6930ac5a204e37055b10db98298a5bfd"
+        },
+        "date": 1722581713689,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21931210,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35039,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24149,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44159,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42763,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34939,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21198,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -33404,6 +33463,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722581623581,
+  "lastUpdate": 1722581721489,
   "repoUrl": "https://github.com/risc0/risc0"
 }
