@@ -33460,9 +33460,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ad99645f6930ac5a204e37055b10db98298a5bfd",
+          "message": "rzup: Remove existing file/directory before creating new symlink (#2172)\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-08-02T06:48:38Z",
+          "tree_id": "36c31f863b9926dd962f3466b8e468fd58e87e80",
+          "url": "https://github.com/risc0/risc0/commit/ad99645f6930ac5a204e37055b10db98298a5bfd"
+        },
+        "date": 1722581938892,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21835740,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 440682,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 453759,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 481772,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 334175,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 435372,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 346868,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722581721489,
+  "lastUpdate": 1722581946683,
   "repoUrl": "https://github.com/risc0/risc0"
 }
