@@ -17383,6 +17383,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "75b1810f8f7de6d621b4efb0b9b733af3c5ec435",
+          "message": "restore metal feature to published crates (#2179)\n\nThis feature was removed by #2092. This change restores the metal\r\nfeatures back to published crates to prevent breaking semver.",
+          "timestamp": "2024-08-02T23:30:20Z",
+          "tree_id": "a176856f020ddfa9c8b5b8fdeac33c6aeb0a84ce",
+          "url": "https://github.com/risc0/risc0/commit/75b1810f8f7de6d621b4efb0b9b733af3c5ec435"
+        },
+        "date": 1722641659979,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21703202,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 532396,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 538071,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 550282,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 378158,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 519840,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 406007,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -33994,6 +34053,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722631281053,
+  "lastUpdate": 1722641662790,
   "repoUrl": "https://github.com/risc0/risc0"
 }
