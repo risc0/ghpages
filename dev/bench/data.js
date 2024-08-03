@@ -34345,9 +34345,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e6ca468f3fb94ef6939b4f7875848312a708528",
+          "message": "Update rv32im circuit and zkr predicates (#2173)",
+          "timestamp": "2024-08-02T19:12:03-07:00",
+          "tree_id": "3bab2423eab23ce02daa8ab6eb5a6b87e286f752",
+          "url": "https://github.com/risc0/risc0/commit/1e6ca468f3fb94ef6939b4f7875848312a708528"
+        },
+        "date": 1722651837702,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22586338,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 435922,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 446852,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 479693,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 329361,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 430844,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 340350,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722651468160,
+  "lastUpdate": 1722651845296,
   "repoUrl": "https://github.com/risc0/risc0"
 }
