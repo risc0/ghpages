@@ -8779,6 +8779,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e6ca468f3fb94ef6939b4f7875848312a708528",
+          "message": "Update rv32im circuit and zkr predicates (#2173)",
+          "timestamp": "2024-08-02T19:12:03-07:00",
+          "tree_id": "3bab2423eab23ce02daa8ab6eb5a6b87e286f752",
+          "url": "https://github.com/risc0/risc0/commit/1e6ca468f3fb94ef6939b4f7875848312a708528"
+        },
+        "date": 1722651886253,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20262210,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 23992,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43555,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42249,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34442,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21015,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -34407,6 +34466,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722651845296,
+  "lastUpdate": 1722651894198,
   "repoUrl": "https://github.com/risc0/risc0"
 }
