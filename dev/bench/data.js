@@ -17501,6 +17501,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e6ca468f3fb94ef6939b4f7875848312a708528",
+          "message": "Update rv32im circuit and zkr predicates (#2173)",
+          "timestamp": "2024-08-02T19:12:03-07:00",
+          "tree_id": "3bab2423eab23ce02daa8ab6eb5a6b87e286f752",
+          "url": "https://github.com/risc0/risc0/commit/1e6ca468f3fb94ef6939b4f7875848312a708528"
+        },
+        "date": 1722651365265,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21775666,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 528970,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 534450,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 540039,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 388739,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 515049,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 402090,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -34230,6 +34289,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722641798572,
+  "lastUpdate": 1722651368138,
   "repoUrl": "https://github.com/risc0/risc0"
 }
