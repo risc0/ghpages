@@ -26577,6 +26577,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fff65339577b227c173fe09cb0c313178565af0c",
+          "message": "Receipt now supports borsh serialization (#2184)\n\nThis supersedes #2150\r\n\r\n---------\r\n\r\nCo-authored-by: Erce Can Bektüre <canerce99@hotmail.com>\r\nCo-authored-by: Erce Can Bektüre <47954181+ercecan@users.noreply.github.com>",
+          "timestamp": "2024-08-05T04:11:52-04:00",
+          "tree_id": "015d3ef4a5f1a7f9eac5b4fd1d454710299fbf95",
+          "url": "https://github.com/risc0/risc0/commit/fff65339577b227c173fe09cb0c313178565af0c"
+        },
+        "date": 1722846076317,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30744844,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 69690,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 69710,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 125310,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 126704,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 78229,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 64797,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -34584,6 +34643,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722845883840,
+  "lastUpdate": 1722846078432,
   "repoUrl": "https://github.com/risc0/risc0"
 }
