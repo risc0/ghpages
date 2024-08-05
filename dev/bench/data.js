@@ -34758,9 +34758,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "41407352+hunjixin@users.noreply.github.com",
+            "name": "Mike",
+            "username": "hunjixin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a671a5b6e84e15f1ca8c5ae3d07fe442ee0fdec8",
+          "message": "fix:tty log mix cargo and guest log (#1826)\n\nwhen compiling gust code, i find a strange log ```bevy-guest: Starting\r\nbuild for riscv32im-risc0-zkvm-elfmethods(build) ```, after some test\r\nand code dig, i found that this log is mixed by two lines.\r\n```rs\r\n    Building [=======================> ] 251/254: bevy-methods(build)                                                \r\nbevy-guest: Starting build for riscv32im-risc0-zkvm-elf\r\n\r\n//mixed log\r\nbevy-guest: Starting build for riscv32im-risc0-zkvm-elfmethods(build)\r\n```\r\n\r\nso just write new line in tty env\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-05T04:29:55-04:00",
+          "tree_id": "f8c6e9d2e958208650c5f9223721344a9eda133c",
+          "url": "https://github.com/risc0/risc0/commit/a671a5b6e84e15f1ca8c5ae3d07fe442ee0fdec8"
+        },
+        "date": 1722847274946,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22923808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 443729,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 453835,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 483424,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 339417,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 432523,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 344479,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722846937657,
+  "lastUpdate": 1722847282433,
   "repoUrl": "https://github.com/risc0/risc0"
 }
