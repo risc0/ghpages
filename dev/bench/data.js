@@ -26872,6 +26872,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "welzwo@gmail.com",
+            "name": "Wolfgang Welz",
+            "username": "Wollac"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a7dba48de383921996046ce1809ef5814e3df41a",
+          "message": "fix: enable `std` for `hex` (#2189)\n\nThis PR fixes building `cargo-risczero` without default features. This\r\nis currently causing CI failures in\r\nhttps://github.com/risc0/risc0-ethereum.\r\n\r\nUsing `?` to convert a `FromHexError` into an `anyhow:Error` requires\r\nthe `std` feature of the the `hex` crate. This happens in the following\r\nline:\r\n\r\nhttps://github.com/risc0/risc0/blob/b57db72db8c79a6f6bc52ad581189d167ba7eeef/risc0/cargo-risczero/src/commands/verify.rs#L73\r\n\r\nThis currently leads to compilation failures when building\r\n`cargo-risczero` without default features, otherwise the correctly\r\nconfigured `hex` will be pulled in via some other dependencies.\r\n\r\nSince `std` is the only feature enabled with `default` in hex, removing\r\n`default-features = false` seams preferable to explicitly adding the\r\n`std` feature.",
+          "timestamp": "2024-08-06T14:17:08-07:00",
+          "tree_id": "8e2327a58832d3e46f27bfe219b9a00378ee1472",
+          "url": "https://github.com/risc0/risc0/commit/a7dba48de383921996046ce1809ef5814e3df41a"
+        },
+        "date": 1722979344700,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 29985232,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 76128,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 70550,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 137842,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 136443,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 84533,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 55507,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -34938,6 +34997,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722979275205,
+  "lastUpdate": 1722979346884,
   "repoUrl": "https://github.com/risc0/risc0"
 }
