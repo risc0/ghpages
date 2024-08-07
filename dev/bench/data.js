@@ -35289,9 +35289,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7baa8738496925d18b8f3e562581147cc14ec743",
+          "message": "Bakeoff with various codecs and approaches for host/guest comms (#2182)\n\nResults:\r\n\r\n```\r\n| name             | user_cycles | total_cycles | comment\r\n| read             |      137567 |       262144 | use env::read\r\n| read_framed      |       64763 |       262144 | use env::read_framed\r\n| read_buffered    |      336317 |       524288 | use env::read_buffered\r\n| bincode          |      294994 |       524288 | \r\n| bincode_framed   |       59821 |       262144 | \r\n| bincode_buffered |      343044 |       524288 |\r\n| borsh            |       11872 |       131072 | framed\r\n| cbor             |     1178661 |      1572864 | framed\r\n| message_pack     |      171431 |       524288 | framed\r\n| postcard         |       53791 |       262144 | framed\r\n```\r\n\r\nAlso included:\r\n* Use `stability::unstable` to mark new experimental APIs\r\n* Add unstable `env::read_frame()` and `env::read_framed()`\r\n* Drop the `borsh` feature flag\r\n* Drop obsolete `loop` example, it's replaced by `datasheet`\r\n* Update `guest_run` bench to run a program in the guest and print\r\ncycles. Use a one-hot approach because the number of cycles should never\r\nchange\r\n* Update `datasheet` to allow `--max-po2`. Default is `20` but can be\r\n`[16, 24]`. This allows testing large segment sizes",
+          "timestamp": "2024-08-07T02:31:57Z",
+          "tree_id": "3acfe492dff6f9bbd5803b220486ebb06ded3ecd",
+          "url": "https://github.com/risc0/risc0/commit/7baa8738496925d18b8f3e562581147cc14ec743"
+        },
+        "date": 1722998661662,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22330418,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 433154,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 447710,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 478619,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 344523,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 427911,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 338497,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1722998665439,
+  "lastUpdate": 1722998677789,
   "repoUrl": "https://github.com/risc0/risc0"
 }
