@@ -9133,6 +9133,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2418646+hashcashier@users.noreply.github.com",
+            "name": "Rami",
+            "username": "hashcashier"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a00e954a20337fb007e0520c7cc795013957562c",
+          "message": "feat(zkVM): Feature flag to use `embedded-allocator` as a dynamic heap allocator (#2174)\n\nThis adds a `heap-embedded-alloc` feature to `risc0-zkvm` and\r\n`risc0-zkvm-platform` crates. When used, the default bump allocator is\r\nreplaced with a linked-list allocator managed by the\r\n`embedded-allocator` crate, allowing for reuse of deallocated memory.\r\n\r\nThis PR also modifies `send_recv_slice` to allocate memory using the\r\nglobal allocator rather than by explicitly invoking the bump allocator's\r\n`sys_alloc_words` function to ensure the method stays compatible, with a\r\nnote that `send_recv_slice` will not reclaim memory used to store host\r\nresponses.\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-08-08T18:06:22Z",
+          "tree_id": "0795f79fb59541f5927366494eb6dd499930c3a7",
+          "url": "https://github.com/risc0/risc0/commit/a00e954a20337fb007e0520c7cc795013957562c"
+        },
+        "date": 1723140751327,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21879350,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34457,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24012,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44024,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42517,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34331,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 20954,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -35705,6 +35764,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723140728277,
+  "lastUpdate": 1723140759244,
   "repoUrl": "https://github.com/risc0/risc0"
 }
