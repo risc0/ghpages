@@ -18091,6 +18091,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0a97a60fa5a748cacfa2f0068f7a43be4021a6e2",
+          "message": "Add cpu for x86 mac (#2203)\n\nThis adds back cpu support for x86 mac",
+          "timestamp": "2024-08-08T09:00:09-07:00",
+          "tree_id": "48448d2874f4083011dbae14bca126ab612d71fd",
+          "url": "https://github.com/risc0/risc0/commit/0a97a60fa5a748cacfa2f0068f7a43be4021a6e2"
+        },
+        "date": 1723133063706,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21321682,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 521604,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 526336,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539038,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 385256,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 507798,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 397291,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -35351,6 +35410,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1722998677789,
+  "lastUpdate": 1723133066586,
   "repoUrl": "https://github.com/risc0/risc0"
 }
