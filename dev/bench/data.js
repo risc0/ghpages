@@ -18681,6 +18681,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e1707dc130cd2131e8528e1b94f5a9bc53a0a600",
+          "message": "Update dev docs and rzup readme to use revamed rzup (#2202)",
+          "timestamp": "2024-08-09T08:26:24Z",
+          "tree_id": "2eda1b184b4b5e93ccab776df775246388ff9d3f",
+          "url": "https://github.com/risc0/risc0/commit/e1707dc130cd2131e8528e1b94f5a9bc53a0a600"
+        },
+        "date": 1723192226046,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21042124,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 521055,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 525974,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 542319,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 381645,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 506382,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 398315,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -36531,6 +36590,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723186181325,
+  "lastUpdate": 1723192228890,
   "repoUrl": "https://github.com/risc0/risc0"
 }
