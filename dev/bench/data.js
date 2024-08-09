@@ -27993,6 +27993,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb18ffa077d851d31f8598d76685d7cb088b446c",
+          "message": "build(deps): bump tabled from 0.15.0 to 0.16.0 (#2191)\n\nBumps [tabled](https://github.com/zhiburt/tabled) from 0.15.0 to 0.16.0.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/zhiburt/tabled/blob/master/CHANGELOG.md\">tabled's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h2>[0.16.0] - 2024-08-05</h2>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>Added <code>#[tabled(crate = &quot;&quot;)]</code> attribute.</li>\r\n<li>Added <code>#[tabled(format = &quot;&quot;,\r\nformat(&quot;&quot;))]</code> attribute.</li>\r\n<li>Support for expressions in\r\n<code>#[tabled(display_with(&quot;&quot;))]</code></li>\r\n<li>Added tupple combinations of settings, just as <code>Settings</code>\r\ndoes.</li>\r\n<li>Added <code>PriorityRight</code> and <code>PriorityLeft</code>\r\npriorities.</li>\r\n<li>Created back\r\n<code>Layout</code>/<code>Reverse</code>/<code>MarginColor</code>/<code>PaddingColor</code>.</li>\r\n<li>Added custom template setting in <code>ExtendedTable</code> (by <a\r\nhref=\"https://github.com/brianheineman\"><code>@​brianheineman</code></a>)</li>\r\n</ul>\r\n<h1>Changed</h1>\r\n<ul>\r\n<li>Stabilized <code>unicode-width</code> dependency so we expect the\r\noutcome (but probably there shall be done adjustments for it further\r\nsupport).</li>\r\n<li>Work on format macros (by <a\r\nhref=\"https://github.com/thomassimmer\"><code>@​thomassimmer</code></a>).</li>\r\n<li>Renamed <code>wrap::wrap_text</code> and\r\n<code>truncate::truncate_text</code>.</li>\r\n<li>Renamed <code>CellInfo</code> to <code>Text</code>.</li>\r\n<li>Changed interface of <code>Theme</code> and splitted into other\r\nstructs.</li>\r\n<li>Changed <code>Width</code>/<code>Height::priority</code> interface\r\nso it's no longer generic.</li>\r\n</ul>\r\n<h1>Fixed</h1>\r\n<ul>\r\n<li>Fix issue with `Cow`` usage in derive.</li>\r\n<li>Fix <code>Builder::push_column</code> (by <a\r\nhref=\"https://github.com/zxch3n\"><code>@​zxch3n</code></a>).</li>\r\n<li>Fix <code>README.md</code> (by <a\r\nhref=\"https://github.com/akiomik\"><code>@​akiomik</code></a>).</li>\r\n<li>Fix <code>README.md</code> (by <a\r\nhref=\"https://github.com/fbonin\"><code>@​fbonin</code></a>).</li>\r\n<li>Fix spellings (by <a\r\nhref=\"https://github.com/Alexdelia\"><code>@​Alexdelia</code></a>).</li>\r\n<li>Fix spellings (by <a\r\nhref=\"https://github.com/xeruf\"><code>@​xeruf</code></a>).</li>\r\n<li>Fix spellings (by <a\r\nhref=\"https://github.com/strange-dv\"><code>@​strange-dv</code></a>).</li>\r\n<li>Fix spellings (by <a\r\nhref=\"https://github.com/rcorre\"><code>@​rcorre</code></a>).</li>\r\n<li>Fix docs (by <a\r\nhref=\"https://github.com/jvanbuel\"><code>@​jvanbuel</code></a>).</li>\r\n<li>Fix docs (by <a\r\nhref=\"https://github.com/obi1kenobi\"><code>@​obi1kenobi</code></a>).</li>\r\n<li>Fix CI issues (by <a\r\nhref=\"https://github.com/akiomik\"><code>@​akiomik</code></a>).</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li>See full diff in <a\r\nhref=\"https://github.com/zhiburt/tabled/commits\">compare view</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tabled&package-manager=cargo&previous-version=0.15.0&new-version=0.16.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-09T06:37:03Z",
+          "tree_id": "5d5b80b289c817c37f855fcc387b419d872082cc",
+          "url": "https://github.com/risc0/risc0/commit/fb18ffa077d851d31f8598d76685d7cb088b446c"
+        },
+        "date": 1723186041158,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30131492,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 76763,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 68890,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 136903,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 130510,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 87101,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 65082,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -36413,6 +36472,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723185793858,
+  "lastUpdate": 1723186043143,
   "repoUrl": "https://github.com/risc0/risc0"
 }
