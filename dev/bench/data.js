@@ -9251,6 +9251,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d974e5db80c3cfb55fface7b7b6ef1fc2a82fd9d",
+          "message": "Restore `prove` into `metal` feature (#2195)\n\nWith #2092 dropping the `metal` feature and #2179 restoring it as an\r\nno-op feature, this PR restores the `prove` feature into it, with the\r\ngoal of maintaining semver compatibility.",
+          "timestamp": "2024-08-08T17:44:40-07:00",
+          "tree_id": "a441609642f101b6b98fc8fdf81c94784ba67ed0",
+          "url": "https://github.com/risc0/risc0/commit/d974e5db80c3cfb55fface7b7b6ef1fc2a82fd9d"
+        },
+        "date": 1723164653112,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21018518,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34282,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 23892,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44243,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43012,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34474,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21010,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -36236,6 +36295,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723164619730,
+  "lastUpdate": 1723164661050,
   "repoUrl": "https://github.com/risc0/risc0"
 }
