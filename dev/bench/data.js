@@ -9428,6 +9428,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c2df89aa89e12d30f5d71b55cf8f827a7a9221f",
+          "message": "Speed up risc0-build (#2208)\n\nTwo major issues:\r\n* build scripts are built with the dev profile by default, so\r\ncompute_image_id is 20x slower than a release build. So call out to\r\n`r0vm` to compute the image_id.\r\n* `include_bytes!()` is much faster at scale than embedding the string\r\nform of the ELF into methods.rs\r\n* Fixes #1985\r\n\r\nThis helps especially for null builds",
+          "timestamp": "2024-08-10T19:22:46-04:00",
+          "tree_id": "a3219b90bdefc8e1d1780a244137e094b1eeb6cb",
+          "url": "https://github.com/risc0/risc0/commit/5c2df89aa89e12d30f5d71b55cf8f827a7a9221f"
+        },
+        "date": 1723332525131,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20493116,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34643,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24142,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43739,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42488,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34529,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21165,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -36885,6 +36944,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723332484301,
+  "lastUpdate": 1723332533157,
   "repoUrl": "https://github.com/risc0/risc0"
 }
