@@ -37177,9 +37177,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c0642dac37504fa71cda118e480760d4b36876fc",
+          "message": "Improve GPU performance (#2211)",
+          "timestamp": "2024-08-13T09:24:43-07:00",
+          "tree_id": "55939b2d451ecf69e20f5baf0fffa774db151215",
+          "url": "https://github.com/risc0/risc0/commit/c0642dac37504fa71cda118e480760d4b36876fc"
+        },
+        "date": 1723567118323,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22087718,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 502818,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 524108,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 478503,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 339160,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 497075,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 386790,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1723567123946,
+  "lastUpdate": 1723567134855,
   "repoUrl": "https://github.com/risc0/risc0"
 }
