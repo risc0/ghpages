@@ -28701,6 +28701,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b5f17f95b7294086e8eefc34eea48b52a272727",
+          "message": "Improve `risc0_core::scope!` macros (#2217)\n\nThe `:block` case was removed since it's already handled by `:expr`.\r\n\r\nImproved documentation.\r\n\r\nThese changes came to mind while reviewing #2211.",
+          "timestamp": "2024-08-13T18:31:50Z",
+          "tree_id": "9570610b62b98b1d822fd10434af93199d431df3",
+          "url": "https://github.com/risc0/risc0/commit/6b5f17f95b7294086e8eefc34eea48b52a272727"
+        },
+        "date": 1723575115800,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30861232,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 79799,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 68011,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 121989,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 114963,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 73543,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 71906,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -37416,6 +37475,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723574343238,
+  "lastUpdate": 1723575119906,
   "repoUrl": "https://github.com/risc0/risc0"
 }
