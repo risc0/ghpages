@@ -9782,6 +9782,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6d9a2dfaf13306a195f50ba7d8a8c2512d4796c",
+          "message": "Fix skip build for clippy (#2220)",
+          "timestamp": "2024-08-13T15:09:06-07:00",
+          "tree_id": "6df08b7695543a7ff74b145e713de87980585025",
+          "url": "https://github.com/risc0/risc0/commit/a6d9a2dfaf13306a195f50ba7d8a8c2512d4796c"
+        },
+        "date": 1723587302291,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20634084,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35744,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24562,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44243,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43064,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35592,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21481,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -38360,6 +38419,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723587301911,
+  "lastUpdate": 1723587318223,
   "repoUrl": "https://github.com/risc0/risc0"
 }
