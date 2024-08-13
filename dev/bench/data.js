@@ -38475,9 +38475,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cohan.carpentier@gmail.com",
+            "name": "Cohan",
+            "username": "nahoc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d147f436fec2a8469ed378fc939784e64115aaa9",
+          "message": "[ready to merge] feat(website): add remark linting configuration (#2096)\n\nfollows https://github.com/risc0/risc0/pull/2094\r\n\r\n## What's this PR for?\r\n\r\nThis PR leverages `remark` to lint/format all .md files instead of\r\nprettier.\r\n\r\nPros:\r\n- we already use remark under the hood for docusaurus\r\n- more consistent markdown files across the risc0's codebase\r\n- vscode extension to lint files + format on save if you want\r\n- catch old removed links\r\n\r\nCons:\r\n- might break the CI a bit more, although for VSCode users you format on\r\nsave\r\n\r\n## What this PR does\r\n\r\n- This PR adds 2 new scripts `check-markdown` and `fmt-markdown` and\r\nruns the former on CI.\r\n- This auto-checks all the .md files and gives them a consistent\r\nmarkdown _without changing anything visually on the website_.\r\n- I took out some rules to make it as close to what we already had in\r\nthe codebase.\r\n- I added a check in the CI\r\n- I added the `remark` extension to the suggested vscode extensions\r\n\r\n## Follow-up items\r\n\r\n- Remove all occurences of `[here]` since it makes links harder to find?\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-13T15:45:52-07:00",
+          "tree_id": "249928b5a0cb010f5c519348a04351490bc54c75",
+          "url": "https://github.com/risc0/risc0/commit/d147f436fec2a8469ed378fc939784e64115aaa9"
+        },
+        "date": 1723589468290,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23071230,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 512677,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 525972,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 490740,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 351251,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 499591,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 394653,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1723589390825,
+  "lastUpdate": 1723589475702,
   "repoUrl": "https://github.com/risc0/risc0"
 }
