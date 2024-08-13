@@ -19507,6 +19507,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6d9a2dfaf13306a195f50ba7d8a8c2512d4796c",
+          "message": "Fix skip build for clippy (#2220)",
+          "timestamp": "2024-08-13T15:09:06-07:00",
+          "tree_id": "6df08b7695543a7ff74b145e713de87980585025",
+          "url": "https://github.com/risc0/risc0/commit/a6d9a2dfaf13306a195f50ba7d8a8c2512d4796c"
+        },
+        "date": 1723587183675,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21906952,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 759192,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 766473,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 538766,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 397174,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 725041,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 526161,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -38183,6 +38242,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723582336637,
+  "lastUpdate": 1723587186423,
   "repoUrl": "https://github.com/risc0/risc0"
 }
