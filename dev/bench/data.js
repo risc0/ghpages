@@ -37826,9 +37826,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e1618ef4da4d2385e3709e00c9eeaa334a784599",
+          "message": "Clippy now works by default (#2210)\n\nAs long as `RISC0_SKIP_BUILD=1` is specified.",
+          "timestamp": "2024-08-13T12:45:43-07:00",
+          "tree_id": "50316da37b84fee659f544d102334267383276f3",
+          "url": "https://github.com/risc0/risc0/commit/e1618ef4da4d2385e3709e00c9eeaa334a784599"
+        },
+        "date": 1723578661354,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23053634,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 515285,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 524945,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 487075,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345819,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 507449,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 395376,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1723578660341,
+  "lastUpdate": 1723578676365,
   "repoUrl": "https://github.com/risc0/risc0"
 }
