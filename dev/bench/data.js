@@ -19861,6 +19861,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb1d3836cfdb1f8e634f2394579d16a1cfde4cc5",
+          "message": "Move risc0-circuit-bigint to risc0 repo (#2201)",
+          "timestamp": "2024-08-14T22:03:33Z",
+          "tree_id": "15b730ef81cfe96b34756885f0323f251c8fc4d5",
+          "url": "https://github.com/risc0/risc0/commit/fb1d3836cfdb1f8e634f2394579d16a1cfde4cc5"
+        },
+        "date": 1723673251846,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21708062,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 758843,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 764738,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 545839,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 398840,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 721630,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 525167,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -38891,6 +38950,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723661770216,
+  "lastUpdate": 1723673254563,
   "repoUrl": "https://github.com/risc0/risc0"
 }
