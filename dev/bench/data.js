@@ -38770,9 +38770,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1845e4611fa0c1f1efaf75af75f8553bf32c5ea8",
+          "message": "build(deps): bump syn from 2.0.72 to 2.0.74 (#2223)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.72 to 2.0.74.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.74</h2>\r\n<ul>\r\n<li>Fix <em>&quot;temporary is dropped and runs the destructor for type\r\n`impl Iterator`&quot;</em> regression affecting certain use of\r\n<code>Generics</code> iterator methods (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1719\">#1719</a>)</li>\r\n</ul>\r\n<h2>2.0.73</h2>\r\n<ul>\r\n<li>Support parsing unnamed C varargs within function pointer types (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1711\">#1711</a>)</li>\r\n<li>Improve synthesized error message on unexpected tokens at the end of\r\nthe expected contents of a delimited group (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1713\">#1713</a>)</li>\r\n<li>Support parsing unstable tail call syntax (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1714\">#1714</a>, <a\r\nhref=\"https://redirect.github.com/rust-lang/rust/issues/112788\">rust-lang/rust#112788</a>)</li>\r\n<li>Add <a\r\nhref=\"https://docs.rs/syn/2.0.73/syn/enum.Fields.html#method.members\"><code>Fields::members</code></a>\r\niterator (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1716\">#1716</a>,\r\nthanks <a\r\nhref=\"https://github.com/Fancyflame\"><code>@​Fancyflame</code></a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/b15ae2840910cb6102d4d23d8b1e7bcb91304b23\"><code>b15ae28</code></a>\r\nRelease 2.0.74</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/6cf234444021eb753af7a26f8122c28ce9d84935\"><code>6cf2344</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1719\">#1719</a>\r\nfrom dtolnay/iterators</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/2955ac55b70952e2114e559d1cd61267225152e8\"><code>2955ac5</code></a>\r\nExpose non-impl-Trait iterator return types</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/7dc05a564398eabc552a2d46bb580f9a60d410fb\"><code>7dc05a5</code></a>\r\nAdd regression test for issue 1718</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/857942e411d71d3c0787e14e220c8c7d9d491051\"><code>857942e</code></a>\r\nRevert &quot;Define Fields::members iterator type privately inside\r\nmethod&quot;</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/65ec30d65913e2368febc1f00a68324ec9a9ecd4\"><code>65ec30d</code></a>\r\nRevert &quot;Embed Generics iterator implementations into method\r\nbodies&quot;</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/b5a5a8c17737ac7a7b3553ec202626035bfa779c\"><code>b5a5a8c</code></a>\r\nRelease 2.0.73</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/8cdb5c734dab211eef10bbd0c47a251d38dca9e1\"><code>8cdb5c7</code></a>\r\nAdd example of using Fields::members iterator</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/2afdc1267471c9813739a500f9bd2c0b19aa99af\"><code>2afdc12</code></a>\r\nRemove redundancy of Generics::split_for_impl cfg with type's cfg</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/64b0dc8d0d5fa6b3bf996c60fdff054944f1c993\"><code>64b0dc8</code></a>\r\nCombine Generics impl blocks into one</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.72...2.0.74\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.72&new-version=2.0.74)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-08-14T18:40:44Z",
+          "tree_id": "75e4b29dcd426b0dd59f046775e97bb04098f7ee",
+          "url": "https://github.com/risc0/risc0/commit/1845e4611fa0c1f1efaf75af75f8553bf32c5ea8"
+        },
+        "date": 1723661206434,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23016540,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 507592,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 523177,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 487976,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 346742,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 500815,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 390082,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1723661207525,
+  "lastUpdate": 1723661222706,
   "repoUrl": "https://github.com/risc0/risc0"
 }
