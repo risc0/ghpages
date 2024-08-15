@@ -10018,6 +10018,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aca038a45095175918e01aceff456c2c15aec269",
+          "message": "Drop obsolete poseidon, superseded by poseidon2 (#2235)",
+          "timestamp": "2024-08-14T17:24:36-07:00",
+          "tree_id": "c05739f6a411f2ffe110bf3a470af975686fef89",
+          "url": "https://github.com/risc0/risc0/commit/aca038a45095175918e01aceff456c2c15aec269"
+        },
+        "date": 1723681836957,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21479114,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35574,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24307,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44494,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43318,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35373,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21425,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -39186,6 +39245,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723681727336,
+  "lastUpdate": 1723681844865,
   "repoUrl": "https://github.com/risc0/risc0"
 }
