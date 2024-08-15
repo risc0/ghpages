@@ -39773,9 +39773,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c650ba92dbf78fcb89ae31ef19e840944421e0ca",
+          "message": "Add BigInt op tests (#2237)\n\nAdds test programs for bigint ops\r\n\r\n---------\r\n\r\nCo-authored-by: nils m <nils@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-15T12:55:36-07:00",
+          "tree_id": "49d2223ef14c6c958c2a20ac9c9257b391c37724",
+          "url": "https://github.com/risc0/risc0/commit/c650ba92dbf78fcb89ae31ef19e840944421e0ca"
+        },
+        "date": 1723752426414,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22964132,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 507784,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 521176,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 483323,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 343175,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 500693,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 391869,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1723752113374,
+  "lastUpdate": 1723752434408,
   "repoUrl": "https://github.com/risc0/risc0"
 }
