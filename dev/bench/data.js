@@ -10136,6 +10136,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c650ba92dbf78fcb89ae31ef19e840944421e0ca",
+          "message": "Add BigInt op tests (#2237)\n\nAdds test programs for bigint ops\r\n\r\n---------\r\n\r\nCo-authored-by: nils m <nils@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-15T12:55:36-07:00",
+          "tree_id": "49d2223ef14c6c958c2a20ac9c9257b391c37724",
+          "url": "https://github.com/risc0/risc0/commit/c650ba92dbf78fcb89ae31ef19e840944421e0ca"
+        },
+        "date": 1723752105469,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20660446,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34822,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24103,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 42650,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41193,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34929,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21126,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -39717,6 +39776,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723752067409,
+  "lastUpdate": 1723752113374,
   "repoUrl": "https://github.com/risc0/risc0"
 }
