@@ -30117,6 +30117,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aca038a45095175918e01aceff456c2c15aec269",
+          "message": "Drop obsolete poseidon, superseded by poseidon2 (#2235)",
+          "timestamp": "2024-08-14T17:24:36-07:00",
+          "tree_id": "c05739f6a411f2ffe110bf3a470af975686fef89",
+          "url": "https://github.com/risc0/risc0/commit/aca038a45095175918e01aceff456c2c15aec269"
+        },
+        "date": 1723682047544,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31349958,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 79278,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 71914,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 127251,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 118452,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 82997,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 68029,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -39245,6 +39304,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723681844865,
+  "lastUpdate": 1723682049838,
   "repoUrl": "https://github.com/risc0/risc0"
 }
