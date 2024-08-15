@@ -39950,9 +39950,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fe1e3ac87d3314160ba26439cfc6d44aa41ac286",
+          "message": "Add `cargo risczero datasheet` command (#2196)\n\nThis code was adapted from `risc0/zkvm/examples/datasheet.rs`, with notable changes:\r\n\r\n- Added `--r0vm` flag for providing a path to r0vm, instead of just the `RISC0_SERVER_PATH` environment variable.\r\n\r\n- Added min size of 2^15 cycles.\r\n\r\n- Uses `ApiClient` to run external r0vm process, instead of `get_prover_server` and `ExecutorImpl`. This requires initially leaving out:\r\n  - RAM usage reporting\r\n  - groth16 and stark2snark benchmarks\r\n\r\n- No reliance on the `risc0-zkvm-methods` crate for `BENCH_ELF`. Instead this uses an ELF from a hand-written assembly program `loop.s`, which is pre-compiled, stripped to 640 bytes, and checked-in as `loop.bin`.",
+          "timestamp": "2024-08-15T23:28:33Z",
+          "tree_id": "fb243250864ee2f14686e64a938f907af4ddd85f",
+          "url": "https://github.com/risc0/risc0/commit/fe1e3ac87d3314160ba26439cfc6d44aa41ac286"
+        },
+        "date": 1723764819888,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22969666,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 508433,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 527931,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 481865,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 348022,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 493556,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 389578,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1723764824779,
+  "lastUpdate": 1723764836266,
   "repoUrl": "https://github.com/risc0/risc0"
 }
