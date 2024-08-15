@@ -20097,6 +20097,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "70b45b10cc62378c3d9d7534481ad35e644250ae",
+          "message": "cargo machete & cleanups (#2236)",
+          "timestamp": "2024-08-14T22:09:27-07:00",
+          "tree_id": "c7346cad4e0485e0608c94690bdc4d04fdac5345",
+          "url": "https://github.com/risc0/risc0/commit/70b45b10cc62378c3d9d7534481ad35e644250ae"
+        },
+        "date": 1723698804621,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21934336,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 756082,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 763009,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539948,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 395158,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 717399,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 521059,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -39363,6 +39422,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723682415227,
+  "lastUpdate": 1723698807351,
   "repoUrl": "https://github.com/risc0/risc0"
 }
