@@ -20451,6 +20451,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2cdcd8f3d1f17ff8c558e7455521969a1924fbc8",
+          "message": "Run clippy on all targets (#2239)\n\nThe bigint op_tests have been refactored to use a macro to be more\r\nconcise.",
+          "timestamp": "2024-08-16T09:33:45-07:00",
+          "tree_id": "41030765bf0767f4cfaae12649d80a30f2f38ee5",
+          "url": "https://github.com/risc0/risc0/commit/2cdcd8f3d1f17ff8c558e7455521969a1924fbc8"
+        },
+        "date": 1723826264054,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20136968,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 755990,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 761507,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539505,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 399339,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 717130,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 522290,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -40071,6 +40130,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723764883026,
+  "lastUpdate": 1723826266938,
   "repoUrl": "https://github.com/risc0/risc0"
 }
