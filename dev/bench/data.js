@@ -30825,6 +30825,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2cdcd8f3d1f17ff8c558e7455521969a1924fbc8",
+          "message": "Run clippy on all targets (#2239)\n\nThe bigint op_tests have been refactored to use a macro to be more\r\nconcise.",
+          "timestamp": "2024-08-16T09:33:45-07:00",
+          "tree_id": "41030765bf0767f4cfaae12649d80a30f2f38ee5",
+          "url": "https://github.com/risc0/risc0/commit/2cdcd8f3d1f17ff8c558e7455521969a1924fbc8"
+        },
+        "date": 1724032510875,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33055340,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 112665,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 96988,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159012,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146977,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 111270,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84112,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -40248,6 +40307,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1723826797920,
+  "lastUpdate": 1724032512993,
   "repoUrl": "https://github.com/risc0/risc0"
 }
