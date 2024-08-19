@@ -30943,6 +30943,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "angelocapossele@gmail.com",
+            "name": "Angelo Capossele",
+            "username": "capossele"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2ac5345118ac24482f4015023c7a358a5743a84",
+          "message": "Add missing env feature to clap (#2254)\n\nWith https://github.com/risc0/risc0/pull/2196 we introduced the `env`\r\nusage in `clap` without adding the relative `env` feature to it. This\r\nresult in having issues when building `cargo-risczero`, specifically\r\nwhen building it with only some of its features e.g.,:\r\n\r\n```bash\r\ncargo build -p cargo-risczero --no-default-features --features \"cuda\"\r\n```\r\n\r\nor\r\n\r\n```bash\r\ncargo build -p cargo-risczero --no-default-features --features \"metal\"\r\n```\r\n\r\nreturns:\r\n\r\n```\r\nerror[E0599]: no method named `env` found for struct `Arg` in the current scope\r\n  --> risc0/cargo-risczero/src/commands/datasheet/mod.rs:41:38\r\n   |\r\n41 |     #[arg(long, value_name = \"PATH\", env = \"RISC0_SERVER_PATH\")]\r\n   |                                      ^^^ method not found in `Arg`\r\n```",
+          "timestamp": "2024-08-19T16:44:39-07:00",
+          "tree_id": "006a4a81dfd3d861beead9b02569bcaebe98c359",
+          "url": "https://github.com/risc0/risc0/commit/d2ac5345118ac24482f4015023c7a358a5743a84"
+        },
+        "date": 1724111391281,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32948120,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 114520,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98753,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159542,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147485,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 112353,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84338,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -40366,6 +40425,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724111343241,
+  "lastUpdate": 1724111393182,
   "repoUrl": "https://github.com/risc0/risc0"
 }
