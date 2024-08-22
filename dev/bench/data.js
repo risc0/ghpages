@@ -31710,6 +31710,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3270f6e97c548a16ec36e957bf8ad3640e3218b",
+          "message": "Add a bigint nondet inverse op (#2244)",
+          "timestamp": "2024-08-22T19:03:20Z",
+          "tree_id": "9191e9a1d2d9252e88bdc65e018e633aa664efaf",
+          "url": "https://github.com/risc0/risc0/commit/e3270f6e97c548a16ec36e957bf8ad3640e3218b"
+        },
+        "date": 1724354044132,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32665954,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 114687,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98085,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158297,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146237,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 113172,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84361,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -41369,6 +41428,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724353867519,
+  "lastUpdate": 1724354046039,
   "repoUrl": "https://github.com/risc0/risc0"
 }
