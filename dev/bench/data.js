@@ -10431,6 +10431,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "semenov.vlad.by@gmail.com",
+            "name": "Vlad Semenov",
+            "username": "semenov-vladyslav"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "327d1b3f14be0f3eaba776a3f22592a3013d3bca",
+          "message": "Fix: env::read_buffered() is gated behind the 'std' feature (#2261)\n\nThis PR adds a fix to an error caused by running `cargo build` from\r\n`risc0/zkvm/methods` dir:\r\n\r\n```\r\nerror[E0425]: cannot find function `read_buffered` in module `env`\r\n   --> risc0/zkvm/methods/src/bench.rs:101:54\r\n    |\r\n101 |                 let claims: Vec<ReceiptClaim> = env::read_buffered().unwrap();\r\n    |                                                      ^^^^^^^^^^^^^ not found in `env`\r\n    |\r\nnote: found an item that was configured out\r\n   --> /risc0/risc0/zkvm/src/guest/env/mod.rs:462:8\r\n    |\r\n462 | pub fn read_buffered<T: DeserializeOwned>() -> Result<T, crate::serde::Error> {\r\n    |        ^^^^^^^^^^^^^\r\n    = note: the item is gated behind the `std` feature\r\n\r\nFor more information about this error, try `rustc --explain E0425`.\r\n```",
+          "timestamp": "2024-08-22T11:07:47-07:00",
+          "tree_id": "173bc9b6ded4ab846b4a4cbd86b29b12f68248b9",
+          "url": "https://github.com/risc0/risc0/commit/327d1b3f14be0f3eaba776a3f22592a3013d3bca"
+        },
+        "date": 1724350440022,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20961586,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34877,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 23958,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44083,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42736,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34967,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21218,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -40897,6 +40956,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724350364391,
+  "lastUpdate": 1724350448019,
   "repoUrl": "https://github.com/risc0/risc0"
 }
