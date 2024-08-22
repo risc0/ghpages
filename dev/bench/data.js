@@ -31415,6 +31415,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "semenov.vlad.by@gmail.com",
+            "name": "Vlad Semenov",
+            "username": "semenov-vladyslav"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "216ab114b723d5e442a319848aba505684d360ea",
+          "message": "Guest method required features (#2260)\n\nThis PR allows guest methods binary targets to customize\r\n`required-features` and skip building such targets if not all required\r\nfeatures were provided.\r\n\r\n`test_required_features` binary target in `risc0-zkvm-methods-std` guest\r\nmethods demonstrates the use of this PR:\r\n1. in `Cargo.toml` the binary target customizes `test_feature3` as\r\nrequired without which it wouldn't compile;\r\n2. `build.rs` script doesn't set `test_feature3` in `GuestOptions` which\r\nwould exclude `test_required_features` target from build process;\r\n3. tests succeed as expected.",
+          "timestamp": "2024-08-22T11:19:24-07:00",
+          "tree_id": "142cfcb0df65515416325151e1dd7bf97ff0edd8",
+          "url": "https://github.com/risc0/risc0/commit/216ab114b723d5e442a319848aba505684d360ea"
+        },
+        "date": 1724351104495,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30605184,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 91110,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 75228,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 141067,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 132574,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 76224,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 74875,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -40956,6 +41015,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724350448019,
+  "lastUpdate": 1724351106672,
   "repoUrl": "https://github.com/risc0/risc0"
 }
