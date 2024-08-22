@@ -10372,6 +10372,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32b56c77bef40e2f486e4723688ba6cfd42c9796",
+          "message": "Add test for heap + thread_local bug (#2255)\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-08-21T23:58:23Z",
+          "tree_id": "09537c4cc99cef1fcea7148d1c3c83e6babfaadd",
+          "url": "https://github.com/risc0/risc0/commit/32b56c77bef40e2f486e4723688ba6cfd42c9796"
+        },
+        "date": 1724285071429,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22690288,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34985,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24367,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43815,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42531,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34975,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21284,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -40661,6 +40720,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724284998723,
+  "lastUpdate": 1724285079347,
   "repoUrl": "https://github.com/risc0/risc0"
 }
