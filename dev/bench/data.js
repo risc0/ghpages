@@ -40717,9 +40717,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32b56c77bef40e2f486e4723688ba6cfd42c9796",
+          "message": "Add test for heap + thread_local bug (#2255)\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-08-21T23:58:23Z",
+          "tree_id": "09537c4cc99cef1fcea7148d1c3c83e6babfaadd",
+          "url": "https://github.com/risc0/risc0/commit/32b56c77bef40e2f486e4723688ba6cfd42c9796"
+        },
+        "date": 1724311200545,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22939940,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 493393,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 505671,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 453288,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 321671,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 472759,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 367448,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1724285079347,
+  "lastUpdate": 1724311208221,
   "repoUrl": "https://github.com/risc0/risc0"
 }
