@@ -31828,6 +31828,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2418646+hashcashier@users.noreply.github.com",
+            "name": "Rami",
+            "username": "hashcashier"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4ee110513c736af6ae815060c1453b140700410d",
+          "message": "Enable forwarding custom rustc flags to guest builds. (#2209)\n\nThe current build system defines the `CARGO_ENCODED_RUSTFLAGS`\r\nenvironment variable when compiling guest programs. This prevents cargo\r\nfrom using rust flags specified in other sources, such as `config.toml`\r\nfiles.\r\n\r\nThis prevents users from fully utilizing conditional rust compilation in\r\nguests, even when emitting `cargo::rustc-flags=FLAGS` in a build script\r\nfor the guest binary, because those flags do not affect how the guest's\r\ndependencies are built.\r\n\r\nThis PR enables specifying custom rustc flags to pass to the guest build\r\nprocess through specifying additional metadata within a guest binary's\r\n`Cargo.toml` file:\r\n```cargo\r\n[package.metadata.risc0]\r\nrustc-flags = ['--cfg', 'risc0_guest_allocator=\"embedded\"']\r\n```\r\n\r\nNOTE: The metadata is ignored when using `cargo-risczero` build and\r\ndeploy commands.",
+          "timestamp": "2024-08-23T11:09:41+03:00",
+          "tree_id": "5d4aed5e827edd482d5828b5f0879f37c76bdb08",
+          "url": "https://github.com/risc0/risc0/commit/4ee110513c736af6ae815060c1453b140700410d"
+        },
+        "date": 1724400896204,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32799896,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 114483,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98676,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158836,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146302,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 112964,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 85094,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -41487,6 +41546,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724400835438,
+  "lastUpdate": 1724400898233,
   "repoUrl": "https://github.com/risc0/risc0"
 }
