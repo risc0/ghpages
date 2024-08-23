@@ -41838,9 +41838,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f865f638a02b21408c0ffe41daf0c8e8bab868e9",
+          "message": "Add `seal_size` method to receipt types (#2262)",
+          "timestamp": "2024-08-23T18:08:24Z",
+          "tree_id": "e479aaaf5b6c76ef7a87432ce991229e2107e713",
+          "url": "https://github.com/risc0/risc0/commit/f865f638a02b21408c0ffe41daf0c8e8bab868e9"
+        },
+        "date": 1724437423571,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23513840,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 494005,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 499784,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 455036,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 323885,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 477623,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 369103,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1724436886387,
+  "lastUpdate": 1724437430404,
   "repoUrl": "https://github.com/risc0/risc0"
 }
