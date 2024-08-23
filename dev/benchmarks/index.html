@@ -158,10 +158,13 @@
         'macOS-apple_m2_pro.csv': 'Metal on Apple M2 Pro',
         'Linux-nvidia_rtx_a5000.csv': 'CUDA on NVIDIA RTX A5000',
         'macOS-cpu.csv': 'CPU only on Apple M2 Pro',
-        'Linux-cpu.csv': 'CPU only on TBD [Linux]'
+        'Linux-cpu.csv': 'CPU only on TBD [Linux]',
+        'macOS-apple_m3_pro.csv': 'Metal on Apple M3 Pro',
+        'macOS-apple_m3_pro_cpu.csv': 'CPU only on Apple M3 Pro'
+
       };
 
-      const urls = ['macOS-apple_m2_pro.csv', 'Linux-nvidia_rtx_a5000.csv', 'macOS-cpu.csv', 'Linux-cpu.csv'];
+      const urls = ['macOS-apple_m3_pro.csv', 'macOS-apple_m3_pro_cpu.csv', 'macOS-apple_m2_pro.csv', 'Linux-nvidia_rtx_a5000.csv', 'macOS-cpu.csv', 'Linux-cpu.csv'];
 
       for (let url of urls) {
         try {
@@ -193,9 +196,9 @@
                 cellElement = document.createElement('td');
               }
               if (rowIndex !== 0) {
-                if (index === 2 || index === 3 || index === 4 || index === 5) {
+                if (index === 2 || index === 3 || index === 4 || index === 5 || index === 6) {
                   cellElement.textContent = formatDuration(Number(cell));
-                } else if (index === 8) {
+                } else if (index === 10) {
                   cellElement.textContent = formatBytes(Number(cell));
                 } else {
                   cellElement.textContent = cell;
