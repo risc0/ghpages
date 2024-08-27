@@ -21395,6 +21395,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd9449310e9dfef6938f81051becb52f8bfa8502",
+          "message": "Add missing `segment_limit_po2` in `cargo risczero datasheet` (#2266)\n\nThis was accidentally not included when converting from the original\r\ndatasheet example code.",
+          "timestamp": "2024-08-27T02:52:51Z",
+          "tree_id": "ca86712d12ef21cb95bdc1b778960a825ddbd7f2",
+          "url": "https://github.com/risc0/risc0/commit/fd9449310e9dfef6938f81051becb52f8bfa8502"
+        },
+        "date": 1724727419515,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21863648,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 756780,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 761597,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539573,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 396111,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 720178,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 519949,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -41900,6 +41959,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724437430404,
+  "lastUpdate": 1724727422421,
   "repoUrl": "https://github.com/risc0/risc0"
 }
