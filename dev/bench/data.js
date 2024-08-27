@@ -32595,6 +32595,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7b011830286603d9307824d5b8ca34b81a76f87a",
+          "message": "Use receipt `seal_size` method in more places (#2265)\n\nVarious places would allocate a `Vec<u8>` just to check the length.",
+          "timestamp": "2024-08-27T23:48:35Z",
+          "tree_id": "8350a04b40cb5a3a05e2bf7bb69496f6d5958ba4",
+          "url": "https://github.com/risc0/risc0/commit/7b011830286603d9307824d5b8ca34b81a76f87a"
+        },
+        "date": 1724803193579,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32237956,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 113691,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98031,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158261,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 145138,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 112203,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84514,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -42549,6 +42608,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724802922276,
+  "lastUpdate": 1724803195613,
   "repoUrl": "https://github.com/risc0/risc0"
 }
