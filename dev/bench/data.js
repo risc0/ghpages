@@ -42664,9 +42664,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a03f28d9e402bc54a813f15f04055ba908ca470a",
+          "message": "Make `CompositeReceipt::seal_size` consider assumptions (#2264)\n\nWithout assumption receipts, the `CompositeReceipt` is not verifiable.",
+          "timestamp": "2024-08-28T00:36:26Z",
+          "tree_id": "a0e01639fbcacc200e94db71f43c2d4be51d1d7b",
+          "url": "https://github.com/risc0/risc0/commit/a03f28d9e402bc54a813f15f04055ba908ca470a"
+        },
+        "date": 1724805723502,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22288456,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 483578,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 494564,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 450205,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 320889,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 468151,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 364224,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1724805628934,
+  "lastUpdate": 1724805731491,
   "repoUrl": "https://github.com/risc0/risc0"
 }
