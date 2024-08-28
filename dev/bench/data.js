@@ -32772,6 +32772,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a03f28d9e402bc54a813f15f04055ba908ca470a",
+          "message": "Make `CompositeReceipt::seal_size` consider assumptions (#2264)\n\nWithout assumption receipts, the `CompositeReceipt` is not verifiable.",
+          "timestamp": "2024-08-28T00:36:26Z",
+          "tree_id": "a0e01639fbcacc200e94db71f43c2d4be51d1d7b",
+          "url": "https://github.com/risc0/risc0/commit/a03f28d9e402bc54a813f15f04055ba908ca470a"
+        },
+        "date": 1724806079543,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32298510,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 113671,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 97428,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158075,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146215,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 111963,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84273,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -42785,6 +42844,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724805759857,
+  "lastUpdate": 1724806081605,
   "repoUrl": "https://github.com/risc0/risc0"
 }
