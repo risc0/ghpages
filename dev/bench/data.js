@@ -21867,6 +21867,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d9b16a0e0a88cdc8d22598c760447069f222bed",
+          "message": "Include powers of two (po2) up to 21 in the default verifier parameters (#2276)\n\nAs part of our continual security analysis work, we've created a\r\ncalculated for the \"bits of security\" given all the system parameters\r\nrelevant to the soundness of the proof of knowledge property guaranteed\r\nto the verifier. With this, we find that the lookup argument may not\r\nachieve our targeted 97 bits of soundness under worse case assumptions\r\ngrounded in the Schwartz-Zippel lemma. Under these assumptions, up to 3\r\nbits of security are given up by including segment sizes up to power of\r\ntwo 24, relative to po2 21.\r\n\r\nThis PR implements the cautious approach of removing po2s above 21 from\r\nthe default verifier parameters. Developers that wish to use po2 22, 23,\r\nor 24 may opt-in by using a non-default `VerifierContext`.\r\n\r\nAdditionally, this PR fixes a pair of off-by-one errors that had removed\r\nthe rv32im control IDs for po2 24. Technically, this constitutes a\r\nbreaking change in the `risc0-circuit-rv32im` crate since the public\r\ntype `ControlIds` is not a fixed array of length n+1.\r\n\r\nhttps://github.com/risc0/risc0/pull/2276/files#diff-ce2293a7cee10116f619bedf007ecfedd524505b764cfe5383785b7bd17dd7c4\r\n\r\nNote: It is expected that the `risc0-ethereum` CI job will fail right\r\nnow, because the control root is changed. It will pass again once we've\r\nmerged this and https://github.com/risc0/risc0-ethereum/pull/205 to\r\ntheir respective `main`.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-28T23:29:05Z",
+          "tree_id": "daf3300fab9a5bd4bbcf7978768bf95f9d6ac117",
+          "url": "https://github.com/risc0/risc0/commit/5d9b16a0e0a88cdc8d22598c760447069f222bed"
+        },
+        "date": 1724887993544,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21523978,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 756562,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 762674,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 541608,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 395473,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 719786,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 521831,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -42903,6 +42962,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724887989644,
+  "lastUpdate": 1724887996463,
   "repoUrl": "https://github.com/risc0/risc0"
 }
