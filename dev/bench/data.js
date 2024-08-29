@@ -33008,6 +33008,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b6daeafa1545984aa28581fca56d9ef13dcbae6",
+          "message": "mark sys_execute_zkr as unstable (#2285)",
+          "timestamp": "2024-08-29T15:11:45-04:00",
+          "tree_id": "a8c346de62014b2ee26e24e2d393da04633c0bec",
+          "url": "https://github.com/risc0/risc0/commit/6b6daeafa1545984aa28581fca56d9ef13dcbae6"
+        },
+        "date": 1724958952840,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31483018,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 102712,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90670,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160536,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149569,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 101354,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78455,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -43080,6 +43139,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1724888476407,
+  "lastUpdate": 1724958954961,
   "repoUrl": "https://github.com/risc0/risc0"
 }
