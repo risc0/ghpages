@@ -43667,9 +43667,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a83f332923a036ba8a23606d33bfc6e0ba7aab51",
+          "message": "Mark sys_execute_zkr with #[unstable] (#2291)\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-08-30T21:30:15Z",
+          "tree_id": "e98979c54820f0a6b448988787e8c2dfa27afbd2",
+          "url": "https://github.com/risc0/risc0/commit/a83f332923a036ba8a23606d33bfc6e0ba7aab51"
+        },
+        "date": 1725053778425,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21947124,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 479755,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 486024,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 447758,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 319364,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 465656,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368896,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1725053728542,
+  "lastUpdate": 1725053786375,
   "repoUrl": "https://github.com/risc0/risc0"
 }
