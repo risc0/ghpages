@@ -33244,6 +33244,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nikolaivazquez.com",
+            "name": "Nikolai Vazquez",
+            "username": "nvzqz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d559477f3ae640b4988b3d0f0c481a915ae2ccbe",
+          "message": "docs: Fix \"an\" article usage (#2274)",
+          "timestamp": "2024-08-30T20:46:36Z",
+          "tree_id": "26a94197f8dad1117c4ed4e72ff4408465ab90d1",
+          "url": "https://github.com/risc0/risc0/commit/d559477f3ae640b4988b3d0f0c481a915ae2ccbe"
+        },
+        "date": 1725051059735,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31650238,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103175,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 91160,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160471,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149322,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 103013,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79068,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -43375,6 +43434,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725051045053,
+  "lastUpdate": 1725051061645,
   "repoUrl": "https://github.com/risc0/risc0"
 }
