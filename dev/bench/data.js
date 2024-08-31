@@ -11257,6 +11257,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "220c212b7e59b1db1d38529f3e853ffc76ed1ce3",
+          "message": "add sanity check for local assumptions uploaded to Bonsai (#2258)\n\nTested against this repro\r\nhttps://github.com/austinabell/bs-repro/blob/main/host/src/main.rs\r\n\r\nThe pattern that is an issue is generating local receipts (which default\r\nto composite) and uploading those to Bonsai.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-08-31T02:50:20-07:00",
+          "tree_id": "5201aae841f1cafe72c53a13f4db9db2980eb7ab",
+          "url": "https://github.com/risc0/risc0/commit/220c212b7e59b1db1d38529f3e853ffc76ed1ce3"
+        },
+        "date": 1725098230627,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22041108,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35751,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24632,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44267,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43036,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35711,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21514,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -44142,6 +44201,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725098074161,
+  "lastUpdate": 1725098238533,
   "repoUrl": "https://github.com/risc0/risc0"
 }
