@@ -11198,6 +11198,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c9d82d93360ba98706c677cc9db62f35c104f91",
+          "message": "build(deps): bump syn from 2.0.74 to 2.0.76 (#2298)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.74 to 2.0.76.\r\n- [Release notes](https://github.com/dtolnay/syn/releases)\r\n- [Commits](https://github.com/dtolnay/syn/compare/2.0.74...2.0.76)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: syn\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n---\r\n[//]: # (BEGIN SAPLING FOOTER)\r\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\r\nwith [ReviewStack](https://reviewstack.dev/risc0/risc0/pull/2298).\r\n* __->__ #2298\r\n* #2297\r\n* #2296\r\n* #2295\r\n\r\n---------\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-08-31T01:07:10-07:00",
+          "tree_id": "fe49d490d0106f774258359dfd9b381fdaa96e1c",
+          "url": "https://github.com/risc0/risc0/commit/7c9d82d93360ba98706c677cc9db62f35c104f91"
+        },
+        "date": 1725092382742,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21622054,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35190,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24455,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44000,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42692,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35189,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21346,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -43906,6 +43965,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725091893270,
+  "lastUpdate": 1725092390675,
   "repoUrl": "https://github.com/risc0/risc0"
 }
