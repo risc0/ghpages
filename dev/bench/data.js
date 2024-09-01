@@ -44434,9 +44434,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "distinct": true,
+          "id": "bb171b062dc0476cb1d97f138ef53d40ace68b7f",
+          "message": "Revert \"Enable forwarding custom rustc flags to guest builds. (#2209)\"\n\nThis reverts commit 4ee110513c736af6ae815060c1453b140700410d.\n\n\n\nFix",
+          "timestamp": "2024-09-01T02:08:17-07:00",
+          "tree_id": "ee56ed8aca15f01c97323825f78ef04f422fd2d9",
+          "url": "https://github.com/risc0/risc0/commit/bb171b062dc0476cb1d97f138ef53d40ace68b7f"
+        },
+        "date": 1725182412140,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21951662,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 481667,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 496645,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 442210,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 313125,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 464653,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 359385,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1725182210011,
+  "lastUpdate": 1725182420014,
   "repoUrl": "https://github.com/risc0/risc0"
 }
