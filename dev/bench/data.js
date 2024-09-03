@@ -22693,6 +22693,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5808e6544ebb779f630ed7463650c61bb8cc9f26",
+          "message": "updating to 97 bits (#2293)",
+          "timestamp": "2024-09-03T20:46:20Z",
+          "tree_id": "20751a3b8d4427250b17266a008ece4f26a4cdb6",
+          "url": "https://github.com/risc0/risc0/commit/5808e6544ebb779f630ed7463650c61bb8cc9f26"
+        },
+        "date": 1725396625893,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21698802,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 755900,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 761502,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 536938,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 392962,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 717540,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 523012,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -44496,6 +44555,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725182420014,
+  "lastUpdate": 1725396628676,
   "repoUrl": "https://github.com/risc0/risc0"
 }
