@@ -34424,6 +34424,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2418646+hashcashier@users.noreply.github.com",
+            "name": "Rami",
+            "username": "hashcashier"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c7af1d350844b6014e688e6fbc66bd2520499e40",
+          "message": "fix(risc0-build): Fix null-builds under custom rustc flags (#2301)\n\nThis PR gives each guest its own target directory based on its host\r\npackage and guest package names to fix build-caching when using\r\nnon-uniform rustc flags for different guests under the same host\r\npackage.",
+          "timestamp": "2024-09-04T06:43:14Z",
+          "tree_id": "3755eff41bbc12751aeaeda9867cbc186b93581a",
+          "url": "https://github.com/risc0/risc0/commit/c7af1d350844b6014e688e6fbc66bd2520499e40"
+        },
+        "date": 1725432516425,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31539864,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103174,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90042,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160955,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150029,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 101850,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78645,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -44968,6 +45027,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725412652995,
+  "lastUpdate": 1725432518613,
   "repoUrl": "https://github.com/risc0/risc0"
 }
