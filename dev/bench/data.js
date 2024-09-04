@@ -11434,6 +11434,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c208fe3962933bd755b4ba994393b120ed6c48a",
+          "message": "BONSAI: Added cycle limit + SNARK response refactor (#2310)\n\nThis PR adds configurable execution cycle limits to bonsai session\r\ncreation and refactors how snarks are delivered back to customers.\r\n\r\nThis change includes a breaking change for the way SNARKs are handled, now the successful snark status will provide a receipt URL (in the `output` field) to download a `bincode` encoded `risc0_zkvm::Receipt` with the inner type of Groth16.\r\n\r\nAdditionally it adds the `create_session_with_limit` to opt into the new client defined executor limit (works with both exec-only and normal STARKs)",
+          "timestamp": "2024-09-03T18:10:25-07:00",
+          "tree_id": "be37325a1460f643b44a384ded94072948f340cb",
+          "url": "https://github.com/risc0/risc0/commit/2c208fe3962933bd755b4ba994393b120ed6c48a"
+        },
+        "date": 1725412644954,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21076126,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35148,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24399,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44023,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42671,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35517,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21396,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -44909,6 +44968,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725412591382,
+  "lastUpdate": 1725412652995,
   "repoUrl": "https://github.com/risc0/risc0"
 }
