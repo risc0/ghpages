@@ -34247,6 +34247,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c208fe3962933bd755b4ba994393b120ed6c48a",
+          "message": "BONSAI: Added cycle limit + SNARK response refactor (#2310)\n\nThis PR adds configurable execution cycle limits to bonsai session\r\ncreation and refactors how snarks are delivered back to customers.\r\n\r\nThis change includes a breaking change for the way SNARKs are handled, now the successful snark status will provide a receipt URL (in the `output` field) to download a `bincode` encoded `risc0_zkvm::Receipt` with the inner type of Groth16.\r\n\r\nAdditionally it adds the `create_session_with_limit` to opt into the new client defined executor limit (works with both exec-only and normal STARKs)",
+          "timestamp": "2024-09-03T18:10:25-07:00",
+          "tree_id": "be37325a1460f643b44a384ded94072948f340cb",
+          "url": "https://github.com/risc0/risc0/commit/2c208fe3962933bd755b4ba994393b120ed6c48a"
+        },
+        "date": 1725412468219,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31797820,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103507,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90543,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 162598,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149928,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 101944,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78779,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -44732,6 +44791,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725397165426,
+  "lastUpdate": 1725412470408,
   "repoUrl": "https://github.com/risc0/risc0"
 }
