@@ -1,4 +1,4 @@
-# 📊 RISC Zero benchmarks & reports
+# Risc Zero generated reports
 
 * [Benchmarks](https://benchmarks.risczero.com/benchmarks)
 * [Crates.io Validation](https://benchmarks.risczero.com/crates-validation)
