@@ -1,6 +1,3 @@
-# Risc Zero generated reports
+# 📊 RISC Zero reports
 
-* [Benchmarks](/dev/bench/index.html)
-* [Crates.io Validation](/dev/crate-validation/index.html)
-* [Datasheet](/dev/datasheet/index.html)
-* [Application benchmarks](/dev/benchmarks/index.html)
+This repository contains data that is used by https://reports.risczero.com
