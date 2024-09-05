@@ -1,6 +1,6 @@
-# 📊 RISC Zero benchmarks & reports
+# Risc Zero generated reports
 
-* [Benchmarks](https://benchmarks.risczero.com/benchmarks)
-* [Crates.io Validation](https://benchmarks.risczero.com/crates-validation)
-* [Datasheet](https://benchmarks.risczero.com/main/datasheet)
-* [Application Benchmarks](https://benchmarks.risczero.com/main/applications-benchmarks/macOS-apple_m2_pro)
+* [Benchmarks](/dev/bench/index.html)
+* [Crates.io Validation](/dev/crate-validation/index.html)
+* [Datasheet](/dev/datasheet/index.html)
+* [Application benchmarks](/dev/benchmarks/index.html)
