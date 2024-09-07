@@ -23047,6 +23047,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fcde654430bfe1de4303313633195e4f997adde8",
+          "message": "Support for deferred assumptions (#2288)\n\nThis change defers the processing of on-demand ZKR proofs so that they\r\noccur later in the pipeline rather than inline during the execution\r\nphase. The benefit of this approach is that proving services can\r\ndistribute the ZKR proof workload out to a worker pool.\r\n\r\nA `CoprocessorCallback` can be configured on the `ExecutorEnv` which\r\nallows users to receive a notification when a ZKR proof needs to be\r\nproduced. The ZKR proof can happen asynchronously and does not need to\r\nblock the executor. However, the assumption receipt needs to be produced\r\nby the time `resolve` is called to resolve any outstanding assumptions.",
+          "timestamp": "2024-09-07T04:47:48Z",
+          "tree_id": "0e7fb42f21da2b113dd5ae28aeabda56a494030c",
+          "url": "https://github.com/risc0/risc0/commit/fcde654430bfe1de4303313633195e4f997adde8"
+        },
+        "date": 1725684722803,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22093926,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 754137,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 765269,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 536516,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 394702,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 717165,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 520781,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -45204,6 +45263,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725432955402,
+  "lastUpdate": 1725684725832,
   "repoUrl": "https://github.com/risc0/risc0"
 }
