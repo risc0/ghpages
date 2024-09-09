@@ -11611,6 +11611,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7304b0c80634f38206805ce9f4fd20f206429bb9",
+          "message": "ci: Add arch to runner labels (#2325)",
+          "timestamp": "2024-09-09T12:15:35-07:00",
+          "tree_id": "3d854ecbd23328ab6032f2836bc510d34bb68c4e",
+          "url": "https://github.com/risc0/risc0/commit/7304b0c80634f38206805ce9f4fd20f206429bb9"
+        },
+        "date": 1725909706876,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22387148,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35507,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24449,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44200,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43127,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35436,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21478,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -45558,6 +45617,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725909595631,
+  "lastUpdate": 1725909714960,
   "repoUrl": "https://github.com/risc0/risc0"
 }
