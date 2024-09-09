@@ -34837,6 +34837,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7304b0c80634f38206805ce9f4fd20f206429bb9",
+          "message": "ci: Add arch to runner labels (#2325)",
+          "timestamp": "2024-09-09T12:15:35-07:00",
+          "tree_id": "3d854ecbd23328ab6032f2836bc510d34bb68c4e",
+          "url": "https://github.com/risc0/risc0/commit/7304b0c80634f38206805ce9f4fd20f206429bb9"
+        },
+        "date": 1725909589802,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33104026,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103803,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90516,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161520,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148659,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102801,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79028,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -45499,6 +45558,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725909590776,
+  "lastUpdate": 1725909595631,
   "repoUrl": "https://github.com/risc0/risc0"
 }
