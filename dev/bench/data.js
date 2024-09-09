@@ -11670,6 +11670,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c04e90998a3f9d32a753072886a3358d9b8d7b8f",
+          "message": "Update dependencies (#2328)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-09-09T16:35:57-07:00",
+          "tree_id": "bcd2b085ca87711e796a65b8c0eef2e6218ded90",
+          "url": "https://github.com/risc0/risc0/commit/c04e90998a3f9d32a753072886a3358d9b8d7b8f"
+        },
+        "date": 1725925391306,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21864468,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35073,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24310,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44113,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43162,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34798,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21313,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -45794,6 +45853,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725925221692,
+  "lastUpdate": 1725925399257,
   "repoUrl": "https://github.com/risc0/risc0"
 }
