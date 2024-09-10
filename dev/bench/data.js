@@ -23755,6 +23755,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42079debea7bcac8b7fcbd090c5f92d8d6679477",
+          "message": "Add tests for deferred assumptions (#2327)",
+          "timestamp": "2024-09-10T23:08:54Z",
+          "tree_id": "c63372d4739a80cc7c0bce73f7c8324174303b40",
+          "url": "https://github.com/risc0/risc0/commit/42079debea7bcac8b7fcbd090c5f92d8d6679477"
+        },
+        "date": 1726009988477,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21996090,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 750078,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 757237,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 535464,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 395762,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 712992,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 519283,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -46620,6 +46679,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725995987911,
+  "lastUpdate": 1726009991171,
   "repoUrl": "https://github.com/risc0/risc0"
 }
