@@ -35191,6 +35191,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66de2f0473c5117af1ff7e155a7c95bd44451580",
+          "message": "docs and readme: update to 1.1 (#2317)\n\ncreate new versioned dev docs for 1.1\r\nupdate readme to use 1.1 crates.io links\r\nupdate readme to use new `rzup` command\r\nupdate readme to label `metal` feature as deprecated\r\n\r\nThis should be merged after 1.1 has been published.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-09-10T03:01:55Z",
+          "tree_id": "d2cb99b6c09194222287de891090b32df4275d77",
+          "url": "https://github.com/risc0/risc0/commit/66de2f0473c5117af1ff7e155a7c95bd44451580"
+        },
+        "date": 1725937576958,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32916262,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 104031,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 91178,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161142,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150029,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102092,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78224,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -45971,6 +46030,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725937572783,
+  "lastUpdate": 1725937579060,
   "repoUrl": "https://github.com/risc0/risc0"
 }
