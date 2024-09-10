@@ -23637,6 +23637,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80df8b3757ed0b09211ecf9cf08c04d3b1e05fb4",
+          "message": "Add proving hardware section on local-proving docs (#2319)\n\nWe've been missing documentation on how to use GPU proving. With\r\nassistance from @zeroecco, I've added a section describing the various\r\nhardware targets for proving, and GPU in particular.\r\n\r\nCloses WEB3-30\r\nCloses ZKVM-142\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Paul <paul.gafni@gmail.com>",
+          "timestamp": "2024-09-10T19:11:43Z",
+          "tree_id": "93ad91005bd07efc7ed886dcc3d4dd52c61864a5",
+          "url": "https://github.com/risc0/risc0/commit/80df8b3757ed0b09211ecf9cf08c04d3b1e05fb4"
+        },
+        "date": 1725995747318,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22150938,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 750633,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 764102,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 544780,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 395647,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 716687,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 521185,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -46384,6 +46443,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725986130036,
+  "lastUpdate": 1725995750186,
   "repoUrl": "https://github.com/risc0/risc0"
 }
