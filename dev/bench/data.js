@@ -46440,9 +46440,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80df8b3757ed0b09211ecf9cf08c04d3b1e05fb4",
+          "message": "Add proving hardware section on local-proving docs (#2319)\n\nWe've been missing documentation on how to use GPU proving. With\r\nassistance from @zeroecco, I've added a section describing the various\r\nhardware targets for proving, and GPU in particular.\r\n\r\nCloses WEB3-30\r\nCloses ZKVM-142\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Paul <paul.gafni@gmail.com>",
+          "timestamp": "2024-09-10T19:11:43Z",
+          "tree_id": "93ad91005bd07efc7ed886dcc3d4dd52c61864a5",
+          "url": "https://github.com/risc0/risc0/commit/80df8b3757ed0b09211ecf9cf08c04d3b1e05fb4"
+        },
+        "date": 1725995915319,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21490438,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 475428,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 491247,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 441182,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 312596,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 465883,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 364183,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1725995750186,
+  "lastUpdate": 1725995923164,
   "repoUrl": "https://github.com/risc0/risc0"
 }
