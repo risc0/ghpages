@@ -11788,6 +11788,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4193a7b246547f616e3755210a1cd9a9d62a1a1d",
+          "message": "Enable env variable to configure Bonsai poll time and reduce default (#2198)\n\nTested on low-latency proof workflows, and cuts those e2e snark times\r\nusing this prove API by ~5s (as expected).\r\n\r\nAs for what the default is, just going with the upper limit of what\r\n@mothran suggested Bonsai can handle.\r\n\r\nKeeping the TODO and #1759 open given this is still a very naive\r\nsolution and could be improved. Before we are able to consider adding a\r\nWS API for this, we could do some of the following:\r\n- [ ] Add a backoff function to the stark polling by default, to\r\nminimize server requests for long proofs\r\n\t- Possibly also having each configurable \t\r\n- [ ] Separate the Snark and Stark polling intervals, have them both be\r\nconfigurable\r\n- [ ] Add an initial delay for Starks or Snarks for the minimum duration\r\nwe estimate\r\n\r\nBut I decided to keep it as simple as possible because it is unclear the\r\ndirection of this in the long term.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-09-10T05:04:46Z",
+          "tree_id": "f8584bdb6aa7c33f5450b9bd69f68c67392e83bb",
+          "url": "https://github.com/risc0/risc0/commit/4193a7b246547f616e3755210a1cd9a9d62a1a1d"
+        },
+        "date": 1725945071645,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20441020,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35008,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24157,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43913,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42524,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34842,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21191,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -46266,6 +46325,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1725944946452,
+  "lastUpdate": 1725945079206,
   "repoUrl": "https://github.com/risc0/risc0"
 }
