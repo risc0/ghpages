@@ -11906,6 +11906,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42079debea7bcac8b7fcbd090c5f92d8d6679477",
+          "message": "Add tests for deferred assumptions (#2327)",
+          "timestamp": "2024-09-10T23:08:54Z",
+          "tree_id": "c63372d4739a80cc7c0bce73f7c8324174303b40",
+          "url": "https://github.com/risc0/risc0/commit/42079debea7bcac8b7fcbd090c5f92d8d6679477"
+        },
+        "date": 1726010170273,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21749128,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35394,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24343,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44115,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42863,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35248,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21354,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -46797,6 +46856,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1726010161230,
+  "lastUpdate": 1726010178195,
   "repoUrl": "https://github.com/risc0/risc0"
 }
