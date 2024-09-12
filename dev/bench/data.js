@@ -47030,9 +47030,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ebc18c770c4dd5a8e8dfdca1297edb181848405f",
+          "message": "Adding python notebook for soundness (#2314)\n\nThis PR adds a python notebook calculator for soundness. \r\n\r\nThe [existing security\r\ncalculator](https://github.com/risc0/risc0/blob/main/risc0/zkp/src/prove/soundness.rs)\r\nis great in that the parameters are drawn directly from the codebase,\r\nbut that makes it difficult to analyze the impact of alternative\r\nparameter choices. The Python calculator enables more flexible\r\nexperimentation for parameter choices.\r\n\r\nThe calculator includes calculations in 4 cryptographic regimes: \r\n- Conjectured Security under Best Known Attack (Toy Problem Conjecture)\r\n- Provable Soundness in the List-Decoding Radius\r\n- Conjectured Security using Algebraic Coding Theoretic Conjectures\r\n- Provable Soundness in the Unique-Decoding Radius\r\n\r\nFor information about RISC Zero's security targets, see the\r\n[Cryptographic Security\r\nModel](https://dev.risczero.com/api/security-model).\r\n\r\nCloses ZKP-54\r\nCloses ZKP-55",
+          "timestamp": "2024-09-12T23:40:03Z",
+          "tree_id": "1ece14760ffda62545381c47c0f26aaed3b9bd71",
+          "url": "https://github.com/risc0/risc0/commit/ebc18c770c4dd5a8e8dfdca1297edb181848405f"
+        },
+        "date": 1726184814873,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23078892,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 479925,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 487192,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 442762,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 314059,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 470875,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 364154,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1726184816821,
+  "lastUpdate": 1726184831831,
   "repoUrl": "https://github.com/risc0/risc0"
 }
