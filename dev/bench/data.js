@@ -36076,6 +36076,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e699b3a28348c8332b0b81bf758db0a3a6ab583",
+          "message": "Show unstable risc0-zkvm features on docs.rs (#2336)",
+          "timestamp": "2024-09-13T18:34:33Z",
+          "tree_id": "fab7a5c10d0f9d45f2fbbdb83992a6e48e57d166",
+          "url": "https://github.com/risc0/risc0/commit/0e699b3a28348c8332b0b81bf758db0a3a6ab583"
+        },
+        "date": 1726252730635,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32869654,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 102589,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90380,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160738,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150021,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 103052,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79346,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -47151,6 +47210,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1726252732321,
+  "lastUpdate": 1726252736485,
   "repoUrl": "https://github.com/risc0/risc0"
 }
