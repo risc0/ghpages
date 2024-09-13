@@ -47502,9 +47502,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c955c93a9e15903fd9386f176a3649b27ffaacb7",
+          "message": "Plumb ReceiptClaim through SessionInfo and client-server (#2342)\n\nThis PR plumbs the `session.claim()` through to the `SessionInfo` such\r\nthat it is available from executions carried out with the `Executor`\r\ntrait. Motivation for this PR is that I am writing some tests of\r\ncomposition and want to be able to run the executor and convert the\r\nresult into a fake receipt. This is possible with `ExecutorImpl`, but\r\nnot with `Executor` right now.\r\n\r\nMore context on\r\nhttps://github.com/risc0/risc0/issues/2267#issuecomment-2347372529\r\n\r\nCloses #2267",
+          "timestamp": "2024-09-13T21:22:21Z",
+          "tree_id": "8ce2e1ba20af6175644f497345ab4e46fcfcbcaf",
+          "url": "https://github.com/risc0/risc0/commit/c955c93a9e15903fd9386f176a3649b27ffaacb7"
+        },
+        "date": 1726262962023,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22106812,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 482450,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 489945,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 441283,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 312609,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 470651,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 363741,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1726262932061,
+  "lastUpdate": 1726262969970,
   "repoUrl": "https://github.com/risc0/risc0"
 }
