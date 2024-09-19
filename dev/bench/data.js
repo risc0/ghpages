@@ -36607,6 +36607,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "981d80610dc895c387ad46d88f6925ea9a1f62a6",
+          "message": "Support wider range of client/server use cases (#2356)\n\nCo-authored-by: Parker Thompson <parker@risczero.com>",
+          "timestamp": "2024-09-19T12:16:14-07:00",
+          "tree_id": "6b58221072579c45b1cb2ff5e0ba0331f78bb264",
+          "url": "https://github.com/risc0/risc0/commit/981d80610dc895c387ad46d88f6925ea9a1f62a6"
+        },
+        "date": 1726773639645,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32041870,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103650,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90906,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161366,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149947,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102985,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78827,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -47859,6 +47918,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1726773633589,
+  "lastUpdate": 1726773641864,
   "repoUrl": "https://github.com/risc0/risc0"
 }
