@@ -12260,6 +12260,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f3ada1b83422104400235eb3a3b8122820630b6a",
+          "message": "Fix a typo in the description of `env::verify_intergrity` (#2337)\n\nNoticed a typo and some formatting issues with the docs on\r\n`env::verify_integrity`.",
+          "timestamp": "2024-09-19T20:15:56Z",
+          "tree_id": "310631106213ec527175875067d3bbbaef01a1ea",
+          "url": "https://github.com/risc0/risc0/commit/f3ada1b83422104400235eb3a3b8122820630b6a"
+        },
+        "date": 1726777334953,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21782448,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35495,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24494,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44202,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42821,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35325,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21443,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -48154,6 +48213,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1726777319047,
+  "lastUpdate": 1726777343039,
   "repoUrl": "https://github.com/risc0/risc0"
 }
