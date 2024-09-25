@@ -12319,6 +12319,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cohan.carpentier@gmail.com",
+            "name": "Cohan",
+            "username": "nahoc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "af4248217778c8b7b787076d92f12c1f8db39ff5",
+          "message": "feat(reports): support benchmark deep links (#2330)",
+          "timestamp": "2024-09-25T09:24:06-04:00",
+          "tree_id": "b16b34e6819cc64549a31d84d400d123703b5926",
+          "url": "https://github.com/risc0/risc0/commit/af4248217778c8b7b787076d92f12c1f8db39ff5"
+        },
+        "date": 1727271500900,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21819370,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35207,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24217,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44098,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42941,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35061,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21286,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -48390,6 +48449,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727270902603,
+  "lastUpdate": 1727271509012,
   "repoUrl": "https://github.com/risc0/risc0"
 }
