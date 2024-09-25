@@ -24581,6 +24581,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cohan.carpentier@gmail.com",
+            "name": "Cohan",
+            "username": "nahoc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "af4248217778c8b7b787076d92f12c1f8db39ff5",
+          "message": "feat(reports): support benchmark deep links (#2330)",
+          "timestamp": "2024-09-25T09:24:06-04:00",
+          "tree_id": "b16b34e6819cc64549a31d84d400d123703b5926",
+          "url": "https://github.com/risc0/risc0/commit/af4248217778c8b7b787076d92f12c1f8db39ff5"
+        },
+        "date": 1727270889905,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21498998,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 725408,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732741,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 530497,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 389428,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 689627,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 503585,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -48272,6 +48331,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1726777389436,
+  "lastUpdate": 1727270892328,
   "repoUrl": "https://github.com/risc0/risc0"
 }
