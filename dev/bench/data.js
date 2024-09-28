@@ -24699,6 +24699,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc1f4ac5bcb07731641b6fc6dc13fecb121d1276",
+          "message": "Remove zkpLayoutCompat code generation option (#2369)\n\nThis removes dependencies on the compatibility mode based on the\r\n`zkpLayoutCompat` option. In summary:\r\n\r\n* We now just have a `Reg` type instead of separate types for each\r\nbuffer\r\n* We now have separate DATA_LAYOUT, OUT_LAYOUT, etc. constants for each\r\nbuffer instead of just a combined `LAYOUT` constant.",
+          "timestamp": "2024-09-28T00:17:02Z",
+          "tree_id": "eeb080d3f12b62b34fa8cb408b13a8663fce8d8e",
+          "url": "https://github.com/risc0/risc0/commit/bc1f4ac5bcb07731641b6fc6dc13fecb121d1276"
+        },
+        "date": 1727482864998,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22182886,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 728996,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 734730,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 525840,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 384366,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 693149,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 504410,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -48508,6 +48567,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727281543164,
+  "lastUpdate": 1727482867424,
   "repoUrl": "https://github.com/risc0/risc0"
 }
