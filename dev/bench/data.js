@@ -12437,6 +12437,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b79ad6328dc6b9e7cf1e717552aab05622837904",
+          "message": "update reqwest and downloader (#2388)\n\nThis fixes build issues from reqwest:\r\n\r\n```\r\nerror[E0308]: mismatched types\r\n   --> risc0/cargo-risczero/src/commands/install.rs:184:41\r\n    |\r\n184 |         let client = ClientBuilder::new(client)\r\n    |                      ------------------ ^^^^^^ expected `reqwest::async_impl::client::Client`, found `reqwest::Client`\r\n    |                      |\r\n    |                      arguments to this function are incorrect\r\n    |\r\n    = note: `reqwest::Client` and `reqwest::async_impl::client::Client` have similar names, but are actually distinct types\r\nnote: `reqwest::Client` is defined in crate `reqwest`\r\n   --> /home/aidai/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/reqwest-0.12.7/src/async_impl/client.rs:71:1\r\n    |\r\n71  | pub struct Client {\r\n    | ^^^^^^^^^^^^^^^^^\r\nnote: `reqwest::async_impl::client::Client` is defined in crate `reqwest`\r\n   --> /home/aidai/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/reqwest-0.11.27/src/async_impl/client.rs:69:1\r\n    |\r\n69  | pub struct Client {\r\n    | ^^^^^^^^^^^^^^^^^\r\n    = note: perhaps two different versions of crate `reqwest` are being used?\r\nnote: associated function defined here\r\n   --> /home/aidai/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/reqwest-middleware-0.2.5/src/client.rs:24:12\r\n    |\r\n24  |     pub fn new(client: Client) -> Self {\r\n    |            ^^^\r\n\r\nFor more information about this error, try `rustc --explain E0308`.\r\nerror: could not compile `cargo-risczero` (lib) due to 1 previous error\r\nwarning: build failed, waiting for other jobs to finish...\r\n```\r\n\r\n---------\r\n\r\nCo-authored-by: norton.zh <norton.zhou@bitlayer.ltd>",
+          "timestamp": "2024-09-30T12:01:48-07:00",
+          "tree_id": "92b360c5fd5a30eb4506a6fdae411b8bb29cce04",
+          "url": "https://github.com/risc0/risc0/commit/b79ad6328dc6b9e7cf1e717552aab05622837904"
+        },
+        "date": 1727723330290,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20945526,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35545,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24518,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43362,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42001,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35591,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21413,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -48862,6 +48921,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727723177445,
+  "lastUpdate": 1727723338408,
   "repoUrl": "https://github.com/risc0/risc0"
 }
