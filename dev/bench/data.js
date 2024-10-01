@@ -24935,6 +24935,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0a6a2eda267a2e8328bf0d096b87207f95c79244",
+          "message": "Export poseidon2 constants (#2392)",
+          "timestamp": "2024-10-01T21:03:32Z",
+          "tree_id": "22d95f82918cd4a6cf6d10aec5bc928e57e79f6d",
+          "url": "https://github.com/risc0/risc0/commit/0a6a2eda267a2e8328bf0d096b87207f95c79244"
+        },
+        "date": 1727816853559,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21564794,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 728173,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 733489,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 530529,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 391853,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 692182,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 505028,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -48980,6 +49039,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727723353789,
+  "lastUpdate": 1727816855950,
   "repoUrl": "https://github.com/risc0/risc0"
 }
