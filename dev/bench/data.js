@@ -12614,6 +12614,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nuke-web3@proton.me",
+            "name": "Nuke 🌄",
+            "username": "nuke-web3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa80206707044a0d54583223f08f16131dd7ee9c",
+          "message": "`bun run fmt-markdown` run on `/website` (#2395)",
+          "timestamp": "2024-10-02T16:23:48-04:00",
+          "tree_id": "3106be3e87d229ad8b9b962863da0940f09cd190",
+          "url": "https://github.com/risc0/risc0/commit/aa80206707044a0d54583223f08f16131dd7ee9c"
+        },
+        "date": 1727902780800,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22423272,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35716,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24510,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44407,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43292,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35646,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21540,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -49629,6 +49688,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727901062424,
+  "lastUpdate": 1727902789244,
   "repoUrl": "https://github.com/risc0/risc0"
 }
