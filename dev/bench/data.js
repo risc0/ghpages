@@ -12555,6 +12555,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2a24a93408546dafdc250a1496d1b53cb19a3b9c",
+          "message": "correction to poseidon over BN-254 (#2359)\n\nThe security level for sponge functions is computed as `capacity / 2`. \r\n\r\nFor poseidon over BN-254, the capacity is a single field element of 254\r\nbits.\r\n\r\nTherefore, the security level is 127 bits.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-10-02T01:23:02Z",
+          "tree_id": "021611ff8722256af9929aebfe66888f5bbe0872",
+          "url": "https://github.com/risc0/risc0/commit/2a24a93408546dafdc250a1496d1b53cb19a3b9c"
+        },
+        "date": 1727832558506,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22562424,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35001,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24343,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44163,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42545,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35134,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21299,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -49334,6 +49393,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727832448993,
+  "lastUpdate": 1727832566549,
   "repoUrl": "https://github.com/risc0/risc0"
 }
