@@ -12673,6 +12673,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6c8f5811a6ec7f36a407552ab26df9fffea27e5",
+          "message": "Allow static mut references in specific places (#2398)\n\nIn recent nightly builds, there is a warning against making mutable\r\nreferences to mutable statics (see e.g. here:\r\nhttps://github.com/risc0/risc0/actions/runs/11148604622/job/30985587956?pr=2371).\r\nWe are doing so in certain `unsafe` blocks where we have confirmed that\r\nour usage is acceptable, so this PR adds ` #[allow(static_mut_refs)]` to\r\nthose locations to suppress this warning.",
+          "timestamp": "2024-10-02T23:18:59Z",
+          "tree_id": "dde518812548e1386b015c95446f0344f0106b61",
+          "url": "https://github.com/risc0/risc0/commit/e6c8f5811a6ec7f36a407552ab26df9fffea27e5"
+        },
+        "date": 1727911521944,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21087706,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35154,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24204,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44089,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42841,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35108,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21317,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -49806,6 +49865,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727911416697,
+  "lastUpdate": 1727911530024,
   "repoUrl": "https://github.com/risc0/risc0"
 }
