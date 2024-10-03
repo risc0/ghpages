@@ -12791,6 +12791,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austbot@users.noreply.github.com",
+            "name": "austbot",
+            "username": "austbot"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f61379bf69b24d56e49d6af96a3b284961dcc498",
+          "message": "Makes Bonsai Dependencies Optional under client feature flag (#2375)\n\nThe zkvm `client` feature flag includes the `bonsai-sdk`, which in turn\r\nincludes the `bonsai-sdk` dependancy tree.\r\nBecause the `bonsai-sdk` includes `reqwest` and its `rustls-tls` users\r\nmay find that they have version conflicts with various low level\r\npackages such as `zeroize` and other cryptography related crates. This\r\nis especially henious when working with other blockchain sdk crates such\r\nas solana.\r\n\r\nI propose the following change which is to make the bonsai-sdk only\r\nactive when a developer specifically asks for it. This change will\r\nreduce compiled binary size, allow devs to unshackle themselves from\r\nforked versions of risc0 such as\r\nhttps://github.com/anagrambuild/risc0/tree/v1.0.1-bonsai-fix, and allow\r\ndevs implementing their own hosts to not have to bleed so much.\r\n\r\nIts likely that some docs need to be updated and perhaps examples aswell\r\nin order to fully integrate this change, but this PR is meant to see if\r\nthe Risc0 team will accept this type of change.\r\n\r\nNote the `bonsai` flag will default to on so that current sdk\r\nconsumoooors will not be affected.",
+          "timestamp": "2024-10-03T19:08:40Z",
+          "tree_id": "4f66d429f39934cb6d286a508e7b2462e53270d2",
+          "url": "https://github.com/risc0/risc0/commit/f61379bf69b24d56e49d6af96a3b284961dcc498"
+        },
+        "date": 1727982926547,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21450916,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35221,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24348,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44280,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43004,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35222,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21365,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -50278,6 +50337,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727982800454,
+  "lastUpdate": 1727982934100,
   "repoUrl": "https://github.com/risc0/risc0"
 }
