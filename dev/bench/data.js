@@ -50098,9 +50098,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12f0a30d1d273360389bada897ad0035a8ad29c5",
+          "message": "Add Elliptic Curve acceleration operations (#2371)\n\n\r\n---------\r\n\r\nCo-authored-by: nils m <nils@risczero.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-10-03T00:27:13Z",
+          "tree_id": "6a8e05fab7c369912ddb9bb970d8eb0de3a002a5",
+          "url": "https://github.com/risc0/risc0/commit/12f0a30d1d273360389bada897ad0035a8ad29c5"
+        },
+        "date": 1727915622537,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22237004,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 475688,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 485875,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 443791,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 313443,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 461033,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 362624,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1727915620207,
+  "lastUpdate": 1727915630345,
   "repoUrl": "https://github.com/risc0/risc0"
 }
