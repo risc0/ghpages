@@ -25643,6 +25643,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Andrew0ng@bitlayer.ltd",
+            "name": "AndreW0ng",
+            "username": "wz14"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f153e4e28ec7a3bd220d53fc43c8729d34c3660",
+          "message": "change visibility of groth16 proof (#2376)\n\nThis PR changes the visibility of some structures and functions of\r\ngroth16.\r\nIt's helpful to extract the *real* groth16 proof from r0 proof receipt\r\nfor those teams writing on-chain verifier themselves.",
+          "timestamp": "2024-10-10T01:57:37-07:00",
+          "tree_id": "6b513166f7fa6597399ff3f4801172d083aff46e",
+          "url": "https://github.com/risc0/risc0/commit/4f153e4e28ec7a3bd220d53fc43c8729d34c3660"
+        },
+        "date": 1728550899935,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21592358,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 728136,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 735158,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 523881,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 387258,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 697076,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 502949,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -50396,6 +50455,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1727982960353,
+  "lastUpdate": 1728550902864,
   "repoUrl": "https://github.com/risc0/risc0"
 }
