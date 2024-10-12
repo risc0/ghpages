@@ -25761,6 +25761,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "824974bd158c29185b6c0583ba403d40ec5ff14f",
+          "message": "Optimize byte_poly conversion to/from bigint (#2414)",
+          "timestamp": "2024-10-12T11:26:42-07:00",
+          "tree_id": "86bae0acf3eb7efa1de19a3ba1c37ebf5e4e6a53",
+          "url": "https://github.com/risc0/risc0/commit/824974bd158c29185b6c0583ba403d40ec5ff14f"
+        },
+        "date": 1728757843000,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21963212,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 724501,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732878,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 544246,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 386386,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 689650,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 502579,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -50632,6 +50691,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1728551456703,
+  "lastUpdate": 1728757845487,
   "repoUrl": "https://github.com/risc0/risc0"
 }
