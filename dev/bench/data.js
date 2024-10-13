@@ -12909,6 +12909,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "824974bd158c29185b6c0583ba403d40ec5ff14f",
+          "message": "Optimize byte_poly conversion to/from bigint (#2414)",
+          "timestamp": "2024-10-12T11:26:42-07:00",
+          "tree_id": "86bae0acf3eb7efa1de19a3ba1c37ebf5e4e6a53",
+          "url": "https://github.com/risc0/risc0/commit/824974bd158c29185b6c0583ba403d40ec5ff14f"
+        },
+        "date": 1728803679740,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20873002,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35062,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24309,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43945,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42635,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34975,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21254,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -50750,6 +50809,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1728757869471,
+  "lastUpdate": 1728803687826,
   "repoUrl": "https://github.com/risc0/risc0"
 }
