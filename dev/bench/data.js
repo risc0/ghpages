@@ -13086,6 +13086,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04526dbe6c432eb90ac6e8b7a15f9ff5df72a4aa",
+          "message": "docker builds: fix cpp toolchain support (#2423)\n\nThis change fixes errors that occur from building guests that use C code\r\n(such as c-kzg) using the docker reproducible build image. This change\r\nset adds the `CC` and `CFLAGS` to the appropriate location and uses a\r\nnew docker image that includes the `build-essentials` package.",
+          "timestamp": "2024-10-16T21:59:33Z",
+          "tree_id": "9913934d01d68dae0d71fb98fc4e60def240b63b",
+          "url": "https://github.com/risc0/risc0/commit/04526dbe6c432eb90ac6e8b7a15f9ff5df72a4aa"
+        },
+        "date": 1729116422412,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21243422,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35074,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24136,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43856,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42554,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35082,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21215,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -51458,6 +51517,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729116408262,
+  "lastUpdate": 1729116430392,
   "repoUrl": "https://github.com/risc0/risc0"
 }
