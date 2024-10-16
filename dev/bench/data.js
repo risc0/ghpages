@@ -51396,9 +51396,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04526dbe6c432eb90ac6e8b7a15f9ff5df72a4aa",
+          "message": "docker builds: fix cpp toolchain support (#2423)\n\nThis change fixes errors that occur from building guests that use C code\r\n(such as c-kzg) using the docker reproducible build image. This change\r\nset adds the `CC` and `CFLAGS` to the appropriate location and uses a\r\nnew docker image that includes the `build-essentials` package.",
+          "timestamp": "2024-10-16T21:59:33Z",
+          "tree_id": "9913934d01d68dae0d71fb98fc4e60def240b63b",
+          "url": "https://github.com/risc0/risc0/commit/04526dbe6c432eb90ac6e8b7a15f9ff5df72a4aa"
+        },
+        "date": 1729116400323,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22541026,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 475952,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 488494,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 442283,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 313632,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 465203,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 364302,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1729116241924,
+  "lastUpdate": 1729116408262,
   "repoUrl": "https://github.com/risc0/risc0"
 }
