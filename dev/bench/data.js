@@ -13027,6 +13027,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33f06f15857ffcb48d03c777abede555d74fed7c",
+          "message": "build(deps): bump serde_with from 3.9.0 to 3.11.0 (#2419)\n\nBumps [serde_with](https://github.com/jonasbb/serde_with) from 3.9.0 to\r\n3.11.0.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/jonasbb/serde_with/releases\">serde_with's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>serde_with v3.11.0</h2>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>\r\n<p>Add support for <code>hashbrown</code> v0.15 (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/787\">#787</a>/<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/790\">#790</a>)</p>\r\n<p>This extends the existing support for <code>hashbrown</code> v0.14 to\r\nthe newly released version.</p>\r\n</li>\r\n</ul>\r\n<h2>serde_with v3.10.0</h2>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>\r\n<p>Add newline separator by <a\r\nhref=\"https://github.com/jayvdb\"><code>@​jayvdb</code></a> (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/777\">#777</a>)</p>\r\n<p>The <code>UnixLineSeparator</code> and <code>DosLineSeparator</code>\r\ncan be used together with <code>StringWithSeparator</code>.</p>\r\n</li>\r\n</ul>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>\r\n<p>Proper handling of <code>cfg_attr</code> in the <code>serde_as</code>\r\nmacro by <a\r\nhref=\"https://github.com/sivizius\"><code>@​sivizius</code></a> (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/782\">#782</a>)</p>\r\n<p>This allows to parse more valid forms of the <code>cfg_attr</code>\r\nmacro, including multiple values and attribute that do not follow the\r\n<code>key = value</code> schema.</p>\r\n</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/bc2063440da5168963285196e0345e82ab9ccc4e\"><code>bc20634</code></a>\r\nBump version to 3.11 (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/791\">#791</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/bf8cfd48a240ff911462b60a5b9c9753722348a2\"><code>bf8cfd4</code></a>\r\nBump version to 3.11</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/a58cb33e4f1f198b42c9b786be0e65ac5492f5c4\"><code>a58cb33</code></a>\r\nAdd support for hashbrown v0.15 (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/790\">#790</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/ef7403d3945fb357be1cc9f0781891d41a869daa\"><code>ef7403d</code></a>\r\nUpdate changelog</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/5d97c6a349f975110594b083f4d81c29bb9f0562\"><code>5d97c6a</code></a>\r\nAdd support for hashbrown v0.15</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/db290afa3a049cf34e4a41eb5d29d5895603a599\"><code>db290af</code></a>\r\nBump regex from 1.10.3 to 1.11.0 (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/788\">#788</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/a329a52ac37e9aefc00bac668409468d1e1bba35\"><code>a329a52</code></a>\r\nBump regex from 1.10.3 to 1.11.0</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/eb417640dce54ea76eaba597b01ffd9c8ea351c7\"><code>eb41764</code></a>\r\nFix clippy::needless_lifetimes (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/789\">#789</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/eca5a271af80daa38cd281f5a96065a60717832e\"><code>eca5a27</code></a>\r\nFix clippy::needless_lifetimes</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/f1b79f27cac7545513c4f14f7c295db2b843cc4f\"><code>f1b79f2</code></a>\r\nBump version to 3.10.0 (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/786\">#786</a>)</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/jonasbb/serde_with/compare/v3.9.0...v3.11.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=serde_with&package-manager=cargo&previous-version=3.9.0&new-version=3.11.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-10-16T00:43:24Z",
+          "tree_id": "0e52871d38bc10164fa843a7a9c245733b8c3bc2",
+          "url": "https://github.com/risc0/risc0/commit/33f06f15857ffcb48d03c777abede555d74fed7c"
+        },
+        "date": 1729039889864,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20514832,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34496,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24044,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43785,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42753,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35133,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21254,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -51222,6 +51281,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729039803919,
+  "lastUpdate": 1729039897846,
   "repoUrl": "https://github.com/risc0/risc0"
 }
