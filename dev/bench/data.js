@@ -12968,6 +12968,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa186fbdd90a481a0492fa3d0c6622005025daab",
+          "message": "build(deps): bump regex from 1.10.6 to 1.11.0 (#2420)\n\nBumps [regex](https://github.com/rust-lang/regex) from 1.10.6 to 1.11.0.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/rust-lang/regex/blob/master/CHANGELOG.md\">regex's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h1>1.11.0 (2024-09-29)</h1>\r\n<p>This is a new minor release of <code>regex</code> that brings in an\r\nupdate to the\r\nUnicode Character Database. Specifically, this updates the Unicode data\r\nused by <code>regex</code> internally to the version 16 release.</p>\r\n<p>New features:</p>\r\n<ul>\r\n<li>[FEATURE <a\r\nhref=\"https://redirect.github.com/rust-lang/regex/issues/1228\">#1228</a>](<a\r\nhref=\"https://redirect.github.com/rust-lang/regex/pull/1228\">rust-lang/regex#1228</a>):\r\nAdd new <code>regex::SetMatches::matched_all</code> method.</li>\r\n<li>[FEATURE <a\r\nhref=\"https://redirect.github.com/rust-lang/regex/issues/1229\">#1229</a>](<a\r\nhref=\"https://redirect.github.com/rust-lang/regex/pull/1229\">rust-lang/regex#1229</a>):\r\nUpdate to Unicode Character Database (UCD) version 16.</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/bcbe40342628b15ab2543d386c745f7f0811b791\"><code>bcbe403</code></a>\r\n1.11.0</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/9e17e56d3bd77f135f8ffccefcea3f49cbb0cd44\"><code>9e17e56</code></a>\r\ndeps: bump regex-automata</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/58e16f50f07729bf856570d1a8be0de0b4d5e9e0\"><code>58e16f5</code></a>\r\nregex-automata-0.4.8</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/4bb1e3d992a4e237c5ad535f1798f7a46552c34d\"><code>4bb1e3d</code></a>\r\ndeps: bump regex-syntax</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/cba0fbc0194456f644040d7558ae6ed261d57cc2\"><code>cba0fbc</code></a>\r\nregex-syntax-0.8.5</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/1533257e7d337022bbfae9df99fb99948044aa87\"><code>1533257</code></a>\r\nchangelog: 1.11.0</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/9239e7e2feb996e8d764dbda23614663a1882ece\"><code>9239e7e</code></a>\r\ndata: update to UCD 16</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/7691e4913d1f0c7d15dc6e1f95cf07474f614bd9\"><code>7691e49</code></a>\r\ncli: include \\w, \\s and \\d in Unicode data table generation</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/b790aa5d2880ad4aeb1820fcb4bd6046f9c50dd6\"><code>b790aa5</code></a>\r\napi: add SetMatches::matched_all</li>\r\n<li><a\r\nhref=\"https://github.com/rust-lang/regex/commit/d3d3ff7abe4d98972a2d2cde1202ce903ddd4e14\"><code>d3d3ff7</code></a>\r\ncli: remove some dead code</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/rust-lang/regex/compare/1.10.6...1.11.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=regex&package-manager=cargo&previous-version=1.10.6&new-version=1.11.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-10-15T16:52:11-07:00",
+          "tree_id": "b87c864f2ae17508c75951245e6b7f729b4ff54c",
+          "url": "https://github.com/risc0/risc0/commit/aa186fbdd90a481a0492fa3d0c6622005025daab"
+        },
+        "date": 1729037139126,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20835448,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34984,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24195,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 42992,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41691,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35045,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21171,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -50986,6 +51045,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729036775983,
+  "lastUpdate": 1729037147314,
   "repoUrl": "https://github.com/risc0/risc0"
 }
