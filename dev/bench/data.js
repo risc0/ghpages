@@ -39262,6 +39262,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04526dbe6c432eb90ac6e8b7a15f9ff5df72a4aa",
+          "message": "docker builds: fix cpp toolchain support (#2423)\n\nThis change fixes errors that occur from building guests that use C code\r\n(such as c-kzg) using the docker reproducible build image. This change\r\nset adds the `CC` and `CFLAGS` to the appropriate location and uses a\r\nnew docker image that includes the `build-essentials` package.",
+          "timestamp": "2024-10-16T21:59:33Z",
+          "tree_id": "9913934d01d68dae0d71fb98fc4e60def240b63b",
+          "url": "https://github.com/risc0/risc0/commit/04526dbe6c432eb90ac6e8b7a15f9ff5df72a4aa"
+        },
+        "date": 1729116240506,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32638036,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 114254,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98336,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158769,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147459,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 113169,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84325,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -51340,6 +51399,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729116215979,
+  "lastUpdate": 1729116241924,
   "repoUrl": "https://github.com/risc0/risc0"
 }
