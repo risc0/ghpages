@@ -39439,6 +39439,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0a52bd0a60bf4c92d67a2d66f99b636feff98866",
+          "message": "Add input generation benchmarks (#2426)\n\n* Add unconstrained cycle log\r\n* Fix format/clippy issues\r\n* Move tests to module dirs",
+          "timestamp": "2024-10-17T15:31:41-07:00",
+          "tree_id": "07ab25674f686eac138fe122481f350aa14d82fc",
+          "url": "https://github.com/risc0/risc0/commit/0a52bd0a60bf4c92d67a2d66f99b636feff98866"
+        },
+        "date": 1729204551645,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32334298,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103863,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90791,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160897,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149703,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102606,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78674,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -51576,6 +51635,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729204544042,
+  "lastUpdate": 1729204553064,
   "repoUrl": "https://github.com/risc0/risc0"
 }
