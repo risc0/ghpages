@@ -52399,9 +52399,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "03a74d272e0584a76dc62fd7116ef1b2f1947146",
+          "message": "Fix BigInt Type Inference (#2413)\n\nMake a number of fixes to BigInt dialect type inference. The bulk of the\r\nwork is in the corresponding zirgen PR: https://github.com/risc0/zirgen/pull/45.",
+          "timestamp": "2024-10-21T20:58:25Z",
+          "tree_id": "8e596954c2ce5a016690aaf9923e60ad13b94168",
+          "url": "https://github.com/risc0/risc0/commit/03a74d272e0584a76dc62fd7116ef1b2f1947146"
+        },
+        "date": 1729544748553,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22461310,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 478574,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 493113,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 442252,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 313503,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 470592,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 364572,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1729544705236,
+  "lastUpdate": 1729544756256,
   "repoUrl": "https://github.com/risc0/risc0"
 }
