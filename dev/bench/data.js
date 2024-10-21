@@ -39911,6 +39911,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "03a74d272e0584a76dc62fd7116ef1b2f1947146",
+          "message": "Fix BigInt Type Inference (#2413)\n\nMake a number of fixes to BigInt dialect type inference. The bulk of the\r\nwork is in the corresponding zirgen PR: https://github.com/risc0/zirgen/pull/45.",
+          "timestamp": "2024-10-21T20:58:25Z",
+          "tree_id": "8e596954c2ce5a016690aaf9923e60ad13b94168",
+          "url": "https://github.com/risc0/risc0/commit/03a74d272e0584a76dc62fd7116ef1b2f1947146"
+        },
+        "date": 1729544576467,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33038272,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 114069,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98339,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158880,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147177,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 112824,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84210,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -52225,6 +52284,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729537818426,
+  "lastUpdate": 1729544577950,
   "repoUrl": "https://github.com/risc0/risc0"
 }
