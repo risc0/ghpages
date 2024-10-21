@@ -13204,6 +13204,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "44982a78bd355ea70f08e1dfb01db5f4fc37bedb",
+          "message": "Disable environment variables and arguments by default in guests (#2415)\n\nThis PR disables syscalls `sys_getenv`, `sys_argc` and `sys_argv` by\r\ndefault, with the option to enable them via a feature flag on the\r\n`risc0-zkvm-platform` crate. In host programs, environment variables and\r\narguments are generally considered trusted. In contrast, the guest does\r\nnot trust the host, which leads to risk that code designed for running\r\non the host may result in insecure behavior when run in the guest.\r\nDisabling environment variables and args by default mitigates this risk.",
+          "timestamp": "2024-10-21T07:34:10-07:00",
+          "tree_id": "2cdfb1055382fa3989da021e95e9e38214dd797e",
+          "url": "https://github.com/risc0/risc0/commit/44982a78bd355ea70f08e1dfb01db5f4fc37bedb"
+        },
+        "date": 1729527782230,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21416160,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 34573,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24100,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43809,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42542,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34899,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21228,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -51871,6 +51930,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729521511355,
+  "lastUpdate": 1729527790186,
   "repoUrl": "https://github.com/risc0/risc0"
 }
