@@ -26469,6 +26469,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7b6ef5acecd0d72eb067f70e3d4f7c87f785bb9d",
+          "message": "build(deps): bump bytes from 1.6.1 to 1.7.2 (#2434)\n\nBumps [bytes](https://github.com/tokio-rs/bytes) from 1.6.1 to 1.7.2.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/tokio-rs/bytes/releases\">bytes's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>Bytes 1.7.2</h2>\r\n<h1>1.7.2 (September 17, 2024)</h1>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>Fix default impl of <code>Buf::{get_int, get_int_le}</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/732\">#732</a>)</li>\r\n</ul>\r\n<h3>Documented</h3>\r\n<ul>\r\n<li>Fix double spaces in comments and doc comments (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/731\">#731</a>)</li>\r\n</ul>\r\n<h3>Internal changes</h3>\r\n<ul>\r\n<li>Ensure BytesMut::advance reduces capacity (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/728\">#728</a>)</li>\r\n</ul>\r\n<h2>Bytes 1.7.1</h2>\r\n<h1>1.7.1 (August 1, 2024)</h1>\r\n<p>This release reverts the following change due to a regression:</p>\r\n<ul>\r\n<li>Reuse capacity when possible in <code>&lt;BytesMut as\r\nBuf&gt;::advance</code> impl (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/698\">#698</a>)</li>\r\n</ul>\r\n<p>The revert can be found at <a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/726\">#726</a>.</p>\r\n<h2>Bytes 1.7.0</h2>\r\n<h1>1.7.0 (July 31, 2024)</h1>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>Add conversion from <code>Bytes</code> to <code>BytesMut</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/695\">#695</a>,\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/710\">#710</a>)</li>\r\n<li>Add reclaim method without additional allocation (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/686\">#686</a>)</li>\r\n</ul>\r\n<h3>Documented</h3>\r\n<ul>\r\n<li>Clarify how <code>BytesMut::zeroed</code> works (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/714\">#714</a>)</li>\r\n<li>Clarify the behavior of <code>Buf::chunk</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/717\">#717</a>)</li>\r\n</ul>\r\n<h3>Changed</h3>\r\n<ul>\r\n<li>Change length condition of <code>BytesMut::truncate</code></li>\r\n<li>Reuse capacity when possible in <code>&lt;BytesMut as\r\nBuf&gt;::advance</code> impl (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/698\">#698</a>)</li>\r\n<li>Improve <code>must_use</code> suggestion of\r\n<code>BytesMut::split</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/699\">#699</a>)</li>\r\n</ul>\r\n<h3>Internal changes</h3>\r\n<ul>\r\n<li>Use <code>ManuallyDrop</code> instead of <code>mem::forget</code>\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/678\">#678</a>)</li>\r\n<li>Don't set <code>len</code> in <code>BytesMut::reserve</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/682\">#682</a>)</li>\r\n<li>Optimize <code>Bytes::copy_to_bytes</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/688\">#688</a>)</li>\r\n<li>Refactor <code>BytesMut::truncate</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/694\">#694</a>)</li>\r\n<li>Refactor <code>BytesMut::resize</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/696\">#696</a>)</li>\r\n<li>Reorder assertion in <code>Bytes::split_to</code>,\r\n<code>Bytes::split_off</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/689\">#689</a>,\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/693\">#693</a>)</li>\r\n<li>Use <code>offset_from</code> in more places (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/705\">#705</a>)</li>\r\n<li>Correct the wrong usage of <code>IntoIter</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/707\">#707</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/tokio-rs/bytes/blob/master/CHANGELOG.md\">bytes's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h1>1.7.2 (September 17, 2024)</h1>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>Fix default impl of <code>Buf::{get_int, get_int_le}</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/732\">#732</a>)</li>\r\n</ul>\r\n<h3>Documented</h3>\r\n<ul>\r\n<li>Fix double spaces in comments and doc comments (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/731\">#731</a>)</li>\r\n</ul>\r\n<h3>Internal changes</h3>\r\n<ul>\r\n<li>Ensure BytesMut::advance reduces capacity (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/728\">#728</a>)</li>\r\n</ul>\r\n<h1>1.7.1 (August 1, 2024)</h1>\r\n<p>This release reverts the following change due to a regression:</p>\r\n<ul>\r\n<li>Reuse capacity when possible in <code>&lt;BytesMut as\r\nBuf&gt;::advance</code> impl (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/698\">#698</a>)</li>\r\n</ul>\r\n<p>The revert can be found at <a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/726\">#726</a>.</p>\r\n<h1>1.7.0 (July 31, 2024)</h1>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>Add conversion from <code>Bytes</code> to <code>BytesMut</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/695\">#695</a>,\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/710\">#710</a>)</li>\r\n<li>Add reclaim method without additional allocation (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/686\">#686</a>)</li>\r\n</ul>\r\n<h3>Documented</h3>\r\n<ul>\r\n<li>Clarify how <code>BytesMut::zeroed</code> works (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/714\">#714</a>)</li>\r\n<li>Clarify the behavior of <code>Buf::chunk</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/717\">#717</a>)</li>\r\n</ul>\r\n<h3>Changed</h3>\r\n<ul>\r\n<li>Change length condition of <code>BytesMut::truncate</code></li>\r\n<li>Reuse capacity when possible in <code>&lt;BytesMut as\r\nBuf&gt;::advance</code> impl (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/698\">#698</a>)</li>\r\n<li>Improve <code>must_use</code> suggestion of\r\n<code>BytesMut::split</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/699\">#699</a>)</li>\r\n</ul>\r\n<h3>Internal changes</h3>\r\n<ul>\r\n<li>Use <code>ManuallyDrop</code> instead of <code>mem::forget</code>\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/678\">#678</a>)</li>\r\n<li>Don't set <code>len</code> in <code>BytesMut::reserve</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/682\">#682</a>)</li>\r\n<li>Optimize <code>Bytes::copy_to_bytes</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/688\">#688</a>)</li>\r\n<li>Refactor <code>BytesMut::truncate</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/694\">#694</a>)</li>\r\n<li>Refactor <code>BytesMut::resize</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/696\">#696</a>)</li>\r\n<li>Reorder assertion in <code>Bytes::split_to</code>,\r\n<code>Bytes::split_off</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/689\">#689</a>,\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/693\">#693</a>)</li>\r\n<li>Use <code>offset_from</code> in more places (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/705\">#705</a>)</li>\r\n<li>Correct the wrong usage of <code>IntoIter</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/707\">#707</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/d7c1d658d90c922eeee1dbc29bc6f6fd9a1a1a66\"><code>d7c1d65</code></a>\r\nchore: prepare bytes v1.7.2 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/736\">#736</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/ac46ebdd464144cecd7463a96ca9eb347458ae94\"><code>ac46ebd</code></a>\r\nci: update nightly to nightly-2024-09-15 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/734\">#734</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/79fb85323cf4cf14d9b85f487b65fc147030cf4b\"><code>79fb853</code></a>\r\nfix: apply sign extension when decoding int (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/732\">#732</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/291df5acc94b82a48765e67eeb1c1a2074539e68\"><code>291df5a</code></a>\r\nFix double spaces in comments and doc comments (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/731\">#731</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/ed7d5ff39e39c2802c0fa9e2fc308f6a3e0beda7\"><code>ed7d5ff</code></a>\r\ntest: ensure BytesMut::advance reduces capacity (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/728\">#728</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/dc4fb3e8f45650500187f8cdbad5ac8ffdb7df0a\"><code>dc4fb3e</code></a>\r\nchore: prepare bytes v1.7.1 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/727\">#727</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/f488be48d07d899dc428c5cd7f5c11a95bf7716c\"><code>f488be4</code></a>\r\nRevert &quot;Reuse capacity when possible in &lt;BytesMut as\r\nBuf&gt;::advance impl&quot; (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/726\">#726</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/03fdde9dcfe69caf681ecaa1d97f8105a9c9a6c1\"><code>03fdde9</code></a>\r\nchore: prepare v1.7.0 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/724\">#724</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/f8c7b574c0ef0c3cb097d29a08e53b15b4e4a522\"><code>f8c7b57</code></a>\r\nMerge 'v1.6.1' into 'master' (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/721\">#721</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/bytes/commit/9965a04b5684079bb614addd750340ffc165a9f5\"><code>9965a04</code></a>\r\nRemove unnecessary file (<a\r\nhref=\"https://redirect.github.com/tokio-rs/bytes/issues/719\">#719</a>)</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/tokio-rs/bytes/compare/v1.6.1...v1.7.2\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=bytes&package-manager=cargo&previous-version=1.6.1&new-version=1.7.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-10-21T19:01:57Z",
+          "tree_id": "49d64eca11a5e1f259f73287c2625ab0ed3b5321",
+          "url": "https://github.com/risc0/risc0/commit/7b6ef5acecd0d72eb067f70e3d4f7c87f785bb9d"
+        },
+        "date": 1729537565160,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22106904,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 726666,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 735207,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 532046,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 386417,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 691454,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 502359,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -51989,6 +52048,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729528425657,
+  "lastUpdate": 1729537567390,
   "repoUrl": "https://github.com/risc0/risc0"
 }
