@@ -40147,6 +40147,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d2b9127b438892a81dd85cc1247c3b8e3d00a2b",
+          "message": "Integrate SupraNational's poly_divide kernel (#2431)",
+          "timestamp": "2024-10-22T01:28:49Z",
+          "tree_id": "a9f1bf3647729aca2cd0c56b363ae20b6c80f9f6",
+          "url": "https://github.com/risc0/risc0/commit/5d2b9127b438892a81dd85cc1247c3b8e3d00a2b"
+        },
+        "date": 1729560783668,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32184674,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103828,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90413,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161642,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150559,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 100717,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79262,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -52520,6 +52579,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729560780053,
+  "lastUpdate": 1729560785032,
   "repoUrl": "https://github.com/risc0/risc0"
 }
