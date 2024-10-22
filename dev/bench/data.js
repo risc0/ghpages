@@ -13381,6 +13381,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d2b9127b438892a81dd85cc1247c3b8e3d00a2b",
+          "message": "Integrate SupraNational's poly_divide kernel (#2431)",
+          "timestamp": "2024-10-22T01:28:49Z",
+          "tree_id": "a9f1bf3647729aca2cd0c56b363ae20b6c80f9f6",
+          "url": "https://github.com/risc0/risc0/commit/5d2b9127b438892a81dd85cc1247c3b8e3d00a2b"
+        },
+        "date": 1729560915357,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21721436,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35408,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24446,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43933,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42549,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35380,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21173,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -52579,6 +52638,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729560785032,
+  "lastUpdate": 1729560923350,
   "repoUrl": "https://github.com/risc0/risc0"
 }
