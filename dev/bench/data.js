@@ -52812,9 +52812,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35c65dee4ef5909226afc373fc45cb7208225cff",
+          "message": "Fix missing host-side dependency for waldo-core (#2437)\n\nCo-authored-by: Sasha <33594434+sashaaldrick@users.noreply.github.com>",
+          "timestamp": "2024-10-22T12:12:35-07:00",
+          "tree_id": "1a7ee5449ad4b1f5ebd9c151c005d15824130cd3",
+          "url": "https://github.com/risc0/risc0/commit/35c65dee4ef5909226afc373fc45cb7208225cff"
+        },
+        "date": 1729624802259,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22636210,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 753805,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 781889,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 519974,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 349850,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 716469,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 518638,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1729624616111,
+  "lastUpdate": 1729624810470,
   "repoUrl": "https://github.com/risc0/risc0"
 }
