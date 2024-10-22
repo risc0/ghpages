@@ -13440,6 +13440,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35c65dee4ef5909226afc373fc45cb7208225cff",
+          "message": "Fix missing host-side dependency for waldo-core (#2437)\n\nCo-authored-by: Sasha <33594434+sashaaldrick@users.noreply.github.com>",
+          "timestamp": "2024-10-22T12:12:35-07:00",
+          "tree_id": "1a7ee5449ad4b1f5ebd9c151c005d15824130cd3",
+          "url": "https://github.com/risc0/risc0/commit/35c65dee4ef5909226afc373fc45cb7208225cff"
+        },
+        "date": 1729624807289,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22310284,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35664,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24456,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44100,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42874,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 35421,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21349,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -52874,6 +52933,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729624810470,
+  "lastUpdate": 1729624823997,
   "repoUrl": "https://github.com/risc0/risc0"
 }
