@@ -27177,6 +27177,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54e06137f41e57b706e5eb17d18e1e12a59858bb",
+          "message": "Add redis option to client/server model (#2407)\n\nThis PR adds a new feature to the r0vm that enables adding `segments` to\r\na redis instance instead of returning the segment via the callback\r\nfunction. Instead of returning the full segment, the callback function\r\nreturns only a redis key.\r\n\r\nTasks:\r\n- [x] AssetRequest `Redis` value\r\n- [x] Protobuf `Redis` value\r\n- [x] Handle conversions\r\n- [x] Tests (unit, integration, or example)\r\n- [x] Concurrency or threads\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-10-25T06:12:07Z",
+          "tree_id": "02ed1d275e27c7dc773e4fab1570abec5b83fece",
+          "url": "https://github.com/risc0/risc0/commit/54e06137f41e57b706e5eb17d18e1e12a59858bb"
+        },
+        "date": 1729836974115,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22148734,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 994249,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1006717,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 597045,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 418208,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 930858,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 640039,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -53405,6 +53464,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729835302258,
+  "lastUpdate": 1729836976310,
   "repoUrl": "https://github.com/risc0/risc0"
 }
