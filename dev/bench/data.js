@@ -53343,9 +53343,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31597c27633350b7752a12ab8a2d73a238b27ca0",
+          "message": "Remove bigint EC circuits, add unbatched RSA (#2443)\n\nRemoves the current draft of bigint elliptic curve circuits, which won't\r\nbe performant in their current form, and adds an unbatched RSA circuit.",
+          "timestamp": "2024-10-25T05:35:17Z",
+          "tree_id": "ac932c944d864db996be9d3bcecc4246092b1134",
+          "url": "https://github.com/risc0/risc0/commit/31597c27633350b7752a12ab8a2d73a238b27ca0"
+        },
+        "date": 1729835294086,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21266320,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 749492,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 772775,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 510664,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 343296,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 708740,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 510683,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1729834915076,
+  "lastUpdate": 1729835302258,
   "repoUrl": "https://github.com/risc0/risc0"
 }
