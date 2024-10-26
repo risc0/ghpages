@@ -27295,6 +27295,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89f5c830aaf273e45d0e534cee003df78387a51e",
+          "message": "zkp changes to support extended field element use by zirgen codegen (#2444)\n\n* add Shift as a poly ext step opcode to return {0, 1, 0...}\r\n* Implement a more complete set of operators for field elements\r\n* Add debugging capabilities to PolyExtStep",
+          "timestamp": "2024-10-25T17:43:15-07:00",
+          "tree_id": "4de7d89930da003f25a78c7b9b25831078b9ddc9",
+          "url": "https://github.com/risc0/risc0/commit/89f5c830aaf273e45d0e534cee003df78387a51e"
+        },
+        "date": 1729903645094,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22142274,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 995604,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1013718,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 591630,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 425628,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 932595,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 639109,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -53641,6 +53700,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1729867398196,
+  "lastUpdate": 1729903648126,
   "repoUrl": "https://github.com/risc0/risc0"
 }
