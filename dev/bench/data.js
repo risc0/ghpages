@@ -54051,9 +54051,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ed12916c73dfdcba9b5099cd4062b8762f73f045",
+          "message": "build(deps): bump syn from 2.0.77 to 2.0.85 (#2453)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.77 to 2.0.85.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.85</h2>\r\n<ul>\r\n<li>Preserve extern static unsafety in ForeignItem::Verbatim (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1773\">#1773</a>)</li>\r\n</ul>\r\n<h2>2.0.84</h2>\r\n<ul>\r\n<li>Parse safe and explicitly unsafe extern items (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1768\">#1768</a>, <a\r\nhref=\"https://redirect.github.com/rust-lang/rust/issues/123743\">rust-lang/rust#123743</a>,\r\n<a\r\nhref=\"https://redirect.github.com/rust-lang/rfcs/pull/3484\">rust-lang/rfcs#3484</a>)</li>\r\n<li>Parse self captures: <code>impl Sized + use&lt;Self&gt;</code> (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1772\">#1772</a>)</li>\r\n</ul>\r\n<h2>2.0.83</h2>\r\n<ul>\r\n<li>Documentation improvements</li>\r\n</ul>\r\n<h2>2.0.82</h2>\r\n<ul>\r\n<li>Provide <code>Parse</code> impls for PreciseCapture and\r\nCapturedParam (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1757\">#1757</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1758\">#1758</a>)</li>\r\n<li>Support parsing <code>unsafe</code> attributes (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1759\">#1759</a>)</li>\r\n<li>Add Fold and VisitMut methods for Vec&lt;Attribute&gt; (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1762\">#1762</a>)</li>\r\n</ul>\r\n<h2>2.0.81</h2>\r\n<ul>\r\n<li>Add TypeParamBound::PreciseCapture to represent precise capture\r\nsyntax <code>impl Trait + use&lt;'a, T&gt;</code> (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1752\">#1752</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1753\">#1753</a>, <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1754\">#1754</a>)</li>\r\n</ul>\r\n<h2>2.0.80</h2>\r\n<ul>\r\n<li>Add <code>Expr::RawAddr</code> (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1743\">#1743</a>)</li>\r\n<li>Reject precise captures and ~const in inappropriate syntax positions\r\n(<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1747\">#1747</a>)</li>\r\n<li>Reject trait bound containing only precise capture (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1748\">#1748</a>)</li>\r\n</ul>\r\n<h2>2.0.79</h2>\r\n<ul>\r\n<li>Fix infinite loop on parsing chained ranges (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1741\">#1741</a>)</li>\r\n<li>Fix panic in parsing <code>use</code> items containing absolute\r\npaths (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1742\">#1742</a>)</li>\r\n</ul>\r\n<h2>2.0.78</h2>\r\n<ul>\r\n<li>Fix infinite loop on chained comparison (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1739\">#1739</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/293d7c9f54e78bdd40d86413c839f9ba60f81376\"><code>293d7c9</code></a>\r\nRelease 2.0.85</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/c94df74b400a118e90656c15414c78a68e07b567\"><code>c94df74</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1773\">#1773</a>\r\nfrom dtolnay/unsafestatic</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/8d7814a89f9ec7147822a17c9cf3b59e164705e2\"><code>8d7814a</code></a>\r\nPreserve extern static unsafety in ForeignItem::Verbatim</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/2e159bc35385dc544778b00bb2969608fcad759b\"><code>2e159bc</code></a>\r\nRelease 2.0.84</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/058e7d0dacb5811623fe1fabb7927daf208c1c6d\"><code>058e7d0</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1772\">#1772</a>\r\nfrom dtolnay/selfcapture</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/2a9e9fbd21df38dda22ad6683d2524842d16160b\"><code>2a9e9fb</code></a>\r\nParse self captures: <code>impl Sized + use\\&lt;Self&gt;</code></li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/e478e03f8edcf2934b39f42e2ffd9dbe3f49acae\"><code>e478e03</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1771\">#1771</a>\r\nfrom dtolnay/up</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/19baaa61efd24eb1a29acbc91d5383a7054e87b4\"><code>19baaa6</code></a>\r\nCategorize newly failing rust repo source files</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/f89eca23006ec79e862992ece8702e9e5b44f63a\"><code>f89eca2</code></a>\r\nUpdate test suite to nightly-2024-10-23</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/83e3b08a1f4b15c9a03d82856bee7536aa006dc4\"><code>83e3b08</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1768\">#1768</a>\r\nfrom dtolnay/safe</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.77...2.0.85\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.77&new-version=2.0.85)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-10-29T00:34:14Z",
+          "tree_id": "68757fe1f0b8c22ece8f517e6c885c796364fed2",
+          "url": "https://github.com/risc0/risc0/commit/ed12916c73dfdcba9b5099cd4062b8762f73f045"
+        },
+        "date": 1730162552572,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21327604,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 750822,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 771152,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 515028,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 346087,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 708757,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 513834,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1730162444553,
+  "lastUpdate": 1730162560725,
   "repoUrl": "https://github.com/risc0/risc0"
 }
