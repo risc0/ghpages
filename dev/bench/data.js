@@ -27531,6 +27531,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54febb7df36f8406d9393cbc3184920a24e9db21",
+          "message": "Split syscalls into separate modules (#2460)",
+          "timestamp": "2024-10-30T09:38:05-07:00",
+          "tree_id": "c1291eb1bfc51f20ab354b72f4cb38c75fdf6f4b",
+          "url": "https://github.com/risc0/risc0/commit/54febb7df36f8406d9393cbc3184920a24e9db21"
+        },
+        "date": 1730306535575,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21891818,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 995567,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1012832,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 586594,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 413279,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 926686,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 633838,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -54113,6 +54172,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730162560725,
+  "lastUpdate": 1730306538160,
   "repoUrl": "https://github.com/risc0/risc0"
 }
