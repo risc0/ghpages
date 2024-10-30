@@ -54287,9 +54287,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54febb7df36f8406d9393cbc3184920a24e9db21",
+          "message": "Split syscalls into separate modules (#2460)",
+          "timestamp": "2024-10-30T09:38:05-07:00",
+          "tree_id": "c1291eb1bfc51f20ab354b72f4cb38c75fdf6f4b",
+          "url": "https://github.com/risc0/risc0/commit/54febb7df36f8406d9393cbc3184920a24e9db21"
+        },
+        "date": 1730306738899,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22250908,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 752102,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 774013,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 521950,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 348377,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 715018,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 513522,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1730306732904,
+  "lastUpdate": 1730306747110,
   "repoUrl": "https://github.com/risc0/risc0"
 }
