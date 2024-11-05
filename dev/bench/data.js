@@ -54759,9 +54759,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b5a784cc74c85ed51ec2f9d1af4fd4271c280da",
+          "message": "build(deps): bump syn from 2.0.85 to 2.0.87 (#2468)\n\nBumps [syn](https://github.com/dtolnay/syn) from 2.0.85 to 2.0.87.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/dtolnay/syn/releases\">syn's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>2.0.87</h2>\r\n<ul>\r\n<li>Add <a\r\nhref=\"https://docs.rs/syn/2/syn/buffer/struct.Cursor.html#method.any_group\"><code>Cursor::any_group</code></a>\r\n(<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1777\">#1777</a>)</li>\r\n<li>Add <a\r\nhref=\"https://docs.rs/syn/2/syn/enum.Expr.html#method.peek\"><code>Expr::peek</code></a>\r\n(<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1778\">#1778</a>)</li>\r\n<li>Improve syntax support for enum discriminant expressions in\r\nnon-&quot;full&quot; mode (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1779\">#1779</a>)</li>\r\n</ul>\r\n<h2>2.0.86</h2>\r\n<ul>\r\n<li>Support peeking the end of a parse stream (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1689\">#1689</a>)</li>\r\n<li>Allow <code>parse_quote!</code> to produce Vec&lt;Attribute&gt; (<a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1775\">#1775</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/a777cff00528f270b43f40b0a58c5c26fc85a2bd\"><code>a777cff</code></a>\r\nRelease 2.0.87</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/1f103d4c175ab62b27537a6907c4b77b6aed6ae7\"><code>1f103d4</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1779\">#1779</a>\r\nfrom dtolnay/scan</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/0986a66e1764ed37a4931dde8c509412474636fe\"><code>0986a66</code></a>\r\nIgnore enum_glob_use pedantic clippy lint</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/ca97c7d82d9837c1b49c085a546a481cf879e619\"><code>ca97c7d</code></a>\r\nTranslate expr scanner to table driven</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/8039cb37a02cbf080f48416651141d4c77c05075\"><code>8039cb3</code></a>\r\nTest that every expr can be scanned</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/0132c447fe045431906945178bea219816d5e55f\"><code>0132c44</code></a>\r\nMake scan_expr compilable from integration test</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/7c102c3c8b3dc076c03cbe842266a2b140be6323\"><code>7c102c3</code></a>\r\nExtract non-full expr scanner to module</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/ceaf4d693b2af783874b9aa4d50bb208b84a2609\"><code>ceaf4d6</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1778\">#1778</a>\r\nfrom dtolnay/exprpeek</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/a890e9da22b463b05c06696d4cc767c6cb9d3114\"><code>a890e9d</code></a>\r\nExpose can_begin_expr as Expr::peek</li>\r\n<li><a\r\nhref=\"https://github.com/dtolnay/syn/commit/12f068ce0889c41e3bd21662e8a0adfaa07d01d9\"><code>12f068c</code></a>\r\nMerge pull request <a\r\nhref=\"https://redirect.github.com/dtolnay/syn/issues/1777\">#1777</a>\r\nfrom dtolnay/anygroup</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/dtolnay/syn/compare/2.0.85...2.0.87\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=syn&package-manager=cargo&previous-version=2.0.85&new-version=2.0.87)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-11-05T09:49:07Z",
+          "tree_id": "b6ec9ae2b915e5b854d918d13d920f58c13026f8",
+          "url": "https://github.com/risc0/risc0/commit/0b5a784cc74c85ed51ec2f9d1af4fd4271c280da"
+        },
+        "date": 1730800964983,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22356740,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 751694,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 783404,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 520488,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 350055,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 717635,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 519482,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1730800546891,
+  "lastUpdate": 1730800973246,
   "repoUrl": "https://github.com/risc0/risc0"
 }
