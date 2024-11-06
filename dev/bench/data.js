@@ -28003,6 +28003,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26ea221d4fc156e2f8bf574edcf9004714a05c4d",
+          "message": "Update docstring in profiler.rs (#2480)\n\nI noticed this doc string is out of date. We added full stack sample a\r\nwhile back.",
+          "timestamp": "2024-11-06T07:50:12Z",
+          "tree_id": "46981351ec1229a3ba60ef95f409b356d7b963b6",
+          "url": "https://github.com/risc0/risc0/commit/26ea221d4fc156e2f8bf574edcf9004714a05c4d"
+        },
+        "date": 1730879658019,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20908694,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 988242,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1012259,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 596275,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 418536,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 931866,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 641058,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -55057,6 +55116,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730862438284,
+  "lastUpdate": 1730879660113,
   "repoUrl": "https://github.com/risc0/risc0"
 }
