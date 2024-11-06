@@ -42094,6 +42094,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26ea221d4fc156e2f8bf574edcf9004714a05c4d",
+          "message": "Update docstring in profiler.rs (#2480)\n\nI noticed this doc string is out of date. We added full stack sample a\r\nwhile back.",
+          "timestamp": "2024-11-06T07:50:12Z",
+          "tree_id": "46981351ec1229a3ba60ef95f409b356d7b963b6",
+          "url": "https://github.com/risc0/risc0/commit/26ea221d4fc156e2f8bf574edcf9004714a05c4d"
+        },
+        "date": 1730879670215,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31697918,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103024,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90524,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161311,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150843,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102024,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 78861,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -55116,6 +55175,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730879660113,
+  "lastUpdate": 1730879671747,
   "repoUrl": "https://github.com/risc0/risc0"
 }
