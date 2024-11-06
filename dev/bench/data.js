@@ -55408,9 +55408,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "259159dde2768a52a81b73212a14fb8558c07bc9",
+          "message": "Add RSA syscall (#2481)\n\nExtends our RSA acceleration support to enable accelerated computation\r\nof the RSA exponentiation (instead of just accelerated verification of\r\nthe result of an RSA exponentiation). This is accomplished by adding an\r\nRSA syscall which allows the guest to request that the host provide the\r\nresult of the RSA operation, which it can then verify via the recursion\r\ncircuit bigint RSA accelerator.\r\n\r\nThis PR also adds a convenient API for accessing this RSA acceleration:\r\n`modpow_65537`. This takes in two `BigUint`s, a `base` and a `modulus`,\r\nand computes `base^65537 % modulus` (where `^` is exponentiation) via\r\nthis syscall + bigint proof mechanism. For convenience in patching into\r\nother crates, two bigint libraries are available for this API: By\r\ndefault, it will use `num_bigint`, but if the `bigint-dig-shim` feature\r\nof `risc0-circuit-bigint` is enabled it will instead use\r\n`num_bigint_dig`.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-11-06T19:09:09Z",
+          "tree_id": "1ab3ab3409b4892af3de512437a38d2a7b5ccbde",
+          "url": "https://github.com/risc0/risc0/commit/259159dde2768a52a81b73212a14fb8558c07bc9"
+        },
+        "date": 1730920568818,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21736508,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 734745,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 762636,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 521951,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358933,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 713941,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 519089,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1730920408085,
+  "lastUpdate": 1730920576188,
   "repoUrl": "https://github.com/risc0/risc0"
 }
