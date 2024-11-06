@@ -41858,6 +41858,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e59b04d2c8c5b4242fb74dd8a28a4e711762d860",
+          "message": "CI: update toolchain to 1.81 (#2479)",
+          "timestamp": "2024-11-05T18:48:25-08:00",
+          "tree_id": "d4fed344936e6dffcaf1ecbbe0a4977b75e95873",
+          "url": "https://github.com/risc0/risc0/commit/e59b04d2c8c5b4242fb74dd8a28a4e711762d860"
+        },
+        "date": 1730861739098,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31454332,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 103286,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 90764,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161908,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149886,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 102094,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 79128,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -54821,6 +54880,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730800973246,
+  "lastUpdate": 1730861740778,
   "repoUrl": "https://github.com/risc0/risc0"
 }
