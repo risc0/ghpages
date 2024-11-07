@@ -14207,6 +14207,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cb185ee0c9a6aad5d184f8cf506ca3b5cbed3978",
+          "message": "Add sys_bigint2 syscall (#2471)\n\nCo-authored-by: Mars Saxman <mars@risczero.com>",
+          "timestamp": "2024-11-06T17:53:24-08:00",
+          "tree_id": "845a083682e59c33952de5606b4344cab1b5c763",
+          "url": "https://github.com/risc0/risc0/commit/cb185ee0c9a6aad5d184f8cf506ca3b5cbed3978"
+        },
+        "date": 1730944793606,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20491172,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 35070,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 24207,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44329,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43078,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 34938,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 21101,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -55824,6 +55883,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730944686038,
+  "lastUpdate": 1730944801722,
   "repoUrl": "https://github.com/risc0/risc0"
 }
