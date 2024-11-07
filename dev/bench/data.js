@@ -28239,6 +28239,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c73e633d6810cdd1322b947277d52c77bce052c3",
+          "message": "Upgrade bigint nondet_inv algorithm (#2396)",
+          "timestamp": "2024-11-06T23:59:31Z",
+          "tree_id": "adade5014591c4194ec313286c5a54f0f9e4af16",
+          "url": "https://github.com/risc0/risc0/commit/c73e633d6810cdd1322b947277d52c77bce052c3"
+        },
+        "date": 1730937817426,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20938856,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 985909,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1010386,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 595936,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 416220,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 928561,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 636323,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -55529,6 +55588,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730920612449,
+  "lastUpdate": 1730937820061,
   "repoUrl": "https://github.com/risc0/risc0"
 }
