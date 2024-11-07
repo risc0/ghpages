@@ -28357,6 +28357,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cb185ee0c9a6aad5d184f8cf506ca3b5cbed3978",
+          "message": "Add sys_bigint2 syscall (#2471)\n\nCo-authored-by: Mars Saxman <mars@risczero.com>",
+          "timestamp": "2024-11-06T17:53:24-08:00",
+          "tree_id": "845a083682e59c33952de5606b4344cab1b5c763",
+          "url": "https://github.com/risc0/risc0/commit/cb185ee0c9a6aad5d184f8cf506ca3b5cbed3978"
+        },
+        "date": 1730944651990,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20939562,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 992778,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1007192,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 590993,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 418872,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 927687,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 636057,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -55706,6 +55765,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1730938010678,
+  "lastUpdate": 1730944654522,
   "repoUrl": "https://github.com/risc0/risc0"
 }
