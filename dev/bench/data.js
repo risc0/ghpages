@@ -42743,6 +42743,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "030503e5b06617f321beb4f66674b2482e5e4822",
+          "message": "Redo RSA Acceleration (#2487)\n\nWe discovered that the approach used in #2481 was not playing well with\r\nlinking. This PR redoes the RSA acceleration wrappers to expect outside\r\ncrates to interact with an `extern \"C\"` API utilizing pointers to `[u32;\r\nWIDTH_WORDS]` rather than pulling in Rust wrapping functions, moving the\r\nwork of translating bigints into u32 words to the patched crates.\r\n\r\nBecause this moves wrapping code to patched crates, the\r\n`bigint-dig-shim` feature was dropped as unused and unnecessary.\r\n\r\nSee also related PRs #2488 and\r\nhttps://github.com/risc0/RustCrypto-RSA/pull/2 which will follow this\r\none\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-11-12T19:33:20Z",
+          "tree_id": "84039ef7fbc499cbe477f55f700add26e7b75b56",
+          "url": "https://github.com/risc0/risc0/commit/030503e5b06617f321beb4f66674b2482e5e4822"
+        },
+        "date": 1731440274148,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31665838,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 113858,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 98564,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160127,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147622,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 112148,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84131,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -56001,6 +56060,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731440252084,
+  "lastUpdate": 1731440275782,
   "repoUrl": "https://github.com/risc0/risc0"
 }
