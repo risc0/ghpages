@@ -42920,6 +42920,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8552d45e4ba6cdd42b7414fb9d175b88f808f8a",
+          "message": "CI: fix ethereum workload by pinning syn (#2500)\n\nThis is a workaround for https://github.com/near/borsh-rs/issues/319\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2024-11-12T22:25:01Z",
+          "tree_id": "2b8fc8880906335e857e5a7f3be209be601af9a3",
+          "url": "https://github.com/risc0/risc0/commit/d8552d45e4ba6cdd42b7414fb9d175b88f808f8a"
+        },
+        "date": 1731450632581,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30859860,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 114174,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 97689,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160525,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146050,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 112237,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 84355,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -56237,6 +56296,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731450551821,
+  "lastUpdate": 1731450634435,
   "repoUrl": "https://github.com/risc0/risc0"
 }
