@@ -43274,6 +43274,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3c20ddcb2f5a707115d1cea896fb375818d798cf",
+          "message": "Add sys_prove_keccak system call to invoke the keccak coprocessor callback (#2496)",
+          "timestamp": "2024-11-13T09:34:58Z",
+          "tree_id": "70d87b7e9474502553c96073a4ec5b1fc53918ec",
+          "url": "https://github.com/risc0/risc0/commit/3c20ddcb2f5a707115d1cea896fb375818d798cf"
+        },
+        "date": 1731490779801,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32064536,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 99849,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 87371,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159885,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148601,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 97801,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75575,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -56709,6 +56768,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731490745944,
+  "lastUpdate": 1731490781701,
   "repoUrl": "https://github.com/risc0/risc0"
 }
