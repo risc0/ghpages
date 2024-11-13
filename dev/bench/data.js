@@ -43392,6 +43392,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8fc8437633f08a66e0fbacce947f41d01b074774",
+          "message": "Add risc0-bigint2 guest-side wrapper crate (#2504)\n\nRelated to ZKVM-630",
+          "timestamp": "2024-11-13T10:44:02-08:00",
+          "tree_id": "29cd5c17bcabe9713d186d3b005413344a4c017d",
+          "url": "https://github.com/risc0/risc0/commit/8fc8437633f08a66e0fbacce947f41d01b074774"
+        },
+        "date": 1731523708302,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31903892,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100158,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86982,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160019,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147883,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 97956,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75534,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -56886,6 +56945,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731490943410,
+  "lastUpdate": 1731523710825,
   "repoUrl": "https://github.com/risc0/risc0"
 }
