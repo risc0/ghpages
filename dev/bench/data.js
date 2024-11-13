@@ -28711,6 +28711,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d1f4b2ceab6ec6761f0a76b225ee502e5290934",
+          "message": "Add the bigint2 accelerator circuit (#2489)",
+          "timestamp": "2024-11-12T18:08:25-08:00",
+          "tree_id": "15151f6180cb4e8c0891802f00a14419af5e798e",
+          "url": "https://github.com/risc0/risc0/commit/5d1f4b2ceab6ec6761f0a76b225ee502e5290934"
+        },
+        "date": 1731463954460,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21166284,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 912377,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 937921,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 594298,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 423591,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 876873,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 613613,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -56414,6 +56473,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731450741138,
+  "lastUpdate": 1731463956906,
   "repoUrl": "https://github.com/risc0/risc0"
 }
