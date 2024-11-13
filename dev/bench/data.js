@@ -57296,9 +57296,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "542d644d277e65576e2e9660b731bbe00cd7d304",
+          "message": "Implement plumbing for keccak acceleration (#2503)\n\nThis PR introduces a batching mechanism for keccak circuit proofs and\r\nsupersedes #2380\r\n\r\nResolves ZKVM-595",
+          "timestamp": "2024-11-13T20:29:56Z",
+          "tree_id": "3b468c3269b01626f1b1e69bfeb4d7fce21de011",
+          "url": "https://github.com/risc0/risc0/commit/542d644d277e65576e2e9660b731bbe00cd7d304"
+        },
+        "date": 1731530228502,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22508200,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 712511,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 733675,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 518531,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 348556,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 676844,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 494625,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1731530215083,
+  "lastUpdate": 1731530237660,
   "repoUrl": "https://github.com/risc0/risc0"
 }
