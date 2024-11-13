@@ -14384,6 +14384,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d1f4b2ceab6ec6761f0a76b225ee502e5290934",
+          "message": "Add the bigint2 accelerator circuit (#2489)",
+          "timestamp": "2024-11-12T18:08:25-08:00",
+          "tree_id": "15151f6180cb4e8c0891802f00a14419af5e798e",
+          "url": "https://github.com/risc0/risc0/commit/5d1f4b2ceab6ec6761f0a76b225ee502e5290934"
+        },
+        "date": 1731475563788,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19428862,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 31709,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22071,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43624,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42232,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 31827,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19569,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -56591,6 +56650,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731475562388,
+  "lastUpdate": 1731475572450,
   "repoUrl": "https://github.com/risc0/risc0"
 }
