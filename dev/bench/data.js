@@ -14443,6 +14443,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3c20ddcb2f5a707115d1cea896fb375818d798cf",
+          "message": "Add sys_prove_keccak system call to invoke the keccak coprocessor callback (#2496)",
+          "timestamp": "2024-11-13T09:34:58Z",
+          "tree_id": "70d87b7e9474502553c96073a4ec5b1fc53918ec",
+          "url": "https://github.com/risc0/risc0/commit/3c20ddcb2f5a707115d1cea896fb375818d798cf"
+        },
+        "date": 1731490888645,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21706500,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32074,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22194,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44039,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42689,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32082,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19663,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -56768,6 +56827,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731490781701,
+  "lastUpdate": 1731490896641,
   "repoUrl": "https://github.com/risc0/risc0"
 }
