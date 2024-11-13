@@ -57001,9 +57001,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8fc8437633f08a66e0fbacce947f41d01b074774",
+          "message": "Add risc0-bigint2 guest-side wrapper crate (#2504)\n\nRelated to ZKVM-630",
+          "timestamp": "2024-11-13T10:44:02-08:00",
+          "tree_id": "29cd5c17bcabe9713d186d3b005413344a4c017d",
+          "url": "https://github.com/risc0/risc0/commit/8fc8437633f08a66e0fbacce947f41d01b074774"
+        },
+        "date": 1731523906067,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21170926,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 698949,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 723201,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 520923,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 349578,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 671469,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 493320,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1731523766236,
+  "lastUpdate": 1731523915277,
   "repoUrl": "https://github.com/risc0/risc0"
 }
