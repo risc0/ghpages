@@ -29183,6 +29183,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f38fe94fd4bddddb648ffc4fd8995bbfc3af899e",
+          "message": "Ensure blob is aligned (#2506)\n\nIt's possible for `include_bytes!` to land on an unaligned address,\r\nleading to `LoadAddressMisaligned` errors in some cases. This will\r\nprevent that.",
+          "timestamp": "2024-11-13T18:15:24-08:00",
+          "tree_id": "a6edd573ce92cf8b6c7caf557834f66ed2b6efc5",
+          "url": "https://github.com/risc0/risc0/commit/f38fe94fd4bddddb648ffc4fd8995bbfc3af899e"
+        },
+        "date": 1731550775102,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22241048,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 915072,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 933309,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 596449,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 421541,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 875380,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 610734,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -57358,6 +57417,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731530237660,
+  "lastUpdate": 1731550778473,
   "repoUrl": "https://github.com/risc0/risc0"
 }
