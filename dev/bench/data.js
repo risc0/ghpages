@@ -57532,9 +57532,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f38fe94fd4bddddb648ffc4fd8995bbfc3af899e",
+          "message": "Ensure blob is aligned (#2506)\n\nIt's possible for `include_bytes!` to land on an unaligned address,\r\nleading to `LoadAddressMisaligned` errors in some cases. This will\r\nprevent that.",
+          "timestamp": "2024-11-13T18:15:24-08:00",
+          "tree_id": "a6edd573ce92cf8b6c7caf557834f66ed2b6efc5",
+          "url": "https://github.com/risc0/risc0/commit/f38fe94fd4bddddb648ffc4fd8995bbfc3af899e"
+        },
+        "date": 1731551787140,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22751894,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 707565,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732208,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 519147,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 347662,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 673339,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 492917,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1731550941187,
+  "lastUpdate": 1731551797072,
   "repoUrl": "https://github.com/risc0/risc0"
 }
