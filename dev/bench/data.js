@@ -29419,6 +29419,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6d12c7b13a9288ab22b81f4e71790d3cdbb0b17",
+          "message": "Add union recursion program (#2508)\n\nUpdates to the ZKR archive and control root to include the new `union`\r\nprgram implemented in https://github.com/risc0/zirgen/pull/60\r\n\r\nPR includes recursion program updates from the Zirgen repo:\r\n* https://github.com/risc0/zirgen/pull/58 introduced changes to the\r\ncodegen effecting all recursion programs.\r\n* https://github.com/risc0/zirgen/pull/60 adds the `union` program",
+          "timestamp": "2024-11-14T13:43:46-08:00",
+          "tree_id": "f762eacca7af5ab38285bc02b72ba713febed578",
+          "url": "https://github.com/risc0/risc0/commit/c6d12c7b13a9288ab22b81f4e71790d3cdbb0b17"
+        },
+        "date": 1731620876076,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20191092,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 942771,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 956397,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 595538,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 414819,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 877949,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 614097,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -57830,6 +57889,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731617082222,
+  "lastUpdate": 1731620879055,
   "repoUrl": "https://github.com/risc0/risc0"
 }
