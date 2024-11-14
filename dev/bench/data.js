@@ -43982,6 +43982,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "775e8be3294a300b7eeff23474d207bfb571c42b",
+          "message": "Drop risc0-circuit-bigint and add executor metrics (#2507)",
+          "timestamp": "2024-11-14T11:03:28-08:00",
+          "tree_id": "b7bbf766f572ded9cbdefc773663b21a73334de2",
+          "url": "https://github.com/risc0/risc0/commit/775e8be3294a300b7eeff23474d207bfb571c42b"
+        },
+        "date": 1731611275305,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32874024,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 101451,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86967,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160620,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147715,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 97779,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75037,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -57653,6 +57712,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731611262102,
+  "lastUpdate": 1731611277787,
   "repoUrl": "https://github.com/risc0/risc0"
 }
