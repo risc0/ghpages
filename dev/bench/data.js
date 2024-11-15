@@ -44454,6 +44454,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1ecad14b84d92e989103aa3cc61108257703ad5",
+          "message": "Constrain buffer length for RSA bigint values (#2510)",
+          "timestamp": "2024-11-15T15:25:09-08:00",
+          "tree_id": "a3b066fd153e68789e779a737ac312cb3340ae36",
+          "url": "https://github.com/risc0/risc0/commit/f1ecad14b84d92e989103aa3cc61108257703ad5"
+        },
+        "date": 1731713379136,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33038738,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100064,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 87291,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160779,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148106,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 98990,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 76513,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -58302,6 +58361,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731683915133,
+  "lastUpdate": 1731713381741,
   "repoUrl": "https://github.com/risc0/risc0"
 }
