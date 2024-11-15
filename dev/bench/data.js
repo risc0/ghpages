@@ -29537,6 +29537,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0199e34b2ecaacc0b924a85ff612f3c2303a7ec4",
+          "message": "tests: pin tiny-keccak to risc0 branch (#2512)",
+          "timestamp": "2024-11-15T05:20:56Z",
+          "tree_id": "ac9c406ea8e41113c7811bf7c296ebf28a12951f",
+          "url": "https://github.com/risc0/risc0/commit/0199e34b2ecaacc0b924a85ff612f3c2303a7ec4"
+        },
+        "date": 1731648304853,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20409298,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 942652,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 959545,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 596414,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 419211,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 880665,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 612738,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -58066,6 +58125,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1731621079277,
+  "lastUpdate": 1731648308235,
   "repoUrl": "https://github.com/risc0/risc0"
 }
