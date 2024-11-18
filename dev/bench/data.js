@@ -58712,9 +58712,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f90d30b3f430384ba48a1795371555c28a29b9e",
+          "message": "Add EC Mul and Add acceleration (#2513)\n\nAdds elliptic curve acceleration via bigint2 for addition and scalar\r\nmultiplication. This also includes a fix to allow bigint2 codegen with\r\nnegative intermediates.\r\n\r\nNote that current support is only for secp256k1; more generic curve\r\nsupport is future work.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-11-18T19:33:57Z",
+          "tree_id": "99571180bc4315d71827b04a913d697ed75df056",
+          "url": "https://github.com/risc0/risc0/commit/0f90d30b3f430384ba48a1795371555c28a29b9e"
+        },
+        "date": 1731958875287,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22373044,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 708808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 730931,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 522721,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 352981,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 678495,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 496926,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1731958849078,
+  "lastUpdate": 1731958883316,
   "repoUrl": "https://github.com/risc0/risc0"
 }
