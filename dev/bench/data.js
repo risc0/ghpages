@@ -44867,6 +44867,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cohan.carpentier@gmail.com",
+            "name": "Cohan",
+            "username": "nahoc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b8295cea44d791430bdba402174c42193c0fb2ba",
+          "message": "feat(web): next 15, react 19, proper caching (#1940)\n\n* proper redirects in app benchmarks\r\n* proper error handling if something fails, won't crash the whole app\r\n* caching set to 1 minute, uses ISR properly\r\n* lighthouse 100 on all pages\r\n* bump next to v15\r\n* replace chartjs with recharts\r\n* \"Last updated\" tooltip on datasheet page",
+          "timestamp": "2024-11-19T14:59:57-05:00",
+          "tree_id": "5d0811b17619b5a35a44f7e2efaebbe4a02deebd",
+          "url": "https://github.com/risc0/risc0/commit/b8295cea44d791430bdba402174c42193c0fb2ba"
+        },
+        "date": 1732046661503,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33047086,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 99926,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86971,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160709,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147649,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 99344,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75129,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -58833,6 +58892,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732046653158,
+  "lastUpdate": 1732046663092,
   "repoUrl": "https://github.com/risc0/risc0"
 }
