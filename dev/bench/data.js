@@ -45398,6 +45398,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5584df2f9ec7c5ece2343a990775a3e6d701515",
+          "message": "add unstable to symbols related to keccak (#2530)",
+          "timestamp": "2024-11-21T05:03:56Z",
+          "tree_id": "7f52b6235a64eea5692ca5db183d74dd87bff5c1",
+          "url": "https://github.com/risc0/risc0/commit/f5584df2f9ec7c5ece2343a990775a3e6d701515"
+        },
+        "date": 1732165699251,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32623280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100908,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86494,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158869,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147656,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 98572,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 76110,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -59541,6 +59600,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732165687268,
+  "lastUpdate": 1732165700866,
   "repoUrl": "https://github.com/risc0/risc0"
 }
