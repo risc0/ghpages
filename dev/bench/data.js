@@ -30009,6 +30009,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9400e4408416510301d07cc3a2dd6d62611f0941",
+          "message": "remove pin on syn crate (#2529)\n\nborsh has released v1.5.3 that specifies a minimum version for syn. This\r\nallows us to safely remove the pin from our crates. This PR also updates\r\ndb-dump to fix the crates validator.",
+          "timestamp": "2024-11-21T01:25:45Z",
+          "tree_id": "c94bb272b9eaaa79465846e3c69dffef29baf0f4",
+          "url": "https://github.com/risc0/risc0/commit/9400e4408416510301d07cc3a2dd6d62611f0941"
+        },
+        "date": 1732152594948,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19199180,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 944968,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 957776,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 605069,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 419297,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 887008,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 610331,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -59010,6 +59069,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732047024118,
+  "lastUpdate": 1732152597479,
   "repoUrl": "https://github.com/risc0/risc0"
 }
