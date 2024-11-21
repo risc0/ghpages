@@ -15151,6 +15151,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5584df2f9ec7c5ece2343a990775a3e6d701515",
+          "message": "add unstable to symbols related to keccak (#2530)",
+          "timestamp": "2024-11-21T05:03:56Z",
+          "tree_id": "7f52b6235a64eea5692ca5db183d74dd87bff5c1",
+          "url": "https://github.com/risc0/risc0/commit/f5584df2f9ec7c5ece2343a990775a3e6d701515"
+        },
+        "date": 1732165838408,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21625452,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32282,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22195,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43859,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42606,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32167,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19653,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -59600,6 +59659,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732165700866,
+  "lastUpdate": 1732165846555,
   "repoUrl": "https://github.com/risc0/risc0"
 }
