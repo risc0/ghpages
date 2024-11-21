@@ -45221,6 +45221,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8639e2537534ca188bb70d55a4085b3bddeaa490",
+          "message": "Fix concurrent access to TcpSocket client/server (#2531)",
+          "timestamp": "2024-11-20T20:11:53-08:00",
+          "tree_id": "b495e497b2bf0bec1f62cb837011f969b08922d6",
+          "url": "https://github.com/risc0/risc0/commit/8639e2537534ca188bb70d55a4085b3bddeaa490"
+        },
+        "date": 1732162577710,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32644482,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100790,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86584,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159435,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147232,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 99171,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75181,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -59305,6 +59364,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732162563244,
+  "lastUpdate": 1732162579336,
   "repoUrl": "https://github.com/risc0/risc0"
 }
