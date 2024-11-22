@@ -15210,6 +15210,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "019fa9e3642f262155830d9a50c12a68135b1874",
+          "message": "Genericize EC Support Over Curves (#2534)\n\nChange our EC acceleration from being secp256k1 specific to now support\r\nEC operations on any 256-bit prime field curve.\r\n\r\n---------\r\n\r\nCo-authored-by: Austin Abell <austinabell8@gmail.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-11-22T13:50:42-08:00",
+          "tree_id": "c1ff8405e4585b9fcc0340035adcda8564b131cb",
+          "url": "https://github.com/risc0/risc0/commit/019fa9e3642f262155830d9a50c12a68135b1874"
+        },
+        "date": 1732312735396,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20590958,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 31974,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22058,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43957,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42371,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 31671,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19614,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -59895,6 +59954,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732312683862,
+  "lastUpdate": 1732312743136,
   "repoUrl": "https://github.com/risc0/risc0"
 }
