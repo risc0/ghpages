@@ -60069,9 +60069,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c41c739779ef2759a01ebcf808faf0fbffe8793",
+          "message": "Better unstable marking for bigint2 (#2544)\n\nClean up how we mark bigint2 unstable. Includes the FFI module.",
+          "timestamp": "2024-11-22T14:46:31-08:00",
+          "tree_id": "afb69a3c300f6cbe0bc794fd006e3aff1dce5232",
+          "url": "https://github.com/risc0/risc0/commit/4c41c739779ef2759a01ebcf808faf0fbffe8793"
+        },
+        "date": 1732316019901,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22115742,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 703804,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 726625,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 516730,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345927,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 672260,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 492590,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732315856753,
+  "lastUpdate": 1732316028189,
   "repoUrl": "https://github.com/risc0/risc0"
 }
