@@ -45752,6 +45752,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c41c739779ef2759a01ebcf808faf0fbffe8793",
+          "message": "Better unstable marking for bigint2 (#2544)\n\nClean up how we mark bigint2 unstable. Includes the FFI module.",
+          "timestamp": "2024-11-22T14:46:31-08:00",
+          "tree_id": "afb69a3c300f6cbe0bc794fd006e3aff1dce5232",
+          "url": "https://github.com/risc0/risc0/commit/4c41c739779ef2759a01ebcf808faf0fbffe8793"
+        },
+        "date": 1732315854998,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32726282,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100204,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86892,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160041,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147647,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 99917,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 76282,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -60013,6 +60072,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732315850795,
+  "lastUpdate": 1732315856753,
   "repoUrl": "https://github.com/risc0/risc0"
 }
