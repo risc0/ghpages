@@ -59833,9 +59833,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "019fa9e3642f262155830d9a50c12a68135b1874",
+          "message": "Genericize EC Support Over Curves (#2534)\n\nChange our EC acceleration from being secp256k1 specific to now support\r\nEC operations on any 256-bit prime field curve.\r\n\r\n---------\r\n\r\nCo-authored-by: Austin Abell <austinabell8@gmail.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-11-22T13:50:42-08:00",
+          "tree_id": "c1ff8405e4585b9fcc0340035adcda8564b131cb",
+          "url": "https://github.com/risc0/risc0/commit/019fa9e3642f262155830d9a50c12a68135b1874"
+        },
+        "date": 1732312675536,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22003118,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 709611,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 731609,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 517321,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345585,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 675086,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 494349,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732312506358,
+  "lastUpdate": 1732312683862,
   "repoUrl": "https://github.com/risc0/risc0"
 }
