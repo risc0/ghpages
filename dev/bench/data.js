@@ -61013,9 +61013,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "55ba86b3f067e8a32b6b27c022d50d8a921e079e",
+          "message": "Added the r0vm compat flag to cargo-risczero (#2560)\n\nPlumbs the new feature flag for r0vm compat through cargo-risczero.",
+          "timestamp": "2024-11-25T23:27:50Z",
+          "tree_id": "f9f5ad2097fc84491428eb865b87c940bed0cf3a",
+          "url": "https://github.com/risc0/risc0/commit/55ba86b3f067e8a32b6b27c022d50d8a921e079e"
+        },
+        "date": 1732577667548,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22244630,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 709564,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 734138,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 519510,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 346873,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 676522,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 495407,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732577535577,
+  "lastUpdate": 1732577675819,
   "repoUrl": "https://github.com/risc0/risc0"
 }
