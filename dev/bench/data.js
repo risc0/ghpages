@@ -30953,6 +30953,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "55ba86b3f067e8a32b6b27c022d50d8a921e079e",
+          "message": "Added the r0vm compat flag to cargo-risczero (#2560)\n\nPlumbs the new feature flag for r0vm compat through cargo-risczero.",
+          "timestamp": "2024-11-25T23:27:50Z",
+          "tree_id": "f9f5ad2097fc84491428eb865b87c940bed0cf3a",
+          "url": "https://github.com/risc0/risc0/commit/55ba86b3f067e8a32b6b27c022d50d8a921e079e"
+        },
+        "date": 1732577516933,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21909932,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 926042,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 937237,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 596218,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 415255,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 879283,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 612754,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -60898,6 +60957,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732571584091,
+  "lastUpdate": 1732577519493,
   "repoUrl": "https://github.com/risc0/risc0"
 }
