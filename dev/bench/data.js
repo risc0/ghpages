@@ -60541,9 +60541,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c724cc14e316ff7bfae146bbbf2676515dac2a46",
+          "message": "Expand RSA to 4096 bits in bigint2 (#2545)\n\nAdjust modpow_65537 to work with 4096 bit values instead of 3072 bit\r\nvalues. Smaller bitwidths are still supported (as long as they are\r\nzero-padded to 4096).\r\n\r\nThis comes at a mild perf cost, and so in the long run we want more\r\noptionality here, or perhaps a different approach (modmul-based). But\r\nfor now, this increases compatibility.\r\n\r\nBased on https://github.com/risc0/zirgen/pull/88",
+          "timestamp": "2024-11-25T21:03:46Z",
+          "tree_id": "70546eda4404913f4730c2dfe4c73138eef4c5c0",
+          "url": "https://github.com/risc0/risc0/commit/c724cc14e316ff7bfae146bbbf2676515dac2a46"
+        },
+        "date": 1732569069552,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20821376,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 706362,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 727889,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 504304,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 338116,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 667805,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 488370,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732568890057,
+  "lastUpdate": 1732569077901,
   "repoUrl": "https://github.com/risc0/risc0"
 }
