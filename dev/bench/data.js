@@ -60364,9 +60364,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c7e4d1bdb181dc1ddbe3e01d39a1de9c3f8384ae",
+          "message": "bump version to 1.3.0-alpha.1 (#2547)\n\nThis PR bumps crate versions to `1.3.0-alpha.1`. In doing the 1.2.0-rc.1\r\nrelease, I noticed that bonsai-sdk was not set to use the version\r\nidentified in the workspace. This something that I forgot to backport\r\nfrom release-1.1. When I ran `cargo publish release -x` it warned me\r\nabout a few missing descriptions and it was trying to publish `rzup`.\r\nThis new behavior that I hadn't observed in the past but I've added\r\ndescriptions to the missing crates and disabled `rzup` from being\r\npublished.",
+          "timestamp": "2024-11-25T10:56:09-08:00",
+          "tree_id": "b06d6ce6b9370f40f4a9bd14ea083fe209d9d3e6",
+          "url": "https://github.com/risc0/risc0/commit/c7e4d1bdb181dc1ddbe3e01d39a1de9c3f8384ae"
+        },
+        "date": 1732561428998,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22245538,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 691731,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732390,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 519000,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345559,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 672515,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 492633,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732561381815,
+  "lastUpdate": 1732561437285,
   "repoUrl": "https://github.com/risc0/risc0"
 }
