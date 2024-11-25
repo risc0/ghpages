@@ -46283,6 +46283,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c965c9d86555d6606cac9307f184f67ccbd1ee30",
+          "message": "Add `r0vm-ver-compat` feature to relax r0vm server version checks (#2550)\n\nAllows cross client/server minor version's when using rc/pre releases\r\nfor testing upcoming ZKVM releases.",
+          "timestamp": "2024-11-25T21:45:36Z",
+          "tree_id": "bcacc283000e6a17562a5b033ded052915b04126",
+          "url": "https://github.com/risc0/risc0/commit/c965c9d86555d6606cac9307f184f67ccbd1ee30"
+        },
+        "date": 1732571400628,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32942804,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 99977,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 87021,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160216,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147900,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 97989,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75352,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -60721,6 +60780,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732571388170,
+  "lastUpdate": 1732571404440,
   "repoUrl": "https://github.com/risc0/risc0"
 }
