@@ -60836,9 +60836,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c965c9d86555d6606cac9307f184f67ccbd1ee30",
+          "message": "Add `r0vm-ver-compat` feature to relax r0vm server version checks (#2550)\n\nAllows cross client/server minor version's when using rc/pre releases\r\nfor testing upcoming ZKVM releases.",
+          "timestamp": "2024-11-25T21:45:36Z",
+          "tree_id": "bcacc283000e6a17562a5b033ded052915b04126",
+          "url": "https://github.com/risc0/risc0/commit/c965c9d86555d6606cac9307f184f67ccbd1ee30"
+        },
+        "date": 1732571576178,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21110352,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 703941,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 733866,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 519743,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 353236,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 676332,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 495857,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732571535593,
+  "lastUpdate": 1732571584091,
   "repoUrl": "https://github.com/risc0/risc0"
 }
