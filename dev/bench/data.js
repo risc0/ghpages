@@ -15623,6 +15623,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a0f351e613c160c63b1131530aa7837cf37702c",
+          "message": "Support for rv32im-v2 (#2549)",
+          "timestamp": "2024-11-26T11:34:50-08:00",
+          "tree_id": "5553b9795da07f213559a829dd537eb31e3d8707",
+          "url": "https://github.com/risc0/risc0/commit/5a0f351e613c160c63b1131530aa7837cf37702c"
+        },
+        "date": 1732650133070,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21044784,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32596,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22396,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44135,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42826,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32583,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19867,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -61488,6 +61547,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732650028920,
+  "lastUpdate": 1732650143756,
   "repoUrl": "https://github.com/risc0/risc0"
 }
