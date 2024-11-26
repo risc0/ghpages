@@ -46637,6 +46637,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "75fc922c866023fc31afa3bf2b0219468e70820a",
+          "message": "client/server: make receipt claim optional in session info (#2562)\n\n#2342 added receipt claims to session info to facilitate testing. This\r\nalso forces all servers to return a receipt claim for execution. This\r\nresults in 1.2.0-rc.1 client erroring on older servers. Allows older\r\nservers that do not send receipt claims to work with newer clients by\r\nmaking the receipt claim optional.",
+          "timestamp": "2024-11-26T03:46:09Z",
+          "tree_id": "523453c331b3222961c594a2ae3ee1c7a011f331",
+          "url": "https://github.com/risc0/risc0/commit/75fc922c866023fc31afa3bf2b0219468e70820a"
+        },
+        "date": 1732593033509,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33031280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 99857,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 87364,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160266,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147985,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 97421,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 76085,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -61193,6 +61252,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732593017866,
+  "lastUpdate": 1732593035045,
   "repoUrl": "https://github.com/risc0/risc0"
 }
