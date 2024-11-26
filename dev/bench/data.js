@@ -61544,9 +61544,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a0f351e613c160c63b1131530aa7837cf37702c",
+          "message": "Support for rv32im-v2 (#2549)",
+          "timestamp": "2024-11-26T11:34:50-08:00",
+          "tree_id": "5553b9795da07f213559a829dd537eb31e3d8707",
+          "url": "https://github.com/risc0/risc0/commit/5a0f351e613c160c63b1131530aa7837cf37702c"
+        },
+        "date": 1732650360960,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22535070,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 708403,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 725390,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 515429,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345514,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 674153,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 490824,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732650143756,
+  "lastUpdate": 1732650371434,
   "repoUrl": "https://github.com/risc0/risc0"
 }
