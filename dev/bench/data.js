@@ -61721,9 +61721,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "093f46925a0366d72df505256d35c54a033ddad0",
+          "message": "Support for rv32im-v2 CUDA kernels (#2565)\n\nCo-authored-by: nils m <nils@risczero.com>\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2024-11-27T14:36:47-08:00",
+          "tree_id": "8a4664e79bf6e7d543c13d587e88227c994032c3",
+          "url": "https://github.com/risc0/risc0/commit/093f46925a0366d72df505256d35c54a033ddad0"
+        },
+        "date": 1732747480093,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22575734,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 705950,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 730487,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 515654,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 345150,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 679054,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 495184,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1732747415961,
+  "lastUpdate": 1732747490338,
   "repoUrl": "https://github.com/risc0/risc0"
 }
