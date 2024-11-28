@@ -47109,6 +47109,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32602478+rlukata@users.noreply.github.com",
+            "name": "Rami Lukata",
+            "username": "rlukata"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3827a1f337c61e2db47b2759cc22f1cec8c38d51",
+          "message": "Add redis retry logic (#2571)\n\nSingle retry, then return error if the second one also fails.\r\n\r\nDuring local testing I added a sleep before the reconnect and then\r\nstopped and started the docker instance. The executor was able to\r\nrecover without issues.",
+          "timestamp": "2024-11-28T06:03:41Z",
+          "tree_id": "3f97528a30ef82dc80bfb780de198a94843fd5f0",
+          "url": "https://github.com/risc0/risc0/commit/3827a1f337c61e2db47b2759cc22f1cec8c38d51"
+        },
+        "date": 1732774084143,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32438750,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100278,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86994,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160756,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148670,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 99604,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 76138,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -61842,6 +61901,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1732773028283,
+  "lastUpdate": 1732774085815,
   "repoUrl": "https://github.com/risc0/risc0"
 }
