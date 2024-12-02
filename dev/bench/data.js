@@ -15800,6 +15800,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0034d084924002dec7baabecd5425631f317315e",
+          "message": "Update Rust toolchain version in rust-toolchain.toml (#2584)\n\nI've started to see some issues with crates requiring Rust tool chains\r\nnewer than 1.77. This PR bumps the Rust toolchain version to 1.81, which\r\ncoincides with the latest guest toolchain (although there is no strong\r\nrequirement that these coincide).\r\n\r\nI opened this in reaction to build failures in the `risc0-ethereum` job.\r\nThere is also the following, more targeted solution to that exact\r\nproblem. https://github.com/risc0/risc0/pull/2586",
+          "timestamp": "2024-12-02T21:28:54Z",
+          "tree_id": "5deea581f0a180177672e59246b9dadfce7cf2c0",
+          "url": "https://github.com/risc0/risc0/commit/0034d084924002dec7baabecd5425631f317315e"
+        },
+        "date": 1733175443958,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20238588,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 31849,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22301,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44631,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43358,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 31717,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19772,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -62196,6 +62255,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733175381525,
+  "lastUpdate": 1733175454474,
   "repoUrl": "https://github.com/risc0/risc0"
 }
