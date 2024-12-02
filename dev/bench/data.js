@@ -62429,9 +62429,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0dea13c511ebc3596a06339acd5457404031c1d8",
+          "message": "Set RISC0_FEATURE_bigint2 in risc0-build to signal zkVM features and fix usage of `stability::unstable` with `no_mangle` (#2567)\n\nThis is a proposal for how we might improve build debugging when someone\ntries to use bigint2, but it is not available. In this PR, an env var is\nadded to invocations of `cargo` in `risc0-build` that is a positive\nsignal to downstream crates that that a new \"hardware\" feature is\navailable.\n\nIn the case of upcoming cryptography patches that only work with\n`bigint2`, we'd add the following snippet to the `lib.rs` file. The\nadvantage being that we give an error and link to our docs rather than a\nlinker error at the end of the build process. From there, we can provide\nbetter guidance on either upgrading the `risc0-zkvm` version or\ndowngrading the cryptography patch version.\n\n```rust\n#[cfg(all(target_os = \"zkvm\", target_arch = \"riscv32\"))]\nconst _: () = {\n    assert!(\n        core::option_env!(\"RISC0_FEATURE_bigint2\").is_some(),\n        r#\"\nRISC Zero zkVM feature bigint2 is not available, and is required by this crate.\n\nIf you'd like to use bigint2, please upgrade to risc0-zkvm and risc0-build and ensure the required\nfeature flags are enabled. See the RISC Zero dev docs for more information.\nhttps://dev.risczero.com/api/zkvm/acceleration\n\"#\n    );\n};\n```\n\nThis is written with bigint2 in mind. It could also be used when\ntransitioning to the new ABI with zkVM revision 2.\n\nWhen I went to test this I found that my ECDSA program linked and built\nwithout setting `unstable` on `risc0-zkvm`, which was unexpected.\nDigging into the `stability` crate I found that the way the implement\ntheir macro [1], it doesn't play nice with `no_mangle` and the symbol\nwill still be included.\n\nhttps://docs.rs/stability/latest/src/stability/unstable.rs.html#85",
+          "timestamp": "2024-12-02T22:00:53Z",
+          "tree_id": "a83dee2a27a90ed0fdd55019bb47ee2337e343ab",
+          "url": "https://github.com/risc0/risc0/commit/0dea13c511ebc3596a06339acd5457404031c1d8"
+        },
+        "date": 1733177264059,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21557168,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 708033,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 733117,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 522644,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 351948,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 673513,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 494162,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1733177146232,
+  "lastUpdate": 1733177274425,
   "repoUrl": "https://github.com/risc0/risc0"
 }
