@@ -47640,6 +47640,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d4c211a7bb0039c139144b474871958964cafda",
+          "message": "ec bigint2 handles zero/infinity point (#2572)\n\nTried refactoring to make code cleaner by having the AffinePoint type be\r\nan enum, and was ~1-2% slower, so kept as is.\r\n\r\nAlso tried changing how the buffer initializations happen within `mul`,\r\nthis was fastest. Perf overall with these extra checks seems to be about\r\n5% slower tested with one signature verify in k256\r\n\r\nGoing to add some docs before opening, as draft for visibility\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2024-12-03T00:34:22Z",
+          "tree_id": "c36125d6e386cdfa092073b240c2333baea9768f",
+          "url": "https://github.com/risc0/risc0/commit/5d4c211a7bb0039c139144b474871958964cafda"
+        },
+        "date": 1733186405626,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32699804,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100595,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86727,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159570,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148395,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 99036,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75261,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -62550,6 +62609,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733177297407,
+  "lastUpdate": 1733186407499,
   "repoUrl": "https://github.com/risc0/risc0"
 }
