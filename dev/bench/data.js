@@ -47876,6 +47876,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "14ef8b500baf43fde9e1677ab5d86bde88ef6396",
+          "message": "Ignore bonsai prover import in zkvm (#2601)\n\nSeems this is a breaking change from a previous release as it might have\r\nbeen possible to import risc0-zkvm with default features inside the\r\nzkvm?\r\n\r\nThis change just ignores in the zkvm, which seems to be the strategy for\r\nthese exports",
+          "timestamp": "2024-12-03T14:37:59-08:00",
+          "tree_id": "99308632042b2d442f9226898f12cb16aac5ad6c",
+          "url": "https://github.com/risc0/risc0/commit/14ef8b500baf43fde9e1677ab5d86bde88ef6396"
+        },
+        "date": 1733265740133,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32722334,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 100325,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86899,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161699,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149564,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 98696,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75362,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -62845,6 +62904,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733265730941,
+  "lastUpdate": 1733265741850,
   "repoUrl": "https://github.com/risc0/risc0"
 }
