@@ -32015,6 +32015,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "533aff23f633c6102c961d47b9370ec96770de6d",
+          "message": "enable unstable feature for cargo risczero test (#2598)\n\nNot adding additional semantics by handling an unstable feature flag,\r\ngiven this is already gated behind `experimental` feature flag.\r\n\r\nNeeded to be able to test new unstable syscalls\r\n\r\n---------\r\n\r\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2024-12-03T23:12:01Z",
+          "tree_id": "757e66068f621d8213b42893b3d880854f45a364",
+          "url": "https://github.com/risc0/risc0/commit/533aff23f633c6102c961d47b9370ec96770de6d"
+        },
+        "date": 1733267768618,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19932142,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 940464,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 958126,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 604023,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 423689,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 887585,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 617130,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -63022,6 +63081,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733265930194,
+  "lastUpdate": 1733267771286,
   "repoUrl": "https://github.com/risc0/risc0"
 }
