@@ -31897,6 +31897,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "14ef8b500baf43fde9e1677ab5d86bde88ef6396",
+          "message": "Ignore bonsai prover import in zkvm (#2601)\n\nSeems this is a breaking change from a previous release as it might have\r\nbeen possible to import risc0-zkvm with default features inside the\r\nzkvm?\r\n\r\nThis change just ignores in the zkvm, which seems to be the strategy for\r\nthese exports",
+          "timestamp": "2024-12-03T14:37:59-08:00",
+          "tree_id": "99308632042b2d442f9226898f12cb16aac5ad6c",
+          "url": "https://github.com/risc0/risc0/commit/14ef8b500baf43fde9e1677ab5d86bde88ef6396"
+        },
+        "date": 1733265728327,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19810058,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 943199,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 961012,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 604428,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 425912,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 876880,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 612404,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -62786,6 +62845,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733186601201,
+  "lastUpdate": 1733265730941,
   "repoUrl": "https://github.com/risc0/risc0"
 }
