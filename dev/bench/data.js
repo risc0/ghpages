@@ -32133,6 +32133,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2974d5491f72ac4c424a8d73048dc72909e23a3c",
+          "message": "Initial commit of risc0-circuit-keccak (#2604)\n\nCo-authored-by: morgangibbs87 <133707571+morgangibbs87@users.noreply.github.com>",
+          "timestamp": "2024-12-04T11:32:34-08:00",
+          "tree_id": "418bb381654f30e5bc92ebf542b71e4fae4f5b58",
+          "url": "https://github.com/risc0/risc0/commit/2974d5491f72ac4c424a8d73048dc72909e23a3c"
+        },
+        "date": 1733341001857,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21951346,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 938123,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 948309,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 631514,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 442171,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 882139,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 622013,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -63258,6 +63317,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733268010687,
+  "lastUpdate": 1733341004526,
   "repoUrl": "https://github.com/risc0/risc0"
 }
