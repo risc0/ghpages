@@ -63432,9 +63432,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2974d5491f72ac4c424a8d73048dc72909e23a3c",
+          "message": "Initial commit of risc0-circuit-keccak (#2604)\n\nCo-authored-by: morgangibbs87 <133707571+morgangibbs87@users.noreply.github.com>",
+          "timestamp": "2024-12-04T11:32:34-08:00",
+          "tree_id": "418bb381654f30e5bc92ebf542b71e4fae4f5b58",
+          "url": "https://github.com/risc0/risc0/commit/2974d5491f72ac4c424a8d73048dc72909e23a3c"
+        },
+        "date": 1733341224334,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22080326,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 714087,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732618,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 533343,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358737,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 670515,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 499620,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1733341157552,
+  "lastUpdate": 1733341234010,
   "repoUrl": "https://github.com/risc0/risc0"
 }
