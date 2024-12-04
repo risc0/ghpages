@@ -63609,9 +63609,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1d9118982c8792c2fc9b296fd5608e72c8cc06f",
+          "message": "Enforce < modulus on bigint results (#2609)\n\nEnforces that we return the canonical form of modular arithmetic\r\noperations from bigint calls (e.g., if we compute the answer to be 2 in\r\nthe finite field of order 3, don't allow returning 5 even though 2 == 5\r\nmod 3).\r\n\r\n---------\r\n\r\nCo-authored-by: Austin Abell <austinabell8@gmail.com>",
+          "timestamp": "2024-12-04T22:21:09Z",
+          "tree_id": "30bbfd2a70519a85a21878df1b8ea00f683db954",
+          "url": "https://github.com/risc0/risc0/commit/a1d9118982c8792c2fc9b296fd5608e72c8cc06f"
+        },
+        "date": 1733351297850,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22510016,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 712273,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 733702,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 537053,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 360632,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 679420,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 498491,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1733351129818,
+  "lastUpdate": 1733351308165,
   "repoUrl": "https://github.com/risc0/risc0"
 }
