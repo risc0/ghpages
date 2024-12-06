@@ -63904,9 +63904,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4c3bc6c8bac6bf12a98207ced83ac9c05dc7d51",
+          "message": "build(deps): bump tokio from 1.41.0 to 1.42.0 (#2602)\n\nBumps [tokio](https://github.com/tokio-rs/tokio) from 1.41.0 to 1.42.0.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/tokio-rs/tokio/releases\">tokio's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>Tokio v1.42.0</h2>\r\n<h1>1.42.0 (Dec 3rd, 2024)</h1>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>io: add <code>AsyncFd::{try_io, try_io_mut}</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6967\">#6967</a>)</li>\r\n</ul>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>io: avoid <code>ptr-&gt;ref-&gt;ptr</code> roundtrip in\r\nRegistrationSet (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6929\">#6929</a>)</li>\r\n<li>runtime: do not defer <code>yield_now</code> inside\r\n<code>block_in_place</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6999\">#6999</a>)</li>\r\n</ul>\r\n<h3>Changes</h3>\r\n<ul>\r\n<li>io: simplify io readiness logic (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6966\">#6966</a>)</li>\r\n</ul>\r\n<h3>Documented</h3>\r\n<ul>\r\n<li>net: fix docs for <code>tokio::net::unix::{pid_t, gid_t,\r\nuid_t}</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6791\">#6791</a>)</li>\r\n<li>time: fix a typo in <code>Instant</code> docs (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6982\">#6982</a>)</li>\r\n</ul>\r\n<p><a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6791\">#6791</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6791\">tokio-rs/tokio#6791</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6929\">#6929</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6929\">tokio-rs/tokio#6929</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6966\">#6966</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6966\">tokio-rs/tokio#6966</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6967\">#6967</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6967\">tokio-rs/tokio#6967</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6982\">#6982</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6982\">tokio-rs/tokio#6982</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6999\">#6999</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6999\">tokio-rs/tokio#6999</a></p>\r\n<h2>Tokio v1.41.1</h2>\r\n<h1>1.41.1 (Nov 7th, 2024)</h1>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>metrics: fix bug with wrong number of buckets for the histogram (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6957\">#6957</a>)</li>\r\n<li>net: display <code>net</code> requirement for\r\n<code>net::UdpSocket</code> in docs (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6938\">#6938</a>)</li>\r\n<li>net: fix typo in <code>TcpStream</code> internal comment (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6944\">#6944</a>)</li>\r\n</ul>\r\n<p><a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6957\">#6957</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6957\">tokio-rs/tokio#6957</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6938\">#6938</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6938\">tokio-rs/tokio#6938</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6944\">#6944</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6944\">tokio-rs/tokio#6944</a></p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/bb9d57017e100985f86d8ca41ac105ee9140423e\"><code>bb9d570</code></a>\r\nchore: prepare Tokio v1.42.0 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7005\">#7005</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/af9c683d52415bf01709197778d49eec1ff78c44\"><code>af9c683</code></a>\r\ntests: fix typo in build test instructions (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7004\">#7004</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/4bc5a1a05862bad71f85a38bf3c56f721a97b43f\"><code>4bc5a1a</code></a>\r\nci: allow Unicode-3.0 license for unicode-ident (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7006\">#7006</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/f8948ea021bd4b5626bbd8dee89bee51ba766326\"><code>f8948ea</code></a>\r\nruntime: do not defer <code>yield_now</code> inside\r\n<code>block_in_place</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6999\">#6999</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/bce9780dd3127cd937923d975e356299226a39aa\"><code>bce9780</code></a>\r\ntime: use <code>array::from_fn</code> instead of manually creating array\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7000\">#7000</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/38151f30cbfbaddce30961384f5b463b0737a401\"><code>38151f3</code></a>\r\nreadme: unlist 1.32.x as LTS release (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6997\">#6997</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/5dda72d338516d709a866cee8577048ba1ea062c\"><code>5dda72d</code></a>\r\nci: pin valgrind to rustc 1.82 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6998\">#6998</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/c07257f99f92c5d6773fc0827bcfd77e43f0fd46\"><code>c07257f</code></a>\r\nio: simplify io readiness logic (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6966\">#6966</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/d08578fc9a950c8ee0ef242dbce0fcaaed5e853f\"><code>d08578f</code></a>\r\ntime: fix a typo in <code>Instant</code> docs (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6982\">#6982</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/4047d7962a02722859b0f1c7bbcd85bc1bfc865d\"><code>4047d79</code></a>\r\nmiri: add annotations for tests with miri ignore (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6981\">#6981</a>)</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/tokio-rs/tokio/compare/tokio-1.41.0...tokio-1.42.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tokio&package-manager=cargo&previous-version=1.41.0&new-version=1.42.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2024-12-06T10:10:12Z",
+          "tree_id": "fd0cc2ac1ab1ddbb64629c014e4a4087c78a3309",
+          "url": "https://github.com/risc0/risc0/commit/d4c3bc6c8bac6bf12a98207ced83ac9c05dc7d51"
+        },
+        "date": 1733480467889,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22414762,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 713326,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732064,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 535052,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 359776,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 677409,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 498438,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1733480217011,
+  "lastUpdate": 1733480478203,
   "repoUrl": "https://github.com/risc0/risc0"
 }
