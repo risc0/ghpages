@@ -16272,6 +16272,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5b919fbe9d1fe47054f6868bae47f87398fc33e",
+          "message": "Programmatically split keccak funcs, move to consistent namespaces (#2616)\n\n* cuda is now in risc0::circuit::keccak::cuda, c++ is now in\r\nrisc0::circuit::keccak::cpu\r\n* Split execution generation into multiple files for parallel\r\ncompilation\r\n* Bump KECCAK_PO2 down to 16, since 17 is right on the edge of memory\r\nexhaustion",
+          "timestamp": "2024-12-06T15:18:44-08:00",
+          "tree_id": "98478b151e9aef6f55be78b60fe70ca36d1ef57b",
+          "url": "https://github.com/risc0/risc0/commit/f5b919fbe9d1fe47054f6868bae47f87398fc33e"
+        },
+        "date": 1733527519360,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19416906,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 31888,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22406,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44941,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43602,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 31989,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19805,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -64084,6 +64143,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733527386713,
+  "lastUpdate": 1733527530445,
   "repoUrl": "https://github.com/risc0/risc0"
 }
