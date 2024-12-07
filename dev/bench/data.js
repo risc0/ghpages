@@ -16331,6 +16331,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d02b9c62e49497a7d328e65afb4639a881c8243d",
+          "message": "Fix a bug in ConstExt (#2621)\n\nCurrent version has a bug where by reinterpreting u32s, they end up in\r\nMontgomery form: but actually they are coming for the user in normal\r\nform.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-12-07T00:37:05Z",
+          "tree_id": "7de4359a69f0fd7c82b8fa4b6cdcf7902d7de831",
+          "url": "https://github.com/risc0/risc0/commit/d02b9c62e49497a7d328e65afb4639a881c8243d"
+        },
+        "date": 1733532281878,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21973284,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 32115,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22508,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44773,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43482,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 32086,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 19983,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -64379,6 +64438,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733532251383,
+  "lastUpdate": 1733532292563,
   "repoUrl": "https://github.com/risc0/risc0"
 }
