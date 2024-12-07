@@ -48938,6 +48938,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d02b9c62e49497a7d328e65afb4639a881c8243d",
+          "message": "Fix a bug in ConstExt (#2621)\n\nCurrent version has a bug where by reinterpreting u32s, they end up in\r\nMontgomery form: but actually they are coming for the user in normal\r\nform.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-12-07T00:37:05Z",
+          "tree_id": "7de4359a69f0fd7c82b8fa4b6cdcf7902d7de831",
+          "url": "https://github.com/risc0/risc0/commit/d02b9c62e49497a7d328e65afb4639a881c8243d"
+        },
+        "date": 1733532131384,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32953226,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 99886,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 87062,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161197,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149745,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 98097,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 75756,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -64261,6 +64320,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733532073810,
+  "lastUpdate": 1733532133100,
   "repoUrl": "https://github.com/risc0/risc0"
 }
