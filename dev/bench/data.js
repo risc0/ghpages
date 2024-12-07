@@ -32723,6 +32723,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b8ea462bd556f228e2e428f02ef6cb7eac5a7ec",
+          "message": "integrate keccak2 (#2617)\n\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-12-07T12:10:56Z",
+          "tree_id": "d6a24bf1c380b1099ba59fd0f2a73330f4fad94e",
+          "url": "https://github.com/risc0/risc0/commit/2b8ea462bd556f228e2e428f02ef6cb7eac5a7ec"
+        },
+        "date": 1733573707184,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21960022,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 941864,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 954935,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 622027,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433775,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 892314,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 619376,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -64438,6 +64497,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733532292563,
+  "lastUpdate": 1733573709885,
   "repoUrl": "https://github.com/risc0/risc0"
 }
