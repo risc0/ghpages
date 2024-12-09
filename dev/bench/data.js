@@ -64848,9 +64848,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e2d7ceef03a87ecba0f0e2547ff7d5ab1ea328e8",
+          "message": "guest: Implement keccak batching  (#2622)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-12-09T06:59:51Z",
+          "tree_id": "e6aa66ff4c9ab660e58f250aab74a6eb2d79a688",
+          "url": "https://github.com/risc0/risc0/commit/e2d7ceef03a87ecba0f0e2547ff7d5ab1ea328e8"
+        },
+        "date": 1733728069894,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21764186,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 735397,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 755305,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 533285,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358389,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 598779,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 302509,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1733728035409,
+  "lastUpdate": 1733728080260,
   "repoUrl": "https://github.com/risc0/risc0"
 }
