@@ -33077,6 +33077,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd75295be8a79de5e323b73ce134f67d1341a618",
+          "message": "Update dependencies (#2625)\n\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2024-12-09T00:05:58-08:00",
+          "tree_id": "3d456a792efb8d97ab4bcc03a03afa70acf103c9",
+          "url": "https://github.com/risc0/risc0/commit/fd75295be8a79de5e323b73ce134f67d1341a618"
+        },
+        "date": 1733731820574,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22036792,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 979075,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 990864,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 623230,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433972,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 777094,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 367094,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -65146,6 +65205,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733730914923,
+  "lastUpdate": 1733731823280,
   "repoUrl": "https://github.com/risc0/risc0"
 }
