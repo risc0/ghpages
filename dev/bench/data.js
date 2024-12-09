@@ -16508,6 +16508,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chernozub777@gmail.com",
+            "name": "Romashka",
+            "username": "romashka-btc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c60e5ece6ecbcb450b94c87059de4a3a6bc6365",
+          "message": "Typos-change (#2623)\n\nDescription:\r\nFixed errors and inaccuracies in the project's textual materials.\r\n\r\nType of Change:\r\nFixing errors (typos, grammatical mistakes, etc.)\r\n\r\nTesting:\r\nChanges have been reviewed to ensure no new errors were introduced.\r\n\r\nImpact:\r\nImproved readability of texts and documentation.\r\n\r\nAdditional Notes:\r\nRegular text audits are recommended to maintain a high standard of\r\nquality.",
+          "timestamp": "2024-12-08T23:37:06-08:00",
+          "tree_id": "9ee185232307b9ff65d0b0119e8afe80f9ed8242",
+          "url": "https://github.com/risc0/risc0/commit/4c60e5ece6ecbcb450b94c87059de4a3a6bc6365"
+        },
+        "date": 1733730903832,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20155422,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30601,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22006,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 45042,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 44033,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28915,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15640,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -65087,6 +65146,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733730647702,
+  "lastUpdate": 1733730914923,
   "repoUrl": "https://github.com/risc0/risc0"
 }
