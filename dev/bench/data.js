@@ -49705,6 +49705,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b140442a4da28875256bcfb3ef2c2f2a40462551",
+          "message": "optimize buffer pointer swapping in bigint2 EC (#2612)\n\nSwapping the memory addresses of the pointers is possible and more\r\noptimized than this. This shaves off ~6000 cycles from a signature\r\nverify (~2%), but imo also cleaner code.\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-12-09T00:10:27-08:00",
+          "tree_id": "9514eb08d474d87eecd667f5a55a321155c55e38",
+          "url": "https://github.com/risc0/risc0/commit/b140442a4da28875256bcfb3ef2c2f2a40462551"
+        },
+        "date": 1733732415791,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32169104,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 108947,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 94266,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161397,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150268,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 95449,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 62328,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -65264,6 +65323,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733732381857,
+  "lastUpdate": 1733732417666,
   "repoUrl": "https://github.com/risc0/risc0"
 }
