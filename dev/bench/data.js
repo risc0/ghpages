@@ -16449,6 +16449,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e2d7ceef03a87ecba0f0e2547ff7d5ab1ea328e8",
+          "message": "guest: Implement keccak batching  (#2622)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-12-09T06:59:51Z",
+          "tree_id": "e6aa66ff4c9ab660e58f250aab74a6eb2d79a688",
+          "url": "https://github.com/risc0/risc0/commit/e2d7ceef03a87ecba0f0e2547ff7d5ab1ea328e8"
+        },
+        "date": 1733728024661,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20682328,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30867,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22109,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43855,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43079,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28822,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15620,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -64792,6 +64851,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733727868648,
+  "lastUpdate": 1733728035409,
   "repoUrl": "https://github.com/risc0/risc0"
 }
