@@ -16626,6 +16626,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f67d49b414c288f8d7cc4fe77ac49645cbb1b45",
+          "message": "Add RISC0_FEATURE_bigint2 in the Docker build environment (#2635)",
+          "timestamp": "2024-12-10T00:27:16-08:00",
+          "tree_id": "269c9fc61b33fabadf18208029491d9b4dca9f5a",
+          "url": "https://github.com/risc0/risc0/commit/0f67d49b414c288f8d7cc4fe77ac49645cbb1b45"
+        },
+        "date": 1733820050160,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21406178,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30574,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22083,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44867,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43999,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29095,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15663,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -65618,6 +65677,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733820007464,
+  "lastUpdate": 1733820060875,
   "repoUrl": "https://github.com/risc0/risc0"
 }
