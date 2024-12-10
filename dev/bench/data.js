@@ -16744,6 +16744,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a2b16acd3f4644f5bd9028d58ee9f0c1889a68d",
+          "message": "Replace keccak_zkr.zip with individual zkr.xz files (#2638)\n\nThis should resolve crates.io file size limitations preventing\r\npublication.",
+          "timestamp": "2024-12-10T18:31:23Z",
+          "tree_id": "9b2e3ec8f4dd6205d32102bddeda5f403529197a",
+          "url": "https://github.com/risc0/risc0/commit/3a2b16acd3f4644f5bd9028d58ee9f0c1889a68d"
+        },
+        "date": 1733855911685,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21149652,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30626,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22244,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 45032,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43723,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29295,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15716,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -66031,6 +66090,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733855764958,
+  "lastUpdate": 1733855922368,
   "repoUrl": "https://github.com/risc0/risc0"
 }
