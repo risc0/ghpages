@@ -66264,9 +66264,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b78fac28d239b52fcc2d68cf621cea761e9477a",
+          "message": "Improve keccak cuda performance 35% (#2624)\n\n* Reorder how the witness is generated to cut down on warp divergence\r\n\r\nBefore:\r\n\r\n```\r\n10 runs of PO2=16 completed in 6.543s, avg=0.654s, 100157.742 cycles/sec, 499.749 keccak/sec\r\n10 runs of PO2=17 completed in 11.796s, avg=1.180s, 111115.459 cycles/sec, 555.272 keccak/sec\r\n```\r\n\r\nAfter:\r\n\r\n```\r\n10 runs of PO2=16 completed in 4.247s, avg=0.425s, 154322.577 cycles/sec, 770.012 keccak/sec\r\n10 runs of PO2=17 completed in 7.548s, avg=0.755s, 173643.059 cycles/sec, 867.738 keccak/sec\r\n```",
+          "timestamp": "2024-12-10T13:01:55-08:00",
+          "tree_id": "9aef6836e6b91a4b1a31dcc22671a97684dc8e9f",
+          "url": "https://github.com/risc0/risc0/commit/5b78fac28d239b52fcc2d68cf621cea761e9477a"
+        },
+        "date": 1733864972520,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21122530,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 735915,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 753588,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 532088,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 355998,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 599575,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 301620,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1733864797517,
+  "lastUpdate": 1733864982910,
   "repoUrl": "https://github.com/risc0/risc0"
 }
