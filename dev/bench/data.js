@@ -50059,6 +50059,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@subgraf.dev",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd6a49130903210702efdfc0b51f69e9ec11a198",
+          "message": "Add RUST_LIB_BACKTRACE to sys_getenv allow-list (#2636)\n\nResolves #2627",
+          "timestamp": "2024-12-10T17:31:27Z",
+          "tree_id": "0643dcd14412df551ec1a3dd61b294f14703dd59",
+          "url": "https://github.com/risc0/risc0/commit/fd6a49130903210702efdfc0b51f69e9ec11a198"
+        },
+        "date": 1733852164549,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32655312,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106623,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92922,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159620,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147991,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94387,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61124,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -65736,6 +65795,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733852140018,
+  "lastUpdate": 1733852166507,
   "repoUrl": "https://github.com/risc0/risc0"
 }
