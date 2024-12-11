@@ -50590,6 +50590,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dab813d4061c813d4d988fc511716ab5e763144d",
+          "message": "Add precompile & bigint docs (#2639)\n\nUpdate our documentation for precompiles and bigint. Note that this is\r\nmarked as draft, as some of the links are not yet correct until the\r\nupdates in our patched crates are landed on appropriate branches.\r\n\r\n---------\r\n\r\nCo-authored-by: Austin Abell <austinabell8@gmail.com>",
+          "timestamp": "2024-12-11T22:09:36Z",
+          "tree_id": "e49668d08817b1ee23580e3783e22369040ff19d",
+          "url": "https://github.com/risc0/risc0/commit/dab813d4061c813d4d988fc511716ab5e763144d"
+        },
+        "date": 1733955252137,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33052290,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106446,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92356,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160069,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147913,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94467,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61906,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -66444,6 +66503,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733955229437,
+  "lastUpdate": 1733955254120,
   "repoUrl": "https://github.com/risc0/risc0"
 }
