@@ -51121,6 +51121,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b33c13fd22f9a07afa11edc969c56aad22dcbd53",
+          "message": "zkvm: ProverServer: expose prove_keccak (#2644)",
+          "timestamp": "2024-12-12T18:42:04Z",
+          "tree_id": "d802cd290d225b7d7d14ffe818d79d181acc14d1",
+          "url": "https://github.com/risc0/risc0/commit/b33c13fd22f9a07afa11edc969c56aad22dcbd53"
+        },
+        "date": 1734029197841,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32502212,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106898,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92568,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 158911,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147201,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94272,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61708,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -67152,6 +67211,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734029175690,
+  "lastUpdate": 1734029202038,
   "repoUrl": "https://github.com/risc0/risc0"
 }
