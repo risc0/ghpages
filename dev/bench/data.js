@@ -16980,6 +16980,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ad2157299693f648bf1bf85716d1a9474f431e0e",
+          "message": "Optimize hash single keccak (#2645)\n\nThis brings down `sha_single_keccak` from 1843 cycles to 385 cycles. Out\r\nof the 385 cycles, 288 are from calling sha256 precompile so we're only\r\nadding 89 cycles.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2024-12-12T01:46:44-08:00",
+          "tree_id": "0f9d4495015f34750ab904901a5cbb07a27ee51e",
+          "url": "https://github.com/risc0/risc0/commit/ad2157299693f648bf1bf85716d1a9474f431e0e"
+        },
+        "date": 1733997470154,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20763786,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30259,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21969,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44778,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43335,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28738,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15568,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -67034,6 +67093,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733997271955,
+  "lastUpdate": 1733997480924,
   "repoUrl": "https://github.com/risc0/risc0"
 }
