@@ -33844,6 +33844,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "df21fa1ca7d7047183265a49e7b122f71e20acc5",
+          "message": "Minor issues found using zeth and better metrics (#2641) (#2646)\n\nUsing `RUST_LOG=info RISC0_INFO=1`, the following will be reported:\r\n```\r\nnumber of segments: 3\r\n2621440 total cycles\r\n2415056 user cycles (92.13%)\r\n171906 paging cycles (6.56%)\r\n34478 reserved cycles (1.32%)\r\necalls\r\n\t5252 Sha2 calls, 388648 cycles, (14.83%)\r\n\t5 Software calls, 51 cycles, (0.00%)\r\n\t0 Input calls, 0 cycles, (0.00%)\r\n\t0 BigInt2 calls, 0 cycles, (0.00%)\r\n\t0 BigInt calls, 0 cycles, (0.00%)\r\nsyscalls\r\n\t3 Keccak calls\r\n\t1 Read calls\r\n\t0 Write calls\r\n\t0 VerifyIntegrity calls\r\n\t0 ProveKeccak calls\r\n```",
+          "timestamp": "2024-12-11T23:44:30-08:00",
+          "tree_id": "bf4a1ca5f8a28d429adc40ac87c1456e5f953a6c",
+          "url": "https://github.com/risc0/risc0/commit/df21fa1ca7d7047183265a49e7b122f71e20acc5"
+        },
+        "date": 1733989722158,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21271192,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 976361,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 989305,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 621069,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 438899,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 759939,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 367553,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -66621,6 +66680,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1733955422893,
+  "lastUpdate": 1733989724844,
   "repoUrl": "https://github.com/risc0/risc0"
 }
