@@ -17039,6 +17039,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b33c13fd22f9a07afa11edc969c56aad22dcbd53",
+          "message": "zkvm: ProverServer: expose prove_keccak (#2644)",
+          "timestamp": "2024-12-12T18:42:04Z",
+          "tree_id": "d802cd290d225b7d7d14ffe818d79d181acc14d1",
+          "url": "https://github.com/risc0/risc0/commit/b33c13fd22f9a07afa11edc969c56aad22dcbd53"
+        },
+        "date": 1734029345028,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20652054,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30901,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22140,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 45038,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43486,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29166,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15670,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -67211,6 +67270,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734029202038,
+  "lastUpdate": 1734029356422,
   "repoUrl": "https://github.com/risc0/risc0"
 }
