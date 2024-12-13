@@ -51298,6 +51298,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "17ed98c3243258ad912fd52a289fef6725f17c90",
+          "message": "Optimize stack usage for keccak on GPU (#2647)\n\nOptimize zirgen codegen (and keccak circuit specifically) by expanding\r\neverything, and then outlining bodies of if statements.\r\n\r\nAfter:\r\n\r\n5 runs of PO2=19 completed in 11.453s, avg=2.291s, 228883.850\r\ncycles/sec, 1144.227 keccak/sec",
+          "timestamp": "2024-12-13T12:00:26-08:00",
+          "tree_id": "8e400ddffd5d32de2136fe43c2229a2c9365c077",
+          "url": "https://github.com/risc0/risc0/commit/17ed98c3243258ad912fd52a289fef6725f17c90"
+        },
+        "date": 1734120301884,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32614136,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 107033,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92554,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160670,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148161,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94564,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61847,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -67388,6 +67447,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734120277992,
+  "lastUpdate": 1734120304001,
   "repoUrl": "https://github.com/risc0/risc0"
 }
