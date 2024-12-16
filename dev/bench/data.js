@@ -17157,6 +17157,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f74920596c745a8bb7e8a6f1dfdefb44d03ed06f",
+          "message": "zkvm: enable configurable po2 for keccak circuit and fix batcher input (#2643)",
+          "timestamp": "2024-12-16T23:40:10Z",
+          "tree_id": "8452ddf0a93cfd93ccc7104e78fd5681f5e3eb2a",
+          "url": "https://github.com/risc0/risc0/commit/f74920596c745a8bb7e8a6f1dfdefb44d03ed06f"
+        },
+        "date": 1734392891828,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22219934,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30683,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22139,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44899,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43528,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28970,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15680,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -67742,6 +67801,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734392850283,
+  "lastUpdate": 1734392902500,
   "repoUrl": "https://github.com/risc0/risc0"
 }
