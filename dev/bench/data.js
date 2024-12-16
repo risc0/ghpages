@@ -51475,6 +51475,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f74920596c745a8bb7e8a6f1dfdefb44d03ed06f",
+          "message": "zkvm: enable configurable po2 for keccak circuit and fix batcher input (#2643)",
+          "timestamp": "2024-12-16T23:40:10Z",
+          "tree_id": "8452ddf0a93cfd93ccc7104e78fd5681f5e3eb2a",
+          "url": "https://github.com/risc0/risc0/commit/f74920596c745a8bb7e8a6f1dfdefb44d03ed06f"
+        },
+        "date": 1734392684377,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 34324472,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106325,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92495,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160440,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147780,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94773,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61818,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -67624,6 +67683,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734392662444,
+  "lastUpdate": 1734392686343,
   "repoUrl": "https://github.com/risc0/risc0"
 }
