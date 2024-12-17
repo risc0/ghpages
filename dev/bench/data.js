@@ -34552,6 +34552,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8801e2e3cd030acea2f03f01bd91f37e47e79e23",
+          "message": "keccak: fix range check to include po2 = 18 and add control ID and update control root (#2660)\n\nThe range of allowed po2's did not include po2 = 18. This PR fixes the\r\nrange check and enables po2 = 18 for downstream performance testing.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2024-12-17T17:41:46Z",
+          "tree_id": "438d07b15c7331b67fab94db616dee553e48d1b7",
+          "url": "https://github.com/risc0/risc0/commit/8801e2e3cd030acea2f03f01bd91f37e47e79e23"
+        },
+        "date": 1734457555340,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21540160,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 995228,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 996018,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 622959,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433699,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 771159,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368316,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -68037,6 +68096,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734435284511,
+  "lastUpdate": 1734457558304,
   "repoUrl": "https://github.com/risc0/risc0"
 }
