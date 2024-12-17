@@ -34434,6 +34434,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "deeeb62817fac7a5046da08998a7553e7dffa73c",
+          "message": "Initial commit of risc0-circuit-rv32im-v2 (#2661)",
+          "timestamp": "2024-12-17T11:23:17Z",
+          "tree_id": "201b45c66024243fdba423922d08e40d7d3b3c5d",
+          "url": "https://github.com/risc0/risc0/commit/deeeb62817fac7a5046da08998a7553e7dffa73c"
+        },
+        "date": 1734434847438,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22831292,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 995565,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1011949,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 622741,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 441553,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 779151,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 371942,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -67801,6 +67860,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734392902500,
+  "lastUpdate": 1734434850322,
   "repoUrl": "https://github.com/risc0/risc0"
 }
