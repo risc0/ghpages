@@ -67975,9 +67975,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "deeeb62817fac7a5046da08998a7553e7dffa73c",
+          "message": "Initial commit of risc0-circuit-rv32im-v2 (#2661)",
+          "timestamp": "2024-12-17T11:23:17Z",
+          "tree_id": "201b45c66024243fdba423922d08e40d7d3b3c5d",
+          "url": "https://github.com/risc0/risc0/commit/deeeb62817fac7a5046da08998a7553e7dffa73c"
+        },
+        "date": 1734435274048,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22766162,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 743383,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 763247,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 534597,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 359422,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 608636,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 304967,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1734435035409,
+  "lastUpdate": 1734435284511,
   "repoUrl": "https://github.com/risc0/risc0"
 }
