@@ -68388,9 +68388,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0231629e0194a5a5f494e41192443a614d89f2dc",
+          "message": "rv32im-v2: Preflight optimizations and cleanups (#2664)",
+          "timestamp": "2024-12-18T11:00:00-08:00",
+          "tree_id": "8e5ea313955802c411c4ae0eab97b6cadc8e551e",
+          "url": "https://github.com/risc0/risc0/commit/0231629e0194a5a5f494e41192443a614d89f2dc"
+        },
+        "date": 1734548855375,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22676634,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 743696,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 753384,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 537929,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358366,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 604990,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 301907,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1734548685610,
+  "lastUpdate": 1734548865687,
   "repoUrl": "https://github.com/risc0/risc0"
 }
