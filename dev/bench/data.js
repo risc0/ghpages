@@ -34670,6 +34670,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0231629e0194a5a5f494e41192443a614d89f2dc",
+          "message": "rv32im-v2: Preflight optimizations and cleanups (#2664)",
+          "timestamp": "2024-12-18T11:00:00-08:00",
+          "tree_id": "8e5ea313955802c411c4ae0eab97b6cadc8e551e",
+          "url": "https://github.com/risc0/risc0/commit/0231629e0194a5a5f494e41192443a614d89f2dc"
+        },
+        "date": 1734548652649,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21472824,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 993749,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 994922,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 616108,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431869,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 778847,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368529,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -68273,6 +68332,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734457788493,
+  "lastUpdate": 1734548655507,
   "repoUrl": "https://github.com/risc0/risc0"
 }
