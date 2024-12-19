@@ -34788,6 +34788,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3190365937796751ff1e5800c1c8affc5a305b4c",
+          "message": "keccak: Reset CUDA stack limit (#2671)",
+          "timestamp": "2024-12-19T10:01:11-08:00",
+          "tree_id": "1448dcc9a8180c72df4f1d5077b8f53c3254ec76",
+          "url": "https://github.com/risc0/risc0/commit/3190365937796751ff1e5800c1c8affc5a305b4c"
+        },
+        "date": 1734631520593,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20086442,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 995537,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 995532,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 631134,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433523,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 765954,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 367179,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -68509,6 +68568,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734549177544,
+  "lastUpdate": 1734631523176,
   "repoUrl": "https://github.com/risc0/risc0"
 }
