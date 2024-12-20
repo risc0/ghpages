@@ -68860,9 +68860,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ba4fdb21c06dd543462d4bd7f3a7873f0066f22f",
+          "message": "update RSA patch to tag, use in compat test (#2649)\n\nSwitched rsa tag from specific commit\r\n\r\n~~Noticed rsa being used in a compat test, figured I'd change that also\r\n(maybe preferred to run software impl, but it is a constrained test\r\nvector so maybe fine?)~~ decided to revert this, required too many\r\ntest/CI changes. Assumed we might do this once it isn't under `unstable`\r\n\r\nWhen doing above, noticed that the keccak impl failed to compile.\r\nAssumed this may have been a case where `std` not enabled, in which case\r\nthe `Vec` usage wouldn't be defined:\r\n\r\n```\r\n~/dev/ris/ris/ris/zkv/methods (main|✚4) [101]🌲 cargo c\r\n    Blocking waiting for file lock on package cache\r\n   Compiling risc0-build v1.3.0-alpha.1 (/Users/austinabell/development/risc0/risc0/risc0/build)\r\n    Checking risc0-zkvm v1.3.0-alpha.1 (/Users/austinabell/development/risc0/risc0/risc0/zkvm)\r\nerror[E0412]: cannot find type `Vec` in this scope\r\n  --> risc0/zkvm/src/guest/env/batcher.rs:30:13\r\n   |\r\n30 |     inputs: Vec<KeccakState>,\r\n   |             ^^^ not found in this scope\r\n   |\r\nhelp: consider importing one of these structs\r\n   |\r\n15 + use crate::guest::env::vec::Vec;\r\n   |\r\n15 + use alloc::vec::Vec;\r\n   |\r\n\r\n   Compiling risc0-zkvm-methods v1.3.0-alpha.1 (/Users/austinabell/development/risc0/risc0/risc0/zkvm/methods)\r\n```\r\n\r\nHappy to revert the other changes and just change the patch tag, but\r\nfigured I'd note these",
+          "timestamp": "2024-12-19T18:07:30-08:00",
+          "tree_id": "bede737a1a3f3ea76e0c42073dbe9b70a802a486",
+          "url": "https://github.com/risc0/risc0/commit/ba4fdb21c06dd543462d4bd7f3a7873f0066f22f"
+        },
+        "date": 1734660908777,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22686942,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 736053,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 760276,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 540136,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358933,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 602703,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 304028,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1734660730136,
+  "lastUpdate": 1734660919262,
   "repoUrl": "https://github.com/risc0/risc0"
 }
