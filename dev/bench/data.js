@@ -52537,6 +52537,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "85fd1d89929d924c682639b4584cb473a9559358",
+          "message": "Add used and free methods to bump allocator module (#2677)\n\nThis PR adds `used` and `free` methods to the bump allocator module to\nallow for collecting memory metrics. It also moves the logic of the bump\nallocator into the `heap::bump` module, ensuring that it cannot be used\nif it is not enabled at compile time (which would cause undefined\nbehavior).\n\nAlso, this PR adds the `unsafe` specifier to `heap::embedded::init`.\nThis should be specified because calling this function can result in\nbreaking Rust's memory guarentees. This is a breaking change, however\nany user code that calls this function (if any exists) is likely\nunsafe/broken right now, since init is called as part of the guest\nentrypoint and should not be called again.\n\n---------\n\nCo-authored-by: Austin Abell <austinabell8@gmail.com>",
+          "timestamp": "2024-12-20T23:10:41Z",
+          "tree_id": "b8600b5693fa2fea99fb8dfecaf664f3a6976dd4",
+          "url": "https://github.com/risc0/risc0/commit/85fd1d89929d924c682639b4584cb473a9559358"
+        },
+        "date": 1734736519322,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 34149916,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106565,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92668,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160372,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147711,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94394,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61721,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -69040,6 +69099,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734736495025,
+  "lastUpdate": 1734736521339,
   "repoUrl": "https://github.com/risc0/risc0"
 }
