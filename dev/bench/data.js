@@ -17570,6 +17570,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e042891fbad365fb1db7b17bd4afbb5e6fea99e",
+          "message": "rv32im-v2: Parallel accum (#2675)\n\n```\r\n10 runs of PO2=20 completed in 13.286s, avg=1.329s, 789219.409 cycles/sec\r\n```",
+          "timestamp": "2024-12-20T23:30:10-08:00",
+          "tree_id": "e9949727c0eff9ea15e6636e6183b9f0bef71e3f",
+          "url": "https://github.com/risc0/risc0/commit/3e042891fbad365fb1db7b17bd4afbb5e6fea99e"
+        },
+        "date": 1734766919748,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20187232,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30213,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21851,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44622,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43520,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28449,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15452,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -69394,6 +69453,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734766608299,
+  "lastUpdate": 1734766930363,
   "repoUrl": "https://github.com/risc0/risc0"
 }
