@@ -69332,9 +69332,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e042891fbad365fb1db7b17bd4afbb5e6fea99e",
+          "message": "rv32im-v2: Parallel accum (#2675)\n\n```\r\n10 runs of PO2=20 completed in 13.286s, avg=1.329s, 789219.409 cycles/sec\r\n```",
+          "timestamp": "2024-12-20T23:30:10-08:00",
+          "tree_id": "e9949727c0eff9ea15e6636e6183b9f0bef71e3f",
+          "url": "https://github.com/risc0/risc0/commit/3e042891fbad365fb1db7b17bd4afbb5e6fea99e"
+        },
+        "date": 1734766597804,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21293158,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 735660,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 753372,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 549938,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357940,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 597735,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 300239,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1734766491582,
+  "lastUpdate": 1734766608299,
   "repoUrl": "https://github.com/risc0/risc0"
 }
