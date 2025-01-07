@@ -35260,6 +35260,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ef3f8f4248ce2b767944ab34bab3d2173e80524a",
+          "message": "Add modular arithmetic precompiles (#2653)",
+          "timestamp": "2025-01-07T09:34:47-08:00",
+          "tree_id": "02850b70ad5d7d51c88069e1bcb30c3e1171f137",
+          "url": "https://github.com/risc0/risc0/commit/ef3f8f4248ce2b767944ab34bab3d2173e80524a"
+        },
+        "date": 1736271541787,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20505928,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 1001913,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1001393,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 631297,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433248,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 780887,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 370769,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -69453,6 +69512,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1734766930363,
+  "lastUpdate": 1736271544748,
   "repoUrl": "https://github.com/risc0/risc0"
 }
