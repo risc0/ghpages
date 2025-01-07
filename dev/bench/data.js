@@ -69804,9 +69804,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ecade10218e6e103ad4c24e66781e1ff7a2c93b2",
+          "message": "add keccak example and change devmode for receipts with assumptions (#2669)\n\nIn order to add a keccak example, this PR does the following:\r\n- add `no_mangle` to risc0_keccak_update. This allows the patched\r\n`tiny-keccak` to drop its `risc0-zkvm` dependency.\r\n- add an example that runs keccak. This uses the patched tiny-keccak\r\ncrate and is similar to the sha example.\r\n- for dev-mode, add a function for the host to compute claim digests for\r\na given guest input.\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Victor Snyder-Graf <victor@risczero.com>",
+          "timestamp": "2025-01-07T15:51:00-08:00",
+          "tree_id": "c851e1bf0a2c060131b48cc1f81d7c8f4ca3b505",
+          "url": "https://github.com/risc0/risc0/commit/ecade10218e6e103ad4c24e66781e1ff7a2c93b2"
+        },
+        "date": 1736294305961,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22619660,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 738393,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 757915,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 531340,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 360726,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 601467,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 303707,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1736294141127,
+  "lastUpdate": 1736294316482,
   "repoUrl": "https://github.com/risc0/risc0"
 }
