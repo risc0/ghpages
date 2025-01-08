@@ -35496,6 +35496,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "paul.gafni@gmail.com",
+            "name": "Paul",
+            "username": "pdg744"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80ad0594081c21a32a5055e6ec388ccaca9760b8",
+          "message": "[docs] adding risc0_info=1 to profiling instructions (#2702)",
+          "timestamp": "2025-01-08T19:47:03Z",
+          "tree_id": "b2701296f613660f00d9da9a34c442921b876f17",
+          "url": "https://github.com/risc0/risc0/commit/80ad0594081c21a32a5055e6ec388ccaca9760b8"
+        },
+        "date": 1736365875678,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22459158,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 999421,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1014572,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 619176,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 432356,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 775694,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 369177,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -69925,6 +69984,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1736294355102,
+  "lastUpdate": 1736365880880,
   "repoUrl": "https://github.com/risc0/risc0"
 }
