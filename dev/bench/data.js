@@ -35614,6 +35614,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "881e512732eca72849b2d0e263a1242aba3158af",
+          "message": "ZKVM-894: rv32im_v2: executor tests are passing (#2704)\n\nUsing `rstest` to create side-by-side testing of `rv32im-v1` and\r\n`rv32im-v2` executors.\r\n\r\nNotes:\r\n* Image IDs are a bit different in v2. This is because there is now a\r\nuser-mode and kernel-mode portion of the initial memory image. At build\r\ntime, the `user_id` or `kernel_id` is computed (based on a\r\n`package.metadata.risc0.kernel` config setting). At runtime, when the\r\nuser goes to run an image, they can compute the full `image_id` by\r\ncombining these two IDs.\r\n* `risc0-build` has been bumped to `2.0.0` to deal with these new\r\nchanges.\r\n* A `v1compat` kernel is added that provides emulation for the v1\r\nhost/guest syscall interface. This kernel needs to be built and used by\r\n`risc0-zkvm`, so a new `cargo risczero bake` command is added to support\r\nthis. The `bake` command will build a guest binary ELF and compute the\r\nuser or kernel ID, then output the result into a source directory.\r\n* The v2 circuit now includes the `pc` as part of the memory image.\r\nHowever, `ReceiptClaim` uses `SystemState`, and so currently the `pc` is\r\nalways set to `0` for compatibility. In the future we can see about\r\nchanging this.",
+          "timestamp": "2025-01-09T21:07:31-08:00",
+          "tree_id": "ffbb572c6c8aa21769ca53a8dbdc93a883ec4549",
+          "url": "https://github.com/risc0/risc0/commit/881e512732eca72849b2d0e263a1242aba3158af"
+        },
+        "date": 1736485912875,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22065218,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 997612,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1009164,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 618803,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 440466,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 768113,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368824,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -70161,6 +70220,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1736366076932,
+  "lastUpdate": 1736485915996,
   "repoUrl": "https://github.com/risc0/risc0"
 }
