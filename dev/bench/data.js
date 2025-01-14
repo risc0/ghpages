@@ -17865,6 +17865,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bartek.roza@gmail.com",
+            "name": "Bartosz Różański",
+            "username": "poszu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5fa4b49be0709c8dee5dcb9d77a916e496b32fb2",
+          "message": "fix typo in is_kernel_memory doc (#2678)\n\nFixed a typo in the docs of `is_kernel_memory()` function.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-14T01:28:27-08:00",
+          "tree_id": "15b829128a1fa77e1c76cb885270ef5e411fd7b9",
+          "url": "https://github.com/risc0/risc0/commit/5fa4b49be0709c8dee5dcb9d77a916e496b32fb2"
+        },
+        "date": 1736847641571,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20854826,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30247,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21837,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44149,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42740,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28668,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15482,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -70456,6 +70515,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1736847200931,
+  "lastUpdate": 1736847652396,
   "repoUrl": "https://github.com/risc0/risc0"
 }
