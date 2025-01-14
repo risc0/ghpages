@@ -70984,9 +70984,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b6cd9b3a21b87df4d98ac65c9def8ce5207f3bd9",
+          "message": "ZKVM-945: emu: validate address range before allocating `to_guest` vector (#2713)",
+          "timestamp": "2025-01-14T11:23:22-08:00",
+          "tree_id": "20ab7977f1a149ace57e8058a1ad7ead4142da3f",
+          "url": "https://github.com/risc0/risc0/commit/b6cd9b3a21b87df4d98ac65c9def8ce5207f3bd9"
+        },
+        "date": 1736883090208,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21010994,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 741934,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 764394,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 529585,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 360955,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 606441,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 305986,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1736882894546,
+  "lastUpdate": 1736883100844,
   "repoUrl": "https://github.com/risc0/risc0"
 }
