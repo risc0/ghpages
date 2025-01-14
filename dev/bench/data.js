@@ -53540,6 +53540,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bartek.roza@gmail.com",
+            "name": "Bartosz Różański",
+            "username": "poszu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5fa4b49be0709c8dee5dcb9d77a916e496b32fb2",
+          "message": "fix typo in is_kernel_memory doc (#2678)\n\nFixed a typo in the docs of `is_kernel_memory()` function.\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-14T01:28:27-08:00",
+          "tree_id": "15b829128a1fa77e1c76cb885270ef5e411fd7b9",
+          "url": "https://github.com/risc0/risc0/commit/5fa4b49be0709c8dee5dcb9d77a916e496b32fb2"
+        },
+        "date": 1736847198374,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 34048200,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 98986,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86776,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163291,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149423,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88763,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 59313,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -70397,6 +70456,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1736486442538,
+  "lastUpdate": 1736847200931,
   "repoUrl": "https://github.com/risc0/risc0"
 }
