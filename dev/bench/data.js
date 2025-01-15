@@ -36086,6 +36086,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2139c76d0d0cff04d5656471a59c174bf199987",
+          "message": "ZKVM-943: Require addresses used by `ecall_sha`, `ecall_bigint`, and `ecall_bigint2` to be aligned in emulator (#2727)\n\nCurrently there is an issue in that a program can issue an `ecall`, e.g.\r\nfor bigint (1), with an unaligned pointer and the executor will succeed,\r\nbut proving will fail. This is an issue both for the smaller impact that\r\nit's better to know sooner when an execution cannot be proven, and for\r\nthe larger impact that it could be leveraged to cause issues on\r\nBoundless, where the executor is used to determine whether or not a\r\ngiven job is provable.\r\n\r\nThis PR also adds a check to the software ecall that the _end_ of the\r\nguest buffer is in guest memory. This is related check prevents the host\r\nfrom potentially allocating up to 4 GB of memory when the given buffer\r\nlen is actually invalid.\r\n\r\n---------\r\n\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-15T18:50:46Z",
+          "tree_id": "96937336b8bebfdd26bf152a91c39f7bc32cac5e",
+          "url": "https://github.com/risc0/risc0/commit/d2139c76d0d0cff04d5656471a59c174bf199987"
+        },
+        "date": 1736967307383,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21439126,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 998124,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1010541,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 617869,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 434344,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 769182,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 370878,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -71105,6 +71164,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1736883120683,
+  "lastUpdate": 1736967314003,
   "repoUrl": "https://github.com/risc0/risc0"
 }
