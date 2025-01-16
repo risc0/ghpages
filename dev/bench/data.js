@@ -36204,6 +36204,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3fb0cb5bf63e11463fd7f8badcfd800f2aabdb0a",
+          "message": "ZKVM-958: Add p256 curve to ecdsa examples (#2710)\n\nKept the example as close to k256 as possible for simplicity, and just\r\nadapted the readme to reflect updated details.\r\n\r\nCloses ZKVM-958\r\n\r\n---------\r\n\r\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2025-01-16T13:35:17-08:00",
+          "tree_id": "eda074450645d7eb293520a6dd10a9be6a0dfe89",
+          "url": "https://github.com/risc0/risc0/commit/3fb0cb5bf63e11463fd7f8badcfd800f2aabdb0a"
+        },
+        "date": 1737063581132,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21548436,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 999163,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1012241,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 616985,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 434036,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 767894,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368533,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -71341,6 +71400,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1736967535402,
+  "lastUpdate": 1737063587281,
   "repoUrl": "https://github.com/risc0/risc0"
 }
