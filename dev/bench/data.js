@@ -54484,6 +54484,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e4f20372690f455f697f61c2cb146cf536303da6",
+          "message": "ZKVM-928: Passing proving tests for rv32im-v2 (#2722)\n\n* Add a `SegmentVersion` along with additions to `ProverOpts` and\r\n`VerifierContext` to override the default version, which is still `V1`.\r\n* Use `rstest` to test proving and recursion side-by-side V1 and V2.\r\n* Add a `lift_rv32im_v2` predicate that is compatible with the existing\r\n`ReceiptClaim`.\r\n* The v2 lift predicates are added to the 'ambient' allowed control\r\nroot.\r\n\r\nCloses ZKVM-896",
+          "timestamp": "2025-01-21T13:37:37-08:00",
+          "tree_id": "ccfa7ccb9092206d9e6841fad08fdec00187ed59",
+          "url": "https://github.com/risc0/risc0/commit/e4f20372690f455f697f61c2cb146cf536303da6"
+        },
+        "date": 1737495747956,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30876262,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 96696,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 85924,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 162375,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 151296,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88193,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58925,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -71636,6 +71695,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1737495729906,
+  "lastUpdate": 1737495753371,
   "repoUrl": "https://github.com/risc0/risc0"
 }
