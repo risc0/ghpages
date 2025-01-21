@@ -71869,9 +71869,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "28955034f2ed59bfb283fa6fb7d69664296cc1c2",
+          "message": "build(deps): bump serde_with from 3.11.0 to 3.12.0 (#2746)\n\n[//]: # (dependabot-start)\r\n⚠️  **Dependabot is rebasing this PR** ⚠️ \r\n\r\nRebasing might not happen immediately, so don't worry if this takes some\r\ntime.\r\n\r\nNote: if you make any changes to this PR yourself, they will take\r\nprecedence over the rebase.\r\n\r\n---\r\n\r\n[//]: # (dependabot-end)\r\n\r\nBumps [serde_with](https://github.com/jonasbb/serde_with) from 3.11.0 to\r\n3.12.0.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/jonasbb/serde_with/releases\">serde_with's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>serde_with v3.12.0</h2>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>Add <code>with_suffix!</code> macro, which puts a suffix on every\r\nstruct field by <a\r\nhref=\"https://github.com/fgardt\"><code>@​fgardt</code></a> (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/381\">#381</a>/<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/797\">#797</a>)</li>\r\n</ul>\r\n<h3>Changed</h3>\r\n<ul>\r\n<li>Reformat all <code>Cargo.toml</code> files by <a\r\nhref=\"https://github.com/nyurik\"><code>@​nyurik</code></a> (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/803\">#803</a>)</li>\r\n<li>Better handle internal arithmetic and improve error messages (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/809\">#809</a>/<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/810\">#810</a>/<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/811\">#811</a>)</li>\r\n</ul>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>Generated schemas are not valid when using rust style names in ref\r\nby <a href=\"https://github.com/waltronix\"><code>@​waltronix</code></a>\r\n(<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/798\">#798</a>/<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/799\">#799</a>)</li>\r\n</ul>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/5de3400f9cd459abb91cd021ba29c5fd5716c520\"><code>5de3400</code></a>\r\nBump version to 3.12 and update changelogs (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/812\">#812</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/0d36647ff5b1e70478f95c36028c8231d9aec444\"><code>0d36647</code></a>\r\nBump version to 3.12 and update changelogs</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/f4f784c949a0bb85a57abb15e65d28dca9639ba0\"><code>f4f784c</code></a>\r\nRemove use of <code>ops::Mul</code> and <code>ops::Neg</code> since they\r\ncan fail (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/811\">#811</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/9c06ffa48d9d2598e258fabd0e4289590dd057bb\"><code>9c06ffa</code></a>\r\nGenerate better error messages when encountering unexpected i128/u128\r\nvalues ...</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/90d731221e5b6c8b58e30a540937abc36f3b91db\"><code>90d7312</code></a>\r\nRemove use of <code>ops::Mul</code> and <code>ops::Neg</code> since they\r\ncan fail</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/e8d2e02aedfa442868292fd5389a7f1dbe93a7d1\"><code>e8d2e02</code></a>\r\nGenerate better error messages when encountering unexpected i128/u128\r\nvalues ...</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/4c273b2b1ffcdc24bafdb96a06bff32441db1623\"><code>4c273b2</code></a>\r\nRemove some <code>as</code> casts (<a\r\nhref=\"https://redirect.github.com/jonasbb/serde_with/issues/809\">#809</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/c910fa12ec638b8198ed26b4f79150cf92798907\"><code>c910fa1</code></a>\r\nFix/remove more as casts</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/fa14d984e8c1b74650d47f80ac7f8c771c77bdf5\"><code>fa14d98</code></a>\r\nRemove some <code>as</code> casts</li>\r\n<li><a\r\nhref=\"https://github.com/jonasbb/serde_with/commit/ef112b9b1dd534e9bbcd7acdcbc929d415b5f36b\"><code>ef112b9</code></a>\r\nWarn about <code>as</code> usage in time related code</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/jonasbb/serde_with/compare/v3.11.0...v3.12.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=serde_with&package-manager=cargo&previous-version=3.11.0&new-version=3.12.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2025-01-21T14:44:41-08:00",
+          "tree_id": "f4b746a7f6f6a32c5ab52c697293747a4d86d7ad",
+          "url": "https://github.com/risc0/risc0/commit/28955034f2ed59bfb283fa6fb7d69664296cc1c2"
+        },
+        "date": 1737499923595,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21565152,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 743073,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 764250,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 530344,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 355405,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 604597,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 305644,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1737499789691,
+  "lastUpdate": 1737499934082,
   "repoUrl": "https://github.com/risc0/risc0"
 }
