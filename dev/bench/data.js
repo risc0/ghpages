@@ -18278,6 +18278,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d5c2287ca753143aef8f4a04fd37e2a34e0d43d8",
+          "message": "ZKVM-980: zkp verifier: Make buffer configuration more flexible (#2658)\n\n* Expose the verify `Verifier` object (marked unstable) so that circuits\ncan use different IOP protocols (for instance, circuits without a `code`\nbuffer can skip making a merkle tree for it)\n* Verifier no longer depends on CircuitCoreDef as a whole;\n* Verifier no longer depends on having exactly 3 register groups\n\n---------\n\nCo-authored-by: Frank Laub <frank@risczero.com>\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-21T18:19:50-08:00",
+          "tree_id": "afbf25df2e71a4452c56a840b1f320fd1a8fee33",
+          "url": "https://github.com/risc0/risc0/commit/d5c2287ca753143aef8f4a04fd37e2a34e0d43d8"
+        },
+        "date": 1737513112484,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19768326,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30858,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22162,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44783,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43533,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29102,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15726,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -72226,6 +72285,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1737513103049,
+  "lastUpdate": 1737513123615,
   "repoUrl": "https://github.com/risc0/risc0"
 }
