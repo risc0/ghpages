@@ -55369,6 +55369,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "adam.wierzbicki@vlayer.xyz",
+            "name": "Adam Wierzbicki",
+            "username": "Wiezzel"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ba4f13458ef0e69b0709eb1d8e7dc3cb8b129ec2",
+          "message": "risc0-build: use CARGO_TARGET_DIR if set (#2724)\n\nWhen building for non-default target, `cargo-build` gets the target\r\ndirectory wrong. It is assumed that the directory structure is\r\n```\r\n$ROOT/target/$profile/build/$crate/out\r\n```\r\nwhile it can also be\r\n```\r\n$ROOT/target/$target/$profile/build/$crate/out\r\n```\r\nThis fix uses a modified version of logic borrowed from\r\n[`cxx-build`](https://docs.rs/cxx-build/latest/src/cxx_build/target.rs.html#10-49)\r\nto determine the target directory better:\r\n* If `CARGO_TARGET_DIR` is set and is an absolute path, use that.\r\n* Otherwise, go up from `OUT_DIR` until a directory is found such that:\r\n    * It contains `.rustc_info.json`, or\r\n    * It contains `CACHEDIR.TAG`, or\r\n    * It is named `target` and its parent contains `Cargo.toml`.\r\n\r\nCloses ZKVM-971\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-23T20:28:38Z",
+          "tree_id": "aa6cdd44ac11494d7cee57affa6bd56ba4353c6f",
+          "url": "https://github.com/risc0/risc0/commit/ba4f13458ef0e69b0709eb1d8e7dc3cb8b129ec2"
+        },
+        "date": 1737664407956,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33586572,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 98278,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86322,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163802,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149490,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88318,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58985,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -72816,6 +72875,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1737664390520,
+  "lastUpdate": 1737664410344,
   "repoUrl": "https://github.com/risc0/risc0"
 }
