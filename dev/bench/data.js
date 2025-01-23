@@ -18396,6 +18396,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5ac1c3f207546e4194d2d988ef790311da5fa865",
+          "message": "ZKVM-993: Add extra ffi arguments length checks (#2759)",
+          "timestamp": "2025-01-23T11:07:49-08:00",
+          "tree_id": "63818d0b3273a4c859dfcc67fffcc27c8a2e2ad7",
+          "url": "https://github.com/risc0/risc0/commit/5ac1c3f207546e4194d2d988ef790311da5fa865"
+        },
+        "date": 1737659827467,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19434626,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30394,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22003,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44007,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42367,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28788,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15508,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -72698,6 +72757,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1737659731541,
+  "lastUpdate": 1737659838363,
   "repoUrl": "https://github.com/risc0/risc0"
 }
