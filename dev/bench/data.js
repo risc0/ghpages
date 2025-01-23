@@ -72459,9 +72459,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0d0af495b7c13ef380ad308cd087e11901c10750",
+          "message": "ZKVM-946: Add field extension operations (#2728)\n\nAdd field extension addition, subtraction, and multiplication bigint\r\nprecompiles. There are general forms that take the (non-leading)\r\ncoefficients of the monic irreducible polynomial of the extensions for\r\ndegree 2 extensions. (And, for multiplication, for a degree 4\r\nextension.) Also, for multiplication, there's a specialized version\r\nthat's more efficient specifically for the extension F[x]/(x^2 + 1).\r\n\r\nCloses ZKVM-912\r\n\r\n---------\r\n\r\nCo-authored-by: iddo <iddo@risczero.com>",
+          "timestamp": "2025-01-22T23:55:59Z",
+          "tree_id": "dd97988877828e352ea66a11586edb0c3794b87f",
+          "url": "https://github.com/risc0/risc0/commit/0d0af495b7c13ef380ad308cd087e11901c10750"
+        },
+        "date": 1737590652266,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22694240,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 746636,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 757867,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 533420,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358583,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 608016,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 305614,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1737590628158,
+  "lastUpdate": 1737590662664,
   "repoUrl": "https://github.com/risc0/risc0"
 }
