@@ -73167,9 +73167,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f9870b8dd243bf36357659c015e0679b15bf658",
+          "message": "ZKVM-1000: Fix bigint field tests (#2763)",
+          "timestamp": "2025-01-24T12:42:40-08:00",
+          "tree_id": "9be498b94f4759307de4f319bdb96af4d715ed55",
+          "url": "https://github.com/risc0/risc0/commit/7f9870b8dd243bf36357659c015e0679b15bf658"
+        },
+        "date": 1737751884545,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21269934,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 752396,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 776707,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 528960,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 355204,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 599256,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 301922,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1737751851892,
+  "lastUpdate": 1737751894375,
   "repoUrl": "https://github.com/risc0/risc0"
 }
