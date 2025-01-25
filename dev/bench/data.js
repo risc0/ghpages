@@ -73344,9 +73344,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dceb5b84afafcf63bd2f2177fa682d33a2251e22",
+          "message": "ZKVM-1003: Make sure we only call anyhow! macro in error paths. (#2765)\n\nThe anyhow macro is a bit expensive, so it makes sense to only call it\r\nin an error path.",
+          "timestamp": "2025-01-24T17:29:29-08:00",
+          "tree_id": "4453c149a42054d055ad40c8d67a733471158d56",
+          "url": "https://github.com/risc0/risc0/commit/dceb5b84afafcf63bd2f2177fa682d33a2251e22"
+        },
+        "date": 1737769185560,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22252786,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 747859,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 765343,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 533165,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 359579,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 610262,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 303740,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1737769027050,
+  "lastUpdate": 1737769195403,
   "repoUrl": "https://github.com/risc0/risc0"
 }
