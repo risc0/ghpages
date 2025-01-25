@@ -73639,9 +73639,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89eeac26ff6642021cc16a4b9a70a404a1004b4d",
+          "message": "ZKVM-1002: drop accumulation of input keccak states in the guest and remove po2 (#2682)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-25T05:03:44Z",
+          "tree_id": "496e788e8938aa75ce5ce25130334a1f244fe48f",
+          "url": "https://github.com/risc0/risc0/commit/89eeac26ff6642021cc16a4b9a70a404a1004b4d"
+        },
+        "date": 1737782164111,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19932246,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 709759,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 731936,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 529512,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357082,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 591493,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 297079,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1737781859500,
+  "lastUpdate": 1737782174423,
   "repoUrl": "https://github.com/risc0/risc0"
 }
