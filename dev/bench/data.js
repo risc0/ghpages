@@ -55664,6 +55664,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dceb5b84afafcf63bd2f2177fa682d33a2251e22",
+          "message": "ZKVM-1003: Make sure we only call anyhow! macro in error paths. (#2765)\n\nThe anyhow macro is a bit expensive, so it makes sense to only call it\r\nin an error path.",
+          "timestamp": "2025-01-24T17:29:29-08:00",
+          "tree_id": "4453c149a42054d055ad40c8d67a733471158d56",
+          "url": "https://github.com/risc0/risc0/commit/dceb5b84afafcf63bd2f2177fa682d33a2251e22"
+        },
+        "date": 1737768950192,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 34200932,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106963,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92392,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159833,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147040,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94891,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61334,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -73229,6 +73288,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1737751894375,
+  "lastUpdate": 1737768956858,
   "repoUrl": "https://github.com/risc0/risc0"
 }
