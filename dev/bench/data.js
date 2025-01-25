@@ -18632,6 +18632,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89eeac26ff6642021cc16a4b9a70a404a1004b4d",
+          "message": "ZKVM-1002: drop accumulation of input keccak states in the guest and remove po2 (#2682)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-25T05:03:44Z",
+          "tree_id": "496e788e8938aa75ce5ce25130334a1f244fe48f",
+          "url": "https://github.com/risc0/risc0/commit/89eeac26ff6642021cc16a4b9a70a404a1004b4d"
+        },
+        "date": 1737781848557,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20768902,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29875,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21498,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 45181,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43783,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28863,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15560,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -73583,6 +73642,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1737781712593,
+  "lastUpdate": 1737781859500,
   "repoUrl": "https://github.com/risc0/risc0"
 }
