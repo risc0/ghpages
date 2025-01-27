@@ -18691,6 +18691,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a8ed2e6b8b54014267967a963c489026b357745",
+          "message": "ZKVM-998: fix panic when using embedded allocator and add more details to OOM message (#2761)\n\nThis fixes a panic that happens when calling items in std when the\r\nembedded allocator is enabled. Our std implementation calls into\r\n`sys_alloc_aligned` so we should not panic when this is called. Fix this\r\nby calling the embedded allocator's alloc function.",
+          "timestamp": "2025-01-27T19:21:48Z",
+          "tree_id": "e7a3e32b13c66042693bbdf467fcc15fcfb3c423",
+          "url": "https://github.com/risc0/risc0/commit/7a8ed2e6b8b54014267967a963c489026b357745"
+        },
+        "date": 1738006219849,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20756192,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29990,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21574,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 45018,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43557,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28796,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15577,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -73878,6 +73937,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738006215034,
+  "lastUpdate": 1738006230643,
   "repoUrl": "https://github.com/risc0/risc0"
 }
