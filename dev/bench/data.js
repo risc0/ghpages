@@ -74111,9 +74111,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hmrtn@pm.me",
+            "name": "hans",
+            "username": "hmrtn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32c29ad9e271415ae853f4f1d8200686d27e8103",
+          "message": "ZKVM-997: [rzup] update to version 0.3 (#2712)\n\nThis update aims to create a more robust version management system for\r\nRISC Zero components. The new implementation provides improvements over\r\nthe old version:\r\n- Support for multiple versions\r\n- Better terminal UI\r\n- Less confusing CLI interface\r\n\r\nThis changes `rzup` from a standalone binary into a library with a CLI\r\nfrontend. This change allows other tools to find RISC Zero components by\r\nusing `rzup` as a library.\r\n\r\n#### Change Overview\r\n1. Component Management System\r\n- added modular component system for managing different RISC Zero\r\ncomponents\r\n   - support for components: rust, cpp, cargo-risczero, and r0vm\r\n   - consistent versioning across components using semver\r\n\r\n2. Installation & Version Management\r\n   - improved version detection and management\r\n   - support for multiple versions of each component\r\n   - atomic installations with cleanup on failure\r\n\r\n3. Enhanced CLI Experience\r\n   - suggestions and tips\r\n   - less ambiguous usage pattern\r\n   - more descriptive errors \r\n   - progress indicators and colorized output\r\n   - Quiet and verbose mode\r\n\r\n4. Settings Management\r\n   - persistent settings (`settings.toml`)\r\n   - per-component version management (with `rzup default ...`)\r\n\r\n#### Migration (from `rzup` < 0.3)\r\n- Existing component installations and `.risc0/` structure is preserved\r\nand backward compatible\r\n- core cli usage remains largely unchanged (remove confusing\r\nextension/toolchain usage)\r\n\r\n#### Example usage\r\n\r\nAs a user:\r\n```\r\nrzup v0.3.0-alpha.1\r\n\r\n    ██████  █▀▀▀██\r\n    ██████  █ ▄▀ █\r\n    ██████  ██▄▄▄█\r\n    ██████\r\n    ██████   RISC\r\n    ██████   ZERO\r\n\r\nUsage: rzup [OPTIONS] <COMMAND>\r\n\r\nCommands:\r\n  install    Install and update components\r\n  check      Check for new component versions\r\n  default    Set a component version as default\r\n  show       Show installed components\r\n  uninstall  Uninstall a component\r\n  build      Build a component\r\n  help       Print this message or the help of the given subcommand(s)\r\n\r\nOptions:\r\n  -v, --verbose  Enable verbose output\r\n  -q, --quiet    Suppress output\r\n  -h, --help     Print help\r\n  -V, --version  Print version\r\n\r\nDiscussion:\r\n    Installs and manages software components distributed by Risc Zero.\r\n\r\n    Installed components are stored in the path specified by the `RISC0_HOME`\r\n    environment variable, or in `~/.risc0` if not set.\r\n\r\n    Rust software components symlink their binaries into ~/.cargo/bin/ when\r\n    made default.\r\n```\r\n\r\n```bash\r\n# Install latest versions\r\nrzup install\r\n\r\n# Update components to latest versions (note: this is an alias to install)\r\nrzup update\r\n\r\n# Install specific version of cargo-risczero\r\nrzup install cargo-risczero 1.0.0\r\n\r\n# Install specific version of rust toolchain\r\nrzup install rust 1.81.0\r\n\r\n# Check for updates\r\nrzup check\r\n\r\n# Show installed versions\r\nrzup show\r\n\r\n# Set a specific version of a component as default\r\nrzup default cargo-risczero 1.0.0\r\n\r\n# Uninstall a component\r\nrzup uninstall rust 1.79.0\r\n```\r\n\r\nAs a library:\r\n```rust \r\nuse rzup::{Rzup, Result};\r\nuse semver::Version;\r\n\r\nfn main() -> Result<()> {\r\n    let mut rzup = Rzup::new()?;\r\n    \r\n    // Get active version\r\n    if let Some((version, path)) = rzup.get_default_version(\"cargo-risczero\")? {\r\n        println!(\"Default version: {} at {}\", version, path.display());\r\n    }\r\n    \r\n    Ok(())\r\n}\r\n```\r\n\r\nPR for integration with risc0 crates\r\nhttps://github.com/risc0/risc0/pull/2752\r\n\r\n---------\r\n\r\nCo-authored-by: Hans Martin <hal@mbp.local>\r\nCo-authored-by: Remi Bernotavicius <remi@risczero.com>\r\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
+          "timestamp": "2025-01-27T13:08:23-08:00",
+          "tree_id": "5be8608cf95fe34bee446a53457a9b82e943c72a",
+          "url": "https://github.com/risc0/risc0/commit/32c29ad9e271415ae853f4f1d8200686d27e8103"
+        },
+        "date": 1738012649531,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20758516,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 712040,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 732835,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 524966,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 353793,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 595547,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 298587,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1738012616238,
+  "lastUpdate": 1738012659465,
   "repoUrl": "https://github.com/risc0/risc0"
 }
