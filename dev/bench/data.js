@@ -73816,9 +73816,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a8ed2e6b8b54014267967a963c489026b357745",
+          "message": "ZKVM-998: fix panic when using embedded allocator and add more details to OOM message (#2761)\n\nThis fixes a panic that happens when calling items in std when the\r\nembedded allocator is enabled. Our std implementation calls into\r\n`sys_alloc_aligned` so we should not panic when this is called. Fix this\r\nby calling the embedded allocator's alloc function.",
+          "timestamp": "2025-01-27T19:21:48Z",
+          "tree_id": "e7a3e32b13c66042693bbdf467fcc15fcfb3c423",
+          "url": "https://github.com/risc0/risc0/commit/7a8ed2e6b8b54014267967a963c489026b357745"
+        },
+        "date": 1738006205182,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20134562,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 716601,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 735084,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 530922,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358579,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 594583,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 299869,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1738006003660,
+  "lastUpdate": 1738006215034,
   "repoUrl": "https://github.com/risc0/risc0"
 }
