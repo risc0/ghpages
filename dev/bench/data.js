@@ -37620,6 +37620,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1253b270acbe777f7d3a05846e2d9a09b96e5344",
+          "message": "ZKVM-999: risc0-build: Use a builder pattern for GuestOptions and DockerOptions (#2762)\n\nAlso includes the ability to specify custom environment variables for\r\ndocker builds.\r\n\r\nSupersedes #2709\r\n\r\n---------\r\n\r\nCo-authored-by: Adam Wierzbicki <adam.wierzbicki@vlayer.xyz>",
+          "timestamp": "2025-01-28T02:09:39Z",
+          "tree_id": "9d54c987b49f486779c156f34ef9ef7ea93fc6a1",
+          "url": "https://github.com/risc0/risc0/commit/1253b270acbe777f7d3a05846e2d9a09b96e5344"
+        },
+        "date": 1738030446548,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21425298,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 956280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 969064,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 616039,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433702,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 758495,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 361334,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -74173,6 +74232,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738012659465,
+  "lastUpdate": 1738030449169,
   "repoUrl": "https://github.com/risc0/risc0"
 }
