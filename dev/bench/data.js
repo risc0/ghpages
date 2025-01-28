@@ -18868,6 +18868,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b74b2677c88c6a61cbc3b76ddaacdda720679c60",
+          "message": "ZKVM-1006: keccak: remove input accumulation in guest (#2775)\n\nThis is a follow up from a previous PR. This actually removes the input\r\naccumulation. It was missed in the previous PR.",
+          "timestamp": "2025-01-28T05:17:24Z",
+          "tree_id": "238f789ae9eb682a00d279d15e212157df40fbce",
+          "url": "https://github.com/risc0/risc0/commit/b74b2677c88c6a61cbc3b76ddaacdda720679c60"
+        },
+        "date": 1738042310802,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19706192,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30556,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 22052,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44508,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 43182,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 29005,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15618,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -74586,6 +74645,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738042165050,
+  "lastUpdate": 1738042321382,
   "repoUrl": "https://github.com/risc0/risc0"
 }
