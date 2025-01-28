@@ -37856,6 +37856,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112983328+mars-risc0@users.noreply.github.com",
+            "name": "Mars Saxman",
+            "username": "mars-risc0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bdcf74045458f0a5ab86d455c4a4273473f55e21",
+          "message": "ZKVM-995: replace `num-bigint` with better-performing `ibig` for bibc evaluator (#2760)\n\nRunning Parker's k256-test benchmark, the cycle rate prior to this\r\nchange was 6.2618 MHz, and the cycle rate with the new library is 6.7958\r\nMHz.",
+          "timestamp": "2025-01-28T11:02:08-08:00",
+          "tree_id": "979a21d484558bb2f30b37aa858409b5381b4892",
+          "url": "https://github.com/risc0/risc0/commit/bdcf74045458f0a5ab86d455c4a4273473f55e21"
+        },
+        "date": 1738091197383,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 17832408,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 981128,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 994878,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 617690,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431923,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 759485,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 365744,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -74645,6 +74704,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738042321382,
+  "lastUpdate": 1738091201189,
   "repoUrl": "https://github.com/risc0/risc0"
 }
