@@ -37974,6 +37974,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a7fa0389b974479b9bfc2355265d61527ed9f25",
+          "message": "[AUD-7] Fix heap-pointer overflow in sys_alloc_aligned (#2778)",
+          "timestamp": "2025-01-29T18:22:40-08:00",
+          "tree_id": "2b1208e24b35568f39908651f6b24413b9077f0b",
+          "url": "https://github.com/risc0/risc0/commit/5a7fa0389b974479b9bfc2355265d61527ed9f25"
+        },
+        "date": 1738204026524,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 17834510,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 982287,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 994984,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 614276,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431899,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 760905,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 365007,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -74881,6 +74940,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738091442137,
+  "lastUpdate": 1738204029271,
   "repoUrl": "https://github.com/risc0/risc0"
 }
