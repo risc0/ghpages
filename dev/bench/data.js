@@ -19045,6 +19045,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "11624074763e4202ee658f942895057db597bcc6",
+          "message": "ZKVM-1011: Add unstable feature flag to risc0-zkp Cargo.toml to address warning and allow usage of unstable feature (#2779)\n\nhttps://github.com/risc0/risc0/pull/2658 introduced some API surface\nunder `#[stability::unstable]` but forgot to add the `unstable` flag. I\nsaw warnings about this in the CI builds and so figured I should open\nthis PR\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-01-30T15:53:38-08:00",
+          "tree_id": "d204d7207dc6913118ab8613e36ca3a477d66ff7",
+          "url": "https://github.com/risc0/risc0/commit/11624074763e4202ee658f942895057db597bcc6"
+        },
+        "date": 1738281737371,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 19204124,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30244,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21915,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43856,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42367,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28541,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15469,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -75294,6 +75353,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738281681266,
+  "lastUpdate": 1738281748293,
   "repoUrl": "https://github.com/risc0/risc0"
 }
