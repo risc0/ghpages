@@ -57316,6 +57316,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "welzwo@gmail.com",
+            "name": "Wolfgang Welz",
+            "username": "Wollac"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1557e8d2683f2b9d7b505657f98f42b6104ccbcc",
+          "message": "ZKVM-969: Groth16: Switch from rapidsnark to gnark (#2740)\n\nCreate Groth16 proofs using `gnark`instead of `rapidsnark`.\r\n\r\nThis process consists of the following parts:\r\n- **`circom-compat`:** the Gnark bindings to Circom's R1CS, WTNS, and\r\nZKEY for Groth16 proof generation in Go.\r\n- An update to the **`risczero/risc0-groth16-prover` Dockerfile**:\r\n- During the Docker build process, it runs the `circom-compat` converter\r\nto convert the `r1cs` and `zkey` files to their gnark counterparts.\r\n- It replaces `rapidsnark` with the `circom-compat` prover that reads\r\nthese converted files plus the witness file.\r\n- In the entrypoint script, it creates a named Unix pipe to write the\r\nwitness data to, allowing the prover to start and read the constraint\r\nsystem while the witness generation is still running.\r\n- A **patched `gnark`** version to match circom's R1CS-to-QAP reduction.\r\n(See https://github.com/risc0/gnark/pull/1)\r\n\r\nThe resulting docker image has been deployed as\r\n[risczero/risc0-groth16-prover:v2025-01-24.1](https://hub.docker.com/layers/risczero/risc0-groth16-prover/v2025-01-24.1/images/sha256-434755bb2ccc0fb886f67855b67f37ba61c4983cb405dd3159588ce15016bbc3)\r\nand `risc0/groth16/src/docker.rs` has been updated to use that image.\r\nThe `circom-compat` Go tests have been added to the CI.\r\n\r\nCloses ZKVM-906\r\n\r\n---------\r\n\r\nCo-authored-by: Paul <paul.gafni@gmail.com>",
+          "timestamp": "2025-01-31T20:05:03Z",
+          "tree_id": "9d14ba30c39ae61b1fdfd54442ee1ac08612acdf",
+          "url": "https://github.com/risc0/risc0/commit/1557e8d2683f2b9d7b505657f98f42b6104ccbcc"
+        },
+        "date": 1738354187689,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30754754,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 99349,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86343,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161987,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149314,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88130,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 59053,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -75412,6 +75471,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738354172436,
+  "lastUpdate": 1738354189655,
   "repoUrl": "https://github.com/risc0/risc0"
 }
