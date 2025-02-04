@@ -75999,9 +75999,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12e4a12d19e97f058ea1b7b891e7e43cbde789a2",
+          "message": "ZKVM-1025: Update rust toolchain to 1.83 (#2787)\n\nUpdate rust to 1.83 for pending PR libs\r\nFixed clippy warnings\r\n\r\nRelated PRs:\r\nhttps://github.com/risc0/risc0/pull/2777\r\nhttps://github.com/risc0/zirgen/pull/171\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-02-04T22:39:16Z",
+          "tree_id": "00c4650d6f7bd41516355991d610db6dae984681",
+          "url": "https://github.com/risc0/risc0/commit/12e4a12d19e97f058ea1b7b891e7e43cbde789a2"
+        },
+        "date": 1738709321055,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20931148,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 739246,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 760468,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 537599,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 361914,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 598573,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 305676,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1738709218282,
+  "lastUpdate": 1738709331925,
   "repoUrl": "https://github.com/risc0/risc0"
 }
