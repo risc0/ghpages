@@ -75763,9 +75763,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2eba98b48e7e9914b75dd617622276a6cfd3af56",
+          "message": "ZKVM-578: Add bigint2 benchmarks to the datasheet (#2784)\n\nThis adds two benchmarks, one for execute and one for prove_segment.\r\n\r\nThe guest program runs k256 ECDSA verify in a loop.\r\n\r\nThe execute benchmark does about 1M cycles like the existing benchmark.\r\n\r\nThe prove_segment benchmark proves one full segment of this.\r\n\r\nWe use po2=20, which is the default",
+          "timestamp": "2025-02-04T00:36:01Z",
+          "tree_id": "d8b90b3cf7c21af44fb4f6087ddd80dcf4b7d803",
+          "url": "https://github.com/risc0/risc0/commit/2eba98b48e7e9914b75dd617622276a6cfd3af56"
+        },
+        "date": 1738629867127,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20939280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 731571,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 748558,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 532163,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 359527,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 596654,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 302036,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1738629814370,
+  "lastUpdate": 1738629877671,
   "repoUrl": "https://github.com/risc0/risc0"
 }
