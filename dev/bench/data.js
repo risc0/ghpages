@@ -57847,6 +57847,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iddo@risczero.com",
+            "name": "iddo-bentov",
+            "username": "iddo-bentov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "968efc866f375ff62b96924beadcd98e7087c18b",
+          "message": "ZKVM-1021: bigint2 384-bit mod operations (#2783)",
+          "timestamp": "2025-02-05T14:24:04-08:00",
+          "tree_id": "ecebf8dad353ada1a615354b67b186d6d22e5d40",
+          "url": "https://github.com/risc0/risc0/commit/968efc866f375ff62b96924beadcd98e7087c18b"
+        },
+        "date": 1738794535126,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31603508,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 98777,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 85721,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 162899,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149162,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 89478,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58813,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -76120,6 +76179,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738794516311,
+  "lastUpdate": 1738794537061,
   "repoUrl": "https://github.com/risc0/risc0"
 }
