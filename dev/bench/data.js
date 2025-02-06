@@ -58024,6 +58024,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a0feffa70a38eed4274384523c0fbbe36d73c5d",
+          "message": "ZKVM-1010: Replace numb-bigint / crypto-bigint with `malachite` and lots of other small optimizations for bigint2 (#2777)\n\nSample bigint2 workload:\r\n```\r\nexec 3s -> 1s\r\npreflight 500ms -> 291ms \r\n```\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-02-05T18:04:00-08:00",
+          "tree_id": "c90d9981119d54a4c1c4e943467c83dcc2a4983c",
+          "url": "https://github.com/risc0/risc0/commit/8a0feffa70a38eed4274384523c0fbbe36d73c5d"
+        },
+        "date": 1738807733701,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31680586,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 98379,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86275,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 162361,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149441,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 89262,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58738,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -76356,6 +76415,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738807715974,
+  "lastUpdate": 1738807738174,
   "repoUrl": "https://github.com/risc0/risc0"
 }
