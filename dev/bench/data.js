@@ -38918,6 +38918,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "98899785+mdqst@users.noreply.github.com",
+            "name": "Dmitry",
+            "username": "mdqst"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6ffe0e70567e2f36da22c72777bedff8b34c9cc0",
+          "message": "fix: Fix incorrect usage of \"weather\" to \"whether\" (#2751)\n\nI noticed that \"weather\" was used incorrectly in the code/comments. It\r\nshould be \"whether\" in this context.",
+          "timestamp": "2025-02-07T15:42:52-08:00",
+          "tree_id": "5559037308bd9b316bf51653ef3532192c44628a",
+          "url": "https://github.com/risc0/risc0/commit/6ffe0e70567e2f36da22c72777bedff8b34c9cc0"
+        },
+        "date": 1738972045379,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15862412,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 968617,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 982614,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 616915,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 432010,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 753200,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 364349,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -76769,6 +76828,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738971721208,
+  "lastUpdate": 1738972048207,
   "repoUrl": "https://github.com/risc0/risc0"
 }
