@@ -76884,9 +76884,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "98899785+mdqst@users.noreply.github.com",
+            "name": "Dmitry",
+            "username": "mdqst"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6ffe0e70567e2f36da22c72777bedff8b34c9cc0",
+          "message": "fix: Fix incorrect usage of \"weather\" to \"whether\" (#2751)\n\nI noticed that \"weather\" was used incorrectly in the code/comments. It\r\nshould be \"whether\" in this context.",
+          "timestamp": "2025-02-07T15:42:52-08:00",
+          "tree_id": "5559037308bd9b316bf51653ef3532192c44628a",
+          "url": "https://github.com/risc0/risc0/commit/6ffe0e70567e2f36da22c72777bedff8b34c9cc0"
+        },
+        "date": 1738972207762,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 17036220,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 727977,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 748848,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539903,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 364927,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 588776,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 302937,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1738972061103,
+  "lastUpdate": 1738972217139,
   "repoUrl": "https://github.com/risc0/risc0"
 }
