@@ -58201,6 +58201,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cf59251a8082ce0346b13e23301aac3befc564a",
+          "message": "ZKVM-1035: Improvements to guest profiling (#2801)\n\nThis adds two main improvements to guest profiling\r\n- Support for inline functions\r\n- Show page events as function calls\r\n\r\n### inline functions\r\nTo maintain the way the cycle-accurate profiler works we build a table\r\nof all the inline function from the DWARF data and then when we enter an\r\ninline function we push a frame to the profiler's call stack for that\r\ninline function. Once we leave the range of the inline function we pop\r\nit off.\r\n\r\n### page events\r\nWhen we incur something that causes a page to be loaded we now magic up\r\na functions called `[PageIn]` and `[PageOut]`.\r\nSince this can happen somewhat randomly within a segment, functions that\r\nnormally would be seen as low-cost can incur a high cycle count due to\r\nthem triggering page events (you can see this in the profile below with\r\n`FdReader::new`, that function is only a single instruction which writes\r\na single word to memory)\r\nThe emitting of these events was added to the v1 circuit code. The v2\r\ncircuit code needs to be updated to work with the profiler first, and\r\nthat isn't tackled in this PR.\r\n\r\n### comparison\r\nThese screenshots are from before and after the changes running\r\n`tests::keccak_update2::case_1`\r\n\r\nbefore:\r\n<img width=\"1591\" alt=\"before\"\r\nsrc=\"https://github.com/user-attachments/assets/9b3a4f2c-8dfe-46eb-bc3e-932088e554ab\"\r\n/>\r\nafter:\r\n<img width=\"1584\" alt=\"after\"\r\nsrc=\"https://github.com/user-attachments/assets/f44b408e-ff30-42b0-9945-a5de0fc297f7\"\r\n/>",
+          "timestamp": "2025-02-07T15:33:02-08:00",
+          "tree_id": "9012894bf7ff89a44444ccfc7301b79d4c9fa027",
+          "url": "https://github.com/risc0/risc0/commit/3cf59251a8082ce0346b13e23301aac3befc564a"
+        },
+        "date": 1738971471870,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20217562,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 97683,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 85600,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161979,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149627,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88385,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 59159,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -76592,6 +76651,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738971458687,
+  "lastUpdate": 1738971473740,
   "repoUrl": "https://github.com/risc0/risc0"
 }
