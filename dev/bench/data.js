@@ -19576,6 +19576,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "139509124+vtjl10@users.noreply.github.com",
+            "name": "fuder.eth",
+            "username": "vtjl10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f375089a074940d5f020bf9a576709062405dfa3",
+          "message": "fix: typos (#2804)",
+          "timestamp": "2025-02-08T12:18:03-08:00",
+          "tree_id": "b3d21e80270ea3ad30c145f7002dbd6e65a2130a",
+          "url": "https://github.com/risc0/risc0/commit/f375089a074940d5f020bf9a576709062405dfa3"
+        },
+        "date": 1739046709687,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16509030,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30044,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21648,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43375,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42058,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28301,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15291,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -77359,6 +77418,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739046202387,
+  "lastUpdate": 1739046720478,
   "repoUrl": "https://github.com/risc0/risc0"
 }
