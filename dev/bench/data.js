@@ -77179,9 +77179,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "621a66d5f9ddbf6a43b6a0149764469dc91e69ff",
+          "message": "ZKVM-1022: rv32im-v2: support for bigint precompile (#2785)",
+          "timestamp": "2025-02-07T17:55:09-08:00",
+          "tree_id": "74213ff6e5d44c46abdeac9afbd3f9ed56bd4e6e",
+          "url": "https://github.com/risc0/risc0/commit/621a66d5f9ddbf6a43b6a0149764469dc91e69ff"
+        },
+        "date": 1738980228051,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 17421246,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 729137,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 748314,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 533799,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 360419,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 588539,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 300828,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1738980169010,
+  "lastUpdate": 1738980238956,
   "repoUrl": "https://github.com/risc0/risc0"
 }
