@@ -39154,6 +39154,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "139509124+vtjl10@users.noreply.github.com",
+            "name": "fuder.eth",
+            "username": "vtjl10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f375089a074940d5f020bf9a576709062405dfa3",
+          "message": "fix: typos (#2804)",
+          "timestamp": "2025-02-08T12:18:03-08:00",
+          "tree_id": "b3d21e80270ea3ad30c145f7002dbd6e65a2130a",
+          "url": "https://github.com/risc0/risc0/commit/f375089a074940d5f020bf9a576709062405dfa3"
+        },
+        "date": 1739046199811,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15901017,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 970835,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 981402,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 619159,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 435323,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 748889,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 362547,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -77300,6 +77359,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739046194573,
+  "lastUpdate": 1739046202387,
   "repoUrl": "https://github.com/risc0/risc0"
 }
