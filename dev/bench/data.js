@@ -39036,6 +39036,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "621a66d5f9ddbf6a43b6a0149764469dc91e69ff",
+          "message": "ZKVM-1022: rv32im-v2: support for bigint precompile (#2785)",
+          "timestamp": "2025-02-07T17:55:09-08:00",
+          "tree_id": "74213ff6e5d44c46abdeac9afbd3f9ed56bd4e6e",
+          "url": "https://github.com/risc0/risc0/commit/621a66d5f9ddbf6a43b6a0149764469dc91e69ff"
+        },
+        "date": 1738979984365,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15992801,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 967314,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 979847,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 618312,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433981,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 748256,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 362584,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -77005,6 +77064,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1738972319926,
+  "lastUpdate": 1738979990124,
   "repoUrl": "https://github.com/risc0/risc0"
 }
