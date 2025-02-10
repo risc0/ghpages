@@ -39626,6 +39626,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iddo@risczero.com",
+            "name": "iddo-bentov",
+            "username": "iddo-bentov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "815d67f7ebaa8cfe6c82f59933b8d6da8956f73f",
+          "message": "ZKVM-1041: bigint2 384-bit extfield ops (#2803)\n\nTrivial.",
+          "timestamp": "2025-02-10T13:01:57-08:00",
+          "tree_id": "7d43e8b5ee74bbd572f5f79ce000a1bbd9ab057b",
+          "url": "https://github.com/risc0/risc0/commit/815d67f7ebaa8cfe6c82f59933b8d6da8956f73f"
+        },
+        "date": 1739221591875,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16239797,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 967716,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 979286,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 619845,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 434290,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 746865,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 363622,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -78185,6 +78244,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739214038312,
+  "lastUpdate": 1739221595065,
   "repoUrl": "https://github.com/risc0/risc0"
 }
