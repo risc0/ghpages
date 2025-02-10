@@ -59086,6 +59086,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5609e1f3be8b995642d2085e29e9980e545ab91d",
+          "message": "ZKVM-1036: Replace more occurrences of `.ok_or(..)` with `.ok_or_else(..)` (#2802)",
+          "timestamp": "2025-02-10T12:18:37Z",
+          "tree_id": "88ef882f353a4a1fea9689bf9dfea06098e2897d",
+          "url": "https://github.com/risc0/risc0/commit/5609e1f3be8b995642d2085e29e9980e545ab91d"
+        },
+        "date": 1739190206109,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21022538,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 97491,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 85619,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163078,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148953,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88247,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58952,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -77772,6 +77831,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739190193049,
+  "lastUpdate": 1739190208028,
   "repoUrl": "https://github.com/risc0/risc0"
 }
