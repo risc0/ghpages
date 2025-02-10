@@ -39508,6 +39508,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "737ee2ef4d59562b2a5023edbe1570f5e5174ffd",
+          "message": "ZKVM-1033: Drop unused bigint blob files (#2800)",
+          "timestamp": "2025-02-10T18:51:19Z",
+          "tree_id": "97cca5dfb9781ee65bf6b7bacfcf153e461500f6",
+          "url": "https://github.com/risc0/risc0/commit/737ee2ef4d59562b2a5023edbe1570f5e5174ffd"
+        },
+        "date": 1739213751906,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16114971,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 965109,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 978088,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 617392,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433211,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 748340,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 362787,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -77949,6 +78008,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739190772410,
+  "lastUpdate": 1739213756087,
   "repoUrl": "https://github.com/risc0/risc0"
 }
