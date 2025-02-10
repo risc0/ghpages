@@ -39272,6 +39272,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "parker@risczero.com",
+            "name": "Parker Thompson",
+            "username": "mothran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c5bd921f4df545227e67b190b8dc421a5e38f06",
+          "message": "ZKVM-1042: V2 executor perf (#2806)\n\n* Intercept the load/store operations going to the register regions of\r\nmemory and instead use a hot set of register files, then save / resume\r\nthese register files to guest memory when needed\r\n* Removed the dyn dispatch from the Risc0Machine context\r\n* Removed the excessive allocs when attempting to trace MemorySet\r\noperations\r\n* Removed the ring buffer of instructions if not in debug mode\r\n* A few other small fixes along the way\r\n\r\nV2 exec speed on a non-precompile k256 workload of ~450m cycles:\r\n\r\n18mhz -> 39mhz\r\n\r\nv1 on the same workload: ~31mhz\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-02-10T11:19:18Z",
+          "tree_id": "3c5566c1a82e9bb6cfa469713917affe60403b04",
+          "url": "https://github.com/risc0/risc0/commit/1c5bd921f4df545227e67b190b8dc421a5e38f06"
+        },
+        "date": 1739186704521,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15138345,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 964631,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 976535,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 616465,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433163,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 744872,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 361768,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -77536,6 +77595,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739186645930,
+  "lastUpdate": 1739186707506,
   "repoUrl": "https://github.com/risc0/risc0"
 }
