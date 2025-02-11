@@ -78831,9 +78831,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2273facf0810ff5e0ef61908f353e7955893b77",
+          "message": "ZKVM-1045: Disable profiler inline function tracking by default (#2808)",
+          "timestamp": "2025-02-11T05:02:39Z",
+          "tree_id": "ba1b92dfcb0a1711a4d64972a0c6a8f47ca3e614",
+          "url": "https://github.com/risc0/risc0/commit/d2273facf0810ff5e0ef61908f353e7955893b77"
+        },
+        "date": 1739250658687,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 17136376,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 730473,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 748390,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 537774,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 359973,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 587260,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 300002,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1739250642268,
+  "lastUpdate": 1739250669270,
   "repoUrl": "https://github.com/risc0/risc0"
 }
