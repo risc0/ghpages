@@ -39744,6 +39744,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3b4e17546ca2a3d171dd6f3093c978e273c2579f",
+          "message": "ZKVM-1049: allocator: use `tlfs` to improve memory locality (#2810)\n\nThe `tlfs` allocator dramatically improves guest performance over the\r\n`llff` allocator by a substantial amount when the heap allocator is\r\nenabled. This is due to the `tlfs` allocator having a better memory\r\nlocality than the `llff` allocator.",
+          "timestamp": "2025-02-11T03:01:48Z",
+          "tree_id": "d9cd4cf5720b4785cf4e24a26588e73e5564c7a7",
+          "url": "https://github.com/risc0/risc0/commit/3b4e17546ca2a3d171dd6f3093c978e273c2579f"
+        },
+        "date": 1739243181082,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 15956469,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 981750,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 990675,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 615744,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433762,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 748810,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 362769,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -78421,6 +78480,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739221842465,
+  "lastUpdate": 1739243184148,
   "repoUrl": "https://github.com/risc0/risc0"
 }
