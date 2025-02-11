@@ -59794,6 +59794,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2273facf0810ff5e0ef61908f353e7955893b77",
+          "message": "ZKVM-1045: Disable profiler inline function tracking by default (#2808)",
+          "timestamp": "2025-02-11T05:02:39Z",
+          "tree_id": "ba1b92dfcb0a1711a4d64972a0c6a8f47ca3e614",
+          "url": "https://github.com/risc0/risc0/commit/d2273facf0810ff5e0ef61908f353e7955893b77"
+        },
+        "date": 1739250448938,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21017676,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 98360,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 86211,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 162772,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149857,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88599,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 59000,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -78716,6 +78775,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739250435368,
+  "lastUpdate": 1739250452035,
   "repoUrl": "https://github.com/risc0/risc0"
 }
