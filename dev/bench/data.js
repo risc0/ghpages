@@ -79067,9 +79067,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "de2482be5efce2ae0f94a2e8cdf116bf64a10e07",
+          "message": "ZKVM-1043: Add support for rv32im-v2 to dev-mode (#2807)",
+          "timestamp": "2025-02-11T06:38:01Z",
+          "tree_id": "96840730c76e34cdf735966eaf76e781f6693850",
+          "url": "https://github.com/risc0/risc0/commit/de2482be5efce2ae0f94a2e8cdf116bf64a10e07"
+        },
+        "date": 1739256394037,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16983836,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 729062,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 744934,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 528862,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357364,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 586552,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 299984,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1739256358960,
+  "lastUpdate": 1739256404070,
   "repoUrl": "https://github.com/risc0/risc0"
 }
