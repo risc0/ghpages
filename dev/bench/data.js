@@ -60148,6 +60148,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c35128733db34132d3164acacb7654f6efcef863",
+          "message": "ZKVM-968: implement union (#2739)",
+          "timestamp": "2025-02-11T17:56:03Z",
+          "tree_id": "3ee863077d65ee6dcd75868b2094b6350e3bace0",
+          "url": "https://github.com/risc0/risc0/commit/c35128733db34132d3164acacb7654f6efcef863"
+        },
+        "date": 1739296861104,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20544542,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 97458,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 85209,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163819,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148691,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 88581,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 58503,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -79188,6 +79247,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739296841966,
+  "lastUpdate": 1739296863272,
   "repoUrl": "https://github.com/risc0/risc0"
 }
