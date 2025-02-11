@@ -79539,9 +79539,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b423628a1080aea133364e01374caeab0552a44f",
+          "message": "ZKVM-994: build(deps): bump tokio from 1.42.0 to 1.43.0 (#2747)\n\nBumps [tokio](https://github.com/tokio-rs/tokio) from 1.42.0 to 1.43.0.\r\n<details>\r\n<summary>Release notes</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/tokio-rs/tokio/releases\">tokio's\r\nreleases</a>.</em></p>\r\n<blockquote>\r\n<h2>Tokio v1.43.0</h2>\r\n<h1>1.43.0 (Jan 8th, 2025)</h1>\r\n<h3>Added</h3>\r\n<ul>\r\n<li>net: add <code>UdpSocket::peek</code> methods (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7068\">#7068</a>)</li>\r\n<li>net: add support for Haiku OS (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7042\">#7042</a>)</li>\r\n<li>process: add <code>Command::into_std()</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7014\">#7014</a>)</li>\r\n<li>signal: add <code>SignalKind::info</code> on illumos (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6995\">#6995</a>)</li>\r\n<li>signal: add support for realtime signals on illumos (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7029\">#7029</a>)</li>\r\n</ul>\r\n<h3>Fixed</h3>\r\n<ul>\r\n<li>io: don't call <code>set_len</code> before initializing vector in\r\n<code>Blocking</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7054\">#7054</a>)</li>\r\n<li>macros: suppress <code>clippy::needless_return</code> in\r\n<code>#[tokio::main]</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6874\">#6874</a>)</li>\r\n<li>runtime: fix thread parking on WebAssembly (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7041\">#7041</a>)</li>\r\n</ul>\r\n<h3>Changes</h3>\r\n<ul>\r\n<li>chore: use unsync loads for <code>unsync_load</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7073\">#7073</a>)</li>\r\n<li>io: use <code>Buf::put_bytes</code> in <code>Repeat</code> read impl\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7055\">#7055</a>)</li>\r\n<li>task: drop the join waker of a task eagerly (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6986\">#6986</a>)</li>\r\n</ul>\r\n<h3>Changes to unstable APIs</h3>\r\n<ul>\r\n<li>metrics: improve flexibility of H2Histogram Configuration (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6963\">#6963</a>)</li>\r\n<li>taskdump: add accessor methods for backtrace (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6975\">#6975</a>)</li>\r\n</ul>\r\n<h3>Documented</h3>\r\n<ul>\r\n<li>io: clarify <code>ReadBuf::uninit</code> allows initialized buffers\r\nas well (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7053\">#7053</a>)</li>\r\n<li>net: fix ambiguity in <code>TcpStream::try_write_vectored</code>\r\ndocs (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7067\">#7067</a>)</li>\r\n<li>runtime: fix <code>LocalRuntime</code> doc links (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7074\">#7074</a>)</li>\r\n<li>sync: extend documentation for\r\n<code>watch::Receiver::wait_for</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7038\">#7038</a>)</li>\r\n<li>sync: fix typos in <code>OnceCell</code> docs (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7047\">#7047</a>)</li>\r\n</ul>\r\n<p><a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6874\">#6874</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6874\">tokio-rs/tokio#6874</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6963\">#6963</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6963\">tokio-rs/tokio#6963</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6975\">#6975</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6975\">tokio-rs/tokio#6975</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6986\">#6986</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6986\">tokio-rs/tokio#6986</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6995\">#6995</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/6995\">tokio-rs/tokio#6995</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7014\">#7014</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7014\">tokio-rs/tokio#7014</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7029\">#7029</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7029\">tokio-rs/tokio#7029</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7038\">#7038</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7038\">tokio-rs/tokio#7038</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7041\">#7041</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7041\">tokio-rs/tokio#7041</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7042\">#7042</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7042\">tokio-rs/tokio#7042</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7047\">#7047</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7047\">tokio-rs/tokio#7047</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7053\">#7053</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7053\">tokio-rs/tokio#7053</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7054\">#7054</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7054\">tokio-rs/tokio#7054</a>\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7055\">#7055</a>:\r\n<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/pull/7055\">tokio-rs/tokio#7055</a></p>\r\n<!-- raw HTML omitted -->\r\n</blockquote>\r\n<p>... (truncated)</p>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/5f3296df77ad594779d1fe1a1583078ca9832daf\"><code>5f3296d</code></a>\r\nchore: prepare Tokio v1.43.0 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7079\">#7079</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/cc974a646bd3932c148e300a92fda387c23768dd\"><code>cc974a6</code></a>\r\nchore: prepare tokio-macros v2.5.0 (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7078\">#7078</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/15495fd88305099d4ffa0a5583f6d8856d728ac3\"><code>15495fd</code></a>\r\nmetrics: improve flexibility of H2Histogram Configuration (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/6963\">#6963</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/ad4183412a0c01a9a5b92de0c2dddb5471bc2563\"><code>ad41834</code></a>\r\nio: don't call <code>set_len</code> before initializing vector in\r\n<code>Blocking</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7054\">#7054</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/bd3e8577377a2b684b50fc0cb50d98f03ad09703\"><code>bd3e857</code></a>\r\nruntime: move <code>is_join_waker_set</code> assertion in\r\n<code>unset_waker</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7072\">#7072</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/15f73666f18e0853fe1f730bbe8b9b1618fb1016\"><code>15f7366</code></a>\r\nruntime: fix <code>LocalRuntime</code> doc links (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7074\">#7074</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/fd2048dad1ccbb047bef0325d7f38f6e945a58ac\"><code>fd2048d</code></a>\r\nci: split miri jobs into unit and integration tests (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7071\">#7071</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/e8f39157b6047025c109ab2dbcdc9b579c2fac7b\"><code>e8f3915</code></a>\r\nchore: use unsync loads for <code>unsync_load</code> (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7073\">#7073</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/67f127769b8c17dda6035b9b70bbf7657d74ff09\"><code>67f1277</code></a>\r\nnet: fix ambiguity in <code>TcpStream::try_write_vectored</code> docs\r\n(<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7067\">#7067</a>)</li>\r\n<li><a\r\nhref=\"https://github.com/tokio-rs/tokio/commit/463502cbafdb501c703091442eb658e6241958f1\"><code>463502c</code></a>\r\nio: clarify <code>ReadBuf::uninit</code> allows initialized buffers as\r\nwell (<a\r\nhref=\"https://redirect.github.com/tokio-rs/tokio/issues/7053\">#7053</a>)</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/tokio-rs/tokio/compare/tokio-1.42.0...tokio-1.43.0\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tokio&package-manager=cargo&previous-version=1.42.0&new-version=1.43.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot show <dependency name> ignore conditions` will show all\r\nof the ignore conditions of the specified dependency\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Frank Laub <flaub@risc0.com>\r\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2025-02-11T23:11:49Z",
+          "tree_id": "dabd5bb2ad99ccd63f0744c565403b59071ffd6f",
+          "url": "https://github.com/risc0/risc0/commit/b423628a1080aea133364e01374caeab0552a44f"
+        },
+        "date": 1739316054495,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 17308348,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 724747,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 742078,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 538011,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 360956,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 590399,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 302280,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1739315992495,
+  "lastUpdate": 1739316064376,
   "repoUrl": "https://github.com/risc0/risc0"
 }
