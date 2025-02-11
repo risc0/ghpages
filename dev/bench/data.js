@@ -19930,6 +19930,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2273facf0810ff5e0ef61908f353e7955893b77",
+          "message": "ZKVM-1045: Disable profiler inline function tracking by default (#2808)",
+          "timestamp": "2025-02-11T05:02:39Z",
+          "tree_id": "ba1b92dfcb0a1711a4d64972a0c6a8f47ca3e614",
+          "url": "https://github.com/risc0/risc0/commit/d2273facf0810ff5e0ef61908f353e7955893b77"
+        },
+        "date": 1739250631477,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16280810,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29953,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21510,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43156,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42073,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28202,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15232,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -78775,6 +78834,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739250452035,
+  "lastUpdate": 1739250642268,
   "repoUrl": "https://github.com/risc0/risc0"
 }
