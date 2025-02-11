@@ -59971,6 +59971,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "de2482be5efce2ae0f94a2e8cdf116bf64a10e07",
+          "message": "ZKVM-1043: Add support for rv32im-v2 to dev-mode (#2807)",
+          "timestamp": "2025-02-11T06:38:01Z",
+          "tree_id": "96840730c76e34cdf735966eaf76e781f6693850",
+          "url": "https://github.com/risc0/risc0/commit/de2482be5efce2ae0f94a2e8cdf116bf64a10e07"
+        },
+        "date": 1739256172685,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21320684,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 105991,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92331,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 159448,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146698,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94062,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61435,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -78952,6 +79011,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739256156143,
+  "lastUpdate": 1739256176998,
   "repoUrl": "https://github.com/risc0/risc0"
 }
