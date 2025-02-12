@@ -60679,6 +60679,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6fb9524e8b8e84c96f245b600831af91f91dad7d",
+          "message": "ZKVM-1056: Implement bigint1 support for the v2 executor (#2816)\n\nWe do this by \"emulating\" the v1 call using bigint2\r\n\r\nzirgen PR: https://github.com/risc0/zirgen/pull/180",
+          "timestamp": "2025-02-12T10:19:55-08:00",
+          "tree_id": "1532cf662e215d12ad9c40729d113de104ff4558",
+          "url": "https://github.com/risc0/risc0/commit/6fb9524e8b8e84c96f245b600831af91f91dad7d"
+        },
+        "date": 1739384688793,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20617196,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 105810,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 91682,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160503,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147795,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94639,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61117,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -79896,6 +79955,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739384677109,
+  "lastUpdate": 1739384690713,
   "repoUrl": "https://github.com/risc0/risc0"
 }
