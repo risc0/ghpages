@@ -20166,6 +20166,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f84f52be2b948ad121112329ab08e1722f839ebf",
+          "message": "ZKVM-1051: Support for using client to create v2 segments (#2813)",
+          "timestamp": "2025-02-12T07:14:00Z",
+          "tree_id": "9bde9e64210ae6617e0788ea662c6eecd40ec63b",
+          "url": "https://github.com/risc0/risc0/commit/f84f52be2b948ad121112329ab08e1722f839ebf"
+        },
+        "date": 1739344913837,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 16384648,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30092,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21557,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43423,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42249,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28477,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15296,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -79719,6 +79778,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739344738412,
+  "lastUpdate": 1739344924045,
   "repoUrl": "https://github.com/risc0/risc0"
 }
