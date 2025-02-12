@@ -60856,6 +60856,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112983328+mars-risc0@users.noreply.github.com",
+            "name": "Mars Saxman",
+            "username": "mars-risc0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c4482bd362302233d25f0b6278cc871b3a202b2c",
+          "message": "ZKVM-1057: Increase max po2 to 22 (#2817)",
+          "timestamp": "2025-02-12T21:56:38Z",
+          "tree_id": "e192bcb976f4653b5d8890622b494d51168d5d2d",
+          "url": "https://github.com/risc0/risc0/commit/c4482bd362302233d25f0b6278cc871b3a202b2c"
+        },
+        "date": 1739397691921,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20882346,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106098,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92351,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 161178,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148449,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94052,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61320,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -80132,6 +80191,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739397677299,
+  "lastUpdate": 1739397693862,
   "repoUrl": "https://github.com/risc0/risc0"
 }
