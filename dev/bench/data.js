@@ -20343,6 +20343,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26078902cb460ed6c0740132887c5e33c91777cb",
+          "message": "ZKVM-1061: Fix perf regression introduced by the addition of page events (#2822)",
+          "timestamp": "2025-02-13T02:51:13Z",
+          "tree_id": "da84dc81ae6f44c1c6d2d84903832f3716a62b50",
+          "url": "https://github.com/risc0/risc0/commit/26078902cb460ed6c0740132887c5e33c91777cb"
+        },
+        "date": 1739415554204,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 18973448,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 30057,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21607,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43331,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41957,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28353,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15238,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -80427,6 +80486,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739415374228,
+  "lastUpdate": 1739415565119,
   "repoUrl": "https://github.com/risc0/risc0"
 }
