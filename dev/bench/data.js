@@ -61387,6 +61387,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93f31b6296e41b6932c8421657001543a9ead5dd",
+          "message": "ZKVM-1064: Change rzup version number to 0.3 for release (#2825)\n\nWe didn't update the version number properly when releasing, this\r\nupdates the number to what we want the released version to be. We will\r\nre-deploy after this commit goes in, then do another PR to bump the\r\nversion number to the next alpha version.",
+          "timestamp": "2025-02-13T22:45:07Z",
+          "tree_id": "31b93eed7a0d13ab6ba8efc57086bd486dc33ed2",
+          "url": "https://github.com/risc0/risc0/commit/93f31b6296e41b6932c8421657001543a9ead5dd"
+        },
+        "date": 1739487009148,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 34211860,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106899,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 92336,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160802,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147319,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 95127,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 61176,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -80840,6 +80899,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739486988122,
+  "lastUpdate": 1739487011028,
   "repoUrl": "https://github.com/risc0/risc0"
 }
