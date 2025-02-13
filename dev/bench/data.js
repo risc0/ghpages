@@ -80483,9 +80483,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26078902cb460ed6c0740132887c5e33c91777cb",
+          "message": "ZKVM-1061: Fix perf regression introduced by the addition of page events (#2822)",
+          "timestamp": "2025-02-13T02:51:13Z",
+          "tree_id": "da84dc81ae6f44c1c6d2d84903832f3716a62b50",
+          "url": "https://github.com/risc0/risc0/commit/26078902cb460ed6c0740132887c5e33c91777cb"
+        },
+        "date": 1739415842640,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21279892,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 732356,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 749909,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 540233,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 362054,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 599514,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 304841,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1739415565119,
+  "lastUpdate": 1739415853294,
   "repoUrl": "https://github.com/risc0/risc0"
 }
