@@ -40806,6 +40806,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66bcb2a639e0dc121bc5efaca1a83fc8202bdde3",
+          "message": "ZKVM-1060: rv32im-v2: BigInt soundness (#2821)",
+          "timestamp": "2025-02-13T03:02:20-08:00",
+          "tree_id": "66216cbc32c4c0292d23ef23dade4246ed35a83e",
+          "url": "https://github.com/risc0/risc0/commit/66bcb2a639e0dc121bc5efaca1a83fc8202bdde3"
+        },
+        "date": 1739444819442,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20685064,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 1007452,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1022624,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 618606,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 430747,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 783891,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368800,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -80545,6 +80604,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739415853294,
+  "lastUpdate": 1739444822080,
   "repoUrl": "https://github.com/risc0/risc0"
 }
