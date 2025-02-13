@@ -20402,6 +20402,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66bcb2a639e0dc121bc5efaca1a83fc8202bdde3",
+          "message": "ZKVM-1060: rv32im-v2: BigInt soundness (#2821)",
+          "timestamp": "2025-02-13T03:02:20-08:00",
+          "tree_id": "66216cbc32c4c0292d23ef23dade4246ed35a83e",
+          "url": "https://github.com/risc0/risc0/commit/66bcb2a639e0dc121bc5efaca1a83fc8202bdde3"
+        },
+        "date": 1739445463597,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21133534,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29624,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21401,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43416,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42154,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28035,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15149,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -80722,6 +80781,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739445393094,
+  "lastUpdate": 1739445474426,
   "repoUrl": "https://github.com/risc0/risc0"
 }
