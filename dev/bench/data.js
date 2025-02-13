@@ -80660,9 +80660,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66bcb2a639e0dc121bc5efaca1a83fc8202bdde3",
+          "message": "ZKVM-1060: rv32im-v2: BigInt soundness (#2821)",
+          "timestamp": "2025-02-13T03:02:20-08:00",
+          "tree_id": "66216cbc32c4c0292d23ef23dade4246ed35a83e",
+          "url": "https://github.com/risc0/risc0/commit/66bcb2a639e0dc121bc5efaca1a83fc8202bdde3"
+        },
+        "date": 1739445382800,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22549340,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 747996,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 766423,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 543425,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 363966,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 600472,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 307131,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1739444841536,
+  "lastUpdate": 1739445393094,
   "repoUrl": "https://github.com/risc0/risc0"
 }
