@@ -20461,6 +20461,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93f31b6296e41b6932c8421657001543a9ead5dd",
+          "message": "ZKVM-1064: Change rzup version number to 0.3 for release (#2825)\n\nWe didn't update the version number properly when releasing, this\r\nupdates the number to what we want the released version to be. We will\r\nre-deploy after this commit goes in, then do another PR to bump the\r\nversion number to the next alpha version.",
+          "timestamp": "2025-02-13T22:45:07Z",
+          "tree_id": "31b93eed7a0d13ab6ba8efc57086bd486dc33ed2",
+          "url": "https://github.com/risc0/risc0/commit/93f31b6296e41b6932c8421657001543a9ead5dd"
+        },
+        "date": 1739487214896,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20376412,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29515,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21389,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43649,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42195,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 27571,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15165,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -80958,6 +81017,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739487219345,
+  "lastUpdate": 1739487237488,
   "repoUrl": "https://github.com/risc0/risc0"
 }
