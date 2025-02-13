@@ -41042,6 +41042,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a2956bd44bfec78ec3e7f0bcecc74b1454eadf6",
+          "message": "ZKVM-1071: Bring v2 profiler in-line with v1 capabilities (#2829)\n\nThis hooks up the v2 executor with the guest profiling, and implements\r\nthe paging events.\r\n\r\nThis converts the v2 `TraceEvents` to the v1 `TraceEvents` that the\r\nprofiler expects. The v1 and v2 `TraceEvents` are identical though, and\r\nwhen we go to delete v1 we can just swap out the profiler's `TraceEvent`\r\nwith the v2 one and remove the conversion.\r\n\r\nI ran the `execute` benchmark from the datasheet on v2 before and after\r\nthese changes to confirm that there was no regression.\r\n\r\nHere is a sample of the guest profile running on v2 with the paging\r\nevents\r\n<img width=\"1579\" alt=\"Screenshot 2025-02-13 at 2 17 38 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/b8f83083-b640-4acc-ac11-409e80ae7daa\"\r\n/>",
+          "timestamp": "2025-02-13T23:44:06Z",
+          "tree_id": "f58fb0ec023436c1755dcc3d60e5f4b1144e7e26",
+          "url": "https://github.com/risc0/risc0/commit/9a2956bd44bfec78ec3e7f0bcecc74b1454eadf6"
+        },
+        "date": 1739490525088,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21466166,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 996700,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1008574,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 617301,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431610,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 786770,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 371365,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -81017,6 +81076,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739487237488,
+  "lastUpdate": 1739490528171,
   "repoUrl": "https://github.com/risc0/risc0"
 }
