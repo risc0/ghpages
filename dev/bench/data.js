@@ -41160,6 +41160,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "889394470b8a008ccaa3e6165ce8b580224b114c",
+          "message": "ZKVM-1073: Bump rzup version to 0.4.0-alpha.1 (#2830)",
+          "timestamp": "2025-02-14T01:20:36Z",
+          "tree_id": "e43fe95cb713678adac8060fbc76c9097bbd385b",
+          "url": "https://github.com/risc0/risc0/commit/889394470b8a008ccaa3e6165ce8b580224b114c"
+        },
+        "date": 1739496314173,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20763794,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 1013318,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1025998,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 617143,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 429103,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 764053,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 368382,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -81253,6 +81312,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739490744493,
+  "lastUpdate": 1739496317503,
   "repoUrl": "https://github.com/risc0/risc0"
 }
