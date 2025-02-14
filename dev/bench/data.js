@@ -20638,6 +20638,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6879b9e756588d042bfe8a17f7e8aafabe39365b",
+          "message": "ZKVM-1080: rv32im-v2: Fixes for RISC0_RV32IM_VER=2 (#2831)\n\n`risc0-build` generates `XXX_ID` based on `RISC0_RV32IM_VER`. For v2,\r\nthe `XXX_ID` is actually the `user_id` that can later be merged with a\r\n`kernel_id`. This merging now occurs during a call to `receipt.verify()`\r\nand is also based on `RISC0_RV32IM_VER`.\r\n\r\nSo short story is, to test out v2, use `RISC0_RV32IM_VER=2` at both\r\nbuild and run time.\r\n\r\nAdditionally, the client/server is cleaned up to honor this env var.",
+          "timestamp": "2025-02-14T12:46:13Z",
+          "tree_id": "11c9326868195015903a2f92db36014ca337b1c4",
+          "url": "https://github.com/risc0/risc0/commit/6879b9e756588d042bfe8a17f7e8aafabe39365b"
+        },
+        "date": 1739537692945,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20174028,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29947,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21563,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43369,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42115,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28402,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15219,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -81607,6 +81666,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739537475759,
+  "lastUpdate": 1739537703640,
   "repoUrl": "https://github.com/risc0/risc0"
 }
