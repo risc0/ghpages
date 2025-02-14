@@ -81663,9 +81663,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6879b9e756588d042bfe8a17f7e8aafabe39365b",
+          "message": "ZKVM-1080: rv32im-v2: Fixes for RISC0_RV32IM_VER=2 (#2831)\n\n`risc0-build` generates `XXX_ID` based on `RISC0_RV32IM_VER`. For v2,\r\nthe `XXX_ID` is actually the `user_id` that can later be merged with a\r\n`kernel_id`. This merging now occurs during a call to `receipt.verify()`\r\nand is also based on `RISC0_RV32IM_VER`.\r\n\r\nSo short story is, to test out v2, use `RISC0_RV32IM_VER=2` at both\r\nbuild and run time.\r\n\r\nAdditionally, the client/server is cleaned up to honor this env var.",
+          "timestamp": "2025-02-14T12:46:13Z",
+          "tree_id": "11c9326868195015903a2f92db36014ca337b1c4",
+          "url": "https://github.com/risc0/risc0/commit/6879b9e756588d042bfe8a17f7e8aafabe39365b"
+        },
+        "date": 1739537974184,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21509510,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 729183,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 746752,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 539113,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 361621,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 595744,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 303015,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1739537703640,
+  "lastUpdate": 1739537984948,
   "repoUrl": "https://github.com/risc0/risc0"
 }
