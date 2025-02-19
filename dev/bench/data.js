@@ -62449,6 +62449,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "711b163551c96ccfbfc8271b7634d945997ff457",
+          "message": "ZKVM-1105: Don't read past end of bigintBytes buffer in v2 CUDA kernel (#2850)",
+          "timestamp": "2025-02-18T19:50:55-08:00",
+          "tree_id": "5867e79d2127c35299f786cbe39817192edc2e93",
+          "url": "https://github.com/risc0/risc0/commit/711b163551c96ccfbfc8271b7634d945997ff457"
+        },
+        "date": 1739937664863,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30386384,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 105656,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 91718,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160197,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146624,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 95590,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 60408,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -82315,6 +82374,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739937531616,
+  "lastUpdate": 1739937668132,
   "repoUrl": "https://github.com/risc0/risc0"
 }
