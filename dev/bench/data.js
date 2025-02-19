@@ -20874,6 +20874,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austinabell8@gmail.com",
+            "name": "Austin Abell",
+            "username": "austinabell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc20a48e9deb7cf49ed4a6757d3c01bd44b6c22b",
+          "message": "ZKVM-1: fix ProveKeccakRequest alignment issues (#2834)\n\nThe original error reported:\n\n```\nthread 'main' panicked at /usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/bytemuck-1.20.0/src/internal.rs:33:3:\ncast_slice>TargetAlignmentGreaterAndInputNotAligned\nstack backtrace:\n   0: rust_begin_unwind\n             at ./rustc/eeb90cda1969383f56a2637cbd3037bdf598841c/library/std/src/panicking.rs:665:5\n   1: core::panicking::panic_fmt\n             at ./rustc/eeb90cda1969383f56a2637cbd3037bdf598841c/library/core/src/panicking.rs:74:14\n   2: bytemuck::internal::something_went_wrong\n             at ./usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/bytemuck-1.20.0/src/internal.rs:33:3\n   3: bytemuck::internal::cast_slice\n             at ./usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/bytemuck-1.20.0/src/internal.rs:257:15\n   4: bytemuck::cast_slice\n             at ./usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/bytemuck-1.20.0/src/lib.rs:377:12\n   5: risc0_zkvm::host::server::prove::keccak::prove_keccak\n             at ./usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-1.2.1/src/host/server/prove/keccak.rs:35:37\n   6: <risc0_zkvm::host::server::prove::prover_impl::ProverImpl as risc0_zkvm::host::server::prove::ProverServer>::prove_keccak\n             at ./usr/local/cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-1.2.1/src/host/server/prove/prover_impl.rs:255:9\n...\n```\n\nWhere the issue here is that the input is just `Vec<u8>` and a reference\nto is being cast to `&[[u64; 25]]` which should require 8 byte\nalignment, but is not guaranteed by the `Vec<u8>`.",
+          "timestamp": "2025-02-19T21:38:33Z",
+          "tree_id": "0d10029cc6b0f54cf9ee7a009d31b59dc3b743c1",
+          "url": "https://github.com/risc0/risc0/commit/fc20a48e9deb7cf49ed4a6757d3c01bd44b6c22b"
+        },
+        "date": 1740001571764,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20045908,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 29720,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 21655,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43392,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42092,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 28429,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 15204,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -82551,6 +82610,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740001419318,
+  "lastUpdate": 1740001582071,
   "repoUrl": "https://github.com/risc0/risc0"
 }
