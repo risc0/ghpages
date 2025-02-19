@@ -62272,6 +62272,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6fdd07ea002e2a5672567f24562a7f74db5be8a",
+          "message": "ZKVM-1094: rv32im-v2: drop poseidon2 zcheck (#2839)",
+          "timestamp": "2025-02-18T14:32:37-10:00",
+          "tree_id": "3dbca33cea9b12c17e31e7e246b9dcbc4e97bfec",
+          "url": "https://github.com/risc0/risc0/commit/a6fdd07ea002e2a5672567f24562a7f74db5be8a"
+        },
+        "date": 1739925458007,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31131522,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 106129,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 91999,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 160592,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 146848,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 94921,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 60983,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -82020,6 +82079,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1739925438919,
+  "lastUpdate": 1739925460088,
   "repoUrl": "https://github.com/risc0/risc0"
 }
