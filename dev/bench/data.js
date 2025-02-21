@@ -20992,6 +20992,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4a4a0ff97f0f6a2e697ca14c4672bc09c3457c75",
+          "message": "ZKVM-1097: Remove goldilocks field (#2857)\n\nfixes ZKVM-1097",
+          "timestamp": "2025-02-21T19:02:25Z",
+          "tree_id": "8d0282b06d62cbece37d222445e946e9d9f05b3e",
+          "url": "https://github.com/risc0/risc0/commit/4a4a0ff97f0f6a2e697ca14c4672bc09c3457c75"
+        },
+        "date": 1740165098230,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21315780,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15888,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15954,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43801,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42169,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15920,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14607,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -83023,6 +83082,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740165049130,
+  "lastUpdate": 1740165109410,
   "repoUrl": "https://github.com/risc0/risc0"
 }
