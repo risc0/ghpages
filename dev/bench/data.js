@@ -82961,9 +82961,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nils@risczero.com",
+            "name": "shkoo",
+            "username": "shkoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4a4a0ff97f0f6a2e697ca14c4672bc09c3457c75",
+          "message": "ZKVM-1097: Remove goldilocks field (#2857)\n\nfixes ZKVM-1097",
+          "timestamp": "2025-02-21T19:02:25Z",
+          "tree_id": "8d0282b06d62cbece37d222445e946e9d9f05b3e",
+          "url": "https://github.com/risc0/risc0/commit/4a4a0ff97f0f6a2e697ca14c4672bc09c3457c75"
+        },
+        "date": 1740165038159,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23555650,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 545927,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 546416,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 567557,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 364023,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 522890,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 411649,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1740164811287,
+  "lastUpdate": 1740165049130,
   "repoUrl": "https://github.com/risc0/risc0"
 }
