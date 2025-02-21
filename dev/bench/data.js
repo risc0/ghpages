@@ -20933,6 +20933,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "15590205746162addbb6df2269a337883a57092d",
+          "message": "ZKVM-1095: Replace risc0-circuit-rv32im with rv32im-v2 (#2846)\n\nThe following tests are failing and so are ignored:\n\n* host::server::exec::tests::docker::trace\n* host::server::exec::tests::sys_fork\n* host::server::exec::tests::sys_fork_fork_panic\n* host::server::exec::tests::sys_fork_journal_panic\n* host::server::prove::tests::run_unconstrained\n\n---------\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2025-02-20T18:34:09-08:00",
+          "tree_id": "505aba2f95b88f1dee57155e5de429af5167faac",
+          "url": "https://github.com/risc0/risc0/commit/15590205746162addbb6df2269a337883a57092d"
+        },
+        "date": 1740106081370,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22034796,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15786,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43527,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42307,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15699,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14426,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -82846,6 +82905,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740105997550,
+  "lastUpdate": 1740106092201,
   "repoUrl": "https://github.com/risc0/risc0"
 }
