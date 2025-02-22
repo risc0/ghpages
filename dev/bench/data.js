@@ -83138,9 +83138,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "968a5a3ed5cb23a72a09e31b666d4ab74c07d36a",
+          "message": "ZKVM-1124: fix benchmarks (#2865)\n\nThe v2 executor incurs 1 less cycle. I found through testing that each\niteration adds 2 cycles so I've lowered the loop count and expected\ncycle count by 1 to stay under the M1 cycle threshold",
+          "timestamp": "2025-02-22T09:34:09Z",
+          "tree_id": "e69b9b43a3a99767c19c5d343cb398e53e717fd5",
+          "url": "https://github.com/risc0/risc0/commit/968a5a3ed5cb23a72a09e31b666d4ab74c07d36a"
+        },
+        "date": 1740217387774,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23452304,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 539991,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 539292,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565602,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 362134,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 515380,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 406445,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1740165117154,
+  "lastUpdate": 1740217398415,
   "repoUrl": "https://github.com/risc0/risc0"
 }
