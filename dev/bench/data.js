@@ -63334,6 +63334,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7092766272763032dc3a64d1b2984b0161affaa0",
+          "message": "ZKVM-1122: implement dev-mode for union/keccak proofs (#2863)",
+          "timestamp": "2025-02-22T10:20:45Z",
+          "tree_id": "15759f8182ab99adf7d8b04bc24964327c1ddfa1",
+          "url": "https://github.com/risc0/risc0/commit/7092766272763032dc3a64d1b2984b0161affaa0"
+        },
+        "date": 1740220229151,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32995110,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13766,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13607,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163103,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 148823,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13948,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13629,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -83436,6 +83495,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740219909628,
+  "lastUpdate": 1740220231106,
   "repoUrl": "https://github.com/risc0/risc0"
 }
