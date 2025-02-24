@@ -63570,6 +63570,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98333338d3fe6baa27242ddbcd011056712f1b41",
+          "message": "ZKVM-1135: Update bigint2 datasheet benchmark to work with v2 (#2875)\n\nThe number of cycles for the same workload has changed making it no\nlonger in-line with the other execute benchmarks. I just adjusted the\nworkload to make it closer, and updated the assert since I couldn't get\nunder 10k difference.",
+          "timestamp": "2025-02-24T15:26:54-08:00",
+          "tree_id": "85b2594af8f881c0ec5297305bd15badf219360e",
+          "url": "https://github.com/risc0/risc0/commit/98333338d3fe6baa27242ddbcd011056712f1b41"
+        },
+        "date": 1740440184339,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33000668,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 14172,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13712,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163472,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 151697,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13998,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13425,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -83790,6 +83849,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740440169569,
+  "lastUpdate": 1740440186777,
   "repoUrl": "https://github.com/risc0/risc0"
 }
