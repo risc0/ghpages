@@ -21169,6 +21169,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98333338d3fe6baa27242ddbcd011056712f1b41",
+          "message": "ZKVM-1135: Update bigint2 datasheet benchmark to work with v2 (#2875)\n\nThe number of cycles for the same workload has changed making it no\nlonger in-line with the other execute benchmarks. I just adjusted the\nworkload to make it closer, and updated the assert since I couldn't get\nunder 10k difference.",
+          "timestamp": "2025-02-24T15:26:54-08:00",
+          "tree_id": "85b2594af8f881c0ec5297305bd15badf219360e",
+          "url": "https://github.com/risc0/risc0/commit/98333338d3fe6baa27242ddbcd011056712f1b41"
+        },
+        "date": 1740440158261,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20278012,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15917,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15895,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43734,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41971,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15903,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14566,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -83731,6 +83790,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740440104248,
+  "lastUpdate": 1740440169569,
   "repoUrl": "https://github.com/risc0/risc0"
 }
