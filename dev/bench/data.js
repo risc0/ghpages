@@ -83669,9 +83669,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98333338d3fe6baa27242ddbcd011056712f1b41",
+          "message": "ZKVM-1135: Update bigint2 datasheet benchmark to work with v2 (#2875)\n\nThe number of cycles for the same workload has changed making it no\nlonger in-line with the other execute benchmarks. I just adjusted the\nworkload to make it closer, and updated the assert since I couldn't get\nunder 10k difference.",
+          "timestamp": "2025-02-24T15:26:54-08:00",
+          "tree_id": "85b2594af8f881c0ec5297305bd15badf219360e",
+          "url": "https://github.com/risc0/risc0/commit/98333338d3fe6baa27242ddbcd011056712f1b41"
+        },
+        "date": 1740440093113,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22809716,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 540804,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 538750,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 560996,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357437,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 515489,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 400894,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1740439878053,
+  "lastUpdate": 1740440104248,
   "repoUrl": "https://github.com/risc0/risc0"
 }
