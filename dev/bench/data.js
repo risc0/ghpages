@@ -63688,6 +63688,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c042488d967a47c084aca65f11cf925dd265198f",
+          "message": "ZKVM-1147: compat test: fix compat test by adding `--locked` to install command (#2885)",
+          "timestamp": "2025-02-25T15:04:30-08:00",
+          "tree_id": "a20dc66dc5c29310b6b77eb47d0f55023e1f1c90",
+          "url": "https://github.com/risc0/risc0/commit/c042488d967a47c084aca65f11cf925dd265198f"
+        },
+        "date": 1740525240010,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33566116,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13929,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13987,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163537,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150048,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13800,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13124,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -83967,6 +84026,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740525153148,
+  "lastUpdate": 1740525242093,
   "repoUrl": "https://github.com/risc0/risc0"
 }
