@@ -84849,9 +84849,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5bd9010679b309641e0785a5318aef99e2bccb64",
+          "message": "ZKVM-1158: Fix cargo risczero new to use 2.0.0 for risc0_build (#2892)\n\nThis is hopefully temporary until we can replace it with something more\nrobust.\n\nThis will need to be backported to the 1.3 branch.",
+          "timestamp": "2025-02-26T20:48:03Z",
+          "tree_id": "c73d646bbfa5ad88415c3056ccc19463111603d9",
+          "url": "https://github.com/risc0/risc0/commit/5bd9010679b309641e0785a5318aef99e2bccb64"
+        },
+        "date": 1740603329690,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23548118,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 542748,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 540850,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 564321,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 360045,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 515175,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 405865,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1740603148488,
+  "lastUpdate": 1740603340997,
   "repoUrl": "https://github.com/risc0/risc0"
 }
