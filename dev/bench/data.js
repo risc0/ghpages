@@ -84731,9 +84731,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1ba7b8eb21a9ae9af977f2c71afb7c51a0207ed8",
+          "message": "ZKVM-1146: bump version to 1.4.0-alpha.1 (#2884)\n\nwe also discussed bumping to 2.0, so this could be 2.0.0-alpha.1 as well\n\n---------\n\nCo-authored-by: Remi Bernotavicius <remi@abort.cc>",
+          "timestamp": "2025-02-26T17:41:18Z",
+          "tree_id": "421450b0205737d38b60f2ae893e995c3bd2f7e2",
+          "url": "https://github.com/risc0/risc0/commit/1ba7b8eb21a9ae9af977f2c71afb7c51a0207ed8"
+        },
+        "date": 1740592463519,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 23692770,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 547507,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 545427,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 567648,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 361626,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 521336,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 411168,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1740592284562,
+  "lastUpdate": 1740592474858,
   "repoUrl": "https://github.com/risc0/risc0"
 }
