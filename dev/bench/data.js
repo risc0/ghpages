@@ -64101,6 +64101,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46bd63daae8b958ce41d48f824a2117c23765935",
+          "message": "ZKVM-1125: zkvm: enable 3GB of guest memory (#2866)\n\nThis is a simple fix to adjust the GUEST_MAX_MEM. There maybe more that\nwe can do to clean up risc0-zkvm-platform but this could result in\nsemver breaking changes such as removing public symbols. This change is\nmeant to do the bare minimum to enable a larger heap for the guest.\n\nResolves ZKVM-1107\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-02-26T01:19:00Z",
+          "tree_id": "aff23b4877e3b5659d155d41e4431a704d340156",
+          "url": "https://github.com/risc0/risc0/commit/46bd63daae8b958ce41d48f824a2117c23765935"
+        },
+        "date": 1740533310735,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32700622,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13968,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13936,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 162998,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 147303,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13923,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13662,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -84498,6 +84557,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740533266533,
+  "lastUpdate": 1740533314801,
   "repoUrl": "https://github.com/risc0/risc0"
 }
