@@ -21287,6 +21287,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "47b7ee07b2c05db04631d0876d3c6e6084ee3c3f",
+          "message": "ZKVM-1148: TraceEvent handles unknown events from future versions gracefully (#2886)\n\nIf a newer version of the circuit adds a new event type, the older\nversion of zkvm should just ignore it if received. Since this is\nexpected behavior, the fact that these events are being ignored is only\nbeing logged at trace-level.\n\nThis change will need to be backported to 1.3, 1.2, and 1.1",
+          "timestamp": "2025-02-25T16:32:29-08:00",
+          "tree_id": "1970c386aed1f55cb1bd44bea14ee4974ed4b787",
+          "url": "https://github.com/risc0/risc0/commit/47b7ee07b2c05db04631d0876d3c6e6084ee3c3f"
+        },
+        "date": 1740530543281,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22279412,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15855,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15712,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43691,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41925,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15463,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14088,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -84262,6 +84321,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740530524947,
+  "lastUpdate": 1740530555867,
   "repoUrl": "https://github.com/risc0/risc0"
 }
