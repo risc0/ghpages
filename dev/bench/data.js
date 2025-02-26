@@ -42812,6 +42812,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1ba7b8eb21a9ae9af977f2c71afb7c51a0207ed8",
+          "message": "ZKVM-1146: bump version to 1.4.0-alpha.1 (#2884)\n\nwe also discussed bumping to 2.0, so this could be 2.0.0-alpha.1 as well\n\n---------\n\nCo-authored-by: Remi Bernotavicius <remi@abort.cc>",
+          "timestamp": "2025-02-26T17:41:18Z",
+          "tree_id": "421450b0205737d38b60f2ae893e995c3bd2f7e2",
+          "url": "https://github.com/risc0/risc0/commit/1ba7b8eb21a9ae9af977f2c71afb7c51a0207ed8"
+        },
+        "date": 1740591941825,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 21378184,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 822504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 820896,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 638958,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431991,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 772200,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 564531,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -84557,6 +84616,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740533314801,
+  "lastUpdate": 1740591945069,
   "repoUrl": "https://github.com/risc0/risc0"
 }
