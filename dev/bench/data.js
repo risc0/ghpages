@@ -64455,6 +64455,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5bd9010679b309641e0785a5318aef99e2bccb64",
+          "message": "ZKVM-1158: Fix cargo risczero new to use 2.0.0 for risc0_build (#2892)\n\nThis is hopefully temporary until we can replace it with something more\nrobust.\n\nThis will need to be backported to the 1.3 branch.",
+          "timestamp": "2025-02-26T20:48:03Z",
+          "tree_id": "c73d646bbfa5ad88415c3056ccc19463111603d9",
+          "url": "https://github.com/risc0/risc0/commit/5bd9010679b309641e0785a5318aef99e2bccb64"
+        },
+        "date": 1740603472048,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 33849072,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13753,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13747,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163855,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149106,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13914,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13473,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -84970,6 +85029,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740603416332,
+  "lastUpdate": 1740603474090,
   "repoUrl": "https://github.com/risc0/risc0"
 }
