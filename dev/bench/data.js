@@ -43048,6 +43048,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7177bc1f90006eb4d62bf0a8ca6777531de30ba1",
+          "message": "ZKVM-1121: Update arkworks (#2862)",
+          "timestamp": "2025-02-27T00:41:41Z",
+          "tree_id": "76d672730d213d525e71b1445f7e646c435a4c05",
+          "url": "https://github.com/risc0/risc0/commit/7177bc1f90006eb4d62bf0a8ca6777531de30ba1"
+        },
+        "date": 1740617164035,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 18742726,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 828336,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 826369,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 643035,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433847,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 771442,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 563567,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -85029,6 +85088,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740603474090,
+  "lastUpdate": 1740617168308,
   "repoUrl": "https://github.com/risc0/risc0"
 }
