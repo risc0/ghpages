@@ -21523,6 +21523,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7177bc1f90006eb4d62bf0a8ca6777531de30ba1",
+          "message": "ZKVM-1121: Update arkworks (#2862)",
+          "timestamp": "2025-02-27T00:41:41Z",
+          "tree_id": "76d672730d213d525e71b1445f7e646c435a4c05",
+          "url": "https://github.com/risc0/risc0/commit/7177bc1f90006eb4d62bf0a8ca6777531de30ba1"
+        },
+        "date": 1740617436391,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 20618920,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15761,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15782,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43689,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42091,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15799,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14510,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -85147,6 +85206,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740617422109,
+  "lastUpdate": 1740617447239,
   "repoUrl": "https://github.com/risc0/risc0"
 }
