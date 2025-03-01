@@ -21582,6 +21582,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68360f7e9089a6beddfe2ca4c954afbd6041a84",
+          "message": "ZKVM-1170: Executor performance improvements (#2907)",
+          "timestamp": "2025-02-28T20:48:27-08:00",
+          "tree_id": "5f794bfe67d81c24b54690afaed0808b4e6d1237",
+          "url": "https://github.com/risc0/risc0/commit/c68360f7e9089a6beddfe2ca4c954afbd6041a84"
+        },
+        "date": 1740805301181,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 22115820,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15660,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15781,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43757,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41945,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15812,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14464,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -85442,6 +85501,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1740805266895,
+  "lastUpdate": 1740805312065,
   "repoUrl": "https://github.com/risc0/risc0"
 }
