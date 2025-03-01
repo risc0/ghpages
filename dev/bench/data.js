@@ -85380,9 +85380,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68360f7e9089a6beddfe2ca4c954afbd6041a84",
+          "message": "ZKVM-1170: Executor performance improvements (#2907)",
+          "timestamp": "2025-02-28T20:48:27-08:00",
+          "tree_id": "5f794bfe67d81c24b54690afaed0808b4e6d1237",
+          "url": "https://github.com/risc0/risc0/commit/c68360f7e9089a6beddfe2ca4c954afbd6041a84"
+        },
+        "date": 1740805257153,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 25064324,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 548106,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 545592,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 567587,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 370071,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 525670,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 413493,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1740805088358,
+  "lastUpdate": 1740805266895,
   "repoUrl": "https://github.com/risc0/risc0"
 }
