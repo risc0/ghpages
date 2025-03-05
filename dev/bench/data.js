@@ -21700,6 +21700,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6a157b76933908b14886bd1d9f45feabacb703c",
+          "message": "ZKVM-1180: Combine user ELF and kernel ELF at build time (#2922)",
+          "timestamp": "2025-03-05T23:14:51Z",
+          "tree_id": "c27eb74e96431468a8300bbb1095438f4cd8336e",
+          "url": "https://github.com/risc0/risc0/commit/c6a157b76933908b14886bd1d9f45feabacb703c"
+        },
+        "date": 1741217067873,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28618860,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15891,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15844,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43704,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42314,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15955,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14587,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -85914,6 +85973,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741217073010,
+  "lastUpdate": 1741217090337,
   "repoUrl": "https://github.com/risc0/risc0"
 }
