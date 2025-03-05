@@ -64986,6 +64986,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fd790272e28d12e718fbcde207553f6eb236e5e",
+          "message": "ZKVM-1179: More executor performance improvements (#2921)",
+          "timestamp": "2025-03-05T09:13:35-08:00",
+          "tree_id": "ec13ec1652873c26b84e10eda3f637c8500c089b",
+          "url": "https://github.com/risc0/risc0/commit/2fd790272e28d12e718fbcde207553f6eb236e5e"
+        },
+        "date": 1741195397338,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 43831452,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13853,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13823,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164067,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150390,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13669,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13399,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -85619,6 +85678,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741195380074,
+  "lastUpdate": 1741195401093,
   "repoUrl": "https://github.com/risc0/risc0"
 }
