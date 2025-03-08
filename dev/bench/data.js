@@ -43638,6 +43638,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22c8cdb7280a1b871c559549d22c72d133007b62",
+          "message": "ZKVM-1190: Cleanups in preparation for major version bump (#2935)",
+          "timestamp": "2025-03-08T04:27:13Z",
+          "tree_id": "15d774a0655e0eea574ea1619a383b55b0ce2fbd",
+          "url": "https://github.com/risc0/risc0/commit/22c8cdb7280a1b871c559549d22c72d133007b62"
+        },
+        "date": 1741408295265,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 25102978,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 848323,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 848156,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 642872,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 430203,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 785871,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 580074,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -86209,6 +86268,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741401853626,
+  "lastUpdate": 1741408298188,
   "repoUrl": "https://github.com/risc0/risc0"
 }
