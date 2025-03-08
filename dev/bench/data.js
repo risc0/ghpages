@@ -21818,6 +21818,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22c8cdb7280a1b871c559549d22c72d133007b62",
+          "message": "ZKVM-1190: Cleanups in preparation for major version bump (#2935)",
+          "timestamp": "2025-03-08T04:27:13Z",
+          "tree_id": "15d774a0655e0eea574ea1619a383b55b0ce2fbd",
+          "url": "https://github.com/risc0/risc0/commit/22c8cdb7280a1b871c559549d22c72d133007b62"
+        },
+        "date": 1741408544613,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28803160,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15756,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15806,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43705,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41975,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15783,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14484,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -86268,6 +86327,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741408298188,
+  "lastUpdate": 1741408555525,
   "repoUrl": "https://github.com/risc0/risc0"
 }
