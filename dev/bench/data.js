@@ -21759,6 +21759,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7452d13ced33ca2316f717f5b0bafcca2b7bddc",
+          "message": "ZKVM-1193: Apply some fixes to Cargo.toml files for next release (#2938)\n\nThese are changes from the release branch that I had to do to publish\nthings. We should commit them to main so we don't have to repeat them\nfor the next release.",
+          "timestamp": "2025-03-08T02:34:33Z",
+          "tree_id": "7677639df78a02d810da24cde477ad0ec076a254",
+          "url": "https://github.com/risc0/risc0/commit/b7452d13ced33ca2316f717f5b0bafcca2b7bddc"
+        },
+        "date": 1741401806919,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28436280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15814,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15879,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43755,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42153,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15866,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14555,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -86091,6 +86150,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741401760033,
+  "lastUpdate": 1741401817679,
   "repoUrl": "https://github.com/risc0/risc0"
 }
