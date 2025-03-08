@@ -86029,9 +86029,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7452d13ced33ca2316f717f5b0bafcca2b7bddc",
+          "message": "ZKVM-1193: Apply some fixes to Cargo.toml files for next release (#2938)\n\nThese are changes from the release branch that I had to do to publish\nthings. We should commit them to main so we don't have to repeat them\nfor the next release.",
+          "timestamp": "2025-03-08T02:34:33Z",
+          "tree_id": "7677639df78a02d810da24cde477ad0ec076a254",
+          "url": "https://github.com/risc0/risc0/commit/b7452d13ced33ca2316f717f5b0bafcca2b7bddc"
+        },
+        "date": 1741401750232,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30227196,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 551847,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 550560,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565913,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357017,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 530738,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 414946,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1741401535842,
+  "lastUpdate": 1741401760033,
   "repoUrl": "https://github.com/risc0/risc0"
 }
