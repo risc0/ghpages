@@ -21936,6 +21936,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e424d493e67d8870679121482c65c58ffb5b9c59",
+          "message": "ZKVM-1201: v2 API Hardening: Make private and apply `non_exhaustive` (#2951)\n\nThis PR attempts to reduce the scope of committed public API for\nmultiple crates. It does this by making fields private or apply\n`non_exhaustive` to containers. The hope with this is to help make it\neasier to avoid unnecessary breaking changes in the face of future\nchanges.",
+          "timestamp": "2025-03-11T20:20:49Z",
+          "tree_id": "d69e37d87d224e821858696db5a4955e46b5d7e9",
+          "url": "https://github.com/risc0/risc0/commit/e424d493e67d8870679121482c65c58ffb5b9c59"
+        },
+        "date": 1741724966778,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26395362,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15807,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15742,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43652,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41952,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15771,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14409,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -86799,6 +86858,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741724941300,
+  "lastUpdate": 1741724977539,
   "repoUrl": "https://github.com/risc0/risc0"
 }
