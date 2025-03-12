@@ -22113,6 +22113,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "875140fc4dd1d6eb8e6941b0939af33459a3fcf1",
+          "message": "ZKVM-1208: Update crate version numbers with new scheme (#2957)\n\nIn the new crate version numbering scheme each crate will have its own\nversion.\nThe crates on main will either:\n- have the version of the last release if there are no changes since\nthat release\n- have the version of the next release if there are changes since the\nlast release\n\nWe are going to bump all the version numbers for the next release though\n(but not all major version numbers), to make things easier to start but\nalso to avoid associating with the 1.3.0 release.\n\nI am also working on changes to the CI semver checks so that these rules\nare always respected and the PR with changes to a crate will include\nbumping the version number. Before I can make those checks pass though,\nI need the main version numbers to be right.",
+          "timestamp": "2025-03-12T21:34:17Z",
+          "tree_id": "822a028590890eac1b10392c815aa4eead151e9a",
+          "url": "https://github.com/risc0/risc0/commit/875140fc4dd1d6eb8e6941b0939af33459a3fcf1"
+        },
+        "date": 1741816014671,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27300982,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15837,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15826,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43536,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42004,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15875,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14537,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -87507,6 +87566,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741816007427,
+  "lastUpdate": 1741816025528,
   "repoUrl": "https://github.com/risc0/risc0"
 }
