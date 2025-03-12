@@ -87209,9 +87209,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f7fb9bb87d7ce12699642520bfea489967a786ca",
+          "message": "ZKVM-1210: Reduce bigint executor work (#2958)\n\nThe `BytePolyProgram` only needs to be run during preflight.",
+          "timestamp": "2025-03-12T12:03:22-07:00",
+          "tree_id": "a848c4135af79c8dd14169fbbc8edd652c6f3037",
+          "url": "https://github.com/risc0/risc0/commit/f7fb9bb87d7ce12699642520bfea489967a786ca"
+        },
+        "date": 1741806703322,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30142346,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 550771,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 548311,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565488,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 361177,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 531075,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 414762,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1741806466677,
+  "lastUpdate": 1741806714542,
   "repoUrl": "https://github.com/risc0/risc0"
 }
