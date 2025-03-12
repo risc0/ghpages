@@ -65989,6 +65989,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2db67acadc4e1283f08993b5dcfcfc7afba6bbbd",
+          "message": "ZKVM-1199: prepare risc0-build and rzup for toolchains > 1.85.0 (#2950)\n\nRecent LLVM versions have changed `loweratomic` to `lower-atomic`.\nChange this for `rzup` and `risc0-build` and add ability to build rust toolchain from a local directory.",
+          "timestamp": "2025-03-12T03:14:28Z",
+          "tree_id": "c0c8ad2eecb3934afed5cb781270fd7dbae857fa",
+          "url": "https://github.com/risc0/risc0/commit/2db67acadc4e1283f08993b5dcfcfc7afba6bbbd"
+        },
+        "date": 1741749855218,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 43716892,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13823,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13641,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163789,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150457,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13593,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13299,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -86976,6 +87035,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741749531400,
+  "lastUpdate": 1741749857208,
   "repoUrl": "https://github.com/risc0/risc0"
 }
