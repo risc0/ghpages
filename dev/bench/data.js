@@ -87032,9 +87032,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2db67acadc4e1283f08993b5dcfcfc7afba6bbbd",
+          "message": "ZKVM-1199: prepare risc0-build and rzup for toolchains > 1.85.0 (#2950)\n\nRecent LLVM versions have changed `loweratomic` to `lower-atomic`.\nChange this for `rzup` and `risc0-build` and add ability to build rust toolchain from a local directory.",
+          "timestamp": "2025-03-12T03:14:28Z",
+          "tree_id": "c0c8ad2eecb3934afed5cb781270fd7dbae857fa",
+          "url": "https://github.com/risc0/risc0/commit/2db67acadc4e1283f08993b5dcfcfc7afba6bbbd"
+        },
+        "date": 1741750019743,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 29539748,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 547864,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 546188,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 557445,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 364125,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 527378,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 412345,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1741749857208,
+  "lastUpdate": 1741750031137,
   "repoUrl": "https://github.com/risc0/risc0"
 }
