@@ -87445,9 +87445,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "875140fc4dd1d6eb8e6941b0939af33459a3fcf1",
+          "message": "ZKVM-1208: Update crate version numbers with new scheme (#2957)\n\nIn the new crate version numbering scheme each crate will have its own\nversion.\nThe crates on main will either:\n- have the version of the last release if there are no changes since\nthat release\n- have the version of the next release if there are changes since the\nlast release\n\nWe are going to bump all the version numbers for the next release though\n(but not all major version numbers), to make things easier to start but\nalso to avoid associating with the 1.3.0 release.\n\nI am also working on changes to the CI semver checks so that these rules\nare always respected and the PR with changes to a crate will include\nbumping the version number. Before I can make those checks pass though,\nI need the main version numbers to be right.",
+          "timestamp": "2025-03-12T21:34:17Z",
+          "tree_id": "822a028590890eac1b10392c815aa4eead151e9a",
+          "url": "https://github.com/risc0/risc0/commit/875140fc4dd1d6eb8e6941b0939af33459a3fcf1"
+        },
+        "date": 1741815987703,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30394578,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 552702,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 550328,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 567245,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 367786,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 529133,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 413164,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1741815988324,
+  "lastUpdate": 1741816007427,
   "repoUrl": "https://github.com/risc0/risc0"
 }
