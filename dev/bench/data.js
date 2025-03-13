@@ -22290,6 +22290,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacobdweightman@gmail.com",
+            "name": "Jacob Weightman",
+            "username": "jacobdweightman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ac0eb0c4a926ae2b82e2729cddbfeaa41f2f590c",
+          "message": "ZKVM-1217: Update Keccak circuit for provable determinism (#2964)\n\nThis PR is a companion of https://github.com/risc0/zirgen/pull/204",
+          "timestamp": "2025-03-13T23:16:36Z",
+          "tree_id": "92652c0ac8e12251500f6576a3b117556bb03434",
+          "url": "https://github.com/risc0/risc0/commit/ac0eb0c4a926ae2b82e2729cddbfeaa41f2f590c"
+        },
+        "date": 1741908688421,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27477228,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15710,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15776,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43813,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42033,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15749,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14491,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -88274,6 +88333,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741908611923,
+  "lastUpdate": 1741908699310,
   "repoUrl": "https://github.com/risc0/risc0"
 }
