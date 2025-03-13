@@ -44464,6 +44464,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a9497a6bb8c2a2af53fe5f997ab9a74f4433d4d0",
+          "message": "ZKVM-1188: Report Ecall metrics (#2930)\n\nReports ecall metrics from the executor.\n\nI am still examining whether this is fully correct, although it does\nseem to be largely correct (e.g. bigint cycle counts seem to line up\ncorrectly). The places that give me pause are:\n\n* ~Reserved cycle counts are still too high even after subtracting off\necall cycles~ This is expected, because reserved cycle counts includes\nthe padding cycles to get up to the next power of 2\n* Not sure why syscall and ecall read/write numbers don't match.\n\nI also chose not to adjust down the reserve cycle counts for ecalls, and\ninstead just added a note in the log. However, I could also add an\n`ecall_cycles` field to `SessionStats`\n([here](https://github.com/risc0/risc0/blob/c6a157b76933908b14886bd1d9f45feabacb703c/risc0/zkvm/src/host/prove_info.rs#L30))\nif that's preferred.\n\n~I'm happy to either land and iterate, or hold the PR open while I dig\nfurther.~ With the reserve cycles issue sorted out, I think this is good\nto go -- unless anyone sees a problem with the syscall vs ecall\nread/write counts not matching.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-03-13T02:52:36Z",
+          "tree_id": "ca48daefe9705e6734e17c022744b352f0c22336",
+          "url": "https://github.com/risc0/risc0/commit/a9497a6bb8c2a2af53fe5f997ab9a74f4433d4d0"
+        },
+        "date": 1741834615389,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 25644286,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 847827,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 849962,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 645107,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431837,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 801940,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 578682,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -87861,6 +87920,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741826041996,
+  "lastUpdate": 1741834618518,
   "repoUrl": "https://github.com/risc0/risc0"
 }
