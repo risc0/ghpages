@@ -22172,6 +22172,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f9ac3b212feedbd54561c02525855014ae6f232b",
+          "message": "ZKVM-1206: Update `cargo risczero new` to use versions of crates it was compiled with (#2955)\n\nSince we are changing the way we version crates to not be the same for\neverything in one release, we need a way for `cargo risczero new` to\nselect the correct version for the current release. One way to do this\nis to have it just use the versions of the crates it was compiled with.\n\nOnce we are using the same version as the release version on main\nrunning one compiled from main will work the same as the release, but\nright now it uses the `-alpha.1` version of crates which does work\nbecause the `.rc.1` crates satisfy that constraint somehow.",
+          "timestamp": "2025-03-12T17:24:17-07:00",
+          "tree_id": "4df857410c415e03cd0935c14db62b52f1378957",
+          "url": "https://github.com/risc0/risc0/commit/f9ac3b212feedbd54561c02525855014ae6f232b"
+        },
+        "date": 1741825980031,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27022780,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15793,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15812,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43452,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42083,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15813,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14440,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -87743,6 +87802,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741825957033,
+  "lastUpdate": 1741825990955,
   "repoUrl": "https://github.com/risc0/risc0"
 }
