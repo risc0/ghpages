@@ -67110,6 +67110,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "95512809+Himess@users.noreply.github.com",
+            "name": "Himess",
+            "username": "Himess"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb28691081f58681c568398eb057ac488d50426a",
+          "message": "ZKVM-1191: Refactor Clap attribute macros from #[clap(...)] to #[arg(...)] and #[command(...)] in v4.x (#2945)\n\nThis PR updates deprecated `#[clap(...)]` attributes to their modern\nequivalents in `clap` 4.x.\nThe current codebase still uses outdated syntax that has been deprecated\nsince version 4.0.\nBy making this update, we ensure compatibility with future versions and\nmaintain code quality.\n\nFixes #2936\n\nLicense Check Completed Successfully\n![Pasted Graphic\n23](https://github.com/user-attachments/assets/4c70e91b-0042-496d-8ebf-8003cbe483e1)\n\nThis PR replaces #2937 , which was closed to ensure a cleaner code\nstructure and a well-organized commit history.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-03-14T13:38:39-07:00",
+          "tree_id": "bee84d3afb24268e29a67196f27f0e3622376e4c",
+          "url": "https://github.com/risc0/risc0/commit/fb28691081f58681c568398eb057ac488d50426a"
+        },
+        "date": 1741985303562,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 44777684,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13741,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13874,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 165105,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150291,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14091,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13546,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -88510,6 +88569,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741985243306,
+  "lastUpdate": 1741985306431,
   "repoUrl": "https://github.com/risc0/risc0"
 }
