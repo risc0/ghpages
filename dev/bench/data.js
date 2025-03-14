@@ -88861,9 +88861,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "122bea71f93ba3ff8a854d203c53962f733fc85f",
+          "message": "ZKVM-1223: Add binfmt docs (#2970)\n\n\n---------\n\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>",
+          "timestamp": "2025-03-14T22:28:57Z",
+          "tree_id": "e6fb2590a3a7074ca4c61042d9a985643a59511a",
+          "url": "https://github.com/risc0/risc0/commit/122bea71f93ba3ff8a854d203c53962f733fc85f"
+        },
+        "date": 1741991798894,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32196436,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 545105,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 542980,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 570153,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 366787,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 522503,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 410402,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1741991600302,
+  "lastUpdate": 1741991810214,
   "repoUrl": "https://github.com/risc0/risc0"
 }
