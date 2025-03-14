@@ -44818,6 +44818,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a00be6af27d16a55f8d9cffa54cc79404f3306c1",
+          "message": "ZKVM-1224: Add ABI version number to ProgramBinary; Check version in zkVM (#2971)\n\nThis adds a new header to the ProgramBinary. It stores it on disk as a\nlist of enum values encoded using `postcard`. I wanted to use `bincode`\nat first, but it doesn't support `no_std` usage. It ignores values that\nit doesn't know about, potentially allowing for future versions of the\nheader to still be decoded even if they contain new kinds of header\nvalues.\n\nThe value of this version is checked in the zkVM and an error is thrown\nif it doesn't match the one value we currently know about. This will\nprevent version 2.0.0 of the zkVM from attempting to execute guest\nprograms built by newer version of the code. Also, this will allow\nfuture versions of zkVM to detect older versions of guest programs and\nhandle that appropriately.",
+          "timestamp": "2025-03-14T21:45:11Z",
+          "tree_id": "3a56f38984c9b05b54054651b50cba7a3b8ff759",
+          "url": "https://github.com/risc0/risc0/commit/a00be6af27d16a55f8d9cffa54cc79404f3306c1"
+        },
+        "date": 1741988971894,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26609462,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 850921,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 850297,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 646052,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 432169,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 799804,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 582180,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -88569,6 +88628,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741985306431,
+  "lastUpdate": 1741988975044,
   "repoUrl": "https://github.com/risc0/risc0"
 }
