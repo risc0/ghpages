@@ -67641,6 +67641,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1d511c1d0a23c647cda25b987bcfe15ba23c0002",
+          "message": "ZKVM-1230: Add version to rv32im seal (#2978)",
+          "timestamp": "2025-03-15T00:43:57Z",
+          "tree_id": "792eb017efe882dbf09173b4194b79c23a9487a4",
+          "url": "https://github.com/risc0/risc0/commit/1d511c1d0a23c647cda25b987bcfe15ba23c0002"
+        },
+        "date": 1742000018706,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 45437304,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13777,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13367,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164914,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150742,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13643,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13603,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -89218,6 +89277,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1741999969007,
+  "lastUpdate": 1742000020766,
   "repoUrl": "https://github.com/risc0/risc0"
 }
