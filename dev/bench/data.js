@@ -67818,6 +67818,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7308d1eda7c09b0d876ceee730969f48221c438",
+          "message": "ZKVM-1222: Implement new SemVer checks (#2968)\n\nThis patch implements the new SemVer checks we have discussed as a new\n`xtask` command\n\nIt first runs `cargo-semver-checks` via its Rust API normally, then it\nadds our check for patch releases by doing a new check.\nThis new check basically runs `cargo publish` on crates where the\ncurrent version number matches the published version number and compares\nthe version that would be published with the version that is published\nand if there are any changes, we require a bump of the version number.\n\nThis PR also enables the new checks in CI replacing the existing checks.\nIt doesn't move to make it be required yet, I thought we would try it\nout for a bit before blocking commits behind it.",
+          "timestamp": "2025-03-15T03:29:02Z",
+          "tree_id": "cfae1c4a6c5e111837515935c5ef63ac6cb40823",
+          "url": "https://github.com/risc0/risc0/commit/b7308d1eda7c09b0d876ceee730969f48221c438"
+        },
+        "date": 1742009964913,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 44896412,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13737,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13579,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164957,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 152439,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13867,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13239,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -89395,6 +89454,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742009870425,
+  "lastUpdate": 1742009967076,
   "repoUrl": "https://github.com/risc0/risc0"
 }
