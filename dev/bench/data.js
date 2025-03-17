@@ -45290,6 +45290,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "57f2a6c319ef41de9e92fd17984656552f9ad80b",
+          "message": "ZKVM-1229: Add unchecked/checked versions of ext field ops (#2977)\n\nSplit the extension field precompile operations into checked and\nunchecked versions that do or don't (respectively) check whether any\ncomponent of the result is >= the base field prime.\n\nThe unchecked version is still constrained to give a result equivalent\nto the checked result modulo the prime modulus; the check is just to\nensure that the result is a representation of the field element\n\"normalized\" to its unique value `[0, p)`.\n\n---------\n\nCo-authored-by: iddo <iddo@risczero.com>",
+          "timestamp": "2025-03-17T20:33:57Z",
+          "tree_id": "79e9308d935f27548645ff7a891b28aa12cbd50f",
+          "url": "https://github.com/risc0/risc0/commit/57f2a6c319ef41de9e92fd17984656552f9ad80b"
+        },
+        "date": 1742243899655,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27153018,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 849312,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 848216,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 648751,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431259,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 801124,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 576109,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -89513,6 +89572,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742010148856,
+  "lastUpdate": 1742243902958,
   "repoUrl": "https://github.com/risc0/risc0"
 }
