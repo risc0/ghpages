@@ -68172,6 +68172,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bdc2ec71ac7104bd44ead8f609962bf53aa68441",
+          "message": "ZKVM-1213: Add EC precompiles for 384 bits (#2960)\n\nAdds precompile support for 384-bit elliptic curve operations (add and\ndouble, and thereby also mul). This supports elliptic curves over any\nprime field whose prime fits into 384 bits.",
+          "timestamp": "2025-03-17T22:16:15Z",
+          "tree_id": "81584ca58fed44bac84870655e255a3c6b78eafc",
+          "url": "https://github.com/risc0/risc0/commit/bdc2ec71ac7104bd44ead8f609962bf53aa68441"
+        },
+        "date": 1742250358031,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 43584140,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13714,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13881,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164045,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149106,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13872,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13380,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -89926,6 +89985,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742250312971,
+  "lastUpdate": 1742250360056,
   "repoUrl": "https://github.com/risc0/risc0"
 }
