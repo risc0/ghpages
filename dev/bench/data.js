@@ -22762,6 +22762,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31c692578e8271d6273bee8f8c4b9b6f5478ffe8",
+          "message": "ZKVM-1237: Bring forward Cargo.toml file updates from release branch (#2986)\n\nThis brings forward changes that were made on the release branch to\nCargo.toml files to main\n\nThis includes:\n- Adding descriptions to risc0-kzos-v1compat\n- Downgrading risc0-build to 2.0.1",
+          "timestamp": "2025-03-17T23:52:48Z",
+          "tree_id": "4c0b1a2847b012ed5104189b5268064311715daf",
+          "url": "https://github.com/risc0/risc0/commit/31c692578e8271d6273bee8f8c4b9b6f5478ffe8"
+        },
+        "date": 1742256175662,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28661366,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15861,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15815,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43694,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42402,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15867,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14523,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -90162,6 +90221,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742256149404,
+  "lastUpdate": 1742256186568,
   "repoUrl": "https://github.com/risc0/risc0"
 }
