@@ -22821,6 +22821,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "57f8b35548629958238201599ce66bc99a80b5f7",
+          "message": "ZKVM-1239: [risc0-build] Improve error messages; Make C++ toolchain optional for building guests (#2988)",
+          "timestamp": "2025-03-18T02:06:50Z",
+          "tree_id": "f13b3fab35587eb14e00042b8156a5536a0fe927",
+          "url": "https://github.com/risc0/risc0/commit/57f8b35548629958238201599ce66bc99a80b5f7"
+        },
+        "date": 1742264131156,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28409348,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15868,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15757,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43603,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42403,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15817,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14505,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -90280,6 +90339,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742263877163,
+  "lastUpdate": 1742264142048,
   "repoUrl": "https://github.com/risc0/risc0"
 }
