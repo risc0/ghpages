@@ -68526,6 +68526,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "57f8b35548629958238201599ce66bc99a80b5f7",
+          "message": "ZKVM-1239: [risc0-build] Improve error messages; Make C++ toolchain optional for building guests (#2988)",
+          "timestamp": "2025-03-18T02:06:50Z",
+          "tree_id": "f13b3fab35587eb14e00042b8156a5536a0fe927",
+          "url": "https://github.com/risc0/risc0/commit/57f8b35548629958238201599ce66bc99a80b5f7"
+        },
+        "date": 1742264190482,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 45729840,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13469,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13670,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 165554,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 152713,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14183,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13417,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -90339,6 +90398,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742264142048,
+  "lastUpdate": 1742264193880,
   "repoUrl": "https://github.com/risc0/risc0"
 }
