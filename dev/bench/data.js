@@ -90513,9 +90513,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacob@risczero.com",
+            "name": "Jacob Weightman",
+            "username": "jacobdweightman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb56c3979a4d780033e1fb844eac2d4bc00ff00d",
+          "message": "ZKVM-1240: Add missing constraint in rv32im v2 (#2989)\n\ncompanion of https://github.com/risc0/zirgen/pull/209\nunderconstrained issue found with [Picus]( https://veridise.com/wp-content/uploads/2025/01/Automated-Detection-of-Underconstrained-Circuits-for-Zero-Knowledge-Proofs.pdf) prior to release!",
+          "timestamp": "2025-03-19T12:14:53-05:00",
+          "tree_id": "fbefddc0d2da82a8a84144382c4dd433bb9776d3",
+          "url": "https://github.com/risc0/risc0/commit/fb56c3979a4d780033e1fb844eac2d4bc00ff00d"
+        },
+        "date": 1742405010957,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31144438,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 549205,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 546571,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 566410,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 361724,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 520675,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 408986,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1742404771744,
+  "lastUpdate": 1742405022423,
   "repoUrl": "https://github.com/risc0/risc0"
 }
