@@ -23116,6 +23116,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iddo@risczero.com",
+            "name": "iddo-bentov",
+            "username": "iddo-bentov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fbf75cd6055ae2f5463d36be70e6207a3e328ff8",
+          "message": "ZKVM-1227: extern C for rust bigint2 blob fns (#2975)",
+          "timestamp": "2025-03-19T21:11:35Z",
+          "tree_id": "299d7ebe67ae92bf60c88081312e8ebac2614cbc",
+          "url": "https://github.com/risc0/risc0/commit/fbf75cd6055ae2f5463d36be70e6207a3e328ff8"
+        },
+        "date": 1742419207626,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27274672,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15841,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15672,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43673,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42270,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15788,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14510,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -91519,6 +91578,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742419162756,
+  "lastUpdate": 1742419218535,
   "repoUrl": "https://github.com/risc0/risc0"
 }
