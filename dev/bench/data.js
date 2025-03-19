@@ -22998,6 +22998,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61cfc742b8e9d794867cee6d994ea0a5d8f3cd14",
+          "message": "ZKVM-1242: Fix for bigint v1compat to avoid exhausting kernel stack (#2993)\n\nSave/restore the stack pointer when calling `ecall_bigint_v1compat`.",
+          "timestamp": "2025-03-19T19:21:32Z",
+          "tree_id": "3250e00f95fc82f7ed478c601444b7d9e0b8c694",
+          "url": "https://github.com/risc0/risc0/commit/61cfc742b8e9d794867cee6d994ea0a5d8f3cd14"
+        },
+        "date": 1742412681416,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28366656,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15830,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15890,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43189,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42155,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15888,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14528,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -91047,6 +91106,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742412602912,
+  "lastUpdate": 1742412692331,
   "repoUrl": "https://github.com/risc0/risc0"
 }
