@@ -69234,6 +69234,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf1de2d0f5252f0592d76e74b3304e6054c16834",
+          "message": "ZKVM-1243: Update to Rust 1.85.0 (#2994)\n\nSince this change includes a change to `rzup` since it was released, we\nmust bump its version number.",
+          "timestamp": "2025-03-19T20:14:38Z",
+          "tree_id": "1a5dc11f08209cce8d95d00e275d6c2b4a509865",
+          "url": "https://github.com/risc0/risc0/commit/bf1de2d0f5252f0592d76e74b3304e6054c16834"
+        },
+        "date": 1742415929023,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 50067240,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13648,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13740,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163572,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149864,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13874,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13582,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -91342,6 +91401,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742415865878,
+  "lastUpdate": 1742415931124,
   "repoUrl": "https://github.com/risc0/risc0"
 }
