@@ -90749,9 +90749,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6a275ce3a5428d3e9c68370eb44b586045341fa",
+          "message": "ZKVM-1241: Support for dumping and replaying segments (#2990)\n\n* During execution, if `RISC0_DUMP_PATH` is set and an error occurs,\nserialize the current segment and write it to the specified path.\n* `r0vm --segment` can be used to replay this segment later, possibly\nwith extra debug tracing.",
+          "timestamp": "2025-03-19T18:07:31Z",
+          "tree_id": "81e0c0f9af09fba24cae1b334654d14c26257296",
+          "url": "https://github.com/risc0/risc0/commit/e6a275ce3a5428d3e9c68370eb44b586045341fa"
+        },
+        "date": 1742408131088,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31350630,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 549790,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 547424,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 575962,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 370742,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 527470,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 411319,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1742407945552,
+  "lastUpdate": 1742408147188,
   "repoUrl": "https://github.com/risc0/risc0"
 }
