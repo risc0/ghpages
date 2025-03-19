@@ -46234,6 +46234,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iddo@risczero.com",
+            "name": "iddo-bentov",
+            "username": "iddo-bentov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fbf75cd6055ae2f5463d36be70e6207a3e328ff8",
+          "message": "ZKVM-1227: extern C for rust bigint2 blob fns (#2975)",
+          "timestamp": "2025-03-19T21:11:35Z",
+          "tree_id": "299d7ebe67ae92bf60c88081312e8ebac2614cbc",
+          "url": "https://github.com/risc0/risc0/commit/fbf75cd6055ae2f5463d36be70e6207a3e328ff8"
+        },
+        "date": 1742418956122,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26727730,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 849334,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 848095,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 645365,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 431485,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 801157,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 577437,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -91401,6 +91460,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742415931124,
+  "lastUpdate": 1742418962459,
   "repoUrl": "https://github.com/risc0/risc0"
 }
