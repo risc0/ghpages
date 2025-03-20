@@ -91693,9 +91693,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f4c548bdae15955568d99a66a7b62e8422cca77f",
+          "message": "ZKVM-1249: Constrain bigint memory accesses based on mode (#3001)",
+          "timestamp": "2025-03-20T11:02:21-07:00",
+          "tree_id": "e61129cafee8cc4b958aa7c8daed9c2160f7fc83",
+          "url": "https://github.com/risc0/risc0/commit/f4c548bdae15955568d99a66a7b62e8422cca77f"
+        },
+        "date": 1742494251878,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31079024,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 545044,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 542510,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 568284,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 368226,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 523483,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 409623,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1742494008091,
+  "lastUpdate": 1742494262316,
   "repoUrl": "https://github.com/risc0/risc0"
 }
