@@ -23175,6 +23175,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f4c548bdae15955568d99a66a7b62e8422cca77f",
+          "message": "ZKVM-1249: Constrain bigint memory accesses based on mode (#3001)",
+          "timestamp": "2025-03-20T11:02:21-07:00",
+          "tree_id": "e61129cafee8cc4b958aa7c8daed9c2160f7fc83",
+          "url": "https://github.com/risc0/risc0/commit/f4c548bdae15955568d99a66a7b62e8422cca77f"
+        },
+        "date": 1742494284251,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27198864,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15629,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15639,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43493,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42058,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15686,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14334,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -91755,6 +91814,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742494262316,
+  "lastUpdate": 1742494295174,
   "repoUrl": "https://github.com/risc0/risc0"
 }
