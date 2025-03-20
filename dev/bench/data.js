@@ -91929,9 +91929,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "249d514a45be69fa23577d59d4ad377cb563d257",
+          "message": "ZKVM-1252: Rename bigint field unchecked & FFI ops (#3003)\n\nRedo the naming conventions for `risc0_bigint2::field` operations. This\nleaves the \"`risc0_bigint2::field::modadd_256`\"-type operations with\ntheir existing names, but pulls the \"unchecked\" operations into an\n`unchecked` submodule, and renames the FFI module from `ffi_field` to\nplain `ffi`.\n\nThis also removes `pub` from the `ffi` module.",
+          "timestamp": "2025-03-20T20:34:52Z",
+          "tree_id": "64ae7086ae85f891bb9a9c6f65955475d4f71d24",
+          "url": "https://github.com/risc0/risc0/commit/249d514a45be69fa23577d59d4ad377cb563d257"
+        },
+        "date": 1742503520363,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30968762,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 543229,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 541431,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 568187,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357332,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 524110,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 409982,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1742503156512,
+  "lastUpdate": 1742503530798,
   "repoUrl": "https://github.com/risc0/risc0"
 }
