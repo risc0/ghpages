@@ -46352,6 +46352,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f4c548bdae15955568d99a66a7b62e8422cca77f",
+          "message": "ZKVM-1249: Constrain bigint memory accesses based on mode (#3001)",
+          "timestamp": "2025-03-20T11:02:21-07:00",
+          "tree_id": "e61129cafee8cc4b958aa7c8daed9c2160f7fc83",
+          "url": "https://github.com/risc0/risc0/commit/f4c548bdae15955568d99a66a7b62e8422cca77f"
+        },
+        "date": 1742494004896,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26369024,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 841436,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 842240,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 647622,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 433256,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 792305,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 572595,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -91637,6 +91696,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742419287053,
+  "lastUpdate": 1742494008091,
   "repoUrl": "https://github.com/risc0/risc0"
 }
