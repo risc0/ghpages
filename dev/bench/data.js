@@ -23293,6 +23293,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c65c85a1ec6ce7df165ef9c57e1e13e323f7e01",
+          "message": "ZKVM-1255: Bump guest rust toolchain to 1.85.0 (#3006)\n\nThis PR updates the guest rust toolchain to use 1.85.0. A new guest\nbuilder with tag r0.1.85.0 has been uploaded to dockerhub.",
+          "timestamp": "2025-03-24T20:05:48Z",
+          "tree_id": "c66a8a2035143773a16f0e6e822d192d05fc31c8",
+          "url": "https://github.com/risc0/risc0/commit/4c65c85a1ec6ce7df165ef9c57e1e13e323f7e01"
+        },
+        "date": 1742847338499,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26907112,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 14635,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 14479,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 41396,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 39919,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14455,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13545,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -92168,6 +92227,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742847251517,
+  "lastUpdate": 1742847349451,
   "repoUrl": "https://github.com/risc0/risc0"
 }
