@@ -23352,6 +23352,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31f657014488940913e3ced0367610225ab32ada",
+          "message": "ZKVM-1260: Account for missing ControlDone cycle in executor (#3015)\n\nThe `segment_cycles()` function in the executor accounts for the number\nof cycles that are used so far in the segment. Its calculation was\nmissing the extra `ControlDone` cycle preflight adds (off by one.) This\nmistake didn't show up when splitting because there was another bug in\nthe splitting logic where we used `>=` instead of `>`, (this negated the\nextra `+1`). Later though, when we calculate the po2 for the final\nsegment we use the `segment_cycles()` function again, but this time the\noff by one issue matters and we calculate the wrong po2 for the segment.\nThis then results in a crash later in preflight.\n\nI'd like to create a guest program that manages to hit this bug without\nthe fix that we can add as a test, but its a bit tricky to accomplish so\nI wanted to get this out there first without it.",
+          "timestamp": "2025-03-25T15:20:05-07:00",
+          "tree_id": "280994fd8cb01f765610de73087fc47949ef8819",
+          "url": "https://github.com/risc0/risc0/commit/31f657014488940913e3ced0367610225ab32ada"
+        },
+        "date": 1742941759939,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27305366,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15670,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15636,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43521,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42349,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15657,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14383,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -92463,6 +92522,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1742941674562,
+  "lastUpdate": 1742941770785,
   "repoUrl": "https://github.com/risc0/risc0"
 }
