@@ -70473,6 +70473,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "09d712eb2196234c3966856af39a571866744953",
+          "message": "ZKVM-1263: Add Poseidon254 CUDA implementation (#3018)\n\nCo-authored-by: canayduman <canayduman@users.noreply.github.com>\nCo-authored-by: simonatsn <simonatsn@users.noreply.github.com>",
+          "timestamp": "2025-03-26T22:17:47Z",
+          "tree_id": "4c5ca2c4cff6f0e60e981f24ce967ef13988b063",
+          "url": "https://github.com/risc0/risc0/commit/09d712eb2196234c3966856af39a571866744953"
+        },
+        "date": 1743028258486,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 51517748,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13916,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13933,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 163751,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 149832,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14105,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13559,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -92994,6 +93053,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743028033528,
+  "lastUpdate": 1743028260667,
   "repoUrl": "https://github.com/risc0/risc0"
 }
