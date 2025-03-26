@@ -92873,9 +92873,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "09d712eb2196234c3966856af39a571866744953",
+          "message": "ZKVM-1263: Add Poseidon254 CUDA implementation (#3018)\n\nCo-authored-by: canayduman <canayduman@users.noreply.github.com>\nCo-authored-by: simonatsn <simonatsn@users.noreply.github.com>",
+          "timestamp": "2025-03-26T22:17:47Z",
+          "tree_id": "4c5ca2c4cff6f0e60e981f24ce967ef13988b063",
+          "url": "https://github.com/risc0/risc0/commit/09d712eb2196234c3966856af39a571866744953"
+        },
+        "date": 1743028008940,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30066720,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 538639,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 537038,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 560737,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 357885,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 517085,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 401995,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743027768141,
+  "lastUpdate": 1743028019321,
   "repoUrl": "https://github.com/risc0/risc0"
 }
