@@ -70296,6 +70296,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "distinct": true,
+          "id": "72e8bc0875209744a63af12844c1e354a44a8ebc",
+          "message": "Revert \"Add blst dependency\"\n\nThis reverts commit 925aecbb3d66a74050cbb29f48cf9f9164d10903.",
+          "timestamp": "2025-03-26T13:31:00-07:00",
+          "tree_id": "c946c3643d32162f88b65cbae8f9d17f699e48f3",
+          "url": "https://github.com/risc0/risc0/commit/72e8bc0875209744a63af12844c1e354a44a8ebc"
+        },
+        "date": 1743021691144,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 51075848,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 13724,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13648,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164874,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150860,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13913,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13644,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -92758,6 +92817,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743021659288,
+  "lastUpdate": 1743021693401,
   "repoUrl": "https://github.com/risc0/risc0"
 }
