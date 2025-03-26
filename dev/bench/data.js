@@ -23411,6 +23411,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "frank@risczero.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "distinct": true,
+          "id": "72e8bc0875209744a63af12844c1e354a44a8ebc",
+          "message": "Revert \"Add blst dependency\"\n\nThis reverts commit 925aecbb3d66a74050cbb29f48cf9f9164d10903.",
+          "timestamp": "2025-03-26T13:31:00-07:00",
+          "tree_id": "c946c3643d32162f88b65cbae8f9d17f699e48f3",
+          "url": "https://github.com/risc0/risc0/commit/72e8bc0875209744a63af12844c1e354a44a8ebc"
+        },
+        "date": 1743021648421,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27074570,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15636,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15539,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43431,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42221,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15625,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14304,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -92699,6 +92758,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743021559985,
+  "lastUpdate": 1743021659288,
   "repoUrl": "https://github.com/risc0/risc0"
 }
