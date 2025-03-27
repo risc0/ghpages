@@ -93227,9 +93227,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b63961c6e0b9af4ab7ef42e1db735aabec37c478",
+          "message": "ZKVM-1273: Widen file-lock around rzup install command (#3027)\n\n`rzup` didn't really handle concurrent `install` commands being issued\non the same machine. I'm not sure I believe that it ever did really.\n\nIt did have a file-lock used when downloading a file, but this wasn't\nsufficient since it didn't hold the lock long enough. Replace this file\nlocking with a new lock that is taken for the duration of installation.\n\nAlso, we can't delete the lock-file when we are done with it, because\nyou might delete a lock-file which another process has locked.",
+          "timestamp": "2025-03-27T22:16:06Z",
+          "tree_id": "6c3d93ad7c3abba969bc8d96776df43369a275fa",
+          "url": "https://github.com/risc0/risc0/commit/b63961c6e0b9af4ab7ef42e1db735aabec37c478"
+        },
+        "date": 1743114273074,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30966286,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 542544,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 540217,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 569707,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 363369,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 517218,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 405405,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743036898092,
+  "lastUpdate": 1743114282897,
   "repoUrl": "https://github.com/risc0/risc0"
 }
