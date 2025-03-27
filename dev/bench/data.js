@@ -93050,9 +93050,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fee2e19a3c49b3da492403de5e2d011c890e52de",
+          "message": "ZKVM-1267: Bump versions to fix SemVer checks after 2.0.0 release (#3021)\n\nThis bumps the following versions for the following reasons:\n\n- `risc0-build`: patch bump due to 1.85 related changes\n- `risc0-circuit-rv32im-sys`: patch bump to match release branch\n- `risc0-circuit-rv32im`: minor bump due to hackenproof bug fix\n- `risc0-r0vm`: patch bump due to change in version requirement of\n`risc0-circuit-rv32im`\n- `risc0-zkvm-platform`: patch bump to match release branch\n- `risc0-zkvm`: patch bump due to hackenproof bug fix changing an\nexample, and version requirement increase of `risc0-circuit-rv32im`\n- `risc0-bigint2`: patch bump due to change in version requirement of\n`risc0-zkvm`\n\nAnd the following additional bumps due to the recent new Poseidon254\nCUDA kernel\n- `risc0-groth16`: patch bump due to change in version requirement of\n`risc0-binfmt`\n- `risc0-binfmt`: patch bump due to change in version requirement of\n`risc0-zkp`\n- `risc0-zkp`: minor bump due to new public functions\n- `risc-sys`: minor bump due to new public functions\n- `risc0-circuit-rv32im-sys`: patch bump due to change in version\nrequirement of `sspark`\n- `risc0-circuit-recursion-sys`: patch bump due to change in version\nrequirement of `sspark`\n- `risc0-circuit-recursion`: minor bump due to new public functions",
+          "timestamp": "2025-03-27T00:43:56Z",
+          "tree_id": "c293f343e7916dde58dd1402b4b56a7bafad6270",
+          "url": "https://github.com/risc0/risc0/commit/fee2e19a3c49b3da492403de5e2d011c890e52de"
+        },
+        "date": 1743036741914,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30880942,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 540595,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 536298,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 567979,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 362300,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 519485,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 406709,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743028260667,
+  "lastUpdate": 1743036755751,
   "repoUrl": "https://github.com/risc0/risc0"
 }
