@@ -93404,9 +93404,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "df3bd559a0560e433962efcf2217cc6f6025a44d",
+          "message": "ZKVM-1282: risc0-build: make docker container tag configurable (#3037)\n\nThis change allows users to set the docker container used for\nreproducible programmatically or by setting the\n`RISC0_DOCKER_CONTAINER_TAG` environment variable.",
+          "timestamp": "2025-03-31T19:12:14Z",
+          "tree_id": "ea52e639007dcda40eaa35fb509521f3a9d409fb",
+          "url": "https://github.com/risc0/risc0/commit/df3bd559a0560e433962efcf2217cc6f6025a44d"
+        },
+        "date": 1743448809560,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31138872,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 539922,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 537942,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 568611,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 363118,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 518675,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 403944,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743448630411,
+  "lastUpdate": 1743448820186,
   "repoUrl": "https://github.com/risc0/risc0"
 }
