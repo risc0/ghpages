@@ -23647,6 +23647,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "df3bd559a0560e433962efcf2217cc6f6025a44d",
+          "message": "ZKVM-1282: risc0-build: make docker container tag configurable (#3037)\n\nThis change allows users to set the docker container used for\nreproducible programmatically or by setting the\n`RISC0_DOCKER_CONTAINER_TAG` environment variable.",
+          "timestamp": "2025-03-31T19:12:14Z",
+          "tree_id": "ea52e639007dcda40eaa35fb509521f3a9d409fb",
+          "url": "https://github.com/risc0/risc0/commit/df3bd559a0560e433962efcf2217cc6f6025a44d"
+        },
+        "date": 1743448926835,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27120874,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15564,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15563,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43348,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41752,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15618,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14335,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -93466,6 +93525,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743448820186,
+  "lastUpdate": 1743448937837,
   "repoUrl": "https://github.com/risc0/risc0"
 }
