@@ -23706,6 +23706,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6d4b34ddc8f3898faeb60e5729fdd7b31c2f3f8",
+          "message": "ZKVM-1290: Statically link in `liblzma` (#3055)\n\nNo need to depend on the system provided version of this library on\nLinux, and on Mac it creates an even greater issue of somehow providing\nthis library to users.\n\nSee https://github.com/risc0/risc0/issues/3054",
+          "timestamp": "2025-04-01T10:47:47-07:00",
+          "tree_id": "7087e7b01a2698d2f7cd189d4e2a44db7dd06294",
+          "url": "https://github.com/risc0/risc0/commit/a6d4b34ddc8f3898faeb60e5729fdd7b31c2f3f8"
+        },
+        "date": 1743530214812,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27432366,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15861,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15791,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43495,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42429,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15856,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14535,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -93702,6 +93761,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743530126915,
+  "lastUpdate": 1743530225332,
   "repoUrl": "https://github.com/risc0/risc0"
 }
