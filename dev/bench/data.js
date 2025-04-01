@@ -94112,9 +94112,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b74ca14cbd4a9c9f7f72f8ebe440bf1c93c0e16e",
+          "message": "ZKVM-1299: Fix SemVer checks for 2.0.1 release (#3060)\n\nThis pulls forward the version bumps from the release branch, and does\nfurther bumps for changes between the release branch and main",
+          "timestamp": "2025-04-01T16:42:16-07:00",
+          "tree_id": "86a14e693c4be8dca59888ec2c1c3e14160f96e7",
+          "url": "https://github.com/risc0/risc0/commit/b74ca14cbd4a9c9f7f72f8ebe440bf1c93c0e16e"
+        },
+        "date": 1743551409789,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30837672,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 544759,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 543235,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 569048,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 363966,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 523309,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 406973,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743551232855,
+  "lastUpdate": 1743551420502,
   "repoUrl": "https://github.com/risc0/risc0"
 }
