@@ -47532,6 +47532,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b74ca14cbd4a9c9f7f72f8ebe440bf1c93c0e16e",
+          "message": "ZKVM-1299: Fix SemVer checks for 2.0.1 release (#3060)\n\nThis pulls forward the version bumps from the release branch, and does\nfurther bumps for changes between the release branch and main",
+          "timestamp": "2025-04-01T16:42:16-07:00",
+          "tree_id": "86a14e693c4be8dca59888ec2c1c3e14160f96e7",
+          "url": "https://github.com/risc0/risc0/commit/b74ca14cbd4a9c9f7f72f8ebe440bf1c93c0e16e"
+        },
+        "date": 1743551229663,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26628524,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 839087,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 837629,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 645119,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 432068,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 791798,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 573101,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -94056,6 +94115,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743543176030,
+  "lastUpdate": 1743551232855,
   "repoUrl": "https://github.com/risc0/risc0"
 }
