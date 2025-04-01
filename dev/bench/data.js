@@ -93876,9 +93876,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "982ad9a6fd7670577137bf6e9ad9d285631b4fa2",
+          "message": "ZKVM-1286: bump risc0-build to 2.1.0 (#3052)\n\nThis version bump is due to #3037",
+          "timestamp": "2025-04-01T21:21:26Z",
+          "tree_id": "27fa147e5a9f4fee54f8b408e93923fa5da363ac",
+          "url": "https://github.com/risc0/risc0/commit/982ad9a6fd7670577137bf6e9ad9d285631b4fa2"
+        },
+        "date": 1743542933874,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30994292,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 545421,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 543897,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 579850,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 373894,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 522977,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 409550,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743542782417,
+  "lastUpdate": 1743542944499,
   "repoUrl": "https://github.com/risc0/risc0"
 }
