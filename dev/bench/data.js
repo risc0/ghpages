@@ -23883,6 +23883,65 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fd65372f9c081527d1d4b66fd4dcbc36a3901767",
+          "message": "ZKVM-1296: client/server: fix version mismatch message (#3059)\n\nThis version mismatch error message suggests the user to install a\nversion of r0vm that the user already has installed. Fix this by\nsuggesting that they install the version of r0vm that matches the client\nversion instead.",
+          "timestamp": "2025-04-02T00:45:51Z",
+          "tree_id": "b5860b76683cd6b1fe8465e2049bc646c5621b83",
+          "url": "https://github.com/risc0/risc0/commit/fd65372f9c081527d1d4b66fd4dcbc36a3901767"
+        },
+        "date": 1743558000055,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27339772,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 15703,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15726,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43688,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42381,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15713,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14392,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -94469,6 +94528,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743557709621,
+  "lastUpdate": 1743558010986,
   "repoUrl": "https://github.com/risc0/risc0"
 }
