@@ -94348,9 +94348,68 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fd65372f9c081527d1d4b66fd4dcbc36a3901767",
+          "message": "ZKVM-1296: client/server: fix version mismatch message (#3059)\n\nThis version mismatch error message suggests the user to install a\nversion of r0vm that the user already has installed. Fix this by\nsuggesting that they install the version of r0vm that matches the client\nversion instead.",
+          "timestamp": "2025-04-02T00:45:51Z",
+          "tree_id": "b5860b76683cd6b1fe8465e2049bc646c5621b83",
+          "url": "https://github.com/risc0/risc0/commit/fd65372f9c081527d1d4b66fd4dcbc36a3901767"
+        },
+        "date": 1743557591154,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30669712,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/sha-256",
+            "value": 544258,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 542604,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565093,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 358953,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 523180,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 407078,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1743557405182,
+  "lastUpdate": 1743557600970,
   "repoUrl": "https://github.com/risc0/risc0"
 }
