@@ -71702,6 +71702,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2d34b2140972f9ee76c96b991eda12dfde78fa9c",
+          "message": "ZKVM-1302: datasheet: remove sha256 (#3064)\n\nAs of now, proof generation ignores the hash function and always\ngenerates poseidon2 proofs. Remove sha256 from the datasheet for now.",
+          "timestamp": "2025-04-03T18:01:43Z",
+          "tree_id": "1fcfdda553ec0594dd09ef59f377e9853b7da0a0",
+          "url": "https://github.com/risc0/risc0/commit/2d34b2140972f9ee76c96b991eda12dfde78fa9c"
+        },
+        "date": 1743705468144,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 51076320,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13875,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164563,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 151129,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14033,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13301,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -94690,6 +94744,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743705414835,
+  "lastUpdate": 1743705470702,
   "repoUrl": "https://github.com/risc0/risc0"
 }
