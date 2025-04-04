@@ -23996,6 +23996,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2cb85ce829918b03a493dbb28e9ed3daac494a8",
+          "message": "ZKVM-1308: Fix & run Clippy for risc0-bigint2 (#3070)\n\nThis adds a run with `-F unstable` to the clippy CI job. It also adds\nthe corresponding fixes to risc0-bigint2. This caught a number of\noverlooked issues that only affected `unstable` functionality.\n\nThis includes the commit from https://github.com/risc0/risc0/pull/3069,\nwhich is a change clippy would have caught.\n\n---------\n\nCo-authored-by: Barajeel <0xsilomir@gmail.com>",
+          "timestamp": "2025-04-03T23:37:46Z",
+          "tree_id": "1bc571380059b0a97a79d141cb27167968082209",
+          "url": "https://github.com/risc0/risc0/commit/a2cb85ce829918b03a493dbb28e9ed3daac494a8"
+        },
+        "date": 1743726476996,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27217550,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15689,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43483,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42173,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15752,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14418,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -94852,6 +94906,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743726455595,
+  "lastUpdate": 1743726487958,
   "repoUrl": "https://github.com/risc0/risc0"
 }
