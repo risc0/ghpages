@@ -72026,6 +72026,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "9038069+dot-asm@users.noreply.github.com",
+            "name": "Andy Polyakov",
+            "username": "dot-asm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "16842bf57c238235b64220e1fb852de83b61f0a7",
+          "message": "Switch to released sppark prefix_op and div_by_x_minus_z. (#3042)\n\nAccumOpType is removed to minimize the compile time. As for benefits,\nmost notably prefix_product is +2.5x faster on RTX 4090.\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>",
+          "timestamp": "2025-04-04T03:32:12Z",
+          "tree_id": "56cbb1cf1094a6214c76ce405bc5d9d4886f1075",
+          "url": "https://github.com/risc0/risc0/commit/16842bf57c238235b64220e1fb852de83b61f0a7"
+        },
+        "date": 1743739694958,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 50979148,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13486,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164762,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150050,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14015,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13432,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -95122,6 +95176,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1743739614312,
+  "lastUpdate": 1743739697057,
   "repoUrl": "https://github.com/risc0/risc0"
 }
