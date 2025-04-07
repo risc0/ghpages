@@ -72188,6 +72188,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim.zerrell@risczero.com",
+            "name": "Tim Zerrell",
+            "username": "tzerrell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c48844f36688f89274f4a094e519b0dbe061a267",
+          "message": "ZKVM-1311: Split RSA precompile into multiple modmuls (#3075)\n\nInstead of running a single monolithic RSA precompile, split it into its\nconstituent modmuls.",
+          "timestamp": "2025-04-07T20:39:45Z",
+          "tree_id": "ba0e11a0689ef2c7f66099bfadadda21c9d44d5d",
+          "url": "https://github.com/risc0/risc0/commit/c48844f36688f89274f4a094e519b0dbe061a267"
+        },
+        "date": 1744060982677,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 50444072,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13861,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 164659,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 150582,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 14059,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13389,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -95338,6 +95392,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1744060887550,
+  "lastUpdate": 1744060984679,
   "repoUrl": "https://github.com/risc0/risc0"
 }
