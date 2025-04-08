@@ -95443,9 +95443,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112983328+mars-risc0@users.noreply.github.com",
+            "name": "Mars Saxman",
+            "username": "mars-risc0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3dabdc1f4ad46ab54d022f6337aa203b43397302",
+          "message": "ZKVM-1304: Run prover on Mac OS / aarch64 (#3066)",
+          "timestamp": "2025-04-07T23:34:54Z",
+          "tree_id": "970cbfdba4d78414a392c6ecdaba525a6cb2af49",
+          "url": "https://github.com/risc0/risc0/commit/3dabdc1f4ad46ab54d022f6337aa203b43397302"
+        },
+        "date": 1744070917303,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31279814,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 538327,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565566,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 359342,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 519052,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 403677,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1744070733047,
+  "lastUpdate": 1744070928017,
   "repoUrl": "https://github.com/risc0/risc0"
 }
