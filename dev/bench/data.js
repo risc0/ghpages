@@ -72728,6 +72728,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2fd8fa9514992a4707ce50bd59cd55d87b0612e",
+          "message": "ZKVM-1327: Return an error if \"sha-256\" is used for the hashfn (#3089)\n\nUpdate `ProverOpts::fast()` to use poseidon2 for the hashfn, otherwise\nit will be unusable.\n\nWe didn't properly implement \"sha-256\" support for segment proving in\nv2. Instead of ignoring the hashfn value, we should check that it is\n\"poseidon2\", the only hashfn that we currently support.",
+          "timestamp": "2025-04-11T17:03:34Z",
+          "tree_id": "7c687cbe59a44d2685579da35007defee4066f9f",
+          "url": "https://github.com/risc0/risc0/commit/a2fd8fa9514992a4707ce50bd59cd55d87b0612e"
+        },
+        "date": 1744393897703,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 50332776,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13700,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 165975,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 151714,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13809,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12994,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -96094,6 +96148,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1744393850120,
+  "lastUpdate": 1744393901922,
   "repoUrl": "https://github.com/risc0/risc0"
 }
