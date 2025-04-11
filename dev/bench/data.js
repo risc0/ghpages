@@ -95821,9 +95821,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f3871b0f8e71e1043fd39c28aab4802c2afef071",
+          "message": "ZKVM-1326: Don't error in the profiler when it gets confused about the call stack (#3088)\n\nIts a bug that the profiler is getting confused about the call stack,\nand as a result may be producing bad samples (although probably just\ncall-stacks which are parented incorrectly)\n\nIts better to not error and produce some kind of profile, even if its\nless-than-perfect in some ways.",
+          "timestamp": "2025-04-11T16:33:30Z",
+          "tree_id": "73af0ef28f0f6c9933d38c75c135bac08fb4424e",
+          "url": "https://github.com/risc0/risc0/commit/f3871b0f8e71e1043fd39c28aab4802c2afef071"
+        },
+        "date": 1744392636531,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 29937090,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 536144,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 566736,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 366426,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 512161,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 403403,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1744392467860,
+  "lastUpdate": 1744392647280,
   "repoUrl": "https://github.com/risc0/risc0"
 }
