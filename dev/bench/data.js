@@ -95605,9 +95605,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "7bc671e63276bfa713974854229b70f65f4847d4",
+          "message": "ZKVM-1312: Add a program that tries to do worst-cost analysis on BigInt program (#3076)\n\nIt tries to figure out the worst-case in terms of paging cycles.",
+          "timestamp": "2025-04-11T16:33:01Z",
+          "tree_id": "b359658cac0bb682624c5b2653557d007a8f40bf",
+          "url": "https://github.com/risc0/risc0/commit/7bc671e63276bfa713974854229b70f65f4847d4"
+        },
+        "date": 1744391530097,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30654790,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 543765,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 553409,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 363141,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 522454,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 406270,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1744071040648,
+  "lastUpdate": 1744391539919,
   "repoUrl": "https://github.com/risc0/risc0"
 }
