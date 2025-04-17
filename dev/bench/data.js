@@ -48632,6 +48632,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b2be26622480497be7510d07db0d133d988cbe1f",
+          "message": "ZKVM-1334: Hard disable fake receipt verification in the zkVM (#3102)\n\nIn https://github.com/risc0/risc0/pull/2415 we disabled environment\nvariables by default in the guest, so without explicitly enabling\n`sys-getenv`, a fake receipt will never verify. This PR goes further by\ndisabling the verification of fake receipt and preventing any option\nfrom turning it on, bolstering the misuse resistance of the\n`Receipt::verify` API in the guest.",
+          "timestamp": "2025-04-17T00:09:40Z",
+          "tree_id": "e3042cf6c7e6339729dfb6112aaebc62bf627f3f",
+          "url": "https://github.com/risc0/risc0/commit/b2be26622480497be7510d07db0d133d988cbe1f"
+        },
+        "date": 1744850772187,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27323174,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 838875,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 648025,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 435496,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 787706,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 581237,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -96202,6 +96256,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1744393921168,
+  "lastUpdate": 1744850775402,
   "repoUrl": "https://github.com/risc0/risc0"
 }
