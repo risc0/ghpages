@@ -24428,6 +24428,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112983328+mars-risc0@users.noreply.github.com",
+            "name": "Mars Saxman",
+            "username": "mars-risc0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6077662ce6d3699a4971f8c2c2bb2d0d8fa00a64",
+          "message": "ZKVM-1336: Executor adds soft cycle limit for per-segment execution (#3104)\n\nThe `max_cycles` termination behavior on `Executor::run` is now\nconfigurable: the existing behavior is a \"hard limit\", which errors out\nif the limit is reached, but one can also request a \"soft limit\", which\nsimply stops the VM and returns. This allows `Segment::execute` to\nprovide the recorded suspend cycle as the cycle limit, which prevents\nexecution from continuing to the next segment, for which there are no IO\nrecords.",
+          "timestamp": "2025-04-17T17:41:16Z",
+          "tree_id": "fb4833855d50592c8b7e0940858727869bc98751",
+          "url": "https://github.com/risc0/risc0/commit/6077662ce6d3699a4971f8c2c2bb2d0d8fa00a64"
+        },
+        "date": 1744913894939,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 26978892,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15795,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43793,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 42514,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15771,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14445,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -96526,6 +96580,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1744913860551,
+  "lastUpdate": 1744913905814,
   "repoUrl": "https://github.com/risc0/risc0"
 }
