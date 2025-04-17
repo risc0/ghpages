@@ -73268,6 +73268,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "96e5393b59047b9faf6ae4819aacf5e89605b294",
+          "message": "ZKVM-1331: Bump the MAX_INSN_CYCLES for po2 >= 15 (#3098)\n\nThis should help us avoid the large bigint program splitting issue. If a\nbigint program uses more cycles than this threshold, we may end up\noverflowing the segment and the execution errors. This threshold was too\nlow, we had bigint programs that use more cycles in practice. After\ndoing some worst-case analysis on the bigint programs we have current I\ncame up with this new threshold.\n\nHere is what the `bigint2-analyze` program estimates for our existing\nblobs\n```\nrisc0/zkos/v1compat/src/bigint_v1compat/mul_256.blob\ntotal = 8430\nrisc0/zkos/v1compat/src/bigint_v1compat/modmul_256.blob\ntotal = 10838\nrisc0/bigint2/src/ec/ec_add_384.blob\ntotal = 12716\nrisc0/bigint2/src/ec/ec_add_256.blob\ntotal = 12456\nrisc0/bigint2/src/ec/ec_double_256.blob\ntotal = 11809\nrisc0/bigint2/src/ec/ec_double_384.blob\ntotal = 12045\nrisc0/bigint2/src/field/modsub_256.blob\ntotal = 10814\nrisc0/bigint2/src/field/extfield_deg2_add_384.blob\ntotal = 10986\nrisc0/bigint2/src/field/extfieldadd_256.blob\ntotal = 10898\nrisc0/bigint2/src/field/modsub_384.blob\ntotal = 10862\nrisc0/bigint2/src/field/extfield_deg2_add_256.blob\ntotal = 10898\nrisc0/bigint2/src/field/modadd_256.blob\ntotal = 10806\nrisc0/bigint2/src/field/extfield_deg2_sub_384.blob\ntotal = 11010\nrisc0/bigint2/src/field/modinv_256.blob\ntotal = 10874\nrisc0/bigint2/src/field/modinv_384.blob\ntotal = 10950\nrisc0/bigint2/src/field/modmul_4096.blob\ntotal = 14435\nrisc0/bigint2/src/field/extfieldsub_256.blob\ntotal = 10890\nrisc0/bigint2/src/field/modadd_384.blob\ntotal = 10850\nrisc0/bigint2/src/field/extfield_deg2_sub_256.blob\ntotal = 10914\nrisc0/bigint2/src/field/extfield_deg4_mul_256.blob\ntotal = 19275\nrisc0/bigint2/src/field/extfield_xxone_mul_256.blob\ntotal = 12212\nrisc0/bigint2/src/field/extfieldmul_256.blob\ntotal = 12756\nrisc0/bigint2/src/field/extfield_deg2_mul_256.blob\ntotal = 12756\nrisc0/bigint2/src/field/extfield_xxone_mul_384.blob\ntotal = 12356\nrisc0/bigint2/src/field/modmul_256.blob\ntotal = 10838\nrisc0/bigint2/src/field/modmul_384.blob\ntotal = 10898\n```",
+          "timestamp": "2025-04-17T22:03:06Z",
+          "tree_id": "862aa332841b3c6d2727f3d61f9a34c4064addf8",
+          "url": "https://github.com/risc0/risc0/commit/96e5393b59047b9faf6ae4819aacf5e89605b294"
+        },
+        "date": 1744929502515,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 50309568,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13721,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 165758,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 151619,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13902,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13616,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -96796,6 +96850,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1744929469339,
+  "lastUpdate": 1744929504672,
   "repoUrl": "https://github.com/risc0/risc0"
 }
