@@ -73430,6 +73430,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "112983328+mars-risc0@users.noreply.github.com",
+            "name": "Mars Saxman",
+            "username": "mars-risc0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "779fadb3e208e9e705e17ba9adaf2f5753010aed",
+          "message": "ZKVM-1340: datasheet adds three segments from a po2=22 zeth run on block \"shapella\" (#3107)",
+          "timestamp": "2025-04-18T19:15:57Z",
+          "tree_id": "de3dc675aeab5dd2c709bb364c37597f48d28d66",
+          "url": "https://github.com/risc0/risc0/commit/779fadb3e208e9e705e17ba9adaf2f5753010aed"
+        },
+        "date": 1745006782351,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 50635216,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13680,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 166435,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 151320,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13910,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13593,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -97012,6 +97066,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745006750412,
+  "lastUpdate": 1745006784549,
   "repoUrl": "https://github.com/risc0/risc0"
 }
