@@ -97171,9 +97171,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4ac16240c8e76583ee6a68a3b71a21c82f37313c",
+          "message": "ZKVM-1339: bump getrandom to 0.3 (#3106)\n\nsupersedes https://github.com/risc0/risc0/pull/3095\nFixes https://github.com/risc0/risc0/issues/3094\n\n---------\n\nCo-authored-by: Jakub Konka <jakub@vlayer.xyz>\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
+          "timestamp": "2025-04-19T01:10:38Z",
+          "tree_id": "3e016cb5d209ce5c1484b943f560ecb9b75fb76c",
+          "url": "https://github.com/risc0/risc0/commit/4ac16240c8e76583ee6a68a3b71a21c82f37313c"
+        },
+        "date": 1745028528882,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31267208,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 543931,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 564617,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 363968,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 523478,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 407497,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1745028274016,
+  "lastUpdate": 1745028539459,
   "repoUrl": "https://github.com/risc0/risc0"
 }
