@@ -97333,9 +97333,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9907ea97287a82e4804d4fd768d7941ffd7e1702",
+          "message": "ZKVM-1342: Fix an issue with sys_read where it would read past the end of the (#3109)\n\nsupplied buffer, or fail in other ways.\n\nThe branch that had the issue was in the v2 kernel and only taken when\nthe read is greater than 1024. By beefing up the test to do larger reads\nwe can see the bug trigger.\n\nThe sys_read syscall would pass arguments in registers a0-a4. The first\n3 registers (a0, a1, a2) are common to all the ecall_read syscalls.\nThese are `syscall_ptr`, `buf`, and 'len`. The last two arguments (a3,\nar) are `fd` and `nwords`.\n\nOn v2, we implement ecall_read differently where it accepts `fd`, `buf`,\n`len` as the first three common arguments. We end up adapting the API in\nthe v2 kernel. The kernel calls the host ecall_read from kernel code. We\nstash the `syscall_ptr` in `fd` (the new ecall_read's `fd` argument not\nto be confused with sys_read's `fd` argument) and `buf` and `len` in\ntheir respective arguments, these are passed via kernel registers.\n\nIn the host ecall_read handler we unpack and adapt these arguments (the\nkernel registers a1 and a2) before calling into the syscall_read code\n(which we know to do thanks to a0) passing the two needed values (`buf`\nand `len` directly through).\n\nOnce in the syscall code we read the two other arguments, the actual\n`fd` and `nbytes` from the user register directly.\n\nThe return values are also different and there is code to adapt that\nincluding another ecall_read call to ferry the result, but its not\nrelevant to the issue.\n\nThis all works fine, until we deal with reads greater than 1024. The new\necall API has the limitation of only doing reads <= 1024. So if we do\nreads >= 1024 the v2 kernel has to break up the read into smaller reads.\nThis happens in the Rust implemented part of the kernel, and this is\nonly taken for sys_read, the other syscalls aren't able to deal with\nchunking at all.\n\nWhen we do this chunking though, we forget about the other sys_read\narguments, in particular the value stored in a4. This value also\ncontains the length and needs to be updated. By not updating it, the\nsys_read call does unexpected stuff, including reading not enough or too\nmuch.",
+          "timestamp": "2025-04-21T20:13:34Z",
+          "tree_id": "40a7010ed07c4fae9285e5cc3b793ab32b8fbbb0",
+          "url": "https://github.com/risc0/risc0/commit/9907ea97287a82e4804d4fd768d7941ffd7e1702"
+        },
+        "date": 1745269643075,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31212534,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 543573,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 580409,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 372550,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 521586,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 408693,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1745269491978,
+  "lastUpdate": 1745269653803,
   "repoUrl": "https://github.com/risc0/risc0"
 }
