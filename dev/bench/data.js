@@ -49280,6 +49280,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jakub@vlayer.xyz",
+            "name": "Jakub Konka",
+            "username": "kubkon"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "637311f27c303a61bcaf7c668c624d64f46c08ec",
+          "message": "fix(build): escape special chars in rustc flags if requested (#3108)\n\nFixes #3103 \n\ncc @bobbobbio\n\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>\nCo-authored-by: Erik Kaneda <erik@risczero.com>",
+          "timestamp": "2025-04-22T02:33:25Z",
+          "tree_id": "f5330ddea59c26f03be1817de977fab6247dfb2f",
+          "url": "https://github.com/risc0/risc0/commit/637311f27c303a61bcaf7c668c624d64f46c08ec"
+        },
+        "date": 1745291090713,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 27414796,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 840444,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 647910,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 434857,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 789515,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 580907,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -97498,6 +97552,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745269740426,
+  "lastUpdate": 1745291094034,
   "repoUrl": "https://github.com/risc0/risc0"
 }
