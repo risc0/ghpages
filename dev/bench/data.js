@@ -97749,9 +97749,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b9bfc8ad3547d76e9304b630f2a935bbab01aa9d",
+          "message": "ZKVM-1344: Migrate recursion witgen to GPU (#3114)",
+          "timestamp": "2025-04-23T13:21:39-07:00",
+          "tree_id": "d1a92e7b490265536e7755a3895ce3c8faa2680c",
+          "url": "https://github.com/risc0/risc0/commit/b9bfc8ad3547d76e9304b630f2a935bbab01aa9d"
+        },
+        "date": 1745440201927,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31478832,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 544042,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 985084,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 738817,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 520290,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 451083,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1745440009351,
+  "lastUpdate": 1745440213384,
   "repoUrl": "https://github.com/risc0/risc0"
 }
