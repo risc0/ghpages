@@ -73906,6 +73906,58 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Mars Saxman",
+            "username": "mars-risc0",
+            "email": "112983328+mars-risc0@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "67577e8b8f6ded8252f3c7c6ae25ca15faf2abee",
+          "message": "ZKVM-1345: Load word-aligned regions by words, not bytes (#3115)\n\nThe base addr and size parameters of a `load_region` call are very often\nword-aligned, so we can load more efficiently word-wise than with a\nbyte-by-byte loop. This improves performance on some bigint-heavy\nworkloads: datasheet exec time for `zeth_shapella_50` goes from 757ms to\n413ms, with smaller improvements seen on the other segments.",
+          "timestamp": "2025-04-22T17:29:00Z",
+          "url": "https://github.com/risc0/risc0/commit/67577e8b8f6ded8252f3c7c6ae25ca15faf2abee"
+        },
+        "date": 1745436231350,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 44621220,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13873,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 166397,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 152115,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13832,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 13517,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -97646,6 +97698,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745436232227,
+  "lastUpdate": 1745436236935,
   "repoUrl": "https://github.com/risc0/risc0"
 }
