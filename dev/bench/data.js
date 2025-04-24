@@ -74120,6 +74120,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "erik@risczero.com",
+            "name": "Erik Kaneda",
+            "username": "SchmErik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b5bf2d4a50cfb954da7f507766ba0f120c716958",
+          "message": "ZKVM-1332: enable poseidon2 syscall (#3100)\n\nCo-authored-by: Frank Laub <frank@risczero.com>\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-04-24T06:03:05Z",
+          "tree_id": "79051969db7f22d7f998d4fdc1b21fd7608d6c96",
+          "url": "https://github.com/risc0/risc0/commit/b5bf2d4a50cfb954da7f507766ba0f120c716958"
+        },
+        "date": 1745478450386,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 41197924,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13841,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32902,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32036,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13813,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12480,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -97968,6 +98022,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745477567240,
+  "lastUpdate": 1745478452571,
   "repoUrl": "https://github.com/risc0/risc0"
 }
