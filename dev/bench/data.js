@@ -98181,9 +98181,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2260d8c17b1ce17b58f536530bffa0533eac31aa",
+          "message": "ZKVM-1359: Remove extra copies from extract_zkr (#3123)\n\nThere are extra copies going on here when we realloc the `Vec` inside\n`read_to_end` and when we call `Vec::from`.\n\nThe larger the zkr the more of an issue this is. The zip format should\nhave the size of the entry in it, so we can do better.\n\nAdditionally the cast from `[u8]` -> `[u32]` is one of higher alignment\nand kinda questionable. bytemuck will crash if the alignment is not high\nenough and likely or allocation aligns all allocations at > 4, but if we\nuse a different memory allocator in the future this might not be true.\n\nThis was just something small I noticed when reading the recent\nrecursion witgen GPU patch.",
+          "timestamp": "2025-04-25T01:20:16Z",
+          "tree_id": "352f21701dda46a206532e6fd4b210d734f22e35",
+          "url": "https://github.com/risc0/risc0/commit/2260d8c17b1ce17b58f536530bffa0533eac31aa"
+        },
+        "date": 1745547308357,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 31686678,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 540858,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 990562,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 765041,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 518090,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 449559,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1745547130355,
+  "lastUpdate": 1745547319716,
   "repoUrl": "https://github.com/risc0/risc0"
 }
