@@ -68412,497 +68412,7 @@ window.BENCHMARK_DATA = {
           },
           "distinct": true,
           "id": "32c29ad9e271415ae853f4f1d8200686d27e8103",
-          "message": "ZKVM-997: [rzup] update to version 0.3 (#2712)\n\nThis update aims to create a more robust version management system for\r\nRISC Zero components. The new implementation provides improvements over\r\nthe old version:\r\n- Support for multiple versions\r\n- Better terminal UI\r\n- Less confusing CLI interface\r\n\r\nThis changes `rzup` from a standalone binary into a library with a CLI\r\nfrontend. This change allows other tools to find RISC Zero components by\r\nusing `rzup` as a library.\r\n\r\n#### Change Overview\r\n1. Component Management System\r\n- added modular component system for managing different RISC Zero\r\ncomponents\r\n   - support for components: rust, cpp, cargo-risczero, and r0vm\r\n   - consistent versioning across components using semver\r\n\r\n2. Installation & Version Management\r\n   - improved version detection and management\r\n   - support for multiple versions of each component\r\n   - atomic installations with cleanup on failure\r\n\r\n3. Enhanced CLI Experience\r\n   - suggestions and tips\r\n   - less ambiguous usage pattern\r\n   - more descriptive errors \r\n   - progress indicators and colorized output\r\n   - Quiet and verbose mode\r\n\r\n4. Settings Management\r\n   - persistent settings (`settings.toml`)\r\n   - per-component version management (with `rzup default ...`)\r\n\r\n#### Migration (from `rzup` < 0.3)\r\n- Existing component installations and `.risc0/` structure is preserved\r\nand backward compatible\r\n- core cli usage remains largely unchanged (remove confusing\r\nextension/toolchain usage)\r\n\r\n#### Example usage\r\n\r\nAs a user:\r\n```\r\nrzup v0.3.0-alpha.1\r\n\r\n    ██████  █▀▀▀██\r\n    ██████  █ ▄▀ █\r\n    ██████  ██▄▄▄█\r\n    ██████\r\n    ██████   RISC\r\n    ██████   ZERO\r\n\r\nUsage: rzup [OPTIONS] <COMMAND>\r\n\r\nCommands:\r\n  install    Install and update components\r\n  check      Check for new component versions\r\n  default    Set a component version as default\r\n  show       Show installed components\r\n  uninstall  Uninstall a component\r\n  build      Build a component\r\n  help       Print this message or the help of the given subcommand(s)\r\n\r\nOptions:\r\n  -v, --verbose  Enable verbose output\r\n  -q, --quiet    Suppress output\r\n  -h, --help     Print help\r\n  -V, --version  Print version\r\n\r\nDiscussion:\r\n    Installs and manages software components distributed by Risc Zero.\r\n\r\n    Installed components are stored in the path specified by the `RISC0_HOME`\r\n    environment variable, or in `~/.risc0` if not set.\r\n\r\n    Rust software components symlink their binaries into ~/.cargo/bin/ when\r\n    made default.\r\n```\r\n\r\n```bash\r\n# Install latest versions\r\nrzup install\r\n\r\n# Update components to latest versions (note: this is an alias to install)\r\nrzup update\r\n\r\n# Install specific version of cargo-risczero\r\nrzup install cargo-risczero 1.0.0\r\n\r\n# Install specific version of rust toolchain\r\nrzup install rust 1.81.0\r\n\r\n# Check for updates\r\nrzup check\r\n\r\n# Show installed versions\r\nrzup show\r\n\r\n# Set a specific version of a component as default\r\nrzup default cargo-risczero 1.0.0\r\n\r\n# Uninstall a component\r\nrzup uninstall rust 1.79.0\r\n```\r\n\r\nAs a library:\r\n```rust \r\nuse rzup::{Rzup, Result};\r\nuse semver::Version;\r\n\r\nfn main() -> Result<()> {\r\n    let mut rzup = Rzup::new()?;\r\n    \r\n    // Get active version\r\n    if let Some((version, path)) = rzup.get_default_version(\"cargo-risczero\")? {\r\n        println!(\"Default version: {} at {}\", version, path.display());\r\n    }\r\n    \r\n    Ok(())\r\n}\r\n```\r\n\r\nPR for integration with risc0 crates\r\nhttps://github.com/risc0/risc0/pull/2752\r\n\r\n---------\r\n\r\nCo-authored-by: Hans Martin <hal@mbp.local>\r\nCo-authored-by: Remi Bernotavicius <remi@risczero.com>\r\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
-          "timestamp": "2025-01-27T13:08:23-08:00",
-          "tree_id": "5be8608cf95fe34bee446a53457a9b82e943c72a",
-          "url": "https://github.com/risc0/risc0/commit/32c29ad9e271415ae853f4f1d8200686d27e8103"
-        },
-        "date": 1738012393045,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 31639182,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 95681,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 83859,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 160509,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 149999,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88553,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 58413,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "flaub@risc0.com",
-            "name": "Frank Laub",
-            "username": "flaub"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "1253b270acbe777f7d3a05846e2d9a09b96e5344",
-          "message": "ZKVM-999: risc0-build: Use a builder pattern for GuestOptions and DockerOptions (#2762)\n\nAlso includes the ability to specify custom environment variables for\r\ndocker builds.\r\n\r\nSupersedes #2709\r\n\r\n---------\r\n\r\nCo-authored-by: Adam Wierzbicki <adam.wierzbicki@vlayer.xyz>",
-          "timestamp": "2025-01-28T02:09:39Z",
-          "tree_id": "9d54c987b49f486779c156f34ef9ef7ea93fc6a1",
-          "url": "https://github.com/risc0/risc0/commit/1253b270acbe777f7d3a05846e2d9a09b96e5344"
-        },
-        "date": 1738030464370,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 31847266,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 94771,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 84390,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 162541,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 148789,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88014,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 58079,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "erik@risczero.com",
-            "name": "Erik Kaneda",
-            "username": "SchmErik"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b74b2677c88c6a61cbc3b76ddaacdda720679c60",
-          "message": "ZKVM-1006: keccak: remove input accumulation in guest (#2775)\n\nThis is a follow up from a previous PR. This actually removes the input\r\naccumulation. It was missed in the previous PR.",
-          "timestamp": "2025-01-28T05:17:24Z",
-          "tree_id": "238f789ae9eb682a00d279d15e212157df40fbce",
-          "url": "https://github.com/risc0/risc0/commit/b74b2677c88c6a61cbc3b76ddaacdda720679c60"
-        },
-        "date": 1738041731320,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 31075818,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 96742,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 85130,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 161670,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 150189,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88880,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 59240,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "112983328+mars-risc0@users.noreply.github.com",
-            "name": "Mars Saxman",
-            "username": "mars-risc0"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "bdcf74045458f0a5ab86d455c4a4273473f55e21",
-          "message": "ZKVM-995: replace `num-bigint` with better-performing `ibig` for bibc evaluator (#2760)\n\nRunning Parker's k256-test benchmark, the cycle rate prior to this\r\nchange was 6.2618 MHz, and the cycle rate with the new library is 6.7958\r\nMHz.",
-          "timestamp": "2025-01-28T11:02:08-08:00",
-          "tree_id": "979a21d484558bb2f30b37aa858409b5381b4892",
-          "url": "https://github.com/risc0/risc0/commit/bdcf74045458f0a5ab86d455c4a4273473f55e21"
-        },
-        "date": 1738091218107,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 30665124,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 97535,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 85990,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 160982,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 150152,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88266,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 59215,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "bobbobbio@gmail.com",
-            "name": "Remi Bernotavicius",
-            "username": "bobbobbio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5a7fa0389b974479b9bfc2355265d61527ed9f25",
-          "message": "[AUD-7] Fix heap-pointer overflow in sys_alloc_aligned (#2778)",
-          "timestamp": "2025-01-29T18:22:40-08:00",
-          "tree_id": "2b1208e24b35568f39908651f6b24413b9077f0b",
-          "url": "https://github.com/risc0/risc0/commit/5a7fa0389b974479b9bfc2355265d61527ed9f25"
-        },
-        "date": 1738204047123,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 30781558,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 99295,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 85738,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 160773,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 148556,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88475,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 58847,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "victor@risczero.com",
-            "name": "Victor Snyder-Graf",
-            "username": "nategraf"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "11624074763e4202ee658f942895057db597bcc6",
-          "message": "ZKVM-1011: Add unstable feature flag to risc0-zkp Cargo.toml to address warning and allow usage of unstable feature (#2779)\n\nhttps://github.com/risc0/risc0/pull/2658 introduced some API surface\nunder `#[stability::unstable]` but forgot to add the `unstable` flag. I\nsaw warnings about this in the CI builds and so figured I should open\nthis PR\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
-          "timestamp": "2025-01-30T15:53:38-08:00",
-          "tree_id": "d204d7207dc6913118ab8613e36ca3a477d66ff7",
-          "url": "https://github.com/risc0/risc0/commit/11624074763e4202ee658f942895057db597bcc6"
-        },
-        "date": 1738281512827,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 30730784,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 99280,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 86462,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 163563,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 149981,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88128,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 59100,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "welzwo@gmail.com",
-            "name": "Wolfgang Welz",
-            "username": "Wollac"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "1557e8d2683f2b9d7b505657f98f42b6104ccbcc",
-          "message": "ZKVM-969: Groth16: Switch from rapidsnark to gnark (#2740)\n\nCreate Groth16 proofs using `gnark`instead of `rapidsnark`.\r\n\r\nThis process consists of the following parts:\r\n- **`circom-compat`:** the Gnark bindings to Circom's R1CS, WTNS, and\r\nZKEY for Groth16 proof generation in Go.\r\n- An update to the **`risczero/risc0-groth16-prover` Dockerfile**:\r\n- During the Docker build process, it runs the `circom-compat` converter\r\nto convert the `r1cs` and `zkey` files to their gnark counterparts.\r\n- It replaces `rapidsnark` with the `circom-compat` prover that reads\r\nthese converted files plus the witness file.\r\n- In the entrypoint script, it creates a named Unix pipe to write the\r\nwitness data to, allowing the prover to start and read the constraint\r\nsystem while the witness generation is still running.\r\n- A **patched `gnark`** version to match circom's R1CS-to-QAP reduction.\r\n(See https://github.com/risc0/gnark/pull/1)\r\n\r\nThe resulting docker image has been deployed as\r\n[risczero/risc0-groth16-prover:v2025-01-24.1](https://hub.docker.com/layers/risczero/risc0-groth16-prover/v2025-01-24.1/images/sha256-434755bb2ccc0fb886f67855b67f37ba61c4983cb405dd3159588ce15016bbc3)\r\nand `risc0/groth16/src/docker.rs` has been updated to use that image.\r\nThe `circom-compat` Go tests have been added to the CI.\r\n\r\nCloses ZKVM-906\r\n\r\n---------\r\n\r\nCo-authored-by: Paul <paul.gafni@gmail.com>",
-          "timestamp": "2025-01-31T20:05:03Z",
-          "tree_id": "9d14ba30c39ae61b1fdfd54442ee1ac08612acdf",
-          "url": "https://github.com/risc0/risc0/commit/1557e8d2683f2b9d7b505657f98f42b6104ccbcc"
-        },
-        "date": 1738354187689,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 30754754,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 99349,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 86343,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 161987,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 149314,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88130,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 59053,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "bobbobbio@gmail.com",
-            "name": "Remi Bernotavicius",
-            "username": "bobbobbio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "2eba98b48e7e9914b75dd617622276a6cfd3af56",
-          "message": "ZKVM-578: Add bigint2 benchmarks to the datasheet (#2784)\n\nThis adds two benchmarks, one for execute and one for prove_segment.\r\n\r\nThe guest program runs k256 ECDSA verify in a loop.\r\n\r\nThe execute benchmark does about 1M cycles like the existing benchmark.\r\n\r\nThe prove_segment benchmark proves one full segment of this.\r\n\r\nWe use po2=20, which is the default",
-          "timestamp": "2025-02-04T00:36:01Z",
-          "tree_id": "d8b90b3cf7c21af44fb4f6087ddd80dcf4b7d803",
-          "url": "https://github.com/risc0/risc0/commit/2eba98b48e7e9914b75dd617622276a6cfd3af56"
-        },
-        "date": 1738629653997,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 30803572,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 98163,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/poseidon2",
-            "value": 87303,
-            "unit": "Hz"
-          },
-          {
-            "name": "lift",
-            "value": 163354,
-            "unit": "Hz"
-          },
-          {
-            "name": "join",
-            "value": 150332,
-            "unit": "Hz"
-          },
-          {
-            "name": "composite",
-            "value": 88504,
-            "unit": "Hz"
-          },
-          {
-            "name": "succinct",
-            "value": 59216,
-            "unit": "Hz"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "parker@risczero.com",
-            "name": "Parker Thompson",
-            "username": "mothran"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "12e4a12d19e97f058ea1b7b891e7e43cbde789a2",
-          "message": "ZKVM-1025: Update rust toolchain to 1.83 (#2787)\n\nUpdate rust to 1.83 for pending PR libs\r\nFixed clippy warnings\r\n\r\nRelated PRs:\r\nhttps://github.com/risc0/risc0/pull/2777\r\nhttps://github.com/risc0/zirgen/pull/171\r\n\r\n---------\r\n\r\nCo-authored-by: Frank Laub <flaub@risc0.com>",
-          "timestamp": "2025-02-04T22:39:16Z",
-          "tree_id": "00c4650d6f7bd41516355991d610db6dae984681",
-          "url": "https://github.com/risc0/risc0/commit/12e4a12d19e97f058ea1b7b891e7e43cbde789a2"
-        },
-        "date": 1738709046605,
-        "tool": "customBiggerIsBetter",
-        "benches": [
-          {
-            "name": "execute",
-            "value": 31205612,
-            "unit": "Hz"
-          },
-          {
-            "name": "prove/sha-256",
-            "value": 98432,
-            "unit": "Hz"
-          },
-          {
+          "message": "ZKVM-997: [rzup] update to version 0.3 (#2712)\n\nThis update aims to create a more robust version management system for\r\nRISC Zero components. The new implementation provides improvements over\r\nthe old version:\r\n- Support for multiple versions\r\n- Better terminal UI\r\n- Less confusing CLI interface\r\n\r\nThis changes `rzup` from a standalone binary into a library with a CLI\r\nfrontend. This change allows other tools to find RISC Zero components by\r\nusing `rzup` as a library.\r\n\r\n#### Change Overview\r\n1. Component Management System\r\n- added modular component system for managing different RISC Zero\r\ncomponents\r\n   - support for components: rust, cpp, cargo-risczero, and r0vm\r\n   - consistent versioning across components using semver\r\n\r\n2. Installation & Version Management\r\n   - improved version detection and management\r\n   - support for multiple versions of each component\r\n   - atomic installations with cleanup on failure\r\n\r\n3. Enhanced CLI Experience\r\n   - suggestions and tips\r\n   - less ambiguous usage pattern\r\n   - more descriptive errors \r\n   - progress indicators and colorized output\r\n   - Quiet and verbose mode\r\n\r\n4. Settings Management\r\n   - persistent settings (`settings.toml`)\r\n   - per-component version management (with `rzup default ...`)\r\n\r\n#### Migration (from `rzup` < 0.3)\r\n- Existing component installations and `.risc0/` structure is preserved\r\nand backward compatible\r\n- core cli usage remains largely unchanged (remove confusing\r\nextension/toolchain usage)\r\n\r\n#### Example usage\r\n\r\nAs a user:\r\n```\r\nrzup v0.3.0-alpha.1\r\n\r\n    ██████  █▀▀▀██\r\n    ██████  █ ▄▀ █\r\n    ██████  ██▄▄▄█\r\n    ██████\r\n    ██████   RISC\r\n    ██████   ZERO\r\n\r\nUsage: rzup [OPTIONS] <COMMAND>\r\n\r\nCommands:\r\n  install    Install and update components\r\n  check      Check for new component versions\r\n  default    Set a component version as default\r\n  show       Show installed components\r\n  uninstall  Uninstall a component\r\n  build      Build a component\r\n  help       Print this message or the help of the given subcommand(s)\r\n\r\nOptions:\r\n  -v, --verbose  Enable verbose output\r\n  -q, --quiet    Suppress output\r\n  -h, --help     Print help\r\n  -V, --version  Print version\r\n\r\nDiscussion:\r\n    Installs and manages software components distributed by Risc Zero.\r\n\r\n    Installed components are stored in the path specified by the `RISC0_HOME`\r\n    environment variable, or in `~/.risc0` if not set.\r\n\r\n    Rust software components symlink their binaries into ~/.cargo/bin/ when\r\n    made default.\r\n```\r\n\r\n```bash\r\n# Install latest versions\r\nrzup install\r\n\r\n# Update components to latest versions (note: this is an alias to install)\r\nrzup update\r\n\r\n# Install specific version of cargo-risczero\r\nrzup install cargo-risczero 1.0.0\r\n\r\n# Install specific version of rust toolchain\r\nrzup install rust 1.81.0\r\n\r\n# Check for updates\r\nrzup check\r\n\r\n# Show installed versions\r\nrzup show\r\n\r\n# Set a specific version of a component as default\r\nrzup default cargo-risczero 1.0.0\r\n\r\n# Uninstall a component\r\nrzup uninstall rust 1.79.0\r\n```\r\n\r\nAs a library:\r\n```rust \r\nuse rzup::{Rzup, Result};\r\nuse semver::Version;\r\n\r\nfn main() -> Result<()> {\r\n    let mut rzup = Rzup::new()?;\r\n    \r\n    // Get active version\r\n    if let Some((version, path)) = rzup.get_default_version(\"cargo-risczero\")? {\r\n        println!(\"Default version: {} at {}\", version, path.display());\r\n    }\r\n    \r\n    Ok(())\r\n}\r\n```\r\n\r\nPR for integration with risc0 crates\r\nhttps://github.com/risc0/risc0/pull/2752\r\n\r\n---------\r\n\r\nCo-authored-by: Hans Marti                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    {
             "name": "prove/poseidon2",
             "value": 86268,
             "unit": "Hz"
@@ -74441,6 +73951,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "succinct",
             "value": 12395,
+            "unit": "Hz"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76301823f3d3d02af88391bbabd57a54ce4095b2",
+          "message": "ZKVM-1360: Drop legacy code and bump versions (#3124)\n\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
+          "timestamp": "2025-04-25T18:44:02Z",
+          "tree_id": "49eb32aa7850d02c82c39f528468bda079402cb5",
+          "url": "https://github.com/risc0/risc0/commit/76301823f3d3d02af88391bbabd57a54ce4095b2"
+        },
+        "date": 1745609775356,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 41622688,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13893,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32131,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31625,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13816,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12369,
             "unit": "Hz"
           }
         ]
@@ -98400,6 +97964,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745609769244,
+  "lastUpdate": 1745609777620,
   "repoUrl": "https://github.com/risc0/risc0"
 }
