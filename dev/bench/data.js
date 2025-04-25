@@ -98343,9 +98343,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76301823f3d3d02af88391bbabd57a54ce4095b2",
+          "message": "ZKVM-1360: Drop legacy code and bump versions (#3124)\n\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
+          "timestamp": "2025-04-25T18:44:02Z",
+          "tree_id": "49eb32aa7850d02c82c39f528468bda079402cb5",
+          "url": "https://github.com/risc0/risc0/commit/76301823f3d3d02af88391bbabd57a54ce4095b2"
+        },
+        "date": 1745609758164,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30595890,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 545990,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 993732,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 766693,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 522632,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 453852,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1745609750350,
+  "lastUpdate": 1745609769244,
   "repoUrl": "https://github.com/risc0/risc0"
 }
