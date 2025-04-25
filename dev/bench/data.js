@@ -24802,6 +24802,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76301823f3d3d02af88391bbabd57a54ce4095b2",
+          "message": "ZKVM-1360: Drop legacy code and bump versions (#3124)\n\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
+          "timestamp": "2025-04-25T18:44:02Z",
+          "tree_id": "49eb32aa7850d02c82c39f528468bda079402cb5",
+          "url": "https://github.com/risc0/risc0/commit/76301823f3d3d02af88391bbabd57a54ce4095b2"
+        },
+        "date": 1745609739372,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28846798,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15766,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44177,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41769,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15775,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14443,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -98292,6 +98346,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745609553364,
+  "lastUpdate": 1745609750350,
   "repoUrl": "https://github.com/risc0/risc0"
 }
