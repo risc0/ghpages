@@ -74237,6 +74237,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa88574ffc1b35dd3893f6035f1d132ae78d6aa6",
+          "message": "ZKVM-1361: Integrate community contributions (#3126)\n\nSource:\n\n* https://github.com/risc0/risc0/pull/3093\n* https://github.com/risc0/risc0/pull/3099\n\n---------\n\nCo-authored-by: FT <140458077+zeevick10@users.noreply.github.com>\nCo-authored-by: Dmytrol <46675332+Dimitrolito@users.noreply.github.com>",
+          "timestamp": "2025-04-28T17:49:32Z",
+          "tree_id": "a62360f4cf4fdde5c782b230e5321dbf174deb6f",
+          "url": "https://github.com/risc0/risc0/commit/aa88574ffc1b35dd3893f6035f1d132ae78d6aa6"
+        },
+        "date": 1745868215012,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 39288344,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13551,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32583,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31980,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13067,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12408,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -98301,6 +98355,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745866041423,
+  "lastUpdate": 1745868217185,
   "repoUrl": "https://github.com/risc0/risc0"
 }
