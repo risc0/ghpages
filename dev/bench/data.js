@@ -24856,6 +24856,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "58c1ff0debc54bc55601c643c24c9453e4659a5e",
+          "message": "ZKVM-1357: Update dependencies (#3121)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2025-04-28T00:53:56-07:00",
+          "tree_id": "fcb9f77eda39ec1004fda8433d055521d2a5a09b",
+          "url": "https://github.com/risc0/risc0/commit/58c1ff0debc54bc55601c643c24c9453e4659a5e"
+        },
+        "date": 1745827605951,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28893306,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15571,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43949,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41399,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15553,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14269,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -98031,6 +98085,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745827366352,
+  "lastUpdate": 1745827620665,
   "repoUrl": "https://github.com/risc0/risc0"
 }
