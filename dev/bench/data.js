@@ -98190,9 +98190,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa88574ffc1b35dd3893f6035f1d132ae78d6aa6",
+          "message": "ZKVM-1361: Integrate community contributions (#3126)\n\nSource:\n\n* https://github.com/risc0/risc0/pull/3093\n* https://github.com/risc0/risc0/pull/3099\n\n---------\n\nCo-authored-by: FT <140458077+zeevick10@users.noreply.github.com>\nCo-authored-by: Dmytrol <46675332+Dimitrolito@users.noreply.github.com>",
+          "timestamp": "2025-04-28T17:49:32Z",
+          "tree_id": "a62360f4cf4fdde5c782b230e5321dbf174deb6f",
+          "url": "https://github.com/risc0/risc0/commit/aa88574ffc1b35dd3893f6035f1d132ae78d6aa6"
+        },
+        "date": 1745865815323,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 30968104,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 545581,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 999465,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 769321,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 524562,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 455433,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1745865654174,
+  "lastUpdate": 1745865825308,
   "repoUrl": "https://github.com/risc0/risc0"
 }
