@@ -74399,6 +74399,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7967f4afa4496420b59e31651b237e0f44dc35fd",
+          "message": "ZKVM-1363: Update the semver-baselines.lock file for recent release (#3133)\n\nBump any versions that need bumping.",
+          "timestamp": "2025-04-29T00:43:37Z",
+          "tree_id": "2d224a85d91394e4081f2533d269b817f1328fa7",
+          "url": "https://github.com/risc0/risc0/commit/7967f4afa4496420b59e31651b237e0f44dc35fd"
+        },
+        "date": 1745889770000,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 41259176,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13783,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32371,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31336,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13486,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12388,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -98517,6 +98571,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745889771371,
+  "lastUpdate": 1745889775808,
   "repoUrl": "https://github.com/risc0/risc0"
 }
