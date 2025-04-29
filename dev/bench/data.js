@@ -24964,6 +24964,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7967f4afa4496420b59e31651b237e0f44dc35fd",
+          "message": "ZKVM-1363: Update the semver-baselines.lock file for recent release (#3133)\n\nBump any versions that need bumping.",
+          "timestamp": "2025-04-29T00:43:37Z",
+          "tree_id": "2d224a85d91394e4081f2533d269b817f1328fa7",
+          "url": "https://github.com/risc0/risc0/commit/7967f4afa4496420b59e31651b237e0f44dc35fd"
+        },
+        "date": 1745889745598,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 29290518,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15602,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43800,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41451,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15269,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14315,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -98409,6 +98463,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1745889547541,
+  "lastUpdate": 1745889756548,
   "repoUrl": "https://github.com/risc0/risc0"
 }
