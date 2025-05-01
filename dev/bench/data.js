@@ -25018,6 +25018,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "515b80438fe82ff831d461fd3ae55a7dbce5a8b6",
+          "message": "ZKVM-1364: Replace decoding table with rust matches (#3135)\n\nCo-authored-by: bobbobbio <bobbobbio@gmail.com>",
+          "timestamp": "2025-04-30T23:43:18Z",
+          "tree_id": "b1df5efd7f8317f08ccf4ceadaf1064c5ea393ce",
+          "url": "https://github.com/risc0/risc0/commit/515b80438fe82ff831d461fd3ae55a7dbce5a8b6"
+        },
+        "date": 1746059733391,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32419894,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15721,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44057,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41692,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15835,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14548,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -98625,6 +98679,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1746059548081,
+  "lastUpdate": 1746059744404,
   "repoUrl": "https://github.com/risc0/risc0"
 }
