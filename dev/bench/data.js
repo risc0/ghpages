@@ -25072,6 +25072,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1bb69ce59be14c7df0b346ebf9b109fa94529f72",
+          "message": "ZKVM-1366: Add way to use cuda to compute control id for bootstrap (#3139)\n\nThis lets us compute the control id for bootstrap using the GPU.\nIt significantly speeds up bootstrap when enabled since doing these\nhashes on the CPU can take a long time.",
+          "timestamp": "2025-05-02T18:20:52Z",
+          "tree_id": "f0a3702211567499b4bb6886dc9e5ad463da44a4",
+          "url": "https://github.com/risc0/risc0/commit/1bb69ce59be14c7df0b346ebf9b109fa94529f72"
+        },
+        "date": 1746213064750,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 32272938,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15648,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44060,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41844,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15695,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14387,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -98841,6 +98895,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1746212872851,
+  "lastUpdate": 1746213075870,
   "repoUrl": "https://github.com/risc0/risc0"
 }
