@@ -50244,6 +50244,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rokrassyuk@gmail.com",
+            "name": "Roman Krasiuk",
+            "username": "rkrasiuk"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "82a5e9f70f8236491e2269395ef0f5df17263b6e",
+          "message": "fix(risc0-build): canonicalize manifest dir (#3143)\n\n## Description\n\nI have a project that has guest methods located in the parent directory.\ne.g.\n```toml\n[package.metadata.risc0]\nmethods = [\"../../programs/risc0\"]\n```\n\nCalling `risc0_build::embed_methods()` in `build.rs` results in\n```\n ERROR: No package found in \"<PATH>/../../programs/risc0\"\n```\nbecause vanilla `Path` comparison here\n\nhttps://github.com/risc0/risc0/blob/3df2b55e611bbd7c65303bc7ef35be69f5a93b4d/risc0/build/src/lib.rs#L258\nonly normalizes `.` occurrences.\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-05-08T23:10:46Z",
+          "tree_id": "d1b134af4f43a81a4e876fdf4bdfd5ec14dc5b5f",
+          "url": "https://github.com/risc0/risc0/commit/82a5e9f70f8236491e2269395ef0f5df17263b6e"
+        },
+        "date": 1746749427661,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 28520232,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 842832,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1181083,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 878037,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 797008,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 666565,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -99003,6 +99057,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1746213168038,
+  "lastUpdate": 1746749431471,
   "repoUrl": "https://github.com/risc0/risc0"
 }
