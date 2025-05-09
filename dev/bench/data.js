@@ -74993,6 +74993,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6856d8f60d5501d4853474a68036217f44048f4f",
+          "message": "ZKVM-1371: executor perf: Move all memory hashing to background thread (#3145)\n\nThanks to the conversation that came from @ec2 's investigation we\nrealized that none of the memory hashing has to happen on the main\nexecutor thread. This moves all of it to the background thread.\n\nOn my coreweave machine this took zeth execute down from 21s to 17s.\n\n---------\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-05-09T00:15:37Z",
+          "tree_id": "d47e6fdaf73ba2fbc6b55faae8e3e53764c7bd90",
+          "url": "https://github.com/risc0/risc0/commit/6856d8f60d5501d4853474a68036217f44048f4f"
+        },
+        "date": 1746756964408,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 57145732,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13721,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32617,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31442,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13360,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12354,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -99273,6 +99327,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1746756647729,
+  "lastUpdate": 1746756966490,
   "repoUrl": "https://github.com/risc0/risc0"
 }
