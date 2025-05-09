@@ -25234,6 +25234,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0c69aa821196b89abcdf9b2124b21cf1b22ac02",
+          "message": "ZKVM-1373: executor perf: Various performance improvemnts (#3152)\n\nThis includes a few small wins that take zeth execute down from about\n17s to 10s on my coreweave machine\n\n- Force a bunch of hot functions around doing memory IO to be inlined\n- Remove usage of trait object to allow more inlining\n- Optimize bigint IO functions w.r.t heap allocations and copies\n- Remove extra hashing of memory pages",
+          "timestamp": "2025-05-09T12:50:41Z",
+          "tree_id": "37824d8abda1dc44b8d45f96815cbda4dacc4788",
+          "url": "https://github.com/risc0/risc0/commit/a0c69aa821196b89abcdf9b2124b21cf1b22ac02"
+        },
+        "date": 1746798459617,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 71029024,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15727,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44217,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41748,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15749,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14447,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -99597,6 +99651,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1746798432543,
+  "lastUpdate": 1746798470548,
   "repoUrl": "https://github.com/risc0/risc0"
 }
