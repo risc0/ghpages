@@ -50622,6 +50622,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d6b1ced8c73bc6960ec6cb57d936d177dff88241",
+          "message": "ZKVM-1379: Add gdb support (#3164)\n\nThis adds a way to run the zkvm executor with a gdb server. This allows\nusers to attach gdb to the executor and set breakpoints and do\nbacktraces. This is enabled by passing `--with-debugger` to `r0vm` or\ncalling `run_with_debugger` on `ExecutorImpl`.\n\nThe riscv32im gdb must be used and I added code to rzup to distribute\nit.\n\nIn order to create a portable version of gdb which works on multiple\nreleases of Ubuntu (and likely other distros) I had to disable its\nPython support. This is a bit of a shame since I think the official Rust\ngdb plugins are written in Python.\n\nI compiled gdb using our existing riscv gnu tools repository. I added a\nPR which updates the README to include instructions for building\nyourself. https://github.com/risc0/toolchain/pull/3\nI added the compiled binaries to the current release for the toolchain\nrepo and this is where rzup downloads it from.\n\nThis is just an initial version, there are still many more features you\nmight imagine it having.",
+          "timestamp": "2025-05-13T23:26:17Z",
+          "tree_id": "eacd8aad0748fa0c4a4491f3571d5a8e7f57e630",
+          "url": "https://github.com/risc0/risc0/commit/d6b1ced8c73bc6960ec6cb57d936d177dff88241"
+        },
+        "date": 1747181837764,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 46368764,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 852673,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1176539,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 875865,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 813168,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 678353,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -99813,6 +99867,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1747181660580,
+  "lastUpdate": 1747181841429,
   "repoUrl": "https://github.com/risc0/risc0"
 }
