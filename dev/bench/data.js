@@ -25342,6 +25342,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1385e049dffb98bb4ee237709e69a9dee3b40625",
+          "message": "ZKVM-1385: Preflight peformance improvements (#3167)\n\nThese change improve preflight performance by a small amount.\n\nThis does it by inlining functions, and vectorizing BytePoly operations.\n\nMy own benchmark which does 10 zeth segment preflights improves from\n~17s to ~14s",
+          "timestamp": "2025-05-15T15:23:11Z",
+          "tree_id": "05d59bc0cf5657ece458d161e8c4f8728c4f0ea4",
+          "url": "https://github.com/risc0/risc0/commit/1385e049dffb98bb4ee237709e69a9dee3b40625"
+        },
+        "date": 1747325797723,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 68997776,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15547,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44166,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41625,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15662,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14262,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -99975,6 +100029,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1747325801229,
+  "lastUpdate": 1747325819605,
   "repoUrl": "https://github.com/risc0/risc0"
 }
