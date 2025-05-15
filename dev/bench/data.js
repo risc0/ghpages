@@ -99918,9 +99918,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1385e049dffb98bb4ee237709e69a9dee3b40625",
+          "message": "ZKVM-1385: Preflight peformance improvements (#3167)\n\nThese change improve preflight performance by a small amount.\n\nThis does it by inlining functions, and vectorizing BytePoly operations.\n\nMy own benchmark which does 10 zeth segment preflights improves from\n~17s to ~14s",
+          "timestamp": "2025-05-15T15:23:11Z",
+          "tree_id": "05d59bc0cf5657ece458d161e8c4f8728c4f0ea4",
+          "url": "https://github.com/risc0/risc0/commit/1385e049dffb98bb4ee237709e69a9dee3b40625"
+        },
+        "date": 1747325789620,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 70396176,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 552204,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 994906,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 769179,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 533403,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 462040,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1747325587530,
+  "lastUpdate": 1747325801229,
   "repoUrl": "https://github.com/risc0/risc0"
 }
