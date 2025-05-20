@@ -25396,6 +25396,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dukedev1004@gmail.com",
+            "name": "dukedev",
+            "username": "deukyunlee"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6e82fb25a09407986a4a9ea96887b7194ccc8284",
+          "message": "chore: fix typo in comment (#3168)\n\nThis PR fixes a minor typo in the doc comment for `MemoryImage`.\n\n- Corrected `functio∑nality` to `functionality`\n- no code-base changes\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-05-20T12:21:09Z",
+          "tree_id": "8e12a083e3fe61a3f6c45751660a5e4a4a4c8619",
+          "url": "https://github.com/risc0/risc0/commit/6e82fb25a09407986a4a9ea96887b7194ccc8284"
+        },
+        "date": 1747747206395,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 69838520,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15492,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 44184,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41764,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15656,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14361,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -100245,6 +100299,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1747747189418,
+  "lastUpdate": 1747747218531,
   "repoUrl": "https://github.com/risc0/risc0"
 }
