@@ -50784,6 +50784,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dukedev1004@gmail.com",
+            "name": "dukedev",
+            "username": "deukyunlee"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6e82fb25a09407986a4a9ea96887b7194ccc8284",
+          "message": "chore: fix typo in comment (#3168)\n\nThis PR fixes a minor typo in the doc comment for `MemoryImage`.\n\n- Corrected `functio∑nality` to `functionality`\n- no code-base changes\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-05-20T12:21:09Z",
+          "tree_id": "8e12a083e3fe61a3f6c45751660a5e4a4a4c8619",
+          "url": "https://github.com/risc0/risc0/commit/6e82fb25a09407986a4a9ea96887b7194ccc8284"
+        },
+        "date": 1747746691805,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 44201384,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 552204,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 565997,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 479870,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 530431,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 424116,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-apple_m2_pro": [
@@ -100083,6 +100137,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1747325824758,
+  "lastUpdate": 1747746695108,
   "repoUrl": "https://github.com/risc0/risc0"
 }
