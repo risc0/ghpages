@@ -100458,6 +100458,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133707571+morgangibbs87@users.noreply.github.com",
+            "name": "morgangibbs87",
+            "username": "morgangibbs87"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98387806fe8348d87e32974468c6f35853356ad5",
+          "message": "ZKVM-1387: Replace `3090_ti` jobs with `4090` (#3171)\n\n- Testing new `4090` runners and jobs to replace `3090_ti`\n- When tests successful on both runners, `test` label will be changed to\n`prod`",
+          "timestamp": "2025-05-21T21:45:00Z",
+          "tree_id": "445768c66c9a71f203982d37126348cf812f1aee",
+          "url": "https://github.com/risc0/risc0/commit/98387806fe8348d87e32974468c6f35853356ad5"
+        },
+        "date": 1747865146005,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 66672512,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 552628,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1000652,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 773447,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 531974,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 460526,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_4090": [
@@ -100517,6 +100571,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1747864902360,
+  "lastUpdate": 1747865156954,
   "repoUrl": "https://github.com/risc0/risc0"
 }
