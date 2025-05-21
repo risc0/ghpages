@@ -75803,6 +75803,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "56be29d6566cfbdf16d2612a5d4b7bb820507b7c",
+          "message": "ZKVM-1375: Actor-based distributed proving system (#3154)\n\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>",
+          "timestamp": "2025-05-21T14:18:22-07:00",
+          "tree_id": "bd0c21c9740b5df9064e3f60fd2b51f769c6225f",
+          "url": "https://github.com/risc0/risc0/commit/56be29d6566cfbdf16d2612a5d4b7bb820507b7c"
+        },
+        "date": 1747862943163,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 95897504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13961,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31043,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31549,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13808,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12496,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -100407,6 +100461,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1747862870968,
+  "lastUpdate": 1747862945358,
   "repoUrl": "https://github.com/risc0/risc0"
 }
