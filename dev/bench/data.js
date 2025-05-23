@@ -100676,9 +100676,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "67f2d81c638bff5f4fcfe11a084ebb34799b7a89",
+          "message": "ZKVM-1392: Disallow memory I/O to same address in the same memory cycle (#3181)",
+          "timestamp": "2025-05-23T12:06:40-07:00",
+          "tree_id": "c473929776bbde04dfd779349300f8f415a340d6",
+          "url": "https://github.com/risc0/risc0/commit/67f2d81c638bff5f4fcfe11a084ebb34799b7a89"
+        },
+        "date": 1748027468298,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 103771456,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1405522,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1720467,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1360866,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1357088,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1088844,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1747865257028,
+  "lastUpdate": 1748027471166,
   "repoUrl": "https://github.com/risc0/risc0"
 }
