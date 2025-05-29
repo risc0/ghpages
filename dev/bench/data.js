@@ -25612,6 +25612,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4206b3b12a389adb96fd5f52033518865bce41f6",
+          "message": "ZKVM-1405: [actor-system] Pipeline tasks in the worker  (#3194)\n\nThis upgrades the actor system TCP communication to have multiplexing,\nthen it uses this new feature to pipeline tasks in the worker. It grabs\nthe next one while it is working on the current one.\n\nI will need to merge https://github.com/risc0/risc0/pull/3191 with this\none. I'm hoping to merge it on top of this probably because I think it\nwill be easier that way, since I have to probably redo the tcp metric\nstuff.",
+          "timestamp": "2025-05-29T03:16:51Z",
+          "tree_id": "8ef71e6e0bd61b00ec1529d5c8667716263dbcf8",
+          "url": "https://github.com/risc0/risc0/commit/4206b3b12a389adb96fd5f52033518865bce41f6"
+        },
+        "date": 1748492614632,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 70013592,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 15293,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 43825,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 41650,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 15384,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 14215,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "Linux-nvidia_rtx_3090_ti": [
@@ -101057,6 +101111,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1748492590370,
+  "lastUpdate": 1748492625202,
   "repoUrl": "https://github.com/risc0/risc0"
 }
