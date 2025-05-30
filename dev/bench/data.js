@@ -101324,9 +101324,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fbe1d0bb75c21fe36cefd87bae25f424b711b291",
+          "message": "ZKVM-1410: Add metrics/logging to telemetry (#3198)\n\nThis is a rebased and merged with RPC system version of\nhttps://github.com/risc0/risc0/pull/3191\n\n---------\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-05-30T20:14:48Z",
+          "tree_id": "5048eb019a377746c48f6c7ba43c939eb7119852",
+          "url": "https://github.com/risc0/risc0/commit/fbe1d0bb75c21fe36cefd87bae25f424b711b291"
+        },
+        "date": 1748640154039,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 99662752,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1408726,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1719333,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1338934,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1341623,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1076876,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1748563513074,
+  "lastUpdate": 1748640158339,
   "repoUrl": "https://github.com/risc0/risc0"
 }
