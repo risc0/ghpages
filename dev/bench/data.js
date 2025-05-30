@@ -76235,6 +76235,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "6364934+ec2@users.noreply.github.com",
+            "name": "Eric Tu",
+            "username": "ec2"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd8b9837a738ee84c8f5fd997fbec27457953594",
+          "message": "ZKVM-1400: Executor Bigint Smallvec Spillage (#3189)\n\nIn the executor where bigints are handled, when loading, a Smallvec is\nallocated to read limbs into. Currently the inlined smallvec value is\noptimized for 8 u32 limbs. Although this code isn't related to BLS, BLS\nis used often by many people in the ZKVM and limbs sizes (at least in\nblst are 12 u32s), so through some profiling, I observed that we are\nconstantly spilling over and heap allocating here anyways.",
+          "timestamp": "2025-05-29T22:55:11Z",
+          "tree_id": "24dd02480fc2d901879915bb025d2e96c9e36501",
+          "url": "https://github.com/risc0/risc0/commit/cd8b9837a738ee84c8f5fd997fbec27457953594"
+        },
+        "date": 1748563510892,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94156896,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13706,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32331,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31727,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 12993,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12072,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -101273,6 +101327,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1748563387751,
+  "lastUpdate": 1748563513074,
   "repoUrl": "https://github.com/risc0/risc0"
 }
