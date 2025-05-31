@@ -101486,9 +101486,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c93ea52de848285ce32a65b1ba054d26627e2d7a",
+          "message": "ZKVM-1408: Migrate CI to internal cluster (#3197)",
+          "timestamp": "2025-05-30T23:55:37Z",
+          "tree_id": "aa7e9d6203445d958c1b347e237b4813142290a9",
+          "url": "https://github.com/risc0/risc0/commit/c93ea52de848285ce32a65b1ba054d26627e2d7a"
+        },
+        "date": 1748653293372,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 101522640,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1413337,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1731943,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1351977,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1346000,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1082764,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1748640522715,
+  "lastUpdate": 1748653296138,
   "repoUrl": "https://github.com/risc0/risc0"
 }
