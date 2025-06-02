@@ -76397,6 +76397,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1ea37d6bdb63ece08c3eac81102a9689df1287d9",
+          "message": "ZKVM-1413: Split out preflight from prove_segment. Run them in parallel in the worker. (#3201)\n\nSplits up prove-segment into a preflight a prove_core. Runs preflight\nand prove_core at the same time in the actor worker.\n\nRunning preflight and proving at the same time creates a big speed up,\nbringing 5090 prove times for po2=20 down from 800ms to 400ms.\n\nThings to consider\n- the naming of the new API changes: `PreflightResults` `preflight` and\n`prove_segment_core`\n- should new API changes be marked \"unstable\"?\n- changes to the `scope!`s\n- adjustment to the GPU locking\n- changes to dev-mode to support new API\n- actor timing update to split preflight and prove times\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-06-02T05:36:51Z",
+          "tree_id": "e30cfc5e197f54a177ace9429a75ea6321009639",
+          "url": "https://github.com/risc0/risc0/commit/1ea37d6bdb63ece08c3eac81102a9689df1287d9"
+        },
+        "date": 1748845129518,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93617576,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13864,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31543,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31666,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13614,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12384,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -101651,6 +101705,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1748844761083,
+  "lastUpdate": 1748845131881,
   "repoUrl": "https://github.com/risc0/risc0"
 }
