@@ -76451,6 +76451,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a6d3abfe426fbee316e6ac9c508b617bb3c5cd46",
+          "message": "ZKVM-1418: Move CI back to AWS (#3210)\n\nWe are continuing to have problems with the new cluster. Lets unblock\nmain by moving CI back for now.",
+          "timestamp": "2025-06-10T00:59:24Z",
+          "tree_id": "7146708ae6cc077651eefe2536a7ca7f416d0474",
+          "url": "https://github.com/risc0/risc0/commit/a6d3abfe426fbee316e6ac9c508b617bb3c5cd46"
+        },
+        "date": 1749519569302,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93029672,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13157,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32641,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31828,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13599,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12319,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -101759,6 +101813,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1749519295504,
+  "lastUpdate": 1749519571746,
   "repoUrl": "https://github.com/risc0/risc0"
 }
