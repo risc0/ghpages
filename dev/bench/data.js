@@ -102134,9 +102134,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "786d7d63fc8f9b5ef5bd298b7b0d56abdcd1acde",
+          "message": "ZKVM-1020: Fix verifier parameters metadata check to actually compare verifier context and metadata (#2619)\n\nDiscovered while debugging a different issue, the check that is supposed\nto report if verifier parameters are mismatched currently does not.\nInstead it just checks internal consistentency of\n`receipt.metadata.verifier_parameters` against\n`receipt.inner.verifier_parameters`, both of which are digests to help\nthe verifier determine which version of the verifier parameters it\nshould use. Note that the digest alone is not enough to verify the\nreceipt, and instead the actual parameters come from the\n`VerifierContext`.\n\nThis PR fixes the check to actually compare against the verifier context\nso that the correct error message can be shown, instead of a generic\nverification failure.\n\n---------\n\nCo-authored-by: Erik Kaneda <erik@risczero.com>\nCo-authored-by: Frank Laub <flaub@risc0.com>\nCo-authored-by: Tim Zerrell <tim.zerrell@risczero.com>",
+          "timestamp": "2025-06-10T21:19:39Z",
+          "tree_id": "654388a5b3297a43654a3a123b61e372532495a6",
+          "url": "https://github.com/risc0/risc0/commit/786d7d63fc8f9b5ef5bd298b7b0d56abdcd1acde"
+        },
+        "date": 1749597060744,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 103683888,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1426788,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1738934,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1369819,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1360120,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1090458,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1749594578645,
+  "lastUpdate": 1749597063427,
   "repoUrl": "https://github.com/risc0/risc0"
 }
