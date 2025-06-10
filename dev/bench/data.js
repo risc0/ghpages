@@ -76505,6 +76505,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d1af63778ee5e4d047d7a16f9f267c1eca9c372",
+          "message": "ZKVM-1417: Update semver baseline. Bump required versions (#3209)",
+          "timestamp": "2025-06-10T02:36:24Z",
+          "tree_id": "4ebdca2f70654587d388ed8ac4c589c9e2a6f6a0",
+          "url": "https://github.com/risc0/risc0/commit/5d1af63778ee5e4d047d7a16f9f267c1eca9c372"
+        },
+        "date": 1749525347730,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93425184,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13513,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32933,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32152,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13497,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12366,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -101921,6 +101975,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1749525076129,
+  "lastUpdate": 1749525350110,
   "repoUrl": "https://github.com/risc0/risc0"
 }
