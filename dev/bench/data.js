@@ -102188,9 +102188,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "0b0cf7f1e30b58b0be516c30ca810871ed1113b4",
+          "message": "Use nvidia-mps for better GPU usage (#3213)",
+          "timestamp": "2025-06-11T17:23:24Z",
+          "tree_id": "15189d073f343c9edd621a90799d1bc7aa6726d6",
+          "url": "https://github.com/risc0/risc0/commit/0b0cf7f1e30b58b0be516c30ca810871ed1113b4"
+        },
+        "date": 1749665346058,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 104443184,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1422376,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1734516,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1364977,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1354955,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1089336,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1749597063427,
+  "lastUpdate": 1749665348904,
   "repoUrl": "https://github.com/risc0/risc0"
 }
