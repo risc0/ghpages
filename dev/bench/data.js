@@ -102404,9 +102404,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a4b0091736dfdd8f582d470f04e7164e04e1ae12",
+          "message": "Prepare for guest code upgrade to Rust 1.88.0 (#3225)\n\nThis updates rzup to compile toolchains of a later Rust version.\n\nThis also fixes a warning seen from compiling guest code with Rust\n1.88.0",
+          "timestamp": "2025-06-26T18:32:57Z",
+          "tree_id": "a7dcf47ef503b5bd576d1b8d5188a21b7b10958e",
+          "url": "https://github.com/risc0/risc0/commit/a4b0091736dfdd8f582d470f04e7164e04e1ae12"
+        },
+        "date": 1750964944538,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 103821976,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1426142,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1707862,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1337832,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1348883,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1081650,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1750909886088,
+  "lastUpdate": 1750964950551,
   "repoUrl": "https://github.com/risc0/risc0"
 }
