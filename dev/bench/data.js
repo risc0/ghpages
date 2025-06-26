@@ -76667,6 +76667,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "cd0a08186ef650c5b397b2d7b030d51715b6c59b",
+          "message": "[R0ENG-145] Add test for verifier parameters mismatch (#3226)",
+          "timestamp": "2025-06-26T03:03:45Z",
+          "tree_id": "848aaec6f641db72f004507e671e9b5993166c3c",
+          "url": "https://github.com/risc0/risc0/commit/cd0a08186ef650c5b397b2d7b030d51715b6c59b"
+        },
+        "date": 1750909883918,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94800888,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13581,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32524,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32448,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13727,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12430,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -102353,6 +102407,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1750909597862,
+  "lastUpdate": 1750909886088,
   "repoUrl": "https://github.com/risc0/risc0"
 }
