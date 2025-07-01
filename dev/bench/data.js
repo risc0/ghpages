@@ -76883,6 +76883,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bef7bf580eb13d5467074b5f6075a986734d3fe5",
+          "message": "Circuit changes to \"improve special case handling for division\" (#3235)\n\napplies the changes from\nrisc0/zirgen@b5abc506bbc97f83496ef42e19f3e8961444be5c",
+          "timestamp": "2025-07-01T16:33:41Z",
+          "tree_id": "51c9f92c8d5bf60d30d72f81e682d4ed93186d3e",
+          "url": "https://github.com/risc0/risc0/commit/bef7bf580eb13d5467074b5f6075a986734d3fe5"
+        },
+        "date": 1751391068139,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 95056848,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13780,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32660,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31683,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13616,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12139,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -102785,6 +102839,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1751390774057,
+  "lastUpdate": 1751391070473,
   "repoUrl": "https://github.com/risc0/risc0"
 }
