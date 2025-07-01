@@ -76829,6 +76829,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8fd3bd2e2e18ad7a5abce213a376432116db039",
+          "message": "Upgrade guest docker builder to Rust 1.88.0 (#3236)",
+          "timestamp": "2025-06-30T23:44:42Z",
+          "tree_id": "29df16e9a9d9e6435d589946bb7819e9e1ecd244",
+          "url": "https://github.com/risc0/risc0/commit/c8fd3bd2e2e18ad7a5abce213a376432116db039"
+        },
+        "date": 1751330420914,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94311016,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13734,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32692,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31826,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13462,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12137,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -102677,6 +102731,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1751330122810,
+  "lastUpdate": 1751330423098,
   "repoUrl": "https://github.com/risc0/risc0"
 }
