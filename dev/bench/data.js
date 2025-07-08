@@ -102944,9 +102944,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "74b9f14ca8042993eb3d1b9a4c4605024f598a83",
+          "message": "Stabilize bigint2 feature (#3241)\n\nThis moves the stuff marked as \"unstable\" in `risc0-bigint2` to be\nstable.\nIt also makes bigint2 support no longer require \"unstable\" inside\n`risc0-zkvm` and `risc0-build`\n\nThis makes all this code now participate in SemVer checks, which I think\nis good so as to prevent downstream compilation issues.\n\nIt does not remove the \"unstable\" feature from `risc0-bigint2`, as this\nwould break anybody depending on that feature (like all the\nprecompiles).\n\nI find it rather unfortunate that all the precompiles require the\n\"unstable\" feature, it means in the future if we would want to add new\nthings marked as \"unstable\" in `risc0-bigint2`, they would be enabled by\nall existing precompiles. I think newer releases of the precompiles\nshould probably aim to forward the \"unstable\" feature flag from their\nusers on to `risc0-bigint2` so the user can decide if they want unstable\nfeatures or not themselves.",
+          "timestamp": "2025-07-08T18:29:25Z",
+          "tree_id": "d580fbc0aa41218e522e419e18a44b43e65e4c01",
+          "url": "https://github.com/risc0/risc0/commit/74b9f14ca8042993eb3d1b9a4c4605024f598a83"
+        },
+        "date": 1752006774418,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 101122848,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1406738,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1720174,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1342032,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1332093,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1075327,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1752001584812,
+  "lastUpdate": 1752006781363,
   "repoUrl": "https://github.com/risc0/risc0"
 }
