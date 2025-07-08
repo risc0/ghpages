@@ -76937,6 +76937,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "32799436d23fdb9992bc4283e6f4baa87ed2145e",
+          "message": "Update versions and semver baselines for 2.2.0 release (#3244)",
+          "timestamp": "2025-07-08T18:10:53Z",
+          "tree_id": "a2da103c4aa4d24af2eb2ee1366c6d27ef68a231",
+          "url": "https://github.com/risc0/risc0/commit/32799436d23fdb9992bc4283e6f4baa87ed2145e"
+        },
+        "date": 1752001582626,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94568592,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13518,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32382,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31808,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13419,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12325,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -102893,6 +102947,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1752001168236,
+  "lastUpdate": 1752001584812,
   "repoUrl": "https://github.com/risc0/risc0"
 }
