@@ -102998,9 +102998,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3153ef485d1d7d21b284135532e4b9db8edd4b35",
+          "message": "Upgrade host Rust to 1.88.0 (#3234)",
+          "timestamp": "2025-07-08T19:46:00Z",
+          "tree_id": "1476c675453e2a97fd3d8e20a7ffdd82dd6943aa",
+          "url": "https://github.com/risc0/risc0/commit/3153ef485d1d7d21b284135532e4b9db8edd4b35"
+        },
+        "date": 1752007108173,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 95772320,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1384969,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1733259,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1347388,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1319007,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1063105,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1752006781363,
+  "lastUpdate": 1752007110871,
   "repoUrl": "https://github.com/risc0/risc0"
 }
