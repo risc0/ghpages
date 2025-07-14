@@ -103106,9 +103106,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8dfaac0a1daeda10e9aaf8db7d5ffad4f16880a8",
+          "message": "Add a way to programmatically enable dev-mode. (#3252)\n\nThis PR adds a way to programmatically enable dev-mode. It does this\nwith the following changes\n\n- Add new `with_dev_mode` builder function to `ProverOpts` and\n`VerifierContext`\n    - controls new `dev_mode` state in respective structs\n- New `dev_mode` (private) state in `ProverOpts`\n- defaults to previous value determination about dev-mode (env-var + cfg\nflags)\n    - allows the dev-mode prover to be selected\n    - forwards on to `dev_mode` state in `VerifierContext`\n- New `dev_mode` (private) state in `VerifierContext`\n- defaults to previous value determination about dev-mode (env-var + cfg\nflags)\n    - allows fake receipts to verify successfully\n- New `dev_mode` field in proto-buf `ProverOpts` for client/server\n    - Allows `dev_mode` selection to flow into the `r0vm` server\n- `risc0_zkvm::is_dev_mode` deprecated in favor of new\n`ProverOpts::dev_mode` and `VerifierContext::dev_mode`\n- Programatic enabling now means there is no global way to know if\ndev-mode is enabled\n- `FakeRecipt::verifty_integrity` is deprecated and now always errors\n- New `FakeReceipt::verify_integrity_with_context` must be used so it\ncan read the dev-mode state",
+          "timestamp": "2025-07-14T18:12:42Z",
+          "tree_id": "8d81f9b66f2432770f55bf8711706caf88cdfd42",
+          "url": "https://github.com/risc0/risc0/commit/8dfaac0a1daeda10e9aaf8db7d5ffad4f16880a8"
+        },
+        "date": 1752519060423,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 102048704,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1402269,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1754249,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1376192,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1339214,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1071835,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1752007414116,
+  "lastUpdate": 1752519063105,
   "repoUrl": "https://github.com/risc0/risc0"
 }
