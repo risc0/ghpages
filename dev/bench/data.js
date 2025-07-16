@@ -103214,9 +103214,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d3965cb04d74abbca12368a29ba0c575eedb622",
+          "message": "Add docs for 2.3 (#3265)",
+          "timestamp": "2025-07-16T17:34:08Z",
+          "tree_id": "d2c5dbba2367c14b76f0fc475ef106f95f0ec081",
+          "url": "https://github.com/risc0/risc0/commit/9d3965cb04d74abbca12368a29ba0c575eedb622"
+        },
+        "date": 1752690097713,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 99615912,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1383564,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1727932,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1343791,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1317562,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1062494,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1752519369723,
+  "lastUpdate": 1752690104971,
   "repoUrl": "https://github.com/risc0/risc0"
 }
