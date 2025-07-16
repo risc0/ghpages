@@ -77099,6 +77099,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d3965cb04d74abbca12368a29ba0c575eedb622",
+          "message": "Add docs for 2.3 (#3265)",
+          "timestamp": "2025-07-16T17:34:08Z",
+          "tree_id": "d2c5dbba2367c14b76f0fc475ef106f95f0ec081",
+          "url": "https://github.com/risc0/risc0/commit/9d3965cb04d74abbca12368a29ba0c575eedb622"
+        },
+        "date": 1752690405644,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 91087136,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13513,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32853,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32148,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13204,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12359,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103271,6 +103325,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1752690104971,
+  "lastUpdate": 1752690408344,
   "repoUrl": "https://github.com/risc0/risc0"
 }
