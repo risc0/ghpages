@@ -103322,9 +103322,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fcd3e545ed9cc4f6f17df0fd0935b1890d8be9bc",
+          "message": "Don't check RISC0_DEV_MODE env-var in guest (#3270)\n\nChecking this environment variable was a needless mistake in the guest\nbecause we ignore the result anyway. This caused guests doing\nverification to require the sys-getenv feature, which is not what we\nwant.\n\nIn addition to fixing the check I improve the test coverage of verifying\nreceipts in the guest:\n- Run our verify_guest example as a test (nothing seemed to be running\nit before)\n- Remove `sys-getenv` feature from guest program (not requiring this is\na goal)\n- Add dev-mode feature/test for verify_guest (allowing this to work is\nanother goal)",
+          "timestamp": "2025-07-17T21:37:36Z",
+          "tree_id": "f76eac164a7c29874fdf460c32808d49cadc48df",
+          "url": "https://github.com/risc0/risc0/commit/fcd3e545ed9cc4f6f17df0fd0935b1890d8be9bc"
+        },
+        "date": 1752790106957,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 101243808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1389248,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1710555,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1338178,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1324249,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1065926,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1752690408344,
+  "lastUpdate": 1752790112321,
   "repoUrl": "https://github.com/risc0/risc0"
 }
