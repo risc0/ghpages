@@ -103430,9 +103430,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "535c5080f68ce5f07a2c2f2a22c91b1dd631fb1b",
+          "message": "Make the Keccak feature stable (#3284)\n\nMake the Keccak feature stable, remove the prove_zkr functionality.",
+          "timestamp": "2025-07-25T01:05:26Z",
+          "tree_id": "c77cdfdc869aaae009c6a79608ad8a3c2238b699",
+          "url": "https://github.com/risc0/risc0/commit/535c5080f68ce5f07a2c2f2a22c91b1dd631fb1b"
+        },
+        "date": 1753407450848,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 101834232,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1387258,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1723683,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1337523,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1320639,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1067198,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1752790388272,
+  "lastUpdate": 1753407453372,
   "repoUrl": "https://github.com/risc0/risc0"
 }
