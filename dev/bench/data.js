@@ -77207,6 +77207,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "535c5080f68ce5f07a2c2f2a22c91b1dd631fb1b",
+          "message": "Make the Keccak feature stable (#3284)\n\nMake the Keccak feature stable, remove the prove_zkr functionality.",
+          "timestamp": "2025-07-25T01:05:26Z",
+          "tree_id": "c77cdfdc869aaae009c6a79608ad8a3c2238b699",
+          "url": "https://github.com/risc0/risc0/commit/535c5080f68ce5f07a2c2f2a22c91b1dd631fb1b"
+        },
+        "date": 1753407769574,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94151808,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13435,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32702,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31894,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13341,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12344,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103487,6 +103541,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1753407453372,
+  "lastUpdate": 1753407771836,
   "repoUrl": "https://github.com/risc0/risc0"
 }
