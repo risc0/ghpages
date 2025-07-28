@@ -2,8 +2,8 @@
   {
     "name": "execute",
     "hashfn": "N/A",
-    "throughput": 59683467.52638304,
-    "duration": 17013673,
+    "throughput": 59166793.155557446,
+    "duration": 17162245,
     "cycles": 1015435,
     "ram": 0,
     "seal": 0
@@ -11,8 +11,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 217469.54460743818,
-    "duration": 75339285,
+    "throughput": 213167.6759582784,
+    "duration": 76859683,
     "cycles": 16384,
     "ram": 148868356,
     "seal": 198568
@@ -20,8 +20,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 369327.00455083273,
-    "duration": 88723542,
+    "throughput": 361457.4026896345,
+    "duration": 90655219,
     "cycles": 32768,
     "ram": 297735428,
     "seal": 209192
@@ -29,8 +29,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 575797.9393452011,
-    "duration": 113817705,
+    "throughput": 571955.1992980144,
+    "duration": 114582401,
     "cycles": 65536,
     "ram": 595469572,
     "seal": 220840
@@ -38,8 +38,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 832456.8228757448,
-    "duration": 157452010,
+    "throughput": 826483.6297668869,
+    "duration": 158589953,
     "cycles": 131072,
     "ram": 1190971652,
     "seal": 243880
@@ -47,8 +47,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1032274.4173701372,
-    "duration": 253947977,
+    "throughput": 1037403.857589157,
+    "duration": 252692332,
     "cycles": 262144,
     "ram": 2381942020,
     "seal": 255592
@@ -56,8 +56,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1286258.34082983,
-    "duration": 407607075,
+    "throughput": 1288362.2194128965,
+    "duration": 406941458,
     "cycles": 524288,
     "ram": 4763882756,
     "seal": 267816
@@ -65,8 +65,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1415619.3682033636,
-    "duration": 740718885,
+    "throughput": 1416300.0506193659,
+    "duration": 740362891,
     "cycles": 1048576,
     "ram": 9527764228,
     "seal": 281064
@@ -74,8 +74,8 @@
   {
     "name": "lift",
     "hashfn": "poseidon2",
-    "throughput": 1695802.501317746,
-    "duration": 154584039,
+    "throughput": 1696534.7315110045,
+    "duration": 154517320,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -83,8 +83,8 @@
   {
     "name": "join",
     "hashfn": "poseidon2",
-    "throughput": 1294451.7638729853,
-    "duration": 202513533,
+    "throughput": 1285756.7750608388,
+    "duration": 203883040,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -92,8 +92,8 @@
   {
     "name": "succinct",
     "hashfn": "poseidon2",
-    "throughput": 633172.7330765135,
-    "duration": 414016565,
+    "throughput": 633442.0254355158,
+    "duration": 413840556,
     "cycles": 262144,
     "ram": 2381942020,
     "seal": 222668
@@ -101,8 +101,8 @@
   {
     "name": "identity_p254",
     "hashfn": "poseidon2",
-    "throughput": 1054446.0844811692,
-    "duration": 248608254,
+    "throughput": 1059388.9542277888,
+    "duration": 247448304,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -110,8 +110,8 @@
   {
     "name": "stark2snark",
     "hashfn": "poseidon2",
-    "throughput": 28832.27615392552,
-    "duration": 9092032783,
+    "throughput": 29583.49253431003,
+    "duration": 8861157948,
     "cycles": 262144,
     "ram": 0,
     "seal": 360
@@ -119,8 +119,8 @@
   {
     "name": "groth16",
     "hashfn": "poseidon2",
-    "throughput": 27793.51248961749,
-    "duration": 9431841337,
+    "throughput": 27801.937517432845,
+    "duration": 9428983136,
     "cycles": 262144,
     "ram": 2381942020,
     "seal": 256
@@ -128,8 +128,8 @@
   {
     "name": "bigint2_execute",
     "hashfn": "N/A",
-    "throughput": 30729967.92115508,
-    "duration": 69101927,
+    "throughput": 31256035.756139513,
+    "duration": 67938878,
     "cycles": 2123500,
     "ram": 0,
     "seal": 0
@@ -137,8 +137,8 @@
   {
     "name": "bigint2_prove_segment",
     "hashfn": "poseidon2",
-    "throughput": 2056211.0665812355,
-    "duration": 1147399719,
+    "throughput": 2084167.136685742,
+    "duration": 1132009021,
     "cycles": 2359296,
     "ram": 9527764228,
     "seal": 0
@@ -146,8 +146,8 @@
   {
     "name": "zeth_shapella_30",
     "hashfn": "N/A",
-    "throughput": 48313907.851489104,
-    "duration": 77831274,
+    "throughput": 48388244.730957836,
+    "duration": 77711705,
     "cycles": 3760333,
     "ram": 0,
     "seal": 0
@@ -155,8 +155,8 @@
   {
     "name": "zeth_shapella_50",
     "hashfn": "N/A",
-    "throughput": 37804133.01292863,
-    "duration": 109335056,
+    "throughput": 37684816.60613048,
+    "duration": 109681229,
     "cycles": 4133317,
     "ram": 0,
     "seal": 0
@@ -164,8 +164,8 @@
   {
     "name": "zeth_shapella_100",
     "hashfn": "N/A",
-    "throughput": 40413409.49296266,
-    "duration": 89372984,
+    "throughput": 40635811.86411388,
+    "duration": 88883840,
     "cycles": 3611867,
     "ram": 0,
     "seal": 0
