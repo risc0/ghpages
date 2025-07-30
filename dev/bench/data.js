@@ -77261,6 +77261,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b434631b34b419fc6dfd5d95758eef527d327033",
+          "message": "Provide actor-system based implementation for default prover (#3293)\n\nThis PR provides a new implementation returned from `default_prover`\ncalled `DefaultProver` which supports multiple GPUs on a single machine\nand uses the actor system.\n\nThis new prover implementation is not on by default by is accessible via\nthe `RISC0_PROVER=actor` environment variable.\n\nThe new test `risc0/r0vm/tests/default_prover.rs` exercises this new\nimplementation by instantiating it directly.",
+          "timestamp": "2025-07-30T19:31:22Z",
+          "tree_id": "0af64b30a93dc420ab002f505b567d85eeb738ab",
+          "url": "https://github.com/risc0/risc0/commit/b434631b34b419fc6dfd5d95758eef527d327033"
+        },
+        "date": 1753906766080,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93900840,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 14028,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32716,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31913,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13536,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12240,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103595,6 +103649,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1753906463567,
+  "lastUpdate": 1753906768513,
   "repoUrl": "https://github.com/risc0/risc0"
 }
