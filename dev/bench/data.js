@@ -77315,6 +77315,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae0748d7f57b5b16c8287b3adc84fd21a81bab75",
+          "message": "Update versions and semver-baselines.lock for 2.3.1 release (#3277)",
+          "timestamp": "2025-07-31T19:46:02Z",
+          "tree_id": "dd09aec41130272ecd737f75ed678513cd0939da",
+          "url": "https://github.com/risc0/risc0/commit/ae0748d7f57b5b16c8287b3adc84fd21a81bab75"
+        },
+        "date": 1753993514333,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94022448,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13617,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32383,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31824,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13548,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12251,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103703,6 +103757,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1753993230612,
+  "lastUpdate": 1753993518332,
   "repoUrl": "https://github.com/risc0/risc0"
 }
