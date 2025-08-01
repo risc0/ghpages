@@ -77369,6 +77369,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "467ea58ba23bd9a1de79ffaa6c7abba5074ca8bd",
+          "message": "rzup publish: Add create-artifact, artifact hash and signature verification (#3281)\n\nThis adds three new features to the `rzup publish` command\n- New `rzup publish create-artifact` which simply creates `.tar.xz`\nfiles\n    - Uses the parallel feature of liblzma\n- Verification of the SHA256 sums for download payloads\n- RSA signing of the S3 JSON payloads\n    - The private key is stored in AWS secrets manager\n\nThere are some incidental changes here too\n- Due to some crate updates / changes requiring a newer compiler verion,\nI had to update the nightly version of Rust we use for the docs-rs CI\njob, this caused us to need to update some things in random places.\n- Even though `rzup` only uses `liblzma` if the `install` or `publish`\nfeatures are enabled, it will still complain about a linking conflict\nwith liblzma between some of the risc0 crates and `rzup`. This meant I\nhad to use `liblzma` crate in place of the `xz` crate (`liblzma` is just\na newer fork of that crate anyway), and remove the lzma features from\n`zip` crate.\n\n---------\n\nCo-authored-by: Victor Graf <victor@risczero.com>",
+          "timestamp": "2025-08-01T18:33:54Z",
+          "tree_id": "b0583334f9d3a7d73e45307c8b870071b65ee57a",
+          "url": "https://github.com/risc0/risc0/commit/467ea58ba23bd9a1de79ffaa6c7abba5074ca8bd"
+        },
+        "date": 1754075805007,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93990544,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13478,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32757,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31830,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13685,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12343,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103811,6 +103865,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1754075492813,
+  "lastUpdate": 1754075807741,
   "repoUrl": "https://github.com/risc0/risc0"
 }
