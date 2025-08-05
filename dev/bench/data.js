@@ -77423,6 +77423,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e84501afeb4edbada3f47820f8b55d946d88909b",
+          "message": "Implement proof of verifiable work (PoVW) (#3220)\n\nThis PR implements the PoVW prover, core data types, Merkle tree for\nnonces, and the Log Builder guest.\n\nRelated: https://github.com/risc0/zirgen/pull/250\nRelated: https://github.com/boundless-xyz/boundless/pull/847\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>",
+          "timestamp": "2025-08-05T22:38:05Z",
+          "tree_id": "ee494c5f21090655845886bccc9165d901cf9cc7",
+          "url": "https://github.com/risc0/risc0/commit/e84501afeb4edbada3f47820f8b55d946d88909b"
+        },
+        "date": 1754436432055,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 95975264,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13894,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32224,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32073,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13520,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12367,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103919,6 +103973,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1754436114949,
+  "lastUpdate": 1754436434334,
   "repoUrl": "https://github.com/risc0/risc0"
 }
