@@ -77477,6 +77477,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "31ec8b4b5f7c802fe6aa3aa649ba65282c87da12",
+          "message": "New optimized groth16 implementation (#3296)\n\nIntegrate new groth16 prover.\n\nThis uses a GPU kernel for proving instead of a program inside docker.\nThe new circom crate requires protoc available when building\n\nI integrated the change into bento and tested it manually. I gave up on\nmaking the bento-run CI job work.",
+          "timestamp": "2025-08-06T01:22:33Z",
+          "tree_id": "461fe6fd1617cabd195c2b48aff9f2aaf718371d",
+          "url": "https://github.com/risc0/risc0/commit/31ec8b4b5f7c802fe6aa3aa649ba65282c87da12"
+        },
+        "date": 1754446606283,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93850912,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13574,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32598,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31829,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13632,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12240,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -103973,6 +104027,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1754436434334,
+  "lastUpdate": 1754446608385,
   "repoUrl": "https://github.com/risc0/risc0"
 }
