@@ -104132,9 +104132,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "402e5d47d96d500dcc5a7798179bda5574853f72",
+          "message": "Semver fixes for 3.0 publishing (#3303)\n\n- New crates should not put `release = false` if the plan is to publish\nthem, instead they should set their semver baseline to none (I\nmisremembered what the right thing to do here was)\n- The semver checks CI job doesn't work correctly on the release branch,\nit needed some updates.\n- The way it checks for being run on the release branch didn't work\nright for PRs",
+          "timestamp": "2025-08-07T20:57:51Z",
+          "tree_id": "aa916b6747b30a8ba7e3bc0002bc8dea4e485db9",
+          "url": "https://github.com/risc0/risc0/commit/402e5d47d96d500dcc5a7798179bda5574853f72"
+        },
+        "date": 1754602833060,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 101754224,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1372259,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1642686,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1289996,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1331822,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1055749,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1754526231107,
+  "lastUpdate": 1754602835629,
   "repoUrl": "https://github.com/risc0/risc0"
 }
