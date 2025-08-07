@@ -104024,9 +104024,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "742390ac5bb04e820bda18bb8da2aa1f4e1b01e3",
+          "message": "Update bench_reports.yml for new groth16 code (#3301)",
+          "timestamp": "2025-08-06T23:29:30Z",
+          "tree_id": "c71d7e821b1685e1f9b79626b89e71c4e7790555",
+          "url": "https://github.com/risc0/risc0/commit/742390ac5bb04e820bda18bb8da2aa1f4e1b01e3"
+        },
+        "date": 1754525939584,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 99797312,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1373379,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1634289,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1284226,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1331862,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1062646,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1754446608385,
+  "lastUpdate": 1754525942306,
   "repoUrl": "https://github.com/risc0/risc0"
 }
