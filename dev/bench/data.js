@@ -104240,9 +104240,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d9e4483136318ea303f0e7d38618e5eaaf14ad12",
+          "message": "Change how SessionStats are handled (#3304)\n\nAdd more information to SessionStats, like the ecall_metrics,\nsyscall_metrics, and execution_time.\n\nMake the SessionStats get transferred over the actor RPC system.\n\nPush the logging of the session stats up the call stack so that it will\nhopefully happen even if the executor is on another machine.",
+          "timestamp": "2025-08-09T00:02:16Z",
+          "tree_id": "ad56475f6e037dd117c696faa45ecf8523c8b06a",
+          "url": "https://github.com/risc0/risc0/commit/d9e4483136318ea303f0e7d38618e5eaaf14ad12"
+        },
+        "date": 1754700896081,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 98960792,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1367129,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1637901,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1282174,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1316524,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1049908,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1754603122019,
+  "lastUpdate": 1754700898842,
   "repoUrl": "https://github.com/risc0/risc0"
 }
