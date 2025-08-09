@@ -77639,6 +77639,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d9e4483136318ea303f0e7d38618e5eaaf14ad12",
+          "message": "Change how SessionStats are handled (#3304)\n\nAdd more information to SessionStats, like the ecall_metrics,\nsyscall_metrics, and execution_time.\n\nMake the SessionStats get transferred over the actor RPC system.\n\nPush the logging of the session stats up the call stack so that it will\nhopefully happen even if the executor is on another machine.",
+          "timestamp": "2025-08-09T00:02:16Z",
+          "tree_id": "ad56475f6e037dd117c696faa45ecf8523c8b06a",
+          "url": "https://github.com/risc0/risc0/commit/d9e4483136318ea303f0e7d38618e5eaaf14ad12"
+        },
+        "date": 1754701190412,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94080824,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13528,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32844,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31919,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13592,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 11634,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -104297,6 +104351,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1754700898842,
+  "lastUpdate": 1754701192515,
   "repoUrl": "https://github.com/risc0/risc0"
 }
