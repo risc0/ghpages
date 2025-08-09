@@ -104348,9 +104348,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ebd64e43e7d953e0edcee2d4e0225b75458d80b5",
+          "message": "Fix CUDA code compilation warnings (#3305)\n\nThese were really annoying me for a while because vim's pattern matching\nfor compilation errors would get stuck on these",
+          "timestamp": "2025-08-09T00:37:57Z",
+          "tree_id": "779895a45952a833a25132d89740c9a7904b5e29",
+          "url": "https://github.com/risc0/risc0/commit/ebd64e43e7d953e0edcee2d4e0225b75458d80b5"
+        },
+        "date": 1754702775787,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 99098512,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1377413,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1645294,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1297959,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1335303,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1065306,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1754701192515,
+  "lastUpdate": 1754702778286,
   "repoUrl": "https://github.com/risc0/risc0"
 }
