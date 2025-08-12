@@ -77747,6 +77747,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a9cffbd9c61cb0edc6fd92400ff904e9ed516ea",
+          "message": "Replace size_t literal syntax with more portable static_cast (#3314)\n\nI used a size_t literal here to fix an implicit cast warning, but the\nsyntax I used is only available in a newer C++ standard. To maximize\nportability use the older syntax.",
+          "timestamp": "2025-08-12T20:23:20Z",
+          "tree_id": "5adad7b818368e67c77d92e3e1d493f08c544c7e",
+          "url": "https://github.com/risc0/risc0/commit/5a9cffbd9c61cb0edc6fd92400ff904e9ed516ea"
+        },
+        "date": 1755033853082,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94153872,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13598,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32655,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31818,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13497,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12227,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -104513,6 +104567,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755033121394,
+  "lastUpdate": 1755033869418,
   "repoUrl": "https://github.com/risc0/risc0"
 }
