@@ -104456,9 +104456,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a9cffbd9c61cb0edc6fd92400ff904e9ed516ea",
+          "message": "Replace size_t literal syntax with more portable static_cast (#3314)\n\nI used a size_t literal here to fix an implicit cast warning, but the\nsyntax I used is only available in a newer C++ standard. To maximize\nportability use the older syntax.",
+          "timestamp": "2025-08-12T20:23:20Z",
+          "tree_id": "5adad7b818368e67c77d92e3e1d493f08c544c7e",
+          "url": "https://github.com/risc0/risc0/commit/5a9cffbd9c61cb0edc6fd92400ff904e9ed516ea"
+        },
+        "date": 1755033117833,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94612888,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1355275,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1633304,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1288159,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1329465,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1060248,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1754703071356,
+  "lastUpdate": 1755033121394,
   "repoUrl": "https://github.com/risc0/risc0"
 }
