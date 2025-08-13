@@ -104672,9 +104672,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacob@risczero.com",
+            "name": "Jacob Weightman",
+            "username": "jacobdweightman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5cb72b8c12e8ba9eec9fe403b717f4c06f7e08c6",
+          "message": "Test IOP and merkle compatibility with V3 (#3310)",
+          "timestamp": "2025-08-13T18:17:18Z",
+          "tree_id": "667bd5ffd1d78b206bb9b4f3bbc54fae5ab35032",
+          "url": "https://github.com/risc0/risc0/commit/5cb72b8c12e8ba9eec9fe403b717f4c06f7e08c6"
+        },
+        "date": 1755111640366,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 95457168,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1350172,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1624875,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1264571,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1307156,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1044135,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1755050677466,
+  "lastUpdate": 1755111642989,
   "repoUrl": "https://github.com/risc0/risc0"
 }
