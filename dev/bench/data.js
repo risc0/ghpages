@@ -77801,6 +77801,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9662909dfc047584627143429443b0613a5d71a",
+          "message": "Add missing `-std=c++17` flag to the cuda code compilation (#3316)\n\nThis matches all the other C++ compilation steps",
+          "timestamp": "2025-08-13T01:12:55Z",
+          "tree_id": "15c47a59b0aeff190afdf4203ee69e0ade2618a8",
+          "url": "https://github.com/risc0/risc0/commit/e9662909dfc047584627143429443b0613a5d71a"
+        },
+        "date": 1755050675312,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94843832,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13676,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32677,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31789,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13318,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12182,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -104621,6 +104675,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755050386879,
+  "lastUpdate": 1755050677466,
   "repoUrl": "https://github.com/risc0/risc0"
 }
