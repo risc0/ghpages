@@ -77909,6 +77909,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f79b1afddd803cda522099815b8756f3686ad8b",
+          "message": "Add support for Groth16 shrink-wrapping to the actor system (#3318)\n\nAdds new `ShrinkWrapRequest` to actor system which is fulfilled by\n`shrink_wrap::JobActor`. The `ShrinkWrapRequest` has a `kind` field\nwhich is `ShrinkWrapKind`, the only variant in it right now is\n`Groth16`.\n\nThere is a new `ShrinkWrap` task type that workers can ask for. We could\nsplit this out more in the future so that workers could subscribe to\nonly certain kinds of shrink wrapping. The `ShrinkWrap` task always runs\nas a GPU task. (the workers don't have support for CPU proving right\nnow)\n\nImplements the `compress` method of `DefaultProver` when asking for a\ngroth16 receipt, also add groth16 shrink-wrapping when calling\n`prove_with_ctx` and the `receipt_kind` is `Groth16`\n\nImplements the snark API calls in the actor system API.",
+          "timestamp": "2025-08-15T22:06:36Z",
+          "tree_id": "9a6c92677c4841f6fd4daf53e28b47cdc84bde02",
+          "url": "https://github.com/risc0/risc0/commit/4f79b1afddd803cda522099815b8756f3686ad8b"
+        },
+        "date": 1755298872871,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94603656,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13630,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32829,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31942,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13715,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12235,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -104837,6 +104891,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755298565341,
+  "lastUpdate": 1755298875075,
   "repoUrl": "https://github.com/risc0/risc0"
 }
