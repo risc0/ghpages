@@ -104888,9 +104888,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4412f6e426e0fea964a187c37b254a9d2dbd5840",
+          "message": "Upgrade to Rust 2024 edition (#3326)",
+          "timestamp": "2025-08-19T00:58:48Z",
+          "tree_id": "163242c325d840ccdd7b6a02da4a6580e6e4f1e4",
+          "url": "https://github.com/risc0/risc0/commit/4412f6e426e0fea964a187c37b254a9d2dbd5840"
+        },
+        "date": 1755567846435,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94685432,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1352668,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1626378,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1275945,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1326321,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1061828,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1755298875075,
+  "lastUpdate": 1755567849052,
   "repoUrl": "https://github.com/risc0/risc0"
 }
