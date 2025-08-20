@@ -78071,6 +78071,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e0cdd5e04b31360ea8a70b2eee779a4d0e905fc",
+          "message": "3.0: Update docs & groth16 component error message (#3331)\n\nThis updates docs concerning the following this\n- README for `rzup publish`\n- README for groth16 around publishing the component\n- developer docs for groth16 shrink-wrapping\n- developer docs for gdb support\n- error message when groth16 component is missing\n\n---------\n\nCo-authored-by: Paul <paul.gafni@gmail.com>",
+          "timestamp": "2025-08-20T03:31:31Z",
+          "tree_id": "1eed9d5d48b08640914eb9f7bc93118734efbfc3",
+          "url": "https://github.com/risc0/risc0/commit/8e0cdd5e04b31360ea8a70b2eee779a4d0e905fc"
+        },
+        "date": 1755663832865,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94967608,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 12973,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32680,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32080,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13237,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12385,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -105161,6 +105215,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755663551889,
+  "lastUpdate": 1755663835084,
   "repoUrl": "https://github.com/risc0/risc0"
 }
