@@ -104996,9 +104996,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "076da95cb879e5bcbf70b6586e9fad7a87e3914a",
+          "message": "Build PoVW log builder and check into git (#3330)\n\nIn order to allow the Boundless PoVW code to use a stable Log Builder\nimage ID and binary, this PR includes pre-built binaries. These binaries\nare produced using the `cargo risczero build --archive` which is\nimplemented in https://github.com/risc0/risc0/pull/3329\n\n- Re-export povw types from binfmt\n- Build and include guest programs for povw",
+          "timestamp": "2025-08-20T00:44:53Z",
+          "tree_id": "6ccd2d00622344e745a044f452a3bdd7bddf2293",
+          "url": "https://github.com/risc0/risc0/commit/076da95cb879e5bcbf70b6586e9fad7a87e3914a"
+        },
+        "date": 1755653356821,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 100948896,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1370075,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1639233,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1290169,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1329111,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1060246,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1755568129718,
+  "lastUpdate": 1755653359629,
   "repoUrl": "https://github.com/risc0/risc0"
 }
