@@ -105320,9 +105320,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jsign.uy@gmail.com",
+            "name": "Ignacio Hagopian",
+            "username": "jsign"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "2384a958948366f9181032d4f9791e295df4e98d",
+          "message": "zkvm/guest: fix doc typo (#3159)\n\nThis PR fixes a small typo in the docs.\n\nSigned-off-by: Ignacio Hagopian <jsign.uy@gmail.com>\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-22T09:31:00Z",
+          "tree_id": "c9469bdc7d3ab314199b64143fcf71ef9b5ffc46",
+          "url": "https://github.com/risc0/risc0/commit/2384a958948366f9181032d4f9791e295df4e98d"
+        },
+        "date": 1755858331095,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 99541696,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1357613,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1616574,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1266495,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1315250,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1048857,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1755829865607,
+  "lastUpdate": 1755858333942,
   "repoUrl": "https://github.com/risc0/risc0"
 }
