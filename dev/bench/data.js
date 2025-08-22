@@ -78125,6 +78125,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1134c6159263f15e421b96416727c44eaf799532",
+          "message": "Release 3.0: Update crate versions, sermver-baseline, and docs (#3338)\n\nThis updates the crate versions and semver-baselines for main. It also\ncuts the 3.0 docs.\n\nI had to fix semver-checks to understand that a change from 0.1.0 to\n0.2.0 counts as a breaking change.",
+          "timestamp": "2025-08-22T01:41:23Z",
+          "tree_id": "cf7511d93c996f0df9d7bf488b2091c233db4dde",
+          "url": "https://github.com/risc0/risc0/commit/1134c6159263f15e421b96416727c44eaf799532"
+        },
+        "date": 1755829863397,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94906400,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13414,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32429,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31908,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13626,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12163,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -105269,6 +105323,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755829592343,
+  "lastUpdate": 1755829865607,
   "repoUrl": "https://github.com/risc0/risc0"
 }
