@@ -78233,6 +78233,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76674c1a20d30fa901852374bddf27fc5d5785a6",
+          "message": "Improve CI performance (#3342)",
+          "timestamp": "2025-08-23T05:46:41Z",
+          "tree_id": "3f23e8baacb9da25f0e0d1f4082d3bce15a30638",
+          "url": "https://github.com/risc0/risc0/commit/76674c1a20d30fa901852374bddf27fc5d5785a6"
+        },
+        "date": 1755930796041,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92979440,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13702,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32560,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31716,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13655,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12327,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -105485,6 +105539,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755930526241,
+  "lastUpdate": 1755930798402,
   "repoUrl": "https://github.com/risc0/risc0"
 }
