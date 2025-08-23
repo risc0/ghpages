@@ -78287,6 +78287,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "4d81f75cafecf7b67880172360ba1efc48963387",
+          "message": "Fix bounds checking issue in zkp eltwise code (#3341)\n\nWe would write past the end of the buffer.\n\nI found this by running `compute-sanitizer` on `r0vm`. It was just a\nsimple single-segment proof, there might be more to find by running it\non more complex scenarios.\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-23T10:09:11Z",
+          "tree_id": "35d798aa17963d985db94389fe9ff7867306f4e1",
+          "url": "https://github.com/risc0/risc0/commit/4d81f75cafecf7b67880172360ba1efc48963387"
+        },
+        "date": 1755947141874,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94320288,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13725,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32813,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31906,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13423,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 12389,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -105593,6 +105647,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1755946628305,
+  "lastUpdate": 1755947144004,
   "repoUrl": "https://github.com/risc0/risc0"
 }
