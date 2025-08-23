@@ -105644,9 +105644,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dmitriymozir@gmail.com",
+            "name": "MozirDmitriy",
+            "username": "MozirDmitriy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a7261d9d26fd1740eaa2be3f101e0883898f613",
+          "message": "Update documentation link to root risc0_zkvm docs (#3214)\n\nReplaced the outdated link to the specific `prove` module with the root\n`risc0_zkvm` documentation link for better accuracy and future-proofing.\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-23T12:25:24Z",
+          "tree_id": "10cbe10bbf226d40059cfe705cac5832fc4261aa",
+          "url": "https://github.com/risc0/risc0/commit/1a7261d9d26fd1740eaa2be3f101e0883898f613"
+        },
+        "date": 1755954744547,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 98486624,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1368213,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1608968,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1252646,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1311388,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1043123,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1755947144004,
+  "lastUpdate": 1755954747114,
   "repoUrl": "https://github.com/risc0/risc0"
 }
