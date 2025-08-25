@@ -78449,6 +78449,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "4d8e77965038164ff3831eb42f5d542ab9485680",
+          "message": "Extract rzup artifacts out-of-place (#3343)\n\nThis should help ensure that components aren't ever half-installed.\n\nThe test I add doesn't fail previously because it does try to delete the\ndirectory if the extraction fails, but if rzup is killed it will leave\nit half extracted. I can't test the rzup being killed case, but I might\nas well backfill the case for regular failed extraction.\n\nWith this, I think we should be able to remove the `--force` flag from\nthe CI invocations",
+          "timestamp": "2025-08-25T19:25:12Z",
+          "tree_id": "ac7801a73cf9825e63e997b1f52fa4340dd15bef",
+          "url": "https://github.com/risc0/risc0/commit/4d8e77965038164ff3831eb42f5d542ab9485680"
+        },
+        "date": 1756153777056,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 91777760,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 12654,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31709,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30819,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 12903,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 11911,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -105917,6 +105971,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756153439674,
+  "lastUpdate": 1756153780586,
   "repoUrl": "https://github.com/risc0/risc0"
 }
