@@ -105752,9 +105752,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c08b6bb14cf4476d8c73ab7514597056316ba1e1",
+          "message": "Speed up tests (#3344)\n\n* Build methods crates in parallel\n* Adjust test profile to favor building faster at the cost of slower\ntests\n* CI can select a `fast` or `slow` profile. `fast` causes slow tests to\nbe ignored. `fast` is selected for GPU, while `slow` for CPU.",
+          "timestamp": "2025-08-25T16:39:15Z",
+          "tree_id": "5071ab6a9ce87bca093398c671c8e12c17420b91",
+          "url": "https://github.com/risc0/risc0/commit/c08b6bb14cf4476d8c73ab7514597056316ba1e1"
+        },
+        "date": 1756144697103,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 100654152,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1351033,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1631357,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1267688,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1322306,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1054063,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1755955028991,
+  "lastUpdate": 1756144700110,
   "repoUrl": "https://github.com/risc0/risc0"
 }
