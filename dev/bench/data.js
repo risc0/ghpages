@@ -78503,6 +78503,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e448cac394c36981bfd252e0abb4ebba426adfb",
+          "message": "Add execute-only support to the actor-system (#3322)\n\nImplement an execute only option in the actor-system.\n\nThis does it by adding a `execute_only` bool to `ProofRequest` and\nmaking the `receipt` in `ProofResult` optional.\n\nI struggled at first trying instead other ways of doing this with its\nown \"execute-only\" job, but the existing bonsai API makes it difficult\nto do that.\n\nIt implements the `Executor` trait for the `DefaultProver` and also adds\nexecute-only support to the API part of the actor system. This includes\nserializing the journal.\n\ndepends on https://github.com/risc0/risc0/pull/3318",
+          "timestamp": "2025-08-25T22:19:19Z",
+          "tree_id": "7aaf0005fcc96dabb8a1a1294bf017e8a5280975",
+          "url": "https://github.com/risc0/risc0/commit/4e448cac394c36981bfd252e0abb4ebba426adfb"
+        },
+        "date": 1756166219713,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92984280,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13212,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32702,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32016,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13679,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 11861,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -106025,6 +106079,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756165900469,
+  "lastUpdate": 1756166222002,
   "repoUrl": "https://github.com/risc0/risc0"
 }
