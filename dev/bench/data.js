@@ -78395,6 +78395,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c08b6bb14cf4476d8c73ab7514597056316ba1e1",
+          "message": "Speed up tests (#3344)\n\n* Build methods crates in parallel\n* Adjust test profile to favor building faster at the cost of slower\ntests\n* CI can select a `fast` or `slow` profile. `fast` causes slow tests to\nbe ignored. `fast` is selected for GPU, while `slow` for CPU.",
+          "timestamp": "2025-08-25T16:39:15Z",
+          "tree_id": "5071ab6a9ce87bca093398c671c8e12c17420b91",
+          "url": "https://github.com/risc0/risc0/commit/c08b6bb14cf4476d8c73ab7514597056316ba1e1"
+        },
+        "date": 1756145383450,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 91741752,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13265,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 30453,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30477,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13002,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 11751,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -105809,6 +105863,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756144700110,
+  "lastUpdate": 1756145385765,
   "repoUrl": "https://github.com/risc0/risc0"
 }
