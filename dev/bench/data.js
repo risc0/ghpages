@@ -78719,6 +78719,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49131718+consensuslayer@users.noreply.github.com",
+            "name": "Consensus Guy",
+            "username": "consensuslayer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2d2c7d09896965f59f032bc1b2a7828cbd756532",
+          "message": "Docs improvements (#3324)\n\nHello Risc0 team\n\nDuring reading the docs, examples, etc\n\nI found some minor typos that I fixed\n\nBR\nCL .\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-26T10:08:55Z",
+          "tree_id": "e33adc25de04a23630df49e3cde357afc5eba0e0",
+          "url": "https://github.com/risc0/risc0/commit/2d2c7d09896965f59f032bc1b2a7828cbd756532"
+        },
+        "date": 1756209352191,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85812392,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13971,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32348,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31891,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13457,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10161,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -106511,6 +106565,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756209040347,
+  "lastUpdate": 1756209354988,
   "repoUrl": "https://github.com/risc0/risc0"
 }
