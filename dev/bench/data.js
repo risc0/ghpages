@@ -106076,9 +106076,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "040353b1986d6fd30f29d5e9adda58dac4a8265b",
+          "message": "Remove `--force` flag from rzup CI invocations (#3348)",
+          "timestamp": "2025-08-25T23:51:39Z",
+          "tree_id": "e9876ddca052bf9ac768e6e569c03b1ef96e2381",
+          "url": "https://github.com/risc0/risc0/commit/040353b1986d6fd30f29d5e9adda58dac4a8265b"
+        },
+        "date": 1756169957239,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 100392288,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1353267,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1632362,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1274979,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1319711,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 1051636,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756166222002,
+  "lastUpdate": 1756169960087,
   "repoUrl": "https://github.com/risc0/risc0"
 }
