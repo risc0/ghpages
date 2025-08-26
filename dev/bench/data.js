@@ -106292,9 +106292,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "avorycorelli@gmail.com",
+            "name": "Avory",
+            "username": "avorylli"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "119e45f8eac77e3235841ba614154b5370c0a016",
+          "message": "chore: clarify unimplemented extern_readCoefficients error message (#3279)\n\nReplaced vague \n\n`throw std::runtime_error(\"TODO\")` \n\nwith a more descriptive error: \n\n`\"extern_readCoefficients not implemented\"`\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-26T09:25:59Z",
+          "tree_id": "ced83381f4347be0fd7dc94e607492d2e6705fbf",
+          "url": "https://github.com/risc0/risc0/commit/119e45f8eac77e3235841ba614154b5370c0a016"
+        },
+        "date": 1756206743405,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 91997992,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1357818,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1617662,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1255324,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1166876,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 726614,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756184113032,
+  "lastUpdate": 1756206746270,
   "repoUrl": "https://github.com/risc0/risc0"
 }
