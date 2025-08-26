@@ -106346,9 +106346,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "avorycorelli@gmail.com",
+            "name": "Avory",
+            "username": "avorylli"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ebfc7d30aea9a64ee0b0ccd27a88d4d2928918e9",
+          "message": "chore: explain eval shift in cpu polynomial check (#3280)\n\nAdded comment explaining use of 3× multiplier to avoid root collisions\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-26T09:53:47Z",
+          "tree_id": "055e0258ac7a5370c5749dcff92311b2fa594776",
+          "url": "https://github.com/risc0/risc0/commit/ebfc7d30aea9a64ee0b0ccd27a88d4d2928918e9"
+        },
+        "date": 1756207159802,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 89441000,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1354838,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1607994,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1245873,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1164481,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 724136,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756206746270,
+  "lastUpdate": 1756207167829,
   "repoUrl": "https://github.com/risc0/risc0"
 }
