@@ -78611,6 +78611,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3f00e1fa0159599c1601e788021f2169d1f0a4dc",
+          "message": "Refactor guest I/O with host (#3351)\n\n* Heavy lifting now occurs in the kernel\n* A syscall number is passed to the kernel so that it can dispatch,\navoiding the need for an expensive strcmp\n* Replace RISC-V instruction fence with unimp, which represents an\nintentional illegal instruction\n* This implementation drops support for the v1 host/guest protocol.",
+          "timestamp": "2025-08-26T04:08:44Z",
+          "tree_id": "11e564990359050bf4cd11393867a6c2daac7666",
+          "url": "https://github.com/risc0/risc0/commit/3f00e1fa0159599c1601e788021f2169d1f0a4dc"
+        },
+        "date": 1756184111069,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 82526616,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13005,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 30593,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30900,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13101,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10063,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -106241,6 +106295,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756183778999,
+  "lastUpdate": 1756184113032,
   "repoUrl": "https://github.com/risc0/risc0"
 }
