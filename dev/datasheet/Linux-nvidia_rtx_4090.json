@@ -2,8 +2,8 @@
   {
     "name": "execute",
     "hashfn": "N/A",
-    "throughput": 54248421.18244412,
-    "duration": 18682811,
+    "throughput": 53414125.443849355,
+    "duration": 18974625,
     "cycles": 1013513,
     "ram": 0,
     "seal": 0
@@ -11,8 +11,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 398122.03232452506,
-    "duration": 82306422,
+    "throughput": 387112.5771645329,
+    "duration": 84647211,
     "cycles": 32768,
     "ram": 297735492,
     "seal": 209256
@@ -20,8 +20,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 613222.1688497361,
-    "duration": 106871544,
+    "throughput": 605264.5809069668,
+    "duration": 108276615,
     "cycles": 65536,
     "ram": 595469636,
     "seal": 220904
@@ -29,8 +29,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 865181.7666876755,
-    "duration": 151496489,
+    "throughput": 863243.5775463544,
+    "duration": 151836635,
     "cycles": 131072,
     "ram": 1190971716,
     "seal": 243944
@@ -38,8 +38,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1054174.0648706076,
-    "duration": 248672405,
+    "throughput": 1040081.4385543872,
+    "duration": 252041802,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 255656
@@ -47,8 +47,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1285037.8818377217,
-    "duration": 407994198,
+    "throughput": 1276861.495641609,
+    "duration": 410606790,
     "cycles": 524288,
     "ram": 4763882820,
     "seal": 267880
@@ -56,8 +56,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1382613.7056992322,
-    "duration": 758401277,
+    "throughput": 1374400.6030807602,
+    "duration": 762933309,
     "cycles": 1048576,
     "ram": 9527764292,
     "seal": 281128
@@ -65,8 +65,8 @@
   {
     "name": "lift",
     "hashfn": "poseidon2",
-    "throughput": 1626767.3425885057,
-    "duration": 161144125,
+    "throughput": 1613371.4361530982,
+    "duration": 162482113,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -74,8 +74,8 @@
   {
     "name": "join",
     "hashfn": "poseidon2",
-    "throughput": 1251698.1214725412,
-    "duration": 209430689,
+    "throughput": 1222476.060663789,
+    "duration": 214436919,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -83,8 +83,8 @@
   {
     "name": "succinct",
     "hashfn": "poseidon2",
-    "throughput": 628733.5913805552,
-    "duration": 416939708,
+    "throughput": 625495.002997768,
+    "duration": 419098472,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 222668
@@ -92,8 +92,8 @@
   {
     "name": "identity_p254",
     "hashfn": "poseidon2",
-    "throughput": 1075488.0228344277,
-    "duration": 243744230,
+    "throughput": 1072901.3472114406,
+    "duration": 244331877,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -101,8 +101,8 @@
   {
     "name": "shrink_wrap",
     "hashfn": "poseidon2",
-    "throughput": 65604.91287659612,
-    "duration": 3995798310,
+    "throughput": 73780.6872314361,
+    "duration": 3553016512,
     "cycles": 262144,
     "ram": 0,
     "seal": 360
@@ -110,8 +110,8 @@
   {
     "name": "groth16",
     "hashfn": "poseidon2",
-    "throughput": 70486.80111578705,
-    "duration": 3719050884,
+    "throughput": 72389.15963321194,
+    "duration": 3621315696,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 256
@@ -119,17 +119,17 @@
   {
     "name": "bigint2_execute",
     "hashfn": "N/A",
-    "throughput": 31495873.4557068,
-    "duration": 67425182,
-    "cycles": 2123615,
+    "throughput": 30751524.83387469,
+    "duration": 67644418,
+    "cycles": 2080169,
     "ram": 0,
     "seal": 0
   },
   {
     "name": "bigint2_prove_segment",
     "hashfn": "poseidon2",
-    "throughput": 1944640.393143207,
-    "duration": 1213229967,
+    "throughput": 1941245.2595281007,
+    "duration": 1215351841,
     "cycles": 2359296,
     "ram": 9527764292,
     "seal": 0
