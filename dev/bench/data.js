@@ -78881,6 +78881,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "georgebashmunta@gmail.com",
+            "name": "Bashmunta",
+            "username": "Bashmunta"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1ea88f36839b889a15de419e1190ae34c2e0932",
+          "message": "docs(field): correct polynomial reduction comment in baby_bear.rs (#3309)\n\nCorrect comment to “reduce modulo x^4 + BETA (i.e., x^4 = -BETA)” in\nrisc0/core/src/field/baby_bear.rs.\nRemove unused import alias Elem as FieldElem.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-27T03:55:41Z",
+          "tree_id": "d58cc912ceaa095a3c71a177fce1fed668234bef",
+          "url": "https://github.com/risc0/risc0/commit/c1ea88f36839b889a15de419e1190ae34c2e0932"
+        },
+        "date": 1756271535258,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 82211664,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13455,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 30453,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30744,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13040,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 9791,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -106835,6 +106889,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756270985253,
+  "lastUpdate": 1756271539016,
   "repoUrl": "https://github.com/risc0/risc0"
 }
