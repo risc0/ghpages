@@ -78827,6 +78827,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "637f219e26988448eca28a24c586a8f9422f9301",
+          "message": "Remove all the file I/O and JSON stuff from the groth16 kernels (#3339)\n\nThis helps minimize the groth16 C++ code. Also ferrying stuff through\nfiles and JSON needlessly just wastes time.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-27T03:37:15Z",
+          "tree_id": "6c17ec0a41428933c8fc9c9d0144b0e21b8cc4c5",
+          "url": "https://github.com/risc0/risc0/commit/637f219e26988448eca28a24c586a8f9422f9301"
+        },
+        "date": 1756270341757,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85174912,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13708,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31507,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32093,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13713,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10346,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -106727,6 +106781,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756269715932,
+  "lastUpdate": 1756270344056,
   "repoUrl": "https://github.com/risc0/risc0"
 }
