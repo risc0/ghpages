@@ -78935,6 +78935,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "31db8c36545e8cee59f109d46a3f44b728231bf6",
+          "message": "Update semver baselines and compatibility for 3.0.3 (#3360)",
+          "timestamp": "2025-08-27T19:59:53Z",
+          "tree_id": "70de2393391f89de61ea46461159ad64a8b4871c",
+          "url": "https://github.com/risc0/risc0/commit/31db8c36545e8cee59f109d46a3f44b728231bf6"
+        },
+        "date": 1756327948525,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85750080,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13918,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32810,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31796,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13541,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10448,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -106943,6 +106997,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756327633076,
+  "lastUpdate": 1756327951613,
   "repoUrl": "https://github.com/risc0/risc0"
 }
