@@ -106994,9 +106994,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c23782089bb7806737e460f272992d4a72bb8907",
+          "message": "Move guest binaries in risc0-povw to allow publishing and add defaults to log-builder prover (#3362)\n\nIn https://github.com/risc0/risc0/pull/3330, I added built binaries for\nthe Log Builder guest. Because I added them to the inner guest\nworkspace, and then imported them in the library, this fails to build\nwhen pulling from `crates.io`.\n\nThis PR moves the pre-built guest binaries. It also sets a default on\nthe Log Builder prover to use the included bin and ID for easier\ninstantiation.",
+          "timestamp": "2025-08-28T19:05:06Z",
+          "tree_id": "9edcd48c2d1868414b743c82809ef9716c4fbbfe",
+          "url": "https://github.com/risc0/risc0/commit/c23782089bb7806737e460f272992d4a72bb8907"
+        },
+        "date": 1756410036372,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93975664,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1361545,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1653061,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1301910,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1181107,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 737822,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756327951613,
+  "lastUpdate": 1756410039392,
   "repoUrl": "https://github.com/risc0/risc0"
 }
