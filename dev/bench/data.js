@@ -107048,9 +107048,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cb6e7b852906081945db826d0eee7c1346614867",
+          "message": "Drop obsolete compat test (#3367)",
+          "timestamp": "2025-08-28T17:01:54-07:00",
+          "tree_id": "ee85f97d8486be7a3c970533ebd64457c9a5c3df",
+          "url": "https://github.com/risc0/risc0/commit/cb6e7b852906081945db826d0eee7c1346614867"
+        },
+        "date": 1756426297147,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93946952,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1361107,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1643910,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1293205,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1172467,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 736164,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756410039392,
+  "lastUpdate": 1756426299752,
   "repoUrl": "https://github.com/risc0/risc0"
 }
