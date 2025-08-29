@@ -79259,6 +79259,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf0d0cb067ebda4d9021e41b885eed07f494ed33",
+          "message": "Export BN254_IDENTITY_CONTROL_ID from risc0-zkvm (#3366)\n\nWe currently export `ALLOWED_CONTROL_ROOT` and `ALLOWED_CONTROL_IDS`\nfrom `risc0-zkvm`, but we do not export `BN254_IDENTITY_CONTROL_ID`.\nThis is a required field to build `Groth16ReceiptVerifierParameters`,\nand to deploy the Groth16 verifier smart contract. As a result, when we\nwant to use Rust to deploy that contract (e.g. in tests) we currently\nneed to import `risc0-circuit-recursion` [2].\n\nThis PR exports `BN254_IDENTITY_CONTROL_ID` from `risc0-zkvm`, which\nwill allow code that depends on it to drop the direct dep on\n`risc0-circuit-recursion`.\n\n[1]\nhttps://github.com/risc0/risc0/blob/b81b1f9175df9cadb3675caebc993c7b1e9d8082/risc0/zkvm/src/receipt/groth16.rs#L135-L137\n[2]\nhttps://github.com/boundless-xyz/boundless/blob/main/crates/boundless-market/test-utils/src/lib.rs#L42",
+          "timestamp": "2025-08-29T10:10:49Z",
+          "tree_id": "bf525157eb7cf1cc4c4d5972244a1c5664d5e1bf",
+          "url": "https://github.com/risc0/risc0/commit/bf0d0cb067ebda4d9021e41b885eed07f494ed33"
+        },
+        "date": 1756465587368,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 81822376,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 14021,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32524,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32013,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13679,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10330,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -107645,6 +107699,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756465237674,
+  "lastUpdate": 1756465589682,
   "repoUrl": "https://github.com/risc0/risc0"
 }
