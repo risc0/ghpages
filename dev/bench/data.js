@@ -107156,9 +107156,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lostropolop@gmail.com",
+            "name": "dneptolus",
+            "username": "dneptolus"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c53054c7d5a414090da37785e40933b060bef87",
+          "message": "docs: fix typos across codebase (comments, logs, tests, docs) (#3325)\n\n### What\n- Fixed spelling mistakes and typos in comments, log strings, test\nmessages, and documentation.\n- No logic or API changes — string/content updates only.\n\n### Changes\n- bonsai/sdk: `Wether` → `Whether`\n- examples/smartcore-ml: `Euclidian` → `Euclidean`\n- examples/smartcore-ml/SmartCore.ipynb: `leafs` → `leaves`\n- risc0/circuit/rv32im: `re-use` → `reuse`\n- risc0/circuit/rv32im: `user-addressible` → `user-addressable`\n- risc0/povw: `hieght` → `height`, `convinient` → `convenient`,\n`decendents` → `descendants`, `boundry` → `boundary`\n- risc0/r0vm: `recevier` → `receiver`, `mesages` → `messages`\n- risc0/zkvm: `unwraped` → `unwrapped`, `seperately` → `separately`,\n`programatically` → `programmatically`, `jounal` → `journal`\n- website/api_versioned_docs: `stablizing` → `stabilizing`\n\n---------\n\nCo-authored-by: dneptolus <172505511+dneptolus@users.noreply.github.com>\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-29T01:36:07Z",
+          "tree_id": "ebf59caaad12958012174dd4043a5f37c39f8c9f",
+          "url": "https://github.com/risc0/risc0/commit/1c53054c7d5a414090da37785e40933b060bef87"
+        },
+        "date": 1756434583760,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94321704,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1364059,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1650169,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1303727,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1191774,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 747029,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756426342617,
+  "lastUpdate": 1756434586264,
   "repoUrl": "https://github.com/risc0/risc0"
 }
