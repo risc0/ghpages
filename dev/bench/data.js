@@ -107372,9 +107372,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "140454972+sashaodessa@users.noreply.github.com",
+            "name": "sashaodessa",
+            "username": "sashaodessa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "85a20e89127d41a4fc58ac1bfac0c2d035700bd3",
+          "message": "docs: fix typos in log-builder tests (#3371)\n\nThis PR corrects minor documentation issues in `log-builder.rs`:  \n- Fixed spelling error (`persitent` → `persistent`).  \n- Fixed spelling error (`guarenteed` → `guaranteed`).",
+          "timestamp": "2025-08-29T08:48:45Z",
+          "tree_id": "321661014ffcb048d88e73fe6d3e668ef4035044",
+          "url": "https://github.com/risc0/risc0/commit/85a20e89127d41a4fc58ac1bfac0c2d035700bd3"
+        },
+        "date": 1756462050989,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94146408,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1362341,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1643779,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1295409,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1194475,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 748832,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756454178600,
+  "lastUpdate": 1756462054109,
   "repoUrl": "https://github.com/risc0/risc0"
 }
