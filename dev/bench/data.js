@@ -107264,9 +107264,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sashass1315@gmail.com",
+            "name": "sashass1315",
+            "username": "sashass1315"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1c718b4f065ac533d7980b7898c6d527228942f0",
+          "message": "docs(verifier): clarify Fr as BN254 scalar for public inputs and hashing (#3359)\n\nReplace misleading “Verifying key for Groth16 proofs.” doc above Fr with\nan accurate description of its role as a BN254 scalar wrapper used in\npublic inputs and hashing.\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-29T07:06:16Z",
+          "tree_id": "4bd89779d54bfdd947b370d7ea58ffab168e786d",
+          "url": "https://github.com/risc0/risc0/commit/1c718b4f065ac533d7980b7898c6d527228942f0"
+        },
+        "date": 1756453872656,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93934080,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1353851,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1643766,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1289061,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1169007,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 733075,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756434902030,
+  "lastUpdate": 1756453875135,
   "repoUrl": "https://github.com/risc0/risc0"
 }
