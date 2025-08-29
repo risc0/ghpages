@@ -107804,9 +107804,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "140460067+maradini77@users.noreply.github.com",
+            "name": "maradini77",
+            "username": "maradini77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0d97ef2238f71b7094c35032f8666f0e771b95c6",
+          "message": "fix typos in the codebase (#3375)\n\n1. **`risc0/povw/src/tree.rs`**\n   - Fixed typo: `boundry` → `boundary`\n     - `boundry_level_index` → `boundary_level_index`\n     - `boundry_subtree_root` → `boundary_subtree_root`\n\n2.\n**`web/apps/benchmarks-and-reports/src/app/(benchmarks-and-reports)/[version]/datasheet/layout.tsx`**\n   - Fixed typo: `parallellized` → `parallelized`",
+          "timestamp": "2025-08-29T23:11:42Z",
+          "tree_id": "fbe95070bea34508bd055c2a97e7c5c708528750",
+          "url": "https://github.com/risc0/risc0/commit/0d97ef2238f71b7094c35032f8666f0e771b95c6"
+        },
+        "date": 1756510916446,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92989544,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1357236,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1654804,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1316133,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1199020,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 748912,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756468307074,
+  "lastUpdate": 1756510919500,
   "repoUrl": "https://github.com/risc0/risc0"
 }
