@@ -107696,9 +107696,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "140458814+viktorking7@users.noreply.github.com",
+            "name": "viktorking7",
+            "username": "viktorking7"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8126fa36b6db4c1791021a07911906ce33acd3da",
+          "message": "fix: correct typo in test function names (#3372)\n\nthis PR updates `dev_mode.rs` tests by fixing function name typos:  \n- `programatic` → `programmatic` x2\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-08-29T11:12:37Z",
+          "tree_id": "d235a4fb15be89ac33f4f40cc3ed4eebbb93e016",
+          "url": "https://github.com/risc0/risc0/commit/8126fa36b6db4c1791021a07911906ce33acd3da"
+        },
+        "date": 1756468188867,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93960944,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1390123,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1669253,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1325190,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1199387,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 749855,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756465589682,
+  "lastUpdate": 1756468191522,
   "repoUrl": "https://github.com/risc0/risc0"
 }
