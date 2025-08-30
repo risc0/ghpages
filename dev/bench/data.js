@@ -108020,9 +108020,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "radikpadik76@gmail.com",
+            "name": "radik878",
+            "username": "radik878"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b67015fd6857bfb78a153aa311270fa9769582f0",
+          "message": "fix(povw/prover): correct error messages in WorkLogUpdateProver (#3306)\n\n- Use \"nonce max log id\" in the second ensure! message (was \"nonce min\nlog id\")\n- Print both nonce_min.job and nonce_max.job in the job-number mismatch\nmessage\n\nImproves clarity of diagnostics when validating work claims.\n\n---------\n\nCo-authored-by: Victor Snyder-Graf <victor@risczero.com>",
+          "timestamp": "2025-08-30T11:12:13Z",
+          "tree_id": "72d364da87a2e5bb160ea561ae0c25f814531a1e",
+          "url": "https://github.com/risc0/risc0/commit/b67015fd6857bfb78a153aa311270fa9769582f0"
+        },
+        "date": 1756554367704,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93658040,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1350925,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1653182,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1320569,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1191052,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 746697,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756523880668,
+  "lastUpdate": 1756554370387,
   "repoUrl": "https://github.com/risc0/risc0"
 }
