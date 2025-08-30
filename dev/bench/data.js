@@ -107912,9 +107912,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aqdrgg19@gmail.com",
+            "name": "VolodymyrBg",
+            "username": "VolodymyrBg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d065f4fb2915832abf2efb3e7f13ad41e25a0d64",
+          "message": "docs: fix typos and grammar in risc0 zkp/zkvm docs and comments (#3373)\n\nFixed a lot of typos in code comments\n\"are have been → have been\"\n\"it attempted\" → \"is attempted\"\n\"know → known\"\n\nand many others",
+          "timestamp": "2025-08-30T02:40:20Z",
+          "tree_id": "2f7eb5e1e7bdc8517fa58247e3e51184e00e60a3",
+          "url": "https://github.com/risc0/risc0/commit/d065f4fb2915832abf2efb3e7f13ad41e25a0d64"
+        },
+        "date": 1756523555683,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93304960,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1363059,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1637891,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1287289,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1179141,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 735749,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756511249391,
+  "lastUpdate": 1756523558534,
   "repoUrl": "https://github.com/risc0/risc0"
 }
