@@ -108128,9 +108128,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "154841002+maximevtush@users.noreply.github.com",
+            "name": "Maxim Evtush",
+            "username": "maximevtush"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cb5ed5af7818399ad189109c0cea60ca713cc806",
+          "message": "fix: duplicate words in .rs files (#3379)\n\n## Changes\n- **`cargo_risczero_test.rs`**: Removed duplicate \"with\" in ignore\nmessage\n- **`preflight.rs`**: Removed duplicate \"and\" in comment",
+          "timestamp": "2025-08-31T21:55:30Z",
+          "tree_id": "8d9b734dc30f8066d7a94ce04c5eb02e0d0d2aea",
+          "url": "https://github.com/risc0/risc0/commit/cb5ed5af7818399ad189109c0cea60ca713cc806"
+        },
+        "date": 1756681584595,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93803088,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1375456,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1647065,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1296454,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1170906,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 732778,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756554698617,
+  "lastUpdate": 1756681587392,
   "repoUrl": "https://github.com/risc0/risc0"
 }
