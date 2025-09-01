@@ -79637,6 +79637,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "brianaadamssism02@gmail.com",
+            "name": "Bugar",
+            "username": "Bugarim"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3c5c8fa90c5c7dfc4912a2171fdeb0a692e8fac0",
+          "message": "fix(zkp): correct typo `stablabized` to `stabilized` in TODO comment (#3380)\n\nFix spelling error in TODO comment on line 188 of\nrisc0/zkp/src/verify/mod.rs.\nChanged `stablabized` to `stabilized` for proper spelling.",
+          "timestamp": "2025-09-01T02:43:03Z",
+          "tree_id": "0d45dd9c14c83f464c802ff7d8b031e8243e2341",
+          "url": "https://github.com/risc0/risc0/commit/3c5c8fa90c5c7dfc4912a2171fdeb0a692e8fac0"
+        },
+        "date": 1756698362232,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 82653264,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13550,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31668,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30878,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13070,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 9895,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -108401,6 +108455,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756698027927,
+  "lastUpdate": 1756698364399,
   "repoUrl": "https://github.com/risc0/risc0"
 }
