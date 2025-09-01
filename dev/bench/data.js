@@ -79583,6 +79583,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dmitriymozir@gmail.com",
+            "name": "MozirDmitriy",
+            "username": "MozirDmitriy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e910d9f3ede384d717cc0e24980773a2c9dcc11e",
+          "message": "fix: typos in Cargo.toml descriptions and zkVM docs (#3386)\n\n- Corrected cicuit → circuit in multiple Cargo.toml package\ndescriptions.\n\n- Fixed typos in env.rs doc comments (consumpton → consumption).\n\n- Fixed typos in receipt.rs doc comments (computions → computations).",
+          "timestamp": "2025-09-01T02:42:21Z",
+          "tree_id": "9ed311b2cdb6e3e48f47252bd85b39d261265b29",
+          "url": "https://github.com/risc0/risc0/commit/e910d9f3ede384d717cc0e24980773a2c9dcc11e"
+        },
+        "date": 1756697243782,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85174616,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13722,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 33029,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31963,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13480,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10413,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -108293,6 +108347,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756696903245,
+  "lastUpdate": 1756697246114,
   "repoUrl": "https://github.com/risc0/risc0"
 }
