@@ -108236,9 +108236,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dmitriymozir@gmail.com",
+            "name": "MozirDmitriy",
+            "username": "MozirDmitriy"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e910d9f3ede384d717cc0e24980773a2c9dcc11e",
+          "message": "fix: typos in Cargo.toml descriptions and zkVM docs (#3386)\n\n- Corrected cicuit → circuit in multiple Cargo.toml package\ndescriptions.\n\n- Fixed typos in env.rs doc comments (consumpton → consumption).\n\n- Fixed typos in receipt.rs doc comments (computions → computations).",
+          "timestamp": "2025-09-01T02:42:21Z",
+          "tree_id": "9ed311b2cdb6e3e48f47252bd85b39d261265b29",
+          "url": "https://github.com/risc0/risc0/commit/e910d9f3ede384d717cc0e24980773a2c9dcc11e"
+        },
+        "date": 1756696900349,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94015576,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1359627,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1632971,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1289187,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1175522,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 734341,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756681924684,
+  "lastUpdate": 1756696903245,
   "repoUrl": "https://github.com/risc0/risc0"
 }
