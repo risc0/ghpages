@@ -79691,6 +79691,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "galoretochka@gmail.com",
+            "name": "Galoretka",
+            "username": "Galoretka"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6166c4944373c3680ace1f653bddf6049b2e8be4",
+          "message": "fix: typos in comments and documentation (#3392)\n\nCorrected minor spelling errors in comments and README for better\nreadability:\n\n- sys_state.rs – fixed half-wrods → half-words in SHA-256 digest\ncomments.\n\n- cargo-risczero/README.md – corrected datashet → datasheet.",
+          "timestamp": "2025-09-02T01:27:26Z",
+          "tree_id": "e405915a583f9277f81a94eea38037c8bda4eedd",
+          "url": "https://github.com/risc0/risc0/commit/6166c4944373c3680ace1f653bddf6049b2e8be4"
+        },
+        "date": 1756779176289,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85175264,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 14077,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32567,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32019,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13585,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10412,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -108509,6 +108563,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756778861247,
+  "lastUpdate": 1756779178466,
   "repoUrl": "https://github.com/risc0/risc0"
 }
