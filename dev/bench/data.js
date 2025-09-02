@@ -79745,6 +79745,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "87babe89a4bda1f94e273bde7c334c97df4f945f",
+          "message": "Updates to risc0-povw to support building the boundless povw tooling (#3399)\n\nThis is a list of small updates to `risc0-povw` that I have made in the\ncourse of developing the Boundless PoVW tooling. These address\nlimitations I encountered when doing that work.\n\n- **derive serialize for tree structs**\n- **add encode and decode functions for guest Input and Journal**\n- **add ProverOpts and VerifierContext to WorkLogUpdateProver; switch\nbuilder pattern**",
+          "timestamp": "2025-09-02T16:50:07Z",
+          "tree_id": "d0dde14a628e38c2ac215b7d37da23695ba15351",
+          "url": "https://github.com/risc0/risc0/commit/87babe89a4bda1f94e273bde7c334c97df4f945f"
+        },
+        "date": 1756833903811,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85951144,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13885,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32546,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32036,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13431,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10394,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -108617,6 +108671,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756833588066,
+  "lastUpdate": 1756833906143,
   "repoUrl": "https://github.com/risc0/risc0"
 }
