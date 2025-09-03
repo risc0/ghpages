@@ -79799,6 +79799,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1036265112d8c351c75a777805f408736f0d6caf",
+          "message": "Bump semver baselines and risc0-povw to 0.5 (#3407)",
+          "timestamp": "2025-09-03T00:06:35Z",
+          "tree_id": "dd528d1d85c7c09856618d8d616bcc9fb1f6fc23",
+          "url": "https://github.com/risc0/risc0/commit/1036265112d8c351c75a777805f408736f0d6caf"
+        },
+        "date": 1756861518875,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85023872,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13772,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32467,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32165,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13758,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10462,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -108725,6 +108779,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756860941681,
+  "lastUpdate": 1756861521081,
   "repoUrl": "https://github.com/risc0/risc0"
 }
