@@ -79853,6 +79853,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "277d3a612614a6000c75e22412ae0b2cdc33f23c",
+          "message": "Add --kernel-id mode to r0vm (#3406)\n\nThis PR adds a --kernel-id mode to `r0vm`, which may be useful in\ndebugging.\n\nThis PR is marked as draft as I am not sure if we want to expose the API\nin this way, so I wanted to get feedback.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-09-04T01:12:06Z",
+          "tree_id": "9f2acd3e68c390eac5e50f950d1506df69bf7b94",
+          "url": "https://github.com/risc0/risc0/commit/277d3a612614a6000c75e22412ae0b2cdc33f23c"
+        },
+        "date": 1756950522590,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85571536,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13911,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32958,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32105,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13655,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10122,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -108833,6 +108887,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1756950181121,
+  "lastUpdate": 1756950524912,
   "repoUrl": "https://github.com/risc0/risc0"
 }
