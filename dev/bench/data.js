@@ -80015,6 +80015,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "galoretochka@gmail.com",
+            "name": "Galoretka",
+            "username": "Galoretka"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78efe675a709e48f8bd73623cb1daaa9d5b22f82",
+          "message": "Unify byte slice handling in run_guest_framed calls in serde benchmark (#3247)\n\nReplaced unnecessary usage of bytemuck::cast_slice(&encoded) with a\ndirect reference to &encoded in the run_guest_framed calls within the\nserde benchmark function. This change improves code clarity and\nconsistency, as the encoded data is already a Vec<u8>, making the cast\nredundant. All framed benchmark calls now use a unified approach for\npassing byte slices.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-09-06T12:29:19Z",
+          "tree_id": "c127f6237d42199a5861967090e23a56d2f3b26e",
+          "url": "https://github.com/risc0/risc0/commit/78efe675a709e48f8bd73623cb1daaa9d5b22f82"
+        },
+        "date": 1757164320971,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 82709592,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13370,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 30993,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31269,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 12998,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10035,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -109157,6 +109211,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1757163988373,
+  "lastUpdate": 1757164323033,
   "repoUrl": "https://github.com/risc0/risc0"
 }
