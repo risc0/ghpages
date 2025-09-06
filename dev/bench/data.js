@@ -108992,9 +108992,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rz.hasanzade@gmail.com",
+            "name": "Reza",
+            "username": "rezahsnz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "58d2cb14c93563f0c38b0e6fc9384ddecc2ec4c2",
+          "message": "Examples and docs for the ApiClient module (#3232)\n\nThis PR adds usage examples and documentation to the ApiClient module.\nHere is the list of affected methods:\n  - `from_env`\n  - `prove`\n  - `execute`\n  - `prove_segment`\n  - `lift`\n  - `join`\n  - `verify`\n\nThe usage examples are written in a way to be concise, step by step, and\nall-inclusive with the focus being on a pipeline-like proving scheme:\nproof = execute -> prove -> lift -> join. Besides examples, a bit of\ncontext have been added to some methods while preserving the original\ndocumentation.\n\n---------\n\nCo-authored-by: rezahsnz <rezahsnz@proton.me>\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-09-06T11:24:57Z",
+          "tree_id": "b3e3fa344f583fb62d7b323a5f757c94a894a5e8",
+          "url": "https://github.com/risc0/risc0/commit/58d2cb14c93563f0c38b0e6fc9384ddecc2ec4c2"
+        },
+        "date": 1757162707640,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93294616,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1350963,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1649620,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1302080,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1183144,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 743811,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1757154610395,
+  "lastUpdate": 1757162710073,
   "repoUrl": "https://github.com/risc0/risc0"
 }
