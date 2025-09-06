@@ -108884,9 +108884,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacob@risczero.com",
+            "name": "Jacob Weightman",
+            "username": "jacobdweightman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "4fd0b084f390b7cece26febb57372fb132af54fb",
+          "message": "V3 compatibility prototype (#3357)",
+          "timestamp": "2025-09-06T09:01:37Z",
+          "tree_id": "b7752aac4038e1df92fa6c6b0deef257ca543c36",
+          "url": "https://github.com/risc0/risc0/commit/4fd0b084f390b7cece26febb57372fb132af54fb"
+        },
+        "date": 1757152665555,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92827872,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1365075,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1642352,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1299589,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1179079,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 737979,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1756950524912,
+  "lastUpdate": 1757152668075,
   "repoUrl": "https://github.com/risc0/risc0"
 }
