@@ -80069,6 +80069,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "00be06666b6111f6d2f1ee9502029c40e1fa2a14",
+          "message": "groth16: Expose seal_to_json (#3370)",
+          "timestamp": "2025-09-09T20:44:05Z",
+          "tree_id": "07de16b598504a4ec74fc1451d01d0e93e2ed866",
+          "url": "https://github.com/risc0/risc0/commit/00be06666b6111f6d2f1ee9502029c40e1fa2a14"
+        },
+        "date": 1757455751241,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85026912,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13833,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32640,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32045,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13597,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10380,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -109265,6 +109319,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1757455369828,
+  "lastUpdate": 1757455753415,
   "repoUrl": "https://github.com/risc0/risc0"
 }
