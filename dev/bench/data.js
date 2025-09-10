@@ -109424,9 +109424,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "codygunton@gmail.com",
+            "name": "Cody Gunton",
+            "username": "codygunton"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3019e5f27d8abcb43bac94b0d3235a643f6b9207",
+          "message": "Add support for RISC-V fence instruction (#3327)\n\nCompanion of https://github.com/risc0/zirgen/pull/277. This implements\nhandling of `fence` instructions as nops that only advance the pc. See\nthe zirgen PR for more details.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-09-10T21:33:21Z",
+          "tree_id": "44f2cf369d9444771b34db8f2b8eb7075c3ba30c",
+          "url": "https://github.com/risc0/risc0/commit/3019e5f27d8abcb43bac94b0d3235a643f6b9207"
+        },
+        "date": 1757542311315,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93593176,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1384739,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1647278,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1297258,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1192951,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 743235,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1757537171757,
+  "lastUpdate": 1757542318241,
   "repoUrl": "https://github.com/risc0/risc0"
 }
