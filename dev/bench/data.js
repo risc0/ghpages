@@ -80177,6 +80177,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "codygunton@gmail.com",
+            "name": "Cody Gunton",
+            "username": "codygunton"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3019e5f27d8abcb43bac94b0d3235a643f6b9207",
+          "message": "Add support for RISC-V fence instruction (#3327)\n\nCompanion of https://github.com/risc0/zirgen/pull/277. This implements\nhandling of `fence` instructions as nops that only advance the pc. See\nthe zirgen PR for more details.\n\n---------\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-09-10T21:33:21Z",
+          "tree_id": "44f2cf369d9444771b34db8f2b8eb7075c3ba30c",
+          "url": "https://github.com/risc0/risc0/commit/3019e5f27d8abcb43bac94b0d3235a643f6b9207"
+        },
+        "date": 1757542661403,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85086200,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13876,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32874,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32032,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13702,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10329,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -109481,6 +109535,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1757542318241,
+  "lastUpdate": 1757542731564,
   "repoUrl": "https://github.com/risc0/risc0"
 }
