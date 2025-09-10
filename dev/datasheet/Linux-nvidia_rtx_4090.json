@@ -2,8 +2,8 @@
   {
     "name": "execute",
     "hashfn": "N/A",
-    "throughput": 49045666.32534353,
-    "duration": 20664680,
+    "throughput": 55765510.329857424,
+    "duration": 18174549,
     "cycles": 1013513,
     "ram": 0,
     "seal": 0
@@ -11,8 +11,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 399881.0266081357,
-    "duration": 81944373,
+    "throughput": 396423.8906657877,
+    "duration": 82658994,
     "cycles": 32768,
     "ram": 297735492,
     "seal": 209256
@@ -20,8 +20,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 616177.5123019489,
-    "duration": 106358961,
+    "throughput": 601466.9935626071,
+    "duration": 108960260,
     "cycles": 65536,
     "ram": 595469636,
     "seal": 220904
@@ -29,8 +29,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 868829.9679097937,
-    "duration": 150860358,
+    "throughput": 862850.9273481653,
+    "duration": 151905730,
     "cycles": 131072,
     "ram": 1190971716,
     "seal": 243944
@@ -38,8 +38,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1056053.3604735523,
-    "duration": 248229881,
+    "throughput": 1046427.8051017515,
+    "duration": 250513221,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 255656
@@ -47,8 +47,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1290131.5263460139,
-    "duration": 406383372,
+    "throughput": 1276576.2791422124,
+    "duration": 410698529,
     "cycles": 524288,
     "ram": 4763882820,
     "seal": 267880
@@ -56,8 +56,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1390253.4158258182,
-    "duration": 754233716,
+    "throughput": 1368260.5129099991,
+    "duration": 766356984,
     "cycles": 1048576,
     "ram": 9527764292,
     "seal": 281128
@@ -65,8 +65,8 @@
   {
     "name": "lift",
     "hashfn": "poseidon2",
-    "throughput": 1626921.842698012,
-    "duration": 161128822,
+    "throughput": 1612839.9444067832,
+    "duration": 162535657,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -74,8 +74,8 @@
   {
     "name": "join",
     "hashfn": "poseidon2",
-    "throughput": 1256000.6246272638,
-    "duration": 208713272,
+    "throughput": 1231976.5321403975,
+    "duration": 212783274,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -83,8 +83,8 @@
   {
     "name": "succinct",
     "hashfn": "poseidon2",
-    "throughput": 632893.5097978201,
-    "duration": 414199223,
+    "throughput": 624491.8636507739,
+    "duration": 419771682,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 222668
@@ -92,8 +92,8 @@
   {
     "name": "identity_p254",
     "hashfn": "poseidon2",
-    "throughput": 1076370.0047348635,
-    "duration": 243544505,
+    "throughput": 1071398.2483629342,
+    "duration": 244674658,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -101,8 +101,8 @@
   {
     "name": "shrink_wrap",
     "hashfn": "poseidon2",
-    "throughput": 91287.99002528828,
-    "duration": 2871615422,
+    "throughput": 90667.73144620676,
+    "duration": 2891260163,
     "cycles": 262144,
     "ram": 0,
     "seal": 360
@@ -110,8 +110,8 @@
   {
     "name": "groth16",
     "hashfn": "poseidon2",
-    "throughput": 72914.02950197193,
-    "duration": 3595247743,
+    "throughput": 71791.50251502125,
+    "duration": 3651462789,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 256
@@ -119,17 +119,17 @@
   {
     "name": "bigint2_execute",
     "hashfn": "N/A",
-    "throughput": 31467120.26258412,
-    "duration": 67486792,
-    "cycles": 2123615,
+    "throughput": 30508241.065588478,
+    "duration": 69608110,
+    "cycles": 2123621,
     "ram": 0,
     "seal": 0
   },
   {
     "name": "bigint2_prove_segment",
     "hashfn": "poseidon2",
-    "throughput": 1936919.5121070694,
-    "duration": 1218066102,
+    "throughput": 1915932.318832633,
+    "duration": 1231408843,
     "cycles": 2359296,
     "ram": 9527764292,
     "seal": 0
