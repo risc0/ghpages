@@ -109316,9 +109316,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1a7204f06f20531256d5c5d8f492350583e93732",
+          "message": "First pass at config file for actor system (#3409)",
+          "timestamp": "2025-09-10T20:08:23Z",
+          "tree_id": "ee2457286e0eabcff0389852c36bf7e6b4a85e03",
+          "url": "https://github.com/risc0/risc0/commit/1a7204f06f20531256d5c5d8f492350583e93732"
+        },
+        "date": 1757536822116,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93744256,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1379701,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1671651,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1316425,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1178747,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 737286,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1757455753415,
+  "lastUpdate": 1757536824783,
   "repoUrl": "https://github.com/risc0/risc0"
 }
