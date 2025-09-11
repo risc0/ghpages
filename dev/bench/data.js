@@ -80231,6 +80231,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e3014694cc087f7af07d5b26ea00907a369233a",
+          "message": "Support for RTP cluster (#3422)",
+          "timestamp": "2025-09-10T21:08:10-07:00",
+          "tree_id": "cb017a5224ebc08aedc61b534da5bb3393401613",
+          "url": "https://github.com/risc0/risc0/commit/1e3014694cc087f7af07d5b26ea00907a369233a"
+        },
+        "date": 1757564284538,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 86466368,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13634,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32291,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31811,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13583,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10370,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -109589,6 +109643,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1757563968233,
+  "lastUpdate": 1757564287562,
   "repoUrl": "https://github.com/risc0/risc0"
 }
