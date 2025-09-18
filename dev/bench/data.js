@@ -80285,6 +80285,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf3ae4e442ebbc734ef0f9d9997060c08f362887",
+          "message": "Adjustments for OpenTelemetry (#3424)",
+          "timestamp": "2025-09-18T19:13:54Z",
+          "tree_id": "965414ae22cdd893ecdac8f8fb387e1cc9e18aab",
+          "url": "https://github.com/risc0/risc0/commit/cf3ae4e442ebbc734ef0f9d9997060c08f362887"
+        },
+        "date": 1758225254248,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85238192,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13615,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32899,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32032,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13424,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10306,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -109697,6 +109751,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1758224920079,
+  "lastUpdate": 1758225267959,
   "repoUrl": "https://github.com/risc0/risc0"
 }
