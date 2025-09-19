@@ -80339,6 +80339,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c974247118552a83b3ba476ede11b5c2916bc6f",
+          "message": "Dual-license Apache 2 OR MIT (#3426)\n\nCo-authored-by: fbwoolf <6493321+fbwoolf@users.noreply.github.com>",
+          "timestamp": "2025-09-18T18:02:39-07:00",
+          "tree_id": "adb659e7246d242b7e33f27962951ce44ab9ce53",
+          "url": "https://github.com/risc0/risc0/commit/2c974247118552a83b3ba476ede11b5c2916bc6f"
+        },
+        "date": 1758244369764,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 86403960,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13708,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32843,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31886,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13230,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10390,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -109805,6 +109859,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1758244034070,
+  "lastUpdate": 1758244372038,
   "repoUrl": "https://github.com/risc0/risc0"
 }
