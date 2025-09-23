@@ -109856,9 +109856,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "codygunton@gmail.com",
+            "name": "Cody Gunton",
+            "username": "codygunton"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d52a422da389ad20ae8acc1f3d1740308eb7ea7",
+          "message": "Fix jalr circuit (#3421)\n\nCompanion of https://github.com/risc0/zirgen/pull/284\nThis adds supporting tests and bootstraps the fix to the `jalr` circuit.\n\n---------\n\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>",
+          "timestamp": "2025-09-23T17:42:44Z",
+          "tree_id": "485ded16b8ab33c3a49d5155972069c76e515c2a",
+          "url": "https://github.com/risc0/risc0/commit/5d52a422da389ad20ae8acc1f3d1740308eb7ea7"
+        },
+        "date": 1758651631071,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92932576,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1380361,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1638672,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1287490,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1189589,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 739610,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1758244372038,
+  "lastUpdate": 1758651633736,
   "repoUrl": "https://github.com/risc0/risc0"
 }
