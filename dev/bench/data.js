@@ -109964,9 +109964,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e03b8f086e3c0ca64e130788d493a00892b4aabe",
+          "message": "Add basic test of poseidon2 proving and fix bug (#3431)\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-09-24T21:30:30Z",
+          "tree_id": "cb9b8642da801bd452805e27377b07f01f1ddc8f",
+          "url": "https://github.com/risc0/risc0/commit/e03b8f086e3c0ca64e130788d493a00892b4aabe"
+        },
+        "date": 1758753521704,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92759920,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1388579,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1647417,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1297607,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1211676,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 750592,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1758651989360,
+  "lastUpdate": 1758753524323,
   "repoUrl": "https://github.com/risc0/risc0"
 }
