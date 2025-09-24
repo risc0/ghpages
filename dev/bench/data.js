@@ -80501,6 +80501,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbcc6f79ea6f938ffa0ea84c436425e282009579",
+          "message": "Initial commit for rv32im-m3 circuit (#3430)",
+          "timestamp": "2025-09-24T21:56:44Z",
+          "tree_id": "864d915b173ab7953f0182bb4c7249889ca6c353",
+          "url": "https://github.com/risc0/risc0/commit/cbcc6f79ea6f938ffa0ea84c436425e282009579"
+        },
+        "date": 1758754655257,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 86349592,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13893,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32389,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32138,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13716,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10402,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -110129,6 +110183,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1758754342068,
+  "lastUpdate": 1758754657556,
   "repoUrl": "https://github.com/risc0/risc0"
 }
