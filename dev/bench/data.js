@@ -80555,6 +80555,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "714bca83900d5ad3354b4e52d46f3aa74fc398f9",
+          "message": "Add missing include to risc0/circuit/rv32im-m3-sys/cxx/rv32im/emu/expand.cpp (#3433)",
+          "timestamp": "2025-09-25T20:56:01Z",
+          "tree_id": "71520eccdd48ea09987c3ef3661ef18449d3fe17",
+          "url": "https://github.com/risc0/risc0/commit/714bca83900d5ad3354b4e52d46f3aa74fc398f9"
+        },
+        "date": 1758836577966,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85917712,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13299,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32823,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31946,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13066,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10411,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -110237,6 +110291,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1758836258825,
+  "lastUpdate": 1758836580086,
   "repoUrl": "https://github.com/risc0/risc0"
 }
