@@ -110288,9 +110288,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35599d9479cc6581a7d2130b56095bb6cce422b4",
+          "message": "actor system: Implement allocator (#3425)\n\nThis changes how the actor system does scheduling of work by\nintroduction of something new called the \"allocator\"\n\nBoth manager and workers connect and register with the allocator. API\nrequests go the allocator and it routes them to the appropriate manager.\nManagers talk to the allocator to choose a worker to send work to.\n\nWorkers talk to the allocator to allocate hardware, both GPUs and CPU\ncores.\n\nThe manager now sends work to workers rather than workers asking for\nwork from managers.\n\nWorkers connect to managers by way of communication with the allocator\nso that now only the allocator needs to have well-known ports.\n\nThere is a new CLI tool for the actor system scheduling invoked via\n`r0vm --actor-status <allocator-address>`. It provides a real-time\nsnapshot into what jobs workers are currently doing and will be doing\nsoon.",
+          "timestamp": "2025-09-26T21:42:58Z",
+          "tree_id": "5c1792e1269fe82cf04f3bd8bf20bd77423dcf2f",
+          "url": "https://github.com/risc0/risc0/commit/35599d9479cc6581a7d2130b56095bb6cce422b4"
+        },
+        "date": 1758924926072,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92663880,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1390305,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1646594,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1299496,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1193278,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 743169,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1758836580086,
+  "lastUpdate": 1758924929314,
   "repoUrl": "https://github.com/risc0/risc0"
 }
