@@ -80663,6 +80663,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "912c2e198f3abc1094fa55e45840febaee203c22",
+          "message": "rv32im-m3: Add bazel to CI (#3440)",
+          "timestamp": "2025-09-28T22:31:35Z",
+          "tree_id": "70af94bb303aa1753bb6b8856c361b342c0b2637",
+          "url": "https://github.com/risc0/risc0/commit/912c2e198f3abc1094fa55e45840febaee203c22"
+        },
+        "date": 1759102220033,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85435848,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13891,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32895,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32155,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13624,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10389,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -110453,6 +110507,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1759101880639,
+  "lastUpdate": 1759102222271,
   "repoUrl": "https://github.com/risc0/risc0"
 }
