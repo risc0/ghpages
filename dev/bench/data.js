@@ -110612,9 +110612,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "155266340+Fallengirl@users.noreply.github.com",
+            "name": "Fallengirl",
+            "username": "Fallengirl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ef0e92b8b8a21f3208a2f9420343cdbd1ba9d15d",
+          "message": "fix(dual-hal): correction in assertion error message (#3434)\n\nFix spelling error `Assetion` -> `Assertion` in REQUIRE macro error\nlogging for improved code quality\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-09-30T00:32:00Z",
+          "tree_id": "1e6b97605c30b89b20ca8e9e609a167be6eb75f9",
+          "url": "https://github.com/risc0/risc0/commit/ef0e92b8b8a21f3208a2f9420343cdbd1ba9d15d"
+        },
+        "date": 1759194959051,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93720304,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1402801,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1670323,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1322789,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1209860,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 753821,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759185418810,
+  "lastUpdate": 1759194962190,
   "repoUrl": "https://github.com/risc0/risc0"
 }
