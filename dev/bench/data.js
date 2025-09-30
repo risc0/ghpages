@@ -110720,9 +110720,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "92c5d9e0a86b8e172a9a61384f33e309557be8dd",
+          "message": "actor system: Replace kameo with our own code (#3442)\n\nThis tries to not change the code using kameo as much as possible, but\nmakes concessions where it would be much easier to change the API. The\nnew code is in `crate::actors::actor`\n\nAside from some small changes here and there the major usage changes\nare:\n- Removal of the `Reply` trait\n- Removal of return-value from `Message::handle`, instead\n`Context::reply_sender` / `Context::reply` must be used\n- Removal of any panic catching. Instead panics are caught by tokio\nruntime (like normal)\n- Removal of any marker reply types (`DelegatedReply` /\n`ForwardedReply`)\n- Removal of the proc-macros (I wanted to avoid writing any of the\npurposes of this)\n- Removal of `Result` return-value from `on_start` and `on_stop`",
+          "timestamp": "2025-09-30T20:12:38Z",
+          "tree_id": "d04e457a34ec367465b83a20a633948fecaeab3a",
+          "url": "https://github.com/risc0/risc0/commit/92c5d9e0a86b8e172a9a61384f33e309557be8dd"
+        },
+        "date": 1759265858697,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93911984,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1406643,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1666328,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1307174,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1214127,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 756704,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759195335425,
+  "lastUpdate": 1759265861492,
   "repoUrl": "https://github.com/risc0/risc0"
 }
