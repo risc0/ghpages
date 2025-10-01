@@ -110828,9 +110828,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8b56ddbb6470c427a94b7edf444411e383e674bd",
+          "message": "actor system: Improve error handling (#3449)\n\nEvery actor now deals with errors in some way rather than panic'ing.\n\nMost non-test code `unwrap`s are removed and the error is handled, or an\n`expect` with a message is added.",
+          "timestamp": "2025-10-01T23:06:07Z",
+          "tree_id": "c8051de66aa4eb07530d48dbe5253305a0c19be6",
+          "url": "https://github.com/risc0/risc0/commit/8b56ddbb6470c427a94b7edf444411e383e674bd"
+        },
+        "date": 1759362795402,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93631664,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1387672,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1670906,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1317068,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1209032,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 750508,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759266243543,
+  "lastUpdate": 1759362798086,
   "repoUrl": "https://github.com/risc0/risc0"
 }
