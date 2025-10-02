@@ -111044,9 +111044,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f7b7975efe5e1af6b38d65c39d0a314ffe33f177",
+          "message": "Remove remote / local actor routing (#3452)\n\nInstead, just use loopback for local actor communication (if the actor\ncan be remote)",
+          "timestamp": "2025-10-02T21:42:45Z",
+          "tree_id": "8ca73fe8865d3c7a905baca8dd7b91c0f22486be",
+          "url": "https://github.com/risc0/risc0/commit/f7b7975efe5e1af6b38d65c39d0a314ffe33f177"
+        },
+        "date": 1759443090846,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92851544,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1383620,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1638687,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1289018,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1190877,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 741456,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759428922129,
+  "lastUpdate": 1759443098365,
   "repoUrl": "https://github.com/risc0/risc0"
 }
