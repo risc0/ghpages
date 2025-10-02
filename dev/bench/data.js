@@ -110936,9 +110936,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e04b7ae14e6b1152ace24da7fd31828e373a3283",
+          "message": "Fix a non-determinism bug in CUDA (#3451)",
+          "timestamp": "2025-10-02T17:35:44Z",
+          "tree_id": "4ce0d51011a0a21aba9f0f1e6b5a7cb6b68572cf",
+          "url": "https://github.com/risc0/risc0/commit/e04b7ae14e6b1152ace24da7fd31828e373a3283"
+        },
+        "date": 1759428598584,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92962992,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1403313,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1673366,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1322620,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1211478,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 755439,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759363019003,
+  "lastUpdate": 1759428602036,
   "repoUrl": "https://github.com/risc0/risc0"
 }
