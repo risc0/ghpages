@@ -81041,6 +81041,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "victor@risczero.com",
+            "name": "Victor Snyder-Graf",
+            "username": "nategraf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61d00b3abfd7eb1647fa073b98a41a704fe508e6",
+          "message": "Add a hint for Docker permissioned denied with Groth16 (#3448)\n\nThis is a small edit I made while debugging why `bootstrap-groth16` was\nnot working. One of the issues I ran into was that the process is trying\nto run `docker` without sufficient permissions. The error currently just\ngives an exit code of `126`, which does indicate a permissions issue but\nit took me a while to realize the particular permissions issue. This PR\nadds a hint.\n\nI also included two other minor edits:\n* Remove `bento/Cargo.toml` from linked projects for the VS Code config.\nThis file no longer exists.\n* Add a `cuda` feature to bootstrap. I decided to do this instead of\nusing Docker to sidestep the permissions issue.\n\n---------\n\nCo-authored-by: Remi Bernotavicius <bobbobbio@gmail.com>",
+          "timestamp": "2025-10-03T21:18:50Z",
+          "tree_id": "91af0e98e923e64d4ba30c8c80ab58389392042d",
+          "url": "https://github.com/risc0/risc0/commit/61d00b3abfd7eb1647fa073b98a41a704fe508e6"
+        },
+        "date": 1759528996418,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 84511976,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13819,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32723,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31805,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13548,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10422,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -111209,6 +111263,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1759528654139,
+  "lastUpdate": 1759528999529,
   "repoUrl": "https://github.com/risc0/risc0"
 }
