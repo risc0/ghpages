@@ -111260,9 +111260,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7bb6b37377076c3c6157336e5234f68db24b75a0",
+          "message": "rv32im-m3: improve FFI (#3447)",
+          "timestamp": "2025-10-06T20:25:39Z",
+          "tree_id": "13324c56283ad0489cda7298feb9e13ce399407a",
+          "url": "https://github.com/risc0/risc0/commit/7bb6b37377076c3c6157336e5234f68db24b75a0"
+        },
+        "date": 1759785938012,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93935104,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1402738,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1669561,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1318085,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1204274,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 752164,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759528999529,
+  "lastUpdate": 1759785941225,
   "repoUrl": "https://github.com/risc0/risc0"
 }
