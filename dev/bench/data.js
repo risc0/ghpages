@@ -81149,6 +81149,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "258bde258b8c5660fbe5cbeb3b6cf68e8d844400",
+          "message": "Get verification working in rust on V3 (#3462)\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-10-07T01:41:03Z",
+          "tree_id": "0f2c79d6830d6e5c919b6e96e943d9137452e4f8",
+          "url": "https://github.com/risc0/risc0/commit/258bde258b8c5660fbe5cbeb3b6cf68e8d844400"
+        },
+        "date": 1759805949925,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85790016,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13764,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32801,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32059,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13559,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10353,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -111425,6 +111479,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1759805601016,
+  "lastUpdate": 1759805952186,
   "repoUrl": "https://github.com/risc0/risc0"
 }
