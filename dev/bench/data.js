@@ -111476,9 +111476,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b8414e77ab8090de5819062b28954a3bc2a1bacf",
+          "message": "actor system: App destruction and Actor unit testing (#3455)\n\nThis PR:\n- Cleans up some stuff with App destruction and removes `ActorRef::kill`\n- We didn't really need the kill function, so instead just use\n`stop_gracefully` everywhere. Removing this function makes some stuff\nsimpler in the actor code.\n- Adds a way to unit test actors in a single-tasked deterministic way\n    - New `ActorRunner` allows manual scheduling of receiving of tasks.\n- Use new actor testing code in allocator tests\n- Starts some unit tests for the factory\n- This required abstracting the actors the factory talks to, so we can\nreplace them in the unit test.",
+          "timestamp": "2025-10-07T20:20:34Z",
+          "tree_id": "0cd2e2e2135713299ec650c921844e9d7f5e07c3",
+          "url": "https://github.com/risc0/risc0/commit/b8414e77ab8090de5819062b28954a3bc2a1bacf"
+        },
+        "date": 1759872720571,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93070256,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1396660,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1654275,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1324307,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1213075,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 755474,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759805952186,
+  "lastUpdate": 1759872723200,
   "repoUrl": "https://github.com/risc0/risc0"
 }
