@@ -81257,6 +81257,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacob@risczero.com",
+            "name": "Jacob Weightman",
+            "username": "jacobdweightman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c579eb295f33f2fc41d115c6ba6992ee4719f9a9",
+          "message": "Finish work on Hello-M3 circuit (#3446)\n\nThis PR does a few things:\n* Adds code for generating ZKR for Hello-M3\n* Adds full test verifying Hello-M3 proof using the ZKR inside the\nrecursion circuit\n* Consolidates Rust verifier test to live alongside the other Hello-M3\ncode\n\nWith this, Hello-M3 is complete!\n\n---------\n\nCo-authored-by: Frank Laub <frank@risczero.com>",
+          "timestamp": "2025-10-07T20:53:47Z",
+          "tree_id": "3a58e9a40a06f614ef9744b6b3ff5690b4793f5c",
+          "url": "https://github.com/risc0/risc0/commit/c579eb295f33f2fc41d115c6ba6992ee4719f9a9"
+        },
+        "date": 1759877576326,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 86260496,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13839,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32860,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32044,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13584,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10263,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -111641,6 +111695,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1759877265320,
+  "lastUpdate": 1759877578577,
   "repoUrl": "https://github.com/risc0/risc0"
 }
