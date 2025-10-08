@@ -81311,6 +81311,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e211138a2132aa952c47eb520a2bc4bd1aed4516",
+          "message": "actor system: Add a release_channel key to versioning (#3465)\n\nThis should allows us to deploy different parallel collections of `r0vm`\nversions.",
+          "timestamp": "2025-10-08T01:04:52Z",
+          "tree_id": "db1294d2dd527dc8ea1d38d13330b3275469a5c4",
+          "url": "https://github.com/risc0/risc0/commit/e211138a2132aa952c47eb520a2bc4bd1aed4516"
+        },
+        "date": 1759889352231,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 82875560,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13287,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31640,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30688,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13012,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 9945,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -111749,6 +111803,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1759889026024,
+  "lastUpdate": 1759889354353,
   "repoUrl": "https://github.com/risc0/risc0"
 }
