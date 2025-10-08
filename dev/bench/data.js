@@ -111800,9 +111800,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "299a7510b766be92b7b037f56ebe3e7965f005ce",
+          "message": "actor-system: Multi-release-channel deployment fixes (#3466)\n\nThis PR bundles together a few unrelated small things found while trying\nout multiple deployments on the cluster\n\n- Add support for different release-channels via `RISC0_RELEASE_CHANNEL`\nenvironment variable in `bonsai-sdk`\n- Don't swallow the error in the worker when a proving task panics (e.g.\nCUDA out-of-memory)\n- Add CUDA stack limit reset to rv32im prove (fixes OOM issues with\nmultiple deployments)\n- Add manager and release_channel information to GetStatus (CLI\nmonitoring of deployments)\n- Forward actor stop reasons (e.g. RPC protocol mismatch errors display\nas such instead of just `ActorNotRunning`)",
+          "timestamp": "2025-10-08T22:21:55Z",
+          "tree_id": "e386b8bb8fd5577e58184834a96d7a44ca8909da",
+          "url": "https://github.com/risc0/risc0/commit/299a7510b766be92b7b037f56ebe3e7965f005ce"
+        },
+        "date": 1759965344553,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 77355168,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1381469,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1438791,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1322169,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1176905,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 719009,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1759889354353,
+  "lastUpdate": 1759965347358,
   "repoUrl": "https://github.com/risc0/risc0"
 }
