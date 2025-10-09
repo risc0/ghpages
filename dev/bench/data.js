@@ -81473,6 +81473,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "9fae09303d1ba35e363207e294ae661cc6fa4655",
+          "message": "actor system: Improved telemetry and worker parallel jobs (#3470)\n\nThis does two different things\n\n- Improve the tracing\n- the worker adds tracepoints for the various stages of running a task\nparented under the remote job task.\n    - have a task job include the time it spends waiting to run\n- Execute CPU jobs in the worker in parallel\n    - This will let preflights run in parallel.",
+          "timestamp": "2025-10-09T17:01:26Z",
+          "tree_id": "66d2a65a3cc8702eba1fcdd3116053ea8286e63b",
+          "url": "https://github.com/risc0/risc0/commit/9fae09303d1ba35e363207e294ae661cc6fa4655"
+        },
+        "date": 1760032975786,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85758656,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13803,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32503,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31642,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13570,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10236,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -112073,6 +112127,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1760032640201,
+  "lastUpdate": 1760032978699,
   "repoUrl": "https://github.com/risc0/risc0"
 }
