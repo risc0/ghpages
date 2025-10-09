@@ -112124,9 +112124,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a83d7bb6c73dda0ae86d3d53f91ea4403d8b957d",
+          "message": "Recursion support for m3 (#3471)",
+          "timestamp": "2025-10-09T21:46:25Z",
+          "tree_id": "d30da110a2a668b9752ecf7ec8099545744377f2",
+          "url": "https://github.com/risc0/risc0/commit/a83d7bb6c73dda0ae86d3d53f91ea4403d8b957d"
+        },
+        "date": 1760048200264,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 92059792,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1378289,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1414061,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1310315,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1177300,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 719153,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760032978699,
+  "lastUpdate": 1760048203332,
   "repoUrl": "https://github.com/risc0/risc0"
 }
