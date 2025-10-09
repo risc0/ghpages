@@ -81419,6 +81419,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "8f6e5e1973a122c72d02e3f71e18b3d2ac0fe331",
+          "message": "Add support for clang-format (#3468)\n\ncheck:\n```\nbazelisk build //... --config=clang-format-check\n```\n\nfix:\n```\nbazelisk build //... --config=clang-format\n```",
+          "timestamp": "2025-10-08T23:11:18Z",
+          "tree_id": "7b301fa77a71145743384ced080cca5c68e4b216",
+          "url": "https://github.com/risc0/risc0/commit/8f6e5e1973a122c72d02e3f71e18b3d2ac0fe331"
+        },
+        "date": 1759968419055,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85307504,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13895,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32390,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 32222,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13627,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10177,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -111965,6 +112019,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1759968072636,
+  "lastUpdate": 1759968422799,
   "repoUrl": "https://github.com/risc0/risc0"
 }
