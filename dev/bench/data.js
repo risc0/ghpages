@@ -81581,6 +81581,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72aee015f7a5a1d68e454b074cd6916dd52f0610",
+          "message": "actor system: Don't allow worker queues to become too deep, queue jobs in factory instead (#3475)\n\nThis makes it so that we don't schedule more than a configurable amount\nof work (default 3 tasks) on a worker. This is an improvement because it\ndelays commit a task running on a worker until a later point in time at\nwhich we can make a potentially better scheduling decision.\n\nThis goes about implementing this by doing the following things:\n- RPC system `ask` function takes async callback\n- Actor code ReplySender `send` function becomes async function\n- Add actor system `ask_callback` function that takes an async callback\nthat gets called with the reply\n- This allows a reply to become a `tell` function call on another actor\n- Factory no longer blocks messages waiting for a response to\n`ScheduleTask`\n- If the allocator was to only schedule a task much later in time, its\nimportant to not block all factory messages until then\n- Allocator only schedules a task once there is a worker available that\nis under the task threshold.\n- new allocator configuration for worker threshold (default to 3 for\nnow)\n- A new trace span is added for tasks that measures the time it spends\nin the factory waiting for a worker\n- this keeps there being no major period of time unaccounted for with\ntasks",
+          "timestamp": "2025-10-10T20:41:40Z",
+          "tree_id": "ff319e0548b8a0cd7998db7b03ac21c5ebd2bfdf",
+          "url": "https://github.com/risc0/risc0/commit/72aee015f7a5a1d68e454b074cd6916dd52f0610"
+        },
+        "date": 1760130952969,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 82829432,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13387,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 31032,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30772,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 12980,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 9941,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -112235,6 +112289,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1760048607086,
+  "lastUpdate": 1760130955589,
   "repoUrl": "https://github.com/risc0/risc0"
 }
