@@ -81635,6 +81635,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3af8a5957993f9fa17f5a84ad1ee6ed007e89244",
+          "message": "Pin generic-array to 0.14.7 to avoid deprecation warnings (#3480)\n\nSee: https://github.com/fizyk20/generic-array/issues/158",
+          "timestamp": "2025-10-13T15:12:36-07:00",
+          "tree_id": "2bb9457c76381c1fa1b9d845daf6256ef380b3e7",
+          "url": "https://github.com/risc0/risc0/commit/3af8a5957993f9fa17f5a84ad1ee6ed007e89244"
+        },
+        "date": 1760394163399,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 85896520,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13686,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32737,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31782,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13391,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10369,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -112397,6 +112451,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1760393841319,
+  "lastUpdate": 1760394165669,
   "repoUrl": "https://github.com/risc0/risc0"
 }
