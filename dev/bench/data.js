@@ -112556,9 +112556,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2d7aeb9f0d95a5c5bc04f718596a347a23f2d18",
+          "message": "Use vendorized risc0-sppark for both rust and c++ (#3478)",
+          "timestamp": "2025-10-13T21:42:59-07:00",
+          "tree_id": "e87db6abb74c236ba0268e4585f7a4e5b9405343",
+          "url": "https://github.com/risc0/risc0/commit/a2d7aeb9f0d95a5c5bc04f718596a347a23f2d18"
+        },
+        "date": 1760417259130,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93613264,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1378339,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1422320,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1312528,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1175101,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 717530,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760401924673,
+  "lastUpdate": 1760417261817,
   "repoUrl": "https://github.com/risc0/risc0"
 }
