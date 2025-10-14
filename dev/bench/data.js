@@ -112664,9 +112664,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a883553b0bba53a5f96d532fc88056ec0f5d0ed6",
+          "message": "Use shared CUDA kernels for rv32im-m3 (#3483)",
+          "timestamp": "2025-10-14T21:55:27Z",
+          "tree_id": "b9777bb69f2612e29916cbe7fdf52bad08dd6ec9",
+          "url": "https://github.com/risc0/risc0/commit/a883553b0bba53a5f96d532fc88056ec0f5d0ed6"
+        },
+        "date": 1760480670170,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 78165464,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1379111,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1421651,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1308207,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1178042,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 718292,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760417604798,
+  "lastUpdate": 1760480672954,
   "repoUrl": "https://github.com/risc0/risc0"
 }
