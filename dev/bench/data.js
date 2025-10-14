@@ -112448,9 +112448,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jacob@risczero.com",
+            "name": "Jacob Weightman",
+            "username": "jacobdweightman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "efa602314399e9f8dec82e17a67f98e86d855c39",
+          "message": "Remove LLVM dependency for BigInt preflight (#3473)\n\nCo-authored-by: Frank Laub <flaub@risc0.com>",
+          "timestamp": "2025-10-13T23:56:08Z",
+          "tree_id": "6c9d1ca623289904afb77e4e6799c3efd971a727",
+          "url": "https://github.com/risc0/risc0/commit/efa602314399e9f8dec82e17a67f98e86d855c39"
+        },
+        "date": 1760401591027,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94274224,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1378156,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1429823,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1317287,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1174504,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 718641,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760394165669,
+  "lastUpdate": 1760401594146,
   "repoUrl": "https://github.com/risc0/risc0"
 }
