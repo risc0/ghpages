@@ -81851,6 +81851,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa8ae0c8160dbb0b5d9627c5c55baf17eb21b5c6",
+          "message": "Update host Rust to 1.90.0 (#3438)",
+          "timestamp": "2025-10-14T22:20:11Z",
+          "tree_id": "80e89743e848eee812d6ae6169fade8a0cda17e4",
+          "url": "https://github.com/risc0/risc0/commit/aa8ae0c8160dbb0b5d9627c5c55baf17eb21b5c6"
+        },
+        "date": 1760484086977,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 74122584,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13589,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32598,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31598,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13497,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10342,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -112829,6 +112883,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1760483782319,
+  "lastUpdate": 1760484089446,
   "repoUrl": "https://github.com/risc0/risc0"
 }
