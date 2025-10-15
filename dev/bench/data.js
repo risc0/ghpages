@@ -81905,6 +81905,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "8f726989f20aca55ca765fe83afc490d8c625de8",
+          "message": "Connect logging to rust and also remove non-error level 0 logs (#3487)\n\nTo set C++ log level, add RISC0_LOG=<some_level>. Note 0 -> error, 1 ->\ninfo 2 -> debug 3 -> trace, so if you set RISC0_LOG=2, you also need to\nset RUST_LOG=debug to see the logs. The reason for two settings is this\nif the the C++ *always* sends level 2 logs to rust to be ignored, it's a\nperf issue due to all the string formatting, so mostly I don't want to\nsee them, but it didn't seem right to send all c++ logs as rust Error\nlevel...",
+          "timestamp": "2025-10-15T18:15:08Z",
+          "tree_id": "425573dd27b52ada7d789e50217a106b636656e8",
+          "url": "https://github.com/risc0/risc0/commit/8f726989f20aca55ca765fe83afc490d8c625de8"
+        },
+        "date": 1760555745345,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 73374024,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13177,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 32564,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 31757,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13525,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 10288,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -112937,6 +112991,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1760555421833,
+  "lastUpdate": 1760555747733,
   "repoUrl": "https://github.com/risc0/risc0"
 }
