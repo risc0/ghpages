@@ -113096,9 +113096,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "380ba1e0eb6b2d05158bbb0a26d766a26c168673",
+          "message": "More integration of rv32im-m3 (#3481)",
+          "timestamp": "2025-10-15T21:25:18Z",
+          "tree_id": "ad8291d4d02055e4db012b8081f49f34c7b67ab4",
+          "url": "https://github.com/risc0/risc0/commit/380ba1e0eb6b2d05158bbb0a26d766a26c168673"
+        },
+        "date": 1760565765171,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94099208,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1372908,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1416194,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1317369,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1177702,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 719106,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760562106326,
+  "lastUpdate": 1760565767682,
   "repoUrl": "https://github.com/risc0/risc0"
 }
