@@ -82013,6 +82013,60 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "flaub@risc0.com",
+            "name": "Frank Laub",
+            "username": "flaub"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "380ba1e0eb6b2d05158bbb0a26d766a26c168673",
+          "message": "More integration of rv32im-m3 (#3481)",
+          "timestamp": "2025-10-15T21:25:18Z",
+          "tree_id": "ad8291d4d02055e4db012b8081f49f34c7b67ab4",
+          "url": "https://github.com/risc0/risc0/commit/380ba1e0eb6b2d05158bbb0a26d766a26c168673"
+        },
+        "date": 1760566097733,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 71293040,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 13583,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 30696,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 30977,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 13080,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 9886,
+            "unit": "Hz"
+          }
+        ]
       }
     ],
     "macOS-cpu": [
@@ -113153,6 +113207,6 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "lastUpdate": 1760565767682,
+  "lastUpdate": 1760566099933,
   "repoUrl": "https://github.com/risc0/risc0"
 }
