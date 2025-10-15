@@ -112988,9 +112988,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jeremy@risczero.com",
+            "name": "Jeremy Bruestle",
+            "username": "jbruestle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "7fac3f2dc32308a9e25502217959fb4c2f715b84",
+          "message": "Add support for MRET, add test of user/kernel mode switching, fix minor bug in ECALL (#3488)",
+          "timestamp": "2025-10-15T20:11:38Z",
+          "tree_id": "3790ce113ff183bb8bd07159ebf49d4948540086",
+          "url": "https://github.com/risc0/risc0/commit/7fac3f2dc32308a9e25502217959fb4c2f715b84"
+        },
+        "date": 1760561767880,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 94320936,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1360653,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1425481,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1317774,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1179769,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 719327,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760555747733,
+  "lastUpdate": 1760561770350,
   "repoUrl": "https://github.com/risc0/risc0"
 }
