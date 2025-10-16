@@ -113204,9 +113204,63 @@ window.BENCHMARK_DATA = {
             "unit": "Hz"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bobbobbio@gmail.com",
+            "name": "Remi Bernotavicius",
+            "username": "bobbobbio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4fbf918b9d94ad37d2a3c7f329ac95c3e839b2f4",
+          "message": "Replace ExternalProver with actor-based DefaultProver (#3486)\n\n- `default_prover` and `default_executor` return `DefaultProver` by\ndefault\n- `ExternalProver` is removed\n- zkvm client / server interface is removed\n- prover example is removed\n- dev-mode support is added to actor system / `DefaultProver`\n- guest stdout forwarded in `DefaultProver` (no streaming)",
+          "timestamp": "2025-10-16T00:20:49Z",
+          "tree_id": "919334834f7b638716a6057f8c4ea4634ab3c415",
+          "url": "https://github.com/risc0/risc0/commit/4fbf918b9d94ad37d2a3c7f329ac95c3e839b2f4"
+        },
+        "date": 1760576092351,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "execute",
+            "value": 93482560,
+            "unit": "Hz"
+          },
+          {
+            "name": "prove/poseidon2",
+            "value": 1382694,
+            "unit": "Hz"
+          },
+          {
+            "name": "lift",
+            "value": 1421190,
+            "unit": "Hz"
+          },
+          {
+            "name": "join",
+            "value": 1318108,
+            "unit": "Hz"
+          },
+          {
+            "name": "composite",
+            "value": 1180499,
+            "unit": "Hz"
+          },
+          {
+            "name": "succinct",
+            "value": 720173,
+            "unit": "Hz"
+          }
+        ]
       }
     ]
   },
-  "lastUpdate": 1760566099933,
+  "lastUpdate": 1760576095139,
   "repoUrl": "https://github.com/risc0/risc0"
 }
