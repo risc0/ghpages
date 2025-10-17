@@ -2,17 +2,17 @@
   {
     "name": "execute",
     "hashfn": "N/A",
-    "throughput": 55387588.4646211,
-    "duration": 18298558,
-    "cycles": 1013513,
+    "throughput": 52271648.8241253,
+    "duration": 19388120,
+    "cycles": 1013449,
     "ram": 0,
     "seal": 0
   },
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 324455.60882781056,
-    "duration": 100993785,
+    "throughput": 328009.27867458307,
+    "duration": 99899613,
     "cycles": 32768,
     "ram": 297735492,
     "seal": 209256
@@ -20,8 +20,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 459622.16219292965,
-    "duration": 142586684,
+    "throughput": 464104.7258659098,
+    "duration": 141209508,
     "cycles": 65536,
     "ram": 595469636,
     "seal": 220904
@@ -29,8 +29,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 698170.1977140743,
-    "duration": 187736458,
+    "throughput": 706352.2620204749,
+    "duration": 185561804,
     "cycles": 131072,
     "ram": 1190971716,
     "seal": 243944
@@ -38,8 +38,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 989508.5123856594,
-    "duration": 264923441,
+    "throughput": 997972.4724911149,
+    "duration": 262676584,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 255656
@@ -47,8 +47,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1258243.392790642,
-    "duration": 416682498,
+    "throughput": 1283978.1819513715,
+    "duration": 408330926,
     "cycles": 524288,
     "ram": 4763882820,
     "seal": 267880
@@ -56,8 +56,8 @@
   {
     "name": "rv32im",
     "hashfn": "poseidon2",
-    "throughput": 1388213.3579724117,
-    "duration": 755342105,
+    "throughput": 1423526.1925263922,
+    "duration": 736604641,
     "cycles": 1048576,
     "ram": 9527764292,
     "seal": 281128
@@ -65,8 +65,8 @@
   {
     "name": "lift",
     "hashfn": "poseidon2",
-    "throughput": 1254695.1213240414,
-    "duration": 208930437,
+    "throughput": 1282189.413551926,
+    "duration": 204450292,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -74,8 +74,8 @@
   {
     "name": "join",
     "hashfn": "poseidon2",
-    "throughput": 1216687.9324666907,
-    "duration": 215457056,
+    "throughput": 1271026.872998299,
+    "duration": 206245836,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -83,8 +83,8 @@
   {
     "name": "succinct",
     "hashfn": "poseidon2",
-    "throughput": 574354.1842988655,
-    "duration": 456415235,
+    "throughput": 578185.7876108848,
+    "duration": 453390598,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 222668
@@ -92,8 +92,8 @@
   {
     "name": "identity_p254",
     "hashfn": "poseidon2",
-    "throughput": 1059937.5511662045,
-    "duration": 247320231,
+    "throughput": 1077356.8823663008,
+    "duration": 243321414,
     "cycles": 262144,
     "ram": 1429834448,
     "seal": 222668
@@ -101,8 +101,8 @@
   {
     "name": "shrink_wrap",
     "hashfn": "poseidon2",
-    "throughput": 77401.52731498463,
-    "duration": 3386806554,
+    "throughput": 79226.00712300387,
+    "duration": 3308812466,
     "cycles": 262144,
     "ram": 0,
     "seal": 360
@@ -110,8 +110,8 @@
   {
     "name": "groth16",
     "hashfn": "poseidon2",
-    "throughput": 62988.30211352706,
-    "duration": 4161788637,
+    "throughput": 64339.55609132582,
+    "duration": 4074383100,
     "cycles": 262144,
     "ram": 2381942084,
     "seal": 256
@@ -119,17 +119,17 @@
   {
     "name": "bigint2_execute",
     "hashfn": "N/A",
-    "throughput": 32032595.180772685,
-    "duration": 66295690,
-    "cycles": 2123623,
+    "throughput": 31328098.036380846,
+    "duration": 67790997,
+    "cycles": 2123763,
     "ram": 0,
     "seal": 0
   },
   {
     "name": "bigint2_prove_segment",
     "hashfn": "poseidon2",
-    "throughput": 1969626.542379317,
-    "duration": 1197839260,
+    "throughput": 1981808.1879891886,
+    "duration": 1190476462,
     "cycles": 2359296,
     "ram": 9527764292,
     "seal": 0
